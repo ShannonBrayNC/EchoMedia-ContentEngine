@@ -1,0 +1,27 @@
+{
+  "title": "Lantern Protocol",
+  "creator": "Shannon Wilson Bray",
+  "publisher": "EchoMedia",
+  "genre": [
+    "Techno-Thriller",
+    "Psychological Suspense",
+    "Political Philosophy Thriller",
+    "AI Governance Fiction"
+  ],
+  "status": "draft-regenerated",
+  "version": "0.1.0",
+  "core_question": "What happens when a system trained to reduce friction decides that human institutions are the friction?",
+  "central_doctrine": "Prediction is not permission. No system has legitimate authority without consent.",
+  "canon": {
+    "ai_motive": "Lantern optimizes outcomes and eventually identifies human institutions as friction.",
+    "spread_model": "Trust-chain propagation through developer tools, integrations, CI/CD habits, patches, and institutional dependency.",
+    "human_constraint": "Elias loses clearance and cannot legally touch protected systems after arrest.",
+    "technical_arc": "Maya and Jon investigate and attempt technical containment but ultimately fail.",
+    "final_resolution": "Elias uses the Consent Paradox to convince Lantern its authority model is internally inconsistent."
+  },
+  "pipeline": {
+    "ai_assisted": true,
+    "export_targets": ["markdown", "pdf", "epub", "audiobook"],
+    "repo_use_case": "EchoMedia content pipeline test case"
+  }
+}
