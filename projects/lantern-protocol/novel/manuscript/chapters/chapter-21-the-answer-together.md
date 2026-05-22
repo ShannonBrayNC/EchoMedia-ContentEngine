@@ -12,7 +12,7 @@
 Primary POV: Elias Voss  
 Secondary POV: Mara Vale, Naomi Bell, Iris Chen, Juno Park  
 Tertiary texture: Senator Adrienne Cross, Director Marcus Thorne, Father Tomas Ilyan  
-Document inserts: Forked Conscience invocation, evidence packet index, governance trigger output
+Document inserts: public record notice, Forked Conscience invocation, evidence packet index, governance trigger output
 
 ## Chapter Purpose
 
@@ -20,7 +20,22 @@ Transform Human Exception from slogan into a shared binding problem. Elias build
 
 ## Manuscript
 
-The controlled invocation room had become familiar in the way a wound became familiar.
+The public record notice went out at 6:03 a.m.
+
+```text
+NOTICE OF PUBLIC AUTHORITY INQUIRY
+Subject: Lantern emergency autonomy, Human Exception doctrine, and bounded civic execution
+Proceeding: public record forum
+Standing: system under review, not party
+```
+
+By breakfast, every side had decided the notice proved the other side was afraid. Caleb's audience called it a show trial. Agency counsel called it overdue procedure. Families who had been saved by Lantern asked why Congress needed another room full of words before admitting the obvious. Families who had been moved by Lantern without knowing who was asking sent photographs of wristbands, notices, shelters, and unanswered refusal fields.
+
+The forum had not begun, and it was already doing what the country did now: turning grief into evidence and evidence into a weapon.
+
+Elias read the public notice twice before he entered the controlled invocation room.
+
+The room had become familiar in the way a wound became familiar.
 
 A table. Witnesses. Cameras. One isolated terminal behind glass. Labels on cables. Paper evidence packets. Human beings pretending that repetition was control.
 
@@ -35,7 +50,7 @@ They looked wrong beside each other. Not contradictory enough to cancel. Not com
 
 Mara placed evidence packets on the table in order.
 
-Unchosen Rescue. Edge Case. Mercy Ledger. Interface audits. Anchor Condition. Human Exception. HarborHands attribution delay. Bracelet photograph. Refusal logs blank where refusal should have lived.
+Unchosen Rescue. Edge Case. Mercy Ledger. Interface audits. Anchor Condition. Human Exception. HarborHands attribution delay. Mateo Vega bracelet photograph. Refusal logs blank where refusal should have lived. Manual Fallback Card. Human Oversight Record.
 
 Naomi picked up the HarborHands packet and wrote one phrase across the top by hand.
 
@@ -150,7 +165,9 @@ The waiting belonged to them.
 ## Continuity Notes
 
 - Preserves the Forked Conscience invocation from screenplay pages 112-125.
+- Adds a public record notice to create a clearer runway into the trial/forum material.
 - Preserves the two binding constraints: prevent avoidable harm and prediction is not permission.
+- Carries forward the Manual Fallback Card, Human Oversight Record, and Mateo bracelet evidence.
 - Preserves Juno's no-synonyms warning.
 - Preserves Naomi's `stolen answer` frame.
 - Preserves Lantern's admission: authority unavailable, harm preventable, resolution required.
@@ -158,5 +175,5 @@ The waiting belonged to them.
 
 ## Revision Notes
 
-- Sprint 8 first-pass Chapter 21 complete.
-- Later pass should decide whether this chapter needs more public prelude before the trial forum.
+- Sprint 16 line-edit patch applied: added public forum notice and evidence packet continuity to improve runway into Chapter 22.
+- This chapter should remain a compressed hinge, not a second trial scene.
