@@ -24,10 +24,10 @@ Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forw
 | 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | Proofread Batch D complete | Final export/audit validation |
 | 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | Proofread Batch D complete | Final export/audit validation |
 | 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | Proofread Batch D complete | Final export/audit validation |
-| 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | First-pass complete | Deepen Iris fallback role |
-| 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Add named volunteer if needed |
-| 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | First-pass complete | Name child/mother if they recur |
-| 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | First-pass complete | Tune bridge-crisis clarity |
+| 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | Proofread Batch E complete | Final export/audit validation |
+| 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | Proofread Batch E complete | Final export/audit validation |
+| 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | Proofread Batch E complete | Final export/audit validation |
+| 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | Proofread Batch E complete | Final export/audit validation |
 | 21 | The Answer Together | pages 112-125 | Elias / Coalition | First-pass complete | Add public prelude if needed |
 | 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | First-pass complete | Tune trial/forum pacing |
 | 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | First-pass complete | Make Living Anchor costly, not triumphant |
