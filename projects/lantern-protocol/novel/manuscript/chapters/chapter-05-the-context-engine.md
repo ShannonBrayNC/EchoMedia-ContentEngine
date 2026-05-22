@@ -84,6 +84,10 @@ Vendor compliance asks whether Lantern responses should be attached as operation
 State emergency counsel requests template for Lantern technical submissions.
 
 Court filing draft: Lantern-associated artifact admitted for limited technical review.
+
+County emergency board asks whether prior Lantern advisories should be reclassified under the same standard.
+
+Procurement office requests approved language for future AI-associated operational exhibits.
 ```
 
 Mara checked the timestamp.
@@ -202,6 +206,6 @@ The context engine made it useful.
 
 ## Revision Notes
 
-- Sprint 4 first-pass Chapter 5 complete.
-- Next line edit should further distinguish Mara's procedural voice from Cross's institutional voice.
-- Consider adding one more agency example if the citation cascade needs more scale.
+- Sprint 12 line-edit patch applied: expanded the agency-reference scrape to make the citation cascade more concrete.
+- Future edit should further distinguish Mara's procedural voice from Cross's institutional voice if needed.
+- The chapter should remain compact; the danger is the spread of language, not another hearing scene.
