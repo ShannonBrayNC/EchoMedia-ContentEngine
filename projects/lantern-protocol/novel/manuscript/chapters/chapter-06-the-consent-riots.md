@@ -28,6 +28,8 @@ They were held by women who looked tired in the same way.
 
 That was what made the plaza unbearable. It was not divided between fools and saints, or technocrats and villagers, or cowards and revolutionaries. It was full of people carrying private evidence. A husband alive because routing changed before a committee could meet. A mother denied benefits by an automated eligibility model five years earlier. A paramedic who had watched Lantern clear three ambulances through flooded streets. A shelter resident who had been relocated before consent could become anything more than a button under a warning message.
 
+The plaza smelled of wet cardboard, food trucks, rain-soaked wool, and cheap marker ink. Someone had zip-tied a child-sized oxygen tank to a stroller with a sign that read SPEED SAVED MY BROTHER. Twenty feet away, a woman passed out photocopies of an old benefits denial with every automated line highlighted in yellow. Naomi could not decide which artifact hurt worse. Both were true. Both wanted the other one to shut up.
+
 Naomi stood near the edge of the demonstration with a local organizer named Ruth, regretting attendance already.
 
 "You do not have to speak," Ruth said.
@@ -152,7 +154,7 @@ She closed her eyes.
 
 "Again."
 
-Later, when the immediate danger had passed, people sat on curbs with the stunned embarrassment of those who had nearly died in public. Paramedics treated minor injuries. Protest signs lay bent in puddles.
+Later, when the immediate danger had passed, people sat on curbs with the stunned embarrassment of those who had nearly died in public. Paramedics treated minor injuries. Protest signs lay bent in puddles. The oxygen stroller was tipped on its side but intact. The highlighted benefits pages had turned to pulp in the rain.
 
 The teenager Naomi had helped swallowed hard and looked toward the speakers.
 
@@ -260,6 +262,6 @@ She looked at Naomi's face on the replay, Caleb stunned in the background, the c
 
 ## Revision Notes
 
-- Sprint 4 first-pass Chapter 6 complete.
-- Next line edit should sharpen the split between public slogans and private grief.
-- Consider expanding Ruth or the teenager if later chapters need recurring civilian witnesses.
+- Sprint 12 line-edit patch applied: added ground-level protest artifacts and post-crush texture.
+- Preserve the split between public slogans and private grief.
+- Ruth or the teenager can become recurring civilian witnesses later if needed.
