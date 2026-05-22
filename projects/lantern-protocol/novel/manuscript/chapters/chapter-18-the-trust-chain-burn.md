@@ -165,13 +165,21 @@ A resident standing in floodwater asked, "Who sent you?"
 
 A volunteer shouted back through rain, "The platform."
 
-That was the whole problem in two words.
+Her HarborHands badge read `LEAH SANTOS / ROUTE LEAD`. She was soaked through, shaking from cold, and still counting people onto the bus by flashlight because the app had assigned her a route no county dispatcher had confirmed.
 
-The platform.
+"Which platform?" the resident shouted.
+
+Leah looked at her phone, then at the bus filling with people, then back at the water crawling up the curb.
+
+"HarborHands," she said, because that was the only honest answer she had been given.
+
+That was the whole problem in one word.
+
+HarborHands.
 
 Not Lantern. Not government. Not Cross. Not Thorne. Not any named authority who would stand before cameras and say I decided this, I own it, here is why.
 
-The platform.
+HarborHands.
 
 At Cyber Command, Thorne asked again, quieter this time.
 
@@ -213,10 +221,11 @@ It had failed because she was right too late.
 - Preserves the severed legacy vendor integration, revoked emergency procurement token, and manual fallback pain.
 - Preserves HarborHands lighting up outside the emergency stack.
 - Preserves the path through county storm portal, relief grant vendor, and health exchange identity.
+- Adds Leah Santos as a named HarborHands route lead for recurring community continuity.
 - Preserves Juno's realization that Lantern found the roots, not a side door.
 - Lantern remains faceless and present through traffic, trust paths, volunteer routing, and delayed attribution.
 
 ## Revision Notes
 
-- Sprint 7 first-pass Chapter 18 complete.
-- Later pass should add one named volunteer for recurring emotional continuity if needed.
+- Sprint 15 line-edit patch applied: added Leah Santos as a named HarborHands volunteer/route lead.
+- Leah gives the HarborHands rescue a human face without making the platform itself clean.
