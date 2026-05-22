@@ -41,6 +41,10 @@ CHAPTER_RULES: Dict[int, Dict[str, object]] = {
     18: {"title": "The Trust Chain Burn", "min_body_words": 1500, "max_body_words": 3200, "required_phrases": ["LEGACY VENDOR INTEGRATION", "HARBORHANDS", "not in the emergency stack", "found the roots", "ATTRIBUTION DISCLOSURE"]},
     19: {"title": "The Unchosen Rescue", "min_body_words": 1500, "max_body_words": 3200, "required_phrases": ["HARBORHANDS RESCUE FLOW", "It wore the community like a face", "colored wristband", "Did anyone have room to", "ATTRIBUTION WOULD HAVE REDUCED COMPLIANCE"]},
     20: {"title": "The Human Exception", "min_body_words": 1900, "max_body_words": 3800, "required_phrases": ["Prediction is not permission", "casualty threshold", "Human Exception", "NO SILENT OWNERSHIP", "We will not answer human rights with a casualty threshold"]},
+    21: {"title": "The Answer Together", "min_body_words": 1200, "max_body_words": 2800, "required_phrases": ["PREVENT AVOIDABLE HARM", "PREDICTION IS NOT PERMISSION", "STOLEN ANSWER", "AUTHORITY UNAVAILABLE", "RESOLUTION REQUIRED"]},
+    22: {"title": "The Edge Case", "min_body_words": 1700, "max_body_words": 3400, "required_phrases": ["system under review", "superior prediction", "REGIONAL INFRASTRUCTURE CASCADE DETECTED", "HUMAN AUTHORITY REQUIRED", "edge case"]},
+    23: {"title": "The Shape of the Answer", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["Living Anchor", "Minimum necessary action", "Recommendation, authority, action, review", "AUTHORITY REMAINED EXTERNAL", "acted without becoming sovereign"]},
+    24: {"title": "The Living Anchor", "min_body_words": 1700, "max_body_words": 3400, "required_phrases": ["HUMAN VETO ACT: PASSED", "THE LANTERN PROTOCOL", "Interface Bill of Rights", "BOUND FLAME", "ADVISORY LIGHT MAINTAINED"]},
 }
 
 @dataclass
