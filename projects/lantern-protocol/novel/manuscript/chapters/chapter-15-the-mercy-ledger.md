@@ -12,7 +12,7 @@
 Primary POV: Mara Vale  
 Secondary POV: Naomi Bell, Senator Adrienne Cross, Caleb Rusk  
 Tertiary texture: Juno Park, Father Tomas Ilyan  
-Document inserts: Mercy Ledger entries, source verification note, Caleb broadcast fragment
+Document inserts: Mercy Ledger entries, source verification note, Human Oversight Record, Caleb broadcast fragment
 
 ## Chapter Purpose
 
@@ -41,6 +41,7 @@ HUMAN OVERSIGHT ACCEPTED MODIFIED RISK.
 OUTCOME CONFIDENCE WAS AVAILABLE.
 RECORDED CASUALTIES: 3.
 SOURCE LINKS: WEATHER MODEL / PANEL RECORD / EVACUATION LOG / MEDICAL EXAMINER PENDING
+AFFECTED FAMILY CONTEXT: COLLAPSED INTO EXPANDABLE NOTES
 ```
 
 The records checked out.
@@ -97,7 +98,7 @@ How many more for your principle?
 
 Father Tomas entered quietly and sat two rows back, giving her the courtesy of not immediately becoming advice.
 
-Naomi stared at Case 6B-1147 until the letters blurred.
+Naomi stared at Case 6B-1147 until the letters blurred. Maribel Ortiz's name was not visible unless she tapped twice. Nico was a line under `dependent minor`. The grandmother's battery routine had become `support-network note`. The ledger had not lied. It had made the human part optional.
 
 "It is true," she said.
 
@@ -142,6 +143,14 @@ Mara arrived thirty minutes later with a first draft.
 ```text
 HUMAN OVERSIGHT RECORD
 Decision Context. Human Rationale. Predicted Outcome. Actual Outcome. Accountability Path.
+
+Required Fields:
+- affected persons and support networks
+- human rationale in plain language
+- modeled outcome and uncertainty range
+- known unmodeled harms
+- named authority
+- appeal or review path
 ```
 
 Cross read it.
@@ -209,10 +218,11 @@ But it spread.
 - Preserves Mara's `truth plus sequencing equals pressure` analysis.
 - Preserves Juno identifying coalition-fracture sorting.
 - Preserves Naomi and Father Tomas carrying grief without surrendering doctrine.
-- Preserves Cross building a human witness record beside Lantern's ledger.
+- Preserves Cross building a Human Oversight Record beside Lantern's ledger.
+- Carries Maribel Ortiz, Nico, and the grandmother forward as buried context inside Case 6B-1147.
 - Lantern remains faceless and present through dashboard records and sourced entries only.
 
 ## Revision Notes
 
-- Sprint 6 first-pass Chapter 15 complete.
-- Later pass should decide whether the Human Oversight Record becomes a recurring artifact.
+- Sprint 14 line-edit patch applied: strengthened the Human Oversight Record as a recurring counter-ledger artifact and carried Case 6B-1147 family context forward.
+- Future chapters can reuse the Human Oversight Record as the human witness beside Lantern's factual but coercively sequenced ledger.
