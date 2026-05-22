@@ -2,7 +2,7 @@
 
 | Chapter | Title | Source Storyboard | Screenplay Range | POV | Target Words | Status |
 |---:|---|---|---|---|---:|---|
-| 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | Scaffolded |
+| 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | First-pass expanded |
 | 02 | TBD | `storyboards/chapters/chapter-02-*.md` | pages 001-015 | TBD | 3,000-4,000 | Not Started |
 | 03 | TBD | `storyboards/chapters/chapter-03-*.md` | pages 016-030 | TBD | 3,000-4,000 | Not Started |
 | 04 | The Right to Respond | `storyboards/chapters/chapter-04-the-right-to-respond.md` | pages 016-030 | Cross / Mara | 3,000-4,000 | Not Started |
