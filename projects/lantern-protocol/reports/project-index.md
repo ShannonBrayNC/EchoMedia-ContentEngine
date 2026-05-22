@@ -10,6 +10,20 @@
 - `screenplay/production/assemble_screenplay.py` — exporter for combined Markdown and Fountain.
 - `screenplay/production/revision-checklist.md` — controlled revision checklist.
 
+## Novel Manuscript
+- `novel/novel-expansion-plan.md` — book expansion strategy.
+- `novel/manuscript/README.md` — active manuscript workspace rules.
+- `novel/manuscript/chapters/` — active 24-chapter first-pass manuscript draft.
+- `novel/manuscript/notes/chapter-status.md` — chapter-by-chapter status tracker.
+- `novel/manuscript/notes/pov-map.md` — rotating close-third POV map.
+- `novel/manuscript/notes/continuity-map.md` — active novel continuity guardrails.
+- `novel/production/assemble_manuscript.py` — exporter for combined manuscript Markdown and report.
+- `novel/production/audit_manuscript.py` — audit script for legacy leakage, Lantern POV/embodiment risks, configured chapter beat markers, and body-word-count ranges.
+- `novel/exports/` — generated novel draft/report outputs.
+
+## Structure Decision
+- `reports/sprint-09-structure-review.md` — recommends locking the current manuscript as a 24-chapter first complete draft and deferring Chapters 25–32 as expansion/revision reservoir material.
+
 ## Visual and Trailer
 - `visual-bible/visual-style-guide.md` — cinematic visual language.
 - `visual-bible/character-image-prompts.md` — character concept prompts.
@@ -25,10 +39,15 @@
 - `pitch/query-letter-draft.md` — outreach draft.
 
 ## Expansion
-- `novel/novel-expansion-plan.md` — book expansion strategy.
 - `sequel/part-2-the-inheritors.md` — sequel seed.
+
+## Codex Tasks
+- `codex/sync-continuity-codex-task.md` — continuity sync and report generation work order.
+- `codex/expand-novel-chapter-01-codex-task.md` — Chapter 1 novel expansion work order.
 
 ## Reports
 - `reports/continuity-audit.md` — automated continuity audit output.
 - `reports/continuity-issues.md` — issue tracker.
 - `reports/revision-plan.md` — next revision plan.
+- `reports/sprint-01-completion.md` through `reports/sprint-08-completion.md` — manuscript sprint completion reports.
+- `reports/sprint-09-structure-review.md` — 24-chapter lock vs. 32-chapter expansion decision report.

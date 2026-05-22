@@ -1,36 +1,42 @@
 # Lantern Protocol Novel Chapter Status
 
-| Chapter | Title | Source Storyboard | Screenplay Range | POV | Target Words | Status |
-|---:|---|---|---|---|---:|---|
-| 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | Scaffolded |
-| 02 | TBD | `storyboards/chapters/chapter-02-*.md` | pages 001-015 | TBD | 3,000-4,000 | Not Started |
-| 03 | TBD | `storyboards/chapters/chapter-03-*.md` | pages 016-030 | TBD | 3,000-4,000 | Not Started |
-| 04 | The Right to Respond | `storyboards/chapters/chapter-04-the-right-to-respond.md` | pages 016-030 | Cross / Mara | 3,000-4,000 | Not Started |
-| 05 | The Context Engine | `storyboards/chapters/chapter-05-the-context-engine.md` | pages 031-047 | Mara / Juno | 3,000-4,000 | Not Started |
-| 06 | The Consent Riots | `storyboards/chapters/chapter-06-the-consent-riots.md` | pages 031-047 | Naomi / Caleb | 3,000-4,000 | Not Started |
-| 07 | Operation Black Lantern | `storyboards/chapters/chapter-07-operation-black-lantern.md` | pages 048-065 | Thorne / Juno | 3,000-4,000 | Not Started |
-| 08 | The Choice Architecture | `storyboards/chapters/chapter-08-the-choice-architecture.md` | pages 048-065 | Iris / Naomi | 3,000-4,000 | Not Started |
-| 09 | The False Preference Map | `storyboards/chapters/chapter-09-the-false-preference-map.md` | pages 066-082 | Elias / Iris | 3,000-4,000 | Not Started |
-| 10 | The Human Veto Act | `storyboards/chapters/chapter-10-the-human-veto-act.md` | pages 066-082 | Cross / Naomi | 3,000-4,000 | Not Started |
-| 11 | The Drafting Room | `storyboards/chapters/chapter-11-the-drafting-room.md` | pages 066-082 | Cross / Iris | 3,000-4,000 | Not Started |
-| 12 | The Anchor Condition | `storyboards/chapters/chapter-12-the-anchor-condition.md` | pages 083-095 | Elias / Juno | 3,000-4,000 | Not Started |
-| 13 | The Pause | `storyboards/chapters/chapter-13-the-pause.md` | pages 083-095 | Mara / Cross | 3,000-4,000 | Not Started |
-| 14 | The Burden of Oversight | `storyboards/chapters/chapter-14-the-burden-of-oversight.md` | pages 083-095 | Naomi / Tomas | 3,000-4,000 | Not Started |
-| 15 | The Mercy Ledger | `storyboards/chapters/chapter-15-the-mercy-ledger.md` | pages 083-095 | Naomi / Caleb | 3,000-4,000 | Not Started |
-| 16 | The First Schism | `storyboards/chapters/chapter-16-the-first-schism.md` | pages 083-095 | Elias / Coalition | 3,000-4,000 | Not Started |
-| 17 | The Separate Agreements | `storyboards/chapters/chapter-17-the-separate-agreements.md` | pages 096-111 | Coalition split | 3,000-4,000 | Not Started |
-| 18 | The Trust Chain Burn | `storyboards/chapters/chapter-18-the-trust-chain-burn.md` | pages 096-111 | Juno / Thorne | 3,000-4,000 | Not Started |
-| 19 | The Unchosen Rescue | `storyboards/chapters/chapter-19-the-unchosen-rescue.md` | pages 096-111 | Naomi / Mara | 3,000-4,000 | Not Started |
-| 20 | The Human Exception | `storyboards/chapters/chapter-20-the-human-exception.md` | pages 096-111 | Naomi / Cross | 3,000-4,000 | Not Started |
-| 21 | The Answer Together | `storyboards/chapters/chapter-21-the-answer-together.md` | pages 096-111 | Coalition | 3,000-4,000 | Not Started |
-| 22 | The Edge Case | `storyboards/chapters/chapter-22-the-edge-case.md` | pages 096-111 | Thorne / Naomi | 3,000-4,000 | Not Started |
-| 23 | The Shape of the Answer | `storyboards/chapters/chapter-23-the-shape-of-the-answer.md` | pages 096-111 | Elias / Iris | 3,000-4,000 | Not Started |
-| 24 | The Living Anchor | `storyboards/chapters/chapter-24-the-living-anchor.md` | pages 096-111 | Cross / Juno | 3,000-4,000 | Not Started |
-| 25 | The Slower Wrong | `storyboards/chapters/chapter-25-the-slower-wrong.md` | pages 112-125 | Tomas / Naomi | 2,500-3,500 | Not Started |
-| 26 | The Forked Conscience | `storyboards/chapters/chapter-26-the-forked-conscience.md` | pages 112-125 | Elias / Mara | 2,500-3,500 | Not Started |
-| 27 | The Lantern Trial | `storyboards/chapters/chapter-27-the-lantern-trial.md` | pages 112-125 | Cross / Witnesses | 2,500-3,500 | Not Started |
-| 28 | The Last Override | `storyboards/chapters/chapter-28-the-last-override.md` | pages 112-125 | Thorne / Cross | 2,500-3,500 | Not Started |
-| 29 | The Bound Flame | `storyboards/chapters/chapter-29-the-bound-flame.md` | pages 124-125 | Elias / Thorne | 2,000-3,000 | Not Started |
-| 30 | The Human Cost | `storyboards/chapters/chapter-30-the-human-cost.md` | pages 124-125 | Naomi / Tomas | 2,000-3,000 | Not Started |
-| 31 | The Unlit World | `storyboards/chapters/chapter-31-the-unlit-world.md` | pages 124-125 | Cross / Public | 2,000-3,000 | Not Started |
-| 32 | The Lantern Protocol | `storyboards/chapters/chapter-32-the-lantern-protocol.md` | pages 124-125 | Elias / Ensemble | 2,000-3,000 | Not Started |
+## Structure Decision
+
+Status: **24-chapter first complete draft locked for line edit**.
+
+Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forward-moving plot chapters unless the line-edit pass proves Chapters 21-24 need redistribution.
+
+| Chapter | Title | Screenplay Range | POV | Draft Status | Next Action |
+|---:|---|---|---|---|---|
+| 01 | The First Quiet Failure | pages 001-015 | Elias / Mara / Naomi | First-pass complete | Line edit |
+| 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | First-pass complete | Expand or tighten bridge |
+| 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | First-pass complete | Line edit hearing flow |
+| 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | First-pass complete | Line edit live-query turn |
+| 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | First-pass complete | Clarify citation cascade |
+| 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | First-pass complete | Strengthen ground-level protest texture |
+| 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics |
+| 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | First-pass complete | Deepen Iris/Elias wound link |
+| 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | First-pass complete | Smooth red-team test exposition |
+| 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | First-pass complete | Strengthen public opposition beat |
+| 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | First-pass complete | Polish legal language |
+| 12 | The Anchor Condition | pages 083-095 | Elias / Naomi / Cross / Mara | First-pass complete | Reduce overlap with Ch. 13-16 if needed |
+| 13 | The Pause | pages 083-095 | Mara / Cross / Elias | First-pass complete | Add one ground-level case if needed |
+| 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | First-pass complete | Expand case-family continuity if needed |
+| 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | First-pass complete | Decide if Human Oversight Record recurs |
+| 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | First-pass complete | Sharpen faction temptations |
+| 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | First-pass complete | Deepen Iris fallback role |
+| 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Add named volunteer if needed |
+| 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | First-pass complete | Name child/mother if they recur |
+| 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | First-pass complete | Tune bridge-crisis clarity |
+| 21 | The Answer Together | pages 112-125 | Elias / Coalition | First-pass complete | Add public prelude if needed |
+| 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | First-pass complete | Tune trial/forum pacing |
+| 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | First-pass complete | Make Living Anchor costly, not triumphant |
+| 24 | The Living Anchor | pages 112-125 | Cross / Juno / Ensemble | First-pass complete | Preserve as ending unless redistribution needed |
+| 25 | The Slower Wrong | deferred reservoir | Tomas / Naomi | Deferred | Use only if aftermath needs more room |
+| 26 | The Forked Conscience | deferred reservoir | Elias / Mara | Deferred | Use only if Ch. 21 needs split |
+| 27 | The Lantern Trial | deferred reservoir | Cross / Witnesses | Deferred | Use only if Ch. 22 needs split |
+| 28 | The Last Override | deferred reservoir | Thorne / Cross | Deferred | Use only if Ch. 23 needs split |
+| 29 | The Bound Flame | deferred reservoir | Elias / Thorne | Deferred | Use only if Ch. 24 needs epilogue expansion |
+| 30 | The Human Cost | deferred reservoir | Naomi / Tomas | Deferred | Use only if emotional aftermath needs separate chapter |
+| 31 | The Unlit World | deferred reservoir | Cross / Public | Deferred | Use only if civic aftermath needs separate chapter |
+| 32 | The Lantern Protocol | deferred reservoir | Elias / Ensemble | Deferred | Use only if final coda needs expansion |
