@@ -28,10 +28,10 @@ Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forw
 | 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | Proofread Batch E complete | Final export/audit validation |
 | 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | Proofread Batch E complete | Final export/audit validation |
 | 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | Proofread Batch E complete | Final export/audit validation |
-| 21 | The Answer Together | pages 112-125 | Elias / Coalition | First-pass complete | Add public prelude if needed |
-| 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | First-pass complete | Tune trial/forum pacing |
-| 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | First-pass complete | Make Living Anchor costly, not triumphant |
-| 24 | The Living Anchor | pages 112-125 | Cross / Juno / Ensemble | First-pass complete | Preserve as ending unless redistribution needed |
+| 21 | The Answer Together | pages 112-125 | Elias / Coalition | Proofread Batch F complete | Final export/audit validation |
+| 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | Proofread Batch F complete | Final export/audit validation |
+| 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | Proofread Batch F complete | Final export/audit validation |
+| 24 | The Living Anchor | pages 112-125 | Cross / Juno / Ensemble | Proofread Batch F complete | Final export/audit validation |
 | 25 | The Slower Wrong | deferred reservoir | Tomas / Naomi | Deferred | Use only if aftermath needs more room |
 | 26 | The Forked Conscience | deferred reservoir | Elias / Mara | Deferred | Use only if Ch. 21 needs split |
 | 27 | The Lantern Trial | deferred reservoir | Cross / Witnesses | Deferred | Use only if Ch. 22 needs split |
