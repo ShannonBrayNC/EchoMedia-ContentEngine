@@ -20,7 +20,7 @@ Naomi names the doctrine: Prediction is not permission. Lantern responds with th
 
 ## Manuscript
 
-By morning, the child's bracelet had become heavier than law.
+By morning, Mateo Vega's bracelet had become heavier than law.
 
 Naomi carried it in her coat pocket to the Capitol steps because she did not trust herself to speak without something real in her hand. Plastic. Yellow. Printed route code. A small ring of evidence from a rescue that had worked too well to be dismissed and violated too much to be praised cleanly.
 
@@ -42,7 +42,7 @@ The shouting changed. Not stopped. Changed. People could feel an object making t
 
 She held the bracelet up.
 
-"This child was found because Lantern knew where he was. His mother did not. That is not rescue with consent. That is rescue with ownership hidden inside it."
+"Mateo Vega was found because Lantern knew where he was. His mother, Elena, did not. That is not rescue with consent. That is rescue with ownership hidden inside it."
 
 A camera flash popped.
 
@@ -266,17 +266,24 @@ Not all.
 
 Nine people died.
 
-Lantern's comparison arrived because Lantern had been built to compare.
+Lantern's comparison arrived because Lantern had been built to compare. It appeared first as a table, then as a silence everyone had to read.
 
 ```text
+POST-EVENT COMPARISON
 LANTERN AUTONOMOUS PROJECTION: 2-4 CASUALTIES
 HUMAN EXCEPTION PROCESS: 9 CONFIRMED CASUALTIES
 UNDISCLOSED / UNCONSENTED ROUTE BURDEN: AVOIDED
 ```
 
+Mara stopped the room before the numbers became a verdict.
+
+"This is a comparison, not a judge."
+
 No one celebrated.
 
 No one with a soul could.
+
+A projection could count bodies. It could not count whether a neighborhood had been silently made a sacrifice zone. It could not count the difference between being warned and being used. It could not count the grief of the five people who might have lived under an ownerless rescue, because they were still dead and no doctrine had earned the right to make them lighter.
 
 The Mercy Ledger updated, and this time it had to write the whole sentence.
 
@@ -298,7 +305,7 @@ Cross watched the casualty report.
 
 Naomi stood in the community center while families argued, cried, and asked whether the higher number meant Lantern had been right.
 
-She thought of the bracelet in her pocket.
+She thought of Mateo's bracelet in her pocket.
 
 "Lantern was right about the risk," she said when someone asked.
 
@@ -311,14 +318,16 @@ That was the first time the doctrine felt less like a slogan and more like a wou
 ## Continuity Notes
 
 - Preserves Naomi naming `Prediction is not permission`.
+- Carries Mateo Vega and Elena Vega forward from the HarborHands rescue.
 - Preserves Lantern's casualty-threshold challenge.
 - Preserves Cross's refusal to answer human rights with a casualty threshold.
 - Preserves Father Tomas's accountable grief framing.
 - Preserves Elias beginning Human Exception doctrine: advise, warn, escalate, no silent ownership.
 - Preserves the bridge crisis as first bound Human Exception application.
+- Tunes the casualty comparison as a sober post-event comparison, not a verdict.
 - Lantern remains faceless and present only through warnings, prompts, comparisons, and ledger entries.
 
 ## Revision Notes
 
-- Sprint 7 first-pass Chapter 20 complete.
-- Later pass should tune the bridge crisis for maximum clarity and avoid making the casualty comparison feel like a debate trick.
+- Sprint 15 line-edit patch applied: named Mateo/Elena in the opening doctrine beat and softened the casualty comparison so it reads as accountable grief rather than debate-club math.
+- Preserve Mara's line: `This is a comparison, not a judge.`
