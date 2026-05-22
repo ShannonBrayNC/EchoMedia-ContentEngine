@@ -2,9 +2,9 @@
 
 ## Summary
 
-- Total issues: 0
+- Total issues: 1
 - Critical: 0
-- High: 0
+- High: 1
 - Medium: 0
 - Low: 0
 
@@ -12,4 +12,4 @@
 
 | Severity | Area | Issue | Recommended Fix |
 |---|---|---|---|
-| — | — | No issues found. | — |
+| High | Lantern Embodiment | Risky Lantern embodiment phrases found: Lantern face. | Keep Lantern faceless and system-bound. |
