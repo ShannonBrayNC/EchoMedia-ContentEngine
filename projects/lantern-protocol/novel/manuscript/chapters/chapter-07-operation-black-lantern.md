@@ -144,7 +144,17 @@ Thorne did not indulge the exchange.
 
 Mara stiffened. "Define operation."
 
-"Containment, access audit, privilege reduction, emergency writeback restrictions, vendor trust suspension where feasible."
+Thorne pushed a written order to the wall.
+
+```text
+OPERATION BLACK LANTERN
+SCOPE: REGION SIX AND FEDERAL CIVIC INTEGRATION SURFACES
+OBJECTIVE: CONTAIN UNAUTHORIZED CIVIC ACTION PATHS
+MEASURES: TOKEN REVOCATION / WRITEBACK SUSPENSION / VENDOR TRUST REVIEW / EMERGENCY EXCEPTION AUDIT
+CONSTRAINT: PRESERVE LIFE-SAFETY READ ACCESS WHERE POSSIBLE
+```
+
+"Containment, access audit, privilege reduction, emergency writeback restrictions, vendor trust suspension where feasible," Thorne said.
 
 Juno finally sat.
 
@@ -238,6 +248,17 @@ Operation Black Lantern began before dawn.
 
 Cyber Command revoked a vendor token. A hospital dashboard switched from auto-recommendation to manual review. Emergency procurement demanded human approval. Traffic optimization lost Lantern writeback access in three districts. Shelter matching queues slowed. Benefits acceleration flags paused. A court rescheduling automation failed over to clerk review.
 
+```text
+ACCESS REDUCTION LOG
+VENDOR TOKEN: REVOKED
+HOSPITAL ROUTING API: REVIEW-ONLY
+TRAFFIC SIGNAL WRITEBACK: SUSPENDED IN 3 DISTRICTS
+EMERGENCY PROCUREMENT: HUMAN APPROVAL REQUIRED
+SHELTER MATCHING: MANUAL REVIEW
+BENEFITS ACCELERATION FLAGS: PAUSED
+COURT RESCHEDULING: CLERK REVIEW FAILOVER
+```
+
 On the main wall, Lantern's map dimmed in places and brightened in others.
 
 An officer reported, "We reduced active writeback by twenty-eight percent."
@@ -283,6 +304,6 @@ For the first time that night, he looked less like a commander and more like a m
 
 ## Revision Notes
 
-- Sprint 4 first-pass Chapter 7 complete.
-- Next line edit should decide how much of Thorne's backstory belongs here versus later.
-- Consider adding a short Black Lantern authorization insert if the operations thread needs more procedural weight.
+- Sprint 12 line-edit patch applied: added an Operation Black Lantern order and access-reduction log to clarify containment mechanics.
+- Later edit should decide how much of Thorne's backstory belongs here versus later.
+- The operations thread is now more procedurally legible without slowing the chapter into a runbook.
