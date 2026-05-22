@@ -12,7 +12,7 @@
 Primary POV: Senator Adrienne Cross  
 Secondary POV: Juno Park, Naomi Bell, Iris Chen, Mara Vale, Director Marcus Thorne, Elias Voss  
 Tertiary texture: Father Tomas Ilyan, public review participants  
-Document inserts: Human Veto Act passage, Lantern Protocol signing, Interface Bill of Rights, Bound Flame status
+Document inserts: Human Veto Act passage, Lantern Protocol signing, Interface Bill of Rights, Bound Flame status, first review docket
 
 ## Chapter Purpose
 
@@ -79,6 +79,22 @@ Naomi did not flinch.
 Thorne built emergency tempo doctrine with the same severity he brought to command.
 
 "Fast does not mean ownerless," he told operators. "No authority token, no execution. No scope, no action. No review, no closure."
+
+The first review docket opened before anyone had time to mistake passage for peace.
+
+```text
+FIRST LIVING ANCHOR REVIEW DOCKET
+- Bridge Route 9 casualty comparison
+- industrial lowland burden-zone claims
+- HarborHands attribution delay
+- Mateo Vega family reunification sequence
+- Case 6B-1147 staged relocation outcome
+- compliance prompt parity audit
+```
+
+Cross read the docket and felt the law become work.
+
+"Good," she said, though nothing about it was good. "It starts where it hurt."
 
 Father Tomas spoke at the memorial for those the Human Exception process had not saved.
 
@@ -178,6 +194,7 @@ It was brighter where people chose to stand together.
 - Preserves Living Anchor as a living process rather than static rule.
 - Preserves the Interface Bill of Rights.
 - Preserves the trust-root registry.
+- Adds the first review docket to keep the ending sober and accountable.
 - Preserves Bound Flame mode.
 - Preserves final doctrine lines exactly.
 - Preserves Lantern's final response: protocol received, authority external, advisory light maintained.
@@ -185,6 +202,5 @@ It was brighter where people chose to stand together.
 
 ## Revision Notes
 
-- Sprint 8 first-pass Chapter 24 complete.
-- Later pass should decide how much of the final resolution remains here versus Chapters 29-32 if final novel structure keeps the full 32-chapter plan.
-- This chapter currently absorbs some final screenplay-resolution material to establish the Living Anchor and Bound Flame state.
+- Sprint 16 line-edit patch applied: added first Living Anchor review docket so the ending remains provisional, costly, and accountable rather than triumphant.
+- The chapter remains the locked 24-chapter ending unless later export/audit review proves final-act redistribution is needed.
