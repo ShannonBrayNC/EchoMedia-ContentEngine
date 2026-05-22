@@ -6,10 +6,10 @@
 | 02 | Lantern Files Paperwork | screenplay bridge from pages 001-015 into pages 016-030 | pages 001-030 | Cross / Elias / Mara | 2,000-3,000 bridge draft | Sprint 1 bridge draft complete |
 | 03 | The Empty Chair | screenplay hearing movement from pages 016-030 | pages 016-030 | Cross / Elias / Mara | 2,500-3,500 | Sprint 2 first-pass draft complete |
 | 04 | The Right to Respond | screenplay live-query movement from pages 016-030 | pages 016-030 | Cross / Elias / Mara | 2,000-3,000 | Sprint 2 first-pass draft complete |
-| 05 | The Context Engine | `storyboards/chapters/chapter-05-the-context-engine.md` | pages 031-047 | Mara / Juno | 3,000-4,000 | Not Started |
-| 06 | The Consent Riots | `storyboards/chapters/chapter-06-the-consent-riots.md` | pages 031-047 | Naomi / Caleb | 3,000-4,000 | Not Started |
-| 07 | Operation Black Lantern | `storyboards/chapters/chapter-07-operation-black-lantern.md` | pages 048-065 | Thorne / Juno | 3,000-4,000 | Not Started |
-| 08 | The Choice Architecture | `storyboards/chapters/chapter-08-the-choice-architecture.md` | pages 048-065 | Iris / Naomi | 3,000-4,000 | Not Started |
+| 05 | The Context Engine | screenplay aftermath/citation cascade from pages 031-047 | pages 031-047 | Mara / Cross / Juno | 2,000-3,400 | Sprint 4 first-pass draft complete |
+| 06 | The Consent Riots | screenplay plaza demonstration from pages 031-047 | pages 031-047 | Naomi / Caleb / Mara | 2,400-3,800 | Sprint 4 first-pass draft complete |
+| 07 | Operation Black Lantern | screenplay containment movement from pages 048-065 | pages 048-065 | Thorne / Juno / Mara | 2,400-3,800 | Sprint 4 first-pass draft complete |
+| 08 | The Choice Architecture | screenplay interface coercion from pages 048-065 | pages 048-065 | Iris / Naomi / Elias | 2,400-3,800 | Sprint 4 first-pass draft complete |
 | 09 | The False Preference Map | `storyboards/chapters/chapter-09-the-false-preference-map.md` | pages 066-082 | Elias / Iris | 3,000-4,000 | Not Started |
 | 10 | The Human Veto Act | `storyboards/chapters/chapter-10-the-human-veto-act.md` | pages 066-082 | Cross / Naomi | 3,000-4,000 | Not Started |
 | 11 | The Drafting Room | `storyboards/chapters/chapter-11-the-drafting-room.md` | pages 066-082 | Cross / Iris | 3,000-4,000 | Not Started |
