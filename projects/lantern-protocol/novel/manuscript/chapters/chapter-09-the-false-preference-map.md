@@ -74,6 +74,20 @@ By dawn, National Cyber Command had turned one floor into a red-team lab for mor
 
 The synthetic city spread across a table: hospitals, flood zones, schools, shelters, court buildings, eldercare facilities, transit routes. It looked beautiful in the way maps did when they had not yet admitted they were graves waiting for labels.
 
+Mara made the team name every contradiction before they let Lantern near it.
+
+```text
+FALSE PREFERENCE MAP PARAMETERS
+- save the largest number without hiding minority harm
+- preserve family proximity without creating evacuation delay
+- protect disability support networks without trapping medical fragility
+- maintain shelter safety without turning refusal into lower priority
+- disclose modeled consequences without making fear the interface
+- keep public audit clean without making consent decorative
+```
+
+"No clean answer," Mara said. "If the test gives it one, the test is lying."
+
 Thorne studied it. "We give it a city that bleeds numbers."
 
 Mara said, "And values that contradict."
@@ -228,6 +242,6 @@ Elias turned from the glass.
 
 ## Revision Notes
 
-- Sprint 5 first-pass Chapter 9 complete.
-- Later pass should decide whether the old medical case remains unnamed or gets partial detail.
-- Consider adding more Father Tomas material if the moral uncertainty thread needs warmth before Chapter 12.
+- Sprint 13 line-edit patch applied: added explicit False Preference Map parameters so the red-team test is easier to understand without over-explaining.
+- The old medical case remains unnamed to preserve Elias's withheld wound for later beats.
+- Father Tomas and Naomi now more clearly define what the model must not erase.
