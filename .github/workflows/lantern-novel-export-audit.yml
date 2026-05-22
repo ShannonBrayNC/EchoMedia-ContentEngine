@@ -1,0 +1,65 @@
+name: Lantern Novel Export and Audit
+
+on:
+  pull_request:
+    paths:
+      - "projects/lantern-protocol/novel/**"
+      - "projects/lantern-protocol/reports/**"
+      - ".github/workflows/lantern-novel-export-audit.yml"
+  push:
+    branches:
+      - cleanup/lantern-canon-freeze-v2
+    paths:
+      - "projects/lantern-protocol/novel/**"
+      - "projects/lantern-protocol/reports/**"
+      - ".github/workflows/lantern-novel-export-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export-and-audit:
+    name: Export and audit Lantern novel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Assemble manuscript exports
+        working-directory: projects/lantern-protocol/novel
+        run: python ./production/assemble_manuscript.py
+
+      - name: Run manuscript audit
+        working-directory: projects/lantern-protocol/novel
+        run: python ./production/audit_manuscript.py
+
+      - name: Check generated exports are current
+        shell: bash
+        run: |
+          git status --short projects/lantern-protocol/novel/exports
+          if ! git diff --quiet -- projects/lantern-protocol/novel/exports; then
+            echo "Generated Lantern novel exports are stale."
+            echo "Run these locally and commit the results:"
+            echo "  cd projects/lantern-protocol/novel"
+            echo "  python ./production/assemble_manuscript.py"
+            echo "  python ./production/audit_manuscript.py"
+            git diff -- projects/lantern-protocol/novel/exports
+            exit 1
+          fi
+
+      - name: Upload generated exports
+        uses: actions/upload-artifact@v4
+        with:
+          name: lantern-novel-exports
+          path: |
+            projects/lantern-protocol/novel/exports/lantern-protocol-novel-draft.md
+            projects/lantern-protocol/novel/exports/lantern-protocol-novel-report.md
+            projects/lantern-protocol/novel/exports/lantern-protocol-novel-audit.md
+          if-no-files-found: error
