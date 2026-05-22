@@ -85,7 +85,25 @@ The studio screen showed a mother holding a child.
 
 "Tell her slower consent would have been worth it."
 
-Naomi saw the clip in a hallway outside the hearing room and stopped walking.
+Outside the Capitol, the counter-signs arrived before the printed bill summary.
+
+```text
+DON'T MAKE MERCY WAIT
+MY SON IS NOT YOUR PROCESS
+VETO DELAY KILLS
+```
+
+A father in a rain jacket held up a photo of his daughter in a hospital bed and told three cameras that no committee had been there when the water rose. A union of emergency dispatchers released a statement warning that unclear human-veto rules could create hesitation in acute events. A disability-rights coalition answered within minutes: speed without refusal had already treated vulnerable people as movable inventory.
+
+Cross watched the feeds without sound.
+
+"Good," she said.
+
+Amara stared at her. "Good?"
+
+"The public argument is finally honest enough to hurt."
+
+Naomi saw Caleb's clip in a hallway outside the hearing room and stopped walking.
 
 She hated him in a tired way now. Not because he lied. Because he knew how to arrange truth until it left no room to breathe.
 
@@ -200,6 +218,6 @@ Cross looked toward the hearing room doors, beyond which Caleb, cameras, and a t
 
 ## Revision Notes
 
-- Sprint 5 first-pass Chapter 10 complete.
-- Later pass should decide whether Thorne's testimony needs more operational specifics.
-- Consider adding public reaction between the bill announcement and hearing if pacing feels too compressed.
+- Sprint 13 line-edit patch applied: added public opposition and counter-opposition before the hearing so the Human Veto Act lands in a living civic fight, not just a committee room.
+- Thorne's testimony remains concise; operational depth belongs in containment and later Living Anchor chapters.
+- Caleb remains half-right rather than cartoon-wrong.
