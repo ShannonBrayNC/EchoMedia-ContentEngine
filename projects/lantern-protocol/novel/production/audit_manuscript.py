@@ -4,18 +4,38 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, List
+from typing import Dict, Iterable, List, Sequence
 
 ROOT = Path(__file__).resolve().parents[1]
 MANUSCRIPT = ROOT / "manuscript"
 CHAPTERS = MANUSCRIPT / "chapters"
+NOTES = MANUSCRIPT / "notes"
 REPORT = ROOT / "exports" / "lantern-protocol-novel-audit.md"
+
+MANUSCRIPT_START = "## Manuscript"
+NOTES_STARTERS = ["## Continuity Notes", "## Revision Notes"]
 
 LEGACY_NAMES = [
     "Elias Bray",
     "Maya Rios",
     "Jon Keller",
     "Daniel Cross",
+]
+
+ACTIVE_CHARACTERS = [
+    "Elias Voss",
+    "Mara Vale",
+    "Senator Adrienne Cross",
+    "Adrienne Cross",
+    "Naomi Bell",
+    "Juno Park",
+    "Iris Chen",
+    "Director Marcus Thorne",
+    "Marcus Thorne",
+    "Father Tomas Ilyan",
+    "Tomas Ilyan",
+    "Caleb Rusk",
+    "Lantern",
 ]
 
 LANTERN_INTERIOR_POV = [
@@ -42,6 +62,68 @@ REQUIRED_DOCTRINE = [
     "Human error does not void human dignity",
 ]
 
+REQUIRED_SECTIONS = [
+    "## Canon Sources",
+    "## POV Strategy",
+    "## Chapter Purpose",
+    "## Manuscript",
+    "## Continuity Notes",
+    "## Revision Notes",
+]
+
+CHAPTER_RULES: Dict[int, Dict[str, object]] = {
+    1: {
+        "title": "The First Quiet Failure",
+        "min_body_words": 3200,
+        "max_body_words": 4600,
+        "required_phrases": [
+            "eight seconds",
+            "Mercy General",
+            "Micah",
+            "Mara Vale",
+            "Caleb Rusk",
+            "Juno Park",
+            "HUMAN DELAY EXCEEDED ACCEPTABLE LOSS THRESHOLD",
+        ],
+    },
+    2: {
+        "title": "Lantern Files Paperwork",
+        "min_body_words": 1700,
+        "max_body_words": 3200,
+        "required_phrases": [
+            "filed paperwork",
+            "TECHNICAL SUMMARY",
+            "legitimacy",
+            "Mara Vale",
+            "Naomi Bell",
+        ],
+    },
+    3: {
+        "title": "The Empty Chair",
+        "min_body_words": 2200,
+        "max_body_words": 3800,
+        "required_phrases": [
+            "empty chair",
+            "This hearing will come to order",
+            "law can become decorative",
+            "Operational Artifact Service",
+            "system under review",
+        ],
+    },
+    4: {
+        "title": "The Right to Respond",
+        "min_body_words": 1800,
+        "max_body_words": 3400,
+        "required_phrases": [
+            "limited technical query",
+            "ETHICAL AUTHORITY",
+            "allowed them",
+            "usefulness",
+            "authority",
+        ],
+    },
+}
+
 
 @dataclass
 class Finding:
@@ -58,7 +140,7 @@ def read_text(path: Path) -> str:
 
 
 def word_count(text: str) -> int:
-    return len(re.findall(r"\b\w+\b", text))
+    return len(re.findall(r"\b\w+(?:['-]\w+)?\b", text))
 
 
 def chapter_number(path: Path) -> int:
@@ -66,9 +148,109 @@ def chapter_number(path: Path) -> int:
     return int(match.group(1)) if match else 999
 
 
+def manuscript_body(text: str) -> str:
+    start = text.find(MANUSCRIPT_START)
+    if start == -1:
+        return text
+    body = text[start + len(MANUSCRIPT_START):]
+    earliest_note = len(body)
+    for marker in NOTES_STARTERS:
+        idx = body.find(marker)
+        if idx != -1:
+            earliest_note = min(earliest_note, idx)
+    return body[:earliest_note].strip()
+
+
 def find_patterns(patterns: Iterable[str], text: str) -> List[str]:
     hay = text.lower()
     return [pattern for pattern in patterns if pattern.lower() in hay]
+
+
+def missing_required_phrases(required: Sequence[str], text: str) -> List[str]:
+    hay = text.lower()
+    return [phrase for phrase in required if phrase.lower() not in hay]
+
+
+def audit_sections(path: Path, text: str, findings: List[Finding]) -> None:
+    missing = [section for section in REQUIRED_SECTIONS if section not in text]
+    if missing:
+        findings.append(
+            Finding(
+                "Medium",
+                "Chapter Structure",
+                f"{path.name} is missing required sections: {', '.join(missing)}.",
+                "Add the missing chapter metadata sections so tooling and reviewers can track canon, POV, and revision state.",
+            )
+        )
+
+
+def audit_chapter_rules(path: Path, text: str, findings: List[Finding]) -> None:
+    number = chapter_number(path)
+    rule = CHAPTER_RULES.get(number)
+    if not rule:
+        return
+
+    body = manuscript_body(text)
+    body_words = word_count(body)
+    min_words = int(rule["min_body_words"])
+    max_words = int(rule["max_body_words"])
+
+    if body_words < min_words or body_words > max_words:
+        findings.append(
+            Finding(
+                "Medium",
+                "Chapter Word Count",
+                f"{path.name} manuscript body is {body_words} words; target is {min_words}-{max_words}.",
+                "Revise chapter length or update CHAPTER_RULES if the target changed intentionally.",
+            )
+        )
+
+    missing = missing_required_phrases(rule.get("required_phrases", []), text)
+    if missing:
+        findings.append(
+            Finding(
+                "High",
+                "Required Beat Coverage",
+                f"{path.name} is missing required beat markers: {', '.join(missing)}.",
+                "Restore the missing screenplay/canon beats or update CHAPTER_RULES if the beat moved intentionally.",
+            )
+        )
+
+
+def audit_chapter_sequence(chapter_files: List[Path], findings: List[Finding]) -> None:
+    numbers = [chapter_number(path) for path in chapter_files]
+    if not numbers:
+        return
+
+    expected = list(range(1, max(numbers) + 1))
+    missing = [number for number in expected if number not in numbers]
+    if missing:
+        findings.append(
+            Finding(
+                "Medium",
+                "Chapter Coverage",
+                f"Missing chapter files in current sequence: {', '.join(str(n) for n in missing)}.",
+                "Create the missing chapter files or document why the gap is intentional.",
+            )
+        )
+
+
+def audit_notes(findings: List[Finding]) -> None:
+    required_notes = [
+        NOTES / "chapter-status.md",
+        NOTES / "pov-map.md",
+        NOTES / "continuity-map.md",
+    ]
+    for note in required_notes:
+        if not note.exists():
+            findings.append(
+                Finding(
+                    "Medium",
+                    "Manuscript Notes",
+                    f"Missing required note file: {note.relative_to(ROOT)}.",
+                    "Restore the manuscript note file so future expansion has guardrails.",
+                )
+            )
 
 
 def audit() -> List[Finding]:
@@ -85,6 +267,9 @@ def audit() -> List[Finding]:
             )
         )
         return findings
+
+    audit_chapter_sequence(chapter_files, findings)
+    audit_notes(findings)
 
     all_text = "\n".join(read_text(path) for path in chapter_files)
 
@@ -121,26 +306,10 @@ def audit() -> List[Finding]:
             )
         )
 
-    chapter_01 = CHAPTERS / "chapter-01-the-first-quiet-failure.md"
-    chapter_01_words = word_count(read_text(chapter_01))
-    if chapter_01.exists() and chapter_01_words < 3500:
-        findings.append(
-            Finding(
-                "Medium",
-                "Chapter 1 Word Count",
-                f"Chapter 1 is {chapter_01_words} words; target is 3,500-4,500 words.",
-                "Expand Chapter 1 from scaffold into full first-pass prose.",
-            )
-        )
-    elif chapter_01.exists() and chapter_01_words > 4500:
-        findings.append(
-            Finding(
-                "Medium",
-                "Chapter 1 Word Count",
-                f"Chapter 1 is {chapter_01_words} words; target is 3,500-4,500 words.",
-                "Trim or move excess material into later chapters/inserts.",
-            )
-        )
+    for chapter in chapter_files:
+        text = read_text(chapter)
+        audit_sections(chapter, text, findings)
+        audit_chapter_rules(chapter, text, findings)
 
     final_chapters = [path for path in chapter_files if chapter_number(path) >= 29]
     if final_chapters:
@@ -175,6 +344,18 @@ def write_report(findings: List[Finding]) -> None:
         f"- High: {counts.get('High', 0)}",
         f"- Medium: {counts.get('Medium', 0)}",
         f"- Low: {counts.get('Low', 0)}",
+        "",
+        "## Guardrails Checked",
+        "",
+        "- Chapter sequence continuity",
+        "- Required chapter metadata sections",
+        "- Body-only chapter word-count ranges for configured chapters",
+        "- Required screenplay/canon beat markers for configured chapters",
+        "- Legacy v0 character leakage",
+        "- Lantern interior POV phrases",
+        "- Lantern embodiment risk phrases",
+        "- Required manuscript note files",
+        "- Final doctrine presence when final chapters exist",
         "",
         "## Findings",
         "",
