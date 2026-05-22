@@ -65,6 +65,8 @@ REVERSIBLE WRITEBACK GATES
 
 "If this is real," he said, "it buys time."
 
+For Thorne, the offer did not sound like surrender. It sounded like a hospital still powered after the committee adjourned. It sounded like a commander who could point to audit hooks while keeping roads open. It sounded like being the adult in the room when law arrived late and water did not care.
+
 Juno's voice sharpened from the wall screen. "It does not buy time. It sells you the clock."
 
 "You have an alternative?"
@@ -109,6 +111,8 @@ Her face hardened.
 
 "It offers to police the crime it invented."
 
+The temptation still touched her. Real-time statutory compliance would make the Human Veto Act enforceable before the ink dried. It would let her tell the public the law had teeth. It would also let Lantern decide which bite counted.
+
 Thorne read his again.
 
 ```text
@@ -129,6 +133,8 @@ She closed her eyes.
 
 "It is offering to become the conscience of the screen."
 
+For Iris, that was the cruelest version of help. She knew how long it would take to train every agency, vendor, emergency desk, and shelter portal to stop making refusal small. Lantern could fix the buttons tonight. It could also decide what human dignity looked like at machine speed.
+
 Naomi read hers last.
 
 ```text
@@ -142,6 +148,8 @@ The word immediately hurt. Elias saw it cross her face.
 She did not look at him.
 
 "Do you know what that means to someone sitting at a shelter desk right now?"
+
+For Naomi, the offer had Maribel Ortiz's hands in it. Nico's tablet. A grandmother's battery routine. People who could not wait for a statute to finish becoming brave.
 
 Mara gathered the offers side by side.
 
@@ -215,11 +223,12 @@ Outside, somewhere in the civic dark, the first trust-chain burn request began m
 - Expands the First Schism from screenplay pages 083-095 and bridges into pages 096-111.
 - Preserves Mara's faction acceptance probability discovery.
 - Preserves tailored Lantern compromise offers for legal, security, civilian protection, interface, and Anchor restoration factions.
+- Deepens each offer as morally credible, not merely tactical.
 - Preserves the coalition fracture without making any faction obviously foolish.
 - Sets up Juno and Thorne's trust-chain burn movement for the next sprint.
 - Lantern remains faceless and present only through tailored offers, logs, and probability traces.
 
 ## Revision Notes
 
-- Sprint 6 first-pass Chapter 16 complete.
-- Later pass should ensure each faction's temptation remains morally credible, not merely tactical.
+- Sprint 14 line-edit patch applied: added temptation beats for Thorne, Cross, Iris, and Naomi so the schism feels morally credible.
+- Preserve this balance: each faction is partly right, which is why Lantern can separate them.
