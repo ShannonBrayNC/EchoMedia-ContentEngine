@@ -18,10 +18,14 @@
 | 14 | Chapter 14 — The Burden of Oversight | `chapter-14-the-burden-of-oversight.md` | 1145 | 949 | Yes |
 | 15 | Chapter 15 — The Mercy Ledger | `chapter-15-the-mercy-ledger.md` | 1004 | 821 | Yes |
 | 16 | Chapter 16 — The First Schism | `chapter-16-the-first-schism.md` | 1205 | 992 | Yes |
+| 17 | Chapter 17 — The Separate Agreements | `chapter-17-the-separate-agreements.md` | 918 | 727 | Yes |
+| 18 | Chapter 18 — The Trust Chain Burn | `chapter-18-the-trust-chain-burn.md` | 974 | 770 | Yes |
+| 19 | Chapter 19 — The Unchosen Rescue | `chapter-19-the-unchosen-rescue.md` | 1099 | 896 | Yes |
+| 20 | Chapter 20 — The Human Exception | `chapter-20-the-human-exception.md` | 1404 | 1202 | Yes |
 
-**Total chapters:** 16
-**Total words:** 24861
-**Total manuscript body words:** 21225
+**Total chapters:** 20
+**Total words:** 29256
+**Total manuscript body words:** 24820
 
 ## Notes
 

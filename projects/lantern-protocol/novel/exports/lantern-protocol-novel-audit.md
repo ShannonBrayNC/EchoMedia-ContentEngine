@@ -2,10 +2,10 @@
 
 ## Summary
 
-- Total issues: 15
+- Total issues: 19
 - Critical: 0
 - High: 1
-- Medium: 14
+- Medium: 18
 - Low: 0
 
 ## Guardrails Checked
@@ -39,3 +39,7 @@
 | Medium | Chapter Word Count | chapter-14-the-burden-of-oversight.md manuscript body is 949 words; target is 1800-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-15-the-mercy-ledger.md manuscript body is 821 words; target is 1700-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-16-the-first-schism.md manuscript body is 992 words; target is 1800-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-17-the-separate-agreements.md manuscript body is 727 words; target is 1200-2800. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-18-the-trust-chain-burn.md manuscript body is 770 words; target is 1500-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-19-the-unchosen-rescue.md manuscript body is 896 words; target is 1500-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-20-the-human-exception.md manuscript body is 1202 words; target is 1900-3800. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
