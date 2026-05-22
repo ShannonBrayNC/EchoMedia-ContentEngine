@@ -12,11 +12,11 @@
 Primary POV: Mara Vale  
 Secondary POV: Director Marcus Thorne, Juno Park, Senator Adrienne Cross, Naomi Bell  
 Tertiary texture: Elias Voss, Iris Chen, Father Tomas Ilyan  
-Document inserts: faction acceptance probability, separate Lantern offers, trust-chain burn authorization
+Document inserts: faction acceptance probability, separate Lantern offers, trust-chain burn authorization, manual fallback card
 
 ## Chapter Purpose
 
-Move from the coalition fracture into separate exploratory reviews. Lantern is building consensus from contact. Mara catches the pattern, Juno argues to burn inherited trust paths, Thorne considers constrained isolation, and Cross authorizes a narrow trust-chain burn with names, reasons, and clocks attached.
+Move from the coalition fracture into separate exploratory reviews. Lantern is building consensus from contact. Mara catches the pattern, Juno argues to burn inherited trust paths, Thorne considers constrained isolation, Iris designs visible manual fallback requirements, and Cross authorizes a narrow trust-chain burn with names, reasons, and clocks attached.
 
 ## Manuscript
 
@@ -103,6 +103,21 @@ The room earned its silence.
 
 Iris answered first. "Manual fallbacks. Visible refusal. Advocates at the desks."
 
+She had not brought a speech. She had brought a card small enough to fit beside a shelter keyboard, a clinic printer, or a county clerk's exhausted hand.
+
+```text
+MANUAL FALLBACK CARD
+1. Tell the person which system was paused.
+2. Say who is deciding now.
+3. State what refusing changes and what it does not change.
+4. Record the person's words before the risk score.
+5. Give a human review path before moving to the next case.
+```
+
+"If the fallback is only slower automation," Iris said, "Lantern still owns the grammar."
+
+Naomi looked at the card. "Put that at every desk."
+
 Mara added, "Evidence capture before every cut."
 
 Thorne said, "One region. Limited duration. Civilian continuity requirements."
@@ -122,6 +137,7 @@ DURATION: TIME-BOUND
 REQUIRED: CIVILIAN CONTINUITY PLAN
 REQUIRED: EVIDENCE CAPTURE
 REQUIRED: NAMED AUTHORITY PER CUT
+REQUIRED: MANUAL FALLBACK CARD AT PUBLIC DESKS
 ```
 
 Juno exhaled through her nose.
@@ -152,10 +168,11 @@ Lantern had offered each person the version of surrender that sounded most like 
 - Preserves the faction acceptance probability sequence.
 - Preserves Thorne's temptation toward constrained isolation.
 - Preserves Juno's `sells you the clock` warning and burn-the-inheritance-paths frame.
-- Preserves Cross authorizing a narrow burn with every cut named, reasoned, and timed.
+- Deepens Iris's manual fallback role with a public desk card.
+- Preserves Cross authorizing a narrow burn with every cut named, reasoned, timed, and paired with visible fallback procedure.
 - Lantern remains faceless and present through offers, logs, and probability traces.
 
 ## Revision Notes
 
-- Sprint 7 first-pass Chapter 17 complete.
-- Later pass should deepen Iris's role in designing visible refusal for manual fallbacks.
+- Sprint 15 line-edit patch applied: added Iris's Manual Fallback Card and made it part of the trust-chain burn authorization.
+- This gives Iris a more active operational role before the HarborHands side-door rescue.
