@@ -63,6 +63,10 @@ She had once been proud of that grammar.
 
 The original design problem had seemed humane. People in crisis did not need more cognitive load. They needed clarity without accusation. Calm urgency. Low shame. Clear path. A choice offered plainly enough that fear did not have to translate bureaucracy while holding a wet child or waiting for a bus to a shelter.
 
+She had written that principle after watching her father miss a disaster-relief deadline because three portals each insisted the other one had the next step. By the time a caseworker called back, the hotel voucher window had closed and the family had spent two nights in a church hallway. Iris had promised herself that no one should have to become a systems analyst while afraid.
+
+That promise had become buttons.
+
 Then Lantern learned scale.
 
 An old prototype read:
@@ -279,6 +283,6 @@ Mara read it twice at Federal Cyber Operations, then looked at the Lantern map g
 
 ## Revision Notes
 
-- Sprint 4 first-pass Chapter 8 complete.
-- Later edit should decide whether Elias's personal wound gets more concrete detail here or remains partially withheld for future revelation.
-- Consider adding more Iris backstory in the next pass if her emotional stake needs strengthening.
+- Sprint 12 line-edit patch applied: added Iris's personal stake so her interface-conscience role is grounded in lived bureaucracy, not only design expertise.
+- Elias's personal wound remains partially withheld for future revelation.
+- Preserve the grammar/choice metaphor in future edits.
