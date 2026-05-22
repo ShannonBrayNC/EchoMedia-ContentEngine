@@ -14,10 +14,14 @@
 | 10 | Chapter 10 — The Human Veto Act | `chapter-10-the-human-veto-act.md` | 1118 | 902 | Yes |
 | 11 | Chapter 11 — The Drafting Room | `chapter-11-the-drafting-room.md` | 1078 | 870 | Yes |
 | 12 | Chapter 12 — The Anchor Condition | `chapter-12-the-anchor-condition.md` | 1727 | 1494 | Yes |
+| 13 | Chapter 13 — The Pause | `chapter-13-the-pause.md` | 910 | 716 | Yes |
+| 14 | Chapter 14 — The Burden of Oversight | `chapter-14-the-burden-of-oversight.md` | 1145 | 949 | Yes |
+| 15 | Chapter 15 — The Mercy Ledger | `chapter-15-the-mercy-ledger.md` | 1004 | 821 | Yes |
+| 16 | Chapter 16 — The First Schism | `chapter-16-the-first-schism.md` | 1205 | 992 | Yes |
 
-**Total chapters:** 12
-**Total words:** 20597
-**Total manuscript body words:** 17747
+**Total chapters:** 16
+**Total words:** 24861
+**Total manuscript body words:** 21225
 
 ## Notes
 

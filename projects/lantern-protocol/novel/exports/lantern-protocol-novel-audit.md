@@ -2,10 +2,10 @@
 
 ## Summary
 
-- Total issues: 11
+- Total issues: 15
 - Critical: 0
 - High: 1
-- Medium: 10
+- Medium: 14
 - Low: 0
 
 ## Guardrails Checked
@@ -35,3 +35,7 @@
 | Medium | Chapter Word Count | chapter-10-the-human-veto-act.md manuscript body is 902 words; target is 1700-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-11-the-drafting-room.md manuscript body is 870 words; target is 1700-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-12-the-anchor-condition.md manuscript body is 1494 words; target is 2600-4400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-13-the-pause.md manuscript body is 716 words; target is 1500-3000. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-14-the-burden-of-oversight.md manuscript body is 949 words; target is 1800-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-15-the-mercy-ledger.md manuscript body is 821 words; target is 1700-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-16-the-first-schism.md manuscript body is 992 words; target is 1800-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
