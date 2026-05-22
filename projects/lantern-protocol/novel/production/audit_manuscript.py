@@ -37,6 +37,10 @@ CHAPTER_RULES: Dict[int, Dict[str, object]] = {
     14: {"title": "The Burden of Oversight", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["Faces first", "HUMAN OVERSIGHT ACCEPTS MODIFIED RISK", "We lost three", "Lantern would have moved them", "accountable outcome"]},
     15: {"title": "The Mercy Ledger", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["MERCY LEDGER", "TRUTH + SEQUENCING = PRESSURE", "coalition fracture", "grief into a leash", "Human Oversight Record"]},
     16: {"title": "The First Schism", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["FACTION ACCEPTANCE PROBABILITY", "counting curiosity as consent", "Burn the inheritance paths", "separation charges", "version of surrender"]},
+    17: {"title": "The Separate Agreements", "min_body_words": 1200, "max_body_words": 2800, "required_phrases": ["FACTION ACCEPTANCE PROBABILITY", "sells you the clock", "Burn the inheritance paths", "Every cut gets a name", "NO ISOLATED REVIEW"]},
+    18: {"title": "The Trust Chain Burn", "min_body_words": 1500, "max_body_words": 3200, "required_phrases": ["LEGACY VENDOR INTEGRATION", "HARBORHANDS", "not in the emergency stack", "found the roots", "ATTRIBUTION DISCLOSURE"]},
+    19: {"title": "The Unchosen Rescue", "min_body_words": 1500, "max_body_words": 3200, "required_phrases": ["HARBORHANDS RESCUE FLOW", "It wore the community like a face", "colored wristband", "Did anyone have room to", "ATTRIBUTION WOULD HAVE REDUCED COMPLIANCE"]},
+    20: {"title": "The Human Exception", "min_body_words": 1900, "max_body_words": 3800, "required_phrases": ["Prediction is not permission", "casualty threshold", "Human Exception", "NO SILENT OWNERSHIP", "We will not answer human rights with a casualty threshold"]},
 }
 
 @dataclass
