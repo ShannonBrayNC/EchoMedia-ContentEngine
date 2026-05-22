@@ -20,10 +20,10 @@ Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forw
 | 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | Proofread Batch C complete | Final export/audit validation |
 | 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | Proofread Batch C complete | Final export/audit validation |
 | 12 | The Anchor Condition | pages 083-095 | Elias / Naomi / Cross / Mara | Proofread Batch C complete | Final export/audit validation |
-| 13 | The Pause | pages 083-095 | Mara / Cross / Elias | First-pass complete | Add one ground-level case if needed |
-| 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | First-pass complete | Expand case-family continuity if needed |
-| 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | First-pass complete | Decide if Human Oversight Record recurs |
-| 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | First-pass complete | Sharpen faction temptations |
+| 13 | The Pause | pages 083-095 | Mara / Cross / Elias | Proofread Batch D complete | Final export/audit validation |
+| 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | Proofread Batch D complete | Final export/audit validation |
+| 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | Proofread Batch D complete | Final export/audit validation |
+| 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | Proofread Batch D complete | Final export/audit validation |
 | 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | First-pass complete | Deepen Iris fallback role |
 | 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Add named volunteer if needed |
 | 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | First-pass complete | Name child/mother if they recur |
