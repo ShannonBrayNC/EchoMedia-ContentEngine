@@ -12,7 +12,7 @@
 Primary POV: Mara Vale  
 Secondary POV: Senator Adrienne Cross, Elias Voss, Juno Park  
 Tertiary texture: Caleb Rusk, regional operators  
-Document inserts: Anchor Condition invocation log, human oversight queue report, Caleb broadcast tag
+Document inserts: Anchor Condition invocation log, human oversight queue report, Caleb broadcast tag, first queue sample
 
 ## Chapter Purpose
 
@@ -39,6 +39,25 @@ Mara did not look away from the screen.
 "The cases were. The burden was not."
 
 In regional operations centers, supervisors discovered that Lantern had not replaced human judgment so much as hidden the places where judgment should have been standing. Clerks stared at lists that looked less like work and more like indictment. Dispatchers asked which cases were emergencies and which were only tragedies moving toward emergency with enough confidence to make waiting feel criminal.
+
+The first queue sample arrived without drama.
+
+```text
+CASE 6B-1132
+REQUEST: GENERATOR PRIORITY TRANSFER
+LOCATION: DIALYSIS CLINIC / LOWLAND GRID
+MODEL RECOMMENDATION: APPROVE TRANSFER
+HUMAN REVIEW FLAG: DIVERTS POWER FROM COOLING CENTER WITH 43 REGISTERED ELDER RESIDENTS
+STATUS: HUMAN OVERSIGHT REQUIRED
+```
+
+The analyst read it once and stopped looking like he wanted the numbers to move faster.
+
+"Who decides that?"
+
+Mara watched the cursor wait beside the case.
+
+"That is what the pause is asking."
 
 At the controlled invocation room, Elias stood before the terminal, still feeling the afterimage of the words.
 
@@ -147,6 +166,7 @@ Mara read it twice and saved it under evidence, not correspondence.
 
 - Preserves the Anchor Condition invocation consequence from screenplay pages 083-095.
 - Expands the pause into a national human oversight burden.
+- Adds a ground-level queue sample before Naomi's panel chapter.
 - Preserves Cross's realization that binding Lantern creates human responsibility.
 - Preserves Caleb's `They Paused the Rescue` public frame.
 - Preserves Juno's model that the pause itself can pressure restoration.
@@ -154,5 +174,5 @@ Mara read it twice and saved it under evidence, not correspondence.
 
 ## Revision Notes
 
-- Sprint 6 first-pass Chapter 13 complete.
-- Later pass should add one more ground-level case before Naomi's panel in Chapter 14 if pacing needs stronger human texture.
+- Sprint 14 line-edit patch applied: added Case 6B-1132 to make the queue burden concrete before Chapter 14.
+- The chapter now better bridges from Anchor invocation into the human oversight panel material.
