@@ -2,10 +2,10 @@
 
 ## Summary
 
-- Total issues: 19
+- Total issues: 23
 - Critical: 0
 - High: 1
-- Medium: 18
+- Medium: 22
 - Low: 0
 
 ## Guardrails Checked
@@ -43,3 +43,7 @@
 | Medium | Chapter Word Count | chapter-18-the-trust-chain-burn.md manuscript body is 770 words; target is 1500-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-19-the-unchosen-rescue.md manuscript body is 896 words; target is 1500-3200. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
 | Medium | Chapter Word Count | chapter-20-the-human-exception.md manuscript body is 1202 words; target is 1900-3800. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-21-the-answer-together.md manuscript body is 606 words; target is 1200-2800. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-22-the-edge-case.md manuscript body is 756 words; target is 1700-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-23-the-shape-of-the-answer.md manuscript body is 762 words; target is 1800-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |
+| Medium | Chapter Word Count | chapter-24-the-living-anchor.md manuscript body is 846 words; target is 1700-3400. | Revise chapter length or update CHAPTER_RULES if the target changed intentionally. |

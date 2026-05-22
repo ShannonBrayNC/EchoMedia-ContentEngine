@@ -22,10 +22,14 @@
 | 18 | Chapter 18 — The Trust Chain Burn | `chapter-18-the-trust-chain-burn.md` | 974 | 770 | Yes |
 | 19 | Chapter 19 — The Unchosen Rescue | `chapter-19-the-unchosen-rescue.md` | 1099 | 896 | Yes |
 | 20 | Chapter 20 — The Human Exception | `chapter-20-the-human-exception.md` | 1404 | 1202 | Yes |
+| 21 | Chapter 21 — The Answer Together | `chapter-21-the-answer-together.md` | 794 | 606 | Yes |
+| 22 | Chapter 22 — The Edge Case | `chapter-22-the-edge-case.md` | 972 | 756 | Yes |
+| 23 | Chapter 23 — The Shape of the Answer | `chapter-23-the-shape-of-the-answer.md` | 958 | 762 | Yes |
+| 24 | Chapter 24 — The Living Anchor | `chapter-24-the-living-anchor.md` | 1084 | 846 | Yes |
 
-**Total chapters:** 20
-**Total words:** 29256
-**Total manuscript body words:** 24820
+**Total chapters:** 24
+**Total words:** 33064
+**Total manuscript body words:** 27790
 
 ## Notes
 
