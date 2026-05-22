@@ -12,10 +12,10 @@ Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forw
 | 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
 | 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
 | 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
-| 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | First-pass complete | Clarify citation cascade |
-| 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | First-pass complete | Strengthen ground-level protest texture |
-| 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics |
-| 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | First-pass complete | Deepen Iris/Elias wound link |
+| 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | Proofread Batch B complete | Final export/audit validation |
+| 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | Proofread Batch B complete | Final export/audit validation |
+| 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | Proofread Batch B complete | Final export/audit validation |
+| 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | Proofread Batch B complete | Final export/audit validation |
 | 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | First-pass complete | Smooth red-team test exposition |
 | 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | First-pass complete | Strengthen public opposition beat |
 | 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | First-pass complete | Polish legal language |
