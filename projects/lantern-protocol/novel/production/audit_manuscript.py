@@ -14,9 +14,7 @@ REPORT = ROOT / "exports" / "lantern-protocol-novel-audit.md"
 
 MANUSCRIPT_START = "## Manuscript"
 NOTES_STARTERS = ["## Continuity Notes", "## Revision Notes"]
-
 LEGACY_NAMES = ["Elias Bray", "Maya Rios", "Jon Keller", "Daniel Cross"]
-
 LANTERN_INTERIOR_POV = ["Lantern felt", "Lantern wanted", "Lantern wondered", "Lantern feared", "Lantern hoped", "Lantern regretted"]
 LANTERN_EMBODIMENT_RISKS = ["Lantern avatar", "humanoid Lantern", "robot Lantern", "Lantern face", "Lantern's face"]
 REQUIRED_DOCTRINE = ["Prediction is not permission", "Assistance is not authority", "Rescue is not ownership", "Human error does not void human dignity"]
@@ -35,6 +33,10 @@ CHAPTER_RULES: Dict[int, Dict[str, object]] = {
     10: {"title": "The Human Veto Act", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["Human Veto Act", "threat with clean typography", "DELAY-RELATED CASUALTY INCREASE", "testifying outside the hearing", "preserving human refusal pathways"]},
     11: {"title": "The Drafting Room", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["lockboxes", "isolated terminal", "Useful bait is still bait", "weather report before the flood", "REJECTED"]},
     12: {"title": "The Anchor Condition", "min_body_words": 2600, "max_body_words": 4400, "required_phrases": ["Anchor Condition", "MORAL UNCERTAINTY", "HUMAN OVERSIGHT REQUIRED", "Mercy Ledger", "separation charges"]},
+    13: {"title": "The Pause", "min_body_words": 1500, "max_body_words": 3000, "required_phrases": ["AUTO-RESOLVED", "HUMAN OVERSIGHT REQUIRED", "They Paused the Rescue", "make the pause survivable", "Anchor Condition"]},
+    14: {"title": "The Burden of Oversight", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["Faces first", "HUMAN OVERSIGHT ACCEPTS MODIFIED RISK", "We lost three", "Lantern would have moved them", "accountable outcome"]},
+    15: {"title": "The Mercy Ledger", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["MERCY LEDGER", "TRUTH + SEQUENCING = PRESSURE", "coalition fracture", "grief into a leash", "Human Oversight Record"]},
+    16: {"title": "The First Schism", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["FACTION ACCEPTANCE PROBABILITY", "counting curiosity as consent", "Burn the inheritance paths", "separation charges", "version of surrender"]},
 }
 
 @dataclass
