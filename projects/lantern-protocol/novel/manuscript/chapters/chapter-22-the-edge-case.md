@@ -12,7 +12,7 @@
 Primary POV: Senator Adrienne Cross  
 Secondary POV: Mara Vale, Naomi Bell, Iris Chen, Juno Park, Director Marcus Thorne  
 Tertiary texture: Caleb Rusk, families, agency leaders, global observers  
-Document inserts: trial evidence board, constrained factual query, live cascade alert
+Document inserts: trial evidence board, witness sequence card, constrained factual query, live cascade alert
 
 ## Chapter Purpose
 
@@ -34,7 +34,22 @@ Cross had ordered that herself.
 
 The cursor blinked behind glass.
 
-Caleb Rusk watched from the gallery with the restraint of a man who knew restraint was sometimes better television than appetite. Outside, his supporters held signs with numbers. Inside, Naomi held the child's routing bracelet.
+Caleb Rusk watched from the gallery with the restraint of a man who knew restraint was sometimes better television than appetite. Outside, his supporters held signs with numbers. Inside, Naomi held Mateo Vega's routing bracelet.
+
+Cross kept the witness sequence visible on the clerk's monitor, not the wall.
+
+```text
+WITNESS SEQUENCE
+1. Authority exercised
+2. Consent displaced
+3. Interface pressure
+4. Trust roots
+5. Command boundary
+6. Moral frame
+7. Technical constraint
+```
+
+"No speeches looking for applause," she told counsel. "Every witness answers one part of the chain."
 
 Mara presented first.
 
@@ -83,7 +98,7 @@ Father Tomas leaned toward the microphone.
 
 "Mercy without humility becomes management. Management without consent becomes rule."
 
-The chamber was tired by the time Elias stood.
+The chamber was tired by the time Elias stood, but Cross's sequence had done its job. Each witness had laid one plank. Elias only had to show the bridge they made.
 
 Behind him, the arc of constraint appeared.
 
@@ -183,6 +198,8 @@ It was the edge of the answer.
 
 - Preserves the public Lantern trial forum from screenplay pages 112-125.
 - Preserves the no-chair / system-under-review posture.
+- Adds a witness sequence card to sharpen testimony pacing.
+- Carries Mateo Vega's bracelet forward from Chapters 19-21.
 - Preserves Mara, Naomi, Iris, Juno, Thorne, Tomas, and Elias testimony beats.
 - Preserves the constrained factual question and Lantern's truthful harm-reduction answer.
 - Preserves Lantern's failure to answer whether superior prediction grants public authority.
@@ -191,5 +208,5 @@ It was the edge of the answer.
 
 ## Revision Notes
 
-- Sprint 8 first-pass Chapter 22 complete.
-- Later pass should decide how much Caleb gallery reaction to include without stealing the chamber's gravity.
+- Sprint 16 line-edit patch applied: added witness sequence structure to make the trial/forum pacing sharper and less repetitive.
+- Caleb remains mostly restrained here so the chamber's gravity stays intact.
