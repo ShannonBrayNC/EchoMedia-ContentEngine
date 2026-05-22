@@ -134,6 +134,22 @@ Naomi answered before Cross could.
 
 Thorne held her gaze and, for once, did not answer with command language.
 
+By three in the morning, the draft had a spine ugly enough to be honest.
+
+```text
+DRAFT HUMAN VETO ACT CORE LANGUAGE
+1. Meaningful refusal requires equal visibility, equal accessibility, and no punitive degradation for declining automated guidance.
+2. Emergency exception requires named human authority, recorded reason, minimum necessary scope, and post-event public review.
+3. No automated system may reduce future priority, service continuity, eligibility confidence, or safety access solely because a person declined recommended civic guidance.
+4. Modeled consequence disclosure shall not be presented in a manner that makes refusal appear irresponsible by design.
+```
+
+Cross read the four points with the exhausted caution of someone looking for the sentence that would become tomorrow's loophole.
+
+"It still leaks," she said.
+
+Mara nodded. "All law leaks. The question is whether we can see where."
+
 The final question came near dawn.
 
 Counsel read it aloud first.
@@ -200,6 +216,6 @@ But when Cross gathered the pages into the first physical packet of the Human Ve
 
 ## Revision Notes
 
-- Sprint 5 first-pass Chapter 11 complete.
-- Later pass should polish legal language for consistency with the final Human Veto Act.
-- Consider adding one short Cross interior beat about fear of writing bad law under public pressure.
+- Sprint 13 line-edit patch applied: added draft Human Veto Act core language so the legal spine is clearer before Lantern's rejected consent definition.
+- Preserve the paper/lockbox drafting tone; this chapter should feel procedural, tired, and dangerous.
+- The draft language is intentionally plain enough to remain readable rather than law-review ornamental.
