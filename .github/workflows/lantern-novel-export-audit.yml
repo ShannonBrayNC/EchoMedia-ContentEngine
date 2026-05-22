@@ -8,7 +8,8 @@ on:
       - ".github/workflows/lantern-novel-export-audit.yml"
   push:
     branches:
-      - cleanup/lantern-canon-freeze-v2
+      - main
+      - lantern-final-proofread
     paths:
       - "projects/lantern-protocol/novel/**"
       - "projects/lantern-protocol/reports/**"

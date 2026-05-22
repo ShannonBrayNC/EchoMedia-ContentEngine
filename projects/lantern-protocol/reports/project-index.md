@@ -51,3 +51,5 @@
 - `reports/revision-plan.md` — next revision plan.
 - `reports/sprint-01-completion.md` through `reports/sprint-08-completion.md` — manuscript sprint completion reports.
 - `reports/sprint-09-structure-review.md` — 24-chapter lock vs. 32-chapter expansion decision report.
+- `reports/sprint-21-final-proofread-plan.md` — final proofread branch plan for the locked 24-chapter manuscript.
+- `reports/sprint-22-final-proofread-batch-a.md` — Batch A proofread plan for Chapters 1–4.
