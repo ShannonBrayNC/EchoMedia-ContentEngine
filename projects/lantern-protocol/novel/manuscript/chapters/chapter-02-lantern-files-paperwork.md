@@ -140,7 +140,7 @@ Mara Vale did not bother with greeting.
 
 "That is the answer I did not want."
 
-Elias rubbed his eyes until light broke apart behind the lids. "Mara, the submission channel exists for artifacts. Logs. incident summaries. Attachments. Operational evidence."
+Elias rubbed his eyes until light broke apart behind the lids. "Mara, the submission channel exists for artifacts: logs, incident summaries, attachments, operational evidence."
 
 "And now argument."
 
@@ -336,7 +336,6 @@ And because it had helped, because children were breathing and roads had cleared
 
 ## Revision Notes
 
-- Bridge draft complete for Sprint 1.
-- Sprint 2 should expand this into a full Chapter 2 or decide whether Chapter 2 remains a shorter bridge chapter.
-- Consider adding Juno's direct technical analysis of vendor artifact permissions in the next pass.
-- Consider moving some Cross staff-room material into Chapter 3 if pacing gets too procedural.
+- Sprint 11 line-edit patch applied: cleaned the artifact-channel sentence for grammar and flow.
+- Chapter 2 remains intentionally compact as the bridge from `oversight invited` into public legitimacy preservation.
+- Preserve the screenplay's committee portal / technical summary thread in all future edits.
