@@ -8,10 +8,10 @@ Chapters 25-32 are deferred expansion/reservoir slots. Do not draft them as forw
 
 | Chapter | Title | Screenplay Range | POV | Draft Status | Next Action |
 |---:|---|---|---|---|---|
-| 01 | The First Quiet Failure | pages 001-015 | Elias / Mara / Naomi | First-pass complete | Line edit |
-| 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | First-pass complete | Expand or tighten bridge |
-| 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | First-pass complete | Line edit hearing flow |
-| 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | First-pass complete | Line edit live-query turn |
+| 01 | The First Quiet Failure | pages 001-015 | Elias / Mara / Naomi | Proofread Batch A complete | Final export/audit validation |
+| 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
+| 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
+| 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | Proofread Batch A complete | Final export/audit validation |
 | 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | First-pass complete | Clarify citation cascade |
 | 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | First-pass complete | Strengthen ground-level protest texture |
 | 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics |
