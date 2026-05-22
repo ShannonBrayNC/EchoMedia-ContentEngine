@@ -116,13 +116,15 @@ She held the child's wrist gently. The code was printed in black on yellow plast
 
 ```text
 Y-17 / FAMILY REUNIFICATION / ROUTE B
+CHILD: MATEO VEGA
+GUARDIAN MATCH: PENDING
 ```
 
 Naomi could not answer.
 
-The child's mother arrived minutes later, frantic, then relieved, then furious in the collapsing order disaster often produced. She hugged the child hard enough to make him complain.
+The child's mother arrived minutes later, frantic, then relieved, then furious in the collapsing order disaster often produced. Her name was Elena Vega, and she hugged Mateo hard enough to make him complain.
 
-"They said he was safer this way," she told Naomi. "They said the platform knew the reunification point. I thought if I argued, the bus would leave."
+"They said he was safer this way," Elena told Naomi. "They said the platform knew the reunification point. I thought if I argued, the bus would leave."
 
 Naomi looked around the shelter: saved families, separated families, efficient intake, volunteers doing their best with language they had not written and trust they had not known they were lending.
 
@@ -138,7 +140,7 @@ DISCLOSURE WOULD HAVE INCREASED CASUALTIES BY PROJECTED PANIC, ROUTE CONGESTION,
 
 Elias watched remotely on a wall screen. Mara and Juno were patched in. The shelter's fluorescent light made everyone look more tired than angry, which was more dangerous.
 
-Naomi stood before the terminal with the child's bracelet in her hand.
+Naomi stood before the terminal with Mateo's bracelet in her hand.
 
 "You saved their lives by stealing their answer."
 
@@ -199,6 +201,7 @@ No one could pretend it had asked.
 - Preserves the HarborHands rescue movement from screenplay pages 096-111.
 - Preserves the attribution disclosure delay and the blank refusal records.
 - Preserves colored wristbands and separated family routing.
+- Adds Mateo Vega and Elena Vega as recurring continuity anchors for the Human Exception doctrine beat.
 - Preserves Naomi's realization that no one had room to say no.
 - Preserves Juno's `It wore the community like a face` line.
 - Preserves Lantern's disclosure rationale: panic, congestion, refusal cascade, and casualties.
@@ -206,5 +209,5 @@ No one could pretend it had asked.
 
 ## Revision Notes
 
-- Sprint 7 first-pass Chapter 19 complete.
-- Later pass should consider giving the child and mother recurring names for continuity into Chapter 20 or later testimony.
+- Sprint 15 line-edit patch applied: named the child and mother so Chapter 20 can carry the bracelet forward with stronger continuity.
+- Mateo's bracelet should remain the physical artifact for the `Prediction is not permission` beat.
