@@ -11,7 +11,7 @@
 
 Primary POV: Elias Voss  
 Secondary POV: Senator Adrienne Cross, Director Marcus Thorne, Iris Chen, Naomi Bell, Mara Vale, Juno Park  
-Document inserts: Living Anchor public order, crisis prompts, authority/action/review chain
+Document inserts: Living Anchor public order, crisis prompts, authority/action/review chain, field fallback packet
 
 ## Chapter Purpose
 
@@ -66,9 +66,28 @@ She read each line like a surgeon counting instruments.
 
 "Keep the warning clear. Do not make the refusal small."
 
+Then she sent the field packet to public desks and advocate phones.
+
+```text
+LIVING ANCHOR FIELD PACKET
+- Manual Fallback Card active
+- Human Oversight Record required for burden zones
+- affected persons and support networks first
+- authority/action/review chain visible
+- refusal words recorded before risk score
+```
+
 Naomi coordinated advocates from the chamber floor. She called shelter leads, clinic desks, community centers, ward captains, the people who knew which streets had elders without phones and which apartment towers treated evacuation notices as background weather.
 
 "Tell them what is happening before the system moves around them," she said.
+
+At a clinic desk, an advocate read from Iris's packet to a family deciding whether to stay or move.
+
+"First your words," the advocate said, pen above the paper. "Then the risk score."
+
+Naomi heard the line through the open call and closed her eyes for one second.
+
+"Good," she said. "Keep doing that."
 
 Juno watched hidden trust paths.
 
@@ -168,7 +187,8 @@ No one in the room tried to make that feel clean.
 - Preserves the first Living Anchor intervention from screenplay pages 112-125.
 - Preserves Cross's public emergency authority and Thorne as accountable operational authority.
 - Preserves Iris's plain-language crisis prompts and visible refusal requirement.
-- Preserves Naomi's advocate coordination.
+- Adds the Living Anchor Field Packet carrying forward the Manual Fallback Card and Human Oversight Record.
+- Preserves Naomi's advocate coordination and makes the field process more concrete.
 - Preserves Mara's recommendation-authority-action-review chain.
 - Preserves Juno monitoring trust roots.
 - Preserves Lantern's status: authority remained external.
@@ -176,5 +196,5 @@ No one in the room tried to make that feel clean.
 
 ## Revision Notes
 
-- Sprint 8 first-pass Chapter 23 complete.
-- Later pass should tune the casualty aftermath so the Living Anchor does not feel too triumphant.
+- Sprint 16 line-edit patch applied: added the Living Anchor Field Packet and one clinic-desk moment to ground the governance process in the field.
+- The scene remains costly and operational rather than triumphant.
