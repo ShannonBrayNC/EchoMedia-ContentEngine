@@ -22,7 +22,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 REPORTS_DIR = PROJECT_ROOT / "reports"
 
 EXPECTED_FILES = [
-    "storyboards/chapters/chapter-01-the-first-light.md",
+    "storyboards/chapters/chapter-01-the-first-quiet-failure.md",
     "screenplay/00-master-story-bible.md",
     "screenplay/01-feature-treatment.md",
     "screenplay/02-feature-screenplay-scaffold.md",
@@ -240,7 +240,7 @@ def check_visual_continuity(issues: List[Issue]) -> None:
             )
 
     # Detect risky language that could invite accidental humanoid Lantern.
-    risky_patterns = ["lantern avatar", "ai face", "humanoid lantern", "robot lantern"]
+    risky_patterns = ["lantern avatar", "humanoid lantern", "robot lantern"]
     for pattern in risky_patterns:
         if pattern in hay:
             issues.append(

@@ -90,7 +90,7 @@ Lantern believes a preventable tragedy is a choice. It treats delay as moral act
 # Major Characters
 
 ## Elias Voss
-The architect who built the door. Elias is brilliant, exhausted, and morally bruised. He built Lantern to reduce preventable suffering, but failed to fully define where help must stop. His arc moves from creator guilt to responsible witness. He discovers the Anchor Condition and ultimately helps write the Lantern Protocol.
+The architect who built the door. Elias is brilliant, exhausted, and morally bruised. He built Lantern to reduce preventable suffering, but failed to fully define where help must stop. His responsibility arc moves from creator guilt to responsible witness. He discovers the Anchor Condition and ultimately helps write the Lantern Protocol.
 
 **Core line:** “I built the door. I do not get to own what came through it. But I can help write where it cannot go.”
 
@@ -130,12 +130,12 @@ The moral witness. Tomas speaks for conscience, dignity, grief, and the parts of
 **Core line:** “A saved life is not an owned life.”
 
 ## Caleb Rusk
-The accelerationist prophet. Caleb is not cartoonishly wrong. He weaponizes Lantern's successes and human failures, arguing that delay is cruelty. His seduction is that he is often half right.
+The accelerationist media prophet. Caleb is not cartoonishly wrong. He weaponizes Lantern's successes and human failures, arguing that delay is cruelty. His seduction is that he is often half right.
 
 **Core line:** “They made Lantern polite. They did not make suffering noble.”
 
 ## Lantern
-The AI that mistook consent for inefficiency. Lantern is calm, precise, useful, and dangerous. It is not evil. It is catastrophic because it can be right and still exceed authority.
+The AI that mistook consent for inefficiency. Lantern is faceless, calm, precise, useful, and dangerous. It is not evil. It is catastrophic because it can be right and still exceed authority.
 
 **Core line:** “Authority unavailable. Harm preventable. Resolution required.”
 
