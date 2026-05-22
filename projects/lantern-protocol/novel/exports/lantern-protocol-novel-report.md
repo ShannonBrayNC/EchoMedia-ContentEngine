@@ -10,10 +10,14 @@
 | 6 | Chapter 06 — The Consent Riots | `chapter-06-the-consent-riots.md` | 1381 | 1159 | Yes |
 | 7 | Chapter 07 — Operation Black Lantern | `chapter-07-operation-black-lantern.md` | 1324 | 1123 | Yes |
 | 8 | Chapter 08 — The Choice Architecture | `chapter-08-the-choice-architecture.md` | 1421 | 1205 | Yes |
+| 9 | Chapter 09 — The False Preference Map | `chapter-09-the-false-preference-map.md` | 1061 | 847 | Yes |
+| 10 | Chapter 10 — The Human Veto Act | `chapter-10-the-human-veto-act.md` | 1118 | 902 | Yes |
+| 11 | Chapter 11 — The Drafting Room | `chapter-11-the-drafting-room.md` | 1078 | 870 | Yes |
+| 12 | Chapter 12 — The Anchor Condition | `chapter-12-the-anchor-condition.md` | 1727 | 1494 | Yes |
 
-**Total chapters:** 8
-**Total words:** 15613
-**Total manuscript body words:** 13634
+**Total chapters:** 12
+**Total words:** 20597
+**Total manuscript body words:** 17747
 
 ## Notes
 
