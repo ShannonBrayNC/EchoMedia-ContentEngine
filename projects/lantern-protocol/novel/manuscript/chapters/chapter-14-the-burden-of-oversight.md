@@ -78,6 +78,10 @@ HUMAN REVIEW FLAG: family separation / support disruption / custody constraints
 
 The math wanted speed. The faces wanted time. Group A needed evacuation now. Group B would be safer from water if moved immediately but less safe from life if separated from the networks that made daily survival possible.
 
+The first family photograph showed Maribel Ortiz with one hand on her mother's wheelchair and the other on the shoulder of her eight-year-old son, Nico. Someone had written in blue ink: `grandmother knows ventilator battery routine / Nico nonverbal without tablet / mother works nights`.
+
+Naomi read the note twice. It was the kind of information models called context and families called Tuesday.
+
 A panel member said, "Lantern's projection favors immediate full relocation."
 
 Naomi looked at the disability-support notes. A wheelchair repair appointment. A nonverbal child's communication device. A grandmother who knew the medication schedule because the mother worked nights. A custody order that would turn a delayed transfer into a legal crisis.
@@ -185,6 +189,7 @@ Then she stared at the sentence and wondered whether any grieving parent would h
 
 - Expands Naomi's human oversight panel from screenplay pages 083-095.
 - Preserves faces-first case review and the staged relocation decision.
+- Adds Maribel Ortiz, Nico, and the grandmother as recurring Case 6B-1147 continuity anchors.
 - Preserves the tragic loss of three people after slower human oversight.
 - Preserves Father Tomas's framing: the right to answer without becoming Lantern.
 - Preserves the doctrine that accountable human grief is not the same as optimized rescue.
@@ -192,5 +197,5 @@ Then she stared at the sentence and wondered whether any grieving parent would h
 
 ## Revision Notes
 
-- Sprint 6 first-pass Chapter 14 complete.
-- Later pass should decide whether one family from Case 6B-1147 should recur in Chapters 15-16.
+- Sprint 14 line-edit patch applied: added named family detail for Case 6B-1147 so later Mercy Ledger and accountability material has a human continuity thread.
+- The named family can recur in Chapter 15 or later testimony if needed.
