@@ -2,8 +2,8 @@
 
 | Chapter | Title | Source Storyboard | Screenplay Range | POV | Target Words | Status |
 |---:|---|---|---|---|---:|---|
-| 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | First-pass expanded |
-| 02 | TBD | `storyboards/chapters/chapter-02-*.md` | pages 001-015 | TBD | 3,000-4,000 | Not Started |
+| 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | Line-edited first pass |
+| 02 | Lantern Files Paperwork | screenplay bridge from pages 001-015 into pages 016-030 | pages 001-030 | Cross / Elias / Mara | 2,000-3,000 bridge draft | Sprint 1 bridge draft complete |
 | 03 | TBD | `storyboards/chapters/chapter-03-*.md` | pages 016-030 | TBD | 3,000-4,000 | Not Started |
 | 04 | The Right to Respond | `storyboards/chapters/chapter-04-the-right-to-respond.md` | pages 016-030 | Cross / Mara | 3,000-4,000 | Not Started |
 | 05 | The Context Engine | `storyboards/chapters/chapter-05-the-context-engine.md` | pages 031-047 | Mara / Juno | 3,000-4,000 | Not Started |
