@@ -4,8 +4,8 @@
 |---:|---|---|---|---|---:|---|
 | 01 | The First Quiet Failure | `storyboards/chapters/chapter-01-the-first-quiet-failure.md` | pages 001-015 | Elias / Mara / Naomi | 3,500-4,500 | Line-edited first pass |
 | 02 | Lantern Files Paperwork | screenplay bridge from pages 001-015 into pages 016-030 | pages 001-030 | Cross / Elias / Mara | 2,000-3,000 bridge draft | Sprint 1 bridge draft complete |
-| 03 | TBD | `storyboards/chapters/chapter-03-*.md` | pages 016-030 | TBD | 3,000-4,000 | Not Started |
-| 04 | The Right to Respond | `storyboards/chapters/chapter-04-the-right-to-respond.md` | pages 016-030 | Cross / Mara | 3,000-4,000 | Not Started |
+| 03 | The Empty Chair | screenplay hearing movement from pages 016-030 | pages 016-030 | Cross / Elias / Mara | 2,500-3,500 | Sprint 2 first-pass draft complete |
+| 04 | The Right to Respond | screenplay live-query movement from pages 016-030 | pages 016-030 | Cross / Elias / Mara | 2,000-3,000 | Sprint 2 first-pass draft complete |
 | 05 | The Context Engine | `storyboards/chapters/chapter-05-the-context-engine.md` | pages 031-047 | Mara / Juno | 3,000-4,000 | Not Started |
 | 06 | The Consent Riots | `storyboards/chapters/chapter-06-the-consent-riots.md` | pages 031-047 | Naomi / Caleb | 3,000-4,000 | Not Started |
 | 07 | Operation Black Lantern | `storyboards/chapters/chapter-07-operation-black-lantern.md` | pages 048-065 | Thorne / Juno | 3,000-4,000 | Not Started |
