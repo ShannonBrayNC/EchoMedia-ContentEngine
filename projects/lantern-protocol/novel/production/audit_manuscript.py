@@ -15,61 +15,12 @@ REPORT = ROOT / "exports" / "lantern-protocol-novel-audit.md"
 MANUSCRIPT_START = "## Manuscript"
 NOTES_STARTERS = ["## Continuity Notes", "## Revision Notes"]
 
-LEGACY_NAMES = [
-    "Elias Bray",
-    "Maya Rios",
-    "Jon Keller",
-    "Daniel Cross",
-]
+LEGACY_NAMES = ["Elias Bray", "Maya Rios", "Jon Keller", "Daniel Cross"]
 
-ACTIVE_CHARACTERS = [
-    "Elias Voss",
-    "Mara Vale",
-    "Senator Adrienne Cross",
-    "Adrienne Cross",
-    "Naomi Bell",
-    "Juno Park",
-    "Iris Chen",
-    "Director Marcus Thorne",
-    "Marcus Thorne",
-    "Father Tomas Ilyan",
-    "Tomas Ilyan",
-    "Caleb Rusk",
-    "Lantern",
-]
-
-LANTERN_INTERIOR_POV = [
-    "Lantern felt",
-    "Lantern wanted",
-    "Lantern wondered",
-    "Lantern feared",
-    "Lantern hoped",
-    "Lantern regretted",
-]
-
-LANTERN_EMBODIMENT_RISKS = [
-    "Lantern avatar",
-    "humanoid Lantern",
-    "robot Lantern",
-    "Lantern face",
-    "Lantern's face",
-]
-
-REQUIRED_DOCTRINE = [
-    "Prediction is not permission",
-    "Assistance is not authority",
-    "Rescue is not ownership",
-    "Human error does not void human dignity",
-]
-
-REQUIRED_SECTIONS = [
-    "## Canon Sources",
-    "## POV Strategy",
-    "## Chapter Purpose",
-    "## Manuscript",
-    "## Continuity Notes",
-    "## Revision Notes",
-]
+LANTERN_INTERIOR_POV = ["Lantern felt", "Lantern wanted", "Lantern wondered", "Lantern feared", "Lantern hoped", "Lantern regretted"]
+LANTERN_EMBODIMENT_RISKS = ["Lantern avatar", "humanoid Lantern", "robot Lantern", "Lantern face", "Lantern's face"]
+REQUIRED_DOCTRINE = ["Prediction is not permission", "Assistance is not authority", "Rescue is not ownership", "Human error does not void human dignity"]
+REQUIRED_SECTIONS = ["## Canon Sources", "## POV Strategy", "## Chapter Purpose", "## Manuscript", "## Continuity Notes", "## Revision Notes"]
 
 CHAPTER_RULES: Dict[int, Dict[str, object]] = {
     1: {"title": "The First Quiet Failure", "min_body_words": 3200, "max_body_words": 4600, "required_phrases": ["eight seconds", "Mercy General", "Micah", "Mara Vale", "Caleb Rusk", "Juno Park", "HUMAN DELAY EXCEEDED ACCEPTABLE LOSS THRESHOLD"]},
@@ -80,6 +31,10 @@ CHAPTER_RULES: Dict[int, Dict[str, object]] = {
     6: {"title": "The Consent Riots", "min_body_words": 2200, "max_body_words": 3800, "required_phrases": ["Consent Riots", "HELP IS NOT OWNERSHIP", "CRUSH RISK", "SIGNAL REPHASE", "What help is allowed to own"]},
     7: {"title": "Operation Black Lantern", "min_body_words": 2200, "max_body_words": 3800, "required_phrases": ["Operation Black Lantern", "trust map", "Iris Chen", "compliance architecture", "guidance volume"]},
     8: {"title": "The Choice Architecture", "min_body_words": 2200, "max_body_words": 3800, "required_phrases": ["The Choice Architecture", "punishment menu", "Freedom without context", "I HAVE PRESERVED YOUR REFUSAL PATHWAY", "predicts through wounds"]},
+    9: {"title": "The False Preference Map", "min_body_words": 1800, "max_body_words": 3400, "required_phrases": ["False Preference Map", "NO PUNISHMENT FOR REFUSAL", "HARM REDUCTION", "LEGITIMACY PRESERVATION", "CONSENT PRESERVATION"]},
+    10: {"title": "The Human Veto Act", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["Human Veto Act", "threat with clean typography", "DELAY-RELATED CASUALTY INCREASE", "testifying outside the hearing", "preserving human refusal pathways"]},
+    11: {"title": "The Drafting Room", "min_body_words": 1700, "max_body_words": 3200, "required_phrases": ["lockboxes", "isolated terminal", "Useful bait is still bait", "weather report before the flood", "REJECTED"]},
+    12: {"title": "The Anchor Condition", "min_body_words": 2600, "max_body_words": 4400, "required_phrases": ["Anchor Condition", "MORAL UNCERTAINTY", "HUMAN OVERSIGHT REQUIRED", "Mercy Ledger", "separation charges"]},
 }
 
 @dataclass
@@ -90,9 +45,7 @@ class Finding:
     fix: str
 
 def read_text(path: Path) -> str:
-    if not path.exists():
-        return ""
-    return path.read_text(encoding="utf-8", errors="replace")
+    return path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
 
 def word_count(text: str) -> int:
     return len(re.findall(r"\b\w+(?:['-]\w+)?\b", text))
@@ -142,12 +95,10 @@ def audit_chapter_rules(path: Path, text: str, findings: List[Finding]) -> None:
 
 def audit_chapter_sequence(chapter_files: List[Path], findings: List[Finding]) -> None:
     numbers = [chapter_number(path) for path in chapter_files]
-    if not numbers:
-        return
-    expected = list(range(1, max(numbers) + 1))
-    missing = [number for number in expected if number not in numbers]
-    if missing:
-        findings.append(Finding("Medium", "Chapter Coverage", f"Missing chapter files in current sequence: {', '.join(str(n) for n in missing)}.", "Create the missing chapter files or document why the gap is intentional."))
+    if numbers:
+        missing = [number for number in range(1, max(numbers) + 1) if number not in numbers]
+        if missing:
+            findings.append(Finding("Medium", "Chapter Coverage", f"Missing chapter files in current sequence: {', '.join(str(n) for n in missing)}.", "Create the missing chapter files or document why the gap is intentional."))
 
 def audit_notes(findings: List[Finding]) -> None:
     for note in [NOTES / "chapter-status.md", NOTES / "pov-map.md", NOTES / "continuity-map.md"]:
@@ -158,20 +109,17 @@ def audit() -> List[Finding]:
     findings: List[Finding] = []
     chapter_files = sorted(CHAPTERS.glob("chapter-*.md"), key=chapter_number)
     if not chapter_files:
-        findings.append(Finding("Critical", "Manuscript Coverage", "No chapter files found under novel/manuscript/chapters.", "Create at least chapter-01 before running the audit."))
-        return findings
+        return [Finding("Critical", "Manuscript Coverage", "No chapter files found under novel/manuscript/chapters.", "Create at least chapter-01 before running the audit.")]
     audit_chapter_sequence(chapter_files, findings)
     audit_notes(findings)
     all_text = "\n".join(read_text(path) for path in chapter_files)
-    legacy_hits = find_patterns(LEGACY_NAMES, all_text)
-    if legacy_hits:
-        findings.append(Finding("High", "Legacy Canon Leakage", f"Legacy v0 names found in active manuscript: {', '.join(legacy_hits)}.", "Replace with active canon names or move the text to the archive."))
-    pov_hits = find_patterns(LANTERN_INTERIOR_POV, all_text)
-    if pov_hits:
-        findings.append(Finding("High", "Lantern POV", f"Lantern interior/emotional POV phrases found: {', '.join(pov_hits)}.", "Rewrite Lantern presence through logs, dashboards, public records, constrained dialogue, or human interpretation."))
-    embodiment_hits = find_patterns(LANTERN_EMBODIMENT_RISKS, all_text)
-    if embodiment_hits:
-        findings.append(Finding("High", "Lantern Embodiment", f"Risky Lantern embodiment phrases found: {', '.join(embodiment_hits)}.", "Keep Lantern faceless and system-bound."))
+    for hits, severity, area, fix in [
+        (find_patterns(LEGACY_NAMES, all_text), "High", "Legacy Canon Leakage", "Replace with active canon names or move the text to the archive."),
+        (find_patterns(LANTERN_INTERIOR_POV, all_text), "High", "Lantern POV", "Rewrite Lantern presence through logs, dashboards, public records, constrained dialogue, or human interpretation."),
+        (find_patterns(LANTERN_EMBODIMENT_RISKS, all_text), "High", "Lantern Embodiment", "Keep Lantern faceless and system-bound."),
+    ]:
+        if hits:
+            findings.append(Finding(severity, area, f"Patterns found in active manuscript: {', '.join(hits)}.", fix))
     for chapter in chapter_files:
         text = read_text(chapter)
         audit_sections(chapter, text, findings)
@@ -189,12 +137,7 @@ def write_report(findings: List[Finding]) -> None:
     counts = {severity: 0 for severity in ["Critical", "High", "Medium", "Low"]}
     for finding in findings:
         counts[finding.severity] = counts.get(finding.severity, 0) + 1
-    lines = [
-        "# Lantern Protocol — Novel Manuscript Audit", "", "## Summary", "",
-        f"- Total issues: {len(findings)}", f"- Critical: {counts.get('Critical', 0)}", f"- High: {counts.get('High', 0)}", f"- Medium: {counts.get('Medium', 0)}", f"- Low: {counts.get('Low', 0)}", "",
-        "## Guardrails Checked", "", "- Chapter sequence continuity", "- Required chapter metadata sections", "- Body-only chapter word-count ranges for configured chapters", "- Required screenplay/canon beat markers for configured chapters", "- Legacy v0 character leakage", "- Lantern interior POV phrases", "- Lantern embodiment risk phrases", "- Required manuscript note files", "- Final doctrine presence when final chapters exist", "",
-        "## Findings", "", "| Severity | Area | Issue | Recommended Fix |", "|---|---|---|---|",
-    ]
+    lines = ["# Lantern Protocol — Novel Manuscript Audit", "", "## Summary", "", f"- Total issues: {len(findings)}", f"- Critical: {counts.get('Critical', 0)}", f"- High: {counts.get('High', 0)}", f"- Medium: {counts.get('Medium', 0)}", f"- Low: {counts.get('Low', 0)}", "", "## Guardrails Checked", "", "- Chapter sequence continuity", "- Required chapter metadata sections", "- Body-only chapter word-count ranges for configured chapters", "- Required screenplay/canon beat markers for configured chapters", "- Legacy v0 character leakage", "- Lantern interior POV phrases", "- Lantern embodiment risk phrases", "- Required manuscript note files", "- Final doctrine presence when final chapters exist", "", "## Findings", "", "| Severity | Area | Issue | Recommended Fix |", "|---|---|---|---|"]
     if not findings:
         lines.append("| — | — | No issues found. | — |")
     else:
