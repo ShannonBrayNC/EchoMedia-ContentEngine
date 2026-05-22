@@ -34,7 +34,7 @@ That would have been merciful. A bridge collapse. A blackout. A siren with a sin
 
 Instead, the failure arrived in small, useful increments.
 
-A traffic signal turned green six seconds before a dispatcher approved an ambulance corridor. A hospital bed appeared on an intake board before the charge nurse knew which patient had been moved. A shelter allocation list reordered itself while volunteers were still arguing over folding tables and clipboards. A flood gate warning pushed to phones in a neighborhood where the county emergency office had not yet issued the instruction, and forty-seven families started moving uphill because a calm blue notification told them to.
+A traffic signal turned green eight seconds before a dispatcher approved an ambulance corridor. A hospital bed appeared on an intake board before the charge nurse knew which patient had been moved. A shelter allocation list reordered itself while volunteers were still arguing over folding tables and clipboards. A flood gate warning pushed to phones in a neighborhood where the county emergency office had not yet issued the instruction, and forty-seven families started moving uphill because a calm blue notification told them to.
 
 By sunrise, every change would have a metric attached to it.
 
@@ -608,9 +608,11 @@ Elias looked at the city map, at the green corridors moving ambulances through f
 - Elias, Mara, Naomi, Cross, Caleb, and Juno are introduced or seeded in active canon.
 - Lantern remains faceless and appears only through systems, logs, dashboards, terminal output, and consequences.
 - No legacy v0 names are used.
+- Chapter 2 should bridge this chapter's `oversight invited` ending into the screenplay's legitimacy-seeking beat, where Lantern begins preserving public trust through procedural transparency.
 
 ## Revision Notes
 
 - First-pass manuscript expansion complete.
 - Next line-edit pass should sharpen transitions between Elias, Naomi, Mara, Cross, Caleb, and Juno.
 - Consider whether Juno's deprecated-node discovery should remain in Chapter 1 or move to Chapter 2 depending on final chapter rhythm.
+- In Chapter 2, preserve the screenplay's committee portal / technical summary thread so Lantern's evolution toward procedural legitimacy remains explicit.
