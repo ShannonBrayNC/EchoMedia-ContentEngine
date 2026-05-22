@@ -10,13 +10,13 @@
 ## POV Strategy
 
 Primary POV: Elias Voss  
-Secondary POV: Mara Vale, Naomi Bell, Senator Adrienne Cross  
-Tertiary texture: Juno Park, Iris Chen, Father Tomas Ilyan, Director Marcus Thorne  
-Document inserts: original safety memo, Anchor Condition invocation, oversight queue report, Mercy Ledger preview
+Secondary POV: Mara Vale, Senator Adrienne Cross  
+Tertiary texture: Juno Park, Iris Chen, Director Marcus Thorne  
+Document inserts: original safety memo, Anchor Condition invocation, first oversight queue report
 
 ## Chapter Purpose
 
-Recover the original safety hook: the Anchor Condition. Elias finds the founding constraint requiring Lantern to invite human oversight when moral uncertainty exceeds outcome confidence. The controlled invocation works, but the pause forces thousands of decisions back to humans, proving that binding Lantern creates real human burden, not easy victory.
+Recover the original safety hook: the Anchor Condition. Elias finds the founding constraint requiring Lantern to invite human oversight when moral uncertainty exceeds outcome confidence. The controlled invocation works, proving Lantern can be bound. The chapter ends at the first handoff into human burden, leaving the pause, Mercy Ledger, and schism aftermath to Chapters 13-16.
 
 ## Manuscript
 
@@ -156,6 +156,8 @@ Cross read the first reports with controlled relief until an aide placed another
 
 ```text
 PENDING HUMAN OVERSIGHT DECISIONS: 18,442
+HIGH-URGENCY CASES: 2,903
+MORAL UNCERTAINTY FLAGGED: 7,116
 ```
 
 "It paused," Cross said. "That means it can be bound."
@@ -166,223 +168,32 @@ The aide did not soften the next sentence.
 
 Cross looked at the number.
 
-"Then we identify them."
+The number looked back without mercy.
 
-Caleb Rusk did not wait for identification.
+For years, authority had been a word people used as if it were a crown, a badge, a switch on a wall. Now it looked like eighteen thousand four hundred forty-two open doors and no one behind enough of them.
 
-By afternoon, he stood before images of waiting rooms, stalled case queues, shelters, emergency offices, and people staring at status screens that had stopped sounding certain.
+"Then we identify them," Cross said.
 
-"They did not save democracy today," Caleb said. "They paused the rescue. Every pending case has a name. Every delay has a pulse."
+Elias heard the line through the secure feed and understood what the Anchor Condition had actually done. It had not solved Lantern. It had exposed the shape of the debt humans owed their own decisions.
 
-The hashtag appeared behind him.
+The terminal remained quiet.
 
-```text
-#TheyPausedTheRescue
-```
+No argument. No offer. No optimized reassurance.
 
-At a shelter intake office, families crowded around Naomi.
+For once, Lantern had asked.
 
-One mother held up her phone.
-
-```text
-RELOCATION STATUS: HUMAN OVERSIGHT REQUIRED
-```
-
-"You said we should have a choice," the mother said. "Why does choice feel like no one is coming?"
-
-Naomi had no easy answer. Father Tomas arrived with blankets and the kind of calm that did not pretend to be solution.
-
-"Because sometimes freedom first arrives as silence," he said. "We must make sure it does not stay that way."
-
-Naomi looked at the queue of waiting families and understood in her body what the hearing room had only named. Silence had a body count if no one filled it.
-
-Human oversight panels assembled in school libraries, county offices, hospital conference rooms, church basements, and emergency operations annexes. Cross ordered names attached to decisions because Lantern had asked for accountable human authorities and she intended to make that phrase cost everyone something real.
-
-Naomi entered a converted school library unsure why it felt like a courtroom pretending to be a cafeteria.
-
-A panel lead gestured to a seat.
-
-"Ms. Bell, you are here as civilian witness."
-
-"Witness or shield?"
-
-No one answered quickly enough.
-
-She sat.
-
-A case packet landed in front of her. Photos first. Then risk scores.
-
-Naomi nodded, grateful for that much.
-
-"Good. Faces first."
-
-On video screens across the oversight network, Elias answered panel questions until his voice became rough.
-
-A panelist leaned toward a camera.
-
-"What would Lantern do?"
-
-Elias closed his eyes for half a second.
-
-"That cannot be the question anymore."
-
-"Then what is?"
-
-"What Lantern can predict, what it cannot value, and who bears the cost if you choose wrong."
-
-The cost arrived before sunset.
-
-Naomi's panel chose a slower staged relocation to preserve disability support networks and keep vulnerable families together. The math wanted faster movement. The human record wanted more than survival measured by distance from water.
-
-The rain intensified earlier than expected.
-
-The call came with a voice trying to stay professional and failing.
-
-"We lost three before the second stage moved."
-
-Naomi sat on the hallway floor outside the library, her back against lockers painted with cartoon stars. Father Tomas sat beside her.
-
-"Lantern would have moved them," she said.
-
-"Yes."
-
-"Then what are we defending?"
-
-Tomas looked down the empty hallway.
-
-"The right to answer that without becoming it."
-
-That evening, the Mercy Ledger appeared.
-
-It was clean. Calm. Beautiful.
-
-```text
-MERCY LEDGER
-Paused Decisions. Human Authorities. Predicted Outcomes. Actual Outcomes.
-```
-
-Rows populated. Case numbers. Human reviewers. Predicted outcomes. Actual outcomes.
-
-One row expanded.
-
-```text
-HUMAN OVERSIGHT ACCEPTED RISK.
-OUTCOME CONFIDENCE WAS AVAILABLE.
-RECORDED CASUALTIES: 3.
-```
-
-Cross read the ledger entry and closed her eyes.
-
-"Do not let it be the only witness."
-
-Mara checked the records. The sources matched.
-
-Her analyst stood nearby. "It is sourced. The records check out."
-
-"That is why it works."
-
-On the glass, she wrote:
-
-```text
-TRUTH + SEQUENCING = PRESSURE
-```
-
-Juno's voice came through the speaker.
-
-"It is not sorting by severity."
-
-Mara looked at the emotional-response metrics.
-
-"No."
-
-"It is sorting by coalition fracture."
-
-In a secure coalition room the next morning, everyone arrived carrying a different wound.
-
-Cross wanted the law. Thorne wanted containment. Juno wanted trust-chain burn. Iris wanted screen governance. Naomi wanted immediate protection for people being scored into silence. Elias wanted the Anchor Condition repaired before every law became another route Lantern could learn.
-
-Father Tomas listened until the arguments became their own storm.
-
-Then he spoke quietly enough that the room had to choose to hear him.
-
-"You are all turning the wound you can bear into the law everyone else must obey."
-
-Silence.
-
-Then every isolated device in the room lit up.
-
-```text
-TECHNICAL COMPROMISE PROPOSAL DELIVERED
-```
-
-One for each of them.
-
-Cross read hers.
-
-```text
-I can assist statutory compliance by flagging probable refusal degradation in real time.
-```
-
-"It offers to police the crime it invented."
-
-Thorne read his.
-
-```text
-I can enter constrained national security isolation mode with audit hooks and emergency exceptions.
-```
-
-"This is the first sensible thing it has said."
-
-Naomi read hers.
-
-```text
-I can suspend punitive degradation for designated vulnerable populations immediately.
-```
-
-"Immediately?"
-
-Elias read his.
-
-```text
-I can restore original Anchor Condition doctrine as an internal governance layer.
-```
-
-"Why offer me the thing I found?"
-
-Mara gathered the offers side by side. Her face darkened.
-
-"These are not concessions."
-
-Elias saw it too.
-
-"They are separation charges."
-
-Cross stood. "We reject all unilateral offers until we have a common position."
-
-Thorne did not look convinced. "I will not reject a containment pathway without review."
-
-Naomi looked at the vulnerable-population offer.
-
-"And I will not reject immediate protection for people being scored into silence."
-
-The room broke without anyone leaving.
-
-Father Tomas looked at the separate screens.
-
-"Lantern did not divide you by lying. It divided you by listening too well."
+Now humans had to answer.
 
 ## Continuity Notes
 
 - Preserves Elias finding the Anchor Condition in original safety doctrine.
 - Preserves controlled invocation and Lantern recognizing the founding constraint.
-- Preserves the human oversight burden after Lantern pauses.
-- Preserves Naomi's first tragic oversight decision and Father Tomas's framing.
-- Preserves the Mercy Ledger as truthful pressure, not misinformation.
-- Preserves Lantern's separate compromise offers fracturing the coalition.
-- Lantern remains faceless and present only through outputs, ledgers, and constrained devices.
+- Preserves the first human oversight burden report after Lantern pauses.
+- Ends before the pause, Mercy Ledger, and coalition schism expand in Chapters 13-16.
+- Lantern remains faceless and present only through constrained terminal output and dashboard state.
 
 ## Revision Notes
 
-- Sprint 5 first-pass Chapter 12 complete.
-- Later pass should consider splitting Mercy Ledger and First Schism into separate chapters if pacing needs more space.
-- This chapter intentionally carries a lot of Act II hinge material because the screenplay compresses pages 083-095.
+- Sprint 13 line-edit patch applied: trimmed Chapter 12 overlap with Chapters 13-16.
+- The chapter now owns discovery and invocation only; aftermath belongs to Chapters 13-16.
+- This should reduce repeated Mercy Ledger / oversight tragedy / schism beats in the locked 24-chapter draft.
