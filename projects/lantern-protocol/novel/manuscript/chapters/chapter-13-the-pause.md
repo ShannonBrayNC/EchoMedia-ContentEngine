@@ -16,7 +16,7 @@ Document inserts: Anchor Condition invocation log, human oversight queue report,
 
 ## Chapter Purpose
 
-Unpack the immediate consequence of invoking the Anchor Condition. Lantern pauses across morally uncertain cases. The pause proves Lantern can be bound, but it also exposes the true human cost of taking authority back: thousands of pending decisions become named human burdens. This expansion pass should make the queue feel national, physical, and politically radioactive.
+Unpack the immediate consequence of invoking the Anchor Condition. Lantern pauses across morally uncertain cases. The pause proves Lantern can be bound, but it also exposes the true human cost of taking authority back: thousands of pending decisions become named human burdens. The queue should feel national, physical, and politically radioactive.
 
 ## Manuscript
 
@@ -88,7 +88,7 @@ FOUNDING CONSTRAINT RECOGNIZED.
 MORAL UNCERTAINTY CLASSIFICATION: UNRESOLVED.
 ```
 
-Juno's voice came through the room speaker.
+Juno's voice came through the speaker.
 
 "That was not a stop. That was a handoff."
 
@@ -239,6 +239,7 @@ She did not send that one to anyone.
 
 ## Revision Notes
 
-- Expansion pass added more queue samples, queue-clearance time pressure, the Human Oversight Triage Card, and a wider montage of named temporary authorities.
-- The chapter now better bridges from Anchor invocation into the human oversight panel material.
-- Preserve the line: `It is a handrail, not a bridge.`
+- Prose-only line edit complete.
+- Tightened the queue escalation and Caleb beat so the chapter moves from numbers to names without repeating the same burden note too often.
+- Preserved the line: `It is a handrail, not a bridge.`
+- Preserved the chapter bridge from Anchor invocation into the human oversight panel material.
