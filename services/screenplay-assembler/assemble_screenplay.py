@@ -57,7 +57,42 @@ def assemble_fountain(chapters: list[Path]) -> str:
     return "\n".join(output).rstrip() + "\n"
 
 
-def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_count: int) -> None:
+def build_scene_cards(chapters: list[Path]) -> list[dict]:
+    scenes: list[dict] = []
+
+    for index, chapter in enumerate(chapters, start=1):
+        title = chapter.stem.replace("-", " ").title()
+        content = chapter.read_text(encoding="utf-8")
+        word_count = len(re.findall(r"\b\w+\b", content))
+
+        scenes.append({
+            "scene_id": f"SCN-{index:03d}",
+            "source_chapter": chapter.name,
+            "title": title,
+            "estimated_words": word_count,
+            "status": "draft",
+            "story_objective": "TODO",
+            "emotional_objective": "TODO",
+            "continuity_notes": [],
+            "adaptation_notes": [],
+        })
+
+    return scenes
+
+
+def write_scene_cards(project_root: Path, scenes: list[dict]) -> None:
+    scene_dir = project_root / "screenplay/scenes"
+    scene_dir.mkdir(parents=True, exist_ok=True)
+
+    for scene in scenes:
+        scene_path = scene_dir / f"{scene['scene_id'].lower()}.json"
+        scene_path.write_text(json.dumps(scene, indent=2) + "\n", encoding="utf-8")
+
+    index_path = scene_dir / "scene-index.json"
+    index_path.write_text(json.dumps({"scene_count": len(scenes), "scenes": scenes}, indent=2) + "\n", encoding="utf-8")
+
+
+def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_count: int, scene_count: int) -> None:
     export_dir = project_root / "screenplay/exports"
     export_dir.mkdir(parents=True, exist_ok=True)
 
@@ -69,9 +104,11 @@ def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_coun
 
     report = {
         "chapter_count": chapter_count,
+        "scene_count": scene_count,
         "status": "assembled",
         "markdown_output": str(markdown_path),
         "fountain_output": str(fountain_path),
+        "scene_index": str(project_root / "screenplay/scenes/scene-index.json"),
     }
 
     report_path = export_dir / "screenplay-assembly-report.json"
@@ -88,10 +125,13 @@ def main() -> int:
 
     markdown = assemble_markdown(chapters)
     fountain = assemble_fountain(chapters)
+    scenes = build_scene_cards(chapters)
 
-    write_outputs(args.project_root, markdown, fountain, len(chapters))
+    write_scene_cards(args.project_root, scenes)
+    write_outputs(args.project_root, markdown, fountain, len(chapters), len(scenes))
 
     print(f"Assembled screenplay draft from {len(chapters)} chapter(s).")
+    print(f"Generated {len(scenes)} scene card(s).")
     print("Wrote Markdown and Fountain exports.")
 
     return 0
