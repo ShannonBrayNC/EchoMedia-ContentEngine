@@ -58,31 +58,21 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 
 **Act I prose draft is complete.**
 
-Act I introduces the full ensemble, the core technical/legal problem, the pro-AEGIS argument, the civilian consent exploit, the Human Override inversion, and a second live operational pressure event.
-
 ## Act II Status
 
 **Act II prose draft is complete.**
-
-Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, the public-facing consent demo, the command-cost doctrine problem, the dead engineer archive, and Thorne's deeper wound.
 
 ## Act III Status
 
 **Act III prose draft is complete.**
 
-Chapters 17-24 turn the recovered archive into public/constitutional pressure, introduce Managed Burn Theory, force Mara to use AEGIS under named human authority, name Conditioned Consent and Scope Laundering, bring Father Tomas's ethics warning into the public evidence chain, and let Thorne make the strongest public case before the Act IV crisis ignites.
-
 ## Act IV Status
 
 **Act IV prose draft is complete.**
 
-Chapters 25-32 ignite the simultaneous three-theater crisis, avoid Sovereign Exception activation by thirty-one seconds, turn the margin into the Human-Visible Rapid Acceptance Order, release the evidence trail publicly, disrupt the fear-timed consent machinery through Consent Clock, restore the Human Override Covenant, move the framework into the legislative arena, fracture Thorne from the old continuity coalition, and close the last window against parallel invisible routing.
-
 ## Act V Status
 
 **Act V prose draft is complete.**
-
-Chapters 33-40 turn the restored covenant into a live refusal at Port Azure, force Naomi to confront the public consequences of truth, stall and then pass a narrow law, complete Thorne's transition to witness, turn public refusal into a precise civic tool, and land the epilogue image of humans keeping their hands on the decision.
 
 ## Full Novel Status
 
@@ -109,6 +99,8 @@ Drafted through:
 | Screenplay treatment | Complete | `SCREENPLAY_TREATMENT.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
+| Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
+| Manuscript build script | Complete | `scripts/build_manuscript.py` |
 
 ---
 
@@ -116,7 +108,7 @@ Drafted through:
 
 ## Novel
 
-- Build combined manuscript file from prologue plus Chapters 1-40.
+- Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
 - Add chapter-level revision pass for Acts I-V.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
@@ -138,11 +130,18 @@ Drafted through:
 
 ## Automation
 
-- Add scripts to create new story folders from templates.
+- Add revision scaffold files.
 - Add media manifest JSON for each story.
 
 ---
 
 # Current Recommendation
 
-Next strongest step: build a combined manuscript file, then begin the first revision pass. After that, create screenplay act beats, expanded storyboard prompts, and the ElevenLabs narration package.
+Next strongest step: create the revision scaffold:
+
+- `REVISION_PASS_1.md`
+- `CONTINUITY_NOTES.md`
+- `CHARACTER_ARC_AUDIT.md`
+- `TERMINOLOGY_GLOSSARY.md`
+
+Then begin Act I revision notes before screenplay and storyboard expansion.
