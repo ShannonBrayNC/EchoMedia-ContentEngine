@@ -60,6 +60,7 @@ Revised through:
 | Core outline | Complete | `README.md` |
 | Lantern shared-universe alignment pass | Complete | `ALIGNMENT_PASS_LANTERN_SHARED_UNIVERSE.md` |
 | Shared-universe consistency review | Complete | `SHARED_UNIVERSE_CONSISTENCY_REVIEW.md` |
+| Screen readiness review | Complete | `SCREEN_READINESS_REVIEW_AND_RECOMMENDATIONS.md` |
 | Chapter structure shared-universe addendum | Complete | `CHAPTER_STRUCTURE.md` |
 | Chapter structure | Complete | `CHAPTER_STRUCTURE_AND_ARCS.md` |
 | Act I scene cards | Complete | `SCENE_CARDS.md` |
@@ -99,6 +100,12 @@ Revised through:
 
 ## Screenplay / Movie
 
+- Create producer-facing screen package:
+  - `movie/ONE_PAGE_PITCH.md`
+  - `movie/PITCH_DECK_OUTLINE.md`
+  - `movie/COMPARABLES_AND_POSITIONING.md`
+  - `movie/VISUAL_LOOKBOOK.md`
+  - `movie/PROOF_OF_CONCEPT_PLAN.md`
 - Restore or create Lantern movie files when canon paths are confirmed:
   - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
   - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
@@ -125,6 +132,12 @@ Revised through:
 
 # Current Recommendation
 
-Next strongest step: verify or restore the Lantern movie files, then run a side-by-side movie adaptation alignment pass against the new Sovereign movie artifacts.
+Next strongest step: create the producer-facing screen package:
 
-If Lantern movie canon paths remain unavailable, continue Revision Pass 1 with Chapters 2-3.
+- `movie/ONE_PAGE_PITCH.md`
+- `movie/PITCH_DECK_OUTLINE.md`
+- `movie/COMPARABLES_AND_POSITIONING.md`
+- `movie/VISUAL_LOOKBOOK.md`
+- `movie/PROOF_OF_CONCEPT_PLAN.md`
+
+Best proof-of-concept scene: **Mara Finds the Timestamp**.
