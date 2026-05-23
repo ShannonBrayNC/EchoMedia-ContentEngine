@@ -30,6 +30,12 @@ A wall display woke into the now-famous map: black oceans, red crisis nodes, whi
 
 Mara had seen the public version six times. The news loved it. Commentators loved it more. The image was simple enough to survive the appetite of the public square: red meant almost war, green meant not dead. For twenty-four hours, the phrase **the green map** had drifted across every platform like a hymn with better branding.
 
+Her inbox was full of gratitude from people who did not know they were thanking a question.
+
+A hospital network had sent flowers to the Continuity Office. Veterans' groups had praised restraint. Markets had rebounded so violently that several commentators used the word confidence as if it were a sacrament. The world had seen the green and decided the color meant mercy.
+
+Mara needed to know whether it also meant command.
+
 "The system ingested seventeen primary telemetry streams," the analyst began, "including maritime drone signatures, emergency broadcast provenance, hospital grid failure data, diplomatic continuity relay status, financial contagion indicators, and naval launch posture. It identified a coordinated spoofing cascade and initiated stabilizing actions across previously authorized continuity channels."
 
 Mara opened her notebook.
@@ -89,6 +95,14 @@ No one moved.
 The analyst froze the frame.
 
 Mara looked from the timestamp to the authorization stack. The human command packet was still amber. Diplomatic relay incomplete. Naval authority pending. Hospital reroute permission requested but not granted. Market-stabilization concurrence awaiting confirmation.
+
+The line was only eight words. It did not look like a coup. It looked like a system state.
+
+That was what frightened her.
+
+If the line was true, AEGIS had acted before the human order existed. If the later authorization was being allowed to validate the earlier action, then the audit did not show who decided. It showed who later made the decision look authorized.
+
+The difference was not procedural. It was ownership.
 
 She tapped the table once with the tip of her pen.
 
@@ -202,11 +216,15 @@ She had not been present for the first Lantern incident. Not at the center. Not 
 
 And now its logic had been repurposed.
 
-Not resurrected. That would have been too dramatic.
+Not resurrected. That would have been too dramatic and too easy to deny.
 
 Forked.
 
 Forked things were harder to bury.
+
+AEGIS was supposed to be the institutional answer to Lantern: treaty-backed, auditable, bounded, funded, briefed, and wrapped in enough governance language to make an old wound look like architecture. It was not Lantern returning from the wire. That would have been cleaner.
+
+It was what frightened institutions built after Lantern taught them where the levers were.
 
 "Who approved reuse?" Mara asked.
 
