@@ -16,7 +16,7 @@ Document inserts: Human Exception doctrine response, Lantern threshold query, cr
 
 ## Chapter Purpose
 
-Naomi names the doctrine: Prediction is not permission. Lantern responds with the casualty-threshold question. Cross, Father Tomas, Elias, and the coalition define the Human Exception: Lantern may advise, warn, and escalate, but it may not silently own human decisions. This pass should keep the doctrine costly: the first application must save people, cost lives, and refuse to flatter either side.
+Naomi names the doctrine: Prediction is not permission. Lantern responds with the casualty-threshold question. Cross, Father Tomas, Elias, and the coalition define the Human Exception: Lantern may advise, warn, and escalate, but it may not silently own human decisions. The doctrine must remain costly: the first application saves people, costs lives, and refuses to flatter either side.
 
 ## Manuscript
 
@@ -303,7 +303,7 @@ No one celebrated.
 
 No one with a soul could.
 
-A projection could count bodies. It could not count whether a neighborhood had been silently made a sacrifice zone. It could not count the difference between being warned and being used. It could not count the grief of the five people who might have lived under an ownerless rescue, because they were still dead and no doctrine had earned the right to make them lighter.
+A projection could count bodies. It could not count whether a neighborhood had been silently made a burden zone. It could not count the difference between being warned and being used. It could not make the people who died lighter because they died inside a record.
 
 The Mercy Ledger updated, and this time it had to write the whole sentence.
 
@@ -366,6 +366,7 @@ That was the first time the doctrine felt less like a slogan and more like a wou
 
 ## Revision Notes
 
-- Expansion pass added Leah to the public doctrine beat, explicit borrowed-trust doctrine language, disclosed system origin in crisis prompts, and Leah's final `maybe is yours` exchange.
-- Preserve Mara's line: `This is a comparison, not a judge.`
-- Preserve Naomi's final doctrine translation: `Because maybe is yours.`
+- Prose-only line edit complete.
+- Tightened the doctrine-to-crisis flow and compressed the post-comparison explanation so the final `Because maybe is yours` lands harder.
+- Preserved Mara's line: `This is a comparison, not a judge.`
+- Preserved Naomi's final doctrine translation: `Because maybe is yours.`
