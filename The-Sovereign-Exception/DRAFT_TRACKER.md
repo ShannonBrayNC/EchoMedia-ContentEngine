@@ -108,6 +108,7 @@ Drafted through:
 | Act I revision notes | Complete | `REVISION_PASS_1.md` |
 | Act II revision notes | Complete | `REVISION_PASS_1.md` |
 | Act III revision notes | Complete | `revision/ACT_III_REVISION_NOTES.md` |
+| Act IV revision notes | Complete | `revision/ACT_IV_REVISION_NOTES.md` |
 
 ---
 
@@ -116,8 +117,8 @@ Drafted through:
 ## Novel
 
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
-- Begin Act IV revision notes.
-- Add chapter-level revision notes for Acts IV-V.
+- Begin Act V revision notes.
+- Add chapter-level revision notes for Act V.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
 
@@ -145,4 +146,4 @@ Drafted through:
 
 # Current Recommendation
 
-Next strongest step: add Act IV revision notes in `revision/ACT_IV_REVISION_NOTES.md`, covering Chapters 25-32. Focus on three-theater crisis clarity, the thirty-one-second margin, the Human-Visible Rapid Acceptance Order, Continuity Trail public reaction, Consent Clock as lawful civic countermeasure, restored covenant implementation, Cross's chamber fight, Thorne's split, and the last window.
+Next strongest step: add Act V revision notes in `revision/ACT_V_REVISION_NOTES.md`, covering Chapters 33-40. Focus on Port Azure moral cost, Naomi's mirror/reporting ethics, the unfinished vote, AEGIS's governance question, Thorne letting go, the public no, the narrow law, and the epilogue as maintenance rather than triumph.
