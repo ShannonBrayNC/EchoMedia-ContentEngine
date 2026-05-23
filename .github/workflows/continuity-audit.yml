@@ -13,6 +13,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Continuity Audit Placeholder
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Locate Markdown Files
         run: |
-          echo "Future continuity audit execution"
+          find . -name "*.md" | head
+
+      - name: Run Continuity Audit
+        run: |
+          TARGET=$(find . -name "*.md" | head -n 1)
+          if [ -n "$TARGET" ]; then
+            python services/continuity-engine/audit_continuity.py "$TARGET"
+          else
+            echo "No markdown files found"
+          fi
