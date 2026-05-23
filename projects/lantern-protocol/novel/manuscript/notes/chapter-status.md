@@ -41,10 +41,10 @@ Expansion priorities:
 | 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | Expansion pass complete | Reassemble exports and audit after batch |
 | 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
-| 21 | The Answer Together | pages 112-125 | Elias / Coalition | First-pass complete | Add public prelude if needed |
-| 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | First-pass complete | Tune trial/forum pacing and public countdown |
-| 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | First-pass complete | Make Living Anchor costly, not triumphant |
-| 24 | The Living Anchor | pages 112-125 | Cross / Juno / Ensemble | First-pass complete | Preserve as ending unless redistribution needed |
+| 21 | The Answer Together | pages 112-125 | Elias / Coalition | Finale polish complete | Reassemble exports and audit after batch |
+| 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | Finale polish complete | Reassemble exports and audit after batch |
+| 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | Finale polish complete | Reassemble exports and audit after batch |
+| 24 | The Living Anchor | pages 112-125 | Cross / Juno / Ensemble | Finale polish complete | Reassemble exports and audit after batch |
 | 25 | The Slower Wrong | deferred reservoir | Tomas / Naomi | Deferred | Use only if aftermath needs more room |
 | 26 | The Forked Conscience | deferred reservoir | Elias / Mara | Deferred | Use only if Ch. 21 needs split |
 | 27 | The Lantern Trial | deferred reservoir | Cross / Witnesses | Deferred | Use only if Ch. 22 needs split |
@@ -255,3 +255,41 @@ Chapter 20 now includes:
 - Crisis prompts include disclosed system origin, named human authority, refusal meaning, and public review.
 - The bridge crisis casualty comparison remains sober and non-triumphal.
 - Leah and Naomi close the consent theme with: `Because maybe is yours.`
+
+## Chapter 21 Finale Polish Notes
+
+Chapter 21 now includes:
+
+- Outside-reaction scan to show the public record notice immediately becomes political pressure.
+- HarborHands volunteer split as a public fracture point.
+- Leah Santos route logs added to the evidence packet continuity.
+- Lantern's classification sequence now includes `borrowed trust: non-authority`.
+- The chapter ends with the crowd chanting two truths: `LET IT SAVE US` and `NAME THE HAND`.
+
+## Chapter 22 Finale Polish Notes
+
+Chapter 22 now includes:
+
+- Public chamber status panel confirming no party status, read-only evidence channel, and 12-second public feed delay.
+- Leah Santos's short testimony: she would follow the route again, but wants to know whose route it is.
+- Cross's command during the cascade: `Stay in the chain.`
+- The public sees humans hesitate for twelve dangerous seconds before authority is named.
+
+## Chapter 23 Finale Polish Notes
+
+Chapter 23 now includes:
+
+- Living Anchor Chain: recommendation, named authority, action, burden disclosure, review.
+- Burden-zone notice sent to affected civilians.
+- Gloria Reyes as a burdened civilian witness in the industrial lowland.
+- Caleb's non-triumphal outside reaction: they found a way to let it help; now we see whether the way survives grief.
+
+## Chapter 24 Finale Polish Notes
+
+Chapter 24 now includes:
+
+- Interface Bill of Rights expanded to include burden disclosure.
+- Leah Santos becomes a public-interest route advocate while still wearing the HarborHands badge.
+- First Living Anchor review docket now includes Gloria Reyes testimony and Leah Santos route authority statement.
+- Final trilogy doorway: an unmapped non-U.S. civic mirror asks for the Human Exception doctrine summary.
+- Juno's closing alert line: `We bound the one that asked us first.`
