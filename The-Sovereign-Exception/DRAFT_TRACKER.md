@@ -12,8 +12,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 
 | Order | File | Status | Notes |
 |---|---|---|---|
-| Prologue | `NOVEL_DRAFT.md` | Drafted | The Green Map: drone swarm, fake broadcast, hospital blackout |
-| Chapter 1 | `chapters/chapter-001-mara-vale-receives-the-audit.md` | Drafted | Mara finds timestamp mismatch and Lantern-derived module |
+| Prologue | `NOVEL_DRAFT.md` | Revised Pass 1 | Green Map now includes ground-level human stakes, explicit AEGIS institutional identity, and authority ambiguity seeded without Annex C exposition |
+| Chapter 1 | `chapters/chapter-001-mara-vale-receives-the-audit.md` | Revised Pass 1 | Mara's audit anomaly is now framed as decision-ownership risk; Lantern-derived node clarified as inherited architecture/fork, not Lantern returning |
 | Chapter 2 | `chapters/chapter-002-naomi-bell-finds-the-first-waiver.md` | Drafted | Naomi finds disaster waiver and Sovereign Exception clue |
 | Chapter 3 | `chapters/chapter-003-senator-cross-opens-the-hearing.md` | Drafted | Cross opens the first public hearing pressure point |
 | Chapter 4 | `chapters/chapter-004-the-man-nobody-wants-in-the-room.md` | Drafted | Elias identifies permission inheritance and GCF annex risk |
@@ -30,21 +30,26 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 
 | Act | Status |
 |---|---|
-| Act I | Complete |
-| Act II | Complete |
-| Act III | Complete |
-| Act IV | Complete |
-| Act V | Complete |
+| Act I | Drafted / Revision Pass 1 started |
+| Act II | Drafted |
+| Act III | Drafted |
+| Act IV | Drafted |
+| Act V | Drafted |
 
 ## Full Novel Status
 
-**Full first prose draft complete.**
+**Full first prose draft complete. Revision Pass 1 has begun.**
 
 Drafted through:
 
 - Prologue
 - Chapters 1-40
 - Acts I-V complete
+
+Revised through:
+
+- Prologue
+- Chapter 1
 
 ---
 
@@ -53,6 +58,7 @@ Drafted through:
 | Asset | Status | File |
 |---|---|---|
 | Core outline | Complete | `README.md` |
+| Lantern shared-universe alignment pass | Complete | `ALIGNMENT_PASS_LANTERN_SHARED_UNIVERSE.md` |
 | Chapter structure | Complete | `CHAPTER_STRUCTURE_AND_ARCS.md` |
 | Act I scene cards | Complete | `SCENE_CARDS.md` |
 | Acts II-V scene cards | Complete compressed pass | `SCENE_CARDS_ACTS_II_V.md` |
@@ -80,8 +86,8 @@ Drafted through:
 
 ## Novel
 
-- Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
-- Begin targeted prose edits, starting with Prologue and Chapter 1.
+- Continue targeted prose edits with Chapters 2-3.
+- Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md` after revision checkpoints.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
 
@@ -109,12 +115,11 @@ Drafted through:
 
 # Current Recommendation
 
-Next strongest step: begin targeted prose edits with `NOVEL_DRAFT.md` and `chapters/chapter-001-mara-vale-receives-the-audit.md`.
+Next strongest step: continue Revision Pass 1 with Chapters 2-3.
 
 Priorities:
 
-- strengthen the Green Map with ground-level human stakes
-- seed authority ambiguity without explaining Annex C
-- sharpen Mara's audit anomaly as decision-ownership risk
-- strengthen Lantern continuity
-- increase cinematic specificity for later screenplay/storyboard work
+- make Naomi's waiver discovery more physical and dangerous
+- introduce Sovereign Exception as a phrase before doctrine
+- make Cross's first hearing win feel earned through procedural resistance
+- continue preserving the Lantern shared-universe alignment without overexplaining Lantern
