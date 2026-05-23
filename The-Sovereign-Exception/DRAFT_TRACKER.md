@@ -75,6 +75,7 @@ Revised through:
 | Movie comparables and positioning | Complete | `movie/COMPARABLES_AND_POSITIONING.md` |
 | Movie visual lookbook | Complete | `movie/VISUAL_LOOKBOOK.md` |
 | Movie proof-of-concept plan | Complete | `movie/PROOF_OF_CONCEPT_PLAN.md` |
+| Movie proof-of-concept timestamp scene | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
 | Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
@@ -105,13 +106,14 @@ Revised through:
 
 ## Screenplay / Movie
 
-- Create `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md` with 5-8 screenplay pages.
+- Create shot list and storyboard support for `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`.
+- Create UI mockup specification for the Green Map, authorization stack, audit timeline, and GCF Annex reveal.
+- Create ElevenLabs/table-read version of the timestamp scene.
 - Restore or create Lantern movie files when canon paths are confirmed:
   - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
   - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
 - Perform side-by-side Lantern/Sovereign adaptation alignment once Lantern movie artifacts exist.
 - Create `SCREENPLAY_ACTS.md` with scene headings and screenplay beats.
-- Convert trailer script into short proof-of-concept screenplay excerpt.
 
 ## Storyboard
 
@@ -121,6 +123,7 @@ Revised through:
 ## Audio
 
 - Create `ELEVENLABS_NARRATION_SCRIPT.md` for prologue and Chapter 1.
+- Create `AUDIO_PROOF_TIMESTAMP_SCENE.md` for table read / ElevenLabs proof scene.
 - Create `AUDIO_PRONUNCIATION_GUIDE.md` if the project needs a dedicated pronunciation-only file.
 
 ## Automation
@@ -132,8 +135,10 @@ Revised through:
 
 # Current Recommendation
 
-Next strongest step: write the proof-of-concept scene pages:
+Next strongest step: create production support for the timestamp POC scene:
 
-- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`
+- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_SHOTLIST.md`
+- `movie/UI_MOCKUP_SPEC_TIMESTAMP_SCENE.md`
+- `audio/AUDIO_PROOF_TIMESTAMP_SCENE.md`
 
-Target: 5-8 screenplay pages for **Mara Finds the Timestamp**.
+These files turn the written proof scene into a shootable, storyboardable, and voice-testable package.
