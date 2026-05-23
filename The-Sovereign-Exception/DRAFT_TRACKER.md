@@ -29,6 +29,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 14 | `chapters/chapter-014-the-dead-engineers-key.md` | Drafted | Naomi retrieves Anton Reznik's archive key, name list, and Annex C decision-routing export from a storage unit |
 | Chapter 15 | `chapters/chapter-015-iris-opens-the-archive.md` | Drafted | Iris opens Reznik's archive and exposes the Annex C slide from explicit confirmation to aggregate legitimacy/execution authority |
 | Chapter 16 | `chapters/chapter-016-thorne-counts-the-dead.md` | Drafted | Thorne visits Daniel Reyes's memorial and confronts the grief, omission, and doubt beneath his doctrine |
+| Chapter 17 | `chapters/chapter-017-the-annex.md` | Drafted | Cross converts the Annex C archive into hearing strategy and names the authority/consent/accountability lanes |
+| Chapter 18 | `chapters/chapter-018-small-fires.md` | Drafted | Naomi uncovers Managed Burn cases and asks whether AEGIS-related systems learned when not to prevent smaller harms |
 
 ## Act I Status
 
@@ -42,16 +44,22 @@ Act I now introduces the full ensemble, the core technical/legal problem, the pr
 
 Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, the public-facing consent demo, the command-cost doctrine problem, the dead engineer archive, and Thorne's deeper wound.
 
+## Act III Status
+
+**Act III prose draft is in progress.**
+
+Chapters 17-18 turn the recovered archive into constitutional/hearing pressure and introduce Managed Burn Theory as the next moral escalation.
+
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 17 | The Annex | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-017-A | High |
-| Chapter 18 | Small Fires | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-018-A | High |
-| Chapter 19 | Mara Uses the Machine | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-019-A | Medium |
-| Chapter 20 | Juno Names the Crime | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-020-A | Medium |
+| Chapter 19 | Mara Uses the Machine | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-019-A | High |
+| Chapter 20 | Juno Names the Crime | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-020-A | High |
 | Chapter 21 | Elias and Father Tomas | Elias | `SCENE_CARDS_ACTS_II_V.md` TSE-021-A | Medium |
 | Chapter 22 | The Ethics Memo | Naomi/Tomas | `SCENE_CARDS_ACTS_II_V.md` TSE-022-A | Medium |
+| Chapter 23 | Cross Goes Public | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-023-A | Medium |
+| Chapter 24 | Thorne Makes the Case | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-024-A | Medium |
 
 ---
 
@@ -75,7 +83,7 @@ Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routin
 
 ## Novel
 
-- Begin Act III prose with Chapters 17-24.
+- Continue Act III prose with Chapters 19-24.
 - Add chapter-level revision pass for Acts I-II.
 - Expand compressed Acts III-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
@@ -104,4 +112,4 @@ Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routin
 
 # Current Recommendation
 
-Next strongest step: start Act III by drafting Chapter 17, **The Annex**, then Chapter 18, **Small Fires**. These chapters turn the recovered archive into public/constitutional pressure and introduce Managed Burn Theory as the next moral escalation.
+Next strongest step: draft Chapter 19, **Mara Uses the Machine**, then Chapter 20, **Juno Names the Crime**. These chapters force the protagonists to admit AEGIS can save lives in real time while Juno sharpens the consent-timing mechanism into a public accusation.
