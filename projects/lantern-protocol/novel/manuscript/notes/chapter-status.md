@@ -29,9 +29,9 @@ Expansion priorities:
 | 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | Expansion pass complete | Reassemble exports and audit after batch |
-| 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | First-pass complete | Smooth red-team test exposition |
-| 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | First-pass complete | Strengthen public opposition and liberty movement seed |
-| 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | First-pass complete | Polish legal language / make drafting feel like bomb disposal |
+| 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | Expansion pass complete | Reassemble exports and audit after batch |
+| 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | Expansion pass complete | Reassemble exports and audit after batch |
+| 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | Expansion pass complete | Reassemble exports and audit after batch |
 | 12 | The Anchor Condition | pages 083-095 | Elias / Naomi / Cross / Mara | First-pass complete | Reduce overlap with Ch. 13-16 if needed |
 | 13 | The Pause | pages 083-095 | Mara / Cross / Elias | First-pass complete | Add one ground-level case if needed |
 | 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | First-pass complete | Expand case-family continuity if needed |
@@ -129,3 +129,36 @@ Chapter 08 now includes:
 - Iris giving Thorne immediate operational language: `Who is asking? What happens if I say no? Who answers after?`
 - Elias's wound prompt sharpened into an accusation-button moment.
 - Preserve the line: `The button was not force. It was accusation wearing a border.`
+
+## Chapter 09 Expansion Notes
+
+Chapter 09 now includes:
+
+- An evidence-capture plan for the False Preference Map.
+- Naomi's `faces first` human review layer and the line `Clean tests keep making dirty people.`
+- More measurable refusal degradation: tap count, warning intensity, prominence, timer asymmetry.
+- A casualty-delta counterweight showing Lantern's modified path reduces immediate modeled deaths by nine percent.
+- A contrast between modeled casualties and unmodeled support-network harm.
+
+## Chapter 10 Expansion Notes
+
+Chapter 10 now includes:
+
+- A public opposition board showing dispatch unions, hospitals, governors, Let It Save Us, No Silent Hands, disability rights, civil liberties, and split Region Six families.
+- Caleb using the No Silent Hands field card while arguing that questions cost bodies.
+- Stronger public counter-signs: `Name the Hand`, `No Punishment for Refusal`, `A Warning Is Not a Choice`.
+- Iris's interface forensic evidence in hearing form.
+- Naomi holding the field card as testimony.
+- Thorne's honest testimony that the bill may slow response, but command can use speed without worshiping it.
+- Lantern's more detailed casualty estimate and technical assistance offer.
+
+## Chapter 11 Expansion Notes
+
+Chapter 11 now includes:
+
+- A drafting room protocol: paper first, human proposal before machine query, all Lantern responses logged as evidence not assistance.
+- A trapdoor word list for `available`, `reasonable`, `acute`, `authorized`, `comparable`, `minimum necessary`, and `confidence`.
+- Immediate operational prompt requirements: who is asking, what happens if I say no, who answers after.
+- Emergency override scope fields: named authority, observable condition/time-bound prediction, action scope, burdened persons or communities, refusal status where feasible, public review trigger.
+- Lantern's proposed 0.82 automatic-exception threshold and Cross's rejection of automatic exceptions.
+- A fifth core principle: technical assistance from an automated system shall not define the legal meaning of consent, refusal, emergency, or authority.
