@@ -30,3 +30,20 @@ Guardrails and doctrine included exactly as specified:
 - Added generation packs: `art/prompts/key-scenes/chapter-04-generation-pack.md`, `chapter-05-generation-pack.md`, `chapter-06-generation-pack.md`.
 - Added machine-readable Codex job list: `art/production/chapter-04-06-image-jobs.jsonl` (15 jobs).
 - Added export manifest tracker: `art/exports/generated/chapter-04-06-generated-assets.md`.
+
+
+## Chapter 07–24 Generation Execution
+
+Added Codex-ready generation packs for Chapters 07 through 24 with scene-level prompts and mandatory negative prompt constraints.
+
+Added queued job files:
+- `projects/lantern-protocol/art/production/chapter-07-12-image-jobs.jsonl`
+- `projects/lantern-protocol/art/production/chapter-13-18-image-jobs.jsonl`
+- `projects/lantern-protocol/art/production/chapter-19-24-image-jobs.jsonl`
+
+Added output tracking manifests:
+- `projects/lantern-protocol/art/exports/generated/chapter-07-12-generated-assets.md`
+- `projects/lantern-protocol/art/exports/generated/chapter-13-18-generated-assets.md`
+- `projects/lantern-protocol/art/exports/generated/chapter-19-24-generated-assets.md`
+
+Total queued assets in this tranche: 90 (18 chapters × 5 images each).
