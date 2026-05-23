@@ -1,0 +1,18 @@
+{
+  "project": "example-project",
+  "canon_state": "draft",
+  "active_canon_files": [
+    "canon/story-bible.md",
+    "canon/timeline.md",
+    "canon/continuity-map.md"
+  ],
+  "locked_fields": [],
+  "visual_consistency_keys": [
+    "character.appearance",
+    "character.wardrobe",
+    "location.visual_tone"
+  ],
+  "prohibited_terms": [],
+  "doctrine_rules": [],
+  "drift_rules": []
+}

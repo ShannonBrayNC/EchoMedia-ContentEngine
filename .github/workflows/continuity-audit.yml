@@ -1,0 +1,32 @@
+name: Continuity Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  continuity-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Continuity Audits
+        run: |
+          set -e
+          FILES=$(find manuscript story screenplay -name "*.md" 2>/dev/null || true)
+          if [ -z "$FILES" ]; then
+            echo "No narrative markdown files found. Skipping continuity audit."
+            exit 0
+          fi
+          for file in $FILES; do
+            echo "Auditing $file"
+            python services/continuity-engine/audit_continuity.py "$file" --fail-under 70 --report "reports/$(basename "$file").continuity.json"
+          done
