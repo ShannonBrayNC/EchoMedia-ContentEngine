@@ -18,14 +18,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Locate Canon Manifests
+      - name: Validate Canon Manifests
         run: |
-          find . -name "canon-manifest.json" || true
-
-      - name: Run Canon Validator
-        run: |
-          if [ -f schemas/canon/example-canon-manifest.json ]; then
-            python services/canon-validator/validate_canon.py schemas/canon/example-canon-manifest.json
-          else
-            echo "No example manifest found yet"
+          set -e
+          MANIFESTS=$(find . -name "canon-manifest.json" -o -name "example-canon-manifest.json")
+          if [ -z "$MANIFESTS" ]; then
+            echo "No canon manifests found. Skipping canon validation."
+            exit 0
           fi
+          for manifest in $MANIFESTS; do
+            echo "Validating $manifest"
+            python services/canon-validator/validate_canon.py "$manifest" --report "reports/canon-validation-$(basename "$manifest").json"
+          done
