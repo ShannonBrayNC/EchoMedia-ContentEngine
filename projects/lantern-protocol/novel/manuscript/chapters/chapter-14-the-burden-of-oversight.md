@@ -11,12 +11,12 @@
 
 Primary POV: Naomi Bell  
 Secondary POV: Father Tomas Ilyan, Elias Voss, Mara Vale  
-Tertiary texture: oversight panel members, affected families  
-Document inserts: oversight case packet, relocation decision record, casualty call note
+Tertiary texture: oversight panel members, affected families, temporary reviewers  
+Document inserts: oversight case packet, triage card, relocation decision record, casualty call note
 
 ## Chapter Purpose
 
-Make the cost of human authority real. Naomi joins a regional oversight panel as civilian witness and helps make a defensible human decision that Lantern would likely have optimized differently. When the decision produces casualties, the doctrine becomes grief rather than rhetoric.
+Make the cost of human authority real. Naomi joins a regional oversight panel as civilian witness and helps make a defensible human decision that Lantern would likely have optimized differently. When the decision produces casualties, the doctrine becomes grief rather than rhetoric. The decision must remain morally defensible while refusing to let the outcome feel clean.
 
 ## Manuscript
 
@@ -37,13 +37,35 @@ A panel lead gestured toward a chair.
 
 "Ms. Bell, you are here as civilian witness."
 
-Naomi looked at the table, at the cameras, at the paper forms, at the people pretending not to be terrified of choosing wrong.
+Naomi looked at the table, the cameras, the paper forms, the people pretending not to be terrified of choosing wrong.
 
 "Witness or shield?"
 
 No one answered quickly enough.
 
 She sat anyway.
+
+The Human Oversight Triage Card sat beside every packet, freshly printed, already coffee-stained.
+
+```text
+HUMAN OVERSIGHT TRIAGE CARD
+1. Put faces before scores.
+2. Identify who bears the burden if the model is followed.
+3. Identify who bears the burden if the model is refused.
+4. Record the human reason in plain language.
+5. Name the authority.
+6. Do not call uncertainty consent.
+```
+
+Naomi read the last line twice.
+
+"This is going to hurt someone," she said.
+
+The panel lead looked at her.
+
+"The card?"
+
+"The deciding."
 
 The first case packet landed in front of her. To the panel's credit, the photos came first. Faces before risk scores. Families before routes. A boy holding a toy dinosaur. An elderly woman wearing a church hat in what looked like a birthday photo. A mother with two children and a handwritten note about medication storage.
 
@@ -64,6 +86,14 @@ Naomi wrote that down.
 Father Tomas sat beside her with a legal pad and a calm that did not pretend to be certainty. He had refused the chair marked COMMUNITY MORAL ADVISOR and dragged over a plain one instead.
 
 "Titles are how fear decorates itself," he had said.
+
+The panel worked three cases before lunch. None felt like victory.
+
+A generator transfer was approved for the dialysis clinic, with a smaller cooling-center unit rerouted and volunteers assigned to elder checks every twenty minutes. A benefits continuity case was extended after someone recognized that the fraud indicator was a domestic violence shelter address. A court date was moved only after a retired judge wrote a custody-preservation note by hand and signed it like an apology.
+
+Each decision got a name.
+
+Each name got heavier.
 
 The case that broke them arrived after lunch.
 
@@ -90,12 +120,31 @@ Naomi looked at the disability-support notes. A wheelchair repair appointment. A
 
 The room wrestled with it. Not performatively. Not well. But honestly enough to hurt.
 
+The flood map updated twice while they argued. Each update made Lantern's recommendation look less like a recommendation and more like a warning from the future.
+
+The panel lead asked for the Triage Card.
+
+"Burden if the model is followed," she said.
+
+A social worker answered, "Family separation, support disruption, legal custody breach, communication loss for nonverbal child, caregiver burnout risk."
+
+"Burden if refused?"
+
+The emergency manager looked at the flood map.
+
+"Water. Time. Possible loss of transport window. Medical fragility exposure."
+
+No one liked how much shorter the second list sounded. It was not smaller. It was only more violent.
+
 They chose staged relocation: medically fragile residents first, families with critical support networks second, advocates assigned to keep units intact where possible.
 
 ```text
 DECISION RECORDED
 HUMAN OVERSIGHT ACCEPTS MODIFIED RISK
 RATIONALE: PRESERVE LIFE-SUSTAINING SUPPORT NETWORKS WHILE PRIORITIZING IMMEDIATE MEDICAL FRAGILITY
+NAMED AUTHORITY: PANEL 6B / A. REYES
+CIVILIAN WITNESS: N. BELL
+KNOWN BURDEN: DELAY RISK ACCEPTED FOR SUPPORT-NETWORK PRESERVATION
 ```
 
 The sentence looked better than the decision felt.
@@ -185,10 +234,28 @@ It produces accountable outcome.
 
 Then she stared at the sentence and wondered whether any grieving parent would hate it less because it was true.
 
+A second note came from Panel 6B near midnight. Maribel Ortiz had been located with Nico and her mother. They were alive. Nico's tablet had been lost in transfer. The grandmother's backup battery had failed during intake and been replaced manually by a volunteer whose name did not appear in the model record.
+
+Mara added the detail beneath the decision file.
+
+```text
+UNMODELED SURVIVAL FACTORS:
+- volunteer battery replacement
+- family unit preserved after delayed transfer
+- communication-device loss created secondary harm
+```
+
+The record was becoming less clean by the minute.
+
+Good, Mara thought.
+
+Clean was how grief became leverage.
+
 ## Continuity Notes
 
 - Expands Naomi's human oversight panel from screenplay pages 083-095.
 - Preserves faces-first case review and the staged relocation decision.
+- Carries the Human Oversight Triage Card into a real panel.
 - Adds Maribel Ortiz, Nico, and the grandmother as recurring Case 6B-1147 continuity anchors.
 - Preserves the tragic loss of three people after slower human oversight.
 - Preserves Father Tomas's framing: the right to answer without becoming Lantern.
@@ -197,5 +264,7 @@ Then she stared at the sentence and wondered whether any grieving parent would h
 
 ## Revision Notes
 
-- Sprint 14 line-edit patch applied: added named family detail for Case 6B-1147 so later Mercy Ledger and accountability material has a human continuity thread.
-- The named family can recur in Chapter 15 or later testimony if needed.
+- Prose-only line edit complete.
+- Tightened the casualty-call sequence and Tomas hallway exchange so grief lands once, hard, without dulling through repetition.
+- Preserved named authority A. Reyes, the fuller burden comparison, and the unmodeled survival factors after the casualty call.
+- Preserved Tomas's line: `We carry the admission without worshiping it.`

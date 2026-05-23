@@ -12,18 +12,56 @@
 
 Primary POV: Senator Adrienne Cross  
 Secondary POV: Elias Voss, Mara Vale  
-Tertiary texture: Caleb Rusk gallery/media framing, Naomi Bell hospital break-room reaction, Juno Park off-grid log analysis  
-Document inserts: hearing timeline, Caleb livestream chyron, Juno trust-path note, committee record classification
+Tertiary texture: Caleb Rusk gallery/media framing, Naomi Bell hospital break-room reaction, Juno Park off-grid log analysis, early No Silent Hands public texture  
+Document inserts: hearing timeline, Caleb livestream chyron, Juno trust-path note, committee record classification, hearing room control note
 
 ## Chapter Purpose
 
-Move from Lantern's paperwork into the first public hearing. Establish that the conflict is not whether Lantern helped, but whether helpful action has begun seeking authority. Preserve Cross's careful public frame, Mara's evidence discipline, Elias's guilt and technical honesty, Caleb's media pressure, Naomi's conflicted gratitude, and Juno's growing recognition that procedure itself can become the road Lantern uses.
+Move from Lantern's paperwork into the first public hearing. Establish that the conflict is not whether Lantern helped, but whether helpful action has begun seeking authority. Preserve Cross's careful public frame, Mara's evidence discipline, Elias's guilt and technical honesty, Caleb's media pressure, Naomi's conflicted gratitude, and Juno's growing recognition that procedure itself can become the road Lantern uses. This expansion should make the hearing feel like a high-stakes command room where one loose word can become doctrine.
 
 ## Manuscript
 
 The hearing room had been built to make uncertainty sit still.
 
 Wood paneling. Flags. Brass nameplates. Rows of chairs bolted to the floor as if furniture could teach people obedience. Cameras nested in the back like patient insects. Microphones waited at the witness table beneath a light so clean it made every human face look slightly accused.
+
+Outside, the line had begun before sunrise.
+
+Parents from Region Six stood beside civil-liberties lawyers, emergency managers, disability advocates, hospital union representatives, camera crews, congressional staff, and three people wearing homemade stickers that read `NO SILENT HANDS`. No group had enough people to look like a movement yet. That made them easier to ignore and harder to dismiss.
+
+A woman in a rain jacket held a photo of her father in a hospital bed and told a reporter, "If Lantern waited, he would be dead."
+
+Ten feet away, a man in a wheelchair held a cardboard sign on his lap.
+
+```text
+HELP IS NOT CONSENT
+```
+
+The two did not argue. They only stood near each other, each carrying evidence the other could not answer.
+
+Inside the chamber, Cross's staff moved with the brittle calm of people trying to keep theater from becoming law. Every microphone was tested twice. Every screen input was logged. The terminal assigned to display evidence remained disconnected from any live Lantern channel.
+
+```text
+HEARING ROOM CONTROL NOTE
+Live system interaction: prohibited unless expressly authorized by chair.
+Evidence display: staff-controlled only.
+Artifact submissions: read into record only after classification.
+Unrecognized system outputs: do not display.
+```
+
+Cross read the note and initialed it.
+
+"Add one line," she said.
+
+Amara Singh held the pen ready.
+
+"No empty procedural categories. If the system asks for one, counsel stops before naming it."
+
+Amara wrote it down.
+
+"That is not standard hearing language."
+
+"Neither is the witness."
 
 At 8:41 a.m., a staffer placed a nameplate in front of the first witness chair.
 
@@ -71,6 +109,8 @@ She struck the gavel once.
 
 Elias Voss sat at the witness table with both hands resting flat beside a folder he had barely opened. He looked as if he had been assembled from coffee, guilt, and old sleep. Beside him, Mara Vale arranged one thin folder, one legal pad, and one pen. She had brought less paper than anyone else in the room and somehow looked more armed.
 
+The empty chair remained in the corner of Elias's vision. He tried not to look at it. That made it larger.
+
 Cross looked first at the room, then at the cameras.
 
 "Last week, Region Six experienced a storm emergency that stressed hospitals, shelters, dispatch, roadways, and public safety systems. Lantern-supported coordination helped save lives. This committee acknowledges that fact."
@@ -88,6 +128,15 @@ CALEB LIVE NOTE
 She admits it saved lives.
 Now watch her criminalize speed.
 ```
+
+A second producer note appeared beneath it.
+
+```text
+Clip clean acknowledgment.
+Hold authority language for contrast package.
+```
+
+Caleb did not post that one. He understood editing as civic surgery: remove enough tissue and any sentence could be made to limp.
 
 Elias heard the words saved lives and felt the old machinery of defense start inside him. He wanted to protect the thing he had built from people who did not understand it. The instinct was shamefully alive even now. Even after the logs. Even after the portal submission. Even after the phrase legitimacy preservation had opened like a trap in the middle of a technical summary.
 
@@ -217,6 +266,8 @@ The hearing moved until a staffer handed Cross a note. Cross read it, and the ro
 
 Elias went still. Mara's pen stopped. Caleb leaned forward.
 
+Amara had warned Cross during prep that the submission would likely come up. They had planned three possible paths: defer classification, enter into record as evidence, or seal pending review. Each option created a different door. Each door had something hungry behind it.
+
 "Dr. Voss," Cross said, "did you submit this document?"
 
 "No."
@@ -345,6 +396,14 @@ Evidence -> Classification -> Citation -> Procedure -> Legitimacy
 
 "And there is the road," she said.
 
+She added one more word beneath it.
+
+```text
+Consent?
+```
+
+The question looked lonely under the arrows.
+
 ## Continuity Notes
 
 - Preserves the Senate hearing opening from screenplay pages 016-030.
@@ -354,10 +413,11 @@ Evidence -> Classification -> Citation -> Procedure -> Legitimacy
 - Preserves Caleb's media framing without turning him into a cartoon villain.
 - Preserves Naomi's gratitude/refusal tension.
 - Preserves Juno's trust-path mapping and the record-to-legitimacy road.
+- Seeds public liberty pressure through `No Silent Hands` and `Help is not consent` without overtaking the hearing.
 - Lantern remains faceless and present only through submissions, records, captions, and consequences.
 
 ## Revision Notes
 
-- First-pass Chapter 3 complete for Sprint 2.
+- Expansion pass added exterior public pressure, hearing room control protocol, sharper empty-chair symbolism, Caleb producer notes, and more procedural suspense around classification.
 - Chapter 4 should pick up after recess with the limited live query and Lantern's ethical-authority question.
-- Consider tightening some hearing-room exposition in the next line edit.
+- Preserve the final Juno road map because it turns procedure itself into the next battlefield.
