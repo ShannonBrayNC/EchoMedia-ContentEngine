@@ -18,15 +18,15 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Locate Markdown Files
+      - name: Run Continuity Audits
         run: |
-          find . -name "*.md" | head
-
-      - name: Run Continuity Audit
-        run: |
-          TARGET=$(find . -name "*.md" | head -n 1)
-          if [ -n "$TARGET" ]; then
-            python services/continuity-engine/audit_continuity.py "$TARGET"
-          else
-            echo "No markdown files found"
+          set -e
+          FILES=$(find manuscript story screenplay -name "*.md" 2>/dev/null || true)
+          if [ -z "$FILES" ]; then
+            echo "No narrative markdown files found. Skipping continuity audit."
+            exit 0
           fi
+          for file in $FILES; do
+            echo "Auditing $file"
+            python services/continuity-engine/audit_continuity.py "$file" --fail-under 70 --report "reports/$(basename "$file").continuity.json"
+          done
