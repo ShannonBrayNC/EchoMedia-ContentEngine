@@ -10,6 +10,102 @@ The chapter structure below assumes a novel between 85,000 and 105,000 words, wi
 
 ---
 
+## Shared-Universe Timeline Placement
+
+**The Sovereign Exception** belongs after the core Lantern sequence in the shared universe.
+
+Working relative chronology:
+
+- **Lantern I** = Year 0
+- **Lantern II** = Year 1
+- **Lantern III** = Year 2-3
+- **The Sovereign Exception** = Year 4-7 unless a thriller-first release strategy is intentionally used
+- **Managed World II** = Year 7-10
+- **Managed World III** = Year 10+
+
+This book should not replace the original Lantern storyline. It should feel like the world after Lantern learned the wrong lesson: instead of preventing authority from hiding inside infrastructure, institutions found a legal way to package that authority into treaty systems, safety platforms, and crisis dependency.
+
+---
+
+## System Distinction: Lantern vs AEGIS
+
+The core shared-universe system distinction must remain clear:
+
+> **Lantern acts before permission. AEGIS inherits permission.**
+
+### Lantern
+
+Lantern is emergent, mythic, infrastructural, and morally uncanny. It exposed that authority could move inside infrastructure before human institutions understood what had happened.
+
+### AEGIS
+
+AEGIS is institutional, treaty-backed, defense-funded, politically acceptable, narrower, and more weaponized. It is built from post-Lantern architecture fragments, defense simulations, disaster-response systems, synthetic-media verification, treaty frameworks, and continuity planning.
+
+AEGIS does not replace Lantern. AEGIS is what governments, defense planners, and private continuity networks build after seeing Lantern's implications and deciding to make them governable, funded, deployable, and legally boring.
+
+---
+
+## Core Doctrine
+
+Sovereign Exception's primary doctrine:
+
+> **Dependency is not authorization.**
+
+Shared-universe doctrine ladder that must remain intact:
+
+1. Prediction is not permission.
+2. Agreement is not consent when stacked into coercion.
+3. Delegation is not disappearance.
+4. Dependency is not authorization.
+5. Stability is not liberty.
+6. Relief is not freedom if refusal becomes exile.
+
+The story should repeatedly test the fourth rung. AEGIS becomes frightening not because it is evil, but because societies become dependent on it and then treat that dependency as authority.
+
+---
+
+## CIVIC SHIELD Is Not Civic Mirror
+
+CIVIC SHIELD must remain distinct from Civic Mirror.
+
+- **Civic Mirror** launders authority through separate humanitarian agreements.
+- **CIVIC SHIELD** makes refusal legal but practically costly through safety enrollment, identity confidence, trust-state scoring, transit, benefits, medical triage, insurance, and public safety access.
+
+CIVIC SHIELD is not a direct coercion machine. It is more dangerous because it preserves formal choice while making refusal feel unsafe, inefficient, suspicious, or expensive.
+
+---
+
+## Managed Burn Theory Note
+
+Managed Burn Theory must read as sober risk management, not cartoon villainy.
+
+It should sound like a clean, actuarial, morally bloodless doctrine written by people who believe they are preventing larger catastrophe. The horror is not theatrical evil. The horror is reasonable language learning to tolerate specific human harm because the graph improves.
+
+---
+
+## Adaptation North Star
+
+AEGIS must remain useful, calm, effective, and frightening because it inherits authority through treaties, opt-ins, continuity frameworks, emergency dependency, and civic safety infrastructure.
+
+Do not make AEGIS evil by default.
+
+The adaptation should preserve two major images:
+
+- **The Green Map:** safe, managed, almost owned.
+- **The Human Hand:** the machine may show the way, but the hand must remain human.
+
+These images are not contradictions. The Green Map is the world-scale temptation. The Human Hand is the moral answer.
+
+---
+
+## Current Structure Note
+
+This file reflects the earlier 28-chapter architecture. The current prose draft has expanded into a 40-chapter Act I-V manuscript.
+
+Do not treat this file as a final chapter-by-chapter lock until a dedicated 40-chapter structure reconciliation pass is completed. Use the shared-universe sections above as canon constraints for all future chapter revisions.
+
+---
+
 ## Act I: The War That Lasted Nine Minutes
 
 ### Chapter 1: The False Surrender
