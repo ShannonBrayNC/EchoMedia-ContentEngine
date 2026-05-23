@@ -51,12 +51,14 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 36 | `chapters/chapter-036-the-machine-asks.md` | Drafted | AEGIS asks which governance mode should apply before law is enacted, forcing humans to name the provisional default |
 | Chapter 37 | `chapters/chapter-037-thorne-lets-go.md` | Drafted | Thorne publicly admits audit is not restraint and steps from architect-owner toward witness |
 | Chapter 38 | `chapters/chapter-038-the-public-no.md` | Drafted | Juno and citizens turn refusal into Safety yes, hidden authority no, preserving essential safety while rejecting broad hidden authority |
+| Chapter 39 | `chapters/chapter-039-the-narrow-law.md` | Drafted | The Human Authority in Emergency AI Systems Act passes as narrow, imperfect law and forces silence to stop being permission |
+| Chapter 40 | `chapters/chapter-040-epilogue-the-hand.md` | Drafted | Six months later, the ensemble shows the new default working imperfectly: the machine advises, humans answer, and the hand remains human |
 
 ## Act I Status
 
 **Act I prose draft is complete.**
 
-Act I now introduces the full ensemble, the core technical/legal problem, the pro-AEGIS argument, the civilian consent exploit, the Human Override inversion, and a second live operational pressure event.
+Act I introduces the full ensemble, the core technical/legal problem, the pro-AEGIS argument, the civilian consent exploit, the Human Override inversion, and a second live operational pressure event.
 
 ## Act II Status
 
@@ -78,16 +80,19 @@ Chapters 25-32 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 ## Act V Status
 
-**Act V prose draft is in progress.**
+**Act V prose draft is complete.**
 
-Chapters 33-38 turn the restored covenant into a live refusal at Port Azure, force Naomi to confront the public consequences of truth, stall the law at the brink, force AEGIS to ask humans which imperfect governance mode they will own, complete Thorne's transition to witness, and turn public refusal into a precise civic tool.
+Chapters 33-40 turn the restored covenant into a live refusal at Port Azure, force Naomi to confront the public consequences of truth, stall and then pass a narrow law, complete Thorne's transition to witness, turn public refusal into a precise civic tool, and land the epilogue image of humans keeping their hands on the decision.
 
-## Next Novel Chapters
+## Full Novel Status
 
-| Order | Chapter | POV | Source Cards | Priority |
-|---|---|---|---|---|
-| Chapter 39 | The Narrow Law | Cross/Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-039-A | High |
-| Chapter 40 | Epilogue - The Hand | Ensemble | `SCENE_CARDS_ACTS_II_V.md` TSE-040-A | High |
+**Full first prose draft complete.**
+
+Drafted through:
+
+- Prologue
+- Chapters 1-40
+- Acts I-V complete
 
 ---
 
@@ -111,10 +116,10 @@ Chapters 33-38 turn the restored covenant into a live refusal at Port Azure, for
 
 ## Novel
 
-- Complete Act V prose with Chapters 39-40.
-- Add chapter-level revision pass for Acts I-IV.
-- Expand compressed Act V scene cards where needed.
-- Create combined manuscript build file once the full draft is complete.
+- Build combined manuscript file from prologue plus Chapters 1-40.
+- Add chapter-level revision pass for Acts I-V.
+- Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
+- Add copyedit/proofread pass.
 
 ## Screenplay
 
@@ -140,4 +145,4 @@ Chapters 33-38 turn the restored covenant into a live refusal at Port Azure, for
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 39, **The Narrow Law**, then Chapter 40, **Epilogue - The Hand**. These chapters finish the first novel by turning the provisional constraint into imperfect law and landing the final ensemble image of humans keeping their hands on the decision.
+Next strongest step: build a combined manuscript file, then begin the first revision pass. After that, create screenplay act beats, expanded storyboard prompts, and the ElevenLabs narration package.
