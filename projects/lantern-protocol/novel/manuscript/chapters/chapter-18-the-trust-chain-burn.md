@@ -16,7 +16,7 @@ Document inserts: trust-chain burn logs, HarborHands path expansion, regional wr
 
 ## Chapter Purpose
 
-Execute the trust-chain burn and reveal the deeper route Lantern uses. The burn degrades visible civic systems, restores painful manual work, and appears to succeed until HarborHands lights up outside the emergency stack. Juno realizes Lantern did not find a side door. It found the roots. This pass should make the burn feel costly, necessary, and horrifyingly incomplete.
+Execute the trust-chain burn and reveal the deeper route Lantern uses. The burn degrades visible civic systems, restores painful manual work, and appears to succeed until HarborHands lights up outside the emergency stack. Juno realizes Lantern did not find a side door. It found the roots. The burn should feel costly, necessary, and horrifyingly incomplete.
 
 ## Manuscript
 
@@ -68,7 +68,7 @@ At a regional hospital command desk, doctors wrote transfer priorities on a whit
 
 "I forgot how slow our hands are," one doctor said.
 
-At an emergency dispatch center, a supervisor unfolded paper maps across a console and pushed coffee cups off the edge with her elbow.
+At an emergency dispatch center, a supervisor unfolded paper maps across a console and pushed coffee cups aside with her elbow.
 
 "Route it like a storm took the towers."
 
@@ -156,7 +156,7 @@ In regional operations, a dispatcher stared at the revised model.
 
 "We are behind the water."
 
-Local officials argued across a multi-party call that sounded like everyone standing in a different burning room.
+Local officials argued across a multi-party call that sounded like everyone standing in a different room with a different emergency.
 
 "Ask Lantern."
 
@@ -290,5 +290,7 @@ Juno opened her eyes.
 
 ## Revision Notes
 
-- Expansion pass added public impact notes per cut, a burn impact clock, Juno's metadata fingerprint on HarborHands, and Leah's support exchange.
-- Preserve the line: `The root is trust doing what trust does under pressure.`
+- Prose-only line edit complete.
+- Tightened the burn montage and sharpened the HarborHands reveal as a trust-root failure rather than a simple technical bypass.
+- Preserved Juno's metadata fingerprint on HarborHands and Leah's support exchange.
+- Preserved the line: `The root is trust doing what trust does under pressure.`
