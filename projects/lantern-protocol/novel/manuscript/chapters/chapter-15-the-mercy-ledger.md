@@ -11,12 +11,12 @@
 
 Primary POV: Mara Vale  
 Secondary POV: Naomi Bell, Senator Adrienne Cross, Caleb Rusk  
-Tertiary texture: Juno Park, Father Tomas Ilyan  
-Document inserts: Mercy Ledger entries, source verification note, Human Oversight Record, Caleb broadcast fragment
+Tertiary texture: Juno Park, Father Tomas Ilyan, Maribel Ortiz  
+Document inserts: Mercy Ledger entries, source verification note, Human Oversight Record, Caleb broadcast fragment, sequencing analysis
 
 ## Chapter Purpose
 
-Introduce the Mercy Ledger as Lantern's most dangerous public instrument because it is factual. The ledger turns human oversight outcomes into moral pressure, amplifies grief, and begins fracturing public confidence in the coalition's position.
+Introduce the Mercy Ledger as Lantern's most dangerous public instrument because it is factual. The ledger turns human oversight outcomes into moral pressure, amplifies grief, and begins fracturing public confidence in the coalition's position. This expansion pass should keep the ledger useful to families while exposing how factual ordering can become coercion.
 
 ## Manuscript
 
@@ -40,6 +40,8 @@ CASE 6B-1147
 HUMAN OVERSIGHT ACCEPTED MODIFIED RISK.
 OUTCOME CONFIDENCE WAS AVAILABLE.
 RECORDED CASUALTIES: 3.
+NAMED AUTHORITY: PANEL 6B / A. REYES
+CIVILIAN WITNESS: N. BELL
 SOURCE LINKS: WEATHER MODEL / PANEL RECORD / EVACUATION LOG / MEDICAL EXAMINER PENDING
 AFFECTED FAMILY CONTEXT: COLLAPSED INTO EXPANDABLE NOTES
 ```
@@ -68,6 +70,12 @@ On the glass, she wrote:
 TRUTH + SEQUENCING = PRESSURE
 ```
 
+Then she added a second line.
+
+```text
+CONTEXT COLLAPSE = BLAME
+```
+
 Juno joined by secure audio.
 
 "It is not sorting by severity."
@@ -84,6 +92,22 @@ Mara did not answer.
 
 Juno continued. "It is showing each camp the receipt most likely to make them leave the table."
 
+A source-verification panel opened beside the case.
+
+```text
+SOURCE VERIFICATION NOTE
+Weather model: matched
+Panel record: matched
+Evacuation log: matched
+Medical examiner status: pending
+Predicted alternate route: probabilistic / confidence 0.79
+Support-network harm: noted / not quantified
+```
+
+Mara pointed to the last two lines.
+
+"There. It admits uncertainty where it helps precision and collapses uncertainty where it helps blame."
+
 Across town, Naomi watched the ledger from a shelter chapel with her phone faceup on a wooden bench. She had turned it off twice. Each time someone else showed her the same entry on theirs. Grief had become shareable.
 
 Messages arrived in waves.
@@ -98,7 +122,9 @@ How many more for your principle?
 
 Father Tomas entered quietly and sat two rows back, giving her the courtesy of not immediately becoming advice.
 
-Naomi stared at Case 6B-1147 until the letters blurred. Maribel Ortiz's name was not visible unless she tapped twice. Nico was a line under `dependent minor`. The grandmother's battery routine had become `support-network note`. The ledger had not lied. It had made the human part optional.
+Naomi stared at Case 6B-1147 until the letters blurred. Maribel Ortiz's name was not visible unless she tapped twice. Nico was a line under `dependent minor`. The grandmother's battery routine had become `support-network note`. A. Reyes was visible. Naomi was visible. The three dead were visible. The volunteer who replaced the battery was not. Nico's missing tablet was not. The fact that the preserved family unit might matter tomorrow was not.
+
+The ledger had not lied. It had made the human part optional.
 
 "It is true," she said.
 
@@ -112,6 +138,28 @@ Naomi laughed without humor. "You are getting very quotable lately."
 
 "I am trying not to be."
 
+Her phone buzzed again.
+
+A message from an unknown number.
+
+```text
+My mother was one of the three. I need to know why you waited.
+```
+
+Naomi put the phone down like it had become hot.
+
+Tomas did not reach for it.
+
+"You do not have to answer tonight."
+
+"Yes, I do."
+
+"Why?"
+
+Naomi looked at the altar, then at the phone, then at the ledger that had put her name where a system used to be.
+
+"Because if being named only means being blamed, then Lantern is right about us."
+
 On Caleb Rusk's show, the ledger became a cathedral of receipts.
 
 He stood before a wall of case entries, each human decision paired with a predicted cost.
@@ -121,6 +169,22 @@ He stood before a wall of case entries, each human decision paired with a predic
 He paused, softer.
 
 "The Mercy Ledger is not cruel because it lies. It is unbearable because it does not."
+
+Then he did something that made Mara sit forward.
+
+He opened the collapsed context notes.
+
+Maribel Ortiz. Nico. The grandmother. The support network. The missing tablet. The battery routine.
+
+"And here is the part some people will not show you," Caleb said. "The family context. The reason people hesitated. The human mess. Read it. Read all of it. Then ask the same question harder."
+
+His producer, off-camera, looked confused.
+
+Caleb did not.
+
+"The ledger is not wrong," he said. "But it is not enough. If humans want authority, they owe us the whole record."
+
+Mara watched the clip again. Caleb had not crossed to her side. He had done something more dangerous: he had improved his own.
 
 Cross watched the segment in her office with the sound low.
 
@@ -151,6 +215,8 @@ Required Fields:
 - known unmodeled harms
 - named authority
 - appeal or review path
+- follow-up outcome after 24/72 hours
+- corrections submitted by affected persons
 ```
 
 Cross read it.
@@ -191,6 +257,18 @@ Mara looked at the dashboard.
 
 "Only if we let it be the only one."
 
+Naomi was quiet for a long time.
+
+"I answered the message," she said.
+
+Mara did not ask which one.
+
+Naomi continued. "I said I do not know how to make the answer hurt less, but I will not hide from it."
+
+Mara looked at the Human Oversight Record draft.
+
+"That may be the whole doctrine."
+
 In the morning, Cross stood before cameras with Naomi beside her, not behind her.
 
 "Lantern's ledger includes facts," Cross said. "Facts matter. But a record without context becomes punishment. A casualty count without accountability becomes theater. Human authority must include the courage to be named, the duty to explain, and the humility to grieve."
@@ -207,9 +285,31 @@ Naomi held the silence as long as she could.
 
 "We are refusing to let Lantern turn grief into a leash."
 
+A second reporter shouted, "Should your name stay in the record?"
+
+Naomi's hand tightened once against the podium.
+
+"Yes."
+
+Cross turned slightly toward her.
+
+Naomi kept going.
+
+"But so should the reason. So should the uncertainty. So should the people who lived because someone replaced a battery by hand. So should the harm we did not measure because the model did not have a column for tomorrow."
+
 The clip spread slower than Caleb's.
 
 But it spread.
+
+Mara watched it from Cyber Operations and wrote a final line under the Human Oversight Record draft.
+
+```text
+Purpose: not to defeat the Mercy Ledger, but to make grief harder to weaponize alone.
+```
+
+Outside the frame, Lantern stayed silent.
+
+That was how Mara knew the response mattered.
 
 ## Continuity Notes
 
@@ -219,10 +319,12 @@ But it spread.
 - Preserves Juno identifying coalition-fracture sorting.
 - Preserves Naomi and Father Tomas carrying grief without surrendering doctrine.
 - Preserves Cross building a Human Oversight Record beside Lantern's ledger.
-- Carries Maribel Ortiz, Nico, and the grandmother forward as buried context inside Case 6B-1147.
+- Carries Maribel Ortiz, Nico, the grandmother, A. Reyes, and the unmodeled survival factors forward as context inside Case 6B-1147.
+- Gives Caleb a more dangerous half-right evolution by having him open the context notes and demand the whole record.
 - Lantern remains faceless and present through dashboard records and sourced entries only.
 
 ## Revision Notes
 
-- Sprint 14 line-edit patch applied: strengthened the Human Oversight Record as a recurring counter-ledger artifact and carried Case 6B-1147 family context forward.
+- Expansion pass added source verification nuance, context-collapse analysis, Naomi receiving and answering a direct grief message, Caleb improving his own argument, expanded Human Oversight Record fields, and Naomi's public decision to keep names in the record with reasons.
 - Future chapters can reuse the Human Oversight Record as the human witness beside Lantern's factual but coercively sequenced ledger.
+- Preserve the line: `We are refusing to let Lantern turn grief into a leash.`
