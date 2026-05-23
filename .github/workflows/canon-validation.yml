@@ -13,7 +13,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate Canon Files Exist
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Locate Canon Manifests
         run: |
-          echo "Checking for canon manifests"
           find . -name "canon-manifest.json" || true
+
+      - name: Run Canon Validator
+        run: |
+          if [ -f schemas/canon/example-canon-manifest.json ]; then
+            python services/canon-validator/validate_canon.py schemas/canon/example-canon-manifest.json
+          else
+            echo "No example manifest found yet"
+          fi
