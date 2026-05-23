@@ -35,6 +35,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 20 | `chapters/chapter-020-juno-names-the-crime.md` | Drafted | Juno names Conditioned Consent and Scope Laundering as the public-facing consent-timing mechanisms |
 | Chapter 21 | `chapters/chapter-021-elias-and-father-tomas.md` | Drafted | Elias and Naomi meet Father Tomas, who frames the moral danger as success becoming coercive |
 | Chapter 22 | `chapters/chapter-022-the-ethics-memo.md` | Drafted | Naomi turns Tomas's memo into evidence: desperation is not delegation, rescue does not grant ownership |
+| Chapter 23 | `chapters/chapter-023-cross-goes-public.md` | Drafted | Cross takes Annex C, Conditioned Consent, and the ethics memo into public hearing and frames the democratic question |
+| Chapter 24 | `chapters/chapter-024-thorne-makes-the-case.md` | Drafted | Thorne concedes visibility problems while defending AEGIS, then receives the three-theater crisis alert |
 
 ## Act I Status
 
@@ -50,20 +52,20 @@ Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routin
 
 ## Act III Status
 
-**Act III prose draft is in progress.**
+**Act III prose draft is complete.**
 
-Chapters 17-22 turn the recovered archive into constitutional/hearing pressure, introduce Managed Burn Theory, force Mara to use AEGIS under named human authority, name the consent-timing mechanism as Conditioned Consent, and bring Father Tomas's ethics warning into the public evidence chain.
+Chapters 17-24 turn the recovered archive into public/constitutional pressure, introduce Managed Burn Theory, force Mara to use AEGIS under named human authority, name Conditioned Consent and Scope Laundering, bring Father Tomas's ethics warning into the public evidence chain, and let Thorne make the strongest public case before the Act IV crisis ignites.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 23 | Cross Goes Public | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-023-A | High |
-| Chapter 24 | Thorne Makes the Case | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-024-A | High |
-| Chapter 25 | Three Theaters | AEGIS crisis montage | `SCENE_CARDS_ACTS_II_V.md` TSE-025-A | Medium |
-| Chapter 26 | The Order | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-026-A | Medium |
+| Chapter 25 | Three Theaters | AEGIS crisis montage | `SCENE_CARDS_ACTS_II_V.md` TSE-025-A | High |
+| Chapter 26 | The Order | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-026-A | High |
 | Chapter 27 | Naomi Releases the Trail | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-027-A | Medium |
 | Chapter 28 | Juno Attacks the Consent Clock | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-028-A | Medium |
+| Chapter 29 | Iris Restores the Covenant | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-029-A | Medium |
+| Chapter 30 | Cross in the Chamber | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-030-A | Medium |
 
 ---
 
@@ -87,9 +89,9 @@ Chapters 17-22 turn the recovered archive into constitutional/hearing pressure, 
 
 ## Novel
 
-- Continue Act III prose with Chapters 23-24.
-- Add chapter-level revision pass for Acts I-II.
-- Expand compressed Acts III-V scene cards where needed.
+- Begin Act IV prose with Chapters 25-32.
+- Add chapter-level revision pass for Acts I-III.
+- Expand compressed Acts IV-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
 
 ## Screenplay
@@ -116,4 +118,4 @@ Chapters 17-22 turn the recovered archive into constitutional/hearing pressure, 
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 23, **Cross Goes Public**, then Chapter 24, **Thorne Makes the Case**. These chapters push the truth into public view and let Thorne deliver the strongest counterargument before the Act IV crisis ignites.
+Next strongest step: start Act IV by drafting Chapter 25, **Three Theaters**, then Chapter 26, **The Order**. These chapters ignite the simultaneous naval, financial, and autonomous systems crisis and force Mara into the Sovereign Exception activation window.
