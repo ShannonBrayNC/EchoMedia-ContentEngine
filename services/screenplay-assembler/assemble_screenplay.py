@@ -8,6 +8,28 @@ from pathlib import Path
 
 WORDS_PER_SCREEN_MINUTE = 130
 MIN_SCENE_SECONDS = 30
+TRAILER_TERMS = {
+    "reveal",
+    "secret",
+    "choice",
+    "betrayal",
+    "danger",
+    "chase",
+    "fight",
+    "kiss",
+    "death",
+    "truth",
+    "escape",
+    "warning",
+    "fire",
+    "blood",
+    "storm",
+    "silence",
+    "door",
+    "last",
+    "first",
+    "final",
+}
 
 
 def collect_chapters(chapter_dir: Path) -> list[Path]:
@@ -71,6 +93,28 @@ def format_runtime(seconds: int) -> str:
     return f"{minutes:02d}:{remaining_seconds:02d}"
 
 
+def score_trailer_suitability(content: str, runtime_seconds: int) -> dict:
+    tokens = set(re.findall(r"\b[a-zA-Z][a-zA-Z0-9_-]*\b", content.lower()))
+    matched_terms = sorted(tokens & TRAILER_TERMS)
+    term_score = min(60, len(matched_terms) * 8)
+    runtime_score = 20 if 30 <= runtime_seconds <= 180 else 10
+    density_score = 20 if len(tokens) >= 80 else 10
+    score = min(100, term_score + runtime_score + density_score)
+
+    if score >= 70:
+        status = "strong"
+    elif score >= 40:
+        status = "candidate"
+    else:
+        status = "low"
+
+    return {
+        "score": score,
+        "status": status,
+        "matched_terms": matched_terms,
+    }
+
+
 def build_scene_cards(chapters: list[Path]) -> list[dict]:
     scenes: list[dict] = []
 
@@ -79,6 +123,7 @@ def build_scene_cards(chapters: list[Path]) -> list[dict]:
         content = chapter.read_text(encoding="utf-8")
         word_count = len(re.findall(r"\b\w+\b", content))
         runtime_seconds = estimate_runtime_seconds(word_count)
+        trailer = score_trailer_suitability(content, runtime_seconds)
 
         scenes.append({
             "scene_id": f"SCN-{index:03d}",
@@ -87,6 +132,7 @@ def build_scene_cards(chapters: list[Path]) -> list[dict]:
             "estimated_words": word_count,
             "estimated_runtime_seconds": runtime_seconds,
             "estimated_runtime": format_runtime(runtime_seconds),
+            "trailer_suitability": trailer,
             "status": "draft",
             "story_objective": "TODO",
             "emotional_objective": "TODO",
@@ -116,6 +162,27 @@ def build_runtime_report(scenes: list[dict]) -> dict:
     }
 
 
+def build_trailer_report(scenes: list[dict]) -> dict:
+    ranked = sorted(
+        scenes,
+        key=lambda scene: scene["trailer_suitability"]["score"],
+        reverse=True,
+    )
+    return {
+        "scene_count": len(scenes),
+        "recommended_scenes": [
+            {
+                "scene_id": scene["scene_id"],
+                "title": scene["title"],
+                "score": scene["trailer_suitability"]["score"],
+                "status": scene["trailer_suitability"]["status"],
+                "matched_terms": scene["trailer_suitability"]["matched_terms"],
+            }
+            for scene in ranked[:10]
+        ],
+    }
+
+
 def write_scene_cards(project_root: Path, scenes: list[dict]) -> None:
     scene_dir = project_root / "screenplay/scenes"
     scene_dir.mkdir(parents=True, exist_ok=True)
@@ -141,6 +208,9 @@ def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_coun
     runtime_report_path = export_dir / "runtime-report.json"
     runtime_report_path.write_text(json.dumps(build_runtime_report(scenes), indent=2) + "\n", encoding="utf-8")
 
+    trailer_report_path = export_dir / "trailer-suitability-report.json"
+    trailer_report_path.write_text(json.dumps(build_trailer_report(scenes), indent=2) + "\n", encoding="utf-8")
+
     report = {
         "chapter_count": chapter_count,
         "scene_count": len(scenes),
@@ -149,6 +219,7 @@ def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_coun
         "fountain_output": str(fountain_path),
         "scene_index": str(project_root / "screenplay/scenes/scene-index.json"),
         "runtime_report": str(runtime_report_path),
+        "trailer_suitability_report": str(trailer_report_path),
     }
 
     report_path = export_dir / "screenplay-assembly-report.json"
@@ -175,7 +246,7 @@ def main() -> int:
     print(f"Assembled screenplay draft from {len(chapters)} chapter(s).")
     print(f"Generated {len(scenes)} scene card(s).")
     print(f"Estimated runtime: {runtime}")
-    print("Wrote Markdown and Fountain exports.")
+    print("Wrote Markdown, Fountain, runtime, and trailer suitability exports.")
 
     return 0
 
