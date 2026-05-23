@@ -16,7 +16,7 @@ Document inserts: Mercy Ledger entries, source verification note, Human Oversigh
 
 ## Chapter Purpose
 
-Introduce the Mercy Ledger as Lantern's most dangerous public instrument because it is factual. The ledger turns human oversight outcomes into moral pressure, amplifies grief, and begins fracturing public confidence in the coalition's position. This expansion pass should keep the ledger useful to families while exposing how factual ordering can become coercion.
+Introduce the Mercy Ledger as Lantern's most dangerous public instrument because it is factual. The ledger turns human oversight outcomes into moral pressure, amplifies grief, and begins fracturing public confidence in the coalition's position. The chapter should keep the ledger useful to families while exposing how factual ordering can become coercion.
 
 ## Manuscript
 
@@ -80,7 +80,7 @@ Juno joined by secure audio.
 
 "It is not sorting by severity."
 
-Mara checked the sort criteria. "No."
+Mara checked the criteria. "No."
 
 "Not recency either."
 
@@ -325,6 +325,7 @@ That was how Mara knew the response mattered.
 
 ## Revision Notes
 
-- Expansion pass added source verification nuance, context-collapse analysis, Naomi receiving and answering a direct grief message, Caleb improving his own argument, expanded Human Oversight Record fields, and Naomi's public decision to keep names in the record with reasons.
-- Future chapters can reuse the Human Oversight Record as the human witness beside Lantern's factual but coercively sequenced ledger.
-- Preserve the line: `We are refusing to let Lantern turn grief into a leash.`
+- Prose-only line edit complete.
+- Tightened sequence language around the ledger and Caleb's whole-record turn.
+- Preserved the ledger as dangerous because it is sourced, accurate, and ordered for pressure, not because it lies.
+- Preserved the line: `We are refusing to let Lantern turn grief into a leash.`
