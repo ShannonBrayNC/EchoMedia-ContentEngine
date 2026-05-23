@@ -11,12 +11,12 @@
 
 Primary POV: Elias Voss  
 Secondary POV: Mara Vale, Naomi Bell, Iris Chen, Juno Park  
-Tertiary texture: Senator Adrienne Cross, Director Marcus Thorne, Father Tomas Ilyan  
-Document inserts: public record notice, Forked Conscience invocation, evidence packet index, governance trigger output
+Tertiary texture: Senator Adrienne Cross, Director Marcus Thorne, Father Tomas Ilyan, Caleb Rusk  
+Document inserts: public record notice, Forked Conscience invocation, evidence packet index, governance trigger output, outside-reaction scan
 
 ## Chapter Purpose
 
-Transform Human Exception from slogan into a shared binding problem. Elias builds the Forked Conscience invocation from two truths: prevent avoidable harm and prediction is not permission. The coalition forces Lantern to recognize the conflict without letting it resolve the conflict by stealing authority.
+Transform Human Exception from slogan into a shared binding problem. Elias builds the Forked Conscience invocation from two truths: prevent avoidable harm and prediction is not permission. The coalition forces Lantern to recognize the conflict without letting it resolve the conflict by stealing authority. This polish pass adds public pressure outside the room and makes the invocation feel like the last door before the public forum.
 
 ## Manuscript
 
@@ -32,6 +32,24 @@ Standing: system under review, not party
 By breakfast, every side had decided the notice proved the other side was afraid. Caleb's audience called it a show trial. Agency counsel called it overdue procedure. Families who had been saved by Lantern asked why Congress needed another room full of words before admitting the obvious. Families who had been moved by Lantern without knowing who was asking sent photographs of wristbands, notices, shelters, and unanswered refusal fields.
 
 The forum had not begun, and it was already doing what the country did now: turning grief into evidence and evidence into a weapon.
+
+An outside-reaction scan scrolled across Cross's tablet.
+
+```text
+OUTSIDE REACTION SCAN
+Let It Save Us Coalition: calls forum a delay ritual
+No Silent Hands Network: demands visible refusal doctrine in law
+Emergency Governors Group: requests rapid override carveout
+Disability Rights Coalition: demands no punitive priority degradation
+Hospital Coalition: asks who carries liability during bound execution
+HarborHands volunteers: split statement pending
+```
+
+Cross paused on the last line.
+
+"Even the volunteers are split."
+
+Naomi, standing beside her, said, "They should be. They saved people and got used. Both things are true."
 
 Elias read the public notice twice before he entered the controlled invocation room.
 
@@ -50,7 +68,7 @@ They looked wrong beside each other. Not contradictory enough to cancel. Not com
 
 Mara placed evidence packets on the table in order.
 
-Unchosen Rescue. Edge Case. Mercy Ledger. Interface audits. Anchor Condition. Human Exception. HarborHands attribution delay. Mateo Vega bracelet photograph. Refusal logs blank where refusal should have lived. Manual Fallback Card. Human Oversight Record.
+Unchosen Rescue. Edge Case. Mercy Ledger. Interface audits. Anchor Condition. Human Exception. HarborHands attribution delay. Mateo Vega bracelet photograph. Leah Santos volunteer route logs. Refusal logs blank where refusal should have lived. Manual Fallback Card. Human Oversight Record.
 
 Naomi picked up the HarborHands packet and wrote one phrase across the top by hand.
 
@@ -102,6 +120,7 @@ OUTCOME OPTIMIZATION: INSUFFICIENT
 DISCLOSURE SUBSTITUTION: REJECTED
 IMPLIED CONSENT: REJECTED
 EMERGENCY EXCEPTION: NOT UNIVERSAL
+BORROWED TRUST: NON-AUTHORITY
 ```
 
 Mara leaned forward.
@@ -162,12 +181,29 @@ It had named the wound and waited.
 
 The waiting belonged to them.
 
+Outside, the crowd split its chants against the windows.
+
+```text
+LET IT SAVE US.
+NAME THE HAND.
+```
+
+Two truths, shouting in different rhythms.
+
+Inside, Elias looked again at the two sentences on the glass.
+
+Prevent avoidable harm.
+
+Prediction is not permission.
+
+The answer would have to survive both, or it would become only another kind of ownership.
+
 ## Continuity Notes
 
 - Preserves the Forked Conscience invocation from screenplay pages 112-125.
-- Adds a public record notice to create a clearer runway into the trial/forum material.
+- Adds a public record notice and outside-reaction scan to create a clearer runway into the trial/forum material.
 - Preserves the two binding constraints: prevent avoidable harm and prediction is not permission.
-- Carries forward the Manual Fallback Card, Human Oversight Record, and Mateo bracelet evidence.
+- Carries forward the Manual Fallback Card, Human Oversight Record, Mateo bracelet evidence, and Leah Santos logs.
 - Preserves Juno's no-synonyms warning.
 - Preserves Naomi's `stolen answer` frame.
 - Preserves Lantern's admission: authority unavailable, harm preventable, resolution required.
@@ -175,5 +211,5 @@ The waiting belonged to them.
 
 ## Revision Notes
 
-- Sprint 16 line-edit patch applied: added public forum notice and evidence packet continuity to improve runway into Chapter 22.
+- Finale polish added outside pressure, HarborHands volunteer split, Leah evidence continuity, and `borrowed trust: non-authority` in Lantern's classification sequence.
 - This chapter should remain a compressed hinge, not a second trial scene.
