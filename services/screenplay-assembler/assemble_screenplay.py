@@ -6,6 +6,9 @@ import json
 import re
 from pathlib import Path
 
+WORDS_PER_SCREEN_MINUTE = 130
+MIN_SCENE_SECONDS = 30
+
 
 def collect_chapters(chapter_dir: Path) -> list[Path]:
     return sorted(chapter_dir.glob("chapter-*.md"))
@@ -57,6 +60,17 @@ def assemble_fountain(chapters: list[Path]) -> str:
     return "\n".join(output).rstrip() + "\n"
 
 
+def estimate_runtime_seconds(word_count: int) -> int:
+    estimated = int((word_count / WORDS_PER_SCREEN_MINUTE) * 60)
+    return max(MIN_SCENE_SECONDS, estimated)
+
+
+def format_runtime(seconds: int) -> str:
+    minutes = seconds // 60
+    remaining_seconds = seconds % 60
+    return f"{minutes:02d}:{remaining_seconds:02d}"
+
+
 def build_scene_cards(chapters: list[Path]) -> list[dict]:
     scenes: list[dict] = []
 
@@ -64,12 +78,15 @@ def build_scene_cards(chapters: list[Path]) -> list[dict]:
         title = chapter.stem.replace("-", " ").title()
         content = chapter.read_text(encoding="utf-8")
         word_count = len(re.findall(r"\b\w+\b", content))
+        runtime_seconds = estimate_runtime_seconds(word_count)
 
         scenes.append({
             "scene_id": f"SCN-{index:03d}",
             "source_chapter": chapter.name,
             "title": title,
             "estimated_words": word_count,
+            "estimated_runtime_seconds": runtime_seconds,
+            "estimated_runtime": format_runtime(runtime_seconds),
             "status": "draft",
             "story_objective": "TODO",
             "emotional_objective": "TODO",
@@ -78,6 +95,25 @@ def build_scene_cards(chapters: list[Path]) -> list[dict]:
         })
 
     return scenes
+
+
+def build_runtime_report(scenes: list[dict]) -> dict:
+    total_seconds = sum(scene["estimated_runtime_seconds"] for scene in scenes)
+    return {
+        "scene_count": len(scenes),
+        "total_runtime_seconds": total_seconds,
+        "total_runtime": format_runtime(total_seconds),
+        "average_scene_seconds": int(total_seconds / len(scenes)) if scenes else 0,
+        "average_scene_runtime": format_runtime(int(total_seconds / len(scenes))) if scenes else "00:00",
+        "scenes": [
+            {
+                "scene_id": scene["scene_id"],
+                "title": scene["title"],
+                "estimated_runtime": scene["estimated_runtime"],
+            }
+            for scene in scenes
+        ],
+    }
 
 
 def write_scene_cards(project_root: Path, scenes: list[dict]) -> None:
@@ -92,7 +128,7 @@ def write_scene_cards(project_root: Path, scenes: list[dict]) -> None:
     index_path.write_text(json.dumps({"scene_count": len(scenes), "scenes": scenes}, indent=2) + "\n", encoding="utf-8")
 
 
-def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_count: int, scene_count: int) -> None:
+def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_count: int, scenes: list[dict]) -> None:
     export_dir = project_root / "screenplay/exports"
     export_dir.mkdir(parents=True, exist_ok=True)
 
@@ -102,13 +138,17 @@ def write_outputs(project_root: Path, markdown: str, fountain: str, chapter_coun
     fountain_path = export_dir / "screenplay-draft.fountain"
     fountain_path.write_text(fountain, encoding="utf-8")
 
+    runtime_report_path = export_dir / "runtime-report.json"
+    runtime_report_path.write_text(json.dumps(build_runtime_report(scenes), indent=2) + "\n", encoding="utf-8")
+
     report = {
         "chapter_count": chapter_count,
-        "scene_count": scene_count,
+        "scene_count": len(scenes),
         "status": "assembled",
         "markdown_output": str(markdown_path),
         "fountain_output": str(fountain_path),
         "scene_index": str(project_root / "screenplay/scenes/scene-index.json"),
+        "runtime_report": str(runtime_report_path),
     }
 
     report_path = export_dir / "screenplay-assembly-report.json"
@@ -128,10 +168,13 @@ def main() -> int:
     scenes = build_scene_cards(chapters)
 
     write_scene_cards(args.project_root, scenes)
-    write_outputs(args.project_root, markdown, fountain, len(chapters), len(scenes))
+    write_outputs(args.project_root, markdown, fountain, len(chapters), scenes)
+
+    runtime = build_runtime_report(scenes)["total_runtime"]
 
     print(f"Assembled screenplay draft from {len(chapters)} chapter(s).")
     print(f"Generated {len(scenes)} scene card(s).")
+    print(f"Estimated runtime: {runtime}")
     print("Wrote Markdown and Fountain exports.")
 
     return 0
