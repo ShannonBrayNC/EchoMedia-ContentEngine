@@ -4,7 +4,7 @@
 
 Audit story artifacts for continuity drift.
 
-## Planned Validation Areas
+## Current Validation Areas
 
 - timeline continuity
 - character continuity
@@ -13,21 +13,43 @@ Audit story artifacts for continuity drift.
 - chapter continuity
 - visual continuity
 
-## Planned Inputs
+## Inputs
 
 - canon manifest
 - chapter files
 - screenplay files
 - storyboard files
 
-## Planned Outputs
+## Outputs
 
 ```text
 reports/continuity-audit-report.json
 ```
 
-## Future Commands
+## Continuity Scoring
+
+The engine now generates:
+
+- continuity score
+- pass/warn/fail status
+- weighted penalties
+- machine-readable findings
+
+## Example Command
 
 ```text
-audit-continuity
+python services/continuity-engine/audit_continuity.py manuscript/chapters/chapter-01.md
 ```
+
+## Exit Codes
+
+- `0` means score passed threshold
+- `1` means score failed threshold
+
+## Future Expansion
+
+- semantic continuity comparison
+- relationship-state scoring
+- screenplay pacing scoring
+- cross-book continuity analysis
+- visual continuity scoring
