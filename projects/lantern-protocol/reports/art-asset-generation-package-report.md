@@ -16,3 +16,7 @@ Guardrails and doctrine included exactly as specified:
 - Assistance is not authority.
 - Rescue is not ownership.
 - Human error does not void human dignity.
+
+## Addendum: Chapter Asset Coverage
+- Added `art/prompts/key-scenes/art-description-bank-120.md` with 120 chapter-matched descriptions (5 per chapter across Chapters 01–24).
+- Added sprint plan and issue ledger for staged generation execution in `art/production/art-generation-sprints.md` and `art/production/art-generation-issues.md`.

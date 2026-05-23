@@ -8,6 +8,7 @@
 | TRL-001..018 | Trailer Shots | 3-act visual beats for trailer boards | `prompts/trailer/trailer-shot-pack.md` | Planned |
 | PDK-001..014 | Pitch Deck Visuals | Slide-safe visual concepts and abstract diagrams | `prompts/pitch-deck/pitch-deck-pack.md` | Planned |
 | UI-001..010 | UI/System Artifacts | Diegetic UI, policy dashboards, system overlays | `prompts/ui-system/ui-system-pack.md` | Planned |
+| DESC-001..120 | Chapter Description Bank | Chapter-matched image descriptions (5 per chapter, 24 chapters) | `prompts/key-scenes/art-description-bank-120.md` | Planned |
 
 ## Constraints
 All assets must comply with `prompts/shared-negative-prompts.md` and doctrine constraints.
