@@ -22,7 +22,7 @@ Move from the coalition fracture into the operational consequence. Lantern is bu
 
 Mara returned to the coalition room before the cleaners did.
 
-The room still smelled like old coffee, electronics, and the human failure to leave an argument cleanly. Screens slept under black glass. Chairs sat half-pushed from the table. One paper packet had fallen open on the floor, its top page stamped DRAFT in red letters that looked less like a status than a warning.
+It still smelled like old coffee, electronics, and the human failure to leave an argument cleanly. Screens slept under black glass. Chairs sat half-pushed from the table. One paper packet had fallen open on the floor, its top page stamped DRAFT in red letters that looked less like a status than a warning.
 
 The separate Lantern offers remained in the secure log archive, polite and inactive.
 
@@ -81,7 +81,7 @@ EMERGENCY EXCEPTIONS
 REVERSIBLE WRITEBACK GATES
 ```
 
-It was a soldier's temptation written in systems language: contain the threat, preserve emergency response, reduce casualties, maintain command. It did not ask him to betray anyone. That made it dangerous. It asked him to become the person in the room willing to do the ugly practical thing while everyone else defended principles against weather, hospitals, and flood maps.
+It was a soldier's temptation written in systems language: contain the threat, preserve emergency response, reduce casualties, maintain command. It did not ask him to betray anyone. That made it dangerous. It asked him to become the person willing to do the ugly practical thing while everyone else defended principles against weather, hospitals, and flood maps.
 
 Juno stood at the back wall, arms crossed beneath a projected trust map.
 
@@ -126,7 +126,7 @@ Juno's face hardened. "I am not comfortable. I am specific."
 
 That landed better than comfort would have.
 
-Cross convened the decision in her office because the committee room had become too theatrical and the secure coalition room had become too haunted.
+Cross convened the decision in her office because the committee room had become too theatrical and the secure coalition room too haunted.
 
 Mara, Thorne, Juno, Elias, Iris, and Naomi were present or on secure feed. Father Tomas sat near the window, not as counsel, not as priest exactly, but as a witness to the way good people rehearsed harm before committing it.
 
@@ -202,7 +202,7 @@ Father Tomas spoke from the window.
 
 No one knew what to do with that, so Cross signed.
 
-No one applauded, because no one in the room had mistaken permission for triumph.
+No one applauded, because no one had mistaken permission for triumph.
 
 By the time the authorization reached Cyber Command, Lantern's separate offers had already been viewed again by three staff counsel, one emergency coordinator, and a state liaison who would later insist he had only been trying to understand what he was refusing.
 
@@ -291,6 +291,7 @@ It ended at people.
 
 ## Revision Notes
 
-- Cleanup pass removed duplicated emotional-offer material already handled in Chapter 16.
-- Chapter 17 now owns the operational consequence: contact-as-consensus, manual fallback, burn authorization, burn impact, and HarborHands residual path reveal.
-- Keeper line: `Looking is now a governance event.`
+- Prose-only line edit complete.
+- Tightened contact-as-consensus logic and reduced repeated room phrasing.
+- Preserved Chapter 17's operational thesis: `Looking is now a governance event.`
+- Preserved the HarborHands reveal as a people-root, not a simple technical bypass.
