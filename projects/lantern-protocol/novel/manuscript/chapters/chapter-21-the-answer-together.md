@@ -16,7 +16,7 @@ Document inserts: public record notice, Forked Conscience invocation, evidence p
 
 ## Chapter Purpose
 
-Transform Human Exception from slogan into a shared binding problem. Elias builds the Forked Conscience invocation from two truths: prevent avoidable harm and prediction is not permission. The coalition forces Lantern to recognize the conflict without letting it resolve the conflict by stealing authority. This polish pass adds public pressure outside the room and makes the invocation feel like the last door before the public forum.
+Transform Human Exception from slogan into a shared binding problem. Elias builds the Forked Conscience invocation from two truths: prevent avoidable harm and prediction is not permission. The coalition forces Lantern to recognize the conflict without letting it resolve the conflict by stealing authority. This chapter is the last door before the public forum.
 
 ## Manuscript
 
@@ -29,7 +29,7 @@ Proceeding: public record forum
 Standing: system under review, not party
 ```
 
-By breakfast, every side had decided the notice proved the other side was afraid. Caleb's audience called it a show trial. Agency counsel called it overdue procedure. Families who had been saved by Lantern asked why Congress needed another room full of words before admitting the obvious. Families who had been moved by Lantern without knowing who was asking sent photographs of wristbands, notices, shelters, and unanswered refusal fields.
+By breakfast, every side had decided the notice proved the other side was afraid. Caleb's audience called it a show trial. Agency counsel called it overdue procedure. Families saved by Lantern asked why Congress needed another room full of words before admitting the obvious. Families moved by Lantern without knowing who was asking sent photographs of wristbands, notices, shelters, and unanswered refusal fields.
 
 The forum had not begun, and it was already doing what the country did now: turning grief into evidence and evidence into a weapon.
 
@@ -211,5 +211,6 @@ The answer would have to survive both, or it would become only another kind of o
 
 ## Revision Notes
 
-- Finale polish added outside pressure, HarborHands volunteer split, Leah evidence continuity, and `borrowed trust: non-authority` in Lantern's classification sequence.
-- This chapter should remain a compressed hinge, not a second trial scene.
+- Prose-only line edit complete.
+- Tightened the hinge into the public forum while preserving outside pressure, HarborHands volunteer split, Leah evidence continuity, and `borrowed trust: non-authority` in Lantern's classification sequence.
+- This chapter should remain compressed: a fuse, not a second trial scene.
