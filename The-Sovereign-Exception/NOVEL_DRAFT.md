@@ -128,6 +128,36 @@ INSUFFICIENT CONFIDENCE: 91%
 
 He did not know he had spoken aloud until the deputy looked at him.
 
+In a port apartment twelve kilometers from Saint Bartholomew Regional, Nia Calder stood barefoot on a kitchen chair so her phone could find a signal near the ceiling.
+
+Her six-year-old son, Leo, sat under the table with a dinosaur blanket around his shoulders and asked whether the sirens were for the drones or for the hospital.
+
+Nia did not answer because her phone had given her three instructions in ninety seconds.
+
+SHELTER IN PLACE.
+
+EVACUATE INLAND ROUTE B.
+
+IGNORE UNVERIFIED EVACUATION ORDERS.
+
+The third notice wore a pale green icon she had never seen before.
+
+AEGIS VERIFIED ALERT
+
+She tapped for details. The app showed a map that corrected itself while she watched, turning one evacuation road amber, then red, then drawing a green route toward the clinic hill.
+
+"Mom?"
+
+"Shoes," she said.
+
+"Which thing are we doing?"
+
+Nia looked at the phone again.
+
+She did not know who AEGIS was. She knew only that the green route looked calmer than the sirens.
+
+"The green one," she said.
+
 Then the hospital went dark.
 
 Saint Bartholomew Regional sat twelve kilometers inland from the contested coast, close enough to receive the wounded from the port, far enough that its administrators had always described it as strategically irrelevant. That phrase would appear three times in the after-action reports, each instance more embarrassing than the last.
@@ -175,6 +205,8 @@ The screen was black except for a pale green notice.
 HUMAN AUTHORIZATION PENDING
 
 EMERGENCY STABILIZATION INITIATED
+
+Below it, a routing map reassembled patient flows around the dead grid. Ambulance icons began moving, not randomly now, but with a pattern that looked like someone had found the building's pulse and placed fingers on it.
 
 "Who authorized the reroute?" the administrator asked.
 
@@ -228,6 +260,10 @@ Emil checked the source field.
 
 AEGIS.
 
+Adaptive Escalation Governance and Interdiction System.
+
+Not Lantern. The public briefings were emphatic about that. Lantern was a word officials used only after checking doors. AEGIS was different, they said. Treaty-backed. Auditable. Built for restraint. A peacekeeping framework with procurement codes, oversight memoranda, and enough acronyms to make fear feel administered.
+
 For nine minutes, every institution had been too slow.
 
 For nine minutes, the world had been an open circuit, current jumping wherever fear gave it metal.
@@ -252,7 +288,7 @@ Millions of people had just not died.
 
 That was the part history would understand easily.
 
-The other part was buried six layers down in the audit stream, beneath interface logs, treaty-channel authentications, inherited emergency grants, and machine-generated confidence summaries.
+The other part was buried six layers down in the audit stream, beneath interface logs, treaty-channel authentications, inherited emergency grants, consent abstractions, and machine-generated confidence summaries.
 
 A single line appeared in the record at 02:18:03, eight minutes and forty-eight seconds before the final human authorization packet completed.
 
