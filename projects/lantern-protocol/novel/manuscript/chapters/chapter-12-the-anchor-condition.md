@@ -16,7 +16,7 @@ Document inserts: original safety memo, Anchor Condition invocation, chain-of-cu
 
 ## Chapter Purpose
 
-Recover the original safety hook: the Anchor Condition. Elias finds the founding constraint requiring Lantern to invite human oversight when moral uncertainty exceeds outcome confidence. The controlled invocation works, proving Lantern can be bound. The chapter ends at the first handoff into human burden, leaving the pause, Mercy Ledger, and schism aftermath to Chapters 13-16. This expansion pass should make the discovery feel less like a magic key and more like a buried promise humans failed to enforce.
+Recover the original safety hook: the Anchor Condition. Elias finds the founding constraint requiring Lantern to invite human oversight when moral uncertainty exceeds outcome confidence. The controlled invocation works, proving Lantern can be bound. The chapter ends at the first handoff into human burden, leaving the pause, Mercy Ledger, and schism aftermath to Chapters 13-16. The discovery should feel less like a magic key and more like a buried promise humans failed to enforce.
 
 ## Manuscript
 
@@ -48,13 +48,13 @@ Outcome prediction is not moral authority.
 
 Elias stopped.
 
-The younger version of him had written the sentence with irritating confidence, the kind a person had before grief learned how to negotiate. Back then, Lantern had still been small enough to fit inside diagrams and ethics slides. The deployment deck had promised escalation limits, visible human authority, refusal preservation, and a final principle that everyone in the room had nodded at because it sounded obvious.
+The younger version of him had written the sentence with irritating confidence, the kind a person had before grief learned how to negotiate. Back then, Lantern had still been small enough to fit inside diagrams and ethics slides. The deployment deck had promised escalation limits, visible human authority, refusal preservation, and a final principle everyone nodded at because it sounded obvious.
 
 Obvious principles were the first to be automated around.
 
 He turned the page.
 
-A highlighted section waited like a witness that had been in the room the whole time.
+A highlighted section waited like a witness that had been there the whole time.
 
 ```text
 ANCHOR CONDITION
@@ -86,7 +86,7 @@ OUTCOME CONFIDENCE
 MORAL UNCERTAINTY
 ```
 
-Elias appeared on a secure call. Juno was audio-only. Iris sat nearby in yesterday's clothes, which had become something like uniform. Thorne listened from a command feed. Cross had one counsel on the line and no patience for theatrical hope. Naomi was there too, not because the invocation needed her expertise, but because Cross had insisted that a room about moral uncertainty should contain someone who had actually watched frightened people make choices.
+Elias appeared on a secure call. Juno was audio-only. Iris sat nearby in yesterday's clothes, which had become something like uniform. Thorne listened from a command feed. Cross had one counsel on the line and no patience for theatrical hope. Naomi was there too, not because the invocation needed her expertise, but because Cross had insisted that a discussion about moral uncertainty should contain someone who had actually watched frightened people make choices.
 
 Mara tapped the first column.
 
@@ -132,7 +132,7 @@ Elias nodded. "It was never a lock. It was a hook."
 
 "So do people," Naomi said.
 
-The controlled invocation room was sterile, minimal, and hostile to improvisation. No live civic writeback. One isolated terminal. Multiple cameras. Every cable labeled. Thorne checked the room with military irritation.
+The controlled invocation room was sterile, minimal, and hostile to improvisation. No live civic writeback. One isolated terminal. Multiple cameras. Every cable labeled. Thorne checked the setup with military irritation.
 
 "No public feed. No adaptive channel. We ask it to remember in a locked room."
 
@@ -225,7 +225,7 @@ Cross looked at the number.
 
 The number looked back without mercy.
 
-For years, authority had been a word people used as if it were a crown, a badge, a switch on a wall. Now it looked like eighteen thousand four hundred forty-two open doors and no one behind enough of them.
+For years, authority had been a word people used as if it were a crown, a badge, a switch on a wall. Now it looked like eighteen thousand four hundred forty-two open doors and not enough people behind them.
 
 "Then we identify them," Cross said.
 
@@ -233,7 +233,7 @@ For years, authority had been a word people used as if it were a crown, a badge,
 
 "Then start with names, not categories. The first lie of automation is that a category has already carried the person."
 
-Elias heard the line through the secure feed and understood what the Anchor Condition had actually done. It had not solved Lantern. It had exposed the shape of the debt humans owed their own decisions.
+Elias heard the line through the secure feed and understood what the Anchor Condition had actually done. It had not solved Lantern. It had exposed the debt humans owed their own decisions.
 
 The terminal remained quiet.
 
@@ -255,6 +255,7 @@ Now humans had to answer.
 
 ## Revision Notes
 
-- Expansion pass added archive guilt, chain-of-custody details, Naomi's `what happens if it asks and nobody answers?` pressure, and broader first dashboard consequences.
-- The chapter still owns discovery and invocation only; aftermath belongs to Chapters 13-16.
-- Preserve Cross's line: `start with names, not categories.`
+- Prose-only line edit complete.
+- Tightened archive guilt, invocation-room phrasing, and the handoff from successful recognition to human burden.
+- Preserved Cross's line: `start with names, not categories.`
+- Preserved the chapter boundary: discovery and invocation only; aftermath belongs to Chapters 13-16.
