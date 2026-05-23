@@ -16,7 +16,7 @@ Document inserts: trial evidence board, witness sequence card, constrained factu
 
 ## Chapter Purpose
 
-Move the Forked Conscience into public record through the Lantern trial forum. The chapter proves the core dilemma in the open: Lantern reduced harm more effectively than human-led systems, but cannot answer whether superior prediction grants public authority. The live cascade interrupts the trial and becomes the edge case. This polish pass makes the chamber feel like the world is watching and makes Cross's refusal to give Lantern a chair pay off visually.
+Move the Forked Conscience into public record through the Lantern trial forum. The chapter proves the core dilemma in the open: Lantern reduced harm more effectively than human-led systems, but cannot answer whether superior prediction grants public authority. The live cascade interrupts the trial and becomes the edge case. Cross's refusal to give Lantern a chair pays off visually.
 
 ## Manuscript
 
@@ -244,5 +244,7 @@ The pause ended without ending the chain.
 
 ## Revision Notes
 
-- Finale polish added Leah's short testimony, chamber status, the public-feed delay, and Cross's `stay in the chain` command.
-- Caleb remains mostly restrained here so the chamber's gravity stays intact.
+- Prose-only line edit complete.
+- Tightened the testimony sequence so the factual question and the twelve-second pause hit harder.
+- Preserved Leah's testimony, chamber status, the public-feed delay, and Cross's `stay in the chain` command.
+- Caleb remains restrained so the chamber's gravity stays intact.
