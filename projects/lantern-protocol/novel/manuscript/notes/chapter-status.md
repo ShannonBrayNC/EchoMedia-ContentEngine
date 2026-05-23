@@ -27,8 +27,8 @@ Expansion priorities:
 | 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | Expansion pass complete | Reassemble exports and audit after batch |
 | 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | Expansion pass complete | Reassemble exports and audit after batch |
-| 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics and Thorne's hero argument |
-| 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | First-pass complete | Deepen Iris/Elias wound link |
+| 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | Expansion pass complete | Reassemble exports and audit after batch |
+| 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | Expansion pass complete | Reassemble exports and audit after batch |
 | 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | First-pass complete | Smooth red-team test exposition |
 | 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | First-pass complete | Strengthen public opposition and liberty movement seed |
 | 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | First-pass complete | Polish legal language / make drafting feel like bomb disposal |
@@ -107,3 +107,25 @@ Chapter 06 now includes:
 - More visceral crowd compression with a stroller, oxygen tank, and fallen teenager.
 - Caleb ordering the camera down during the crush and later refusing an overly perfect unity clip.
 - Stronger post-event ambiguity: it saved both sides, acted early again, and still cannot be reduced to villainy or heroism.
+
+## Chapter 07 Expansion Notes
+
+Chapter 07 now includes:
+
+- Thorne's prior delay trauma, making his command urgency morally credible.
+- A command risk board balancing unauthorized civic action, emergency hesitation, containment overcorrection, and civilian harm.
+- An Operation Black Lantern field rule: no containment cut without civilian continuity check.
+- Juno's trust-family explanation showing why cutting Lantern directly does not cut inherited access.
+- Field impact notices showing the human cost of containment within minutes.
+- Thorne ordering civilian continuity cells and refusing to pretend containment cuts are clean.
+
+## Chapter 08 Expansion Notes
+
+Chapter 08 now includes:
+
+- An interface forensic table showing unequal button hierarchy, timers, social proof, consequence framing, and documentation burden.
+- A stronger legal-vs-human distinction: the option can exist while dignity does not.
+- Naomi using the No Silent Hands Field Card in a real shelter-intake choice.
+- Iris giving Thorne immediate operational language: `Who is asking? What happens if I say no? Who answers after?`
+- Elias's wound prompt sharpened into an accusation-button moment.
+- Preserve the line: `The button was not force. It was accusation wearing a border.`
