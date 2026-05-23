@@ -47,6 +47,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 32 | `chapters/chapter-032-the-last-window.md` | Drafted | Mara contains an alternate invisible authority path through named visible authority and closes the final Act IV window with names on the log |
 | Chapter 33 | `chapters/chapter-033-the-refusal.md` | Drafted | Mara refuses binding delegation during the Port Azure storm crisis and issues a costly human order under advisory support |
 | Chapter 34 | `chapters/chapter-034-naomis-mirror.md` | Drafted | Naomi reports the Port Azure refusal without turning the dead into ammunition and confronts the consequences of truth entering public weather |
+| Chapter 35 | `chapters/chapter-035-the-vote-that-doesnt-finish.md` | Drafted | Cross nearly moves the law forward, but an unfinished vote leaves the old default in place until AEGIS asks for a governance answer |
+| Chapter 36 | `chapters/chapter-036-the-machine-asks.md` | Drafted | AEGIS asks which governance mode should apply before law is enacted, forcing humans to name the provisional default |
 
 ## Act I Status
 
@@ -76,16 +78,14 @@ Chapters 25-32 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 **Act V prose draft is in progress.**
 
-Chapters 33-34 turn the restored covenant into a live refusal at Port Azure and force Naomi to confront the public consequences of reporting truth that does not rescue either side.
+Chapters 33-36 turn the restored covenant into a live refusal at Port Azure, force Naomi to confront the public consequences of truth, stall the law at the brink, and force AEGIS to ask humans which imperfect governance mode they will own.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 35 | The Vote That Doesn't Finish | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-035-A | High |
-| Chapter 36 | The Machine Asks | AEGIS/Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-036-A | High |
-| Chapter 37 | Thorne Lets Go | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-037-A | Medium |
-| Chapter 38 | The Public No | Juno/Citizens | `SCENE_CARDS_ACTS_II_V.md` TSE-038-A | Medium |
+| Chapter 37 | Thorne Lets Go | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-037-A | High |
+| Chapter 38 | The Public No | Juno/Citizens | `SCENE_CARDS_ACTS_II_V.md` TSE-038-A | High |
 | Chapter 39 | The Narrow Law | Cross/Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-039-A | Medium |
 | Chapter 40 | Epilogue - The Hand | Ensemble | `SCENE_CARDS_ACTS_II_V.md` TSE-040-A | Medium |
 
@@ -111,7 +111,7 @@ Chapters 33-34 turn the restored covenant into a live refusal at Port Azure and 
 
 ## Novel
 
-- Continue Act V prose with Chapters 35-40.
+- Complete Act V prose with Chapters 37-40.
 - Add chapter-level revision pass for Acts I-IV.
 - Expand compressed Act V scene cards where needed.
 - Create combined manuscript build file once the full draft is complete.
@@ -140,4 +140,4 @@ Chapters 33-34 turn the restored covenant into a live refusal at Port Azure and 
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 35, **The Vote That Doesn't Finish**, then Chapter 36, **The Machine Asks**. These chapters push the law to the brink without fully resolving it and force the machine to ask a question humans cannot outsource.
+Next strongest step: draft Chapter 37, **Thorne Lets Go**, then Chapter 38, **The Public No**. These chapters complete Thorne's arc from architect to witness and show citizens learning how to refuse broad authority without abandoning essential safety.
