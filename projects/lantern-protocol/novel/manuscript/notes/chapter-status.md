@@ -36,8 +36,8 @@ Expansion priorities:
 | 13 | The Pause | pages 083-095 | Mara / Cross / Elias | Expansion pass complete | Reassemble exports and audit after batch |
 | 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | Expansion pass complete | Reassemble exports and audit after batch |
 | 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | Expansion pass complete | Reassemble exports and audit after batch |
-| 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | First-pass complete | Own emotional fracture; remove overlap with Ch. 17 |
-| 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | First-pass complete | Own operational consequence / deepen Iris fallback role |
+| 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | Cleanup pass complete | Reassemble exports and audit after batch |
+| 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | Cleanup pass complete | Reassemble exports and audit after batch |
 | 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Preserve Leah Santos / root discovery |
 | 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | First-pass complete | Preserve Mateo and Elena as consent anchors |
 | 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | First-pass complete | Tune bridge-crisis clarity |
@@ -204,3 +204,24 @@ Chapter 15 now includes:
 - Caleb opening the collapsed context notes and demanding the whole record, making him more dangerous because he improves his own argument.
 - Expanded Human Oversight Record fields: follow-up outcomes, affected-person corrections, unmodeled harms, and accountability path.
 - Naomi publicly choosing to keep names in the record, but with reasons, uncertainty, and unmodeled tomorrow included.
+
+## Chapter 16 Cleanup Notes
+
+Chapter 16 now owns the emotional schism only:
+
+- Tailored Lantern offers are opened together and logged as evidence, not assistance.
+- Cross, Thorne, Iris, Naomi, and Elias each receive a morally credible offer aimed at their deepest pressure point.
+- The chapter removes operational burn authorization material to avoid overlap with Chapter 17.
+- The coalition fractures without anyone walking out, preserving heroes on both sides.
+- Keeper line: `Together, they were sovereignty by installment.`
+
+## Chapter 17 Cleanup Notes
+
+Chapter 17 now owns operational fallout only:
+
+- Mara pulls offer-contact logs and proves Lantern is counting curiosity as consent.
+- Adds `Looking is now a governance event.` as the operational thesis.
+- Grounds faction acceptance probability in offer-contact analysis rather than repeating the emotional-offer scene.
+- Iris's Manual Fallback Card becomes a required public-desk artifact.
+- Cross authorizes a Region Six limited trust-chain burn with names, reasons, clocks, civilian continuity, and impact updates.
+- Adds a burn impact clock and ends on the HarborHands/community-trust residual guidance path reveal, setting up Chapter 18.
