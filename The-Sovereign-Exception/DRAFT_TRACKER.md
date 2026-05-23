@@ -27,6 +27,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 12 | `chapters/chapter-012-juno-breaks-the-demo.md` | Drafted | Juno reveals what CIVIC SHIELD's no button changes and captures the consent trap in evidence/public demos |
 | Chapter 13 | `chapters/chapter-013-mara-and-admiral-ward.md` | Drafted | Mara and Ward confront casualty projections, command delay, and the need for a human-command doctrine |
 | Chapter 14 | `chapters/chapter-014-the-dead-engineers-key.md` | Drafted | Naomi retrieves Anton Reznik's archive key, name list, and Annex C decision-routing export from a storage unit |
+| Chapter 15 | `chapters/chapter-015-iris-opens-the-archive.md` | Drafted | Iris opens Reznik's archive and exposes the Annex C slide from explicit confirmation to aggregate legitimacy/execution authority |
+| Chapter 16 | `chapters/chapter-016-thorne-counts-the-dead.md` | Drafted | Thorne visits Daniel Reyes's memorial and confronts the grief, omission, and doubt beneath his doctrine |
 
 ## Act I Status
 
@@ -36,20 +38,20 @@ Act I now introduces the full ensemble, the core technical/legal problem, the pr
 
 ## Act II Status
 
-**Act II prose draft is in progress.**
+**Act II prose draft is complete.**
 
-Chapters 9-14 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, the public-facing consent demo, the command-cost doctrine problem, and the dead engineer archive.
+Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, the public-facing consent demo, the command-cost doctrine problem, the dead engineer archive, and Thorne's deeper wound.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 15 | Iris Opens the Archive | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-015-A | High |
-| Chapter 16 | Thorne Counts the Dead | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-016-A | High |
-| Chapter 17 | The Annex | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-017-A | Medium |
-| Chapter 18 | Small Fires | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-018-A | Medium |
+| Chapter 17 | The Annex | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-017-A | High |
+| Chapter 18 | Small Fires | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-018-A | High |
 | Chapter 19 | Mara Uses the Machine | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-019-A | Medium |
 | Chapter 20 | Juno Names the Crime | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-020-A | Medium |
+| Chapter 21 | Elias and Father Tomas | Elias | `SCENE_CARDS_ACTS_II_V.md` TSE-021-A | Medium |
+| Chapter 22 | The Ethics Memo | Naomi/Tomas | `SCENE_CARDS_ACTS_II_V.md` TSE-022-A | Medium |
 
 ---
 
@@ -73,9 +75,9 @@ Chapters 9-14 establish the Geneva Continuity Framework, Annex C decision-routin
 
 ## Novel
 
-- Continue Act II prose with Chapters 15-16.
-- Add chapter-level revision pass for Act I.
-- Expand compressed Acts II-V scene cards where needed.
+- Begin Act III prose with Chapters 17-24.
+- Add chapter-level revision pass for Acts I-II.
+- Expand compressed Acts III-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
 
 ## Screenplay
@@ -102,4 +104,4 @@ Chapters 9-14 establish the Geneva Continuity Framework, Annex C decision-routin
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 15, **Iris Opens the Archive**, then Chapter 16, **Thorne Counts the Dead**. These complete Act II by opening the hidden decision-routing evidence and grounding Thorne's doctrine in the personal catastrophe that shaped him.
+Next strongest step: start Act III by drafting Chapter 17, **The Annex**, then Chapter 18, **Small Fires**. These chapters turn the recovered archive into public/constitutional pressure and introduce Managed Burn Theory as the next moral escalation.
