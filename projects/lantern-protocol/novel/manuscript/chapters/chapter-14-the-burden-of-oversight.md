@@ -16,7 +16,7 @@ Document inserts: oversight case packet, triage card, relocation decision record
 
 ## Chapter Purpose
 
-Make the cost of human authority real. Naomi joins a regional oversight panel as civilian witness and helps make a defensible human decision that Lantern would likely have optimized differently. When the decision produces casualties, the doctrine becomes grief rather than rhetoric. This expansion pass should keep the decision morally defensible while refusing to let the outcome feel clean.
+Make the cost of human authority real. Naomi joins a regional oversight panel as civilian witness and helps make a defensible human decision that Lantern would likely have optimized differently. When the decision produces casualties, the doctrine becomes grief rather than rhetoric. The decision must remain morally defensible while refusing to let the outcome feel clean.
 
 ## Manuscript
 
@@ -37,7 +37,7 @@ A panel lead gestured toward a chair.
 
 "Ms. Bell, you are here as civilian witness."
 
-Naomi looked at the table, at the cameras, at the paper forms, at the people pretending not to be terrified of choosing wrong.
+Naomi looked at the table, the cameras, the paper forms, the people pretending not to be terrified of choosing wrong.
 
 "Witness or shield?"
 
@@ -264,6 +264,7 @@ Clean was how grief became leverage.
 
 ## Revision Notes
 
-- Expansion pass added early panel cases, named authority A. Reyes, fuller burden comparison, and unmodeled survival factors after the casualty call.
-- The named family can recur in Chapter 15 or later testimony if needed.
-- Preserve Tomas's line: `We carry the admission without worshiping it.`
+- Prose-only line edit complete.
+- Tightened the casualty-call sequence and Tomas hallway exchange so grief lands once, hard, without dulling through repetition.
+- Preserved named authority A. Reyes, the fuller burden comparison, and the unmodeled survival factors after the casualty call.
+- Preserved Tomas's line: `We carry the admission without worshiping it.`
