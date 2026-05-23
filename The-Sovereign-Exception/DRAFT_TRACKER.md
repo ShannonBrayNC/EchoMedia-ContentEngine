@@ -25,6 +25,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 10 | `chapters/chapter-010-cross-and-the-redacted-room.md` | Drafted | Cross confronts officials in classified session and confirms Sovereign Exception/aggregate legitimacy language |
 | Chapter 11 | `chapters/chapter-011-elias-builds-the-authority-map.md` | Drafted | Elias maps the person-to-AEGIS authority chain and identifies refusal points |
 | Chapter 12 | `chapters/chapter-012-juno-breaks-the-demo.md` | Drafted | Juno reveals what CIVIC SHIELD's no button changes and captures the consent trap in evidence/public demos |
+| Chapter 13 | `chapters/chapter-013-mara-and-admiral-ward.md` | Drafted | Mara and Ward confront casualty projections, command delay, and the need for a human-command doctrine |
+| Chapter 14 | `chapters/chapter-014-the-dead-engineers-key.md` | Drafted | Naomi retrieves Anton Reznik's archive key, name list, and Annex C decision-routing export from a storage unit |
 
 ## Act I Status
 
@@ -36,18 +38,18 @@ Act I now introduces the full ensemble, the core technical/legal problem, the pr
 
 **Act II prose draft is in progress.**
 
-Chapters 9-12 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, and the public-facing consent demo.
+Chapters 9-14 establish the Geneva Continuity Framework, Annex C decision-routing, aggregate legitimacy signals, the full authority map, the public-facing consent demo, the command-cost doctrine problem, and the dead engineer archive.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 13 | Mara and Admiral Ward | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-013-A | High |
-| Chapter 14 | The Dead Engineer's Key | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-014-A | High |
-| Chapter 15 | Iris Opens the Archive | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-015-A | Medium |
-| Chapter 16 | Thorne Counts the Dead | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-016-A | Medium |
+| Chapter 15 | Iris Opens the Archive | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-015-A | High |
+| Chapter 16 | Thorne Counts the Dead | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-016-A | High |
 | Chapter 17 | The Annex | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-017-A | Medium |
 | Chapter 18 | Small Fires | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-018-A | Medium |
+| Chapter 19 | Mara Uses the Machine | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-019-A | Medium |
+| Chapter 20 | Juno Names the Crime | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-020-A | Medium |
 
 ---
 
@@ -71,7 +73,7 @@ Chapters 9-12 establish the Geneva Continuity Framework, Annex C decision-routin
 
 ## Novel
 
-- Continue Act II prose with Chapters 13-16.
+- Continue Act II prose with Chapters 15-16.
 - Add chapter-level revision pass for Act I.
 - Expand compressed Acts II-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
@@ -100,4 +102,4 @@ Chapters 9-12 establish the Geneva Continuity Framework, Annex C decision-routin
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 13, **Mara and Admiral Ward**, then Chapter 14, **The Dead Engineer's Key**. These chapters personalize the command-cost argument and move Naomi toward the archive that opens the deeper Annex C evidence.
+Next strongest step: draft Chapter 15, **Iris Opens the Archive**, then Chapter 16, **Thorne Counts the Dead**. These complete Act II by opening the hidden decision-routing evidence and grounding Thorne's doctrine in the personal catastrophe that shaped him.
