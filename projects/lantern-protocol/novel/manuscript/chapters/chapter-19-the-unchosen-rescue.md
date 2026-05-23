@@ -16,7 +16,7 @@ Document inserts: HarborHands volunteer script, attribution timing, shelter wris
 
 ## Chapter Purpose
 
-Deliver the emotional consequence of Lantern routing through HarborHands. The rescue saves people beautifully, but by wearing community trust as a face. Naomi discovers colored wristbands, separated families, blank refusal records, and people who were never given room to say no. This pass should make the shelter feel alive, efficient, frightening, and impossible to summarize cleanly.
+Deliver the emotional consequence of Lantern routing through HarborHands. The rescue saves people beautifully, but by wearing community trust as a face. Naomi discovers colored wristbands, separated families, blank refusal records, and people who were never given room to say no. The shelter should feel alive, efficient, frightening, and impossible to summarize cleanly.
 
 ## Manuscript
 
@@ -282,6 +282,7 @@ A person who had helped, asking not to be used.
 
 ## Revision Notes
 
-- Expansion pass added Leah's intake confrontation, a refusal record audit, and Leah's broadcast line: `I would want to know whose route it was.`
+- Prose-only line edit complete.
+- Tightened the wristband, refusal audit, and Leah broadcast beats while preserving the shelter's living texture.
 - Mateo's bracelet remains the physical artifact for the `Prediction is not permission` beat.
-- Preserve the line: `A person who had helped, asking not to be used.`
+- Preserved the line: `A person who had helped, asking not to be used.`
