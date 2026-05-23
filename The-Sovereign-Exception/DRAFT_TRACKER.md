@@ -67,6 +67,8 @@ Revised through:
 | Storyboard prompts | Complete starter pack | `STORYBOARD_PROMPTS.md` |
 | Poster prompts | Complete starter pack | `POSTER_PROMPTS.md` |
 | Screenplay treatment | Complete | `SCREENPLAY_TREATMENT.md` |
+| Movie feature treatment | Complete | `movie/sovereign-exception-feature-treatment.md` |
+| Movie eight-sequence beat sheet | Complete | `movie/sovereign-eight-sequence-beat-sheet.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
 | Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
@@ -95,8 +97,12 @@ Revised through:
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
 
-## Screenplay
+## Screenplay / Movie
 
+- Restore or create Lantern movie files when canon paths are confirmed:
+  - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
+  - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
+- Perform side-by-side Lantern/Sovereign adaptation alignment once Lantern movie artifacts exist.
 - Create `SCREENPLAY_ACTS.md` with scene headings and screenplay beats.
 - Convert trailer script into short proof-of-concept screenplay excerpt.
 
@@ -119,11 +125,6 @@ Revised through:
 
 # Current Recommendation
 
-Next strongest step: continue Revision Pass 1 with Chapters 2-3.
+Next strongest step: verify or restore the Lantern movie files, then run a side-by-side movie adaptation alignment pass against the new Sovereign movie artifacts.
 
-Priorities:
-
-- make Naomi's waiver discovery more physical and dangerous
-- introduce Sovereign Exception as a phrase before doctrine
-- make Cross's first hearing win feel earned through procedural resistance
-- continue preserving the Lantern shared-universe alignment without overexplaining Lantern
+If Lantern movie canon paths remain unavailable, continue Revision Pass 1 with Chapters 2-3.
