@@ -72,6 +72,7 @@ Drafted through:
 | Act III revision notes | Complete | `revision/ACT_III_REVISION_NOTES.md` |
 | Act IV revision notes | Complete | `revision/ACT_IV_REVISION_NOTES.md` |
 | Act V revision notes | Complete | `revision/ACT_V_REVISION_NOTES.md` |
+| Revision index | Complete | `revision/REVISION_INDEX.md` |
 
 ---
 
@@ -80,7 +81,6 @@ Drafted through:
 ## Novel
 
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
-- Create consolidated revision index.
 - Begin targeted prose edits, starting with Prologue and Chapter 1.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
@@ -109,4 +109,12 @@ Drafted through:
 
 # Current Recommendation
 
-Next strongest step: create `revision/REVISION_INDEX.md` linking all act revision notes, summarizing global fixes, and defining the order for the first actual prose-editing pass. After that, begin targeted prose edits starting with the Prologue and Chapter 1.
+Next strongest step: begin targeted prose edits with `NOVEL_DRAFT.md` and `chapters/chapter-001-mara-vale-receives-the-audit.md`.
+
+Priorities:
+
+- strengthen the Green Map with ground-level human stakes
+- seed authority ambiguity without explaining Annex C
+- sharpen Mara's audit anomaly as decision-ownership risk
+- strengthen Lantern continuity
+- increase cinematic specificity for later screenplay/storyboard work
