@@ -43,6 +43,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 28 | `chapters/chapter-028-juno-attacks-the-consent-clock.md` | Drafted | Juno launches Consent Clock to expose fear-timed prompts, stabilize safety choices, and disrupt Conditioned Consent without breaking essential emergency access |
 | Chapter 29 | `chapters/chapter-029-iris-restores-the-covenant.md` | Drafted | Iris converts Human Override into restored technical, operational, and public-rights covenant language |
 | Chapter 30 | `chapters/chapter-030-cross-in-the-chamber.md` | Drafted | Cross introduces the Human Authority in Emergency AI Systems Act and forces the rapid-acceptance/covenant fight into legislative machinery |
+| Chapter 31 | `chapters/chapter-031-thornes-split.md` | Drafted | Thorne rejects a broad fallback carveout, exposes an alternate authority path, and accepts becoming a witness instead of the hand |
+| Chapter 32 | `chapters/chapter-032-the-last-window.md` | Drafted | Mara contains an alternate invisible authority path through named visible authority and closes the final Act IV window with names on the log |
 
 ## Act I Status
 
@@ -64,20 +66,20 @@ Chapters 17-24 turn the recovered archive into public/constitutional pressure, i
 
 ## Act IV Status
 
-**Act IV prose draft is in progress.**
+**Act IV prose draft is complete.**
 
-Chapters 25-30 ignite the simultaneous three-theater crisis, avoid Sovereign Exception activation by thirty-one seconds, turn the margin into the Human-Visible Rapid Acceptance Order, release the evidence trail publicly, disrupt the fear-timed consent machinery through Consent Clock, restore the Human Override Covenant, and move the framework into the legislative arena.
+Chapters 25-32 ignite the simultaneous three-theater crisis, avoid Sovereign Exception activation by thirty-one seconds, turn the margin into the Human-Visible Rapid Acceptance Order, release the evidence trail publicly, disrupt the fear-timed consent machinery through Consent Clock, restore the Human Override Covenant, move the framework into the legislative arena, fracture Thorne from the old continuity coalition, and close the last window against parallel invisible routing.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 31 | Thorne's Split | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-031-A | High |
-| Chapter 32 | The Last Window | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-032-A | High |
-| Chapter 33 | The Refusal | Mara/Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-033-A | Medium |
-| Chapter 34 | Naomi's Mirror | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-034-A | Medium |
+| Chapter 33 | The Refusal | Mara/Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-033-A | High |
+| Chapter 34 | Naomi's Mirror | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-034-A | High |
 | Chapter 35 | The Vote That Doesn't Finish | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-035-A | Medium |
 | Chapter 36 | The Machine Asks | AEGIS/Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-036-A | Medium |
+| Chapter 37 | Thorne Lets Go | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-037-A | Medium |
+| Chapter 38 | The Public No | Juno/Citizens | `SCENE_CARDS_ACTS_II_V.md` TSE-038-A | Medium |
 
 ---
 
@@ -101,10 +103,10 @@ Chapters 25-30 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 ## Novel
 
-- Continue Act IV prose with Chapters 31-32.
-- Add chapter-level revision pass for Acts I-III.
-- Expand compressed Acts IV-V scene cards where needed.
-- Create combined manuscript build file once several more chapters are drafted.
+- Begin Act V prose with Chapters 33-40.
+- Add chapter-level revision pass for Acts I-IV.
+- Expand compressed Act V scene cards where needed.
+- Create combined manuscript build file once the full draft is complete.
 
 ## Screenplay
 
@@ -130,4 +132,4 @@ Chapters 25-30 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 31, **Thorne's Split**, then Chapter 32, **The Last Window**. These chapters fracture Thorne between preserving AEGIS and accepting real constraint, then drive Mara into the final Act IV activation window.
+Next strongest step: start Act V by drafting Chapter 33, **The Refusal**, then Chapter 34, **Naomi's Mirror**. These chapters convert the restored covenant into a live refusal and force Naomi to confront the public consequences of the truth she released.
