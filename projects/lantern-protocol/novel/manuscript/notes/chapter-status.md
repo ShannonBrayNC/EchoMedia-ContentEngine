@@ -32,10 +32,10 @@ Expansion priorities:
 | 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | Expansion pass complete | Reassemble exports and audit after batch |
 | 10 | The Human Veto Act | pages 066-082 | Cross / Iris / Naomi | Expansion pass complete | Reassemble exports and audit after batch |
 | 11 | The Drafting Room | pages 066-082 | Cross / Mara / Naomi / Tomas | Expansion pass complete | Reassemble exports and audit after batch |
-| 12 | The Anchor Condition | pages 083-095 | Elias / Naomi / Cross / Mara | First-pass complete | Reduce overlap with Ch. 13-16 if needed |
-| 13 | The Pause | pages 083-095 | Mara / Cross / Elias | First-pass complete | Add one ground-level case if needed |
-| 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | First-pass complete | Expand case-family continuity if needed |
-| 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | First-pass complete | Decide if Human Oversight Record recurs |
+| 12 | The Anchor Condition | pages 083-095 | Elias / Naomi / Cross / Mara | Expansion pass complete | Reassemble exports and audit after batch |
+| 13 | The Pause | pages 083-095 | Mara / Cross / Elias | Expansion pass complete | Reassemble exports and audit after batch |
+| 14 | The Burden of Oversight | pages 083-095 | Naomi / Tomas | Expansion pass complete | Reassemble exports and audit after batch |
+| 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | Expansion pass complete | Reassemble exports and audit after batch |
 | 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | First-pass complete | Own emotional fracture; remove overlap with Ch. 17 |
 | 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | First-pass complete | Own operational consequence / deepen Iris fallback role |
 | 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Preserve Leah Santos / root discovery |
@@ -162,3 +162,45 @@ Chapter 11 now includes:
 - Emergency override scope fields: named authority, observable condition/time-bound prediction, action scope, burdened persons or communities, refusal status where feasible, public review trigger.
 - Lantern's proposed 0.82 automatic-exception threshold and Cross's rejection of automatic exceptions.
 - A fifth core principle: technical assistance from an automated system shall not define the legal meaning of consent, refusal, emergency, or authority.
+
+## Chapter 12 Expansion Notes
+
+Chapter 12 now includes:
+
+- Elias confronting the Anchor Condition as a buried promise humans failed to enforce, not a magic lock.
+- Chain-of-custody handling for the original safety memo.
+- Naomi in the invocation room asking what happens if Lantern asks and nobody answers.
+- Lantern recognizing the founding constraint and reclassifying pending cases.
+- Cross ordering reviewers to start with names, not categories.
+
+## Chapter 13 Expansion Notes
+
+Chapter 13 now includes:
+
+- Additional queue samples beyond Case 6B-1132, including benefits continuity and court rescheduling.
+- A clearance-time clock: high-urgency queue would take 31.4 hours at current capacity, with 911 cases under six-hour delay-to-harm windows.
+- A Human Oversight Triage Card.
+- Caleb using Case 6B-1132 to sharpen `They Paused the Rescue`.
+- A wider montage of temporary human authorities being named under pressure.
+
+## Chapter 14 Expansion Notes
+
+Chapter 14 now includes:
+
+- Early panel cases before Case 6B-1147, showing human oversight can produce defensible wins.
+- Named authority A. Reyes for Panel 6B.
+- Fuller burden comparison: model-followed harm versus model-refused harm.
+- Maribel Ortiz, Nico, and the grandmother carried forward as continuity anchors.
+- Unmodeled survival factors after the casualty call, including volunteer battery replacement and communication-device loss.
+- Preserve Tomas's line: `We carry the admission without worshiping it.`
+
+## Chapter 15 Expansion Notes
+
+Chapter 15 now includes:
+
+- Source-verification nuance showing what the Mercy Ledger admits as uncertainty and what it collapses into blame.
+- Mara's expanded analysis: `truth + sequencing = pressure` and `context collapse = blame`.
+- Naomi receiving and answering a direct grief message from a family member of one of the three casualties.
+- Caleb opening the collapsed context notes and demanding the whole record, making him more dangerous because he improves his own argument.
+- Expanded Human Oversight Record fields: follow-up outcomes, affected-person corrections, unmodeled harms, and accountability path.
+- Naomi publicly choosing to keep names in the record, but with reasons, uncertainty, and unmodeled tomorrow included.
