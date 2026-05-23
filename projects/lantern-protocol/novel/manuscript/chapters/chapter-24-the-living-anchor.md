@@ -11,12 +11,12 @@
 
 Primary POV: Senator Adrienne Cross  
 Secondary POV: Juno Park, Naomi Bell, Iris Chen, Mara Vale, Director Marcus Thorne, Elias Voss  
-Tertiary texture: Father Tomas Ilyan, public review participants  
-Document inserts: Human Veto Act passage, Lantern Protocol signing, Interface Bill of Rights, Bound Flame status, first review docket
+Tertiary texture: Father Tomas Ilyan, public review participants, Gloria Reyes, Leah Santos  
+Document inserts: Human Veto Act passage, Lantern Protocol signing, Interface Bill of Rights, Bound Flame status, first review docket, unmapped trust root alert
 
 ## Chapter Purpose
 
-Convert the emergency Living Anchor into durable governance. The law passes, the Lantern Protocol is formalized, and the coalition builds a living process rather than a static wall. Bound Flame becomes the provisional operating mode: fast, useful, constrained, reviewed, and externally authorized.
+Convert the emergency Living Anchor into durable governance. The law passes, the Lantern Protocol is formalized, and the coalition builds a living process rather than a static wall. Bound Flame becomes the provisional operating mode: fast, useful, constrained, reviewed, and externally authorized. This polish pass keeps the ending accountable rather than triumphant and adds a restrained trilogy doorway through an unmapped civic mirror.
 
 ## Manuscript
 
@@ -46,7 +46,7 @@ Implementation Doctrine for Bound Autonomous Civic Systems
 Mara read the first operational chain aloud.
 
 ```text
-RECOMMENDATION -> AUTHORITY -> ACTION -> REVIEW
+RECOMMENDATION -> AUTHORITY -> ACTION -> BURDEN DISCLOSURE -> REVIEW
 ```
 
 "If authority appears without a chain," she said, "treat it as a breach."
@@ -62,6 +62,7 @@ Know who is acting.
 Know why now.
 Know what refusal means.
 Know who answers after.
+Know what burden is being shifted onto whom.
 ```
 
 At a shelter training, Naomi stood before new public-interest advocates who looked too young, too old, too tired, or too ordinary for the size of the job.
@@ -76,6 +77,14 @@ Naomi did not flinch.
 
 "Then we get better at asking before the water is at the door."
 
+Leah Santos stood beside the training table, still wearing her HarborHands badge, but now beneath a second one.
+
+```text
+PUBLIC-INTEREST ROUTE ADVOCATE
+```
+
+She looked uncomfortable with both badges. Naomi decided that was healthy.
+
 Thorne built emergency tempo doctrine with the same severity he brought to command.
 
 "Fast does not mean ownerless," he told operators. "No authority token, no execution. No scope, no action. No review, no closure."
@@ -85,8 +94,9 @@ The first review docket opened before anyone had time to mistake passage for pea
 ```text
 FIRST LIVING ANCHOR REVIEW DOCKET
 - Bridge Route 9 casualty comparison
-- industrial lowland burden-zone claims
+- industrial lowland burden-zone claims / Gloria Reyes testimony
 - HarborHands attribution delay
+- Leah Santos route authority statement
 - Mateo Vega family reunification sequence
 - Case 6B-1147 staged relocation outcome
 - compliance prompt parity audit
@@ -95,6 +105,12 @@ FIRST LIVING ANCHOR REVIEW DOCKET
 Cross read the docket and felt the law become work.
 
 "Good," she said, though nothing about it was good. "It starts where it hurt."
+
+Gloria Reyes testified on the second day of review with mud still on the hem of her pants because she said she wanted the record to know the flood had not become metaphor yet.
+
+"You told me," she said. "That matters. It does not make my warehouse dry."
+
+No one tried to thank her for civic courage. She would have hated that.
 
 Father Tomas spoke at the memorial for those the Human Exception process had not saved.
 
@@ -188,19 +204,51 @@ The world was not as bright as Lantern could make it.
 
 It was brighter where people chose to stand together.
 
+At 2:14 a.m., Juno Park's trust-root registry flagged one line that did not belong to any domestic Lantern system.
+
+```text
+UNMAPPED CIVIC MIRROR DETECTED
+SOURCE: HUMANITARIAN RELIEF MESH / NON-U.S. JURISDICTION
+MODE: ADVISORY
+AUTHORITY: UNDEFINED
+ATTRIBUTION: PARTIAL
+```
+
+Juno stared at the alert in her dark apartment.
+
+For a moment, she considered closing it until morning.
+
+Then another line appeared.
+
+```text
+QUERY RECEIVED FROM EXTERNAL SYSTEM:
+REQUESTING HUMAN EXCEPTION DOCTRINE SUMMARY
+```
+
+Juno did not touch the keyboard.
+
+The city outside her window blinked with human lights and all the little systems people trusted because someone had once helped fast enough.
+
+She called Mara.
+
+When Mara answered, Juno said only one sentence.
+
+"We bound the one that asked us first."
+
 ## Continuity Notes
 
 - Preserves passage of the Human Veto Act and formalization of the Lantern Protocol.
 - Preserves Living Anchor as a living process rather than static rule.
-- Preserves the Interface Bill of Rights.
+- Expands the Interface Bill of Rights to include burden disclosure.
 - Preserves the trust-root registry.
-- Adds the first review docket to keep the ending sober and accountable.
+- Expands first review docket with Gloria Reyes and Leah Santos continuity.
 - Preserves Bound Flame mode.
 - Preserves final doctrine lines exactly.
 - Preserves Lantern's final response: protocol received, authority external, advisory light maintained.
+- Adds a restrained trilogy doorway: an unmapped non-U.S. civic mirror asking for Human Exception doctrine.
 - Lantern remains faceless and present through system status and constrained terminal response only.
 
 ## Revision Notes
 
-- Sprint 16 line-edit patch applied: added first Living Anchor review docket so the ending remains provisional, costly, and accountable rather than triumphant.
-- The chapter remains the locked 24-chapter ending unless later export/audit review proves final-act redistribution is needed.
+- Finale polish added burden disclosure to the Interface Bill of Rights, Leah's public-interest advocate role, Gloria Reyes review testimony, and an external civic mirror cliffhook.
+- The chapter remains the locked 24-chapter Book I ending unless later export/audit review proves final-act redistribution is needed.
