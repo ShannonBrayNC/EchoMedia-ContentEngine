@@ -8,12 +8,45 @@ export type ApiResult = {
   [key: string]: unknown;
 };
 
+export type SessionContext = {
+  role: string;
+  user: string;
+  projectScope?: string;
+  bearerToken?: string;
+};
+
+let sessionContext: SessionContext = {
+  role: 'christina',
+  user: 'Christina',
+};
+
+export function setSessionContext(context: SessionContext) {
+  sessionContext = context;
+}
+
+function buildHeaders(): HeadersInit {
+  const headers: HeadersInit = {
+    'Content-Type': 'application/json',
+  };
+
+  if (sessionContext.bearerToken) {
+    headers.Authorization = `Bearer ${sessionContext.bearerToken}`;
+  } else {
+    headers['X-Content-Engine-Role'] = sessionContext.role;
+    headers['X-Content-Engine-User'] = sessionContext.user;
+
+    if (sessionContext.projectScope) {
+      headers['X-Content-Engine-Project'] = sessionContext.projectScope;
+    }
+  }
+
+  return headers;
+}
+
 async function post<T extends object>(path: string, body: T): Promise<ApiResult> {
   const response = await fetch(`${API_BASE}${path}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: buildHeaders(),
     body: JSON.stringify(body),
   });
 
@@ -26,6 +59,13 @@ async function post<T extends object>(path: string, body: T): Promise<ApiResult>
 
 export async function health(): Promise<ApiResult> {
   const response = await fetch(`${API_BASE}/health`);
+  return response.json();
+}
+
+export async function whoAmI(): Promise<ApiResult> {
+  const response = await fetch(`${API_BASE}/auth/me`, {
+    headers: buildHeaders(),
+  });
   return response.json();
 }
 
