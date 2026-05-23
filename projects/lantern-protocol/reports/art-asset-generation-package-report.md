@@ -25,3 +25,8 @@ Guardrails and doctrine included exactly as specified:
 - Added generation packs: `art/prompts/key-scenes/chapter-01-generation-pack.md`, `chapter-02-generation-pack.md`, `chapter-03-generation-pack.md`.
 - Added machine-readable Codex job list: `art/production/chapter-01-03-image-jobs.jsonl` (15 jobs).
 - Added export manifest tracker: `art/exports/generated/chapter-01-03-generated-assets.md`.
+
+## Chapter 04–06 Generation Execution
+- Added generation packs: `art/prompts/key-scenes/chapter-04-generation-pack.md`, `chapter-05-generation-pack.md`, `chapter-06-generation-pack.md`.
+- Added machine-readable Codex job list: `art/production/chapter-04-06-image-jobs.jsonl` (15 jobs).
+- Added export manifest tracker: `art/exports/generated/chapter-04-06-generated-assets.md`.
