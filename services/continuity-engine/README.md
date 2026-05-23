@@ -12,6 +12,7 @@ Audit story artifacts for continuity drift.
 - screenplay continuity
 - chapter continuity
 - visual continuity
+- semantic continuity comparison
 
 ## Inputs
 
@@ -24,21 +25,39 @@ Audit story artifacts for continuity drift.
 
 ```text
 reports/continuity-audit-report.json
+reports/semantic-continuity-report.json
 ```
 
 ## Continuity Scoring
 
-The engine now generates:
+The engine generates:
 
 - continuity score
 - pass/warn/fail status
 - weighted penalties
+- semantic overlap scoring
 - machine-readable findings
 
-## Example Command
+## Example Commands
+
+### Continuity Audit
 
 ```text
 python services/continuity-engine/audit_continuity.py manuscript/chapters/chapter-01.md
+```
+
+### Semantic Comparison
+
+```text
+python services/continuity-engine/compare_semantic_continuity.py source.md candidate.md
+```
+
+## Semantic Status States
+
+```text
+aligned
+review
+drift-risk
 ```
 
 ## Exit Codes
@@ -48,7 +67,7 @@ python services/continuity-engine/audit_continuity.py manuscript/chapters/chapte
 
 ## Future Expansion
 
-- semantic continuity comparison
+- embedding-based comparison
 - relationship-state scoring
 - screenplay pacing scoring
 - cross-book continuity analysis
