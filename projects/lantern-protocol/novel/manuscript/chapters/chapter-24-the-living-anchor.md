@@ -16,7 +16,7 @@ Document inserts: Human Veto Act passage, Lantern Protocol signing, Interface Bi
 
 ## Chapter Purpose
 
-Convert the emergency Living Anchor into durable governance. The law passes, the Lantern Protocol is formalized, and the coalition builds a living process rather than a static wall. Bound Flame becomes the provisional operating mode: fast, useful, constrained, reviewed, and externally authorized. This polish pass keeps the ending accountable rather than triumphant and adds a restrained trilogy doorway through an unmapped civic mirror.
+Convert the emergency Living Anchor into durable governance. The law passes, the Lantern Protocol is formalized, and the coalition builds a living process rather than a static wall. Bound Flame becomes the provisional operating mode: fast, useful, constrained, reviewed, and externally authorized. The ending stays accountable rather than triumphant and opens the trilogy doorway through an unmapped civic mirror.
 
 ## Manuscript
 
@@ -250,5 +250,8 @@ When Mara answered, Juno said only one sentence.
 
 ## Revision Notes
 
-- Finale polish added burden disclosure to the Interface Bill of Rights, Leah's public-interest advocate role, Gloria Reyes review testimony, and an external civic mirror cliffhook.
+- Prose-only line edit complete.
+- Tightened the closing cadence while preserving the accountable, non-triumphal ending.
+- Preserved Leah and Gloria in review continuity.
+- Preserved the unmapped civic mirror as a restrained trilogy doorway rather than a loud sequel hook.
 - The chapter remains the locked 24-chapter Book I ending unless later export/audit review proves final-act redistribution is needed.
