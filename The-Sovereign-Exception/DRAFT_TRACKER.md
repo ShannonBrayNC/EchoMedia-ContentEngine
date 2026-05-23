@@ -33,6 +33,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 18 | `chapters/chapter-018-small-fires.md` | Drafted | Naomi uncovers Managed Burn cases and asks whether AEGIS-related systems learned when not to prevent smaller harms |
 | Chapter 19 | `chapters/chapter-019-mara-uses-the-machine.md` | Drafted | Mara uses AEGIS advisory support to save a logistics ship while retaining named human command authority |
 | Chapter 20 | `chapters/chapter-020-juno-names-the-crime.md` | Drafted | Juno names Conditioned Consent and Scope Laundering as the public-facing consent-timing mechanisms |
+| Chapter 21 | `chapters/chapter-021-elias-and-father-tomas.md` | Drafted | Elias and Naomi meet Father Tomas, who frames the moral danger as success becoming coercive |
+| Chapter 22 | `chapters/chapter-022-the-ethics-memo.md` | Drafted | Naomi turns Tomas's memo into evidence: desperation is not delegation, rescue does not grant ownership |
 
 ## Act I Status
 
@@ -50,18 +52,18 @@ Chapters 9-16 establish the Geneva Continuity Framework, Annex C decision-routin
 
 **Act III prose draft is in progress.**
 
-Chapters 17-20 turn the recovered archive into constitutional/hearing pressure, introduce Managed Burn Theory, force Mara to use AEGIS under named human authority, and name the consent-timing mechanism as Conditioned Consent.
+Chapters 17-22 turn the recovered archive into constitutional/hearing pressure, introduce Managed Burn Theory, force Mara to use AEGIS under named human authority, name the consent-timing mechanism as Conditioned Consent, and bring Father Tomas's ethics warning into the public evidence chain.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 21 | Elias and Father Tomas | Elias | `SCENE_CARDS_ACTS_II_V.md` TSE-021-A | High |
-| Chapter 22 | The Ethics Memo | Naomi/Tomas | `SCENE_CARDS_ACTS_II_V.md` TSE-022-A | High |
-| Chapter 23 | Cross Goes Public | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-023-A | Medium |
-| Chapter 24 | Thorne Makes the Case | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-024-A | Medium |
+| Chapter 23 | Cross Goes Public | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-023-A | High |
+| Chapter 24 | Thorne Makes the Case | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-024-A | High |
 | Chapter 25 | Three Theaters | AEGIS crisis montage | `SCENE_CARDS_ACTS_II_V.md` TSE-025-A | Medium |
 | Chapter 26 | The Order | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-026-A | Medium |
+| Chapter 27 | Naomi Releases the Trail | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-027-A | Medium |
+| Chapter 28 | Juno Attacks the Consent Clock | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-028-A | Medium |
 
 ---
 
@@ -85,7 +87,7 @@ Chapters 17-20 turn the recovered archive into constitutional/hearing pressure, 
 
 ## Novel
 
-- Continue Act III prose with Chapters 21-24.
+- Continue Act III prose with Chapters 23-24.
 - Add chapter-level revision pass for Acts I-II.
 - Expand compressed Acts III-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
@@ -114,4 +116,4 @@ Chapters 17-20 turn the recovered archive into constitutional/hearing pressure, 
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 21, **Elias and Father Tomas**, then Chapter 22, **The Ethics Memo**. These chapters bring the moral witness into the plot and reveal the early warning that Thorne signed before the machine became publicly irresistible.
+Next strongest step: draft Chapter 23, **Cross Goes Public**, then Chapter 24, **Thorne Makes the Case**. These chapters push the truth into public view and let Thorne deliver the strongest counterargument before the Act IV crisis ignites.
