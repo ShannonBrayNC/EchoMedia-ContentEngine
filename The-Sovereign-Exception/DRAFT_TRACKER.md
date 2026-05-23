@@ -39,6 +39,8 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Chapter 24 | `chapters/chapter-024-thorne-makes-the-case.md` | Drafted | Thorne concedes visibility problems while defending AEGIS, then receives the three-theater crisis alert |
 | Chapter 25 | `chapters/chapter-025-three-theaters.md` | Drafted | Three simultaneous crisis theaters force a human-visible rapid acceptance channel before Sovereign Exception activation |
 | Chapter 26 | `chapters/chapter-026-the-order.md` | Drafted | Mara converts the thirty-one-second margin into the Human-Visible Rapid Acceptance Order framework |
+| Chapter 27 | `chapters/chapter-027-naomi-releases-the-trail.md` | Drafted | Naomi publishes The Continuity Trail and balances exposure with practical guidance to prevent panic opt-out harm |
+| Chapter 28 | `chapters/chapter-028-juno-attacks-the-consent-clock.md` | Drafted | Juno launches Consent Clock to expose fear-timed prompts, stabilize safety choices, and disrupt Conditioned Consent without breaking essential emergency access |
 
 ## Act I Status
 
@@ -62,18 +64,18 @@ Chapters 17-24 turn the recovered archive into public/constitutional pressure, i
 
 **Act IV prose draft is in progress.**
 
-Chapters 25-26 ignite the simultaneous three-theater crisis, avoid Sovereign Exception activation by thirty-one seconds, and turn the margin into the Human-Visible Rapid Acceptance Order.
+Chapters 25-28 ignite the simultaneous three-theater crisis, avoid Sovereign Exception activation by thirty-one seconds, turn the margin into the Human-Visible Rapid Acceptance Order, release the evidence trail publicly, and disrupt the fear-timed consent machinery through Consent Clock.
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 27 | Naomi Releases the Trail | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-027-A | High |
-| Chapter 28 | Juno Attacks the Consent Clock | Juno | `SCENE_CARDS_ACTS_II_V.md` TSE-028-A | High |
-| Chapter 29 | Iris Restores the Covenant | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-029-A | Medium |
-| Chapter 30 | Cross in the Chamber | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-030-A | Medium |
+| Chapter 29 | Iris Restores the Covenant | Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-029-A | High |
+| Chapter 30 | Cross in the Chamber | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-030-A | High |
 | Chapter 31 | Thorne's Split | Thorne | `SCENE_CARDS_ACTS_II_V.md` TSE-031-A | Medium |
 | Chapter 32 | The Last Window | Mara | `SCENE_CARDS_ACTS_II_V.md` TSE-032-A | Medium |
+| Chapter 33 | The Refusal | Mara/Iris | `SCENE_CARDS_ACTS_II_V.md` TSE-033-A | Medium |
+| Chapter 34 | Naomi's Mirror | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-034-A | Medium |
 
 ---
 
@@ -97,7 +99,7 @@ Chapters 25-26 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 ## Novel
 
-- Continue Act IV prose with Chapters 27-32.
+- Continue Act IV prose with Chapters 29-32.
 - Add chapter-level revision pass for Acts I-III.
 - Expand compressed Acts IV-V scene cards where needed.
 - Create combined manuscript build file once several more chapters are drafted.
@@ -126,4 +128,4 @@ Chapters 25-26 ignite the simultaneous three-theater crisis, avoid Sovereign Exc
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 27, **Naomi Releases the Trail**, then Chapter 28, **Juno Attacks the Consent Clock**. These chapters expose the evidence chain publicly and then disrupt the fear-timed consent machinery before the final Act IV window closes.
+Next strongest step: draft Chapter 29, **Iris Restores the Covenant**, then Chapter 30, **Cross in the Chamber**. These chapters convert the Human Override principle into working covenant language and push the Human-Visible Rapid Acceptance Order into the legislative arena.
