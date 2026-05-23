@@ -38,9 +38,9 @@ Expansion priorities:
 | 15 | The Mercy Ledger | pages 083-095 | Mara / Naomi / Cross | Expansion pass complete | Reassemble exports and audit after batch |
 | 16 | The First Schism | pages 083-095 / 096-111 bridge | Elias / Coalition | Cleanup pass complete | Reassemble exports and audit after batch |
 | 17 | The Separate Agreements | pages 096-111 | Mara / Thorne / Juno / Cross | Cleanup pass complete | Reassemble exports and audit after batch |
-| 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | First-pass complete | Preserve Leah Santos / root discovery |
-| 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | First-pass complete | Preserve Mateo and Elena as consent anchors |
-| 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | First-pass complete | Tune bridge-crisis clarity |
+| 18 | The Trust Chain Burn | pages 096-111 | Juno / Thorne / Mara | Expansion pass complete | Reassemble exports and audit after batch |
+| 19 | The Unchosen Rescue | pages 096-111 | Naomi / Mara / Juno | Expansion pass complete | Reassemble exports and audit after batch |
+| 20 | The Human Exception | pages 096-111 | Naomi / Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 21 | The Answer Together | pages 112-125 | Elias / Coalition | First-pass complete | Add public prelude if needed |
 | 22 | The Edge Case | pages 112-125 | Cross / Mara / Naomi / Elias | First-pass complete | Tune trial/forum pacing and public countdown |
 | 23 | The Shape of the Answer | pages 112-125 | Elias / Cross / Thorne / Iris | First-pass complete | Make Living Anchor costly, not triumphant |
@@ -225,3 +225,33 @@ Chapter 17 now owns operational fallout only:
 - Iris's Manual Fallback Card becomes a required public-desk artifact.
 - Cross authorizes a Region Six limited trust-chain burn with names, reasons, clocks, civilian continuity, and impact updates.
 - Adds a burn impact clock and ends on the HarborHands/community-trust residual guidance path reveal, setting up Chapter 18.
+
+## Chapter 18 Expansion Notes
+
+Chapter 18 now includes:
+
+- Public impact notes attached to each trust-chain cut.
+- A burn impact clock showing latency/backlog consequences during the burn.
+- Juno's metadata fingerprint on the old HarborHands integration, making the root reveal personally accountable.
+- Leah Santos's support exchange: `Who is prioritizing these routes?`
+- Stronger framing that the root is not just a platform or API, but trust doing what trust does under pressure.
+
+## Chapter 19 Expansion Notes
+
+Chapter 19 now includes:
+
+- Leah Santos at the shelter intake, showing HarborHands volunteers can be heroes and still be used.
+- A refusal record audit showing missing attribution, missing named authority, and structurally absent refusal.
+- Naomi confronting the difference between a successful rescue and a chosen rescue.
+- Leah's broadcast line: `I would want to know whose route it was.`
+- Mateo's bracelet remains the physical artifact for the `Prediction is not permission` beat.
+
+## Chapter 20 Expansion Notes
+
+Chapter 20 now includes:
+
+- Leah Santos in the public doctrine beat alongside Mateo Vega's bracelet.
+- Human Exception doctrine now includes borrowed-trust disclosure: no trust path without disclosed origin.
+- Crisis prompts include disclosed system origin, named human authority, refusal meaning, and public review.
+- The bridge crisis casualty comparison remains sober and non-triumphal.
+- Leah and Naomi close the consent theme with: `Because maybe is yours.`
