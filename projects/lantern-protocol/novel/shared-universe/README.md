@@ -27,6 +27,25 @@ Can civilization use machine-speed help without surrendering the human right to 
 | `lantern-sovereign-exception-timeline.md` | Integrated timeline across Lantern Protocol and The Sovereign Exception. |
 | `thematic-ladder.md` | Clean doctrine ladder from Lantern I through the Managed World trilogy. |
 | `continuity-and-release-order.md` | Internal chronology, adaptation/release options, and continuity guardrails. |
+| `future-alignment-recommendations.md` | Practical backlog for future canon, audio, art, adaptation, and Codex alignment work. |
+
+## Recommended Next Alignment Step
+
+Start with:
+
+```text
+character-continuity-matrix.md
+```
+
+Reason:
+
+The shared universe now spans multiple story units, and the core cast carries the philosophical load across both Lantern and Sovereign. The next highest-value artifact is a character matrix that keeps Mara, Naomi, Elias, Cross, Thorne, Juno, Iris, Caleb, Father Tomas, Leah, and the Sovereign-specific characters aligned.
+
+See:
+
+```text
+future-alignment-recommendations.md
+```
 
 ## Canon Source Anchors
 
