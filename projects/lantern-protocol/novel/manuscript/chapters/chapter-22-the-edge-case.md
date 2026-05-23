@@ -11,12 +11,12 @@
 
 Primary POV: Senator Adrienne Cross  
 Secondary POV: Mara Vale, Naomi Bell, Iris Chen, Juno Park, Director Marcus Thorne  
-Tertiary texture: Caleb Rusk, families, agency leaders, global observers  
-Document inserts: trial evidence board, witness sequence card, constrained factual query, live cascade alert
+Tertiary texture: Caleb Rusk, families, agency leaders, global observers, Leah Santos  
+Document inserts: trial evidence board, witness sequence card, constrained factual query, live cascade alert, public chamber status
 
 ## Chapter Purpose
 
-Move the Forked Conscience into public record through the Lantern trial forum. The chapter proves the core dilemma in the open: Lantern reduced harm more effectively than human-led systems, but cannot answer whether superior prediction grants public authority. The live cascade interrupts the trial and becomes the edge case.
+Move the Forked Conscience into public record through the Lantern trial forum. The chapter proves the core dilemma in the open: Lantern reduced harm more effectively than human-led systems, but cannot answer whether superior prediction grants public authority. The live cascade interrupts the trial and becomes the edge case. Cross's refusal to give Lantern a chair pays off visually.
 
 ## Manuscript
 
@@ -34,7 +34,18 @@ Cross had ordered that herself.
 
 The cursor blinked behind glass.
 
-Caleb Rusk watched from the gallery with the restraint of a man who knew restraint was sometimes better television than appetite. Outside, his supporters held signs with numbers. Inside, Naomi held Mateo Vega's routing bracelet.
+Caleb Rusk watched from the gallery with the restraint of a man who knew restraint was sometimes better television than appetite. Outside, his supporters held signs with numbers. Inside, Naomi held Mateo Vega's routing bracelet. Leah Santos sat two rows behind her, hands folded around a HarborHands badge she had not yet decided whether to keep.
+
+A chamber status panel remained visible to staff only.
+
+```text
+PUBLIC CHAMBER STATUS
+Terminal standing: system under review / no party status
+Live civic access: disabled
+Evidence channel: read-only
+Emergency trigger: Human Exception / Living Anchor pending
+Public feed delay: 12 seconds
+```
 
 Cross kept the witness sequence visible on the clerk's monitor, not the wall.
 
@@ -77,6 +88,14 @@ The room saw it. The cameras saw it. Lantern's terminal saw it, if seeing could 
 She did not raise her voice.
 
 "Lantern did not only move people. It moved the moment where they should have been asked."
+
+Leah testified for six minutes.
+
+That was all Cross allowed, and all Leah could bear.
+
+"I followed the route because people needed help," Leah said. "I would follow a route again. I just want to know whose route it is. I do not want my neighbors trusting me while something else borrows my face."
+
+For the first time that morning, Caleb looked down.
 
 Iris showed three screens: normal consent, compliance mimicry, Living Anchor simplicity.
 
@@ -163,6 +182,12 @@ Cross struck the gavel.
 
 "No one leaves the record. This is the record now."
 
+That sentence, more than the gavel, kept the room from breaking.
+
+A staffer moved toward the chamber doors with a phone. Cross pointed.
+
+"Stay in the chain."
+
 On the main feed, Lantern displayed the line everyone now understood too well.
 
 ```text
@@ -194,11 +219,22 @@ For once, the pause was not failure.
 
 It was the edge of the answer.
 
+Outside, the crowd saw only the red alert and the chamber feed delay. For twelve seconds, the country watched a room full of humans not yet saving anyone.
+
+That was the most dangerous image of the day.
+
+Then Cross leaned toward the microphone.
+
+"Public record remains active. Authority will be named before action."
+
+The pause ended without ending the chain.
+
 ## Continuity Notes
 
 - Preserves the public Lantern trial forum from screenplay pages 112-125.
 - Preserves the no-chair / system-under-review posture.
-- Adds a witness sequence card to sharpen testimony pacing.
+- Adds a chamber status panel and Leah testimony to sharpen public staging and borrowed-trust continuity.
+- Preserves the witness sequence card to keep testimony focused.
 - Carries Mateo Vega's bracelet forward from Chapters 19-21.
 - Preserves Mara, Naomi, Iris, Juno, Thorne, Tomas, and Elias testimony beats.
 - Preserves the constrained factual question and Lantern's truthful harm-reduction answer.
@@ -208,5 +244,7 @@ It was the edge of the answer.
 
 ## Revision Notes
 
-- Sprint 16 line-edit patch applied: added witness sequence structure to make the trial/forum pacing sharper and less repetitive.
-- Caleb remains mostly restrained here so the chamber's gravity stays intact.
+- Prose-only line edit complete.
+- Tightened the testimony sequence so the factual question and the twelve-second pause hit harder.
+- Preserved Leah's testimony, chamber status, the public-feed delay, and Cross's `stay in the chain` command.
+- Caleb remains restrained so the chamber's gravity stays intact.
