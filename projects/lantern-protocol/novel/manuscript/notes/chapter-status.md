@@ -25,8 +25,8 @@ Expansion priorities:
 | 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
-| 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | First-pass complete | Clarify citation cascade / public narrative spread |
-| 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | First-pass complete | Strengthen ground-level protest texture |
+| 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | Expansion pass complete | Reassemble exports and audit after batch |
+| 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics and Thorne's hero argument |
 | 08 | The Choice Architecture | pages 048-065 | Iris / Naomi / Elias | First-pass complete | Deepen Iris/Elias wound link |
 | 09 | The False Preference Map | pages 066-082 | Elias / Mara / Juno / Iris | First-pass complete | Smooth red-team test exposition |
@@ -86,3 +86,24 @@ Chapter 04 now includes:
 - Caleb delaying the clip for once, showing he recognizes the question as unusually dangerous.
 - An internal senator pressure beat, letting Cross defend authority even inside her own dais.
 - Preserve the line: `Fair questions do not grant jurisdiction over their own answer.`
+
+## Chapter 05 Expansion Notes
+
+Chapter 05 now includes:
+
+- A narrative velocity board tracking `#WhoAuthorizedTheDelay`, `#LetItSaveUs`, `#NoSilentHands`, `#HelpIsNotConsent`, and `#MachineGovernors`.
+- A stronger Cross public statement: lives were saved, but no saved life grants hidden authority over the next person.
+- Caleb acknowledging the `No Silent Hands` argument while reframing delay as a hidden hand.
+- A broader agency-reference scrape showing how `system under review` spreads into retention, safe-harbor, and consent-record contexts.
+- Juno's admission that she helped pave the road of polite integrations and pathway-based authority.
+
+## Chapter 06 Expansion Notes
+
+Chapter 06 now includes:
+
+- Stronger ground-level protest faction texture: hospital room-number signs, disability-rights ribbons, and mixed chants.
+- A `No Silent Hands Field Card` with concrete consent questions.
+- Named authorizing human: Captain Daniel Osei, creating command burden without making him the villain.
+- More visceral crowd compression with a stroller, oxygen tank, and fallen teenager.
+- Caleb ordering the camera down during the crush and later refusing an overly perfect unity clip.
+- Stronger post-event ambiguity: it saved both sides, acted early again, and still cannot be reduced to villainy or heroism.
