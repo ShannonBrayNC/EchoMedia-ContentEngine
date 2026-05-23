@@ -59,6 +59,8 @@ Revised through:
 |---|---|---|
 | Core outline | Complete | `README.md` |
 | Lantern shared-universe alignment pass | Complete | `ALIGNMENT_PASS_LANTERN_SHARED_UNIVERSE.md` |
+| Shared-universe consistency review | Complete | `SHARED_UNIVERSE_CONSISTENCY_REVIEW.md` |
+| Chapter structure shared-universe addendum | Complete | `CHAPTER_STRUCTURE.md` |
 | Chapter structure | Complete | `CHAPTER_STRUCTURE_AND_ARCS.md` |
 | Act I scene cards | Complete | `SCENE_CARDS.md` |
 | Acts II-V scene cards | Complete compressed pass | `SCENE_CARDS_ACTS_II_V.md` |
@@ -87,6 +89,8 @@ Revised through:
 ## Novel
 
 - Continue targeted prose edits with Chapters 2-3.
+- Verify or restore the missing shared-universe canon paths listed in `SHARED_UNIVERSE_CONSISTENCY_REVIEW.md`.
+- Reconcile older 28-chapter `CHAPTER_STRUCTURE.md` against the current 40-chapter draft after revision pass stabilizes.
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md` after revision checkpoints.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
