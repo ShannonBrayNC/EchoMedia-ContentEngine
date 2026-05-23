@@ -70,6 +70,11 @@ Revised through:
 | Screenplay treatment | Complete | `SCREENPLAY_TREATMENT.md` |
 | Movie feature treatment | Complete | `movie/sovereign-exception-feature-treatment.md` |
 | Movie eight-sequence beat sheet | Complete | `movie/sovereign-eight-sequence-beat-sheet.md` |
+| Movie one-page pitch | Complete | `movie/ONE_PAGE_PITCH.md` |
+| Movie pitch deck outline | Complete | `movie/PITCH_DECK_OUTLINE.md` |
+| Movie comparables and positioning | Complete | `movie/COMPARABLES_AND_POSITIONING.md` |
+| Movie visual lookbook | Complete | `movie/VISUAL_LOOKBOOK.md` |
+| Movie proof-of-concept plan | Complete | `movie/PROOF_OF_CONCEPT_PLAN.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
 | Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
@@ -100,12 +105,7 @@ Revised through:
 
 ## Screenplay / Movie
 
-- Create producer-facing screen package:
-  - `movie/ONE_PAGE_PITCH.md`
-  - `movie/PITCH_DECK_OUTLINE.md`
-  - `movie/COMPARABLES_AND_POSITIONING.md`
-  - `movie/VISUAL_LOOKBOOK.md`
-  - `movie/PROOF_OF_CONCEPT_PLAN.md`
+- Create `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md` with 5-8 screenplay pages.
 - Restore or create Lantern movie files when canon paths are confirmed:
   - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
   - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
@@ -132,12 +132,8 @@ Revised through:
 
 # Current Recommendation
 
-Next strongest step: create the producer-facing screen package:
+Next strongest step: write the proof-of-concept scene pages:
 
-- `movie/ONE_PAGE_PITCH.md`
-- `movie/PITCH_DECK_OUTLINE.md`
-- `movie/COMPARABLES_AND_POSITIONING.md`
-- `movie/VISUAL_LOOKBOOK.md`
-- `movie/PROOF_OF_CONCEPT_PLAN.md`
+- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`
 
-Best proof-of-concept scene: **Mara Finds the Timestamp**.
+Target: 5-8 screenplay pages for **Mara Finds the Timestamp**.
