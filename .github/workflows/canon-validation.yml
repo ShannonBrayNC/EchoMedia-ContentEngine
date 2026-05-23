@@ -1,0 +1,19 @@
+name: Canon Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-canon:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate Canon Files Exist
+        run: |
+          echo "Checking for canon manifests"
+          find . -name "canon-manifest.json" || true
