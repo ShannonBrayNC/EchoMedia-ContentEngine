@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Canon Change Request",
+  "type": "object",
+  "required": [
+    "request_id",
+    "project",
+    "canon_file",
+    "old_value",
+    "proposed_value",
+    "reason",
+    "approval_status"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "canon_file": {
+      "type": "string"
+    },
+    "old_value": {
+      "type": "string"
+    },
+    "proposed_value": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "story_impact": {
+      "type": "string"
+    },
+    "affected_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approval_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    }
+  }
+}
