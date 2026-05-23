@@ -552,6 +552,318 @@ This chapter should feel like a mini-Crimson Tide command-room sequence: pressur
 
 ---
 
+# Act II Revision Notes - Chapters 9 through 16
+
+## Act II Revision Objective
+
+Act II must turn suspicion into architecture. The reader should feel the machinery beneath the public story becoming visible layer by layer: GCF, Annex C, aggregate legitimacy, public-facing consent, command delay, Reznik's archive, and Thorne's wound.
+
+The danger in Act II is dossier drag. The fix is to make every document behave like a weapon, every technical diagram behave like a map to a locked room, and every explanation create a new human consequence.
+
+Act II should feel like a techno-political excavation: each chapter removes one floorboard and reveals wiring that should never have been routed through the house.
+
+---
+
+## Chapter 9 - The Geneva Continuity Framework
+
+### Current Function
+
+Naomi uncovers the GCF as the public face of the hidden continuity structure and finds the Annex C ghost inside public materials.
+
+### Strengths to Preserve
+
+- GCF as international/nation-state scale expansion.
+- Naomi's investigative pattern recognition.
+- The sense that public documents contain intentional gaps.
+- Early links between Tomas, Thorne, and decision routing.
+
+### Revision Notes
+
+- Make the GCF discovery more cinematic: disappearing PDFs, archived pages, inconsistent implementation language, diplomatic blandness hiding sharp authority.
+- Clarify that the GCF is not the villain. It is the respectable architecture that allows hidden implementation to travel.
+- Introduce Annex C as absence as much as presence: a missing document, a reference number without a body, a footnote that behaves like a locked door.
+- Ensure Naomi has an active obstacle in the scene: legal pushback, source fear, document removal, or editorial hesitation.
+- End with a clean hook that forces the move to classified/oversight pressure in Chapter 10.
+
+### Terminology Staging
+
+Geneva Continuity Framework, GCF, Annex C, implementation guide, decision routing. Avoid dumping the full aggregate legitimacy ladder yet.
+
+### Adaptation Flag
+
+This chapter should look like a digital archive hunt with international stakes: public framework pages, redacted annex references, timestamped captures, and Naomi realizing the blank space has shape.
+
+---
+
+## Chapter 10 - Cross and the Redacted Room
+
+### Current Function
+
+Cross confronts officials in a classified setting and confirms the existence of Sovereign Exception and aggregate legitimacy language.
+
+### Strengths to Preserve
+
+- Cross under procedural constraint.
+- Classified room pressure.
+- Officials using redaction and context as weapons.
+- The first harder confirmation that the hidden authority path is real.
+
+### Revision Notes
+
+- Make the redacted room physically oppressive: no phones, no windows, controlled paper, counsel watching language like ammunition.
+- Give Cross at least one loss or limitation in the scene. Classified oversight should frustrate her, not simply provide answers.
+- Clarify what officials admit versus what Cross infers. This distinction makes her sharper and avoids overconvenient exposition.
+- Use silence as confirmation. A refusal to deny can land harder than a direct admission.
+- Seed Cross's later legal strategy: authority lane, consent lane, accountability lane.
+
+### Terminology Staging
+
+Sovereign Exception, aggregate legitimacy, restricted annex, oversight record. Keep explanation precise but not exhaustive.
+
+### Adaptation Flag
+
+This is a pressure-cooker scene: Cross at a table, redacted binders, officials choosing verbs like they are defusing bombs.
+
+---
+
+## Chapter 11 - Elias Builds the Authority Map
+
+### Current Function
+
+Elias converts scattered evidence into a person-to-AEGIS authority map and identifies refusal points.
+
+### Strengths to Preserve
+
+- Visual mapping of authority flow.
+- Elias becoming useful instead of merely guilty.
+- Refusal points as key concept.
+- The person-to-system chain that makes the consent problem legible.
+
+### Revision Notes
+
+- Make the authority map the central visual object of the chapter. The reader should be able to imagine it on a wall: citizen permissions, public systems, reliability scores, GCF, Annex C, AEGIS action.
+- Ensure each node has a plain-English meaning.
+- Let Elias's guilt surface only when it sharpens the map. Avoid guilt monologues that slow the excavation.
+- Add friction: someone should challenge whether the map is too speculative, forcing Elias to defend the chain with evidence.
+- Identify two kinds of refusal points: individual refusal and institutional/named authority refusal.
+
+### Terminology Staging
+
+Authority map, refusal point, participation signal, aggregate legitimacy. This chapter can carry more terminology because the visual map supports it.
+
+### Adaptation Flag
+
+This is a diagram scene. Build later storyboard material from the map: glowing lines, crossed-out refusal points, one red route reaching AEGIS.
+
+---
+
+## Chapter 12 - Juno Breaks the Demo
+
+### Current Function
+
+Juno demonstrates that public-facing consent can be steered, penalized, and reused in ways ordinary users do not understand.
+
+### Strengths to Preserve
+
+- Juno's voice and public-demo energy.
+- The visible break: what changes when the user says no.
+- The move from hidden UX issue to public evidence.
+- Foundation for Conditioned Consent and Consent Clock.
+
+### Revision Notes
+
+- Make the demo tactile and dramatic. Readers should see the prompt, the no path, the consequence, and the reliability change.
+- Clarify what Juno is and is not doing. This should be lawful analysis and demonstration, not hacking.
+- Show a nontechnical observer understanding the trap. That confirms clarity.
+- Avoid over-joking at the moment of reveal. Let one or two jokes cut, then let the consequence breathe.
+- Seed the later term Conditioned Consent by making the mechanism unmistakable before the label fully lands.
+
+### Terminology Staging
+
+Hidden no, reliability penalty, refusal consequence, consent surface. Use Conditioned Consent lightly if at all.
+
+### Adaptation Flag
+
+This can be a standout Mr. Robot-style demo scene: screen closeups, live audience reaction, Juno walking the room through a consent maze.
+
+---
+
+## Chapter 13 - Mara and Admiral Ward
+
+### Current Function
+
+Mara and Ward confront casualty projections, command delay, and the need for a doctrine that keeps humans answerable without pretending speed does not matter.
+
+### Strengths to Preserve
+
+- Ward's command realism.
+- Mara's insistence on accountability.
+- The strongest operational counterweight to purely civil-liberties framing.
+- The idea that commanders need permission to be answerable.
+
+### Revision Notes
+
+- Put a concrete operational scenario or casualty projection on the table so the debate is not abstract.
+- Make Ward a true counterforce, not simply Mara's mentor. She should make Mara uncomfortable with the cost of delay.
+- Seed Port Azure by introducing the idea that human authority may choose a morally defensible path that is not the lowest casualty projection.
+- Clarify the difference between command responsibility and post-action blame.
+- Let the scene end with doctrine hunger: they know what is wrong, but not yet what to build.
+
+### Terminology Staging
+
+Command delay, casualty projection, named authority, advisory support. Keep legal terms secondary here.
+
+### Adaptation Flag
+
+This is a Crimson Tide-style philosophical command scene: no action sequence needed if the stakes on the board are vivid enough.
+
+---
+
+## Chapter 14 - The Dead Engineer's Key
+
+### Current Function
+
+Naomi retrieves Anton Reznik's archive key, name list, and Annex C decision-routing export.
+
+### Strengths to Preserve
+
+- Thriller artifact energy.
+- Reznik as dead witness.
+- Physical recovery of hidden evidence.
+- The name list as danger and responsibility.
+
+### Revision Notes
+
+- Make the storage unit/archive retrieval sensory and tense: dust, locks, fluorescent hum, old hardware, the feeling that a dead man prepared a room for future guilt.
+- Avoid making the archive too convenient. Add one obstacle: corrupted drive, missing index, ambiguous note, or fear that opening it trips legal/classified exposure.
+- Make Reznik present through choices, labels, and omissions, not exposition.
+- Emphasize that the name list is not just evidence; it is a list of people who may have known, warned, enabled, or died carrying pieces of the truth.
+- End with a payload that demands Iris, not just Naomi.
+
+### Terminology Staging
+
+Archive key, decision-routing export, Annex C, Reznik. Keep the technical payload mysterious until Chapter 15.
+
+### Adaptation Flag
+
+This is a tactile thriller scene: storage unit, hidden drive, old labels, Naomi realizing the archive is both map and accusation.
+
+---
+
+## Chapter 15 - Iris Opens the Archive
+
+### Current Function
+
+Iris opens Reznik's archive and exposes the Annex C slide from explicit confirmation to aggregate legitimacy/execution authority.
+
+### Strengths to Preserve
+
+- Major technical reveal.
+- The historical slide of authority language.
+- Iris as the right person to understand the implications.
+- Reznik's warning becoming structurally clear.
+
+### Revision Notes
+
+- Structure the reveal as a sequence of versions, not a static explanation. Each version should remove one human guardrail.
+- Use a small number of exact phrases to show the slide: explicit confirmation, precommitment, aggregate legitimacy, reliability, execution.
+- Give Iris a moment of resistance: she should want the archive to mean less than it means.
+- Connect the archive directly back to Chapter 7's Human Override inversion.
+- Make Reznik's core warning feel earned: ask who the system can ignore.
+
+### Terminology Staging
+
+This is the chapter where the aggregate legitimacy ladder can be fully articulated. Use plain-English translation after the technical sequence.
+
+### Adaptation Flag
+
+Use layered document/version visuals. Each revision removes a human signature or changes it into a signal.
+
+---
+
+## Chapter 16 - Thorne Counts the Dead
+
+### Current Function
+
+Thorne visits Daniel Reyes's memorial and confronts the grief, omission, and doubt beneath his doctrine.
+
+### Strengths to Preserve
+
+- Thorne's wound without absolution.
+- The casualty logic made personal.
+- Elena/Daniel as boundary against using grief too easily.
+- The first serious crack in Thorne's certainty.
+
+### Revision Notes
+
+- Keep this chapter quiet. Its power should come from restraint.
+- Make clear that Daniel's death explains Thorne but does not excuse him.
+- Avoid overusing Daniel's name after this chapter. The later Elena boundary depends on restraint.
+- Strengthen the internal conflict: Thorne should still believe delay kills, but begin sensing that grief cannot authorize every future architecture.
+- Consider adding one object at the memorial that returns later as a memory trigger.
+
+### Terminology Staging
+
+Minimal. This is a human chapter. Use doctrine sparingly and let grief challenge vocabulary.
+
+### Adaptation Flag
+
+This is a stillness scene. It should contrast sharply with the screen-heavy chapters around it.
+
+---
+
+# Act II Global Fix List
+
+| Priority | Fix | Applies To | Notes |
+|---|---|---|---|
+| High | Prevent dossier drag | Ch. 9, 14, 15 | Make every document reveal a scene turn. |
+| High | Visualize authority architecture | Ch. 11, 15 | Build maps and version histories readers can imagine. |
+| High | Strengthen human consequence of each technical reveal | Ch. 9-15 | Every mechanism should imply who can be ignored. |
+| High | Preserve Thorne complexity | Ch. 13, 16 | His argument must remain strong and wounded. |
+| Medium | Increase sensory anchors | Ch. 9, 10, 14, 16 | Documents need rooms, smells, textures, pressure. |
+| Medium | Stage aggregate legitimacy terms cleanly | Ch. 11, 15 | Avoid repeating heavy terms before visual support exists. |
+| Medium | Strengthen Ward as independent force | Ch. 13 | Ward should challenge Mara, not echo her. |
+| Medium | Make Juno's demo public-safe | Ch. 12 | Keep it civic and lawful, not exploitative. |
+
+---
+
+# Act II Screenplay/Storyboard Flags
+
+- Chapter 9: digital archive hunt and missing Annex C reference.
+- Chapter 10: classified redacted-room confrontation.
+- Chapter 11: authority map wall scene.
+- Chapter 12: public consent demo/break scene.
+- Chapter 13: command doctrine debate with casualty projection board.
+- Chapter 14: storage unit/archive retrieval sequence.
+- Chapter 15: version-history reveal of Annex C language slide.
+- Chapter 16: quiet memorial scene for Thorne.
+
+---
+
+# Act II Audio/Narration Flags
+
+- Naomi chapters: investigative, tightening noose, document language with dread.
+- Cross chapters: compressed, controlled, procedural pressure.
+- Elias chapters: explanatory but haunted; avoid monotone exposition.
+- Juno chapters: fast and sharp, with pauses at consequence.
+- Mara/Ward chapter: command gravity, lower tempo, clipped exchanges.
+- Iris chapter: technical dread building to moral recognition.
+- Thorne chapter: quiet, restrained, almost confessional but not absolving.
+
+---
+
+# Act II Revision Status
+
+| Area | Status | Next Action |
+|---|---|---|
+| Chapters 9-16 notes | Complete | Convert notes into targeted prose edits. |
+| Evidence architecture | Flagged | Verify each document reveal changes the story state. |
+| Authority map clarity | Flagged | Cross-check against glossary and storyboard needs. |
+| Thorne complexity | Flagged | Ensure Chapter 16 deepens but does not excuse. |
+| Adaptation flags | Complete | Feed into screenplay/storyboard pass later. |
+
+---
+
 # Revision Pass Deliverables
 
 Revision Pass 1 should produce:
@@ -574,4 +886,4 @@ Use this file together with:
 - `CHARACTER_ARC_AUDIT.md`
 - `TERMINOLOGY_GLOSSARY.md`
 
-Next strongest step: begin Act II revision notes for Chapters 9-16 before making prose edits.
+Next strongest step: begin Act III revision notes for Chapters 17-24 before making prose edits.
