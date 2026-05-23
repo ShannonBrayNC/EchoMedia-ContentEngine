@@ -1,3 +1,5 @@
+import ChristinaWorkspace from './ChristinaWorkspace';
+
 export default function App() {
   const sections = [
     'Projects',
@@ -8,7 +10,6 @@ export default function App() {
     'Runtime',
     'Trailer Analysis',
     'Releases',
-    'Christina Workspace',
   ];
 
   return (
@@ -16,7 +17,14 @@ export default function App() {
       <h1>EchoMedia Content Engine</h1>
       <p>Cinematic operating platform dashboard</p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16 }}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gap: 16,
+          marginBottom: 24,
+        }}
+      >
         {sections.map((section) => (
           <div
             key={section}
@@ -31,6 +39,8 @@ export default function App() {
           </div>
         ))}
       </div>
+
+      <ChristinaWorkspace />
     </div>
   );
 }
