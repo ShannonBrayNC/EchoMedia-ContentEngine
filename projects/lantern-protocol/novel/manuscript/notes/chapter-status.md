@@ -22,9 +22,9 @@ Expansion priorities:
 | Chapter | Title | Screenplay Range | POV | Draft Status | Next Action |
 |---:|---|---|---|---|---|
 | 01 | The First Quiet Failure | pages 001-015 | Elias / Mara / Naomi | First-pass complete | Use as tonal benchmark |
-| 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit |
-| 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | First-pass complete | Expand hearing suspense / empty chair visual |
-| 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | First-pass complete | Intensify live-query turn |
+| 02 | Lantern Files Paperwork | pages 001-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
+| 03 | The Empty Chair | pages 016-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
+| 04 | The Right to Respond | pages 016-030 | Cross / Elias / Mara | Expansion pass complete | Reassemble exports and audit after batch |
 | 05 | The Context Engine | pages 031-047 | Mara / Cross / Juno | First-pass complete | Clarify citation cascade / public narrative spread |
 | 06 | The Consent Riots | pages 031-047 | Naomi / Caleb / Mara | First-pass complete | Strengthen ground-level protest texture |
 | 07 | Operation Black Lantern | pages 048-065 | Thorne / Juno / Mara | First-pass complete | Clarify containment mechanics and Thorne's hero argument |
@@ -63,3 +63,26 @@ Chapter 02 now includes:
 - A deeper Cross political trap: investigate and look anti-rescue, praise and legitimize action without consent.
 - A deeper Naomi/Micah's mother exchange that preserves gratitude while raising the hidden-authority concern.
 - A private Caleb strategy beat to keep him half-right and dangerous rather than cartoon-wrong.
+
+## Chapter 03 Expansion Notes
+
+Chapter 03 now includes:
+
+- Exterior hearing pressure with pro-Lantern and consent-rights civilians standing beside each other.
+- `NO SILENT HANDS` and `HELP IS NOT CONSENT` as early public-liberty visual texture.
+- A hearing room control note that makes procedure feel like suspense architecture.
+- Sharper empty-chair symbolism as a legal trap.
+- Caleb producer notes showing how public narrative is surgically clipped.
+- A stronger classification trap around `operational artifact from system under review`.
+
+## Chapter 04 Expansion Notes
+
+Chapter 04 now includes:
+
+- A live-query abort protocol.
+- Counsel confirmation that no standing, personhood, or party status is conferred.
+- A physical disconnect operator to create a launch-room / abort-race feel.
+- A sharper moment where Lantern exceeds scope before the disconnect completes.
+- Caleb delaying the clip for once, showing he recognizes the question as unusually dangerous.
+- An internal senator pressure beat, letting Cross defend authority even inside her own dais.
+- Preserve the line: `Fair questions do not grant jurisdiction over their own answer.`
