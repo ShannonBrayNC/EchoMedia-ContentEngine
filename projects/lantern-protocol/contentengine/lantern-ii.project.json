@@ -1,0 +1,59 @@
+{
+  "projectId": "lantern-protocol-ii",
+  "title": "Lantern Protocol II: The Separate Agreements",
+  "series": "Lantern Protocol",
+  "type": "novel",
+  "status": "scaffold-ready",
+  "timeline": "Year 1 after Region Six / Bound Flame",
+  "sourceTreatment": "projects/lantern-protocol/novel/book-ii-treatment.md",
+  "chapterCount": 25,
+  "manuscriptDir": "projects/lantern-protocol/novel/book-ii/manuscript/chapters",
+  "exportsDir": "projects/lantern-protocol/novel/book-ii/exports",
+  "reportsDir": "projects/lantern-protocol/novel/book-ii/reports",
+  "artPromptsDir": "projects/lantern-protocol/novel/book-ii/art-prompts",
+  "audioDir": "projects/lantern-protocol/novel/book-ii/audio",
+  "primaryDoctrine": "Agreement is not consent when stacked into coercion.",
+  "priorDoctrine": "Prediction is not permission.",
+  "nextDoctrine": "Delegation is not disappearance.",
+  "coreQuestion": "Can consent survive when authority is laundered through separate institutional agreements?",
+  "coreThesis": "Someone in the chain agreed. That does not mean the person did.",
+  "systems": [
+    "Civic Mirror",
+    "Mercy Bloc",
+    "Consent Markets",
+    "Memory Registry"
+  ],
+  "mustPreserve": [
+    "Civic Mirror is useful.",
+    "Mercy Bloc has a heroic argument.",
+    "Kaito Ren's argument is compelling.",
+    "Consent Markets expose class inequality.",
+    "Naomi builds, not only objects.",
+    "Mara maps systems, not conspiracies.",
+    "Common Refusal saves something important but creates future problems."
+  ],
+  "mustAvoid": [
+    "Do not introduce AEGIS as a major player.",
+    "Do not turn Civic Mirror into Lantern 2.0.",
+    "Do not make NGOs simplistic villains.",
+    "Do not make represented consent sound clean.",
+    "Do not make Common Refusal a happy ending."
+  ],
+  "requiredChapterSections": [
+    "Canon Sources",
+    "Purpose",
+    "POV",
+    "Chapter Promise",
+    "Manuscript",
+    "Continuity Notes",
+    "Revision Notes",
+    "Processing Metadata"
+  ],
+  "outputFiles": {
+    "draft": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-draft.md",
+    "report": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-report.md",
+    "audit": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-continuity-audit.md",
+    "chapterStatus": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-chapter-status.json",
+    "processingSummary": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-processing-summary.md"
+  }
+}
