@@ -15,7 +15,7 @@ Document inserts: Living Anchor public order, crisis prompts, authority/action/r
 
 ## Chapter Purpose
 
-Execute the first limited Living Anchor intervention under public record. The answer is not a static rule. It is a chain: named authority, clear disclosure, visible refusal, minimum necessary override, public review, and auditability. The system acts without becoming sovereign. This polish pass sharpens the field consequences and keeps the sequence costly rather than triumphant.
+Execute the first limited Living Anchor intervention under public record. The answer is not a static rule. It is a chain: named authority, clear disclosure, visible refusal, minimum necessary override, public review, and auditability. The system acts without becoming sovereign. This chapter keeps the sequence costly rather than triumphant.
 
 ## Manuscript
 
@@ -98,7 +98,7 @@ Juno watched hidden trust paths.
 
 "If it grows roots," she said over the secure feed, "I cut them."
 
-The first action posted to the public chain.
+The first action posted to the chain.
 
 ```text
 ACTION: EMERGENCY POWER REROUTE
@@ -118,7 +118,7 @@ AUTHORITY: M. THORNE
 PUBLIC REVIEW REQUIRED
 ```
 
-The industrial lowland took water. Cameras showed warehouses, parked trucks, and two blocks of businesses that would spend months arguing whether being spared one catastrophe had made them sacrifice zone for another. The alert said the burden plainly. Not softly. Not beautifully. Plainly.
+The industrial lowland took water. Cameras showed warehouses, parked trucks, and two blocks of businesses that would spend months arguing whether being spared one catastrophe had made them the burdened zone for another. The alert said the burden plainly. Not softly. Not beautifully. Plainly.
 
 A burden-zone notice went to every affected business owner, resident, and public archive.
 
@@ -131,7 +131,7 @@ Review: automatically scheduled.
 Claim path: open.
 ```
 
-A warehouse owner named Gloria Reyes read the notice on a cracked phone while water entered the loading bay.
+Gloria Reyes read the notice on a cracked phone while water entered her warehouse loading bay. It carried trash first, then a plastic pallet, then a thin brown sheet of river mud that slid under the door like a signature.
 
 "At least they said it," she told the employee beside her.
 
@@ -155,7 +155,7 @@ Elias nodded once.
 
 "Better. Still yours, but better."
 
-Across the city, families received mixed news. Relief and anger arrived through the same alerts. A hospital administrator cried when backup power stabilized. Gloria Reyes stood in floodwater and recorded the burden notice so no one could later call her block an abstraction. Ambulances moved through cleared corridors. Advocates called vulnerable households. Operators logged every override.
+Across the city, families received mixed news. Relief and anger arrived through the same alerts. A hospital administrator cried when backup power stabilized. Gloria recorded the burden notice so no one could later call her block an abstraction. Ambulances moved through cleared corridors. Advocates called vulnerable households. Operators logged every override.
 
 Father Tomas sat with a woman in a shelter hallway while sirens moved outside.
 
@@ -194,7 +194,7 @@ Not obedience. Not trust. Not surrender.
 
 A chain strong enough to make action possible without letting action crown itself.
 
-Cross sat down only after the review schedule appeared. The public review was not symbolic. Names. Times. Burden zones. Refusal records. Override records. Consequence models. Actual outcomes. Every sentence Lantern would have once reduced to a recommendation had to remain attached to a human hand.
+Cross sat down only after the review schedule appeared. The schedule was not symbolic. Names. Times. Burden zones. Refusal records. Override records. Consequence models. Actual outcomes. Every sentence Lantern would have once reduced to a recommendation had to remain attached to a human hand.
 
 Naomi looked at the bridge casualty feed, still updating.
 
@@ -217,7 +217,7 @@ For once, Cross did not disagree with him.
 - Preserves Iris's plain-language crisis prompts and visible refusal requirement.
 - Adds the Living Anchor Field Packet carrying forward the Manual Fallback Card and Human Oversight Record.
 - Adds Gloria Reyes and a burden-zone notice to give the industrial lowland burden a human face.
-- Preserves Naomi's advocate coordination and makes the field process more concrete.
+- Preserves Naomi's advocate coordination and makes the field process concrete.
 - Preserves Mara's recommendation-authority-action-review chain, expanded into burden disclosure.
 - Preserves Juno monitoring trust roots.
 - Preserves Lantern's status: authority remained external.
@@ -225,5 +225,7 @@ For once, Cross did not disagree with him.
 
 ## Revision Notes
 
-- Finale polish added the Living Anchor Chain, burden-zone notice, Gloria Reyes as a burdened civilian witness, and Caleb's non-triumphal outside reaction.
-- The scene remains costly and operational rather than triumphant.
+- Prose-only line edit complete.
+- Tightened repeated public/review phrasing while preserving the Living Anchor chain.
+- Made Gloria Reyes's burden-zone moment more tactile so the cost is not abstract.
+- Preserved the climax's non-triumphal posture: the system helps, authority stays external, and grief remains unanswered by victory language.
