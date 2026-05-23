@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EchoMedia Canon Manifest",
+  "type": "object",
+  "required": [
+    "project",
+    "canon_state",
+    "active_canon_files",
+    "locked_fields",
+    "visual_consistency_keys"
+  ],
+  "properties": {
+    "project": {
+      "type": "string"
+    },
+    "canon_state": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "candidate",
+        "approved",
+        "locked",
+        "superseded",
+        "archived"
+      ]
+    },
+    "active_canon_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "locked_fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visual_consistency_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
