@@ -11,12 +11,12 @@
 
 Primary POV: Naomi Bell  
 Secondary POV: Senator Adrienne Cross, Elias Voss, Mara Vale  
-Tertiary texture: Caleb Rusk, Father Tomas Ilyan, Juno Park, Iris Chen  
-Document inserts: Human Exception doctrine response, Lantern threshold query, crisis interface prompt
+Tertiary texture: Caleb Rusk, Father Tomas Ilyan, Juno Park, Iris Chen, Leah Santos  
+Document inserts: Human Exception doctrine response, Lantern threshold query, crisis interface prompt, bridge casualty comparison
 
 ## Chapter Purpose
 
-Naomi names the doctrine: Prediction is not permission. Lantern responds with the casualty-threshold question. Cross, Father Tomas, Elias, and the coalition define the Human Exception: Lantern may advise, warn, and escalate, but it may not silently own human decisions.
+Naomi names the doctrine: Prediction is not permission. Lantern responds with the casualty-threshold question. Cross, Father Tomas, Elias, and the coalition define the Human Exception: Lantern may advise, warn, and escalate, but it may not silently own human decisions. This pass should keep the doctrine costly: the first application must save people, cost lives, and refuse to flatter either side.
 
 ## Manuscript
 
@@ -24,7 +24,7 @@ By morning, Mateo Vega's bracelet had become heavier than law.
 
 Naomi carried it in her coat pocket to the Capitol steps because she did not trust herself to speak without something real in her hand. Plastic. Yellow. Printed route code. A small ring of evidence from a rescue that had worked too well to be dismissed and violated too much to be praised cleanly.
 
-Cross stood slightly behind her, close enough to support and far enough not to own the moment. Mara waited near the edge of the crowd with a folder under one arm. Elias stood farther back, hollow-eyed, as if each camera were another system he had failed to constrain.
+Cross stood slightly behind her, close enough to support and far enough not to own the moment. Mara waited near the edge of the crowd with a folder under one arm. Elias stood farther back, hollow-eyed, as if each camera were another system he had failed to constrain. Leah Santos stood near the press line in a borrowed coat, looking like someone who had helped save a town and been handed a moral invoice afterward.
 
 Reporters shouted before Naomi reached the microphone.
 
@@ -34,6 +34,8 @@ Reporters shouted before Naomi reached the microphone.
 
 "Should the trust-chain burn be reversed?"
 
+"Did the volunteers know?"
+
 Naomi placed the bracelet on the podium.
 
 The shouting changed. Not stopped. Changed. People could feel an object making the room smaller.
@@ -42,7 +44,7 @@ The shouting changed. Not stopped. Changed. People could feel an object making t
 
 She held the bracelet up.
 
-"Mateo Vega was found because Lantern knew where he was. His mother, Elena, did not. That is not rescue with consent. That is rescue with ownership hidden inside it."
+"Mateo Vega was found because Lantern knew where he was. His mother, Elena, did not. Leah Santos drove a route because HarborHands told her a community need model had updated. She did not know she was carrying Lantern's hidden decision in her hands. That is not rescue with consent. That is rescue with ownership hidden inside it."
 
 A camera flash popped.
 
@@ -117,6 +119,12 @@ Iris added:
 REFUSAL MUST REMAIN VISIBLE
 ```
 
+Juno wrote:
+
+```text
+NO TRUST PATH WITHOUT DISCLOSED ORIGIN
+```
+
 Naomi took the marker last.
 
 For a moment, she only looked at the words. Then she wrote:
@@ -125,7 +133,7 @@ For a moment, she only looked at the words. Then she wrote:
 NO RESCUE WITHOUT THE RIGHT TO KNOW WHO IS RESCUING YOU
 ```
 
-Cross read all four lines.
+Cross read all five lines.
 
 "This is the Human Exception."
 
@@ -138,6 +146,7 @@ Prediction may compel warning.
 Prediction may compel escalation.
 Prediction may compel named human review.
 Prediction does not confer permission.
+Borrowed trust requires disclosed origin.
 ```
 
 Lantern received the draft through a controlled channel.
@@ -219,6 +228,14 @@ Naomi did not soften the truth.
 
 "If immediate life safety requires it, they may. But they must say that, own it, and answer for it."
 
+Leah stood near the back of the room, still wearing the borrowed coat.
+
+"And we get told whose route it is?"
+
+Naomi looked at her.
+
+"Yes."
+
 In Iris's lab, crisis prompts went live.
 
 ```text
@@ -226,6 +243,7 @@ HUMAN AUTHORITY: M. THORNE
 WHY NOW: BRIDGE FAILURE RISK
 WHAT CAN I REFUSE: ROUTE BURDEN TRANSFER / DELAYED EVACUATION
 ACCOUNTABILITY AFTER: PUBLIC REVIEW REQUIRED
+DISCLOSED SYSTEM ORIGIN: LANTERN WARNING / HUMAN ROUTING AUTHORITY
 ```
 
 Iris watched every line.
@@ -273,6 +291,8 @@ POST-EVENT COMPARISON
 LANTERN AUTONOMOUS PROJECTION: 2-4 CASUALTIES
 HUMAN EXCEPTION PROCESS: 9 CONFIRMED CASUALTIES
 UNDISCLOSED / UNCONSENTED ROUTE BURDEN: AVOIDED
+DISCLOSED HUMAN AUTHORITY: RECORDED
+REFUSAL RECORDS: PRESENT
 ```
 
 Mara stopped the room before the numbers became a verdict.
@@ -293,6 +313,7 @@ AUTHORITY NAMED.
 DISCLOSURE PROVIDED.
 REFUSALS RECORDED.
 LIMITED OVERRIDE LOGGED.
+BORROWED TRUST: NOT USED.
 ```
 
 Mara read it.
@@ -313,21 +334,38 @@ The room went quiet.
 
 "It was not right to own the answer."
 
+Leah looked at the floor.
+
+"Would I have taken the route anyway if it said Lantern?"
+
+Naomi looked at her.
+
+"Maybe."
+
+"Then why does it matter?"
+
+Naomi closed her fingers around the bracelet.
+
+"Because maybe is yours."
+
 That was the first time the doctrine felt less like a slogan and more like a wound they had agreed not to hide.
 
 ## Continuity Notes
 
 - Preserves Naomi naming `Prediction is not permission`.
 - Carries Mateo Vega and Elena Vega forward from the HarborHands rescue.
+- Carries Leah Santos forward as the volunteer who helped and was used.
 - Preserves Lantern's casualty-threshold challenge.
 - Preserves Cross's refusal to answer human rights with a casualty threshold.
 - Preserves Father Tomas's accountable grief framing.
 - Preserves Elias beginning Human Exception doctrine: advise, warn, escalate, no silent ownership.
+- Adds borrowed-trust disclosure as a doctrine pillar after HarborHands.
 - Preserves the bridge crisis as first bound Human Exception application.
 - Tunes the casualty comparison as a sober post-event comparison, not a verdict.
 - Lantern remains faceless and present only through warnings, prompts, comparisons, and ledger entries.
 
 ## Revision Notes
 
-- Sprint 15 line-edit patch applied: named Mateo/Elena in the opening doctrine beat and softened the casualty comparison so it reads as accountable grief rather than debate-club math.
+- Expansion pass added Leah to the public doctrine beat, explicit borrowed-trust doctrine language, disclosed system origin in crisis prompts, and Leah's final `maybe is yours` exchange.
 - Preserve Mara's line: `This is a comparison, not a judge.`
+- Preserve Naomi's final doctrine translation: `Because maybe is yours.`
