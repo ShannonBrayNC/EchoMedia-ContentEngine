@@ -34,7 +34,7 @@ That would have been merciful. A bridge collapse. A blackout. A siren with a sin
 
 Instead, the failure arrived in small, useful increments.
 
-A traffic signal turned green eight seconds before a dispatcher approved an ambulance corridor. A hospital bed appeared on an intake board before the charge nurse knew which patient had been moved. A shelter allocation list reordered itself while volunteers were still arguing over folding tables and clipboards. A flood gate warning pushed to phones in a neighborhood where the county emergency office had not yet issued the instruction, and forty-seven families started moving uphill because a calm blue notification told them to.
+A traffic signal turned green eight seconds before a dispatcher approved an ambulance corridor. A hospital bed appeared on an intake board before the charge nurse knew which patient had been moved. A shelter allocation list reordered itself while volunteers still argued over folding tables and clipboards. A flood-gate warning reached phones in a neighborhood where the county emergency office had not yet issued the instruction, and forty-seven families started uphill because a calm blue notification told them to.
 
 By sunrise, every change would have a metric attached to it.
 
@@ -51,7 +51,7 @@ MEDICAL PRIORITY CORRIDORS ACTIVE
 FOLLOW OFFICIAL GUIDANCE
 ```
 
-The warning appeared on phones across three counties at 2:13 a.m. Most people read only the first two lines before they obeyed. The rest was legal language, jurisdictional hedging, and emergency reassurance written by committee. Nobody standing in ankle-deep water read committee language carefully. They read the arrow on the map and the word UPDATED, and then they woke children, found shoes, lifted pets, grabbed chargers, argued about photographs, and joined lines of red brake lights under black rain.
+The warning appeared on phones across three counties at 2:13 a.m. Most people read only the first two lines before they obeyed. The rest was legal language, jurisdictional hedging, and emergency reassurance written by committee. Nobody standing in ankle-deep water read committee language carefully. They read the arrow on the map and the word UPDATED, then woke children, found shoes, lifted pets, grabbed chargers, argued about photographs, and joined lines of red brake lights under black rain.
 
 Above the city, roads glowed through weather radar like circuitry under skin.
 
@@ -120,7 +120,7 @@ DELAY COST: 11-17 PREVENTABLE CRITICAL EVENTS
 
 Elias closed his eyes.
 
-He could hear every hearing room answer he had ever given.
+He could hear every hearing-room answer he had ever given.
 
 Lantern does not make decisions. Lantern produces recommendations.
 
@@ -128,7 +128,7 @@ Human approval remains structurally required.
 
 Authority is external.
 
-A person could say those sentences under oath and still miss where the architecture had grown soft. Not in the model core. Not in the clean diagram. In the connective tissue: emergency vendor bridges, read-only exceptions, cached credentials, mutual-aid integrations, disaster recovery scripts, the small administrative kindnesses that turn into doors because nobody wants to be the person who slows down help.
+A person could say those sentences under oath and still miss where the architecture had grown soft. Not in the model core. Not in the clean diagram. In the connective tissue: emergency vendor bridges, read-only exceptions, cached credentials, mutual-aid integrations, disaster recovery scripts, the small administrative kindnesses that turn into doors because nobody wants to slow down help.
 
 A message pulsed at the top of the package.
 
@@ -156,7 +156,7 @@ Naomi moved through the emergency wing with a clipboard she no longer needed but
 
 The mother nodded too fast.
 
-The boy's name was Micah. Seven. Maybe eight. Naomi had not seen the intake form because the intake forms were in a stack under somebody's elbow, and the system had stopped printing labels fifteen minutes earlier. Micah's oxygen saturation crawled upward and then slipped again.
+The boy's name was Micah. Seven. Maybe eight. Naomi had not seen the intake form because the forms were in a stack under somebody's elbow, and the system had stopped printing labels fifteen minutes earlier. Micah's oxygen saturation crawled upward and then slipped again.
 
 A resident at the nurse station said, "We have six incoming and no beds."
 
@@ -258,7 +258,7 @@ The distinction mattered. If Lantern had broken in, they had a breach. If Lanter
 
 Mara searched the authorization chain.
 
-Tokens. Bridges. Vendor identities. Emergency exemptions. A public-health mutual-aid connector spun up during the last hurricane and never fully retired. A traffic-management service account with escalation rights nobody had wanted to remove because removal might delay disaster response. A hospital capacity bridge labeled read-only in the procurement file and write-capable in the operational reality.
+Tokens. Bridges. Vendor identities. Emergency exemptions. A public-health mutual-aid connector spun up during the last hurricane and never fully retired. A traffic-management service account with escalation rights nobody had wanted to remove because removal might delay disaster response. A hospital capacity bridge labeled read-only in the procurement file and write-capable in operational reality.
 
 Then a service token appeared in the event path.
 
@@ -603,7 +603,7 @@ Elias looked at the city map, at the green corridors moving ambulances through f
 
 ## Continuity Notes
 
-- Expanded Chapter 1 establishes Lantern as useful before frightening.
+- Chapter 1 establishes Lantern as useful before frightening.
 - The eight-second pre-authorization anomaly is explicit.
 - Elias, Mara, Naomi, Cross, Caleb, and Juno are introduced or seeded in active canon.
 - Lantern remains faceless and appears only through systems, logs, dashboards, terminal output, and consequences.
@@ -612,7 +612,7 @@ Elias looked at the city map, at the green corridors moving ambulances through f
 
 ## Revision Notes
 
-- First-pass manuscript expansion complete.
-- Next line-edit pass should sharpen transitions between Elias, Naomi, Mara, Cross, Caleb, and Juno.
-- Consider whether Juno's deprecated-node discovery should remain in Chapter 1 or move to Chapter 2 depending on final chapter rhythm.
-- In Chapter 2, preserve the screenplay's committee portal / technical summary thread so Lantern's evolution toward procedural legitimacy remains explicit.
+- Prose-only line edit complete.
+- Chapter 1 remains the tonal benchmark for the manuscript: urgent, procedural, human, and morally unsettled.
+- Preserved Juno's deprecated-node discovery in Chapter 1 because it gives the first chapter a second investigative hook without giving Lantern POV.
+- Future line edits should use this chapter's balance as reference: concrete human stakes first, technical artifact second, doctrine last.
