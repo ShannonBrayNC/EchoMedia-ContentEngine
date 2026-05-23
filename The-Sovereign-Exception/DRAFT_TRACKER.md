@@ -15,17 +15,19 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 | Prologue | `NOVEL_DRAFT.md` | Drafted | The Green Map: drone swarm, fake broadcast, hospital blackout, AEGIS intervention |
 | Chapter 1 | `chapters/chapter-001-mara-vale-receives-the-audit.md` | Drafted | Mara finds timestamp mismatch and Lantern-derived module |
 | Chapter 2 | `chapters/chapter-002-naomi-bell-finds-the-first-waiver.md` | Drafted | Naomi finds disaster waiver, GCF annex clue, Sovereign Exception phrase |
+| Chapter 3 | `chapters/chapter-003-senator-cross-opens-the-hearing.md` | Drafted | Cross forces the first public admission, exposes live AEGIS advisory support, and surfaces Sovereign Exception |
+| Chapter 4 | `chapters/chapter-004-the-man-nobody-wants-in-the-room.md` | Drafted | Elias enters, explains permission inheritance, and identifies the GCF annex as the key authority node |
 
 ## Next Novel Chapters
 
 | Order | Chapter | POV | Source Cards | Priority |
 |---|---|---|---|---|
-| Chapter 3 | Senator Cross Opens the Hearing | Cross | `SCENE_CARDS.md` TSE-003-A/B | High |
-| Chapter 4 | The Man Nobody Wants in the Room | Elias | `SCENE_CARDS.md` TSE-004-A/B | High |
 | Chapter 5 | Juno Maps the Consent Surface | Juno | `SCENE_CARDS.md` TSE-005-A/B | High |
-| Chapter 6 | Thorne's Doctrine | Thorne | `SCENE_CARDS.md` TSE-006-A/B | Medium |
+| Chapter 6 | Thorne's Doctrine | Thorne | `SCENE_CARDS.md` TSE-006-A/B | High |
 | Chapter 7 | Iris Sees the Inversion | Iris | `SCENE_CARDS.md` TSE-007-A/B | Medium |
 | Chapter 8 | A Second Signal | Mara | `SCENE_CARDS.md` TSE-008-A/B | Medium |
+| Chapter 9 | The Geneva Continuity Framework | Naomi | `SCENE_CARDS_ACTS_II_V.md` TSE-009-A | Medium |
+| Chapter 10 | Cross and the Redacted Room | Cross | `SCENE_CARDS_ACTS_II_V.md` TSE-010-A | Medium |
 
 ---
 
@@ -49,7 +51,7 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 
 ## Novel
 
-- Draft Chapters 3-8 to complete Act I prose.
+- Draft Chapters 5-8 to complete Act I prose.
 - Draft Chapters 9-16 to complete Act II prose.
 - Expand compressed Acts II-V scene cards where needed.
 - Add chapter-level revision pass after Act I is complete.
@@ -78,4 +80,4 @@ Track drafting progress for the novel, screenplay, storyboard, audio, and media 
 
 # Current Recommendation
 
-Next strongest step: draft Chapter 3, **Senator Cross Opens the Hearing**, then Chapter 4, **The Man Nobody Wants in the Room**.
+Next strongest step: draft Chapter 5, **Juno Maps the Consent Surface**, then Chapter 6, **Thorne's Doctrine**. These chapters complete the first Act I expansion of the civilian consent layer and the pro-AEGIS ideological argument.
