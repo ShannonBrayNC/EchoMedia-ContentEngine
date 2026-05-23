@@ -76,6 +76,9 @@ Revised through:
 | Movie visual lookbook | Complete | `movie/VISUAL_LOOKBOOK.md` |
 | Movie proof-of-concept plan | Complete | `movie/PROOF_OF_CONCEPT_PLAN.md` |
 | Movie proof-of-concept timestamp scene | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md` |
+| Timestamp POC shot list | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_SHOTLIST.md` |
+| Timestamp POC UI mockup spec | Complete | `movie/UI_MOCKUP_SPEC_TIMESTAMP_SCENE.md` |
+| Timestamp POC audio/table-read proof | Complete | `audio/AUDIO_PROOF_TIMESTAMP_SCENE.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
 | Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
@@ -106,9 +109,9 @@ Revised through:
 
 ## Screenplay / Movie
 
-- Create shot list and storyboard support for `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`.
-- Create UI mockup specification for the Green Map, authorization stack, audit timeline, and GCF Annex reveal.
-- Create ElevenLabs/table-read version of the timestamp scene.
+- Create storyboard prompt pack for `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`.
+- Create static UI plate prompts/assets for Green Map, authorization stack, audit timeline, and GCF Annex reveal.
+- Create production brief and minimal budget plan for the timestamp scene.
 - Restore or create Lantern movie files when canon paths are confirmed:
   - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
   - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
@@ -117,13 +120,13 @@ Revised through:
 
 ## Storyboard
 
+- Create `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md`.
 - Expand `STORYBOARD_PROMPTS.md` into scene-by-scene image prompt CSV/JSON.
 - Add character continuity image notes.
 
 ## Audio
 
 - Create `ELEVENLABS_NARRATION_SCRIPT.md` for prologue and Chapter 1.
-- Create `AUDIO_PROOF_TIMESTAMP_SCENE.md` for table read / ElevenLabs proof scene.
 - Create `AUDIO_PRONUNCIATION_GUIDE.md` if the project needs a dedicated pronunciation-only file.
 
 ## Automation
@@ -135,10 +138,12 @@ Revised through:
 
 # Current Recommendation
 
-Next strongest step: create production support for the timestamp POC scene:
+Timestamp POC mini-package is complete.
 
-- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_SHOTLIST.md`
-- `movie/UI_MOCKUP_SPEC_TIMESTAMP_SCENE.md`
-- `audio/AUDIO_PROOF_TIMESTAMP_SCENE.md`
+Next strongest step: create the storyboard and production package for the timestamp POC:
 
-These files turn the written proof scene into a shootable, storyboardable, and voice-testable package.
+- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md`
+- `movie/UI_PLATE_PROMPTS_TIMESTAMP_SCENE.md`
+- `movie/PRODUCTION_BRIEF_TIMESTAMP_SCENE.md`
+
+These files turn the proof scene into an image-generatable, deck-ready, and shoot-plannable package.
