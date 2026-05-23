@@ -1,0 +1,17 @@
+{
+  "active_project": "lantern-protocol-book-2",
+  "projects": [
+    {
+      "project_id": "lantern-protocol-book-1",
+      "project_path": "projects/lantern-protocol-book-1",
+      "project_type": "novel",
+      "status": "active"
+    },
+    {
+      "project_id": "lantern-protocol-book-2",
+      "project_path": "projects/lantern-protocol-book-2",
+      "project_type": "novel",
+      "status": "active"
+    }
+  ]
+}
