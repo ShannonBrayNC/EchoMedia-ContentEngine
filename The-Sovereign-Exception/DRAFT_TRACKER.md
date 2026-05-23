@@ -107,6 +107,7 @@ Drafted through:
 | Terminology glossary | Complete | `TERMINOLOGY_GLOSSARY.md` |
 | Act I revision notes | Complete | `REVISION_PASS_1.md` |
 | Act II revision notes | Complete | `REVISION_PASS_1.md` |
+| Act III revision notes | Complete | `revision/ACT_III_REVISION_NOTES.md` |
 
 ---
 
@@ -115,8 +116,8 @@ Drafted through:
 ## Novel
 
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
-- Begin Act III revision notes.
-- Add chapter-level revision notes for Acts III-V.
+- Begin Act IV revision notes.
+- Add chapter-level revision notes for Acts IV-V.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
 
@@ -144,4 +145,4 @@ Drafted through:
 
 # Current Recommendation
 
-Next strongest step: add Act III revision notes in `REVISION_PASS_1.md`, covering Chapters 17-24. Focus on public escalation, Managed Burn, Mara's advisory-use chapter, Juno naming the crime, Father Tomas's ethics memo, Cross going public, and Thorne's public case.
+Next strongest step: add Act IV revision notes in `revision/ACT_IV_REVISION_NOTES.md`, covering Chapters 25-32. Focus on three-theater crisis clarity, the thirty-one-second margin, the Human-Visible Rapid Acceptance Order, Continuity Trail public reaction, Consent Clock as lawful civic countermeasure, restored covenant implementation, Cross's chamber fight, Thorne's split, and the last window.
