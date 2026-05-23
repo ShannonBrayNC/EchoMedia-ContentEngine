@@ -101,6 +101,10 @@ Drafted through:
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
 | Manuscript build plan | Complete | `MANUSCRIPT_BUILD.md` |
 | Manuscript build script | Complete | `scripts/build_manuscript.py` |
+| Revision Pass 1 scaffold | Complete | `REVISION_PASS_1.md` |
+| Continuity notes scaffold | Complete | `CONTINUITY_NOTES.md` |
+| Character arc audit scaffold | Complete | `CHARACTER_ARC_AUDIT.md` |
+| Terminology glossary | Complete | `TERMINOLOGY_GLOSSARY.md` |
 
 ---
 
@@ -109,6 +113,7 @@ Drafted through:
 ## Novel
 
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
+- Begin Act I revision notes.
 - Add chapter-level revision pass for Acts I-V.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
@@ -130,18 +135,11 @@ Drafted through:
 
 ## Automation
 
-- Add revision scaffold files.
 - Add media manifest JSON for each story.
+- Add revision/export automation helpers.
 
 ---
 
 # Current Recommendation
 
-Next strongest step: create the revision scaffold:
-
-- `REVISION_PASS_1.md`
-- `CONTINUITY_NOTES.md`
-- `CHARACTER_ARC_AUDIT.md`
-- `TERMINOLOGY_GLOSSARY.md`
-
-Then begin Act I revision notes before screenplay and storyboard expansion.
+Next strongest step: begin Act I revision notes in `REVISION_PASS_1.md`, covering the Prologue and Chapters 1-8. Focus on hook strength, terminology staging, Mara/Naomi/Cross/Juno/Iris introductions, and making AEGIS feel useful before it feels dangerous.
