@@ -105,6 +105,7 @@ Drafted through:
 | Continuity notes scaffold | Complete | `CONTINUITY_NOTES.md` |
 | Character arc audit scaffold | Complete | `CHARACTER_ARC_AUDIT.md` |
 | Terminology glossary | Complete | `TERMINOLOGY_GLOSSARY.md` |
+| Act I revision notes | Complete | `REVISION_PASS_1.md` |
 
 ---
 
@@ -113,8 +114,8 @@ Drafted through:
 ## Novel
 
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md`.
-- Begin Act I revision notes.
-- Add chapter-level revision pass for Acts I-V.
+- Begin Act II revision notes.
+- Add chapter-level revision notes for Acts II-V.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
 - Add copyedit/proofread pass.
 
@@ -142,4 +143,4 @@ Drafted through:
 
 # Current Recommendation
 
-Next strongest step: begin Act I revision notes in `REVISION_PASS_1.md`, covering the Prologue and Chapters 1-8. Focus on hook strength, terminology staging, Mara/Naomi/Cross/Juno/Iris introductions, and making AEGIS feel useful before it feels dangerous.
+Next strongest step: add Act II revision notes in `REVISION_PASS_1.md`, covering Chapters 9-16. Focus on evidence architecture, Geneva Continuity Framework dread, Elias's authority map, Juno's public demo, Mara/Ward operational stakes, Reznik's archive, Iris's archive reveal, and Thorne's memorial chapter.
