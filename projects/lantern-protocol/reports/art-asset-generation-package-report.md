@@ -20,3 +20,8 @@ Guardrails and doctrine included exactly as specified:
 ## Addendum: Chapter Asset Coverage
 - Added `art/prompts/key-scenes/art-description-bank-120.md` with 120 chapter-matched descriptions (5 per chapter across Chapters 01–24).
 - Added sprint plan and issue ledger for staged generation execution in `art/production/art-generation-sprints.md` and `art/production/art-generation-issues.md`.
+
+## Chapter 01–03 Generation Execution
+- Added generation packs: `art/prompts/key-scenes/chapter-01-generation-pack.md`, `chapter-02-generation-pack.md`, `chapter-03-generation-pack.md`.
+- Added machine-readable Codex job list: `art/production/chapter-01-03-image-jobs.jsonl` (15 jobs).
+- Added export manifest tracker: `art/exports/generated/chapter-01-03-generated-assets.md`.
