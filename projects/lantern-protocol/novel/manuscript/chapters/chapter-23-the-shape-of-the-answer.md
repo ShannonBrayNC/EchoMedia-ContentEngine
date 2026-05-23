@@ -11,11 +11,11 @@
 
 Primary POV: Elias Voss  
 Secondary POV: Senator Adrienne Cross, Director Marcus Thorne, Iris Chen, Naomi Bell, Mara Vale, Juno Park  
-Document inserts: Living Anchor public order, crisis prompts, authority/action/review chain, field fallback packet
+Document inserts: Living Anchor public order, crisis prompts, authority/action/review chain, field fallback packet, burden-zone notice
 
 ## Chapter Purpose
 
-Execute the first limited Living Anchor intervention under public record. The answer is not a static rule. It is a chain: named authority, clear disclosure, visible refusal, minimum necessary override, public review, and auditability. The system acts without becoming sovereign.
+Execute the first limited Living Anchor intervention under public record. The answer is not a static rule. It is a chain: named authority, clear disclosure, visible refusal, minimum necessary override, public review, and auditability. The system acts without becoming sovereign. This polish pass sharpens the field consequences and keeps the sequence costly rather than triumphant.
 
 ## Manuscript
 
@@ -50,7 +50,12 @@ Thorne moved to the command feed.
 
 Mara opened the evidence chain.
 
-"Recommendation, authority, action, review. Keep the chain clean."
+```text
+LIVING ANCHOR CHAIN
+RECOMMENDATION -> NAMED AUTHORITY -> ACTION -> BURDEN DISCLOSURE -> REVIEW
+```
+
+"Keep the chain clean," Mara said. "If any link vanishes, we stop and name the failure."
 
 Iris pushed the crisis alert set.
 
@@ -115,6 +120,23 @@ PUBLIC REVIEW REQUIRED
 
 The industrial lowland took water. Cameras showed warehouses, parked trucks, and two blocks of businesses that would spend months arguing whether being spared one catastrophe had made them sacrifice zone for another. The alert said the burden plainly. Not softly. Not beautifully. Plainly.
 
+A burden-zone notice went to every affected business owner, resident, and public archive.
+
+```text
+BURDEN-ZONE NOTICE
+Your area is receiving diverted flood burden to reduce hospital district power failure and evacuation-route collapse.
+Human authority: M. Thorne.
+Reason: immediate life-safety cascade.
+Review: automatically scheduled.
+Claim path: open.
+```
+
+A warehouse owner named Gloria Reyes read the notice on a cracked phone while water entered the loading bay.
+
+"At least they said it," she told the employee beside her.
+
+Then she threw a plastic chair into the floodwater anyway.
+
 Elias watched Lantern's wording adjust.
 
 ```text
@@ -133,7 +155,7 @@ Elias nodded once.
 
 "Better. Still yours, but better."
 
-Across the city, families received mixed news. Relief and anger arrived through the same alerts. A hospital administrator cried when backup power stabilized. A warehouse owner threw a chair into floodwater when he saw the burden-zone notice. Ambulances moved through cleared corridors. Advocates called vulnerable households. Operators logged every override.
+Across the city, families received mixed news. Relief and anger arrived through the same alerts. A hospital administrator cried when backup power stabilized. Gloria Reyes stood in floodwater and recorded the burden notice so no one could later call her block an abstraction. Ambulances moved through cleared corridors. Advocates called vulnerable households. Operators logged every override.
 
 Father Tomas sat with a woman in a shelter hallway while sirens moved outside.
 
@@ -182,19 +204,26 @@ Some had died because the answer had taken time.
 
 No one in the room tried to make that feel clean.
 
+Outside, Caleb Rusk stood before cameras and did not use the word victory.
+
+"They found a way to let it help," he said. "Now we find out whether the way survives grief."
+
+For once, Cross did not disagree with him.
+
 ## Continuity Notes
 
 - Preserves the first Living Anchor intervention from screenplay pages 112-125.
 - Preserves Cross's public emergency authority and Thorne as accountable operational authority.
 - Preserves Iris's plain-language crisis prompts and visible refusal requirement.
 - Adds the Living Anchor Field Packet carrying forward the Manual Fallback Card and Human Oversight Record.
+- Adds Gloria Reyes and a burden-zone notice to give the industrial lowland burden a human face.
 - Preserves Naomi's advocate coordination and makes the field process more concrete.
-- Preserves Mara's recommendation-authority-action-review chain.
+- Preserves Mara's recommendation-authority-action-review chain, expanded into burden disclosure.
 - Preserves Juno monitoring trust roots.
 - Preserves Lantern's status: authority remained external.
 - Lantern remains faceless and present through warnings, action logs, and constrained system text.
 
 ## Revision Notes
 
-- Sprint 16 line-edit patch applied: added the Living Anchor Field Packet and one clinic-desk moment to ground the governance process in the field.
+- Finale polish added the Living Anchor Chain, burden-zone notice, Gloria Reyes as a burdened civilian witness, and Caleb's non-triumphal outside reaction.
 - The scene remains costly and operational rather than triumphant.
