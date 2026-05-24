@@ -1,5 +1,6 @@
 import React from 'react';
 import { renderSceneCardDraftMarkdown } from '../lib/sceneCardDraft.js';
+import { reviewGateHasBlockingFailures } from '../lib/reviewGate.js';
 
 const SCENE_CARD_ARTIFACT_TYPE = 'scene-card';
 
@@ -20,9 +21,15 @@ export default function SceneCardWorkspace({
   onSourceNotesChange,
   onValidateContext,
   onGenerateDraft,
+  onApproveDraft,
+  onRejectDraft,
+  onOverwriteConfirmedChange,
+  onSaveApprovedDraft,
   contextValidation,
   draftArtifact,
-  generationJob
+  generationJob,
+  reviewGate,
+  overwriteConfirmed
 }) {
   const supportsSceneCard = project?.supported_generation_types?.includes(SCENE_CARD_ARTIFACT_TYPE);
   const destinationPath = buildSceneCardDestination(project);
@@ -30,6 +37,10 @@ export default function SceneCardWorkspace({
   const canValidate = Boolean(project && supportsSceneCard && hasDirection);
   const canGenerate = Boolean(canValidate && contextValidation?.status === 'passed');
   const draftMarkdown = draftArtifact ? renderSceneCardDraftMarkdown(draftArtifact) : '';
+  const reviewBlocked = reviewGateHasBlockingFailures(reviewGate);
+  const canApprove = Boolean(reviewGate && reviewGate.state === 'pending-review' && !reviewBlocked);
+  const canReject = Boolean(reviewGate && reviewGate.state === 'pending-review');
+  const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked);
 
   return (
     <section className="rounded-2xl border border-slate-700 bg-slate-950/70 p-4 shadow-lg">
@@ -105,7 +116,7 @@ export default function SceneCardWorkspace({
           <p className="mt-2 rounded-xl bg-slate-900 p-3 font-mono text-sm text-slate-300">
             {destinationPath || 'Select a project to preview destination path'}
           </p>
-          <p className="mt-1 text-xs text-slate-500">Draft generation only previews output. Review/save arrives in later implementation slices.</p>
+          <p className="mt-1 text-xs text-slate-500">Final file writes are still represented as a local save manifest in this UI slice.</p>
         </div>
 
         {contextValidation ? (
@@ -171,13 +182,75 @@ export default function SceneCardWorkspace({
                 <p className="mt-1 text-sm text-slate-300">{generationJob.errors?.length || 0}</p>
               </div>
             </div>
+          </div>
+        ) : null}
 
-            {generationJob.errors?.length ? (
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-red-200">
-                {generationJob.errors.map((error) => (
-                  <li key={`${error.message}-${error.occurred_at}`}>{error.message}</li>
-                ))}
-              </ul>
+        {reviewGate ? (
+          <div className="rounded-2xl border border-violet-500/30 bg-violet-500/5 p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-violet-300">Review gate</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{reviewGate.review_id}</p>
+              </div>
+              <span className="rounded-full bg-violet-500/15 px-3 py-1 text-xs font-medium text-violet-300">
+                {reviewGate.state}
+              </span>
+            </div>
+
+            <div className="mt-4 grid gap-2">
+              {(reviewGate.checks || []).map((check) => (
+                <div key={check.key} className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-slate-950/80 p-3">
+                  <span className="text-sm text-slate-300">{check.label || check.key}</span>
+                  <span className="rounded-full bg-slate-800 px-2 py-1 text-xs text-slate-300">
+                    {check.status}{check.required ? ' · required' : ''}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <label className="mt-4 flex items-center gap-2 text-sm text-slate-300">
+              <input
+                type="checkbox"
+                checked={Boolean(overwriteConfirmed)}
+                onChange={(event) => onOverwriteConfirmedChange?.(event.target.checked)}
+              />
+              I reviewed the destination path and overwrite risk.
+            </label>
+
+            <div className="mt-4 flex flex-wrap gap-3">
+              <button
+                type="button"
+                className="rounded-xl border border-emerald-400 px-4 py-2 text-sm font-semibold text-emerald-200 disabled:cursor-not-allowed disabled:border-slate-700 disabled:text-slate-500"
+                disabled={!canApprove}
+                onClick={onApproveDraft}
+              >
+                Approve draft
+              </button>
+              <button
+                type="button"
+                className="rounded-xl border border-red-400 px-4 py-2 text-sm font-semibold text-red-200 disabled:cursor-not-allowed disabled:border-slate-700 disabled:text-slate-500"
+                disabled={!canReject}
+                onClick={onRejectDraft}
+              >
+                Reject draft
+              </button>
+              <button
+                type="button"
+                className="rounded-xl bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400"
+                disabled={!canSave}
+                onClick={onSaveApprovedDraft}
+              >
+                Save approved draft
+              </button>
+            </div>
+
+            {reviewGate.save_manifest ? (
+              <div className="mt-4 rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Save manifest</p>
+                <pre className="mt-2 max-h-48 overflow-auto text-xs leading-6 text-slate-300">
+                  {JSON.stringify(reviewGate.save_manifest, null, 2)}
+                </pre>
+              </div>
             ) : null}
           </div>
         ) : null}
