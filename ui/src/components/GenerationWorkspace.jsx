@@ -17,6 +17,7 @@ import {
   createSceneCardReviewGate,
   markReviewGateSaved,
   rejectReviewGate,
+  requestRevisionReviewGate,
   reviewGateHasBlockingFailures
 } from '../lib/reviewGate.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
@@ -132,7 +133,7 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
           ? 'Traceability blockers must be resolved before save.'
           : undefined
     };
-  } else if (reviewGate?.state === 'rejected') {
+  } else if (reviewGate?.state === 'rejected' || reviewGate?.state === 'revision-requested') {
     currentStage = 'preview-review';
     stageStatus = 'blocked';
     nextAction = {
@@ -383,14 +384,17 @@ export default function GenerationWorkspace() {
     }
   }
 
+  function updateReviewAndTrace(nextReviewGate) {
+    setReviewGate(nextReviewGate);
+    setTraceability((current) => refreshTraceabilityReview(current, nextReviewGate));
+  }
+
   function handleApproveDraft() {
     if (!reviewGate) {
       return;
     }
 
-    const approvedReview = approveReviewGate(reviewGate, 'Approved in first vertical slice review gate.');
-    setReviewGate(approvedReview);
-    setTraceability((current) => refreshTraceabilityReview(current, approvedReview));
+    updateReviewAndTrace(approveReviewGate(reviewGate, 'Approved from artifact preview workspace.'));
   }
 
   function handleRejectDraft() {
@@ -398,9 +402,15 @@ export default function GenerationWorkspace() {
       return;
     }
 
-    const rejectedReview = rejectReviewGate(reviewGate, 'Rejected in first vertical slice review gate.');
-    setReviewGate(rejectedReview);
-    setTraceability((current) => refreshTraceabilityReview(current, rejectedReview));
+    updateReviewAndTrace(rejectReviewGate(reviewGate, 'Rejected from artifact preview workspace.'));
+  }
+
+  function handleRequestRevision() {
+    if (!reviewGate) {
+      return;
+    }
+
+    updateReviewAndTrace(requestRevisionReviewGate(reviewGate, 'Revision requested from artifact preview workspace.'));
   }
 
   function handleOverwriteConfirmedChange(confirmed) {
@@ -458,6 +468,7 @@ export default function GenerationWorkspace() {
             onGenerateDraft={handleGenerateDraft}
             onApproveDraft={handleApproveDraft}
             onRejectDraft={handleRejectDraft}
+            onRequestRevision={handleRequestRevision}
             onOverwriteConfirmedChange={handleOverwriteConfirmedChange}
             onSaveApprovedDraft={handleSaveApprovedDraft}
           />
