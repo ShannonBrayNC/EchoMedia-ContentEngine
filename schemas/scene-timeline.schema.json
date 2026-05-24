@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/scene-timeline.schema.json",
+  "title": "Scene Timeline",
+  "type": "object",
+  "required": ["schemaVersion", "timelineId", "projectId", "sceneId", "segments"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "timelineId": { "type": "string" },
+    "projectId": { "type": "string" },
+    "sceneId": { "type": "string" },
+    "segments": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/segment" }
+    },
+    "metadata": { "type": "object", "additionalProperties": true }
+  },
+  "$defs": {
+    "segment": {
+      "type": "object",
+      "required": ["segmentId", "startMs", "endMs"],
+      "additionalProperties": false,
+      "properties": {
+        "segmentId": { "type": "string" },
+        "shotId": { "type": "string" },
+        "startMs": { "type": "integer", "minimum": 0 },
+        "endMs": { "type": "integer", "minimum": 0 },
+        "sourceRefs": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" }, "default": [] },
+        "dialogueLineRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "narrationRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "voiceRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "audioRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "subtitleRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "videoJobRefs": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "providerNotes": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": ["sourceType", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceType": { "type": "string" },
+        "path": { "type": "string" },
+        "hash": { "type": "string" },
+        "anchor": { "type": "string" }
+      }
+    }
+  }
+}
