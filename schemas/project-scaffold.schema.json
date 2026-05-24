@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/project-scaffold.schema.json",
+  "title": "Project Scaffold",
+  "type": "object",
+  "required": ["schemaVersion", "projectId", "displayTitle", "rootPath", "folders", "starterArtifacts"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "projectId": { "type": "string" },
+    "displayTitle": { "type": "string" },
+    "universe": { "type": "string" },
+    "storyType": { "type": "string" },
+    "status": { "type": "string", "enum": ["planning", "active", "paused", "archived"] },
+    "rootPath": { "type": "string" },
+    "targetFormats": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "folders": { "type": "array", "items": { "type": "string" } },
+    "starterArtifacts": { "type": "array", "items": { "$ref": "#/$defs/starterArtifact" } },
+    "nextSteps": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "metadata": { "type": "object", "additionalProperties": true }
+  },
+  "$defs": {
+    "starterArtifact": {
+      "type": "object",
+      "required": ["artifactType", "path", "state"],
+      "additionalProperties": false,
+      "properties": {
+        "artifactType": { "type": "string" },
+        "path": { "type": "string" },
+        "state": { "type": "string", "enum": ["planned", "draft", "created"] },
+        "description": { "type": "string" }
+      }
+    }
+  }
+}
