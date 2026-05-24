@@ -3,6 +3,7 @@ import {
   ArtifactSummary,
   GenerationJob,
   IdeaIntake,
+  ProjectReadiness,
   ProjectScaffold,
   ProjectSummary,
   appendMockProject,
@@ -12,6 +13,7 @@ import {
   createSlug,
   createGenerationJob,
   getArtifactPreview,
+  getProjectReadiness,
   getWorkflowStep,
   listProjects,
   rejectArtifact,
@@ -41,6 +43,7 @@ function App() {
   const [rawIdea, setRawIdea] = useState('');
   const [ideaDirection, setIdeaDirection] = useState('Extract the strongest story engine, canon candidates, character seeds, and production roadmap.');
   const [ideaIntake, setIdeaIntake] = useState<IdeaIntake | null>(null);
+  const [readiness, setReadiness] = useState<ProjectReadiness | null>(null);
 
   useEffect(() => {
     listProjects().then((items) => {
@@ -51,6 +54,16 @@ function App() {
       }
     });
   }, []);
+
+  useEffect(() => {
+    if (!selectedProjectId) return;
+    getProjectReadiness(
+      selectedProjectId,
+      Boolean(scaffold) || selectedProjectId === 'lantern-protocol',
+      Boolean(ideaIntake),
+      artifact?.state === 'approved'
+    ).then(setReadiness);
+  }, [selectedProjectId, scaffold, ideaIntake, artifact]);
 
   const selectedProject = useMemo(
     () => projects.find((project) => project.projectId === selectedProjectId),
@@ -167,6 +180,21 @@ function App() {
     setReviewMessage('Artifact rejected. Generate a revision before export.');
   }
 
+  function jumpToAction(targetArtifact?: string) {
+    if (!targetArtifact) return;
+    if (targetArtifact === 'project-scaffold' || targetArtifact === 'project-manifest') {
+      document.getElementById('create-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+    if (targetArtifact === 'idea-intake') {
+      document.getElementById('idea-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+    const workflowStep = getWorkflowStep(targetArtifact);
+    if (workflowStep) setArtifactType(workflowStep.artifactType);
+    document.getElementById('controls-heading')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   return (
     <main className="app-shell">
       <header className="hero">
@@ -265,6 +293,61 @@ function App() {
             </div>
           ) : (
             <p className="empty-state">Create a project to see the scaffold summary, starter files, and next steps.</p>
+          )}
+        </section>
+      </section>
+
+      <section className="idea-grid" aria-label="Project readiness roadmap">
+        <section className="panel readiness-panel" aria-labelledby="readiness-heading">
+          <h2 id="readiness-heading">Project Readiness</h2>
+          {readiness ? (
+            <>
+              <div className="readiness-score" aria-label={`Project readiness ${readiness.percent} percent`}>
+                <strong>{readiness.percent}%</strong>
+                <span>{readiness.summary}</span>
+              </div>
+              <div className="progress-track" aria-hidden="true">
+                <span style={{ width: `${readiness.percent}%` }} />
+              </div>
+              <div className="message-box">
+                <strong>Next best action</strong>
+                <p>{readiness.nextBestAction}</p>
+              </div>
+              {readiness.blockers.length > 0 && (
+                <div className="message-box warning-box">
+                  <strong>Blockers</strong>
+                  <ul>
+                    {readiness.blockers.map((blocker) => (
+                      <li key={blocker}>{blocker}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </>
+          ) : (
+            <p className="empty-state">Select or create a project to calculate readiness.</p>
+          )}
+        </section>
+
+        <section className="panel readiness-list-panel" aria-labelledby="readiness-list-heading">
+          <h2 id="readiness-list-heading">Readiness Roadmap</h2>
+          {readiness ? (
+            <ol className="readiness-list">
+              {readiness.items.map((item) => (
+                <li key={item.id} className={`readiness-item ${item.status}`}>
+                  <div>
+                    <strong>{item.label}</strong>
+                    <span>{item.category} · {item.status}</span>
+                    <p>{item.nextAction}</p>
+                  </div>
+                  <button type="button" onClick={() => jumpToAction(item.targetArtifact)}>
+                    Go
+                  </button>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className="empty-state">The roadmap appears after a project is selected.</p>
           )}
         </section>
       </section>
