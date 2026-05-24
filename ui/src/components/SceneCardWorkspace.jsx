@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderSceneCardDraftMarkdown } from '../lib/sceneCardDraft.js';
 import { reviewGateHasBlockingFailures } from '../lib/reviewGate.js';
+import { traceabilityHasBlockers } from '../lib/artifactTraceability.js';
 
 const SCENE_CARD_ARTIFACT_TYPE = 'scene-card';
 
@@ -29,6 +30,7 @@ export default function SceneCardWorkspace({
   draftArtifact,
   generationJob,
   reviewGate,
+  traceability,
   overwriteConfirmed
 }) {
   const supportsSceneCard = project?.supported_generation_types?.includes(SCENE_CARD_ARTIFACT_TYPE);
@@ -38,9 +40,10 @@ export default function SceneCardWorkspace({
   const canGenerate = Boolean(canValidate && contextValidation?.status === 'passed');
   const draftMarkdown = draftArtifact ? renderSceneCardDraftMarkdown(draftArtifact) : '';
   const reviewBlocked = reviewGateHasBlockingFailures(reviewGate);
-  const canApprove = Boolean(reviewGate && reviewGate.state === 'pending-review' && !reviewBlocked);
+  const traceBlocked = traceabilityHasBlockers(traceability);
+  const canApprove = Boolean(reviewGate && reviewGate.state === 'pending-review' && !reviewBlocked && !traceBlocked);
   const canReject = Boolean(reviewGate && reviewGate.state === 'pending-review');
-  const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked && overwriteConfirmed);
+  const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked && !traceBlocked && overwriteConfirmed);
 
   return (
     <section className="rounded-2xl border border-slate-700 bg-slate-950/70 p-4 shadow-lg">
@@ -185,6 +188,76 @@ export default function SceneCardWorkspace({
           </div>
         ) : null}
 
+        {traceability ? (
+          <div className="rounded-2xl border border-fuchsia-500/30 bg-fuchsia-500/5 p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-fuchsia-300">Traceability</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.trace_id}</p>
+              </div>
+              <span className="rounded-full bg-fuchsia-500/15 px-3 py-1 text-xs font-medium text-fuchsia-300">
+                {traceability.validation_status}
+              </span>
+            </div>
+
+            <div className="mt-4 grid gap-3 md:grid-cols-3">
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Project</p>
+                <p className="mt-1 text-sm text-slate-300">{traceability.project.slug}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Generation job</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.generation.job_id || 'missing'}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Review gate</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.review.review_id || 'missing'}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Source refs</p>
+                <p className="mt-1 text-sm text-slate-300">{traceability.source_context.source_refs.length}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Warnings</p>
+                <p className="mt-1 text-sm text-slate-300">{traceability.warnings.length}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Blockers</p>
+                <p className="mt-1 text-sm text-slate-300">{traceability.blockers.length}</p>
+              </div>
+            </div>
+
+            {traceability.downstream_ready ? (
+              <div className="mt-4 rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Downstream readiness</p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {Object.entries(traceability.downstream_ready).map(([key, value]) => (
+                    <span key={key} className="rounded-full bg-slate-800 px-2 py-1 text-xs text-slate-300">
+                      {key}: {value ? 'ready' : 'not ready'}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {traceability.warnings?.length ? (
+              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-amber-200">
+                {traceability.warnings.map((warning) => (
+                  <li key={warning}>{warning}</li>
+                ))}
+              </ul>
+            ) : null}
+
+            {traceability.blockers?.length ? (
+              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-red-200">
+                {traceability.blockers.map((blocker) => (
+                  <li key={blocker}>{blocker}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ) : null}
+
         {reviewGate ? (
           <div className="rounded-2xl border border-violet-500/30 bg-violet-500/5 p-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -247,6 +320,10 @@ export default function SceneCardWorkspace({
 
             {reviewGate.state === 'approved' && !overwriteConfirmed ? (
               <p className="mt-3 text-sm text-amber-200">Approve is complete. Confirm destination/overwrite review to enable save.</p>
+            ) : null}
+
+            {traceBlocked ? (
+              <p className="mt-3 text-sm text-red-200">Traceability blockers must be resolved before save.</p>
             ) : null}
 
             {reviewGate.save_manifest ? (
