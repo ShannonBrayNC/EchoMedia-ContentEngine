@@ -4,9 +4,17 @@ import SceneCardWorkspace, { buildSceneCardDestination } from './SceneCardWorksp
 import WorkflowStatusRail from './WorkflowStatusRail.jsx';
 import { buildSceneCardDraft } from '../lib/sceneCardDraft.js';
 import { completeGenerationJob, createSceneCardGenerationJob, failGenerationJob } from '../lib/generationJob.js';
+import {
+  approveReviewGate,
+  buildSceneCardSaveManifest,
+  createSceneCardReviewGate,
+  markReviewGateSaved,
+  rejectReviewGate,
+  reviewGateHasBlockingFailures
+} from '../lib/reviewGate.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
 
-function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob) {
+function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate) {
   if (!selectedProject) {
     return {
       rail_id: 'workspace-project-selection',
@@ -39,6 +47,7 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
   const hasDirection = creativeDirection.trim().length > 0;
   const destinationPath = buildSceneCardDestination(selectedProject);
   const contextPassed = contextValidation?.status === 'passed';
+  const reviewBlocksSave = reviewGateHasBlockingFailures(reviewGate);
 
   let currentStage = 'creative-direction';
   let stageStatus = 'active';
@@ -67,13 +76,38 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
       enabled: false,
       disabled_reason: generationJob.errors?.[0]?.message || 'Generation failed.'
     };
+  } else if (reviewGate?.state === 'saved') {
+    currentStage = 'save-commit';
+    stageStatus = 'complete';
+    nextAction = {
+      label: 'Saved locally',
+      action_key: 'saved',
+      enabled: false,
+      disabled_reason: 'The approved draft has a local save manifest.'
+    };
+  } else if (reviewGate?.state === 'approved') {
+    currentStage = 'save-commit';
+    stageStatus = reviewBlocksSave ? 'blocked' : 'active';
+    nextAction = {
+      label: 'Save approved draft',
+      action_key: 'save',
+      enabled: !reviewBlocksSave,
+      disabled_reason: reviewBlocksSave ? 'Blocking review checks must pass before save.' : undefined
+    };
+  } else if (reviewGate?.state === 'rejected') {
+    currentStage = 'preview-review';
+    stageStatus = 'blocked';
+    nextAction = {
+      label: 'Regenerate draft',
+      action_key: 'generate',
+      enabled: true
+    };
   } else if (draftArtifact) {
     currentStage = 'preview-review';
     nextAction = {
       label: 'Review draft preview',
       action_key: 'review',
-      enabled: false,
-      disabled_reason: 'Review gate and save flow are implemented in later issues.'
+      enabled: true
     };
   } else if (hasDirection && !contextPassed) {
     currentStage = 'validate-context';
@@ -134,6 +168,16 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
           attempt: 1
         }
       : undefined,
+    review: reviewGate
+      ? {
+          review_id: reviewGate.review_id,
+          state: reviewGate.state,
+          required_checks_total: reviewGate.checks?.filter((check) => check.required).length || 0,
+          required_checks_passed:
+            reviewGate.checks?.filter((check) => check.required && check.status === 'passed').length || 0,
+          blocking_failures: reviewGate.checks?.filter((check) => check.required && check.status === 'failed').length || 0
+        }
+      : undefined,
     workflow: {
       current_stage: currentStage,
       stage_status: stageStatus,
@@ -176,13 +220,17 @@ export default function GenerationWorkspace() {
   const [contextValidation, setContextValidation] = useState(null);
   const [draftArtifact, setDraftArtifact] = useState(null);
   const [generationJob, setGenerationJob] = useState(null);
+  const [reviewGate, setReviewGate] = useState(null);
+  const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const selectedProject = getProjectBySlug(selectedSlug);
-  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob);
+  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate);
 
   function resetDraftState() {
     setContextValidation(null);
     setDraftArtifact(null);
     setGenerationJob(null);
+    setReviewGate(null);
+    setOverwriteConfirmed(false);
   }
 
   function handleSelectProject(slug) {
@@ -208,6 +256,8 @@ export default function GenerationWorkspace() {
     setContextValidation(validateSceneCardContext(selectedProject, creativeDirection, sourceNotes));
     setDraftArtifact(null);
     setGenerationJob(null);
+    setReviewGate(null);
+    setOverwriteConfirmed(false);
   }
 
   function handleGenerateDraft() {
@@ -233,12 +283,60 @@ export default function GenerationWorkspace() {
       });
 
       const completedJob = completeGenerationJob(initialJob, draft);
+      const pendingReviewGate = createSceneCardReviewGate({
+        project: selectedProject,
+        draftArtifact: draft,
+        generationJob: completedJob,
+        destinationPath
+      });
+
       setGenerationJob(completedJob);
       setDraftArtifact(draft);
+      setReviewGate(pendingReviewGate);
+      setOverwriteConfirmed(false);
     } catch (error) {
       setGenerationJob(failGenerationJob(initialJob, error));
       setDraftArtifact(null);
+      setReviewGate(null);
+      setOverwriteConfirmed(false);
     }
+  }
+
+  function handleApproveDraft() {
+    if (!reviewGate) {
+      return;
+    }
+
+    setReviewGate(approveReviewGate(reviewGate, 'Approved in first vertical slice review gate.'));
+  }
+
+  function handleRejectDraft() {
+    if (!reviewGate) {
+      return;
+    }
+
+    setReviewGate(rejectReviewGate(reviewGate, 'Rejected in first vertical slice review gate.'));
+  }
+
+  function handleOverwriteConfirmedChange(confirmed) {
+    setOverwriteConfirmed(confirmed);
+  }
+
+  function handleSaveApprovedDraft() {
+    if (!selectedProject || !draftArtifact || !reviewGate || reviewGate.state !== 'approved') {
+      return;
+    }
+
+    const destinationPath = buildSceneCardDestination(selectedProject);
+    const saveManifest = buildSceneCardSaveManifest({
+      project: selectedProject,
+      draftArtifact,
+      reviewGate,
+      destinationPath,
+      overwriteConfirmed
+    });
+
+    setReviewGate(markReviewGateSaved(reviewGate, saveManifest));
   }
 
   return (
@@ -264,10 +362,16 @@ export default function GenerationWorkspace() {
             contextValidation={contextValidation}
             draftArtifact={draftArtifact}
             generationJob={generationJob}
+            reviewGate={reviewGate}
+            overwriteConfirmed={overwriteConfirmed}
             onCreativeDirectionChange={handleCreativeDirectionChange}
             onSourceNotesChange={handleSourceNotesChange}
             onValidateContext={handleValidateContext}
             onGenerateDraft={handleGenerateDraft}
+            onApproveDraft={handleApproveDraft}
+            onRejectDraft={handleRejectDraft}
+            onOverwriteConfirmedChange={handleOverwriteConfirmedChange}
+            onSaveApprovedDraft={handleSaveApprovedDraft}
           />
         </div>
       </div>
