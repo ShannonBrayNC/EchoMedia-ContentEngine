@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """No-provider Content Engine API service.
 
-This service intentionally uses only the Python standard library so Sprint 4 can
-run in CI without provider credentials or framework dependencies. It provides a
-small HTTP API plus reusable functions for deterministic E2E tests.
+This service intentionally uses only the Python standard library so CI can run
+without provider credentials or framework dependencies. It provides a small HTTP
+API plus reusable functions for deterministic E2E tests.
 """
 
 from __future__ import annotations
@@ -17,6 +17,11 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
 from urllib.parse import parse_qs, urlparse
+
+try:
+    from services import provider_events
+except ImportError:  # pragma: no cover - supports direct script execution
+    import provider_events  # type: ignore
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE_ROOT = Path(os.environ.get("CONTENT_ENGINE_STATE_ROOT", ROOT / ".content-engine" / "state"))
@@ -58,6 +63,7 @@ def save_state(state: dict[str, Any]) -> None:
 def reset_state() -> None:
     if STATE_FILE.exists():
         STATE_FILE.unlink()
+    provider_events.reset_provider_events()
 
 
 def project_summary(project: dict[str, Any]) -> dict[str, Any]:
@@ -76,19 +82,7 @@ def create_project(payload: dict[str, Any]) -> dict[str, Any]:
     display_title = payload.get("displayTitle") or payload.get("title") or "Untitled Project"
     project_id = slugify(payload.get("projectId") or display_title)
     root_path = f"projects/{project_id}"
-    folders = [
-        "canon",
-        "characters",
-        "story",
-        "manuscript",
-        "storyboards",
-        "visual-bible",
-        "screenplay",
-        "movie-generation",
-        "audio",
-        "pitch",
-        "reports",
-    ]
+    folders = ["canon", "characters", "story", "manuscript", "storyboards", "visual-bible", "screenplay", "movie-generation", "audio", "pitch", "reports"]
     project = {
         "projectId": project_id,
         "displayTitle": display_title,
@@ -204,12 +198,6 @@ def get_job(job_id: str) -> dict[str, Any]:
     return state["jobs"][job_id]
 
 
-def list_artifacts(project_id: str) -> dict[str, Any]:
-    state = load_state()
-    artifacts = [artifact_summary(a) for a in state["artifacts"].values() if a["projectId"] == project_id]
-    return {"artifacts": artifacts}
-
-
 def artifact_summary(artifact: dict[str, Any]) -> dict[str, Any]:
     return {key: artifact.get(key) for key in ["artifactId", "projectId", "artifactType", "state", "path", "manifestId"]}
 
@@ -219,6 +207,12 @@ def get_artifact(artifact_id: str) -> dict[str, Any]:
     if artifact_id not in state["artifacts"]:
         raise KeyError("Artifact not found")
     return state["artifacts"][artifact_id]
+
+
+def list_artifacts(project_id: str) -> dict[str, Any]:
+    state = load_state()
+    artifacts = [artifact_summary(a) for a in state["artifacts"].values() if a["projectId"] == project_id]
+    return {"artifacts": artifacts}
 
 
 def set_artifact_state(artifact_id: str, new_state: str) -> dict[str, Any]:
@@ -366,6 +360,9 @@ class RouteResult:
 
 
 class Handler(BaseHTTPRequestHandler):
+    def _headers_dict(self) -> dict[str, str]:
+        return {key: value for key, value in self.headers.items()}
+
     def _json_body(self) -> dict[str, Any]:
         length = int(self.headers.get("content-length", 0))
         if length == 0:
@@ -381,23 +378,33 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self) -> None:  # noqa: N802
-        self._send(route("GET", self.path, {}))
+        self._send(route("GET", self.path, {}, self._headers_dict()))
 
     def do_POST(self) -> None:  # noqa: N802
-        self._send(route("POST", self.path, self._json_body()))
+        self._send(route("POST", self.path, self._json_body(), self._headers_dict()))
 
     def log_message(self, format: str, *args: Any) -> None:
         if os.environ.get("CONTENT_ENGINE_LOG_LEVEL", "info") == "debug":
             super().log_message(format, *args)
 
 
-def route(method: str, raw_path: str, payload: dict[str, Any]) -> RouteResult:
+def _provider_route_result(result: dict[str, Any]) -> RouteResult:
+    status = int(result.get("statusCode", 500))
+    body = {key: value for key, value in result.items() if key != "statusCode"}
+    return RouteResult(status, body)
+
+
+def route(method: str, raw_path: str, payload: dict[str, Any], headers: dict[str, str] | None = None) -> RouteResult:
     parsed = urlparse(raw_path)
     path = parsed.path
     query = parse_qs(parsed.query)
     try:
+        if method == "POST" and path.rstrip("/") == "/api/webhooks/elevenlabs":
+            return _provider_route_result(provider_events.handle_elevenlabs_webhook(payload, headers))
+        if method == "GET" and path.rstrip("/") == "/api/webhooks/events":
+            return RouteResult(200, provider_events.list_provider_events(query.get("provider", [None])[0]))
         if method == "GET" and path == "/health":
-            return RouteResult(200, {"status": "ok", "version": "1.0.0-draft"})
+            return RouteResult(200, {"status": "ok", "version": "1.0.0-draft", "webhooks": ["/api/webhooks/elevenlabs"]})
         if method == "GET" and path == "/config/runtime":
             return RouteResult(200, {"environment": os.environ.get("CONTENT_ENGINE_ENV", "local"), "noProviderMode": True, "liveProvidersEnabled": False, "dryRunProviders": True})
         if method == "GET" and path == "/projects":
