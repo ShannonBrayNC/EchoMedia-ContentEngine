@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/action-taxonomy.schema.json",
+  "title": "EchoMedia Content Engine Action Taxonomy",
+  "description": "Defines the top-level action categories used by the UI and backend so validation, generation, assembly, export, and persistence are not confused.",
+  "type": "object",
+  "required": [
+    "version",
+    "actions"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/action"
+      },
+      "minItems": 5
+    }
+  },
+  "$defs": {
+    "action": {
+      "type": "object",
+      "required": [
+        "key",
+        "label",
+        "intent",
+        "allowed_outputs",
+        "forbidden_outputs",
+        "requires_review_before_persist"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "enum": [
+            "validate",
+            "generate",
+            "assemble",
+            "export",
+            "save_commit"
+          ]
+        },
+        "label": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
+        },
+        "allowed_outputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbidden_outputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_review_before_persist": {
+          "type": "boolean"
+        },
+        "example_button_labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
