@@ -86,6 +86,18 @@ export function rejectReviewGate(reviewGate, reviewerNotes = '') {
   };
 }
 
+export function requestRevisionReviewGate(reviewGate, reviewerNotes = '') {
+  const updatedAt = new Date().toISOString();
+
+  return {
+    ...reviewGate,
+    state: 'revision-requested',
+    reviewer_notes: reviewerNotes,
+    reviewed_at: updatedAt,
+    updated_at: updatedAt
+  };
+}
+
 export function markReviewGateSaved(reviewGate, saveManifest) {
   const updatedAt = new Date().toISOString();
 
