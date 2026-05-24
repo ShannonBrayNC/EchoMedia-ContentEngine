@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/generation-job.schema.json",
+  "title": "EchoMedia Content Engine Generation Job",
+  "description": "Tracks long-running or reviewable content generation work from request through draft, approval, export, failure, or supersession.",
+  "type": "object",
+  "required": [
+    "job_id",
+    "version",
+    "project_slug",
+    "artifact_type",
+    "action",
+    "state",
+    "request",
+    "created_at"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "project_slug": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string",
+      "enum": [
+        "canon",
+        "character",
+        "story-outline",
+        "manuscript",
+        "screenplay",
+        "scene-card",
+        "storyboard",
+        "visual-prompt",
+        "production-package",
+        "pitch",
+        "audio-script",
+        "tool-export"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "enum": [
+        "validate",
+        "generate",
+        "assemble",
+        "export",
+        "save_commit"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "draft-request",
+        "queued",
+        "generating",
+        "generated",
+        "needs-review",
+        "approved",
+        "exported",
+        "failed",
+        "superseded",
+        "cancelled"
+      ]
+    },
+    "request": {
+      "$ref": "#/$defs/generationRequest"
+    },
+    "source_context": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sourceContext"
+      },
+      "default": []
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/jobOutput"
+      },
+      "default": []
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/jobMessage"
+      },
+      "default": []
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/jobMessage"
+      },
+      "default": []
+    },
+    "review": {
+      "$ref": "#/$defs/reviewState"
+    },
+    "retry": {
+      "$ref": "#/$defs/retryState"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_by": {
+      "type": "string"
+    },
+    "supersedes_job_id": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "generationRequest": {
+      "type": "object",
+      "required": [
+        "user_instruction",
+        "target_destination"
+      ],
+      "properties": {
+        "user_instruction": {
+          "type": "string"
+        },
+        "tone_style_notes": {
+          "type": "string"
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "target_destination": {
+          "type": "string"
+        },
+        "export_profile": {
+          "type": "string"
+        },
+        "expected_output_format": {
+          "type": "string",
+          "enum": [
+            "markdown",
+            "json",
+            "text",
+            "csv",
+            "html",
+            "deck-outline"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceContext": {
+      "type": "object",
+      "required": [
+        "type",
+        "path",
+        "status"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "loaded",
+            "missing",
+            "ignored",
+            "failed"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "jobOutput": {
+      "type": "object",
+      "required": [
+        "output_id",
+        "type",
+        "state"
+      ],
+      "properties": {
+        "output_id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "draft-artifact",
+            "validation-report",
+            "assembled-artifact",
+            "export-package",
+            "saved-artifact",
+            "commit-reference"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "needs-review",
+            "approved",
+            "rejected",
+            "saved",
+            "exported",
+            "failed"
+          ]
+        },
+        "format": {
+          "type": "string"
+        },
+        "preview_path": {
+          "type": "string"
+        },
+        "destination_path": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "jobMessage": {
+      "type": "object",
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "info",
+            "warning",
+            "error",
+            "critical"
+          ],
+          "default": "warning"
+        }
+      },
+      "additionalProperties": false
+    },
+    "reviewState": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean",
+          "default": true
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not-required",
+            "pending",
+            "approved",
+            "rejected",
+            "changes-requested"
+          ],
+          "default": "pending"
+        },
+        "reviewed_by": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "retryState": {
+      "type": "object",
+      "properties": {
+        "attempt": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "max_attempts": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 3
+        },
+        "last_attempt_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "retry_reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
