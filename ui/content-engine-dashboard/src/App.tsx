@@ -2,8 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import {
   ArtifactSummary,
   GenerationJob,
+  ProjectScaffold,
   ProjectSummary,
+  appendMockProject,
   approveArtifact,
+  createProjectScaffold,
+  createSlug,
   createGenerationJob,
   getArtifactPreview,
   listProjects,
@@ -24,6 +28,12 @@ function App() {
   const [job, setJob] = useState<GenerationJob | null>(null);
   const [artifact, setArtifact] = useState<ArtifactSummary | null>(null);
   const [reviewMessage, setReviewMessage] = useState('No artifact has been reviewed yet.');
+  const [newProjectTitle, setNewProjectTitle] = useState('');
+  const [newProjectSlug, setNewProjectSlug] = useState('');
+  const [newProjectUniverse, setNewProjectUniverse] = useState('');
+  const [newProjectStoryType, setNewProjectStoryType] = useState('novel-to-film');
+  const [newProjectTargets, setNewProjectTargets] = useState('generic-json, openai-video, runway');
+  const [scaffold, setScaffold] = useState<ProjectScaffold | null>(null);
 
   useEffect(() => {
     listProjects().then((items) => {
@@ -71,6 +81,37 @@ function App() {
     setReviewMessage('Draft generated. Review before approval or export.');
   }
 
+  async function handleCreateProject() {
+    const displayTitle = newProjectTitle.trim();
+    const projectId = createSlug(newProjectSlug || displayTitle);
+    if (!displayTitle || !projectId) {
+      setValidationMessages(['Add a project title and valid slug before creating a scaffold.']);
+      return;
+    }
+
+    const createdScaffold = await createProjectScaffold({
+      displayTitle,
+      projectId,
+      universe: newProjectUniverse.trim(),
+      storyType: newProjectStoryType,
+      targetFormats: newProjectTargets
+        .split(',')
+        .map((target) => target.trim())
+        .filter(Boolean)
+    });
+
+    appendMockProject(createdScaffold.project);
+    const updatedProjects = await listProjects();
+    setProjects([...updatedProjects]);
+    setSelectedProjectId(createdScaffold.project.projectId);
+    setArtifactType(createdScaffold.project.supportedGenerationTypes[0]);
+    setScaffold(createdScaffold);
+    setValidationMessages(['New project scaffold created in mock mode. Backend persistence will be added later.']);
+    setJob(null);
+    setArtifact(null);
+    setReviewMessage('New project created. Start with idea intake, then run readiness checks.');
+  }
+
   async function handleApprove() {
     if (!artifact) return;
     const result = await approveArtifact(artifact.artifactId);
@@ -92,7 +133,7 @@ function App() {
           <p className="eyebrow">EchoMedia Content Engine</p>
           <h1>Generation Workspace</h1>
           <p className="hero-copy">
-            Select a project, generate a draft artifact, review it, then approve it for export. Sprint 3 runs in mock API mode.
+            Create a project, generate a draft artifact, review it, then approve it for export. Sprint 3 runs in mock API mode.
           </p>
         </div>
         <div className="mode-card" aria-label="Runtime mode">
@@ -101,6 +142,91 @@ function App() {
           <small>Safe dry-run workflow</small>
         </div>
       </header>
+
+      <section className="project-create-grid" aria-label="New project creation">
+        <section className="panel create-panel" aria-labelledby="create-heading">
+          <h2 id="create-heading">Create New Project</h2>
+          <p className="panel-copy">Create the initial scaffold before structure verification. This mock flow shows the folders and starter artifacts that will be generated.</p>
+
+          <label htmlFor="new-project-title">Project title</label>
+          <input
+            id="new-project-title"
+            value={newProjectTitle}
+            onChange={(event) => {
+              setNewProjectTitle(event.target.value);
+              if (!newProjectSlug) setNewProjectSlug(createSlug(event.target.value));
+            }}
+            placeholder="Example: The Clockwork Gospel"
+          />
+
+          <label htmlFor="new-project-slug">Project slug</label>
+          <input
+            id="new-project-slug"
+            value={newProjectSlug}
+            onChange={(event) => setNewProjectSlug(createSlug(event.target.value))}
+            placeholder="the-clockwork-gospel"
+          />
+
+          <label htmlFor="new-project-universe">Universe or series</label>
+          <input
+            id="new-project-universe"
+            value={newProjectUniverse}
+            onChange={(event) => setNewProjectUniverse(event.target.value)}
+            placeholder="Lantern / Sovereign"
+          />
+
+          <label htmlFor="new-project-story-type">Initial story type</label>
+          <select id="new-project-story-type" value={newProjectStoryType} onChange={(event) => setNewProjectStoryType(event.target.value)}>
+            <option value="novel-to-film">Novel to film</option>
+            <option value="screenplay-first">Screenplay first</option>
+            <option value="series-bible">Series bible</option>
+            <option value="short-form-campaign">Short-form campaign</option>
+          </select>
+
+          <label htmlFor="new-project-targets">Target formats</label>
+          <input
+            id="new-project-targets"
+            value={newProjectTargets}
+            onChange={(event) => setNewProjectTargets(event.target.value)}
+          />
+
+          <button type="button" className="primary" onClick={handleCreateProject}>
+            Create project scaffold
+          </button>
+        </section>
+
+        <section className="panel scaffold-panel" aria-labelledby="scaffold-heading">
+          <h2 id="scaffold-heading">Scaffold preview</h2>
+          {scaffold ? (
+            <div className="scaffold-summary">
+              <strong>{scaffold.project.displayTitle}</strong>
+              <span>{scaffold.project.rootPath}</span>
+              <h3>Folders</h3>
+              <ul>
+                {scaffold.folders.map((folder) => (
+                  <li key={folder}>{folder}</li>
+                ))}
+              </ul>
+              <h3>Starter artifacts</h3>
+              <ul>
+                {scaffold.starterArtifacts.map((starter) => (
+                  <li key={starter.path}>
+                    <strong>{starter.artifactType}</strong>: {starter.path} ({starter.state})
+                  </li>
+                ))}
+              </ul>
+              <h3>Next steps</h3>
+              <ol>
+                {scaffold.nextSteps.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </div>
+          ) : (
+            <p className="empty-state">Create a project to see the scaffold summary, starter files, and next steps.</p>
+          )}
+        </section>
+      </section>
 
       <section className="workspace-grid" aria-label="Content generation workspace">
         <section className="panel controls-panel" aria-labelledby="controls-heading">
