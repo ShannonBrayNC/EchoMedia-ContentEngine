@@ -2,6 +2,13 @@ import React, { useMemo, useState } from 'react';
 import ProjectPicker from './ProjectPicker.jsx';
 import SceneCardWorkspace, { buildSceneCardDestination } from './SceneCardWorkspace.jsx';
 import WorkflowStatusRail from './WorkflowStatusRail.jsx';
+import {
+  attachSaveManifestToTraceability,
+  attachTraceabilityValidation,
+  createSceneCardTraceability,
+  refreshTraceabilityReview,
+  traceabilityHasBlockers
+} from '../lib/artifactTraceability.js';
 import { buildSceneCardDraft } from '../lib/sceneCardDraft.js';
 import { completeGenerationJob, createSceneCardGenerationJob, failGenerationJob } from '../lib/generationJob.js';
 import {
@@ -14,7 +21,7 @@ import {
 } from '../lib/reviewGate.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
 
-function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate) {
+function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate, traceability) {
   if (!selectedProject) {
     return {
       rail_id: 'workspace-project-selection',
@@ -48,6 +55,7 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
   const destinationPath = buildSceneCardDestination(selectedProject);
   const contextPassed = contextValidation?.status === 'passed';
   const reviewBlocksSave = reviewGateHasBlockingFailures(reviewGate);
+  const traceBlocksSave = traceabilityHasBlockers(traceability);
 
   let currentStage = 'creative-direction';
   let stageStatus = 'active';
@@ -87,12 +95,16 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
     };
   } else if (reviewGate?.state === 'approved') {
     currentStage = 'save-commit';
-    stageStatus = reviewBlocksSave ? 'blocked' : 'active';
+    stageStatus = reviewBlocksSave || traceBlocksSave ? 'blocked' : 'active';
     nextAction = {
       label: 'Save approved draft',
       action_key: 'save',
-      enabled: !reviewBlocksSave,
-      disabled_reason: reviewBlocksSave ? 'Blocking review checks must pass before save.' : undefined
+      enabled: !reviewBlocksSave && !traceBlocksSave,
+      disabled_reason: reviewBlocksSave
+        ? 'Blocking review checks must pass before save.'
+        : traceBlocksSave
+          ? 'Traceability blockers must be resolved before save.'
+          : undefined
     };
   } else if (reviewGate?.state === 'rejected') {
     currentStage = 'preview-review';
@@ -145,6 +157,26 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
     }
   }
 
+  if (traceability?.warnings?.length) {
+    for (const warning of traceability.warnings) {
+      warnings.push({
+        severity: 'warning',
+        source: 'traceability',
+        message: warning
+      });
+    }
+  }
+
+  if (traceability?.blockers?.length) {
+    for (const blocker of traceability.blockers) {
+      warnings.push({
+        severity: 'error',
+        source: 'traceability',
+        message: blocker
+      });
+    }
+  }
+
   return {
     rail_id: `${selectedProject.slug}-scene-card-workspace`,
     version: '0.1.0',
@@ -176,6 +208,14 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
           required_checks_passed:
             reviewGate.checks?.filter((check) => check.required && check.status === 'passed').length || 0,
           blocking_failures: reviewGate.checks?.filter((check) => check.required && check.status === 'failed').length || 0
+        }
+      : undefined,
+    traceability: traceability
+      ? {
+          trace_id: traceability.trace_id,
+          status: traceability.validation_status,
+          warnings: traceability.warnings?.length || 0,
+          blockers: traceability.blockers?.length || 0
         }
       : undefined,
     workflow: {
@@ -221,15 +261,17 @@ export default function GenerationWorkspace() {
   const [draftArtifact, setDraftArtifact] = useState(null);
   const [generationJob, setGenerationJob] = useState(null);
   const [reviewGate, setReviewGate] = useState(null);
+  const [traceability, setTraceability] = useState(null);
   const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const selectedProject = getProjectBySlug(selectedSlug);
-  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate);
+  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate, traceability);
 
   function resetDraftState() {
     setContextValidation(null);
     setDraftArtifact(null);
     setGenerationJob(null);
     setReviewGate(null);
+    setTraceability(null);
     setOverwriteConfirmed(false);
   }
 
@@ -257,6 +299,7 @@ export default function GenerationWorkspace() {
     setDraftArtifact(null);
     setGenerationJob(null);
     setReviewGate(null);
+    setTraceability(null);
     setOverwriteConfirmed(false);
   }
 
@@ -289,15 +332,27 @@ export default function GenerationWorkspace() {
         generationJob: completedJob,
         destinationPath
       });
+      const trace = attachTraceabilityValidation(
+        createSceneCardTraceability({
+          project: selectedProject,
+          draftArtifact: draft,
+          generationJob: completedJob,
+          reviewGate: pendingReviewGate,
+          destinationPath,
+          sourceNotes
+        })
+      );
 
       setGenerationJob(completedJob);
       setDraftArtifact(draft);
       setReviewGate(pendingReviewGate);
+      setTraceability(trace);
       setOverwriteConfirmed(false);
     } catch (error) {
       setGenerationJob(failGenerationJob(initialJob, error));
       setDraftArtifact(null);
       setReviewGate(null);
+      setTraceability(null);
       setOverwriteConfirmed(false);
     }
   }
@@ -307,7 +362,9 @@ export default function GenerationWorkspace() {
       return;
     }
 
-    setReviewGate(approveReviewGate(reviewGate, 'Approved in first vertical slice review gate.'));
+    const approvedReview = approveReviewGate(reviewGate, 'Approved in first vertical slice review gate.');
+    setReviewGate(approvedReview);
+    setTraceability((current) => refreshTraceabilityReview(current, approvedReview));
   }
 
   function handleRejectDraft() {
@@ -315,7 +372,9 @@ export default function GenerationWorkspace() {
       return;
     }
 
-    setReviewGate(rejectReviewGate(reviewGate, 'Rejected in first vertical slice review gate.'));
+    const rejectedReview = rejectReviewGate(reviewGate, 'Rejected in first vertical slice review gate.');
+    setReviewGate(rejectedReview);
+    setTraceability((current) => refreshTraceabilityReview(current, rejectedReview));
   }
 
   function handleOverwriteConfirmedChange(confirmed) {
@@ -323,7 +382,7 @@ export default function GenerationWorkspace() {
   }
 
   function handleSaveApprovedDraft() {
-    if (!selectedProject || !draftArtifact || !reviewGate || reviewGate.state !== 'approved') {
+    if (!selectedProject || !draftArtifact || !reviewGate || reviewGate.state !== 'approved' || traceabilityHasBlockers(traceability)) {
       return;
     }
 
@@ -335,8 +394,10 @@ export default function GenerationWorkspace() {
       destinationPath,
       overwriteConfirmed
     });
+    const savedReviewGate = markReviewGateSaved(reviewGate, saveManifest);
 
-    setReviewGate(markReviewGateSaved(reviewGate, saveManifest));
+    setReviewGate(savedReviewGate);
+    setTraceability((current) => attachSaveManifestToTraceability(refreshTraceabilityReview(current, savedReviewGate), saveManifest));
   }
 
   return (
@@ -363,6 +424,7 @@ export default function GenerationWorkspace() {
             draftArtifact={draftArtifact}
             generationJob={generationJob}
             reviewGate={reviewGate}
+            traceability={traceability}
             overwriteConfirmed={overwriteConfirmed}
             onCreativeDirectionChange={handleCreativeDirectionChange}
             onSourceNotesChange={handleSourceNotesChange}
