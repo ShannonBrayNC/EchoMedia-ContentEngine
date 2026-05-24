@@ -2,9 +2,10 @@ import React, { useMemo, useState } from 'react';
 import ProjectPicker from './ProjectPicker.jsx';
 import SceneCardWorkspace, { buildSceneCardDestination } from './SceneCardWorkspace.jsx';
 import WorkflowStatusRail from './WorkflowStatusRail.jsx';
+import { buildSceneCardDraft } from '../lib/sceneCardDraft.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
 
-function buildRail(selectedProject, creativeDirection, contextValidation) {
+function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact) {
   if (!selectedProject) {
     return {
       rail_id: 'workspace-project-selection',
@@ -56,6 +57,14 @@ function buildRail(selectedProject, creativeDirection, contextValidation) {
       enabled: false,
       disabled_reason: 'Scene-card is not listed in supported_generation_types.'
     };
+  } else if (draftArtifact) {
+    currentStage = 'preview-review';
+    nextAction = {
+      label: 'Review draft preview',
+      action_key: 'review',
+      enabled: false,
+      disabled_reason: 'Review gate and save flow are implemented in later issues.'
+    };
   } else if (hasDirection && !contextPassed) {
     currentStage = 'validate-context';
     nextAction = {
@@ -103,12 +112,14 @@ function buildRail(selectedProject, creativeDirection, contextValidation) {
     },
     artifact: {
       artifact_type: 'scene-card',
+      artifact_id: draftArtifact?.artifact_id,
+      title: draftArtifact?.title,
       destination_path: destinationPath
     },
     workflow: {
       current_stage: currentStage,
       stage_status: stageStatus,
-      completed_stages: ['select-project']
+      completed_stages: draftArtifact ? ['select-project', 'validate-context', 'generate-draft'] : ['select-project']
     },
     warnings,
     next_action: nextAction,
@@ -145,22 +156,28 @@ export default function GenerationWorkspace() {
   const [creativeDirection, setCreativeDirection] = useState('');
   const [sourceNotes, setSourceNotes] = useState('');
   const [contextValidation, setContextValidation] = useState(null);
+  const [draftArtifact, setDraftArtifact] = useState(null);
   const selectedProject = getProjectBySlug(selectedSlug);
-  const rail = buildRail(selectedProject, creativeDirection, contextValidation);
+  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact);
+
+  function resetDraftState() {
+    setContextValidation(null);
+    setDraftArtifact(null);
+  }
 
   function handleSelectProject(slug) {
     setSelectedSlug(slug);
-    setContextValidation(null);
+    resetDraftState();
   }
 
   function handleCreativeDirectionChange(value) {
     setCreativeDirection(value);
-    setContextValidation(null);
+    resetDraftState();
   }
 
   function handleSourceNotesChange(value) {
     setSourceNotes(value);
-    setContextValidation(null);
+    resetDraftState();
   }
 
   function handleValidateContext() {
@@ -169,10 +186,21 @@ export default function GenerationWorkspace() {
     }
 
     setContextValidation(validateSceneCardContext(selectedProject, creativeDirection, sourceNotes));
+    setDraftArtifact(null);
   }
 
   function handleGenerateDraft() {
-    // Issue #92 will implement draft scene-card generation and preview.
+    if (!selectedProject || contextValidation?.status !== 'passed') {
+      return;
+    }
+
+    setDraftArtifact(
+      buildSceneCardDraft({
+        project: selectedProject,
+        creativeDirection,
+        sourceNotes
+      })
+    );
   }
 
   return (
@@ -196,6 +224,7 @@ export default function GenerationWorkspace() {
             creativeDirection={creativeDirection}
             sourceNotes={sourceNotes}
             contextValidation={contextValidation}
+            draftArtifact={draftArtifact}
             onCreativeDirectionChange={handleCreativeDirectionChange}
             onSourceNotesChange={handleSourceNotesChange}
             onValidateContext={handleValidateContext}
