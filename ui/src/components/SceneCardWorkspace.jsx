@@ -21,7 +21,8 @@ export default function SceneCardWorkspace({
   onValidateContext,
   onGenerateDraft,
   contextValidation,
-  draftArtifact
+  draftArtifact,
+  generationJob
 }) {
   const supportsSceneCard = project?.supported_generation_types?.includes(SCENE_CARD_ARTIFACT_TYPE);
   const destinationPath = buildSceneCardDestination(project);
@@ -144,6 +145,43 @@ export default function SceneCardWorkspace({
           </button>
         </div>
 
+        {generationJob ? (
+          <div className="rounded-2xl border border-cyan-500/30 bg-cyan-500/5 p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-cyan-300">Generation job</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{generationJob.job_id}</p>
+              </div>
+              <span className="rounded-full bg-cyan-500/15 px-3 py-1 text-xs font-medium text-cyan-300">
+                {generationJob.state}
+              </span>
+            </div>
+
+            <div className="mt-4 grid gap-3 md:grid-cols-3">
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Action</p>
+                <p className="mt-1 text-sm text-slate-300">{generationJob.action}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Warnings</p>
+                <p className="mt-1 text-sm text-slate-300">{generationJob.warnings?.length || 0}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Errors</p>
+                <p className="mt-1 text-sm text-slate-300">{generationJob.errors?.length || 0}</p>
+              </div>
+            </div>
+
+            {generationJob.errors?.length ? (
+              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-red-200">
+                {generationJob.errors.map((error) => (
+                  <li key={`${error.message}-${error.occurred_at}`}>{error.message}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ) : null}
+
         {draftArtifact ? (
           <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-4">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -162,16 +200,16 @@ export default function SceneCardWorkspace({
                 <p className="mt-1 break-words font-mono text-sm text-slate-300">{draftArtifact.scene_id}</p>
               </div>
               <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Generation job</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{draftArtifact.generation_job_id || 'not attached'}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Source refs</p>
                 <p className="mt-1 text-sm text-slate-300">{draftArtifact.source_refs.length}</p>
               </div>
               <div className="rounded-xl bg-slate-950/80 p-3">
                 <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Shots</p>
                 <p className="mt-1 text-sm text-slate-300">{draftArtifact.shots.length}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Status</p>
-                <p className="mt-1 text-sm text-slate-300">{draftArtifact.status}</p>
               </div>
             </div>
 
