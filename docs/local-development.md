@@ -25,32 +25,81 @@ Do not put real secrets in files committed to the repo.
 
 ## Expected runtime tooling
 
-The exact implementation stack is still being reconciled from active branches, but local tooling should assume:
+Local tooling assumes:
 
-- Python 3.12+ for service scripts and validators.
-- Node.js 20+ or 22+ for UI/dashboard and JavaScript tooling.
-- GitHub Actions for CI once workflows are accepted.
-- Optional Ubuntu worker for local media jobs.
+- Python 3.12+ for the no-provider API service, service scripts, validators, and E2E tests.
+- Node.js 22 for the UI/dashboard build.
+- GitHub Actions for baseline validation, no-provider E2E, and dashboard build checks.
+- Optional Ubuntu worker for local media jobs in a later sprint.
+
+## Sprint 4 backend API
+
+The no-provider backend is implemented with the Python standard library:
+
+```bash
+python services/content_engine_api.py
+```
+
+Default endpoint:
+
+```text
+http://127.0.0.1:8080
+```
+
+The backend persists local state here unless overridden:
+
+```text
+.content-engine/state/content-engine-state.json
+```
+
+The backend supports the Sprint 4 workflow rails:
+
+- create project scaffold
+- create idea intake
+- create generation job
+- fetch preview
+- fetch traceability
+- approve/reject/request revision/supersede
+- export approved artifact package
+- fetch readiness
+- fetch artifact inventory
+
+## Dashboard with backend API
+
+The dashboard still supports mock fallback. To point it at the local backend, set:
+
+```bash
+VITE_CONTENT_ENGINE_API_BASE_URL=http://127.0.0.1:8080
+```
+
+Then run:
+
+```bash
+cd ui/content-engine-dashboard
+npm install
+npm run dev
+```
+
+If `VITE_CONTENT_ENGINE_API_BASE_URL` is not set, the dashboard uses the built-in mock client.
 
 ## Safe first checks
 
-After Sprint 0, the repo should support checks in this order:
+Run these checks before changing provider behavior:
 
 ```bash
-# inspect project and configuration docs
-ls
-ls docs
+python scripts/validate_repo_baseline.py
+python tests/e2e/test_no_provider_manuscript_to_export.py
 
-# no-provider validation placeholder
-# exact commands will be added by Sprint 2 API/testing work
-
-# expected future checks
-python -m pytest
-npm test
+cd ui/content-engine-dashboard
+npm install
 npm run build
 ```
 
-Until the test harness is finalized, do not invent one-off validation commands in random folders. Add them through the testing and CI issues.
+The E2E test proves the no-provider workflow:
+
+```text
+manuscript idea -> project scaffold -> idea intake -> generation job -> preview -> traceability -> review gate -> approved export -> inventory/readiness
+```
 
 ## Provider use policy
 
@@ -61,6 +110,22 @@ Provider adapters must never call paid services by default. Live provider calls 
 3. Dry-run disabled where appropriate.
 4. Cost estimate or unknown-cost warning.
 5. Manual approval for expensive jobs.
+
+## Launch provider placeholders
+
+`.env.example` includes placeholders for:
+
+- OpenAI
+- Azure OpenAI
+- Azure Speech
+- ElevenLabs
+- Runway
+- Luma
+- local worker
+- local TTS
+- ComfyUI
+
+Real keys belong in local `.env.local`, GitHub Actions secrets, or deployment secret stores. They must not be committed.
 
 ## Local worker use policy
 
@@ -87,13 +152,14 @@ Do not merge divergent branches wholesale. Split imports into small PRs by subsy
 
 Generated outputs should not land directly in final project folders. Use draft/review/approved states once the storage policy is implemented.
 
-Expected future local paths:
+Expected local paths:
 
 ```text
 .content-engine/drafts/
 .content-engine/artifacts/
 .content-engine/exports/
 .content-engine/diagnostics/
+.content-engine/state/
 ```
 
 These paths should be treated as generated runtime output, not canonical source files.
@@ -107,10 +173,12 @@ These paths should be treated as generated runtime output, not canonical source 
 
 ## Related issues
 
-- #58 Branch reconciliation
-- #59 Provider configuration
-- #60 Artifact storage and retention
-- #61 API/OpenAPI contract
-- #62 Testing strategy
-- #63 CI/CD
-- #67 Developer front door
+- #79 OpenAPI parity
+- #80 Backend persistence
+- #81 API-driven E2E
+- #87 Dashboard build/typecheck CI
+- #82 Provider-neutral deliverable package contract
+- #83 Provider adapters and dry-run fakes
+- #84 Video package export adapters
+- #85 Local Ubuntu worker contract
+- #86 Branch reconciliation
