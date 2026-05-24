@@ -48,6 +48,56 @@ Goal: make the Ubuntu media workstation a controlled worker for local processing
 
 Goal: apply the engine consistently to Lantern Protocol, The Sovereign Exception, and future story projects.
 
+## Sprint 9: External Event Ingestion and Webhook Hardening
+
+Goal: add inbound provider event handling, starting with ElevenLabs webhooks for transcription completion and voice lifecycle notices.
+
+Key tracking issues:
+
+- #103 ElevenLabs webhook receiver and inbound provider event contract
+- #104 Webhook security, replay protection, and provider event diagnostics
+
+Required outcomes:
+
+- Public HTTPS webhook route convention documented for local tunnel, Azure-hosted, and production deployments.
+- Provider events normalized into a canonical event model.
+- Webhook payloads correlated to projects, jobs, artifacts, chapters, scenes, or audio assets.
+- Duplicate and replayed callbacks handled idempotently.
+- Webhook diagnostics added without logging secrets.
+- CI remains no-provider and uses deterministic fixtures.
+
+## Sprint 10: RC Readiness, Recommendation Registry, and Operating-Loop Integration
+
+Goal: expose recommendations and sprint candidates in a machine-readable way and produce a release-candidate readiness report for Content Engine.
+
+Key tracking issues:
+
+- #102 Open recommendations and sprint candidates for Christina operating loop
+- #105 Recommendation registry and RC readiness report
+
+Required outcomes:
+
+- Recommendation registry format documented.
+- Open recommendations mapped to GitHub issues where possible.
+- Duplicate-detection keys prevent repeated issue creation.
+- RC status report covers repo hygiene, CI, UI workflow, API workflow, provider safety, webhook readiness, artifact traceability, rights/release gates, docs, and deployment.
+- Export pattern supports SignalForge and Christina/Lantern review loops.
+
+## RC Hardening Lane
+
+Goal: convert the engine from feature-complete candidate to release candidate.
+
+Required gates:
+
+- Baseline validation and no-provider E2E pass in CI.
+- Dashboard build passes in CI.
+- Provider calls remain disabled by default in CI and local safe mode.
+- Every generated artifact has source traceability and review status.
+- Export packages enforce approval and rights/release gates.
+- Webhooks are secure, idempotent, and diagnosable.
+- Open PRs and legacy branch content are reconciled before large content import.
+- A current RC readiness report exists under `docs/reports/`.
+
 ## Execution rule
 
-Later sprints depend on the Sprint 0 and Sprint 1 foundations. Build the contracts before importing large branches or implementing provider-specific behavior.
+Later sprints depend on the Sprint 0 and Sprint 1 foundations. Build the contracts before importing large branches or implementing provider-specific behavior. Provider integrations, webhooks, and worker jobs must default to deterministic dry-run behavior until explicitly enabled for live use.
