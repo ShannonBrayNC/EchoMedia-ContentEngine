@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/generated-asset-manifest.schema.json",
+  "title": "Generated Asset Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "manifestId", "projectId", "artifacts"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "manifestId": { "type": "string", "minLength": 1 },
+    "projectId": { "type": "string", "minLength": 1 },
+    "packageId": { "type": "string" },
+    "generationJobId": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/artifact" }
+    },
+    "metadata": { "type": "object", "additionalProperties": true }
+  },
+  "$defs": {
+    "artifact": {
+      "type": "object",
+      "required": ["artifactId", "artifactType", "state", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "artifactId": { "type": "string" },
+        "artifactType": { "type": "string", "enum": ["text", "markdown", "json", "image", "audio", "video", "subtitle", "timeline", "manifest", "package", "log", "other"] },
+        "state": { "type": "string", "enum": ["draft", "review", "approved", "exported", "released", "failed", "superseded"] },
+        "path": { "type": "string" },
+        "externalUri": { "type": "string" },
+        "hash": { "type": "string" },
+        "mimeType": { "type": "string" },
+        "sizeBytes": { "type": "integer", "minimum": 0 },
+        "provider": { "type": "string" },
+        "exportProfile": { "type": "string" },
+        "sourceRefs": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" }, "default": [] },
+        "contextManifestId": { "type": "string" },
+        "promptTemplateId": { "type": "string" },
+        "promptTemplateVersion": { "type": "string" },
+        "requestHash": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "review": { "$ref": "#/$defs/review" },
+        "rights": { "$ref": "#/$defs/rights" },
+        "metadata": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": ["sourceType", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceType": { "type": "string" },
+        "path": { "type": "string" },
+        "hash": { "type": "string" },
+        "anchor": { "type": "string" }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": { "type": "string", "enum": ["not-reviewed", "in-review", "approved", "rejected", "released"] },
+        "reviewer": { "type": "string" },
+        "reviewedAt": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "commercialUseAllowed": { "type": "boolean" },
+        "voiceConsentVerified": { "type": "boolean" },
+        "likenessRightsVerified": { "type": "boolean" },
+        "providerTermsReviewed": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
