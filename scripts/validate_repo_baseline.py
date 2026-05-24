@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the Sprint 2 repository baseline without external provider calls."""
+"""Validate the repository baseline without external provider calls."""
 
 from __future__ import annotations
 
@@ -23,6 +23,7 @@ REQUIRED_FILES = [
     "docs/api-contract.md",
     "docs/generation-job-and-review-gate.md",
     "docs/testing-strategy.md",
+    "docs/ui-workflow-redesign.md",
     "docs/sprint-plan.md",
     "docs/reports/branch-reconciliation-2026-05-23.md",
     "openapi/content-engine.openapi.yaml",
@@ -31,7 +32,16 @@ REQUIRED_FILES = [
     "schemas/voice-package.schema.json",
     "schemas/scene-timeline.schema.json",
     "schemas/template-record.schema.json",
-    "schemas/generation-job.schema.json"
+    "schemas/generation-job.schema.json",
+    "ui/content-engine-dashboard/README.md",
+    "ui/content-engine-dashboard/package.json",
+    "ui/content-engine-dashboard/index.html",
+    "ui/content-engine-dashboard/tsconfig.json",
+    "ui/content-engine-dashboard/vite.config.ts",
+    "ui/content-engine-dashboard/src/api.ts",
+    "ui/content-engine-dashboard/src/App.tsx",
+    "ui/content-engine-dashboard/src/main.tsx",
+    "ui/content-engine-dashboard/src/styles.css"
 ]
 
 SCHEMA_FILES = [
@@ -71,7 +81,13 @@ def main() -> None:
         if term not in openapi_text:
             fail(f"OpenAPI contract missing expected term: {term}")
 
-    print("Sprint 2 repo baseline validation passed.")
+    app_text = (ROOT / "ui/content-engine-dashboard/src/App.tsx").read_text(encoding="utf-8")
+    required_ui_terms = ["Validate", "Generate draft", "Status rail", "Approve", "Export package"]
+    for term in required_ui_terms:
+        if term not in app_text:
+            fail(f"Dashboard missing expected UI term: {term}")
+
+    print("Repository baseline validation passed.")
 
 
 if __name__ == "__main__":
