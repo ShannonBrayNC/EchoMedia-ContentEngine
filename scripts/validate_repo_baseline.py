@@ -21,6 +21,7 @@ REQUIRED_FILES = [
     "docs/context-assembly.md",
     "docs/legacy-artifact-migration-plan.md",
     "docs/new-project-creation-workflow.md",
+    "docs/idea-intake-workflow.md",
     "docs/api-contract.md",
     "docs/generation-job-and-review-gate.md",
     "docs/testing-strategy.md",
@@ -35,6 +36,7 @@ REQUIRED_FILES = [
     "schemas/template-record.schema.json",
     "schemas/generation-job.schema.json",
     "schemas/project-scaffold.schema.json",
+    "schemas/idea-intake.schema.json",
     "ui/content-engine-dashboard/README.md",
     "ui/content-engine-dashboard/package.json",
     "ui/content-engine-dashboard/index.html",
@@ -53,13 +55,21 @@ SCHEMA_FILES = [
     "schemas/scene-timeline.schema.json",
     "schemas/template-record.schema.json",
     "schemas/generation-job.schema.json",
-    "schemas/project-scaffold.schema.json"
+    "schemas/project-scaffold.schema.json",
+    "schemas/idea-intake.schema.json"
 ]
 
 
 def fail(message: str) -> None:
     print(f"ERROR: {message}")
     sys.exit(1)
+
+
+def require_terms(path: str, terms: list[str]) -> None:
+    text = (ROOT / path).read_text(encoding="utf-8")
+    for term in terms:
+        if term not in text:
+            fail(f"{path} missing expected term: {term}")
 
 
 def main() -> None:
@@ -78,31 +88,9 @@ def main() -> None:
         if "title" not in data:
             fail(f"Schema file lacks title: {schema_path}")
 
-    openapi_text = (ROOT / "openapi/content-engine.openapi.yaml").read_text(encoding="utf-8")
-    required_openapi_terms = ["openapi:", "/health:", "/projects:", "/generation/jobs:", "components:"]
-    for term in required_openapi_terms:
-        if term not in openapi_text:
-            fail(f"OpenAPI contract missing expected term: {term}")
-
-    app_text = (ROOT / "ui/content-engine-dashboard/src/App.tsx").read_text(encoding="utf-8")
-    required_ui_terms = [
-        "Create New Project",
-        "Create project scaffold",
-        "Validate",
-        "Generate draft",
-        "Status rail",
-        "Approve",
-        "Export package"
-    ]
-    for term in required_ui_terms:
-        if term not in app_text:
-            fail(f"Dashboard missing expected UI term: {term}")
-
-    api_text = (ROOT / "ui/content-engine-dashboard/src/api.ts").read_text(encoding="utf-8")
-    required_api_terms = ["ProjectScaffold", "createProjectScaffold", "starterArtifacts", "nextSteps"]
-    for term in required_api_terms:
-        if term not in api_text:
-            fail(f"Dashboard API missing expected project scaffold term: {term}")
+    require_terms("openapi/content-engine.openapi.yaml", ["openapi:", "/health:", "/projects:", "/generation/jobs:", "components:"])
+    require_terms("ui/content-engine-dashboard/src/App.tsx", ["Create New Project", "Create project scaffold", "Load Ideas", "Create idea intake draft", "Validate", "Generate draft", "Status rail", "Approve", "Export package"])
+    require_terms("ui/content-engine-dashboard/src/api.ts", ["ProjectScaffold", "createProjectScaffold", "IdeaIntake", "createIdeaIntake", "starterArtifacts", "nextSteps"])
 
     print("Repository baseline validation passed.")
 
