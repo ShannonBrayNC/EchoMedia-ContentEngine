@@ -99,12 +99,14 @@ h3 {
 }
 
 .project-create-grid,
+.idea-grid,
 .workspace-grid {
   display: grid;
   gap: 20px;
 }
 
-.project-create-grid {
+.project-create-grid,
+.idea-grid {
   grid-template-columns: minmax(320px, 0.9fr) minmax(320px, 1.1fr);
   margin-bottom: 20px;
 }
@@ -121,7 +123,9 @@ h3 {
 .status-panel,
 .preview-panel,
 .create-panel,
-.scaffold-panel {
+.scaffold-panel,
+.idea-panel,
+.idea-output-panel {
   display: grid;
   align-content: start;
   gap: 14px;
@@ -267,7 +271,8 @@ button:disabled {
 @media (max-width: 1100px) {
   .hero,
   .workspace-grid,
-  .project-create-grid {
+  .project-create-grid,
+  .idea-grid {
     grid-template-columns: 1fr;
     display: grid;
   }
