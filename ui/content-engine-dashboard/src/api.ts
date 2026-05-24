@@ -7,6 +7,21 @@ export type ProjectSummary = {
   exportTargets: string[];
 };
 
+export type ProjectScaffoldRequest = {
+  displayTitle: string;
+  projectId: string;
+  universe: string;
+  storyType: string;
+  targetFormats: string[];
+};
+
+export type ProjectScaffold = {
+  project: ProjectSummary;
+  folders: string[];
+  starterArtifacts: Array<{ artifactType: string; path: string; state: string; description: string }>;
+  nextSteps: string[];
+};
+
 export type JobStatus =
   | 'draft-request'
   | 'queued'
@@ -49,21 +64,24 @@ export type CreateGenerationJobRequest = {
   dryRun: boolean;
 };
 
+const supportedGenerationTypes = [
+  'idea-intake',
+  'production-package',
+  'screenplay-scene',
+  'storyboard-pack',
+  'visual-prompt-pack',
+  'voice-script',
+  'video-package',
+  'pitch-package'
+];
+
 const mockProjects: ProjectSummary[] = [
   {
     projectId: 'lantern-protocol',
     displayTitle: 'Lantern Protocol',
     status: 'active',
     rootPath: 'projects/lantern-protocol',
-    supportedGenerationTypes: [
-      'production-package',
-      'screenplay-scene',
-      'storyboard-pack',
-      'visual-prompt-pack',
-      'voice-script',
-      'video-package',
-      'pitch-package'
-    ],
+    supportedGenerationTypes,
     exportTargets: ['generic-json', 'openai-video', 'runway', 'luma', 'elevenlabs', 'azure-speech', 'openai-audio']
   },
   {
@@ -71,13 +89,92 @@ const mockProjects: ProjectSummary[] = [
     displayTitle: 'The Sovereign Exception',
     status: 'planning',
     rootPath: 'projects/sovereign-exception',
-    supportedGenerationTypes: ['production-package', 'screenplay-scene', 'video-package', 'pitch-package'],
+    supportedGenerationTypes: ['idea-intake', 'production-package', 'screenplay-scene', 'video-package', 'pitch-package'],
     exportTargets: ['generic-json', 'openai-video', 'runway']
   }
 ];
 
 export async function listProjects(): Promise<ProjectSummary[]> {
   return mockProjects;
+}
+
+export function createSlug(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+export async function createProjectScaffold(request: ProjectScaffoldRequest): Promise<ProjectScaffold> {
+  const projectId = createSlug(request.projectId || request.displayTitle);
+  const rootPath = `projects/${projectId}`;
+  const folders = [
+    'canon',
+    'characters',
+    'story',
+    'manuscript',
+    'storyboards',
+    'visual-bible',
+    'screenplay',
+    'movie-generation',
+    'audio',
+    'pitch',
+    'reports'
+  ];
+
+  const project: ProjectSummary = {
+    projectId,
+    displayTitle: request.displayTitle,
+    status: 'planning',
+    rootPath,
+    supportedGenerationTypes,
+    exportTargets: request.targetFormats.length ? request.targetFormats : ['generic-json']
+  };
+
+  return {
+    project,
+    folders: folders.map((folder) => `${rootPath}/${folder}/`),
+    starterArtifacts: [
+      {
+        artifactType: 'project-manifest',
+        path: `${rootPath}/project.json`,
+        state: 'planned',
+        description: 'Project metadata and registry entry seed.'
+      },
+      {
+        artifactType: 'idea-intake',
+        path: `${rootPath}/story/idea-intake.md`,
+        state: 'planned',
+        description: 'Raw concept capture before canon promotion.'
+      },
+      {
+        artifactType: 'canon-seed',
+        path: `${rootPath}/canon/canon-seed.md`,
+        state: 'planned',
+        description: 'Initial reviewed world rules and continuity facts.'
+      },
+      {
+        artifactType: 'character-seed',
+        path: `${rootPath}/characters/character-seed.md`,
+        state: 'planned',
+        description: 'Initial character list and development notes.'
+      },
+      {
+        artifactType: 'readiness-checklist',
+        path: `${rootPath}/reports/readiness-checklist.md`,
+        state: 'planned',
+        description: 'Checklist showing what remains before project readiness reaches 100%.'
+      }
+    ],
+    nextSteps: ['Load idea intake', 'Add canon seed', 'Add character seed', 'Generate outline', 'Run readiness check']
+  };
+}
+
+export function appendMockProject(project: ProjectSummary): void {
+  if (!mockProjects.some((existing) => existing.projectId === project.projectId)) {
+    mockProjects.push(project);
+  }
 }
 
 export async function validateGenerationRequest(request: CreateGenerationJobRequest): Promise<string[]> {
