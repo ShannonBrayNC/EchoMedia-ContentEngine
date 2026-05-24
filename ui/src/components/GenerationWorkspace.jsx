@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import GenerationJobHistoryPanel from './GenerationJobHistoryPanel.jsx';
 import ProjectPicker from './ProjectPicker.jsx';
 import SceneCardWorkspace, { buildSceneCardDestination } from './SceneCardWorkspace.jsx';
 import WorkflowStatusRail from './WorkflowStatusRail.jsx';
@@ -11,6 +12,15 @@ import {
 } from '../lib/artifactTraceability.js';
 import { buildSceneCardDraft } from '../lib/sceneCardDraft.js';
 import { completeGenerationJob, createSceneCardGenerationJob, failGenerationJob } from '../lib/generationJob.js';
+import {
+  getGenerationJobsForProject,
+  initializeGenerationJobHistory,
+  markGenerationJobApproved,
+  markGenerationJobExported,
+  markGenerationJobNeedsReview,
+  markGenerationJobSuperseded,
+  upsertGenerationJob
+} from '../lib/generationJobHistory.js';
 import {
   approveReviewGate,
   buildSceneCardSaveManifest,
@@ -224,7 +234,7 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
           job_id: generationJob.job_id,
           state: generationJob.state,
           action: generationJob.action,
-          attempt: 1
+          attempt: generationJob.attempt || 1
         }
       : undefined,
     review: reviewGate
@@ -287,10 +297,12 @@ export default function GenerationWorkspace() {
   const [contextValidation, setContextValidation] = useState(null);
   const [draftArtifact, setDraftArtifact] = useState(null);
   const [generationJob, setGenerationJob] = useState(null);
+  const [generationJobHistory, setGenerationJobHistory] = useState([]);
   const [reviewGate, setReviewGate] = useState(null);
   const [traceability, setTraceability] = useState(null);
   const [overwriteConfirmed, setOverwriteConfirmed] = useState(false);
   const selectedProject = getProjectBySlug(selectedSlug);
+  const projectJobHistory = getGenerationJobsForProject(generationJobHistory, selectedProject?.slug);
   const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate, traceability);
 
   function resetDraftState() {
@@ -300,6 +312,11 @@ export default function GenerationWorkspace() {
     setReviewGate(null);
     setTraceability(null);
     setOverwriteConfirmed(false);
+  }
+
+  function setCurrentGenerationJob(nextJob) {
+    setGenerationJob(nextJob);
+    setGenerationJobHistory((current) => upsertGenerationJob(current, nextJob));
   }
 
   function handleSelectProject(slug) {
@@ -359,24 +376,33 @@ export default function GenerationWorkspace() {
         generationJob: completedJob,
         destinationPath
       });
+      const needsReviewJob = markGenerationJobNeedsReview(
+        initializeGenerationJobHistory(completedJob)[0],
+        pendingReviewGate
+      );
       const trace = attachTraceabilityValidation(
         createSceneCardTraceability({
           project: selectedProject,
           draftArtifact: draft,
-          generationJob: completedJob,
+          generationJob: needsReviewJob,
           reviewGate: pendingReviewGate,
           destinationPath,
           sourceNotes
         })
       );
 
-      setGenerationJob(completedJob);
+      if (generationJob && generationJob.job_id !== needsReviewJob.job_id) {
+        setGenerationJobHistory((current) => upsertGenerationJob(current, markGenerationJobSuperseded(generationJob, needsReviewJob.job_id)));
+      }
+
+      setCurrentGenerationJob(needsReviewJob);
       setDraftArtifact(draft);
       setReviewGate(pendingReviewGate);
       setTraceability(trace);
       setOverwriteConfirmed(false);
     } catch (error) {
-      setGenerationJob(failGenerationJob(initialJob, error));
+      const failedJob = initializeGenerationJobHistory(failGenerationJob(initialJob, error))[0];
+      setCurrentGenerationJob(failedJob);
       setDraftArtifact(null);
       setReviewGate(null);
       setTraceability(null);
@@ -394,7 +420,10 @@ export default function GenerationWorkspace() {
       return;
     }
 
-    updateReviewAndTrace(approveReviewGate(reviewGate, 'Approved from artifact preview workspace.'));
+    const approvedReview = approveReviewGate(reviewGate, 'Approved from artifact preview workspace.');
+    const approvedJob = markGenerationJobApproved(generationJob, approvedReview);
+    setCurrentGenerationJob(approvedJob);
+    updateReviewAndTrace(approvedReview);
   }
 
   function handleRejectDraft() {
@@ -431,7 +460,9 @@ export default function GenerationWorkspace() {
       overwriteConfirmed
     });
     const savedReviewGate = markReviewGateSaved(reviewGate, saveManifest);
+    const exportedJob = markGenerationJobExported(generationJob, saveManifest);
 
+    setCurrentGenerationJob(exportedJob);
     setReviewGate(savedReviewGate);
     setTraceability((current) => attachSaveManifestToTraceability(refreshTraceabilityReview(current, savedReviewGate), saveManifest));
   }
@@ -473,6 +504,8 @@ export default function GenerationWorkspace() {
             onSaveApprovedDraft={handleSaveApprovedDraft}
           />
         </div>
+
+        <GenerationJobHistoryPanel jobs={projectJobHistory} />
       </div>
     </main>
   );
