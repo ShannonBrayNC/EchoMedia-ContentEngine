@@ -2,10 +2,12 @@ import { useEffect, useMemo, useState } from 'react';
 import {
   ArtifactSummary,
   GenerationJob,
+  IdeaIntake,
   ProjectScaffold,
   ProjectSummary,
   appendMockProject,
   approveArtifact,
+  createIdeaIntake,
   createProjectScaffold,
   createSlug,
   createGenerationJob,
@@ -34,6 +36,9 @@ function App() {
   const [newProjectStoryType, setNewProjectStoryType] = useState('novel-to-film');
   const [newProjectTargets, setNewProjectTargets] = useState('generic-json, openai-video, runway');
   const [scaffold, setScaffold] = useState<ProjectScaffold | null>(null);
+  const [rawIdea, setRawIdea] = useState('');
+  const [ideaDirection, setIdeaDirection] = useState('Extract the strongest story engine, canon candidates, character seeds, and production roadmap.');
+  const [ideaIntake, setIdeaIntake] = useState<IdeaIntake | null>(null);
 
   useEffect(() => {
     listProjects().then((items) => {
@@ -109,7 +114,39 @@ function App() {
     setValidationMessages(['New project scaffold created in mock mode. Backend persistence will be added later.']);
     setJob(null);
     setArtifact(null);
+    setIdeaIntake(null);
     setReviewMessage('New project created. Start with idea intake, then run readiness checks.');
+  }
+
+  async function handleCreateIdeaIntake() {
+    if (!selectedProjectId) {
+      setValidationMessages(['Select or create a project before loading idea intake.']);
+      return;
+    }
+    if (!rawIdea.trim()) {
+      setValidationMessages(['Paste raw idea notes before creating idea intake.']);
+      return;
+    }
+
+    const intake = await createIdeaIntake({
+      projectId: selectedProjectId,
+      rawInput: rawIdea,
+      direction: ideaDirection
+    });
+
+    setIdeaIntake(intake);
+    setArtifact({
+      artifactId: intake.intakeId,
+      projectId: intake.projectId,
+      artifactType: 'idea-intake',
+      state: intake.state,
+      path: `${selectedProject?.rootPath ?? `projects/${selectedProjectId}`}/story/idea-intake.md`,
+      manifestId: `manifest-${intake.intakeId}`,
+      preview: intake.preview
+    });
+    setArtifactType('idea-intake');
+    setReviewMessage('Idea intake draft created. Review it before promoting anything to canon.');
+    setValidationMessages(['Idea intake created in mock mode. It remains draft/review context, not canon.']);
   }
 
   async function handleApprove() {
@@ -133,7 +170,7 @@ function App() {
           <p className="eyebrow">EchoMedia Content Engine</p>
           <h1>Generation Workspace</h1>
           <p className="hero-copy">
-            Create a project, generate a draft artifact, review it, then approve it for export. Sprint 3 runs in mock API mode.
+            Create a project, load ideas, generate a draft artifact, review it, then approve it for export. Sprint 3 runs in mock API mode.
           </p>
         </div>
         <div className="mode-card" aria-label="Runtime mode">
@@ -224,6 +261,60 @@ function App() {
             </div>
           ) : (
             <p className="empty-state">Create a project to see the scaffold summary, starter files, and next steps.</p>
+          )}
+        </section>
+      </section>
+
+      <section className="idea-grid" aria-label="Idea intake workflow">
+        <section className="panel idea-panel" aria-labelledby="idea-heading">
+          <h2 id="idea-heading">Load Ideas</h2>
+          <p className="panel-copy">Paste rough notes, fragments, or a seed concept. The intake draft stays out of canon until reviewed.</p>
+
+          <label htmlFor="raw-idea">Raw idea notes</label>
+          <textarea
+            id="raw-idea"
+            value={rawIdea}
+            onChange={(event) => setRawIdea(event.target.value)}
+            rows={8}
+            placeholder="Paste the messy spark here: premise, characters, scenes, themes, politics, technology, emotional stakes..."
+          />
+
+          <label htmlFor="idea-direction">AI structuring direction</label>
+          <textarea
+            id="idea-direction"
+            value={ideaDirection}
+            onChange={(event) => setIdeaDirection(event.target.value)}
+            rows={3}
+          />
+
+          <button type="button" className="primary" onClick={handleCreateIdeaIntake}>
+            Create idea intake draft
+          </button>
+        </section>
+
+        <section className="panel idea-output-panel" aria-labelledby="idea-output-heading">
+          <h2 id="idea-output-heading">Idea intake output</h2>
+          {ideaIntake ? (
+            <div className="scaffold-summary">
+              <strong>{ideaIntake.intakeId}</strong>
+              <span>State: {ideaIntake.state}</span>
+              <h3>Summary</h3>
+              <p>{ideaIntake.summary}</p>
+              <h3>Artifact roadmap</h3>
+              <ol>
+                {ideaIntake.artifactRoadmap.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ol>
+              <h3>Next steps</h3>
+              <ol>
+                {ideaIntake.nextSteps.map((step) => (
+                  <li key={step}>{step}</li>
+                ))}
+              </ol>
+            </div>
+          ) : (
+            <p className="empty-state">Load an idea to see structured story candidates and next steps.</p>
           )}
         </section>
       </section>
