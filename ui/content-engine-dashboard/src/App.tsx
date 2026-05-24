@@ -12,9 +12,11 @@ import {
   createSlug,
   createGenerationJob,
   getArtifactPreview,
+  getWorkflowStep,
   listProjects,
   rejectArtifact,
-  validateGenerationRequest
+  validateGenerationRequest,
+  workflowSteps
 } from './api';
 import './styles.css';
 
@@ -54,6 +56,8 @@ function App() {
     () => projects.find((project) => project.projectId === selectedProjectId),
     [projects, selectedProjectId]
   );
+
+  const selectedWorkflowStep = getWorkflowStep(artifactType);
 
   async function handleValidate() {
     const messages = await validateGenerationRequest({
@@ -345,12 +349,37 @@ function App() {
 
           <label htmlFor="artifact-type">Artifact type</label>
           <select id="artifact-type" value={artifactType} onChange={(event) => setArtifactType(event.target.value)}>
-            {(selectedProject?.supportedGenerationTypes ?? []).map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
+            {(selectedProject?.supportedGenerationTypes ?? []).map((type) => {
+              const step = getWorkflowStep(type);
+              return (
+                <option key={type} value={type}>
+                  {step ? `${step.order}. ${step.label}` : type}
+                </option>
+              );
+            })}
           </select>
+
+          {selectedWorkflowStep && (
+            <div className="inline-order-hint" aria-label="Selected workflow order">
+              <span className="order-badge">{selectedWorkflowStep.order}</span>
+              <div>
+                <strong>{selectedWorkflowStep.label}</strong>
+                <p>{selectedWorkflowStep.description}</p>
+              </div>
+            </div>
+          )}
+
+          <details className="workflow-details">
+            <summary>Why this order?</summary>
+            <ol className="compact-workflow-list">
+              {workflowSteps.map((step) => (
+                <li key={step.artifactType} className={step.artifactType === artifactType ? 'active' : ''}>
+                  <span className="order-badge">{step.order}</span>
+                  <span>{step.label}</span>
+                </li>
+              ))}
+            </ol>
+          </details>
 
           <label htmlFor="direction">Generation direction</label>
           <textarea
@@ -384,6 +413,15 @@ function App() {
               </li>
             ))}
           </ol>
+
+          {selectedWorkflowStep && (
+            <div className="message-box" role="note">
+              <strong>Current production step</strong>
+              <p>
+                {selectedWorkflowStep.order}. {selectedWorkflowStep.label}: {selectedWorkflowStep.description}
+              </p>
+            </div>
+          )}
 
           <div className="message-box" role="status" aria-live="polite">
             <strong>Validation</strong>
