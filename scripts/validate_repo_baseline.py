@@ -23,6 +23,7 @@ REQUIRED_FILES = [
     "docs/new-project-creation-workflow.md",
     "docs/idea-intake-workflow.md",
     "docs/project-readiness-roadmap.md",
+    "docs/artifact-inventory-and-output-map.md",
     "docs/api-contract.md",
     "docs/generation-job-and-review-gate.md",
     "docs/testing-strategy.md",
@@ -90,9 +91,9 @@ def main() -> None:
             fail(f"Schema file lacks title: {schema_path}")
 
     require_terms("openapi/content-engine.openapi.yaml", ["openapi:", "/health:", "/projects:", "/generation/jobs:", "components:"])
-    require_terms("ui/content-engine-dashboard/src/App.tsx", ["Create New Project", "Create project scaffold", "Load Ideas", "Create idea intake draft", "Project Readiness", "Readiness Roadmap", "Next best action", "Why this order?", "Current production step", "Validate", "Generate draft", "Status rail", "Approve", "Export package"])
-    require_terms("ui/content-engine-dashboard/src/api.ts", ["ProjectScaffold", "createProjectScaffold", "IdeaIntake", "createIdeaIntake", "ProjectReadiness", "ReadinessItem", "getProjectReadiness", "WorkflowStep", "workflowSteps", "getWorkflowStep", "starterArtifacts", "nextSteps"])
-    require_terms("ui/content-engine-dashboard/src/styles.css", ["inline-order-hint", "order-badge", "compact-workflow-list", "readiness-score", "progress-track", "readiness-list", "readiness-item"])
+    require_terms("ui/content-engine-dashboard/src/App.tsx", ["Create New Project", "Create project scaffold", "Load Ideas", "Create idea intake draft", "Project Readiness", "Readiness Roadmap", "Artifact Inventory", "ProjectArtifactInventory", "inventoryByCategory", "Next best action", "Why this order?", "Current production step", "Validate", "Generate draft", "Status rail", "Approve", "Export package"])
+    require_terms("ui/content-engine-dashboard/src/api.ts", ["ProjectScaffold", "createProjectScaffold", "IdeaIntake", "createIdeaIntake", "ProjectReadiness", "ReadinessItem", "getProjectReadiness", "ProjectArtifactInventory", "ArtifactInventoryItem", "getProjectArtifactInventory", "WorkflowStep", "workflowSteps", "getWorkflowStep", "starterArtifacts", "nextSteps"])
+    require_terms("ui/content-engine-dashboard/src/styles.css", ["inline-order-hint", "order-badge", "compact-workflow-list", "readiness-score", "progress-track", "readiness-list", "readiness-item", "artifact-inventory-panel", "inventory-group", "inventory-item", "state-pill", "required-pill"])
 
     print("Repository baseline validation passed.")
 
