@@ -1,4 +1,5 @@
 import React from 'react';
+import { renderSceneCardDraftMarkdown } from '../lib/sceneCardDraft.js';
 
 const SCENE_CARD_ARTIFACT_TYPE = 'scene-card';
 
@@ -19,13 +20,15 @@ export default function SceneCardWorkspace({
   onSourceNotesChange,
   onValidateContext,
   onGenerateDraft,
-  contextValidation
+  contextValidation,
+  draftArtifact
 }) {
   const supportsSceneCard = project?.supported_generation_types?.includes(SCENE_CARD_ARTIFACT_TYPE);
   const destinationPath = buildSceneCardDestination(project);
   const hasDirection = creativeDirection.trim().length > 0;
   const canValidate = Boolean(project && supportsSceneCard && hasDirection);
   const canGenerate = Boolean(canValidate && contextValidation?.status === 'passed');
+  const draftMarkdown = draftArtifact ? renderSceneCardDraftMarkdown(draftArtifact) : '';
 
   return (
     <section className="rounded-2xl border border-slate-700 bg-slate-950/70 p-4 shadow-lg">
@@ -101,6 +104,7 @@ export default function SceneCardWorkspace({
           <p className="mt-2 rounded-xl bg-slate-900 p-3 font-mono text-sm text-slate-300">
             {destinationPath || 'Select a project to preview destination path'}
           </p>
+          <p className="mt-1 text-xs text-slate-500">Draft generation only previews output. Review/save arrives in later implementation slices.</p>
         </div>
 
         {contextValidation ? (
@@ -139,6 +143,46 @@ export default function SceneCardWorkspace({
             Generate scene-card draft
           </button>
         </div>
+
+        {draftArtifact ? (
+          <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-4">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">Draft preview</p>
+                <h3 className="mt-1 text-lg font-semibold text-white">{draftArtifact.title}</h3>
+              </div>
+              <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">
+                preview only
+              </span>
+            </div>
+
+            <div className="mt-4 grid gap-3 md:grid-cols-2">
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Scene ID</p>
+                <p className="mt-1 break-words font-mono text-sm text-slate-300">{draftArtifact.scene_id}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Source refs</p>
+                <p className="mt-1 text-sm text-slate-300">{draftArtifact.source_refs.length}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Shots</p>
+                <p className="mt-1 text-sm text-slate-300">{draftArtifact.shots.length}</p>
+              </div>
+              <div className="rounded-xl bg-slate-950/80 p-3">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Status</p>
+                <p className="mt-1 text-sm text-slate-300">{draftArtifact.status}</p>
+              </div>
+            </div>
+
+            <div className="mt-4">
+              <p className="text-sm font-medium text-slate-300">Markdown preview</p>
+              <pre className="mt-2 max-h-96 overflow-auto rounded-xl bg-slate-950 p-4 text-xs leading-6 text-slate-300">
+                {draftMarkdown}
+              </pre>
+            </div>
+          </div>
+        ) : null}
       </div>
     </section>
   );
