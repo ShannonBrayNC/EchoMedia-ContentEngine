@@ -1,4 +1,5 @@
 import React from 'react';
+import ArtifactPreviewReviewWorkspace from './ArtifactPreviewReviewWorkspace.jsx';
 import { renderSceneCardDraftMarkdown } from '../lib/sceneCardDraft.js';
 import { reviewGateHasBlockingFailures } from '../lib/reviewGate.js';
 import { traceabilityHasBlockers } from '../lib/artifactTraceability.js';
@@ -24,6 +25,7 @@ export default function SceneCardWorkspace({
   onGenerateDraft,
   onApproveDraft,
   onRejectDraft,
+  onRequestRevision,
   onOverwriteConfirmedChange,
   onSaveApprovedDraft,
   contextValidation,
@@ -43,6 +45,7 @@ export default function SceneCardWorkspace({
   const traceBlocked = traceabilityHasBlockers(traceability);
   const canApprove = Boolean(reviewGate && reviewGate.state === 'pending-review' && !reviewBlocked && !traceBlocked);
   const canReject = Boolean(reviewGate && reviewGate.state === 'pending-review');
+  const canRequestRevision = Boolean(reviewGate && reviewGate.state === 'pending-review');
   const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked && !traceBlocked && overwriteConfirmed);
 
   return (
@@ -188,194 +191,23 @@ export default function SceneCardWorkspace({
           </div>
         ) : null}
 
-        {traceability ? (
-          <div className="rounded-2xl border border-fuchsia-500/30 bg-fuchsia-500/5 p-4">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-fuchsia-300">Traceability</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.trace_id}</p>
-              </div>
-              <span className="rounded-full bg-fuchsia-500/15 px-3 py-1 text-xs font-medium text-fuchsia-300">
-                {traceability.validation_status}
-              </span>
-            </div>
-
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Project</p>
-                <p className="mt-1 text-sm text-slate-300">{traceability.project.slug}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Generation job</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.generation.job_id || 'missing'}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Review gate</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{traceability.review.review_id || 'missing'}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Source refs</p>
-                <p className="mt-1 text-sm text-slate-300">{traceability.source_context.source_refs.length}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Warnings</p>
-                <p className="mt-1 text-sm text-slate-300">{traceability.warnings.length}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Blockers</p>
-                <p className="mt-1 text-sm text-slate-300">{traceability.blockers.length}</p>
-              </div>
-            </div>
-
-            {traceability.downstream_ready ? (
-              <div className="mt-4 rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Downstream readiness</p>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {Object.entries(traceability.downstream_ready).map(([key, value]) => (
-                    <span key={key} className="rounded-full bg-slate-800 px-2 py-1 text-xs text-slate-300">
-                      {key}: {value ? 'ready' : 'not ready'}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ) : null}
-
-            {traceability.warnings?.length ? (
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-amber-200">
-                {traceability.warnings.map((warning) => (
-                  <li key={warning}>{warning}</li>
-                ))}
-              </ul>
-            ) : null}
-
-            {traceability.blockers?.length ? (
-              <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-red-200">
-                {traceability.blockers.map((blocker) => (
-                  <li key={blocker}>{blocker}</li>
-                ))}
-              </ul>
-            ) : null}
-          </div>
-        ) : null}
-
-        {reviewGate ? (
-          <div className="rounded-2xl border border-violet-500/30 bg-violet-500/5 p-4">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-violet-300">Review gate</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{reviewGate.review_id}</p>
-              </div>
-              <span className="rounded-full bg-violet-500/15 px-3 py-1 text-xs font-medium text-violet-300">
-                {reviewGate.state}
-              </span>
-            </div>
-
-            <div className="mt-4 grid gap-2">
-              {(reviewGate.checks || []).map((check) => (
-                <div key={check.key} className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-slate-950/80 p-3">
-                  <span className="text-sm text-slate-300">{check.label || check.key}</span>
-                  <span className="rounded-full bg-slate-800 px-2 py-1 text-xs text-slate-300">
-                    {check.status}{check.required ? ' · required' : ''}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <label className="mt-4 flex items-center gap-2 text-sm text-slate-300">
-              <input
-                type="checkbox"
-                checked={Boolean(overwriteConfirmed)}
-                onChange={(event) => onOverwriteConfirmedChange?.(event.target.checked)}
-              />
-              I reviewed the destination path and overwrite risk.
-            </label>
-
-            <div className="mt-4 flex flex-wrap gap-3">
-              <button
-                type="button"
-                className="rounded-xl border border-emerald-400 px-4 py-2 text-sm font-semibold text-emerald-200 disabled:cursor-not-allowed disabled:border-slate-700 disabled:text-slate-500"
-                disabled={!canApprove}
-                onClick={onApproveDraft}
-              >
-                Approve draft
-              </button>
-              <button
-                type="button"
-                className="rounded-xl border border-red-400 px-4 py-2 text-sm font-semibold text-red-200 disabled:cursor-not-allowed disabled:border-slate-700 disabled:text-slate-500"
-                disabled={!canReject}
-                onClick={onRejectDraft}
-              >
-                Reject draft
-              </button>
-              <button
-                type="button"
-                className="rounded-xl bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400"
-                disabled={!canSave}
-                title={overwriteConfirmed ? '' : 'Review and confirm overwrite risk before saving.'}
-                onClick={onSaveApprovedDraft}
-              >
-                Save approved draft
-              </button>
-            </div>
-
-            {reviewGate.state === 'approved' && !overwriteConfirmed ? (
-              <p className="mt-3 text-sm text-amber-200">Approve is complete. Confirm destination/overwrite review to enable save.</p>
-            ) : null}
-
-            {traceBlocked ? (
-              <p className="mt-3 text-sm text-red-200">Traceability blockers must be resolved before save.</p>
-            ) : null}
-
-            {reviewGate.save_manifest ? (
-              <div className="mt-4 rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Save manifest</p>
-                <pre className="mt-2 max-h-48 overflow-auto text-xs leading-6 text-slate-300">
-                  {JSON.stringify(reviewGate.save_manifest, null, 2)}
-                </pre>
-              </div>
-            ) : null}
-          </div>
-        ) : null}
-
-        {draftArtifact ? (
-          <div className="rounded-2xl border border-emerald-500/30 bg-emerald-500/5 p-4">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-emerald-300">Draft preview</p>
-                <h3 className="mt-1 text-lg font-semibold text-white">{draftArtifact.title}</h3>
-              </div>
-              <span className="rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-medium text-emerald-300">
-                preview only
-              </span>
-            </div>
-
-            <div className="mt-4 grid gap-3 md:grid-cols-2">
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Scene ID</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{draftArtifact.scene_id}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Generation job</p>
-                <p className="mt-1 break-words font-mono text-sm text-slate-300">{draftArtifact.generation_job_id || 'not attached'}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Source refs</p>
-                <p className="mt-1 text-sm text-slate-300">{draftArtifact.source_refs.length}</p>
-              </div>
-              <div className="rounded-xl bg-slate-950/80 p-3">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">Shots</p>
-                <p className="mt-1 text-sm text-slate-300">{draftArtifact.shots.length}</p>
-              </div>
-            </div>
-
-            <div className="mt-4">
-              <p className="text-sm font-medium text-slate-300">Markdown preview</p>
-              <pre className="mt-2 max-h-96 overflow-auto rounded-xl bg-slate-950 p-4 text-xs leading-6 text-slate-300">
-                {draftMarkdown}
-              </pre>
-            </div>
-          </div>
-        ) : null}
+        <ArtifactPreviewReviewWorkspace
+          artifact={draftArtifact}
+          artifactMarkdown={draftMarkdown}
+          generationJob={generationJob}
+          reviewGate={reviewGate}
+          traceability={traceability}
+          overwriteConfirmed={overwriteConfirmed}
+          canApprove={canApprove}
+          canReject={canReject}
+          canRequestRevision={canRequestRevision}
+          canSave={canSave}
+          onApprove={onApproveDraft}
+          onReject={onRejectDraft}
+          onRequestRevision={onRequestRevision}
+          onOverwriteConfirmedChange={onOverwriteConfirmedChange}
+          onSaveApproved={onSaveApprovedDraft}
+        />
       </div>
     </section>
   );
