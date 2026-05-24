@@ -7,6 +7,13 @@ export type ProjectSummary = {
   exportTargets: string[];
 };
 
+export type WorkflowStep = {
+  artifactType: string;
+  order: number;
+  label: string;
+  description: string;
+};
+
 export type ProjectScaffoldRequest = {
   displayTitle: string;
   projectId: string;
@@ -86,16 +93,62 @@ export type CreateGenerationJobRequest = {
   dryRun: boolean;
 };
 
-const supportedGenerationTypes = [
-  'idea-intake',
-  'production-package',
-  'screenplay-scene',
-  'storyboard-pack',
-  'visual-prompt-pack',
-  'voice-script',
-  'video-package',
-  'pitch-package'
+export const workflowSteps: WorkflowStep[] = [
+  {
+    artifactType: 'idea-intake',
+    order: 1,
+    label: 'Idea Intake',
+    description: 'Capture rough story material before canon decisions.'
+  },
+  {
+    artifactType: 'production-package',
+    order: 2,
+    label: 'Production Package',
+    description: 'Create the structured package that downstream tools share.'
+  },
+  {
+    artifactType: 'screenplay-scene',
+    order: 3,
+    label: 'Screenplay Scene',
+    description: 'Turn story intent into scene-ready script material.'
+  },
+  {
+    artifactType: 'storyboard-pack',
+    order: 4,
+    label: 'Storyboard Pack',
+    description: 'Plan shots, beats, and visual sequence.'
+  },
+  {
+    artifactType: 'visual-prompt-pack',
+    order: 5,
+    label: 'Visual Prompt Pack',
+    description: 'Prepare image/video generation prompts.'
+  },
+  {
+    artifactType: 'voice-script',
+    order: 6,
+    label: 'Voice Script',
+    description: 'Prepare narration and dialogue voice assets.'
+  },
+  {
+    artifactType: 'video-package',
+    order: 7,
+    label: 'Video Package',
+    description: 'Prepare provider-ready video generation package.'
+  },
+  {
+    artifactType: 'pitch-package',
+    order: 8,
+    label: 'Pitch Package',
+    description: 'Package approved outputs for presentation.'
+  }
 ];
+
+export function getWorkflowStep(artifactType: string): WorkflowStep | undefined {
+  return workflowSteps.find((step) => step.artifactType === artifactType);
+}
+
+const supportedGenerationTypes = workflowSteps.map((step) => step.artifactType);
 
 const mockProjects: ProjectSummary[] = [
   {
