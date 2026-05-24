@@ -21,6 +21,32 @@ import {
 } from '../lib/reviewGate.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
 
+function buildCompletedStages({ contextValidation, draftArtifact, reviewGate, traceability }) {
+  const stages = ['select-project'];
+
+  if (contextValidation?.status === 'passed') {
+    stages.push('validate-context');
+  }
+
+  if (draftArtifact) {
+    stages.push('generate-draft');
+  }
+
+  if (traceability) {
+    stages.push('traceability');
+  }
+
+  if (reviewGate?.state === 'approved' || reviewGate?.state === 'saved') {
+    stages.push('preview-review');
+  }
+
+  if (reviewGate?.state === 'saved') {
+    stages.push('save-commit');
+  }
+
+  return stages;
+}
+
 function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob, reviewGate, traceability) {
   if (!selectedProject) {
     return {
@@ -221,7 +247,7 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
     workflow: {
       current_stage: currentStage,
       stage_status: stageStatus,
-      completed_stages: draftArtifact ? ['select-project', 'validate-context', 'generate-draft'] : ['select-project']
+      completed_stages: buildCompletedStages({ contextValidation, draftArtifact, reviewGate, traceability })
     },
     warnings,
     next_action: nextAction,
