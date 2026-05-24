@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/production-package.schema.json",
+  "title": "EchoMedia Production Package",
+  "type": "object",
+  "required": ["schemaVersion", "packageId", "projectId", "status", "sourceRefs", "scenes"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "packageId": { "type": "string", "minLength": 1 },
+    "projectId": { "type": "string", "minLength": 1 },
+    "title": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "review", "approved", "exported", "released", "superseded"] },
+    "sourceRefs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/sourceRef" },
+      "default": []
+    },
+    "contextManifestId": { "type": "string" },
+    "promptTemplateRefs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/promptTemplateRef" },
+      "default": []
+    },
+    "characters": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/characterRef" },
+      "default": []
+    },
+    "voiceRefs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/voiceRef" },
+      "default": []
+    },
+    "scenes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/scene" }
+    },
+    "assets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/assetRef" },
+      "default": []
+    },
+    "exportProfileRefs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "review": { "$ref": "#/$defs/reviewState" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  },
+  "$defs": {
+    "sourceRef": {
+      "type": "object",
+      "required": ["sourceRefId", "sourceType", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "sourceRefId": { "type": "string" },
+        "sourceType": { "type": "string", "enum": ["canon", "manuscript", "screenplay", "character", "visual-bible", "voice-package", "timeline", "prior-artifact", "other"] },
+        "path": { "type": "string" },
+        "hash": { "type": "string" },
+        "anchor": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "promptTemplateRef": {
+      "type": "object",
+      "required": ["templateId", "version"],
+      "additionalProperties": false,
+      "properties": {
+        "templateId": { "type": "string" },
+        "version": { "type": "string" },
+        "path": { "type": "string" }
+      }
+    },
+    "assetRef": {
+      "type": "object",
+      "required": ["assetId", "assetType", "path"],
+      "additionalProperties": false,
+      "properties": {
+        "assetId": { "type": "string" },
+        "assetType": { "type": "string", "enum": ["text", "markdown", "json", "image", "audio", "video", "subtitle", "timeline", "manifest", "package", "other"] },
+        "path": { "type": "string" },
+        "hash": { "type": "string" },
+        "provider": { "type": "string" },
+        "status": { "type": "string", "enum": ["draft", "review", "approved", "final", "superseded", "failed"] }
+      }
+    },
+    "characterRef": {
+      "type": "object",
+      "required": ["characterId", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "characterId": { "type": "string" },
+        "name": { "type": "string" },
+        "path": { "type": "string" }
+      }
+    },
+    "voiceRef": {
+      "type": "object",
+      "required": ["voiceId", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "voiceId": { "type": "string" },
+        "role": { "type": "string", "enum": ["narrator", "character", "agent", "sound-effect", "music"] },
+        "characterId": { "type": "string" },
+        "provider": { "type": "string" },
+        "providerVoiceId": { "type": "string" }
+      }
+    },
+    "scene": {
+      "type": "object",
+      "required": ["sceneId", "title", "sourceRefs", "shots"],
+      "additionalProperties": false,
+      "properties": {
+        "sceneId": { "type": "string" },
+        "title": { "type": "string" },
+        "summary": { "type": "string" },
+        "sourceRefs": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" } },
+        "locationRef": { "type": "string" },
+        "characterRefs": { "type": "array", "items": { "$ref": "#/$defs/characterRef" }, "default": [] },
+        "timelineRef": { "type": "string" },
+        "shots": { "type": "array", "items": { "$ref": "#/$defs/shot" } },
+        "continuityNotes": { "type": "array", "items": { "type": "string" }, "default": [] }
+      }
+    },
+    "shot": {
+      "type": "object",
+      "required": ["shotId", "sceneId", "prompt", "sourceRefs"],
+      "additionalProperties": false,
+      "properties": {
+        "shotId": { "type": "string" },
+        "sceneId": { "type": "string" },
+        "sourceRefs": { "type": "array", "items": { "$ref": "#/$defs/sourceRef" } },
+        "prompt": { "type": "string" },
+        "negativePrompt": { "type": "string" },
+        "camera": { "type": "string" },
+        "lighting": { "type": "string" },
+        "visualStyleRef": { "type": "string" },
+        "locationRef": { "type": "string" },
+        "characterRefs": { "type": "array", "items": { "$ref": "#/$defs/characterRef" }, "default": [] },
+        "inputImageRefs": { "type": "array", "items": { "$ref": "#/$defs/assetRef" }, "default": [] },
+        "inputVideoRef": { "$ref": "#/$defs/assetRef" },
+        "durationSeconds": { "type": "number", "minimum": 0 },
+        "aspectRatio": { "type": "string" },
+        "size": { "type": "string" },
+        "fps": { "type": "number", "minimum": 1 },
+        "seed": { "type": "integer" },
+        "voiceRefs": { "type": "array", "items": { "$ref": "#/$defs/voiceRef" }, "default": [] },
+        "audioRefs": { "type": "array", "items": { "$ref": "#/$defs/assetRef" }, "default": [] },
+        "dialogueTimingRef": { "$ref": "#/$defs/assetRef" },
+        "subtitleRefs": { "type": "array", "items": { "$ref": "#/$defs/assetRef" }, "default": [] },
+        "soundCueRefs": { "type": "array", "items": { "$ref": "#/$defs/assetRef" }, "default": [] },
+        "exportProfileRefs": { "type": "array", "items": { "type": "string" }, "default": [] }
+      }
+    },
+    "reviewState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": { "type": "string", "enum": ["not-reviewed", "in-review", "approved", "rejected", "released"] },
+        "reviewer": { "type": "string" },
+        "reviewedAt": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
