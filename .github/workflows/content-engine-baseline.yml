@@ -1,0 +1,31 @@
+name: Content Engine Baseline
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  baseline-validation:
+    name: Validate repository baseline
+    runs-on: ubuntu-latest
+    env:
+      CONTENT_ENGINE_NO_PROVIDER_MODE: "true"
+      CONTENT_ENGINE_ENABLE_LIVE_PROVIDERS: "false"
+      CONTENT_ENGINE_DRY_RUN_PROVIDERS: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Sprint 2 baseline
+        run: python scripts/validate_repo_baseline.py
