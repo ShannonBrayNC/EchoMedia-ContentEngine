@@ -20,6 +20,7 @@ REQUIRED_FILES = [
     "docs/artifact-storage-and-manifest-policy.md",
     "docs/context-assembly.md",
     "docs/legacy-artifact-migration-plan.md",
+    "docs/new-project-creation-workflow.md",
     "docs/api-contract.md",
     "docs/generation-job-and-review-gate.md",
     "docs/testing-strategy.md",
@@ -33,6 +34,7 @@ REQUIRED_FILES = [
     "schemas/scene-timeline.schema.json",
     "schemas/template-record.schema.json",
     "schemas/generation-job.schema.json",
+    "schemas/project-scaffold.schema.json",
     "ui/content-engine-dashboard/README.md",
     "ui/content-engine-dashboard/package.json",
     "ui/content-engine-dashboard/index.html",
@@ -50,7 +52,8 @@ SCHEMA_FILES = [
     "schemas/voice-package.schema.json",
     "schemas/scene-timeline.schema.json",
     "schemas/template-record.schema.json",
-    "schemas/generation-job.schema.json"
+    "schemas/generation-job.schema.json",
+    "schemas/project-scaffold.schema.json"
 ]
 
 
@@ -82,10 +85,24 @@ def main() -> None:
             fail(f"OpenAPI contract missing expected term: {term}")
 
     app_text = (ROOT / "ui/content-engine-dashboard/src/App.tsx").read_text(encoding="utf-8")
-    required_ui_terms = ["Validate", "Generate draft", "Status rail", "Approve", "Export package"]
+    required_ui_terms = [
+        "Create New Project",
+        "Create project scaffold",
+        "Validate",
+        "Generate draft",
+        "Status rail",
+        "Approve",
+        "Export package"
+    ]
     for term in required_ui_terms:
         if term not in app_text:
             fail(f"Dashboard missing expected UI term: {term}")
+
+    api_text = (ROOT / "ui/content-engine-dashboard/src/api.ts").read_text(encoding="utf-8")
+    required_api_terms = ["ProjectScaffold", "createProjectScaffold", "starterArtifacts", "nextSteps"]
+    for term in required_api_terms:
+        if term not in api_text:
+            fail(f"Dashboard API missing expected project scaffold term: {term}")
 
     print("Repository baseline validation passed.")
 
