@@ -1,0 +1,498 @@
+{
+  "version": "0.1.0",
+  "profiles": [
+    {
+      "profile_id": "generic-json",
+      "version": "0.1.0",
+      "display_name": "Generic JSON Package",
+      "target_tool": "Generic JSON",
+      "target_category": "generic-json",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package",
+        "feature-package",
+        "pitch-package",
+        "audio-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.project.slug",
+          "description": "Project slug"
+        },
+        {
+          "source_path": "$.scenes[*].scene_id",
+          "description": "Scene identifiers"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Shot visual prompts"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.canon_refs",
+          "description": "Canon references",
+          "severity_if_missing": "warning"
+        },
+        {
+          "source_path": "$.export_targets",
+          "description": "Requested export targets",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "supports_reference_images": true,
+        "supports_audio": true,
+        "supports_dialogue": true
+      },
+      "rendering_rules": [
+        "Preserve canonical structure with minimal transformation.",
+        "Include source_refs, canon_refs, visual_refs, and generation_job_id when present."
+      ],
+      "output": {
+        "format": "json",
+        "file_extension": ".json",
+        "naming_pattern": "{project_slug}-{package_id}-generic.json",
+        "sections": [
+          "metadata",
+          "sources",
+          "characters",
+          "scenes",
+          "shots",
+          "exports"
+        ]
+      },
+      "validation_rules": [
+        "Package must contain at least one scene and one shot.",
+        "Every shot should have a visual_prompt."
+      ]
+    },
+    {
+      "profile_id": "runway",
+      "version": "0.1.0",
+      "display_name": "Runway Scene Prompt Package",
+      "target_tool": "Runway",
+      "target_category": "ai-video",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Shot-level video prompt"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].camera",
+          "description": "Camera direction"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].reference_assets",
+          "description": "Reference images/assets",
+          "severity_if_missing": "warning"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].negative_prompt",
+          "description": "Negative prompt",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9",
+          "9:16",
+          "1:1"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": false,
+        "supports_dialogue": false
+      },
+      "rendering_rules": [
+        "Render one prompt block per shot.",
+        "Keep motion, camera, and lighting separate for review clarity.",
+        "Prioritize cinematic clarity over dense lore."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-runway.md",
+        "sections": [
+          "Scene Summary",
+          "Shot Prompts",
+          "Camera Notes",
+          "Reference Assets",
+          "Negative Prompts"
+        ]
+      },
+      "validation_rules": [
+        "Every exported shot must include visual_prompt and camera.",
+        "Warn if a shot lacks negative_prompt."
+      ]
+    },
+    {
+      "profile_id": "pika",
+      "version": "0.1.0",
+      "display_name": "Pika Video Prompt Package",
+      "target_tool": "Pika",
+      "target_category": "ai-video",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Shot prompt"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].motion",
+          "description": "Motion direction"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.global_style.visual_style",
+          "description": "Overall visual style",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9",
+          "9:16"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": false,
+        "supports_dialogue": false
+      },
+      "rendering_rules": [
+        "Use concise shot prompts with explicit motion cues.",
+        "Keep character and continuity notes separate from the main prompt."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-pika.md",
+        "sections": [
+          "Prompt",
+          "Motion",
+          "Style",
+          "Continuity Notes"
+        ]
+      },
+      "validation_rules": [
+        "Warn if motion is missing.",
+        "Warn if style is missing."
+      ]
+    },
+    {
+      "profile_id": "luma-dream-machine",
+      "version": "0.1.0",
+      "display_name": "Luma / Dream Machine Shot Package",
+      "target_tool": "Luma Dream Machine",
+      "target_category": "ai-video",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Shot-level prompt"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].camera",
+          "description": "Camera movement or framing"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].lighting",
+          "description": "Lighting description"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].duration_seconds",
+          "description": "Requested shot duration",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9",
+          "9:16"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": false,
+        "supports_dialogue": false
+      },
+      "rendering_rules": [
+        "Render each shot as a cinematic prompt with camera and lighting emphasized.",
+        "Keep prompts visually specific and scene-contained."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-luma.md",
+        "sections": [
+          "Shot Prompt",
+          "Camera",
+          "Lighting",
+          "Duration",
+          "Reference Assets"
+        ]
+      },
+      "validation_rules": [
+        "Every exported shot must include visual_prompt, camera, and lighting."
+      ]
+    },
+    {
+      "profile_id": "kling",
+      "version": "0.1.0",
+      "display_name": "Kling Video Prompt Package",
+      "target_tool": "Kling",
+      "target_category": "ai-video",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Video prompt"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].motion",
+          "description": "Motion/action description"
+        },
+        {
+          "source_path": "$.scenes[*].characters",
+          "description": "Character names for consistency"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.characters[*].visual_notes",
+          "description": "Character visual continuity notes",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9",
+          "9:16",
+          "1:1"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": false,
+        "supports_dialogue": false
+      },
+      "rendering_rules": [
+        "Emphasize physical action, subject continuity, and camera movement.",
+        "Include character visual notes when available."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-kling.md",
+        "sections": [
+          "Prompt",
+          "Action/Motion",
+          "Characters",
+          "Camera",
+          "Negative Prompt"
+        ]
+      },
+      "validation_rules": [
+        "Warn if character visual notes are missing for character-heavy scenes."
+      ]
+    },
+    {
+      "profile_id": "sora-style",
+      "version": "0.1.0",
+      "display_name": "Sora-Style Scene Package",
+      "target_tool": "Sora-style video model",
+      "target_category": "ai-video",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package",
+        "feature-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].summary",
+          "description": "Scene summary"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Shot visual prompts"
+        },
+        {
+          "source_path": "$.global_style",
+          "description": "Global style block"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.continuity_notes",
+          "description": "Continuity notes",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9",
+          "9:16"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": true,
+        "supports_dialogue": true
+      },
+      "rendering_rules": [
+        "Render a high-context scene package with story intent, visual continuity, shot plan, camera, and audio notes.",
+        "Use the canonical package as source of truth and avoid tool-specific assumptions."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-sora-style.md",
+        "sections": [
+          "Scene Intent",
+          "Visual Style",
+          "Shot Plan",
+          "Camera and Motion",
+          "Dialogue/Audio",
+          "Continuity Notes",
+          "Negative Constraints"
+        ]
+      },
+      "validation_rules": [
+        "Global style is required.",
+        "Warn if continuity notes are missing."
+      ]
+    },
+    {
+      "profile_id": "elevenlabs",
+      "version": "0.1.0",
+      "display_name": "ElevenLabs Audio Script Package",
+      "target_tool": "ElevenLabs",
+      "target_category": "ai-audio",
+      "input_package_types": [
+        "audio-package",
+        "scene-package",
+        "sequence-package",
+        "feature-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].dialogue_or_narration",
+          "description": "Dialogue or narration text"
+        },
+        {
+          "source_path": "$.characters[*].voice_notes",
+          "description": "Voice notes for speaking characters"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.scenes[*].audio_notes",
+          "description": "Audio direction or sound bed notes",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "supports_reference_images": false,
+        "supports_audio": true,
+        "supports_dialogue": true
+      },
+      "rendering_rules": [
+        "Render by scene and speaker.",
+        "Keep narrator, character dialogue, and direction separated.",
+        "Include pronunciation and performance notes when available."
+      ],
+      "output": {
+        "format": "markdown",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-elevenlabs.md",
+        "sections": [
+          "Voice Cast",
+          "Narration",
+          "Dialogue",
+          "Performance Notes",
+          "Audio Direction"
+        ]
+      },
+      "validation_rules": [
+        "Dialogue or narration is required.",
+        "Warn if voice notes are missing for named speakers."
+      ]
+    },
+    {
+      "profile_id": "storyboard-deck",
+      "version": "0.1.0",
+      "display_name": "Storyboard / Pitch Deck Package",
+      "target_tool": "Storyboard Deck",
+      "target_category": "storyboard",
+      "input_package_types": [
+        "scene-package",
+        "sequence-package",
+        "trailer-package",
+        "pitch-package"
+      ],
+      "required_fields": [
+        {
+          "source_path": "$.scenes[*].summary",
+          "description": "Scene summary"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].description",
+          "description": "Shot descriptions"
+        },
+        {
+          "source_path": "$.scenes[*].shots[*].visual_prompt",
+          "description": "Image prompt for storyboard frame"
+        }
+      ],
+      "optional_fields": [
+        {
+          "source_path": "$.global_style.visual_style",
+          "description": "Deck visual style",
+          "severity_if_missing": "warning"
+        }
+      ],
+      "limits": {
+        "recommended_aspect_ratios": [
+          "16:9"
+        ],
+        "supports_reference_images": true,
+        "supports_audio": false,
+        "supports_dialogue": true
+      },
+      "rendering_rules": [
+        "Render one slide/panel per key shot unless otherwise specified.",
+        "Include prompt, shot purpose, camera notes, and optional dialogue/narration."
+      ],
+      "output": {
+        "format": "deck-outline",
+        "file_extension": ".md",
+        "naming_pattern": "{project_slug}-{package_id}-storyboard-deck.md",
+        "sections": [
+          "Deck Overview",
+          "Storyboard Panels",
+          "Image Prompts",
+          "Speaker/Director Notes"
+        ]
+      },
+      "validation_rules": [
+        "Every storyboard panel must have a shot description and visual prompt."
+      ]
+    }
+  ]
+}
