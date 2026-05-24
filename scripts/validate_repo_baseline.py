@@ -89,8 +89,9 @@ def main() -> None:
             fail(f"Schema file lacks title: {schema_path}")
 
     require_terms("openapi/content-engine.openapi.yaml", ["openapi:", "/health:", "/projects:", "/generation/jobs:", "components:"])
-    require_terms("ui/content-engine-dashboard/src/App.tsx", ["Create New Project", "Create project scaffold", "Load Ideas", "Create idea intake draft", "Validate", "Generate draft", "Status rail", "Approve", "Export package"])
-    require_terms("ui/content-engine-dashboard/src/api.ts", ["ProjectScaffold", "createProjectScaffold", "IdeaIntake", "createIdeaIntake", "starterArtifacts", "nextSteps"])
+    require_terms("ui/content-engine-dashboard/src/App.tsx", ["Create New Project", "Create project scaffold", "Load Ideas", "Create idea intake draft", "Why this order?", "Current production step", "Validate", "Generate draft", "Status rail", "Approve", "Export package"])
+    require_terms("ui/content-engine-dashboard/src/api.ts", ["ProjectScaffold", "createProjectScaffold", "IdeaIntake", "createIdeaIntake", "WorkflowStep", "workflowSteps", "getWorkflowStep", "starterArtifacts", "nextSteps"])
+    require_terms("ui/content-engine-dashboard/src/styles.css", ["inline-order-hint", "order-badge", "compact-workflow-list"])
 
     print("Repository baseline validation passed.")
 
