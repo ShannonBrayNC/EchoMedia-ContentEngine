@@ -54,7 +54,7 @@ function buildSourceRefs(project, sourceNotes) {
   return refs;
 }
 
-export function buildSceneCardDraft({ project, creativeDirection, sourceNotes }) {
+export function buildSceneCardDraft({ project, creativeDirection, sourceNotes, generationJobId }) {
   if (!project) {
     throw new Error('Project is required to build a scene-card draft.');
   }
@@ -71,6 +71,7 @@ export function buildSceneCardDraft({ project, creativeDirection, sourceNotes })
   return {
     artifact_type: 'scene-card',
     artifact_id: sceneId,
+    generation_job_id: generationJobId || null,
     status: 'draft',
     created_at: now,
     project: {
@@ -102,6 +103,7 @@ export function buildSceneCardDraft({ project, creativeDirection, sourceNotes })
     ],
     continuity_notes: [
       'Draft generated from registry project context and user creative direction.',
+      generationJobId ? `Generation job: ${generationJobId}` : 'Generation job metadata was not attached.',
       'Requires review before save or export.',
       'Character, canon, and visual-bible details should be expanded in later implementation slices.'
     ]
@@ -114,6 +116,7 @@ export function renderSceneCardDraftMarkdown(draft) {
     '',
     `Artifact Type: ${draft.artifact_type}`,
     `Artifact ID: ${draft.artifact_id}`,
+    `Generation Job ID: ${draft.generation_job_id || 'not attached'}`,
     `Status: ${draft.status}`,
     `Project: ${draft.project.title} (${draft.project.slug})`,
     `Created: ${draft.created_at}`,
