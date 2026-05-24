@@ -40,7 +40,7 @@ export default function SceneCardWorkspace({
   const reviewBlocked = reviewGateHasBlockingFailures(reviewGate);
   const canApprove = Boolean(reviewGate && reviewGate.state === 'pending-review' && !reviewBlocked);
   const canReject = Boolean(reviewGate && reviewGate.state === 'pending-review');
-  const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked);
+  const canSave = Boolean(reviewGate && reviewGate.state === 'approved' && !reviewBlocked && overwriteConfirmed);
 
   return (
     <section className="rounded-2xl border border-slate-700 bg-slate-950/70 p-4 shadow-lg">
@@ -238,11 +238,16 @@ export default function SceneCardWorkspace({
                 type="button"
                 className="rounded-xl bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400"
                 disabled={!canSave}
+                title={overwriteConfirmed ? '' : 'Review and confirm overwrite risk before saving.'}
                 onClick={onSaveApprovedDraft}
               >
                 Save approved draft
               </button>
             </div>
+
+            {reviewGate.state === 'approved' && !overwriteConfirmed ? (
+              <p className="mt-3 text-sm text-amber-200">Approve is complete. Confirm destination/overwrite review to enable save.</p>
+            ) : null}
 
             {reviewGate.save_manifest ? (
               <div className="mt-4 rounded-xl bg-slate-950/80 p-3">
