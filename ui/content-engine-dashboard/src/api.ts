@@ -35,6 +35,40 @@ export type ProjectReadiness = {
   nextBestAction: string;
 };
 
+export type ArtifactInventoryCategory =
+  | 'idea intake'
+  | 'canon'
+  | 'characters'
+  | 'story outline'
+  | 'manuscript'
+  | 'screenplay'
+  | 'production package'
+  | 'visual prompts'
+  | 'voice packages'
+  | 'timelines'
+  | 'export manifests'
+  | 'release package';
+
+export type ArtifactInventoryItem = {
+  artifactId: string;
+  label: string;
+  category: ArtifactInventoryCategory;
+  artifactType: string;
+  state: 'missing' | 'planned' | 'draft' | 'review' | 'approved' | 'exported' | 'released' | 'stale' | 'superseded';
+  required: boolean;
+  path: string;
+  readinessImpact: string;
+  actions: Array<'preview' | 'review' | 'generate' | 'regenerate' | 'export'>;
+};
+
+export type ProjectArtifactInventory = {
+  projectId: string;
+  items: ArtifactInventoryItem[];
+  requiredCount: number;
+  completeRequiredCount: number;
+  summary: string;
+};
+
 export type ProjectScaffoldRequest = {
   displayTitle: string;
   projectId: string;
@@ -185,6 +219,34 @@ export async function getProjectReadiness(projectId: string, hasScaffold: boolea
     items,
     blockers,
     nextBestAction: firstIncomplete?.nextAction ?? 'All readiness items are complete. Begin release-readiness review.'
+  };
+}
+
+export async function getProjectArtifactInventory(projectId: string, hasScaffold: boolean, hasIdeaIntake: boolean, approvedArtifact?: ArtifactSummary | null): Promise<ProjectArtifactInventory> {
+  const rootPath = mockProjects.find((project) => project.projectId === projectId)?.rootPath ?? `projects/${projectId}`;
+  const items: ArtifactInventoryItem[] = [
+    { artifactId: 'artifact-project-manifest', label: 'Project manifest', category: 'canon', artifactType: 'project-manifest', state: hasScaffold ? 'planned' : 'missing', required: true, path: `${rootPath}/project.json`, readinessImpact: 'Required for structure readiness.', actions: hasScaffold ? ['preview'] : ['generate'] },
+    { artifactId: 'artifact-idea-intake', label: 'Idea intake', category: 'idea intake', artifactType: 'idea-intake', state: hasIdeaIntake ? 'review' : 'missing', required: true, path: `${rootPath}/story/idea-intake.md`, readinessImpact: 'Required before canon, characters, and outline work.', actions: hasIdeaIntake ? ['preview', 'review', 'regenerate'] : ['generate'] },
+    { artifactId: 'artifact-canon-seed', label: 'Canon seed', category: 'canon', artifactType: 'canon-seed', state: 'missing', required: true, path: `${rootPath}/canon/canon-seed.md`, readinessImpact: 'Required before continuity-safe generation.', actions: ['generate'] },
+    { artifactId: 'artifact-character-seed', label: 'Character seed', category: 'characters', artifactType: 'character-seed', state: 'missing', required: true, path: `${rootPath}/characters/character-seed.md`, readinessImpact: 'Required for dialogue, voice, and scene planning.', actions: ['generate'] },
+    { artifactId: 'artifact-story-outline', label: 'Story outline', category: 'story outline', artifactType: 'story-outline', state: 'missing', required: true, path: `${rootPath}/story/story-outline.md`, readinessImpact: 'Required before screenplay and storyboard generation.', actions: ['generate'] },
+    { artifactId: 'artifact-manuscript', label: 'Manuscript draft', category: 'manuscript', artifactType: 'manuscript', state: 'missing', required: false, path: `${rootPath}/manuscript/`, readinessImpact: 'Optional for screenplay-first projects.', actions: ['generate'] },
+    { artifactId: 'artifact-screenplay', label: 'Screenplay scene package', category: 'screenplay', artifactType: 'screenplay-scene', state: 'missing', required: true, path: `${rootPath}/screenplay/`, readinessImpact: 'Required before cinematic video planning.', actions: ['generate'] },
+    { artifactId: 'artifact-production-package', label: 'Production package', category: 'production package', artifactType: 'production-package', state: approvedArtifact?.artifactType === 'production-package' ? 'approved' : 'missing', required: true, path: `${rootPath}/movie-generation/production-package.json`, readinessImpact: 'Required for provider-ready output.', actions: approvedArtifact?.artifactType === 'production-package' ? ['preview', 'review', 'export'] : ['generate'] },
+    { artifactId: 'artifact-visual-prompts', label: 'Visual prompt pack', category: 'visual prompts', artifactType: 'visual-prompt-pack', state: 'missing', required: true, path: `${rootPath}/visual-bible/visual-prompt-pack.json`, readinessImpact: 'Required before image/video provider packages.', actions: ['generate'] },
+    { artifactId: 'artifact-voice-package', label: 'Voice package', category: 'voice packages', artifactType: 'voice-script', state: 'missing', required: true, path: `${rootPath}/audio/voice-package.json`, readinessImpact: 'Required before audio generation.', actions: ['generate'] },
+    { artifactId: 'artifact-timeline', label: 'Scene timeline', category: 'timelines', artifactType: 'scene-timeline', state: 'missing', required: true, path: `${rootPath}/timelines/`, readinessImpact: 'Required before audio/video synchronization.', actions: ['generate'] },
+    { artifactId: 'artifact-export-manifest', label: 'Export manifest', category: 'export manifests', artifactType: 'export-manifest', state: 'missing', required: true, path: `${rootPath}/provider-manifests/`, readinessImpact: 'Required before external provider handoff.', actions: ['export'] },
+    { artifactId: 'artifact-release-package', label: 'Release package', category: 'release package', artifactType: 'release-package', state: 'missing', required: false, path: `${rootPath}/release/`, readinessImpact: 'Created after final approval and rights review.', actions: ['export'] }
+  ];
+  const requiredItems = items.filter((item) => item.required);
+  const completeRequiredCount = requiredItems.filter((item) => ['review', 'approved', 'exported', 'released', 'planned'].includes(item.state)).length;
+  return {
+    projectId,
+    items,
+    requiredCount: requiredItems.length,
+    completeRequiredCount,
+    summary: `${completeRequiredCount} of ${requiredItems.length} required artifacts are present or planned.`
   };
 }
 
