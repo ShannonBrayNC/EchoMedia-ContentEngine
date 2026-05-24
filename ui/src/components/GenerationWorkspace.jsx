@@ -3,9 +3,10 @@ import ProjectPicker from './ProjectPicker.jsx';
 import SceneCardWorkspace, { buildSceneCardDestination } from './SceneCardWorkspace.jsx';
 import WorkflowStatusRail from './WorkflowStatusRail.jsx';
 import { buildSceneCardDraft } from '../lib/sceneCardDraft.js';
+import { completeGenerationJob, createSceneCardGenerationJob, failGenerationJob } from '../lib/generationJob.js';
 import { getDefaultProject, getProjectBySlug, getVisibleProjects } from '../lib/projectRegistry.js';
 
-function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact) {
+function buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob) {
   if (!selectedProject) {
     return {
       rail_id: 'workspace-project-selection',
@@ -56,6 +57,15 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
       action_key: 'select-artifact',
       enabled: false,
       disabled_reason: 'Scene-card is not listed in supported_generation_types.'
+    };
+  } else if (generationJob?.state === 'failed') {
+    currentStage = 'generate-draft';
+    stageStatus = 'failed';
+    nextAction = {
+      label: 'Fix generation error',
+      action_key: 'generate',
+      enabled: false,
+      disabled_reason: generationJob.errors?.[0]?.message || 'Generation failed.'
     };
   } else if (draftArtifact) {
     currentStage = 'preview-review';
@@ -116,6 +126,14 @@ function buildRail(selectedProject, creativeDirection, contextValidation, draftA
       title: draftArtifact?.title,
       destination_path: destinationPath
     },
+    job: generationJob
+      ? {
+          job_id: generationJob.job_id,
+          state: generationJob.state,
+          action: generationJob.action,
+          attempt: 1
+        }
+      : undefined,
     workflow: {
       current_stage: currentStage,
       stage_status: stageStatus,
@@ -157,12 +175,14 @@ export default function GenerationWorkspace() {
   const [sourceNotes, setSourceNotes] = useState('');
   const [contextValidation, setContextValidation] = useState(null);
   const [draftArtifact, setDraftArtifact] = useState(null);
+  const [generationJob, setGenerationJob] = useState(null);
   const selectedProject = getProjectBySlug(selectedSlug);
-  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact);
+  const rail = buildRail(selectedProject, creativeDirection, contextValidation, draftArtifact, generationJob);
 
   function resetDraftState() {
     setContextValidation(null);
     setDraftArtifact(null);
+    setGenerationJob(null);
   }
 
   function handleSelectProject(slug) {
@@ -187,6 +207,7 @@ export default function GenerationWorkspace() {
 
     setContextValidation(validateSceneCardContext(selectedProject, creativeDirection, sourceNotes));
     setDraftArtifact(null);
+    setGenerationJob(null);
   }
 
   function handleGenerateDraft() {
@@ -194,13 +215,30 @@ export default function GenerationWorkspace() {
       return;
     }
 
-    setDraftArtifact(
-      buildSceneCardDraft({
+    const destinationPath = buildSceneCardDestination(selectedProject);
+    const initialJob = createSceneCardGenerationJob({
+      project: selectedProject,
+      creativeDirection,
+      sourceNotes,
+      contextValidation,
+      destinationPath
+    });
+
+    try {
+      const draft = buildSceneCardDraft({
         project: selectedProject,
         creativeDirection,
-        sourceNotes
-      })
-    );
+        sourceNotes,
+        generationJobId: initialJob.job_id
+      });
+
+      const completedJob = completeGenerationJob(initialJob, draft);
+      setGenerationJob(completedJob);
+      setDraftArtifact(draft);
+    } catch (error) {
+      setGenerationJob(failGenerationJob(initialJob, error));
+      setDraftArtifact(null);
+    }
   }
 
   return (
@@ -225,6 +263,7 @@ export default function GenerationWorkspace() {
             sourceNotes={sourceNotes}
             contextValidation={contextValidation}
             draftArtifact={draftArtifact}
+            generationJob={generationJob}
             onCreativeDirectionChange={handleCreativeDirectionChange}
             onSourceNotesChange={handleSourceNotesChange}
             onValidateContext={handleValidateContext}
