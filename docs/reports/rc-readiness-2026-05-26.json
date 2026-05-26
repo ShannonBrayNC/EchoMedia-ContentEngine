@@ -1,0 +1,190 @@
+{
+  "openRecommendations": [
+    {
+      "approvalRequired": true,
+      "approvalStates": [],
+      "duplicateKey": "content-engine:lantern:recommendation-export",
+      "id": "content-engine-rec-content-engine-lantern-recommendation-export-950323dd7e",
+      "linkedIssues": [
+        102
+      ],
+      "notes": "Machine-readable export should prevent duplicate issue creation.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/recommendation-registry.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-lantern-recommendation-export",
+      "source": "lantern-operating-loop",
+      "sourceVerticalOutputs": [],
+      "status": "open",
+      "targetChannel": "signalforge",
+      "targetSprint": "Sprint 10",
+      "title": "Expose open recommendations to Christina and Lantern",
+      "type": "software-change"
+    },
+    {
+      "approvalRequired": true,
+      "approvalStates": [],
+      "duplicateKey": "content-engine:rc:readiness-report",
+      "id": "content-engine-rec-content-engine-rc-readiness-report-19c20a9826",
+      "linkedIssues": [
+        105
+      ],
+      "notes": "Report must summarize readiness areas, blockers, and next actions.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/reports/rc-readiness-2026-05-24.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-rc-readiness-report",
+      "source": "technical-review",
+      "sourceVerticalOutputs": [],
+      "status": "open",
+      "targetChannel": "christina",
+      "targetSprint": "Sprint 10",
+      "title": "Maintain RC readiness report and JSON export",
+      "type": "process-change"
+    },
+    {
+      "approvalRequired": true,
+      "approvalStates": [
+        "required"
+      ],
+      "duplicateKey": "content-engine:lantern:verified-asset-pipeline",
+      "id": "content-engine-rec-content-engine-lantern-verified-asset-pipeline-18ad859881",
+      "linkedIssues": [
+        106
+      ],
+      "notes": "Production-ready assets require rights, consent, approval, manifest, and ETS proof reference.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/lantern/LANTERN_CANON_REGISTRY.md",
+        "docs/lantern/CONSENT_THEME_BIBLE.md",
+        "docs/lantern/LANTERN_ASSET_MANIFEST_SCHEMA.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-lantern-verified-asset-pipeline",
+      "source": "lantern-protocol",
+      "sourceVerticalOutputs": [],
+      "status": "planned",
+      "targetChannel": "signalforge",
+      "targetSprint": "Sprint 10",
+      "title": "Verify canon, consent, rights, and proof gates for Lantern assets",
+      "type": "content-workflow-change"
+    }
+  ],
+  "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+  "readinessAreas": [
+    {
+      "area": "repo-hygiene",
+      "evidence": "README, runbook, schemas, and baseline validation exist.",
+      "nextAction": "Keep current as sprints evolve.",
+      "status": "green"
+    },
+    {
+      "area": "ci",
+      "evidence": "No-provider pytest and baseline validation pass locally.",
+      "nextAction": "Confirm latest GitHub Actions after merge.",
+      "status": "green"
+    },
+    {
+      "area": "ui-workflow",
+      "evidence": "Dashboard compiles and has review/export controls.",
+      "nextAction": "Add UI smoke coverage beyond compile.",
+      "status": "yellow"
+    },
+    {
+      "area": "api-workflow",
+      "evidence": "Standard-library API and no-provider E2E are present.",
+      "nextAction": "Expand route coverage and contract tests.",
+      "status": "yellow"
+    },
+    {
+      "area": "provider-safety",
+      "evidence": "Provider calls are dry-run/no-provider safe by default.",
+      "nextAction": "Keep live provider calls opt-in.",
+      "status": "yellow"
+    },
+    {
+      "area": "webhook-readiness",
+      "evidence": "Provider event helpers and webhook fixtures exist.",
+      "nextAction": "Wire production runtime route and provider-native verification.",
+      "status": "yellow"
+    },
+    {
+      "area": "artifact-traceability",
+      "evidence": "Exports include traceability metadata.",
+      "nextAction": "Enforce traceability on every provider output.",
+      "status": "yellow"
+    },
+    {
+      "area": "rights-release-gates",
+      "evidence": "Lantern asset manifest defines release gates.",
+      "nextAction": "Block all production-ready exports without rights, proof, and approval.",
+      "status": "yellow"
+    },
+    {
+      "area": "docs",
+      "evidence": "Lantern adapter and registry docs exist.",
+      "nextAction": "Keep generated exports linked from docs.",
+      "status": "green"
+    },
+    {
+      "area": "deployment",
+      "evidence": "Deployment path is documented but not RC-proven.",
+      "nextAction": "Define hosted route and environment configuration.",
+      "status": "red"
+    }
+  ],
+  "safeToShare": true,
+  "schemaVersion": "1.0.0",
+  "sprintCandidates": [
+    {
+      "approvalRequired": true,
+      "candidateId": "content-engine-sprint-content-engine-lantern-recommendation-export-950323dd7e",
+      "linkedIssues": [
+        102
+      ],
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "sourceRecommendationId": "content-engine-rec-content-engine-lantern-recommendation-export-950323dd7e",
+      "targetSprint": "Sprint 10",
+      "title": "Expose open recommendations to Christina and Lantern"
+    },
+    {
+      "approvalRequired": true,
+      "candidateId": "content-engine-sprint-content-engine-rc-readiness-report-19c20a9826",
+      "linkedIssues": [
+        105
+      ],
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "sourceRecommendationId": "content-engine-rec-content-engine-rc-readiness-report-19c20a9826",
+      "targetSprint": "Sprint 10",
+      "title": "Maintain RC readiness report and JSON export"
+    },
+    {
+      "approvalRequired": true,
+      "candidateId": "content-engine-sprint-content-engine-lantern-verified-asset-pipeline-18ad859881",
+      "linkedIssues": [
+        106
+      ],
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "sourceRecommendationId": "content-engine-rec-content-engine-lantern-verified-asset-pipeline-18ad859881",
+      "targetSprint": "Sprint 10",
+      "title": "Verify canon, consent, rights, and proof gates for Lantern assets"
+    }
+  ],
+  "status": "pre-RC / RC-hardening candidate"
+}

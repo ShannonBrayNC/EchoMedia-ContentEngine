@@ -1,0 +1,95 @@
+{
+  "duplicateKeys": [
+    "content-engine:lantern:recommendation-export",
+    "content-engine:rc:readiness-report",
+    "content-engine:lantern:verified-asset-pipeline"
+  ],
+  "exportType": "content-engine-recommendation-registry",
+  "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+  "recommendations": [
+    {
+      "approvalRequired": true,
+      "approvalStates": [],
+      "duplicateKey": "content-engine:lantern:recommendation-export",
+      "id": "content-engine-rec-content-engine-lantern-recommendation-export-950323dd7e",
+      "linkedIssues": [
+        102
+      ],
+      "notes": "Machine-readable export should prevent duplicate issue creation.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/recommendation-registry.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-lantern-recommendation-export",
+      "source": "lantern-operating-loop",
+      "sourceVerticalOutputs": [],
+      "status": "open",
+      "targetChannel": "signalforge",
+      "targetSprint": "Sprint 10",
+      "title": "Expose open recommendations to Christina and Lantern",
+      "type": "software-change"
+    },
+    {
+      "approvalRequired": true,
+      "approvalStates": [],
+      "duplicateKey": "content-engine:rc:readiness-report",
+      "id": "content-engine-rec-content-engine-rc-readiness-report-19c20a9826",
+      "linkedIssues": [
+        105
+      ],
+      "notes": "Report must summarize readiness areas, blockers, and next actions.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/reports/rc-readiness-2026-05-24.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-rc-readiness-report",
+      "source": "technical-review",
+      "sourceVerticalOutputs": [],
+      "status": "open",
+      "targetChannel": "christina",
+      "targetSprint": "Sprint 10",
+      "title": "Maintain RC readiness report and JSON export",
+      "type": "process-change"
+    },
+    {
+      "approvalRequired": true,
+      "approvalStates": [
+        "required"
+      ],
+      "duplicateKey": "content-engine:lantern:verified-asset-pipeline",
+      "id": "content-engine-rec-content-engine-lantern-verified-asset-pipeline-18ad859881",
+      "linkedIssues": [
+        106
+      ],
+      "notes": "Production-ready assets require rights, consent, approval, manifest, and ETS proof reference.",
+      "ownerRepo": "ShannonBrayNC/EchoMedia-ContentEngine",
+      "priority": "high",
+      "relatedAssets": [
+        "docs/lantern/LANTERN_CANON_REGISTRY.md",
+        "docs/lantern/CONSENT_THEME_BIBLE.md",
+        "docs/lantern/LANTERN_ASSET_MANIFEST_SCHEMA.md"
+      ],
+      "relatedCampaigns": [],
+      "relatedDrafts": [],
+      "reviewNotes": [],
+      "signalForgeRegistryKey": "signalforge:content-engine-lantern-verified-asset-pipeline",
+      "source": "lantern-protocol",
+      "sourceVerticalOutputs": [],
+      "status": "planned",
+      "targetChannel": "signalforge",
+      "targetSprint": "Sprint 10",
+      "title": "Verify canon, consent, rights, and proof gates for Lantern assets",
+      "type": "content-workflow-change"
+    }
+  ],
+  "schemaVersion": "1.0.0",
+  "signalForgeReady": true
+}

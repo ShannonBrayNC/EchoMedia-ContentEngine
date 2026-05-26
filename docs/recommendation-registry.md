@@ -73,3 +73,27 @@ content-engine:lantern:reusable-asset-pipeline
 - Live provider calls must remain opt-in and outside normal CI.
 - Recommendations should point to source artifacts and linked issues whenever possible.
 - Closed recommendations should retain their duplicate key for future dedupe.
+
+## Machine-readable export
+
+The no-provider export module is `services/lantern_recommendations.py`.
+
+It provides:
+
+- `default_recommendations()` for the current registry seed.
+- `export_open_recommendations()` for Christina and SignalForge ingestion.
+- `build_sprint_candidates()` for actionable sprint intake.
+- `upsert_recommendation()` to block duplicate issue creation by `duplicateKey` or linked issue.
+- `append_review_note()` and `update_status()` for Christina/Lantern review updates.
+- `build_rc_readiness_report()` for green/yellow/red RC status categories.
+
+Generate checked-in JSON snapshots with:
+
+```text
+python scripts/export_lantern_recommendations.py
+```
+
+Current export artifacts:
+
+- `docs/reports/content-engine-recommendation-export-2026-05-26.json`
+- `docs/reports/rc-readiness-2026-05-26.json`

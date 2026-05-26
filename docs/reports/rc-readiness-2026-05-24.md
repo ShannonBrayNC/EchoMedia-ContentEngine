@@ -31,6 +31,15 @@ The repo now has the structural rails for a release candidate, including baselin
 4. Rights/release readiness gates are not yet enforced across final package exports.
 5. Recommendation registry is documented but not yet emitted as a machine-readable JSON artifact.
 
+## 2026-05-26 operating-loop update
+
+Machine-readable exports are now available for Christina, SignalForge, and Lantern operating-loop review:
+
+- `docs/reports/content-engine-recommendation-export-2026-05-26.json`
+- `docs/reports/rc-readiness-2026-05-26.json`
+
+The export path is `python scripts/export_lantern_recommendations.py`, backed by `services/lantern_recommendations.py`. Duplicate recommendations are keyed by `duplicateKey` and linked issue overlap before a new downstream issue is created.
+
 ## Completed in this pass
 
 - Added provider webhook/event normalization helper.
