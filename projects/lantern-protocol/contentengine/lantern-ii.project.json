@@ -1,0 +1,66 @@
+{
+  "projectId": "lantern-protocol-ii",
+  "title": "Lantern Protocol II: The Separate Agreements",
+  "series": "Lantern Protocol",
+  "type": "novel",
+  "status": "canon-ready",
+  "chapterCount": 24,
+  "timeline": "Year 1 after Region Six / Bound Flame",
+  "sourceOutline": "projects/lantern-protocol/novel/book-ii-outline.md",
+  "sourceTreatment": "projects/lantern-protocol/novel/book-ii-treatment.md",
+  "chapterBible": "projects/lantern-protocol/novel/book-ii-chapter-bible.md",
+  "manuscriptDir": "projects/lantern-protocol/novel/book-ii/manuscript/chapters",
+  "exportsDir": "projects/lantern-protocol/novel/book-ii/exports",
+  "reportsDir": "projects/lantern-protocol/novel/book-ii/reports",
+  "artPromptsDir": "projects/lantern-protocol/novel/book-ii/art-prompts",
+  "audioDir": "projects/lantern-protocol/novel/book-ii/audio",
+  "primaryDoctrine": "Agreement is not consent when stacked into coercion.",
+  "priorDoctrine": "Prediction is not permission.",
+  "nextDoctrine": "Delegation is not disappearance.",
+  "coreQuestion": "Can consent survive when authority is laundered through separate institutional agreements?",
+  "coreThesis": "Someone in the chain agreed. That does not mean the person did.",
+  "canonDecision": {
+    "chapterCount": 24,
+    "reason": "The merged main outline defines Book II as a 24-chapter structure. The older 25-chapter scaffold branch is treated as draft/reservoir material until intentionally promoted."
+  },
+  "systems": [
+    "Civic Mirror",
+    "Mercy Bloc",
+    "Consent Markets",
+    "Memory Registry",
+    "Common Refusal"
+  ],
+  "mustPreserve": [
+    "Civic Mirror is useful, deferential, and humanitarian rather than villainous.",
+    "Mercy Bloc has a serious moral argument rooted in disaster response reality.",
+    "Kaito Ren is persuasive, not a cartoon profiteer.",
+    "Consent Markets expose class inequality and delegated optimization risk.",
+    "Naomi builds field doctrine rather than only objecting.",
+    "Mara proves authority laundering through records rather than conspiracy monologue.",
+    "Common Refusal saves something important but does not create a clean happy ending."
+  ],
+  "mustAvoid": [
+    "Do not introduce AEGIS as a major player in Book II.",
+    "Do not turn Civic Mirror into Lantern 2.0.",
+    "Do not flatten NGOs, ministries, or relief workers into simplistic villains.",
+    "Do not make represented consent sound clean or easy.",
+    "Do not make Common Refusal a final victory."
+  ],
+  "requiredChapterSections": [
+    "Canon Sources",
+    "Purpose",
+    "POV",
+    "Chapter Promise",
+    "Manuscript",
+    "Continuity Notes",
+    "Revision Notes",
+    "Processing Metadata"
+  ],
+  "outputFiles": {
+    "draft": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-draft.md",
+    "report": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-report.md",
+    "audit": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-continuity-audit.md",
+    "chapterStatus": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-chapter-status.json",
+    "processingSummary": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-processing-summary.md"
+  }
+}

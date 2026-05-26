@@ -174,7 +174,7 @@ function App() {
       return;
     }
     setArtifact({ ...artifact, state: 'exported' });
-    setReviewMessage('Mock export package created from approved artifact.');
+    setReviewMessage('Mock Export package created from approved artifact.');
   }
 
   function jumpToAction(targetArtifact?: string) {
