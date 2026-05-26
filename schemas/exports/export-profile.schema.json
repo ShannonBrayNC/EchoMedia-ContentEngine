@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/export-profile.schema.json",
+  "title": "EchoMedia Content Engine Export Profile",
+  "description": "Defines how a canonical production package maps into a tool-specific output format for AI video, audio, storyboard, pitch, or generic integrations.",
+  "type": "object",
+  "required": [
+    "profile_id",
+    "version",
+    "display_name",
+    "target_tool",
+    "target_category",
+    "input_package_types",
+    "required_fields",
+    "output"
+  ],
+  "properties": {
+    "profile_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "target_tool": {
+      "type": "string"
+    },
+    "target_category": {
+      "type": "string",
+      "enum": [
+        "ai-video",
+        "ai-audio",
+        "storyboard",
+        "pitch",
+        "generic-json"
+      ]
+    },
+    "input_package_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "scene-package",
+          "sequence-package",
+          "trailer-package",
+          "feature-package",
+          "pitch-package",
+          "audio-package",
+          "tool-export-package"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "required_fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fieldRequirement"
+      },
+      "minItems": 1
+    },
+    "optional_fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fieldRequirement"
+      },
+      "default": []
+    },
+    "limits": {
+      "$ref": "#/$defs/profileLimits"
+    },
+    "rendering_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "output": {
+      "$ref": "#/$defs/outputSpec"
+    },
+    "validation_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "fieldRequirement": {
+      "type": "object",
+      "required": [
+        "source_path",
+        "description"
+      ],
+      "properties": {
+        "source_path": {
+          "type": "string",
+          "description": "JSONPath-like source path from the canonical production package."
+        },
+        "description": {
+          "type": "string"
+        },
+        "fallback": {
+          "type": "string"
+        },
+        "severity_if_missing": {
+          "type": "string",
+          "enum": [
+            "warning",
+            "error",
+            "critical"
+          ],
+          "default": "error"
+        }
+      },
+      "additionalProperties": false
+    },
+    "profileLimits": {
+      "type": "object",
+      "properties": {
+        "max_prompt_characters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_duration_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "recommended_aspect_ratios": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "supports_reference_images": {
+          "type": "boolean",
+          "default": false
+        },
+        "supports_audio": {
+          "type": "boolean",
+          "default": false
+        },
+        "supports_dialogue": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "outputSpec": {
+      "type": "object",
+      "required": [
+        "format",
+        "file_extension",
+        "naming_pattern"
+      ],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": [
+            "markdown",
+            "json",
+            "csv",
+            "text",
+            "html",
+            "deck-outline"
+          ]
+        },
+        "file_extension": {
+          "type": "string"
+        },
+        "naming_pattern": {
+          "type": "string"
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

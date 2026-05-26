@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/idea-intake.schema.json",
+  "title": "Idea Intake",
+  "type": "object",
+  "required": ["schemaVersion", "intakeId", "projectId", "rawInput", "state"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "intakeId": { "type": "string" },
+    "projectId": { "type": "string" },
+    "rawInput": { "type": "string" },
+    "direction": { "type": "string" },
+    "state": { "type": "string", "enum": ["raw", "draft", "review", "approved", "rejected", "superseded"] },
+    "summary": { "type": "string" },
+    "genreCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "toneCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "themeCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "characterCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "canonCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "storyArcCandidates": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "artifactRoadmap": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "nextSteps": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "sourceHash": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}

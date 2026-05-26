@@ -1,0 +1,878 @@
+openapi: 3.1.0
+info:
+  title: EchoMedia Content Engine API
+  version: 1.0.0-draft
+  description: API contract for project registry, idea intake, generation jobs, review gates, artifacts, providers, workers, and exports.
+servers:
+  - url: http://127.0.0.1:8080
+    description: Local development
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+  /config/runtime:
+    get:
+      summary: Runtime configuration visible to clients
+      responses:
+        '200':
+          description: Safe runtime configuration
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RuntimeConfig'
+  /projects:
+    get:
+      summary: List registered projects
+      responses:
+        '200':
+          description: Project list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  projects:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ProjectSummary'
+    post:
+      summary: Create a new project scaffold
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateProjectRequest'
+      responses:
+        '201':
+          description: Project scaffold created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectScaffold'
+        '400':
+          $ref: '#/components/responses/Error'
+  /projects/{projectId}:
+    get:
+      summary: Get project detail
+      parameters:
+        - $ref: '#/components/parameters/ProjectId'
+      responses:
+        '200':
+          description: Project detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectDetail'
+        '404':
+          $ref: '#/components/responses/Error'
+  /projects/{projectId}/idea-intake:
+    post:
+      summary: Create idea intake draft from raw notes or manuscript seed
+      parameters:
+        - $ref: '#/components/parameters/ProjectId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateIdeaIntakeRequest'
+      responses:
+        '201':
+          description: Idea intake artifact created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactDetail'
+        '400':
+          $ref: '#/components/responses/Error'
+        '404':
+          $ref: '#/components/responses/Error'
+  /projects/{projectId}/readiness:
+    get:
+      summary: Get project readiness roadmap
+      parameters:
+        - $ref: '#/components/parameters/ProjectId'
+      responses:
+        '200':
+          description: Project readiness state
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectReadiness'
+        '404':
+          $ref: '#/components/responses/Error'
+  /projects/{projectId}/artifact-inventory:
+    get:
+      summary: Get project artifact inventory and output map
+      parameters:
+        - $ref: '#/components/parameters/ProjectId'
+      responses:
+        '200':
+          description: Artifact inventory
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectArtifactInventory'
+        '404':
+          $ref: '#/components/responses/Error'
+  /projects/{projectId}/artifacts:
+    get:
+      summary: List project artifacts
+      parameters:
+        - $ref: '#/components/parameters/ProjectId'
+      responses:
+        '200':
+          description: Artifact list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  artifacts:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ArtifactSummary'
+  /schemas:
+    get:
+      summary: List available schemas
+      responses:
+        '200':
+          description: Schema list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  schemas:
+                    type: array
+                    items:
+                      type: string
+  /export-profiles:
+    get:
+      summary: List export profiles
+      responses:
+        '200':
+          description: Export profile list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  profiles:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ExportProfileSummary'
+  /providers/capabilities:
+    get:
+      summary: List provider capabilities without exposing secrets
+      responses:
+        '200':
+          description: Provider capabilities
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  providers:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ProviderCapability'
+  /generation/jobs:
+    post:
+      summary: Create a generation job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateGenerationJobRequest'
+      responses:
+        '202':
+          description: Job accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenerationJob'
+        '400':
+          $ref: '#/components/responses/Error'
+  /generation/jobs/{jobId}:
+    get:
+      summary: Get generation job status
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '200':
+          description: Job state
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenerationJob'
+        '404':
+          $ref: '#/components/responses/Error'
+  /generation/jobs/{jobId}/cancel:
+    post:
+      summary: Cancel a generation job
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '202':
+          description: Cancellation requested
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenerationJob'
+  /generation/jobs/{jobId}/retry:
+    post:
+      summary: Retry a failed generation job
+      parameters:
+        - $ref: '#/components/parameters/JobId'
+      responses:
+        '202':
+          description: Retry requested
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenerationJob'
+  /reviews/{artifactId}/approve:
+    post:
+      summary: Approve a draft or review artifact
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewDecision'
+      responses:
+        '200':
+          description: Artifact approved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactSummary'
+  /reviews/{artifactId}/reject:
+    post:
+      summary: Reject a draft or review artifact
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewDecision'
+      responses:
+        '200':
+          description: Artifact rejected
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactSummary'
+  /reviews/{artifactId}/request-revision:
+    post:
+      summary: Request revision for an artifact
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewDecision'
+      responses:
+        '200':
+          description: Revision requested
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactSummary'
+  /reviews/{artifactId}/supersede:
+    post:
+      summary: Mark an artifact as superseded
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReviewDecision'
+      responses:
+        '200':
+          description: Artifact superseded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactSummary'
+  /artifacts/{artifactId}:
+    get:
+      summary: Get artifact metadata
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      responses:
+        '200':
+          description: Artifact detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactSummary'
+        '404':
+          $ref: '#/components/responses/Error'
+  /artifacts/{artifactId}/preview:
+    get:
+      summary: Get read-only artifact preview
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+        - name: mode
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [markdown, json, text, image-ref, audio-ref, video-ref, timeline, manifest]
+      responses:
+        '200':
+          description: Artifact preview
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactPreview'
+        '404':
+          $ref: '#/components/responses/Error'
+  /artifacts/{artifactId}/traceability:
+    get:
+      summary: Get artifact traceability metadata
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      responses:
+        '200':
+          description: Artifact traceability
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactTraceability'
+        '404':
+          $ref: '#/components/responses/Error'
+  /manifests/{manifestId}:
+    get:
+      summary: Get generated asset manifest
+      parameters:
+        - name: manifestId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Manifest detail placeholder
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+  /exports/packages:
+    post:
+      summary: Create export package request
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateExportPackageRequest'
+      responses:
+        '202':
+          description: Export accepted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GenerationJob'
+  /exports/packages/{artifactId}:
+    post:
+      summary: Export an approved artifact package
+      parameters:
+        - $ref: '#/components/parameters/ArtifactId'
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateArtifactExportRequest'
+      responses:
+        '202':
+          description: Export package created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExportPackage'
+        '409':
+          $ref: '#/components/responses/Error'
+  /workers/capabilities:
+    get:
+      summary: List worker capabilities
+      responses:
+        '200':
+          description: Worker capabilities
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  workers:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/WorkerCapability'
+  /workers/jobs/{workerJobId}:
+    get:
+      summary: Get worker job state
+      parameters:
+        - name: workerJobId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Worker job state
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+components:
+  parameters:
+    ProjectId:
+      name: projectId
+      in: path
+      required: true
+      schema:
+        type: string
+    JobId:
+      name: jobId
+      in: path
+      required: true
+      schema:
+        type: string
+    ArtifactId:
+      name: artifactId
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    Error:
+      description: Error response
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+  schemas:
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          enum: [ok, degraded, error]
+        version:
+          type: string
+    RuntimeConfig:
+      type: object
+      properties:
+        environment:
+          type: string
+        noProviderMode:
+          type: boolean
+        liveProvidersEnabled:
+          type: boolean
+        dryRunProviders:
+          type: boolean
+    CreateProjectRequest:
+      type: object
+      required: [displayTitle]
+      properties:
+        displayTitle:
+          type: string
+        projectId:
+          type: string
+        universe:
+          type: string
+        storyType:
+          type: string
+        targetFormats:
+          type: array
+          items:
+            type: string
+    ProjectSummary:
+      type: object
+      required: [projectId, displayTitle]
+      properties:
+        projectId:
+          type: string
+        displayTitle:
+          type: string
+        status:
+          type: string
+        rootPath:
+          type: string
+        supportedGenerationTypes:
+          type: array
+          items:
+            type: string
+        exportTargets:
+          type: array
+          items:
+            type: string
+    ProjectDetail:
+      allOf:
+        - $ref: '#/components/schemas/ProjectSummary'
+    StarterArtifact:
+      type: object
+      properties:
+        artifactType:
+          type: string
+        path:
+          type: string
+        state:
+          type: string
+    ProjectScaffold:
+      type: object
+      required: [project, folders, starterArtifacts, nextSteps]
+      properties:
+        project:
+          $ref: '#/components/schemas/ProjectSummary'
+        folders:
+          type: array
+          items:
+            type: string
+        starterArtifacts:
+          type: array
+          items:
+            $ref: '#/components/schemas/StarterArtifact'
+        nextSteps:
+          type: array
+          items:
+            type: string
+    CreateIdeaIntakeRequest:
+      type: object
+      required: [rawInput]
+      properties:
+        rawInput:
+          type: string
+        direction:
+          type: string
+    ArtifactSummary:
+      type: object
+      required: [artifactId, projectId, artifactType, state]
+      properties:
+        artifactId:
+          type: string
+        projectId:
+          type: string
+        artifactType:
+          type: string
+        state:
+          type: string
+          enum: [missing, planned, draft, review, approved, rejected, needs-revision, exported, released, stale, superseded]
+        path:
+          type: string
+        manifestId:
+          type: string
+    ArtifactDetail:
+      allOf:
+        - $ref: '#/components/schemas/ArtifactSummary'
+        - type: object
+          properties:
+            preview:
+              type: string
+            rawInput:
+              type: string
+            direction:
+              type: string
+            sourceRefs:
+              type: array
+              items:
+                type: object
+                additionalProperties: true
+            templateVersion:
+              type: string
+            contextManifestId:
+              type: string
+            generationJobId:
+              type: string
+    ReadinessItem:
+      type: object
+      required: [id, category, label, complete, status, nextAction]
+      properties:
+        id:
+          type: string
+        category:
+          type: string
+          enum: [structure, content, export]
+        label:
+          type: string
+        complete:
+          type: boolean
+        status:
+          type: string
+        nextAction:
+          type: string
+        targetArtifact:
+          type: string
+    ProjectReadiness:
+      type: object
+      required: [projectId, percent, summary, items, blockers, nextBestAction]
+      properties:
+        projectId:
+          type: string
+        percent:
+          type: number
+        summary:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/ReadinessItem'
+        blockers:
+          type: array
+          items:
+            type: string
+        nextBestAction:
+          type: string
+    ArtifactInventoryItem:
+      type: object
+      required: [artifactId, label, category, artifactType, state, required, path, readinessImpact, actions]
+      properties:
+        artifactId:
+          type: string
+        label:
+          type: string
+        category:
+          type: string
+        artifactType:
+          type: string
+        state:
+          type: string
+        required:
+          type: boolean
+        path:
+          type: string
+        readinessImpact:
+          type: string
+        actions:
+          type: array
+          items:
+            type: string
+    ProjectArtifactInventory:
+      type: object
+      required: [projectId, items, requiredCount, completeRequiredCount, summary]
+      properties:
+        projectId:
+          type: string
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/ArtifactInventoryItem'
+        requiredCount:
+          type: integer
+        completeRequiredCount:
+          type: integer
+        summary:
+          type: string
+    ArtifactPreview:
+      type: object
+      required: [artifactId, mode, content, readOnly]
+      properties:
+        artifactId:
+          type: string
+        mode:
+          type: string
+        content:
+          type: string
+        readOnly:
+          type: boolean
+    ArtifactTraceability:
+      type: object
+      required: [artifactId, artifactType, state, sourceRefs, templateVersion, contextManifestId, manifestId, readinessImpact]
+      properties:
+        artifactId:
+          type: string
+        artifactType:
+          type: string
+        state:
+          type: string
+        sourceRefs:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        templateVersion:
+          type: string
+        contextManifestId:
+          type: string
+        generationJobId:
+          type: string
+        manifestId:
+          type: string
+        readinessImpact:
+          type: string
+    ExportProfileSummary:
+      type: object
+      required: [profileId, provider]
+      properties:
+        profileId:
+          type: string
+        provider:
+          type: string
+        artifactTypes:
+          type: array
+          items:
+            type: string
+    ProviderCapability:
+      type: object
+      required: [provider, enabled]
+      properties:
+        provider:
+          type: string
+        enabled:
+          type: boolean
+        configured:
+          type: boolean
+        liveUseAllowed:
+          type: boolean
+        capabilities:
+          type: array
+          items:
+            type: string
+    WorkerCapability:
+      type: object
+      required: [workerId, online]
+      properties:
+        workerId:
+          type: string
+        online:
+          type: boolean
+        capabilities:
+          type: array
+          items:
+            type: string
+    CreateGenerationJobRequest:
+      type: object
+      required: [projectId, artifactType]
+      properties:
+        projectId:
+          type: string
+        artifactType:
+          type: string
+        sourceRefs:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        userDirection:
+          type: string
+        templateId:
+          type: string
+        exportProfileId:
+          type: string
+        dryRun:
+          type: boolean
+    CreateExportPackageRequest:
+      type: object
+      required: [projectId, packageType]
+      properties:
+        projectId:
+          type: string
+        packageType:
+          type: string
+        artifactIds:
+          type: array
+          items:
+            type: string
+        exportProfileId:
+          type: string
+    CreateArtifactExportRequest:
+      type: object
+      properties:
+        packageType:
+          type: string
+        exportProfileId:
+          type: string
+    ExportPackage:
+      type: object
+      required: [exportId, artifactId, projectId, packageType, state, manifestId, providerReady]
+      properties:
+        exportId:
+          type: string
+        artifactId:
+          type: string
+        projectId:
+          type: string
+        packageType:
+          type: string
+        state:
+          type: string
+        manifestId:
+          type: string
+        providerReady:
+          type: boolean
+    GenerationJob:
+      type: object
+      required: [jobId, projectId, artifactType, status]
+      properties:
+        jobId:
+          type: string
+        projectId:
+          type: string
+        artifactType:
+          type: string
+        status:
+          type: string
+          enum: [draft-request, queued, generating, generated, needs-review, approved, exported, failed, cancelled, superseded]
+        progress:
+          type: number
+        artifactIds:
+          type: array
+          items:
+            type: string
+        warnings:
+          type: array
+          items:
+            type: string
+        error:
+          $ref: '#/components/schemas/ErrorDetail'
+        correlationId:
+          type: string
+    ReviewDecision:
+      type: object
+      properties:
+        reviewer:
+          type: string
+        notes:
+          type: string
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          $ref: '#/components/schemas/ErrorDetail'
+    ErrorDetail:
+      type: object
+      required: [code, message]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+        details:
+          type: object
+          additionalProperties: true
+        correlationId:
+          type: string

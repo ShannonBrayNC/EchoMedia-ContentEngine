@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/template-record.schema.json",
+  "title": "Template Record",
+  "type": "object",
+  "required": ["schemaVersion", "templateId", "version", "artifactType", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "templateId": { "type": "string" },
+    "version": { "type": "string" },
+    "artifactType": { "type": "string" },
+    "status": { "type": "string", "enum": ["draft", "active", "deprecated"] },
+    "path": { "type": "string" },
+    "requiredInputs": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "expectedOutputFormat": { "type": "string" },
+    "outputSchemaPath": { "type": "string" },
+    "supportedProviders": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "baseTemplateId": { "type": "string" },
+    "notes": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,54 @@
+name: Content Engine Baseline
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  baseline-validation:
+    name: Validate baseline, no-provider E2E, and webhook contracts
+    runs-on: ubuntu-latest
+    env:
+      CONTENT_ENGINE_ENV: local
+      CONTENT_ENGINE_NO_PROVIDER_MODE: "true"
+      CONTENT_ENGINE_ENABLE_LIVE_PROVIDERS: "false"
+      CONTENT_ENGINE_DRY_RUN_PROVIDERS: "true"
+      CONTENT_ENGINE_STATE_ROOT: ./.content-engine/state-ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate repository baseline
+        run: python scripts/validate_repo_baseline.py
+      - name: Run no-provider E2E
+        run: python tests/e2e/test_no_provider_manuscript_to_export.py
+      - name: Run ElevenLabs webhook event contract test
+        run: python tests/e2e/test_elevenlabs_webhook_event.py
+      - name: Run production host ElevenLabs route test
+        run: python tests/e2e/test_production_host_elevenlabs_route.py
+
+  dashboard-build:
+    name: Build dashboard
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install dependencies
+        working-directory: ui/content-engine-dashboard
+        run: npm install
+      - name: Build
+        working-directory: ui/content-engine-dashboard
+        run: npm run build

@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/review-gate.schema.json",
+  "title": "EchoMedia Content Engine Review Gate",
+  "description": "Defines the review lifecycle required before generated artifacts can be saved, exported, or committed into project artifact folders.",
+  "type": "object",
+  "required": [
+    "review_id",
+    "version",
+    "project_slug",
+    "artifact_id",
+    "artifact_type",
+    "source_job_id",
+    "state",
+    "checks",
+    "created_at"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "project_slug": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string",
+      "enum": [
+        "canon",
+        "character",
+        "story-outline",
+        "manuscript",
+        "screenplay",
+        "scene-card",
+        "storyboard",
+        "visual-prompt",
+        "production-package",
+        "pitch",
+        "audio-script",
+        "tool-export"
+      ]
+    },
+    "source_job_id": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "pending-review",
+        "changes-requested",
+        "approved",
+        "rejected",
+        "saved",
+        "exported",
+        "superseded"
+      ]
+    },
+    "preview": {
+      "$ref": "#/$defs/preview"
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/check"
+      },
+      "minItems": 1
+    },
+    "decision": {
+      "$ref": "#/$defs/decision"
+    },
+    "persistence": {
+      "$ref": "#/$defs/persistence"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "preview": {
+      "type": "object",
+      "required": [
+        "format",
+        "preview_path"
+      ],
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": [
+            "markdown",
+            "json",
+            "text",
+            "html",
+            "deck-outline"
+          ]
+        },
+        "preview_path": {
+          "type": "string"
+        },
+        "destination_path": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "check": {
+      "type": "object",
+      "required": [
+        "key",
+        "status",
+        "required"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "enum": [
+            "schema-valid",
+            "source-context-present",
+            "traceability-present",
+            "canon-safe",
+            "visual-continuity-safe",
+            "destination-path-valid",
+            "overwrite-reviewed",
+            "export-ready"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "passed",
+            "warning",
+            "failed",
+            "waived"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "waiver_reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "approved",
+            "rejected",
+            "changes-requested"
+          ],
+          "default": "pending"
+        },
+        "reviewed_by": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "persistence": {
+      "type": "object",
+      "properties": {
+        "allowed": {
+          "type": "boolean",
+          "default": false
+        },
+        "target_path": {
+          "type": "string"
+        },
+        "requires_overwrite_confirmation": {
+          "type": "boolean",
+          "default": true
+        },
+        "saved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "commit_sha": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

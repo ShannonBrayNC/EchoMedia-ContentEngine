@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List
 
 ROOT = Path(__file__).resolve().parents[1]
+FRONT_MATTER = ROOT / "manuscript" / "front-matter"
 CHAPTERS = ROOT / "manuscript" / "chapters"
 EXPORTS = ROOT / "exports"
 
@@ -30,6 +32,16 @@ class ChapterStats:
 def chapter_sort_key(path: Path) -> int:
     match = re.search(r"chapter-(\d+)", path.name, flags=re.IGNORECASE)
     return int(match.group(1)) if match else 999
+
+
+def front_matter_sort_key(path: Path) -> int:
+    order = {
+        "preface": 10,
+        "foreword": 20,
+        "introduction": 30,
+        "author-note": 40,
+    }
+    return order.get(path.stem.lower(), 999)
 
 
 def word_count(text: str) -> int:
@@ -71,16 +83,35 @@ def chapter_stats(path: Path) -> ChapterStats:
     )
 
 
-def build_report(stats: List[ChapterStats]) -> str:
+def build_report(stats: List[ChapterStats], front_matter_files: List[Path]) -> str:
     total_words = sum(item.total_words for item in stats)
     total_body_words = sum(item.body_words for item in stats)
+    front_matter_words = sum(word_count(path.read_text(encoding="utf-8")) for path in front_matter_files)
 
     lines = [
         "# Lantern Protocol — Novel Assembly Report",
         "",
-        "| Chapter | Title | File | Total Words | Manuscript Body Words | Manuscript Section |",
-        "|---:|---|---|---:|---:|---|",
+        "## Front Matter",
+        "",
+        "| Order | File | Words |",
+        "|---:|---|---:|",
     ]
+
+    if front_matter_files:
+        for idx, path in enumerate(front_matter_files, start=1):
+            lines.append(f"| {idx} | `{path.name}` | {word_count(path.read_text(encoding='utf-8'))} |")
+    else:
+        lines.append("| - | None | 0 |")
+
+    lines.extend(
+        [
+            "",
+            "## Chapters",
+            "",
+            "| Chapter | Title | File | Total Words | Manuscript Body Words | Manuscript Section |",
+            "|---:|---|---|---:|---:|---|",
+        ]
+    )
 
     for item in stats:
         has_section = "Yes" if item.has_manuscript_section else "No"
@@ -91,14 +122,17 @@ def build_report(stats: List[ChapterStats]) -> str:
     lines.extend(
         [
             "",
+            f"**Front matter files:** {len(front_matter_files)}",
+            f"**Front matter words:** {front_matter_words}",
             f"**Total chapters:** {len(stats)}",
-            f"**Total words:** {total_words}",
+            f"**Total words:** {total_words + front_matter_words}",
+            f"**Total chapter words:** {total_words}",
             f"**Total manuscript body words:** {total_body_words}",
             "",
             "## Notes",
             "",
-            "- Total words include chapter metadata, canon sources, continuity notes, and revision notes.",
-            "- Manuscript body words count only text after `## Manuscript` and before continuity/revision notes.",
+            "- Total words include front matter, chapter metadata, canon sources, continuity notes, and revision notes.",
+            "- Manuscript body words count only text after `## Manuscript` and before continuity/revision notes inside chapter files.",
             "- Use manuscript body words for draft-length tracking.",
             "",
         ]
@@ -106,40 +140,87 @@ def build_report(stats: List[ChapterStats]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def main() -> None:
+def assemble_markdown_exports() -> None:
     EXPORTS.mkdir(parents=True, exist_ok=True)
 
     chapters = sorted(CHAPTERS.glob("chapter-*.md"), key=chapter_sort_key)
     if not chapters:
         raise FileNotFoundError(f"No chapter files found under {CHAPTERS}")
 
+    front_matter_files = []
+    if FRONT_MATTER.exists():
+        front_matter_files = sorted(FRONT_MATTER.glob("*.md"), key=front_matter_sort_key)
+
     stats = [chapter_stats(chapter) for chapter in chapters]
 
     manuscript_parts = [
         "# Lantern Protocol — Novel Draft",
         "",
-        "> Auto-assembled from `novel/manuscript/chapters/`.",
+        "> Auto-assembled from `novel/manuscript/front-matter/` and `novel/manuscript/chapters/`.",
         "",
         "---",
         "",
     ]
 
+    for front_matter in front_matter_files:
+        text = front_matter.read_text(encoding="utf-8")
+        manuscript_parts.append(f"<!-- SOURCE: front-matter/{front_matter.name} -->")
+        manuscript_parts.append(text.rstrip())
+        manuscript_parts.append("")
+        manuscript_parts.append("---")
+        manuscript_parts.append("")
+
     for chapter in chapters:
         text = chapter.read_text(encoding="utf-8")
-        manuscript_parts.append(f"<!-- SOURCE: {chapter.name} -->")
+        manuscript_parts.append(f"<!-- SOURCE: chapters/{chapter.name} -->")
         manuscript_parts.append(text.rstrip())
         manuscript_parts.append("")
         manuscript_parts.append("---")
         manuscript_parts.append("")
 
     OUTPUT_MANUSCRIPT.write_text("\n".join(manuscript_parts).rstrip() + "\n", encoding="utf-8")
-    OUTPUT_REPORT.write_text(build_report(stats), encoding="utf-8")
+    OUTPUT_REPORT.write_text(build_report(stats, front_matter_files), encoding="utf-8")
 
     total_body_words = sum(item.body_words for item in stats)
     print(f"Wrote {OUTPUT_MANUSCRIPT}")
     print(f"Wrote {OUTPUT_REPORT}")
+    print(f"Front matter files: {len(front_matter_files)}")
     print(f"Total chapters: {len(stats)}")
     print(f"Total manuscript body words: {total_body_words}")
+
+
+def assemble_elevenlabs_docx() -> None:
+    from export_elevenlabs_docx import build_elevenlabs_docx
+
+    result = build_elevenlabs_docx()
+    print(f"Wrote {result.output_docx}")
+    print(f"Wrote {result.report_path}")
+    print(f"Front matter files: {result.front_matter_count}")
+    print(f"Total chapters: {result.chapter_count}")
+    print(f"Reader-facing words: {result.body_word_count}")
+    if result.findings:
+        print("Warnings:")
+        for finding in result.findings:
+            print(f"- {finding}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Assemble Lantern Protocol manuscript exports.")
+    parser.add_argument(
+        "--profile",
+        choices=["markdown", "elevenlabs-docx", "all"],
+        default="markdown",
+        help="Export profile to generate. Use `all` for Markdown plus ElevenLabs DOCX.",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    if args.profile in {"markdown", "all"}:
+        assemble_markdown_exports()
+    if args.profile in {"elevenlabs-docx", "all"}:
+        assemble_elevenlabs_docx()
 
 
 if __name__ == "__main__":

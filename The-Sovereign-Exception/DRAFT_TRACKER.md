@@ -78,6 +78,9 @@ Revised through:
 | Movie proof-of-concept timestamp scene | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md` |
 | Timestamp POC shot list | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_SHOTLIST.md` |
 | Timestamp POC UI mockup spec | Complete | `movie/UI_MOCKUP_SPEC_TIMESTAMP_SCENE.md` |
+| Timestamp POC storyboard prompts | Complete | `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md` |
+| Timestamp POC UI plate prompts | Complete | `movie/UI_PLATE_PROMPTS_TIMESTAMP_SCENE.md` |
+| Timestamp POC production brief | Complete | `movie/PRODUCTION_BRIEF_TIMESTAMP_SCENE.md` |
 | Timestamp POC audio/table-read proof | Complete | `audio/AUDIO_PROOF_TIMESTAMP_SCENE.md` |
 | Trailer script | Complete | `TRAILER_SCRIPT.md` |
 | ElevenLabs casting | Complete starter pack | `ELEVENLABS_CASTING.md` |
@@ -96,12 +99,23 @@ Revised through:
 
 ---
 
+# Repo Repair / Branch Sync Status
+
+| Item | Status | Notes |
+|---|---|---|
+| Repaired Lantern sync PR | Merged | PR #25 merged into `main`; included Lantern movie package and shared-universe canon. |
+| Older Lantern sync PR | Superseded | PR #20 is superseded by PR #25 and has a comment noting that status. |
+| Missing Lantern movie paths | Restored | Lantern feature treatment and eight-sequence beat sheet now exist on `main`. |
+| Missing shared-universe canon paths | Restored | Shared-universe README, glossary, matrices, chronology, timeline, adaptation bible, and related files now exist on `main`. |
+| Stranded timestamp POC files | Restored | Storyboard prompts, UI plate prompts, and production brief added directly to `main`. |
+
+---
+
 # Open Production Tasks
 
 ## Novel
 
 - Continue targeted prose edits with Chapters 2-3.
-- Verify or restore the missing shared-universe canon paths listed in `SHARED_UNIVERSE_CONSISTENCY_REVIEW.md`.
 - Reconcile older 28-chapter `CHAPTER_STRUCTURE.md` against the current 40-chapter draft after revision pass stabilizes.
 - Run `scripts/build_manuscript.py` locally to generate `MANUSCRIPT_COMBINED.md` after revision checkpoints.
 - Add continuity pass for terminology, character arcs, timelines, and technical doctrine.
@@ -109,18 +123,14 @@ Revised through:
 
 ## Screenplay / Movie
 
-- Create storyboard prompt pack for `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP.md`.
-- Create static UI plate prompts/assets for Green Map, authorization stack, audit timeline, and GCF Annex reveal.
-- Create production brief and minimal budget plan for the timestamp scene.
-- Restore or create Lantern movie files when canon paths are confirmed:
-  - `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md`
-  - `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md`
-- Perform side-by-side Lantern/Sovereign adaptation alignment once Lantern movie artifacts exist.
+- Perform side-by-side Lantern/Sovereign adaptation alignment now that Lantern movie artifacts exist on `main`.
+- Create static UI plate assets for Green Map, authorization stack, audit timeline, and GCF Annex reveal.
+- Build an animatic or deck-ready proof from the timestamp scene package.
 - Create `SCREENPLAY_ACTS.md` with scene headings and screenplay beats.
 
 ## Storyboard
 
-- Create `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md`.
+- Generate first 10 timestamp POC storyboard frames from `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md`.
 - Expand `STORYBOARD_PROMPTS.md` into scene-by-scene image prompt CSV/JSON.
 - Add character continuity image notes.
 
@@ -138,12 +148,6 @@ Revised through:
 
 # Current Recommendation
 
-Timestamp POC mini-package is complete.
+Repo repair and timestamp POC mini-package sync are complete.
 
-Next strongest step: create the storyboard and production package for the timestamp POC:
-
-- `movie/PROOF_OF_CONCEPT_SCENE_TIMESTAMP_STORYBOARD_PROMPTS.md`
-- `movie/UI_PLATE_PROMPTS_TIMESTAMP_SCENE.md`
-- `movie/PRODUCTION_BRIEF_TIMESTAMP_SCENE.md`
-
-These files turn the proof scene into an image-generatable, deck-ready, and shoot-plannable package.
+Next strongest step: perform a side-by-side Lantern/Sovereign adaptation alignment pass using the now-restored Lantern movie artifacts and the current Sovereign movie package.

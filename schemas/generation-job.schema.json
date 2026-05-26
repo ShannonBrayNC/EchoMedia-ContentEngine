@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/generation-job.schema.json",
+  "title": "Generation Job",
+  "type": "object",
+  "required": ["schemaVersion", "jobId", "projectId", "artifactType", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "jobId": { "type": "string" },
+    "projectId": { "type": "string" },
+    "artifactType": { "type": "string" },
+    "sourceRefs": { "type": "array", "items": { "type": "object", "additionalProperties": true }, "default": [] },
+    "contextManifestId": { "type": "string" },
+    "templateId": { "type": "string" },
+    "templateVersion": { "type": "string" },
+    "userDirection": { "type": "string" },
+    "exportProfileId": { "type": "string" },
+    "provider": { "type": "string" },
+    "dryRun": { "type": "boolean", "default": true },
+    "status": { "type": "string", "enum": ["draft-request", "queued", "generating", "generated", "needs-review", "approved", "exported", "failed", "cancelled", "superseded"] },
+    "attempt": { "type": "integer", "minimum": 1, "default": 1 },
+    "parentJobId": { "type": "string" },
+    "artifactIds": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "manifestIds": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "warnings": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "error": { "$ref": "#/$defs/error" },
+    "correlationId": { "type": "string" },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  },
+  "$defs": {
+    "error": {
+      "type": "object",
+      "required": ["code", "message"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "details": { "type": "object", "additionalProperties": true },
+        "correlationId": { "type": "string" }
+      }
+    }
+  }
+}

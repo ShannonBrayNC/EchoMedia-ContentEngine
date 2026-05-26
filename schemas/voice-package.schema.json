@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/voice-package.schema.json",
+  "title": "Voice Package",
+  "type": "object",
+  "required": ["schemaVersion", "voiceId", "projectId", "role", "readiness"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0-draft" },
+    "voiceId": { "type": "string" },
+    "projectId": { "type": "string" },
+    "role": { "type": "string", "enum": ["narrator", "character", "agent", "effect", "music"] },
+    "characterId": { "type": "string" },
+    "provider": { "type": "string" },
+    "providerVoiceId": { "type": "string" },
+    "fallbackVoiceIds": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "styleNotes": { "type": "string" },
+    "pacingNotes": { "type": "string" },
+    "pronunciationNotes": { "type": "string" },
+    "locale": { "type": "string" },
+    "outputFormats": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "readiness": { "type": "string", "enum": ["draft", "review", "production"] },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "commercialUseAllowed": { "type": "boolean" },
+        "consentVerified": { "type": "boolean" },
+        "providerTermsReviewed": { "type": "boolean" },
+        "notes": { "type": "string" }
+      }
+    },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}

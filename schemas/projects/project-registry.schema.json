@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/project-registry.schema.json",
+  "title": "EchoMedia Content Engine Project Registry",
+  "description": "Single source of truth for story/book projects available to the Content Engine UI, validators, generators, and export workflows.",
+  "type": "object",
+  "required": [
+    "version",
+    "projects"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Registry schema/content version. Use semantic versioning when possible."
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/project"
+      }
+    }
+  },
+  "$defs": {
+    "project": {
+      "type": "object",
+      "required": [
+        "slug",
+        "title",
+        "root_path",
+        "status",
+        "artifact_paths",
+        "supported_generation_types"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "description": "Stable lowercase project identifier used by UI routes, generators, and validators."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "series": {
+          "type": "string",
+          "description": "Optional series/franchise grouping, such as Lantern Protocol Trilogy or Shared Universe."
+        },
+        "universe": {
+          "type": "string",
+          "description": "Optional story universe label for continuity grouping."
+        },
+        "root_path": {
+          "type": "string",
+          "description": "Repository-relative root path for this project."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "active",
+            "paused",
+            "locked",
+            "archived"
+          ]
+        },
+        "visibility": {
+          "type": "string",
+          "enum": [
+            "visible",
+            "hidden"
+          ],
+          "default": "visible"
+        },
+        "canon_state": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "candidate",
+            "approved",
+            "locked",
+            "superseded",
+            "archived"
+          ]
+        },
+        "active_canon_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "artifact_paths": {
+          "$ref": "#/$defs/artifactPaths"
+        },
+        "legacy_aliases": {
+          "type": "array",
+          "description": "Alternative slugs or folder names accepted during migration.",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "supported_generation_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "canon",
+              "character",
+              "story-outline",
+              "manuscript",
+              "screenplay",
+              "scene-card",
+              "storyboard",
+              "visual-prompt",
+              "production-package",
+              "pitch",
+              "audio-script",
+              "tool-export"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "export_targets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifactPaths": {
+      "type": "object",
+      "required": [
+        "canon",
+        "characters",
+        "story",
+        "manuscript",
+        "storyboards",
+        "visual_bible",
+        "screenplay",
+        "movie_generation",
+        "pitch",
+        "reports"
+      ],
+      "properties": {
+        "canon": {
+          "type": "string"
+        },
+        "characters": {
+          "type": "string"
+        },
+        "story": {
+          "type": "string"
+        },
+        "manuscript": {
+          "type": "string"
+        },
+        "storyboards": {
+          "type": "string"
+        },
+        "visual_bible": {
+          "type": "string"
+        },
+        "screenplay": {
+          "type": "string"
+        },
+        "movie_generation": {
+          "type": "string"
+        },
+        "pitch": {
+          "type": "string"
+        },
+        "reports": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/content-engine/artifact-traceability.schema.json",
+  "title": "EchoMedia Content Engine Artifact Traceability",
+  "description": "Links source material, generated artifacts, canon dependencies, and downstream exports so generated production files remain auditable and regenerable.",
+  "type": "object",
+  "required": [
+    "trace_id",
+    "version",
+    "project_slug",
+    "artifact_id",
+    "artifact_type",
+    "sources",
+    "dependencies",
+    "downstream_artifacts",
+    "created_at"
+  ],
+  "properties": {
+    "trace_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "project_slug": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "artifact_type": {
+      "type": "string",
+      "enum": [
+        "canon",
+        "character",
+        "story-outline",
+        "manuscript",
+        "screenplay",
+        "scene-card",
+        "storyboard",
+        "visual-prompt",
+        "production-package",
+        "pitch",
+        "audio-script",
+        "tool-export"
+      ]
+    },
+    "artifact_path": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/traceLink"
+      },
+      "minItems": 1
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/traceLink"
+      }
+    },
+    "downstream_artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/traceLink"
+      }
+    },
+    "canon_impact": {
+      "$ref": "#/$defs/canonImpact"
+    },
+    "generation_job_id": {
+      "type": "string"
+    },
+    "review_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "traceLink": {
+      "type": "object",
+      "required": [
+        "type",
+        "path",
+        "relationship"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "canon",
+            "character",
+            "visual-bible",
+            "story-outline",
+            "manuscript",
+            "screenplay",
+            "scene-card",
+            "storyboard",
+            "visual-prompt",
+            "production-package",
+            "pitch",
+            "audio-script",
+            "tool-export",
+            "generation-job",
+            "review-gate"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "artifact_id": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "derived-from",
+            "depends-on",
+            "updates",
+            "supersedes",
+            "generates",
+            "exports-to",
+            "validates-against",
+            "blocks-save-until-reviewed",
+            "affected-by"
+          ]
+        },
+        "summary": {
+          "type": "string"
+        },
+        "required_for_regeneration": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "canonImpact": {
+      "type": "object",
+      "properties": {
+        "touches_locked_canon": {
+          "type": "boolean",
+          "default": false
+        },
+        "requires_change_request": {
+          "type": "boolean",
+          "default": false
+        },
+        "affected_canon_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "affected_downstream_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "regeneration_recommended": {
+          "type": "boolean",
+          "default": false
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

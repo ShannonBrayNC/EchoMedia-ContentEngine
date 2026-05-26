@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "projects": [
+    {
+      "slug": "lantern-protocol",
+      "title": "Lantern Protocol",
+      "root_path": "projects/lantern-protocol",
+      "status": "active",
+      "visibility": "visible",
+      "series": "Lantern Protocol Trilogy",
+      "universe": "Lantern / Sovereign Shared Universe",
+      "canon_state": "draft",
+      "active_canon_files": [],
+      "legacy_aliases": [
+        "Lantern Protocol",
+        "lantern-protocol"
+      ],
+      "artifact_paths": {
+        "canon": "projects/lantern-protocol/canon",
+        "characters": "projects/lantern-protocol/characters",
+        "story": "projects/lantern-protocol/story",
+        "manuscript": "projects/lantern-protocol/manuscript",
+        "storyboards": "projects/lantern-protocol/storyboards",
+        "visual_bible": "projects/lantern-protocol/visual-bible",
+        "screenplay": "projects/lantern-protocol/screenplay",
+        "movie_generation": "projects/lantern-protocol/movie-generation",
+        "pitch": "projects/lantern-protocol/pitch",
+        "reports": "projects/lantern-protocol/reports"
+      },
+      "supported_generation_types": [
+        "canon",
+        "character",
+        "story-outline",
+        "manuscript",
+        "screenplay",
+        "scene-card",
+        "storyboard",
+        "visual-prompt",
+        "production-package",
+        "pitch",
+        "audio-script",
+        "tool-export"
+      ],
+      "export_targets": [
+        "generic-json",
+        "runway",
+        "pika",
+        "luma-dream-machine",
+        "kling",
+        "sora-style",
+        "elevenlabs",
+        "storyboard-deck"
+      ]
+    },
+    {
+      "slug": "the-sovereign-exception",
+      "title": "The Sovereign Exception",
+      "root_path": "The-Sovereign-Exception",
+      "status": "active",
+      "visibility": "visible",
+      "series": "The Sovereign Exception",
+      "universe": "Lantern / Sovereign Shared Universe",
+      "canon_state": "draft",
+      "active_canon_files": [],
+      "legacy_aliases": [
+        "The-Sovereign-Exception",
+        "sovereign-exception"
+      ],
+      "artifact_paths": {
+        "canon": "The-Sovereign-Exception/canon",
+        "characters": "The-Sovereign-Exception/characters",
+        "story": "The-Sovereign-Exception/story",
+        "manuscript": "The-Sovereign-Exception/manuscript",
+        "storyboards": "The-Sovereign-Exception/storyboards",
+        "visual_bible": "The-Sovereign-Exception/visual-bible",
+        "screenplay": "The-Sovereign-Exception/screenplay",
+        "movie_generation": "The-Sovereign-Exception/movie-generation",
+        "pitch": "The-Sovereign-Exception/pitch",
+        "reports": "The-Sovereign-Exception/reports"
+      },
+      "supported_generation_types": [
+        "canon",
+        "character",
+        "story-outline",
+        "manuscript",
+        "screenplay",
+        "scene-card",
+        "storyboard",
+        "visual-prompt",
+        "production-package",
+        "pitch",
+        "audio-script",
+        "tool-export"
+      ],
+      "export_targets": [
+        "generic-json",
+        "runway",
+        "pika",
+        "luma-dream-machine",
+        "kling",
+        "sora-style",
+        "elevenlabs",
+        "storyboard-deck"
+      ]
+    }
+  ]
+}

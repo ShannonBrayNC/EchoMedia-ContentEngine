@@ -1,0 +1,112 @@
+{
+  "version": "0.1.0",
+  "actions": [
+    {
+      "key": "validate",
+      "label": "Validate",
+      "intent": "Inspect existing project structure, context, draft output, or export readiness without creating new creative content.",
+      "allowed_outputs": [
+        "validation-report",
+        "warning-list",
+        "missing-field-list",
+        "readiness-state"
+      ],
+      "forbidden_outputs": [
+        "new-creative-artifact",
+        "saved-project-file",
+        "export-package",
+        "repo-commit"
+      ],
+      "requires_review_before_persist": false,
+      "example_button_labels": [
+        "Validate project folders",
+        "Validate generation context",
+        "Validate draft",
+        "Validate export readiness"
+      ]
+    },
+    {
+      "key": "generate",
+      "label": "Generate",
+      "intent": "Create new draft content from project context and user direction.",
+      "allowed_outputs": [
+        "draft-artifact",
+        "generation-metadata",
+        "source-reference-list",
+        "generation-warning-list"
+      ],
+      "forbidden_outputs": [
+        "approved-artifact-overwrite",
+        "repo-commit-without-review",
+        "tool-export-without-profile"
+      ],
+      "requires_review_before_persist": true,
+      "example_button_labels": [
+        "Generate scene card",
+        "Generate screenplay scene",
+        "Generate storyboard prompts",
+        "Generate production package"
+      ]
+    },
+    {
+      "key": "assemble",
+      "label": "Assemble",
+      "intent": "Combine existing artifacts into a larger artifact without inventing new creative content by default.",
+      "allowed_outputs": [
+        "assembled-draft",
+        "assembly-report",
+        "source-map"
+      ],
+      "forbidden_outputs": [
+        "unreviewed-canon-change",
+        "repo-commit-without-review"
+      ],
+      "requires_review_before_persist": true,
+      "example_button_labels": [
+        "Assemble screenplay draft",
+        "Assemble pitch packet",
+        "Assemble scene package"
+      ]
+    },
+    {
+      "key": "export",
+      "label": "Export",
+      "intent": "Transform canonical or approved artifacts into a target tool format using an export profile.",
+      "allowed_outputs": [
+        "tool-export-package",
+        "export-readiness-report",
+        "missing-field-list"
+      ],
+      "forbidden_outputs": [
+        "canonical-source-overwrite",
+        "unprofiled-tool-output"
+      ],
+      "requires_review_before_persist": true,
+      "example_button_labels": [
+        "Export Runway package",
+        "Export ElevenLabs script",
+        "Export generic JSON package"
+      ]
+    },
+    {
+      "key": "save_commit",
+      "label": "Save / Commit",
+      "intent": "Persist reviewed and approved output into the repository or configured storage target.",
+      "allowed_outputs": [
+        "saved-artifact",
+        "commit",
+        "persistence-report"
+      ],
+      "forbidden_outputs": [
+        "unreviewed-draft-save",
+        "silent-overwrite"
+      ],
+      "requires_review_before_persist": true,
+      "example_button_labels": [
+        "Save approved artifact",
+        "Commit generated artifact",
+        "Save export package"
+      ]
+    }
+  ]
+}

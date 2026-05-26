@@ -1,0 +1,229 @@
+{
+  "package_id": "lantern-protocol-scene-001-v0-1-0",
+  "version": "0.1.0",
+  "project": {
+    "slug": "lantern-protocol",
+    "title": "Lantern Protocol",
+    "root_path": "projects/lantern-protocol",
+    "series": "Lantern Protocol Trilogy",
+    "universe": "Lantern / Sovereign Shared Universe"
+  },
+  "package_type": "scene",
+  "state": "export-ready",
+  "canonical_artifacts": {
+    "production_package": {
+      "artifact_id": "lantern-scene-001-production-package",
+      "artifact_type": "production-package",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/production-package.json",
+      "state": "approved",
+      "description": "Canonical scene production brief."
+    },
+    "scene_timeline": {
+      "artifact_id": "lantern-scene-001-timeline",
+      "artifact_type": "scene-timeline",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/scene-timeline.json",
+      "state": "approved",
+      "description": "Scene beat and shot timing structure."
+    },
+    "screenplay_or_scene_cards": [
+      {
+        "artifact_id": "lantern-scene-001-card",
+        "artifact_type": "scene-card",
+        "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/scene-cards.md",
+        "state": "approved",
+        "description": "Approved scene card draft."
+      }
+    ],
+    "visual_prompt_pack": {
+      "artifact_id": "lantern-scene-001-visual-prompts",
+      "artifact_type": "visual-prompt-pack",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/visual-prompt-pack.json",
+      "state": "approved",
+      "description": "Shot-level prompts and camera/style guidance."
+    },
+    "voice_package": {
+      "artifact_id": "lantern-scene-001-voice-package",
+      "artifact_type": "voice-package",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/voice-package.json",
+      "state": "approved",
+      "description": "Narration and character voice plan."
+    },
+    "subtitle_caption_timing": {
+      "artifact_id": "lantern-scene-001-caption-timing",
+      "artifact_type": "subtitle-caption-timing",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/subtitle-caption-timing.json",
+      "state": "approved",
+      "description": "Subtitle and dialogue alignment timing."
+    },
+    "asset_manifest": {
+      "artifact_id": "lantern-scene-001-asset-manifest",
+      "artifact_type": "asset-manifest",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/asset-manifest.json",
+      "state": "approved",
+      "description": "Input and generated asset references."
+    },
+    "provider_export_manifest": {
+      "artifact_id": "lantern-scene-001-provider-export-manifest",
+      "artifact_type": "provider-export-manifest",
+      "path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical/provider-export-manifest.json",
+      "state": "approved",
+      "description": "Provider view validation and output metadata."
+    },
+    "optional_references": []
+  },
+  "provider_views": [
+    {
+      "provider": "generic-json",
+      "profile_id": "generic-json-v0-1-0",
+      "target": "manifest",
+      "state": "ready",
+      "required_inputs": [
+        "production_package",
+        "scene_timeline",
+        "screenplay_or_scene_cards",
+        "asset_manifest"
+      ],
+      "output_path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/provider-exports/generic-json/lantern-protocol_scene_scene-001_v0.1.0_generic-json.json",
+      "validation": {
+        "status": "passed",
+        "messages": []
+      }
+    },
+    {
+      "provider": "runway",
+      "profile_id": "runway-video-v0-1-0",
+      "target": "video",
+      "state": "planned",
+      "required_inputs": [
+        "production_package",
+        "scene_timeline",
+        "visual_prompt_pack",
+        "asset_manifest"
+      ],
+      "output_path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/provider-exports/runway/lantern-protocol_scene_scene-001_v0.1.0_runway.json",
+      "validation": {
+        "status": "not-run",
+        "messages": [
+          "Runway adapter is not implemented in this sprint."
+        ]
+      }
+    },
+    {
+      "provider": "elevenlabs",
+      "profile_id": "elevenlabs-audio-v0-1-0",
+      "target": "audio",
+      "state": "planned",
+      "required_inputs": [
+        "voice_package",
+        "subtitle_caption_timing",
+        "asset_manifest"
+      ],
+      "output_path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/provider-exports/elevenlabs/lantern-protocol_scene_scene-001_v0.1.0_elevenlabs.json",
+      "validation": {
+        "status": "not-run",
+        "messages": [
+          "ElevenLabs adapter is not implemented in this sprint."
+        ]
+      }
+    },
+    {
+      "provider": "local-worker",
+      "profile_id": "local-worker-v0-1-0",
+      "target": "local-worker",
+      "state": "planned",
+      "required_inputs": [
+        "production_package",
+        "visual_prompt_pack",
+        "voice_package",
+        "asset_manifest"
+      ],
+      "output_path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/provider-exports/local-worker/lantern-protocol_scene_scene-001_v0.1.0_local-worker.json",
+      "validation": {
+        "status": "not-run",
+        "messages": [
+          "Local worker contract is not implemented in this sprint."
+        ]
+      }
+    }
+  ],
+  "review_gate": {
+    "review_id": "lantern-scene-001-deliverable-review",
+    "state": "approved",
+    "approved_by_human": true,
+    "reviewed_at": "2026-05-24T09:15:00Z",
+    "reviewer_notes": "Fixture package approved for schema and export-readiness testing only.",
+    "required_checks": [
+      {
+        "key": "canonical-artifacts-present",
+        "label": "Canonical artifacts present",
+        "status": "passed",
+        "required": true
+      },
+      {
+        "key": "human-review-approved",
+        "label": "Human review approved",
+        "status": "passed",
+        "required": true
+      },
+      {
+        "key": "rights-safety-reviewed",
+        "label": "Rights and safety reviewed",
+        "status": "passed",
+        "required": true
+      }
+    ]
+  },
+  "rights_safety": {
+    "source_rights_checked": true,
+    "voice_rights_checked": true,
+    "likeness_rights_checked": true,
+    "provider_terms_checked": true,
+    "release_disclosure_required": true,
+    "notes": "Fixture package only. Live provider exports still require provider-specific terms and rights validation.",
+    "blockers": []
+  },
+  "quality_gates": [
+    {
+      "key": "required-artifacts-approved",
+      "label": "Required artifacts approved",
+      "status": "passed",
+      "required": true
+    },
+    {
+      "key": "provider-view-available",
+      "label": "At least one provider view available",
+      "status": "passed",
+      "required": true
+    },
+    {
+      "key": "traceability-present",
+      "label": "Traceability metadata present",
+      "status": "passed",
+      "required": true
+    }
+  ],
+  "file_conventions": {
+    "package_root": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0",
+    "canonical_folder": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/canonical",
+    "provider_export_folder": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/provider-exports",
+    "manifest_path": "projects/lantern-protocol/deliverables/lantern-protocol-scene-001-v0-1-0/package-manifest.json",
+    "naming_pattern": "<project-slug>_<package-type>_<scene-or-sequence-id>_<version>_<provider-or-canonical>.<ext>"
+  },
+  "traceability": {
+    "trace_id": "lantern-scene-001-deliverable-trace",
+    "generation_job_ids": [
+      "lantern-protocol-scene-card-generate-draft-20260524090000"
+    ],
+    "source_refs": [
+      {
+        "artifact_id": "lantern-canon-index",
+        "artifact_type": "canon-index",
+        "path": "projects/lantern-protocol/canon/index.md",
+        "state": "approved",
+        "description": "Canonical source index reference."
+      }
+    ]
+  },
+  "created_at": "2026-05-24T09:15:00Z",
+  "updated_at": "2026-05-24T09:15:00Z"
+}

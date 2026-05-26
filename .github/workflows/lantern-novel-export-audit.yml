@@ -8,7 +8,7 @@ on:
       - ".github/workflows/lantern-novel-export-audit.yml"
   push:
     branches:
-      - cleanup/lantern-canon-freeze-v2
+      - main
     paths:
       - "projects/lantern-protocol/novel/**"
       - "projects/lantern-protocol/reports/**"
@@ -32,9 +32,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install export dependencies
+        run: python -m pip install python-docx
+
       - name: Assemble manuscript exports
         working-directory: projects/lantern-protocol/novel
-        run: python ./production/assemble_manuscript.py
+        run: python ./production/assemble_manuscript.py --profile all
 
       - name: Run manuscript audit
         working-directory: projects/lantern-protocol/novel
@@ -48,7 +51,8 @@ jobs:
             echo "Generated Lantern novel exports are stale."
             echo "Run these locally and commit the results:"
             echo "  cd projects/lantern-protocol/novel"
-            echo "  python ./production/assemble_manuscript.py"
+            echo "  python -m pip install python-docx"
+            echo "  python ./production/assemble_manuscript.py --profile all"
             echo "  python ./production/audit_manuscript.py"
             git diff -- projects/lantern-protocol/novel/exports
             exit 1
@@ -62,4 +66,6 @@ jobs:
             projects/lantern-protocol/novel/exports/lantern-protocol-novel-draft.md
             projects/lantern-protocol/novel/exports/lantern-protocol-novel-report.md
             projects/lantern-protocol/novel/exports/lantern-protocol-novel-audit.md
+            projects/lantern-protocol/novel/exports/Lantern_Protocol_Book_One_ElevenLabs.docx
+            projects/lantern-protocol/novel/exports/lantern-protocol-elevenlabs-audiobook-report.md
           if-no-files-found: error
