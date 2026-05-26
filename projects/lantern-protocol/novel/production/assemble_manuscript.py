@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import argparse
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -139,7 +140,7 @@ def build_report(stats: List[ChapterStats], front_matter_files: List[Path]) -> s
     return "\n".join(lines).rstrip() + "\n"
 
 
-def main() -> None:
+def assemble_markdown_exports() -> None:
     EXPORTS.mkdir(parents=True, exist_ok=True)
 
     chapters = sorted(CHAPTERS.glob("chapter-*.md"), key=chapter_sort_key)
@@ -186,6 +187,40 @@ def main() -> None:
     print(f"Front matter files: {len(front_matter_files)}")
     print(f"Total chapters: {len(stats)}")
     print(f"Total manuscript body words: {total_body_words}")
+
+
+def assemble_elevenlabs_docx() -> None:
+    from export_elevenlabs_docx import build_elevenlabs_docx
+
+    result = build_elevenlabs_docx()
+    print(f"Wrote {result.output_docx}")
+    print(f"Wrote {result.report_path}")
+    print(f"Front matter files: {result.front_matter_count}")
+    print(f"Total chapters: {result.chapter_count}")
+    print(f"Reader-facing words: {result.body_word_count}")
+    if result.findings:
+        print("Warnings:")
+        for finding in result.findings:
+            print(f"- {finding}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Assemble Lantern Protocol manuscript exports.")
+    parser.add_argument(
+        "--profile",
+        choices=["markdown", "elevenlabs-docx", "all"],
+        default="markdown",
+        help="Export profile to generate. Use `all` for Markdown plus ElevenLabs DOCX.",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    if args.profile in {"markdown", "all"}:
+        assemble_markdown_exports()
+    if args.profile in {"elevenlabs-docx", "all"}:
+        assemble_elevenlabs_docx()
 
 
 if __name__ == "__main__":
