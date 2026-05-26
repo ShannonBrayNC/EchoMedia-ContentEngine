@@ -62,3 +62,9 @@ At least one narrative doctrine must map to a concrete platform rule.
 - Approved creative assets can emit a Lantern artifact payload.
 - Production-ready exports require manifest, rights status, approval state, and ETS proof reference.
 - Tests or fixtures cover draft asset, missing rights gate, approved manifest, and provider job event.
+
+## Verified asset gate
+
+`services/lantern_verified_assets.py` is the no-provider gate for approved creative assets. It builds a Lantern asset manifest, evaluates release readiness, and emits the SignalForge `artifact.created` handoff only when rights are cleared, approval is approved, consent is granted or not required, evidence is hashed, and an ETS proof reference or mock marker is present.
+
+Validation coverage lives in `tests/e2e/test_lantern_verified_assets.py`.

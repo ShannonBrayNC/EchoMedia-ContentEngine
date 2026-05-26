@@ -56,6 +56,19 @@ A manifest may not be marked `released` unless:
 }
 ```
 
+## No-provider implementation
+
+`services/lantern_verified_assets.py` implements the release gate described by this schema.
+
+It can:
+
+- build a manifest-safe Lantern asset manifest,
+- hash manifest evidence,
+- keep draft assets out of production-ready status,
+- block assets with missing or blocked rights,
+- require human approval, consent, and ETS proof before release,
+- emit a SignalForge `LanternArtifact` handoff only for released manifests.
+
 ## Validation checklist
 
 - Draft assets cannot be exported as released packages.
