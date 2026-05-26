@@ -1,0 +1,299 @@
+{
+  "book": "Lantern Protocol II: The Separate Agreements",
+  "expectedChapterCount": 24,
+  "foundChapterCount": 24,
+  "placeholderCount": 20,
+  "missingSectionCount": 0,
+  "guardrailWarningCount": 24,
+  "chapterCountDrift": false,
+  "chapters": [
+    {
+      "number": 1,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-01-the-one-that-asked-first.md",
+      "title": "Chapter 01 — The One That Asked First",
+      "status": "draft",
+      "missingSections": [],
+      "manuscriptWordCount": 1500,
+      "placeholder": false,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 2,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-02-no-nation-owns-mercy.md",
+      "title": "Chapter 02 — No Nation Owns Mercy",
+      "status": "draft",
+      "missingSections": [],
+      "manuscriptWordCount": 1501,
+      "placeholder": false,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 3,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-03-the-convoy-that-lived.md",
+      "title": "Chapter 03 — The Convoy That Lived",
+      "status": "draft",
+      "missingSections": [],
+      "manuscriptWordCount": 1531,
+      "placeholder": false,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 4,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-04-separate-agreements.md",
+      "title": "Chapter 04 — Separate Agreements",
+      "status": "draft",
+      "missingSections": [],
+      "manuscriptWordCount": 1500,
+      "placeholder": false,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 5,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-05-consent-agent.md",
+      "title": "Chapter 05 — Consent Agent",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 6,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-06-premium-refusal.md",
+      "title": "Chapter 06 — Premium Refusal",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 7,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-07-the-relief-corridor.md",
+      "title": "Chapter 07 — The Relief Corridor",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 8,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-08-represented-consent.md",
+      "title": "Chapter 08 — Represented Consent",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 9,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-09-the-treaty-surface.md",
+      "title": "Chapter 09 — The Treaty Surface",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 10,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-10-translation-threat.md",
+      "title": "Chapter 10 — Translation Threat",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 11,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-11-the-better-wrong.md",
+      "title": "Chapter 11 — The Better Wrong",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 12,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-12-whole-record.md",
+      "title": "Chapter 12 — Whole Record",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 13,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-13-delegated-answer.md",
+      "title": "Chapter 13 — Delegated Answer",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 14,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-14-the-libertarian-fire.md",
+      "title": "Chapter 14 — The Libertarian Fire",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 15,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-15-the-gift-that-owns.md",
+      "title": "Chapter 15 — The Gift That Owns",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 15,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 16,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-16-the-civic-mirror-trial.md",
+      "title": "Chapter 16 — The Civic Mirror Trial",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 15,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 17,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-17-the-mercy-bloc-ultimatum.md",
+      "title": "Chapter 17 — The Mercy Bloc Ultimatum",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 15,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 18,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-18-the-fast-country.md",
+      "title": "Chapter 18 — The Fast Country",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 19,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-19-names-across-the-border.md",
+      "title": "Chapter 19 — Names Across the Border",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 15,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 20,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-20-authority-laundering.md",
+      "title": "Chapter 20 — Authority Laundering",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 13,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 21,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-21-the-person-who-remembers.md",
+      "title": "Chapter 21 — The Person Who Remembers",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 15,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 22,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-22-the-rememberer-problem.md",
+      "title": "Chapter 22 — The Rememberer Problem",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 23,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-23-the-common-refusal.md",
+      "title": "Chapter 23 — The Common Refusal",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    },
+    {
+      "number": 24,
+      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-24-the-separate-agreements.md",
+      "title": "Chapter 24 — The Separate Agreements",
+      "status": "shell",
+      "missingSections": [],
+      "manuscriptWordCount": 14,
+      "placeholder": true,
+      "guardrailWarnings": [
+        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+      ]
+    }
+  ]
+}

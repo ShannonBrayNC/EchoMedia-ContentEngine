@@ -10,7 +10,9 @@ from __future__ import annotations
 
 import argparse
 import re
+import zipfile
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable, List, Sequence
 
@@ -51,6 +53,8 @@ INTERNAL_MARKERS = [
     "Auto-assembled",
 ]
 EXPECTED_ACTIVE_CHAPTERS = 24
+DETERMINISTIC_DOCX_TIMESTAMP = (2026, 1, 1, 0, 0, 0)
+DETERMINISTIC_CORE_TIMESTAMP = datetime(2026, 1, 1, tzinfo=timezone.utc)
 
 
 @dataclass(frozen=True)
@@ -260,11 +264,12 @@ def collect_chapters() -> List[Path]:
 
 def build_report(result: ExportResult) -> str:
     status = "PASS" if not result.findings else "WARN"
+    output_path = result.output_docx.relative_to(ROOT).as_posix()
     lines = [
         "# Lantern Protocol — ElevenLabs Audiobook Export Report",
         "",
         f"**Status:** {status}",
-        f"**Output DOCX:** `{result.output_docx.relative_to(ROOT)}`",
+        f"**Output DOCX:** `{output_path}`",
         f"**Front matter files included:** {result.front_matter_count}",
         f"**Chapters included:** {result.chapter_count}",
         f"**Reader-facing words exported:** {result.body_word_count}",
@@ -306,6 +311,21 @@ def validate_export(front_matter_files: Sequence[Path], chapters: Sequence[Path]
     return findings
 
 
+def normalize_docx_package(path: Path) -> None:
+    """Rewrite DOCX zip metadata so CI output is stable across platforms."""
+    tmp_path = path.with_suffix(".tmp.docx")
+    with zipfile.ZipFile(path) as src, zipfile.ZipFile(tmp_path, "w") as dst:
+        for item in src.infolist():
+            data = src.read(item.filename)
+            normalized = zipfile.ZipInfo(item.filename, DETERMINISTIC_DOCX_TIMESTAMP)
+            normalized.compress_type = item.compress_type
+            normalized.external_attr = item.external_attr
+            normalized.comment = item.comment
+            normalized.create_system = item.create_system
+            dst.writestr(normalized, data)
+    tmp_path.replace(path)
+
+
 def build_elevenlabs_docx(
     *,
     book_title: str = "Lantern Protocol",
@@ -316,6 +336,8 @@ def build_elevenlabs_docx(
     EXPORTS.mkdir(parents=True, exist_ok=True)
     document = Document()
     configure_document(document)
+    document.core_properties.created = DETERMINISTIC_CORE_TIMESTAMP
+    document.core_properties.modified = DETERMINISTIC_CORE_TIMESTAMP
     add_title_page(document, book_title, book_number)
 
     front_matter_files = collect_front_matter()
@@ -357,6 +379,7 @@ def build_elevenlabs_docx(
         findings=findings,
     )
     document.save(output_docx)
+    normalize_docx_package(output_docx)
     report_path.write_text(build_report(result), encoding="utf-8")
     return result
 
