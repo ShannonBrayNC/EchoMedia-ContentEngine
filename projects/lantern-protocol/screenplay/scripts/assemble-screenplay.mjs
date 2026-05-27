@@ -21,6 +21,10 @@ const sources = [
   {
     label: 'Pages 031-040',
     path: 'projects/lantern-protocol/movie/screenplay/pages-031-040.md'
+  },
+  {
+    label: 'Pages 041-050',
+    path: 'projects/lantern-protocol/movie/screenplay/pages-041-050.md'
   }
 ];
 
@@ -112,16 +116,17 @@ function buildReport(sourceDocs) {
     '',
     '## Known gap',
     '',
-    'Pages 001-040 are currently available as committed screenplay pages. Pages 041+ still need to be drafted or imported.',
+    'Pages 001-050 are currently available as committed screenplay pages. Pages 051+ still need to be drafted or imported.',
     '',
     '## Next writing target',
     '',
-    'Continue from the formal hearing setup into:',
+    'Continue from the Anchor Condition introduction into:',
     '',
-    '- Opening the public hearing',
-    '- Elias testifying under oath about irresistible recommendations',
-    '- Naomi or Elena statement landing as a moral counterweight',
-    '- First hint of Anchor Condition as constraint rather than faster approval',
+    '- Interrogating Lantern public context releases as truthful pressure',
+    '- Mara exposing or nearly exposing the two-minute review window pattern',
+    '- Cross asking when truth placement becomes action',
+    '- Caleb reframing Anchor Condition as bureaucracy slowing rescue',
+    '- Elias and Juno shaping first rough Anchor Condition architecture',
     '',
     '## Validation',
     '',
