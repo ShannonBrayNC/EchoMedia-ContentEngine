@@ -4,15 +4,16 @@ Date: 2026-05-26
 
 ## Status
 
-The screenplay blocker is no longer a missing-source mystery.
+The screenplay blocker has been reduced into a working screenplay pipeline.
 
-The repo already contains the first committed screenplay sample under the legacy movie path:
+The repo now contains two committed screenplay page batches under the legacy movie path:
 
 ```text
 projects/lantern-protocol/movie/screenplay/pages-001-010.md
+projects/lantern-protocol/movie/screenplay/pages-011-020.md
 ```
 
-The normalized screenplay workspace now exists here:
+The normalized screenplay workspace exists here:
 
 ```text
 projects/lantern-protocol/screenplay/
@@ -23,6 +24,7 @@ projects/lantern-protocol/screenplay/
 | Source | Status | Notes |
 |---|---|---|
 | `projects/lantern-protocol/movie/screenplay/pages-001-010.md` | Available | First screenplay sample pass. Region Six flood response, Mercy General, Mara, Naomi, Elias, eight-second gap. |
+| `projects/lantern-protocol/movie/screenplay/pages-011-020.md` | Available | Continuation pass. After-action review, Cross first inquiry pressure, Caleb public framing, empty-chair image. |
 | `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md` | Available | Feature adaptation spine, logline, doctrine, act structure. |
 | `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md` | Available | Eight-sequence structure and continuation map. |
 
@@ -45,21 +47,23 @@ Run from repo root:
 node projects/lantern-protocol/screenplay/scripts/assemble-screenplay.mjs
 ```
 
+The assembler now includes both page batches.
+
 ## Remaining gap
 
-Only Pages 001-010 currently exist as committed screenplay pages.
+Pages 001-020 currently exist as committed screenplay pages.
 
-Pages 011+ still need to be drafted or imported.
+Pages 021+ still need to be drafted or imported.
 
 ## Next writing target
 
-Continue from the current sample into:
+Continue from the preliminary inquiry into:
 
-1. After-action review.
-2. Senator Adrienne Cross's first inquiry pressure.
-3. Caleb Rusk's first public framing.
-4. The empty chair as the visual symbol of unowned authority.
+1. Agency claims that Lantern remained advisory.
+2. Director Marcus Thorne presenting the honest speed argument.
+3. Naomi refusing to let Mateo become only a symbol.
+4. Public chants splitting into `LET IT SAVE US` and `NAME THE HAND`.
 
 ## Recommended issue linkage
 
-This directly advances issue #127 by giving the screenplay workflow a committed normalized workspace, review path, assembly script, and export targets.
+This directly advances issue #127 by giving the screenplay workflow committed page batches, a normalized workspace, a review path, an assembly script, and export targets.
