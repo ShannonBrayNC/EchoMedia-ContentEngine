@@ -9,6 +9,10 @@ const sources = [
   {
     label: 'Pages 001-010',
     path: 'projects/lantern-protocol/movie/screenplay/pages-001-010.md'
+  },
+  {
+    label: 'Pages 011-020',
+    path: 'projects/lantern-protocol/movie/screenplay/pages-011-020.md'
   }
 ];
 
@@ -83,6 +87,8 @@ function buildFountain(sourceDocs) {
 
 function buildReport(sourceDocs) {
   const generatedAt = new Date().toISOString();
+  const labels = sourceDocs.map((source) => source.label).join(', ');
+
   return [
     '# Screenplay Import Status',
     '',
@@ -90,7 +96,7 @@ function buildReport(sourceDocs) {
     '',
     '## Status',
     '',
-    'The normalized screenplay workspace is active. The current export is assembled from the committed Pages 001-010 sample under the legacy movie path.',
+    `The normalized screenplay workspace is active. The current export is assembled from the committed screenplay page batches: ${labels}.`,
     '',
     '## Imported sources',
     '',
@@ -98,16 +104,16 @@ function buildReport(sourceDocs) {
     '',
     '## Known gap',
     '',
-    'Only Pages 001-010 are currently available as screenplay pages. Pages 011+ still need to be drafted or imported.',
+    'Pages 001-020 are currently available as committed screenplay pages. Pages 021+ still need to be drafted or imported.',
     '',
     '## Next writing target',
     '',
-    'Continue from the opening sample into:',
+    'Continue from the preliminary inquiry into:',
     '',
-    '- After-action review',
-    '- Senator Cross first inquiry pressure',
-    '- Caleb Rusk first public framing',
-    '- The empty chair becoming the symbol of unowned authority',
+    '- Agency claims that Lantern remained advisory',
+    '- Marcus Thorne presenting the honest speed argument',
+    '- Naomi refusing to let Mateo become only a symbol',
+    '- Public chants splitting into LET IT SAVE US and NAME THE HAND',
     '',
     '## Validation',
     '',
