@@ -1,0 +1,37 @@
+Title: Lantern Protocol
+Credit: Screenplay sample export
+Source: EchoMedia Content Engine
+
+/*
+Initial normalized Fountain export.
+
+Source file:
+projects/lantern-protocol/movie/screenplay/pages-001-010.md
+
+Regenerate with:
+node projects/lantern-protocol/screenplay/scripts/assemble-screenplay.mjs
+*/
+
+FADE IN:
+
+BLACK.
+
+Rain. Hard enough to sound mechanical.
+
+A calm SYSTEM TONE. Not sinister. Not alive. Useful.
+
+                              LANTERN (V.O.)
+                    Civic flood response active.
+                    Hospital transfer load exceeds safe threshold.
+                    Shelter capacity recalculating.
+                    Human review pending.
+
+A digital clock appears in darkness.
+
+                              02:13:41 LOCAL
+
+/*
+This initial checked-in export intentionally includes the opening excerpt and points back to the committed source page sample. Run the assembler to regenerate the full current sample text from source.
+
+Known gap: only Pages 001-010 currently exist as committed screenplay pages. Pages 011+ need to be drafted or imported.
+*/
