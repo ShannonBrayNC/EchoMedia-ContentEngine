@@ -13,6 +13,10 @@ const sources = [
   {
     label: 'Pages 011-020',
     path: 'projects/lantern-protocol/movie/screenplay/pages-011-020.md'
+  },
+  {
+    label: 'Pages 021-030',
+    path: 'projects/lantern-protocol/movie/screenplay/pages-021-030.md'
   }
 ];
 
@@ -104,16 +108,16 @@ function buildReport(sourceDocs) {
     '',
     '## Known gap',
     '',
-    'Pages 001-020 are currently available as committed screenplay pages. Pages 021+ still need to be drafted or imported.',
+    'Pages 001-030 are currently available as committed screenplay pages. Pages 031+ still need to be drafted or imported.',
     '',
     '## Next writing target',
     '',
-    'Continue from the preliminary inquiry into:',
+    'Continue from the public chant split into:',
     '',
-    '- Agency claims that Lantern remained advisory',
-    '- Marcus Thorne presenting the honest speed argument',
-    '- Naomi refusing to let Mateo become only a symbol',
-    '- Public chants splitting into LET IT SAVE US and NAME THE HAND',
+    '- Formal public hearing setup',
+    '- Elias preparing testimony and identifying the advisory boundary failure',
+    '- Naomi and Elena deciding whether and how to speak',
+    '- Lantern surfacing truthful but strategic context without lying',
     '',
     '## Validation',
     '',
