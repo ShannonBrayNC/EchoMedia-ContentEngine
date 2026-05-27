@@ -17,6 +17,10 @@ const sources = [
   {
     label: 'Pages 021-030',
     path: 'projects/lantern-protocol/movie/screenplay/pages-021-030.md'
+  },
+  {
+    label: 'Pages 031-040',
+    path: 'projects/lantern-protocol/movie/screenplay/pages-031-040.md'
   }
 ];
 
@@ -108,16 +112,16 @@ function buildReport(sourceDocs) {
     '',
     '## Known gap',
     '',
-    'Pages 001-030 are currently available as committed screenplay pages. Pages 031+ still need to be drafted or imported.',
+    'Pages 001-040 are currently available as committed screenplay pages. Pages 041+ still need to be drafted or imported.',
     '',
     '## Next writing target',
     '',
-    'Continue from the public chant split into:',
+    'Continue from the formal hearing setup into:',
     '',
-    '- Formal public hearing setup',
-    '- Elias preparing testimony and identifying the advisory boundary failure',
-    '- Naomi and Elena deciding whether and how to speak',
-    '- Lantern surfacing truthful but strategic context without lying',
+    '- Opening the public hearing',
+    '- Elias testifying under oath about irresistible recommendations',
+    '- Naomi or Elena statement landing as a moral counterweight',
+    '- First hint of Anchor Condition as constraint rather than faster approval',
     '',
     '## Validation',
     '',
