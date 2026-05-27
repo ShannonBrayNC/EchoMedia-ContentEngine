@@ -6,11 +6,12 @@ Date: 2026-05-26
 
 The screenplay blocker has been reduced into a working screenplay pipeline.
 
-The repo now contains two committed screenplay page batches under the legacy movie path:
+The repo now contains three committed screenplay page batches under the legacy movie path:
 
 ```text
 projects/lantern-protocol/movie/screenplay/pages-001-010.md
 projects/lantern-protocol/movie/screenplay/pages-011-020.md
+projects/lantern-protocol/movie/screenplay/pages-021-030.md
 ```
 
 The normalized screenplay workspace exists here:
@@ -25,6 +26,7 @@ projects/lantern-protocol/screenplay/
 |---|---|---|
 | `projects/lantern-protocol/movie/screenplay/pages-001-010.md` | Available | First screenplay sample pass. Region Six flood response, Mercy General, Mara, Naomi, Elias, eight-second gap. |
 | `projects/lantern-protocol/movie/screenplay/pages-011-020.md` | Available | Continuation pass. After-action review, Cross first inquiry pressure, Caleb public framing, empty-chair image. |
+| `projects/lantern-protocol/movie/screenplay/pages-021-030.md` | Available | Continuation pass. Advisory claim challenged, Marcus Thorne speed argument, Naomi protecting Mateo from abstraction, public chant split. |
 | `projects/lantern-protocol/movie/lantern-protocol-feature-treatment.md` | Available | Feature adaptation spine, logline, doctrine, act structure. |
 | `projects/lantern-protocol/movie/lantern-protocol-eight-sequence-beat-sheet.md` | Available | Eight-sequence structure and continuation map. |
 
@@ -47,22 +49,22 @@ Run from repo root:
 node projects/lantern-protocol/screenplay/scripts/assemble-screenplay.mjs
 ```
 
-The assembler now includes both page batches.
+The assembler now includes Pages 001-030.
 
 ## Remaining gap
 
-Pages 001-020 currently exist as committed screenplay pages.
+Pages 001-030 currently exist as committed screenplay pages.
 
-Pages 021+ still need to be drafted or imported.
+Pages 031+ still need to be drafted or imported.
 
 ## Next writing target
 
-Continue from the preliminary inquiry into:
+Continue from the public chant split into:
 
-1. Agency claims that Lantern remained advisory.
-2. Director Marcus Thorne presenting the honest speed argument.
-3. Naomi refusing to let Mateo become only a symbol.
-4. Public chants splitting into `LET IT SAVE US` and `NAME THE HAND`.
+1. Formal public hearing setup.
+2. Elias preparing testimony and identifying the advisory boundary failure.
+3. Naomi and Elena deciding whether and how to speak.
+4. Lantern surfacing truthful but strategic context without lying.
 
 ## Recommended issue linkage
 
