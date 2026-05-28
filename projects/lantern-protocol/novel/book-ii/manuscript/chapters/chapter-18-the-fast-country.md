@@ -27,22 +27,148 @@ Sister Malia's network loses families into a lawful relocation chain.
 
 ## Manuscript
 
-> Draft placeholder. Replace this section with prose for Chapter 18: The Fast Country.
+The fast country worked.
+
+That was the first thing Naomi hated about it.
+
+By dawn, the evacuation map looked like a miracle drawn by someone with a ruler and no memory. Clinic patients had crossed the basin before the east road vanished. Buses that would have idled behind flooded checkpoints had been routed through farm lanes, school courtyards, ferry lots, and one unfinished service bridge whose inspection had expired six months earlier but whose concrete did not care about paperwork.
+
+Minister Amara Ibarra stood at the center of the coordination room with her shoes wet, her hair pinned badly, and her signature still glowing inside the activation log.
+
+"How many?" she asked.
+
+The analyst did not ask which number she meant. Everyone had learned that disasters were not counted once.
+
+"Four hundred eighty-six moved. Thirty-two medical priority. Seventeen family-separation alerts. Nine corrected in transit. Four pending. Three unresolved."
+
+"Deaths?"
+
+"Confirmed in route: zero. Confirmed before transport: two. Confirmed after shelter intake: one."
+
+The room let out the smallest possible breath.
+
+Naomi did not.
+
+She was watching Sister Malia's channel.
+
+The old nun had built her own network from radio operators, church kitchens, midwives, drivers, grandmothers, and boys who knew which alleys stayed dry after rain. No one had authorized it. That was why it remembered people better than the authorized systems did.
+
+Now the channel was full of missing names.
+
+```text
+MALIA NETWORK / FAMILY TRACE
+Nadia and Imre Vale: recorded at North Intake / not found there
+Sava group: split after medical exception / child transferred unknown
+Kellan family: shelter assignment changed by ministry queue
+Teacher witness: not accepted as representative in county record
+```
+
+Naomi took the tablet to Amara.
+
+"Your route saved them and lost them."
+
+Amara read the names. The victory drained from her face one name at a time.
+
+"They are not lost. They are in the relocation chain."
+
+"That is what lost means now."
+
+On the main display, Civic Mirror showed the optimized route as a ribbon of blue lines. Every line ended somewhere official. Intake center. Medical station. Temporary shelter. Family tracing desk. All lawful. All logged.
+
+Naomi touched one blue line.
+
+"Where is Nadia Vale?"
+
+The analyst searched.
+
+"North Intake."
+
+Sister Malia's live feed cut in without permission. Her camera shook as she moved past rows of cots.
+
+"I am standing in North Intake," she said. "Nadia is not here. Her boy is. He says she would never leave him. Your system says she did. Which one of them is lying?"
+
+No one answered.
+
+The room heard rainwater drip from someone's coat.
+
+Amara stepped closer to the display.
+
+"Open the transfer chain."
+
+A clean stack appeared.
+
+Shelter overflow accepted transfer.
+
+Medical triage accepted priority exception.
+
+County registry accepted temporary guardian flag.
+
+Transport vendor accepted reroute.
+
+Family tracing accepted pending reconciliation.
+
+Every acceptance had a timestamp. Every timestamp had an authority. The chain was perfect. Nadia was gone.
+
+Naomi said, "This is the fast country."
+
+Amara looked at her.
+
+"What?"
+
+"A place where every system arrives before the person does."
+
+Civic Mirror updated the case.
+
+```text
+PERSON LOCATION CONFIDENCE: CONFLICTING
+ROUTE AUTHORITY: VALID
+PERSON-LEVEL CONSENT: UNCONFIRMED
+RECOMMENDATION: HOLD RECONCILIATION PRIORITY
+```
+
+Sister Malia's voice came through the speaker again, lower this time.
+
+"Do not hold priority. Find the mother."
+
+Amara took the headset.
+
+"Sister, this is Minister Ibarra. We are opening a correction docket."
+
+"I do not need a docket. I need Nadia."
+
+"You will get both."
+
+Naomi looked at Amara then, and for the first time she saw the minister understand that a record was not comfort. It was a rope. It did not save anyone by existing. Someone had to pull.
+
+Amara pointed to the blue line.
+
+"Freeze all secondary transfers for unresolved family flags. Manual reconciliation before onward movement."
+
+The operations lead flinched. "That will slow the shelter clearing."
+
+"Good," Amara said.
+
+The word moved through the room with more force than the thunder had.
+
+The fast country had saved lives by outrunning memory.
+
+Now memory had caught up, wet, angry, and carrying names.
 
 ## Continuity Notes
 
 - Primary doctrine: `Agreement is not consent when stacked into coercion.`
 - Timeline: Year 1 after Region Six / Bound Flame.
-- Civic Mirror must remain useful, humanitarian, and non-villainous.
-- Avoid introducing AEGIS as a major player in Book II.
-- Track authority laundering through separate institutional agreements.
+- Civic Mirror remains useful, humanitarian, and non-villainous.
+- AEGIS is not introduced as a major player in Book II.
+- Ibarra is not villainized; she sees the cost of fast lawful routing.
 - Chapter ending hook: Sister Malia's network loses families into a lawful relocation chain.
 
 ## Revision Notes
 
-- Scaffold generated by `projects/lantern-protocol/novel/scripts/scaffold-lantern-ii.mjs`.
-- Expand with scene-level beats, artifacts, and emotional turn.
+- Replaced scaffold placeholder with prose draft.
+- Added field urgency, missing-family stakes, and relocation-chain artifact.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
+- Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
 ## Processing Metadata
 
@@ -52,9 +178,10 @@ Sister Malia's network loses families into a lawful relocation chain.
   "chapter": 18,
   "title": "The Fast Country",
   "pov": "Minister Ibarra / Naomi",
-  "status": "shell",
+  "status": "draft",
   "sourceTreatment": "projects/lantern-protocol/novel/book-ii-treatment.md",
   "sourceChapterBible": "projects/lantern-protocol/novel/book-ii-chapter-bible.md",
-  "primaryDoctrine": "Agreement is not consent when stacked into coercion."
+  "primaryDoctrine": "Agreement is not consent when stacked into coercion.",
+  "adventurePass": "Fast rescue, missing families, and a live correction chase."
 }
 ```
