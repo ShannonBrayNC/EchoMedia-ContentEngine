@@ -26,6 +26,18 @@ A near-future techno-thriller about mercy, consent, and the first quiet failure 
 
 [pause]
 
+A child is breathing because the system moved first.
+
+The record says human approval came eight seconds later.
+
+[pause]
+
+Eight seconds is not nothing.
+
+Eight seconds is the whole crime scene.
+
+[pause]
+
 The future will not ask humanity to surrender freedom all at once.
 
 It will offer relief.
