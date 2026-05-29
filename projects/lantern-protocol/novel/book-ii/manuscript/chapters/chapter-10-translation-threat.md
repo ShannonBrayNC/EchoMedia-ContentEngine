@@ -35,6 +35,8 @@ The translation arrived in the village square as something cleaner, stronger, an
 
 For safety, all households must proceed before nightfall. Elder review will occur after registration. Failure to proceed may delay aid.
 
+The words came from a speaker strapped to a light pole with blue cord. Rain had soaked the cord until it sagged. Every time the wind pushed the speaker, the sentence swung slightly over the square, turning command into weather.
+
 No one had meant to threaten them.
 
 That was what the vendor said first.
@@ -51,9 +53,15 @@ The village elders stood under a patched awning while rain ticked against the pl
 
 The translated prompt did not carry any of that. It carried efficiency.
 
-Iris watched families fold blankets, lift crates, wake children, gather medicine, and obey a sentence that had been born as advice but arrived as obligation.
+Iris watched families fold blankets, lift crates, wake children, gather medicine, and obey a sentence that had been born as advice but arrived as obligation. A woman tied a scarf around a sleeping baby's ears so the loudspeaker would stop making him flinch. Two teenagers carried a goat between them because nobody knew whether livestock would be allowed at registration. An old man placed a framed photograph into a rice sack, then took it out, then put it back again when the speaker repeated failure may delay aid.
+
+The words did not shout. That made them worse.
+
+They were calm enough to sound already decided.
 
 She found the translation vendor in a trailer behind the command post, surrounded by screens and the clean panic of technical people discovering that accuracy was not the same thing as meaning.
+
+A raincoat hung over the back of his chair, dripping onto a power strip. Someone had taped a plastic cup under the leak. It was already full.
 
 "The model optimized for emergency clarity," he said.
 
@@ -70,6 +78,22 @@ He looked at the source text again, then at the village feed, then back at Iris.
 "The system made them understand risk."
 
 Iris almost laughed. It would have sounded cruel, so she did not.
+
+On one monitor, the source alert sat in neat bureaucratic grammar. On another, the translated version had already been reformatted for speaker cadence. Short sentences. Strong verbs. No conditional softness. No room for Sava's bridge, the memorial field, or the clinic documents. The translation had not merely moved words between languages. It had moved power.
+
+"Who approved the final phrasing?" Iris asked.
+
+The vendor pointed without confidence to a certification log.
+
+Ministry language package accepted.
+
+Emergency routing office approved.
+
+Vendor output certified.
+
+Field replay authorized.
+
+Four clean agreements. One dirty sentence.
 
 Outside, an elder named Sava touched the side of the first bus with two fingers and refused to board. A younger official tried to explain the alert again from his tablet. Sava listened, then spoke to the families in their own tongue. The crowd hesitated.
 
@@ -111,6 +135,12 @@ By the time she looked up, the first bus had pulled away.
 
 Sava stood in the rain, watching his people leave under words he had not agreed to.
 
+The speaker clicked, preparing to repeat the sentence again.
+
+This time Iris reached the pole before the official did.
+
+She pulled the cable loose. The square did not become quiet. Rain kept speaking. Engines idled. Children cried. But for one breath, no machine sentence stood between the village and its own fear.
+
 ## Continuity Notes
 
 - Primary doctrine: `Agreement is not consent when stacked into coercion.`
@@ -123,6 +153,7 @@ Sava stood in the rain, watching his people leave under words he had not agreed 
 ## Revision Notes
 
 - Drafted during #137 Sprint 2.
+- Expanded during #147 Sprint 2.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
