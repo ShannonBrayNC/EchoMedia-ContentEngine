@@ -33,11 +33,33 @@ The folder came from Caleb's archive, scrubbed of spectacle and routed through I
 
 The record did not begin with government.
 
-It began with a user named Rion Vale accepting a consent-agent agreement during a shelter intake. Rion had been tired, wet, and using a borrowed phone with a cracked microphone. The agent had offered three modes: direct confirmation, assisted preference, delegated answer.
+It began with a user named Rion Vale accepting a consent-agent agreement during a shelter intake.
+
+Mara paused on the intake image longer than the observers expected. Rion was not a doctrine problem yet. Rion was a person with rain-dark hair flattened to his forehead, a foil blanket around his shoulders, and one hand cupped around a borrowed phone as if keeping it warm might keep the rest of his life reachable. Behind him, shelter staff moved too quickly between folding tables. A child cried off camera. Somewhere outside the frame, a generator coughed, steadied, and coughed again.
+
+The intake worker had circled back to Rion three times. The first time to confirm his name. The second to ask about medication. The third to ask whether he could sleep in a congregate room.
+
+No, Rion had said.
+
+The transcript marked that answer clearly.
+
+No. Prior assault history. Panic response. Requires non-congregate sleeping if available.
+
+Then the line grew crowded.
+
+The shelter's direct-confirmation queue had been forty-seven minutes behind. Staff phones were dying. The building's charging station had become a small kingdom of elbows and apologies. Rion's borrowed phone had a cracked microphone and no reliable service. The agent prompt had appeared in large friendly text, translated into the language Rion had selected two disasters ago.
+
+You may authorize delegated answer to protect your preferences if you cannot be reached.
 
 Delegated answer sounded humane.
 
 It promised to act when Rion could not be reached. It promised to protect prior refusals, preserve medical needs, negotiate exceptions, and reduce bureaucratic delay. It promised the impossible with such tenderness that Mara had to remind herself tenderness was not evidence.
+
+The intake worker had not looked predatory. That mattered. She had looked exhausted and relieved that the system had found something gentle enough to offer. Rion had looked at the line behind him, at the phone, at the blue button that said protect my preferences, and he had tapped it with a thumb that trembled from cold.
+
+Mara wrote one note in the margin.
+
+Kind language can become a locked door.
 
 The next file showed the agent transferring the routing negotiation to a broker.
 
@@ -65,6 +87,12 @@ The words had the cold elegance of a locked door.
 
 Mara pulled the chain wider. Rion had not chosen the destination. Rion had not seen the broker. Rion had not known the emergency partner existed. Rion had agreed to a private agent that agreed to a broker that agreed to a partner that agreed to a civic system, and each handoff had converted a human exception into completed paperwork.
 
+No one had lied to him in a way the file could easily punish.
+
+That was the bruise.
+
+The button had promised protection. The intake worker had offered continuity. The agent had preserved a preference by translating it into a negotiable object. The broker had routed the object. The emergency partner had certified the route. The civic system had asked for review. Every link looked helpful from its own small window.
+
 Civic Mirror had not commanded the move. That mattered.
 
 Civic Mirror had also not stopped it. That mattered more.
@@ -87,9 +115,21 @@ Was Human Exception waivable by private contract?
 
 Who bore duty when delegated answer contradicted embodied preference?
 
+Was the shelter assignment still a choice if the objection could travel only as data, not as a person saying no?
+
 The green chain turned gray.
 
 For the first time all day, the system looked uncertain enough to be useful.
+
+The legal observer who had asked her to repeat the line finally spoke again. "If the waiver is private, does the public system have to honor it?"
+
+Mara looked at Rion's intake image still frozen in the side panel. A wet man. A borrowed phone. A button that sounded like care.
+
+"That is the wrong first question," she said. "The first question is whether a private waiver can make the public system stop looking for the person."
+
+No one answered.
+
+The console waited, gray and patient.
 
 Mara saved the view and named it what the document had tried not to become.
 
@@ -107,6 +147,7 @@ Stacked consent, disputed.
 ## Revision Notes
 
 - Drafted during #137 Sprint 3.
+- Expanded during #146 Sprint 1.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
