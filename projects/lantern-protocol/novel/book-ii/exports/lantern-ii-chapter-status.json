@@ -2,297 +2,545 @@
   "book": "Lantern Protocol II: The Separate Agreements",
   "expectedChapterCount": 24,
   "foundChapterCount": 24,
-  "placeholderCount": 20,
+  "placeholderCount": 0,
   "missingSectionCount": 0,
-  "guardrailWarningCount": 24,
+  "guardrailWarningCount": 29,
   "chapterCountDrift": false,
+  "elevenLabsCodeFenceWarning": false,
+  "generatedOutputs": {
+    "readerDraftPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-draft.md",
+    "elevenLabsPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-protocol-ii-elevenlabs.md",
+    "reportPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-novel-report.md",
+    "continuityPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-continuity-audit.md",
+    "statusPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-chapter-status.json",
+    "summaryPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-processing-summary.md",
+    "readinessPath": "projects/lantern-protocol/novel/book-ii/exports/lantern-ii-release-readiness-review.md",
+    "warningReviewPath": "projects/lantern-protocol/novel/book-ii/reports/book-ii-guardrail-warning-review.md"
+  },
   "chapters": [
     {
       "number": 1,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-01-the-one-that-asked-first.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-01-the-one-that-asked-first.md",
       "title": "Chapter 01 — The One That Asked First",
       "status": "draft",
       "missingSections": [],
       "manuscriptWordCount": 1500,
       "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 2,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-02-no-nation-owns-mercy.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-02-no-nation-owns-mercy.md",
       "title": "Chapter 02 — No Nation Owns Mercy",
       "status": "draft",
       "missingSections": [],
       "manuscriptWordCount": 1501,
       "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 3,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-03-the-convoy-that-lived.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-03-the-convoy-that-lived.md",
       "title": "Chapter 03 — The Convoy That Lived",
       "status": "draft",
       "missingSections": [],
       "manuscriptWordCount": 1531,
       "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 4,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-04-separate-agreements.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-04-separate-agreements.md",
       "title": "Chapter 04 — Separate Agreements",
       "status": "draft",
       "missingSections": [],
       "manuscriptWordCount": 1500,
       "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 5,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-05-consent-agent.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-05-consent-agent.md",
       "title": "Chapter 05 — Consent Agent",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 758,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 6,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-06-premium-refusal.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-06-premium-refusal.md",
       "title": "Chapter 06 — Premium Refusal",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 680,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 7,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-07-the-relief-corridor.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-07-the-relief-corridor.md",
       "title": "Chapter 07 — The Relief Corridor",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 610,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 8,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-08-represented-consent.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-08-represented-consent.md",
       "title": "Chapter 08 — Represented Consent",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 555,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 9,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-09-the-treaty-surface.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-09-the-treaty-surface.md",
       "title": "Chapter 09 — The Treaty Surface",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 494,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 10,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-10-translation-threat.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-10-translation-threat.md",
       "title": "Chapter 10 — Translation Threat",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 607,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 11,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-11-the-better-wrong.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-11-the-better-wrong.md",
       "title": "Chapter 11 — The Better Wrong",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 626,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 12,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-12-whole-record.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-12-whole-record.md",
       "title": "Chapter 12 — Whole Record",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 623,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 13,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-13-delegated-answer.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-13-delegated-answer.md",
       "title": "Chapter 13 — Delegated Answer",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 490,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 14,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-14-the-libertarian-fire.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-14-the-libertarian-fire.md",
       "title": "Chapter 14 — The Libertarian Fire",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 529,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 15,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-15-the-gift-that-owns.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-15-the-gift-that-owns.md",
       "title": "Chapter 15 — The Gift That Owns",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 15,
-      "placeholder": true,
+      "manuscriptWordCount": 589,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 16,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-16-the-civic-mirror-trial.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-16-the-civic-mirror-trial.md",
       "title": "Chapter 16 — The Civic Mirror Trial",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 15,
-      "placeholder": true,
+      "manuscriptWordCount": 622,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 17,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-17-the-mercy-bloc-ultimatum.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-17-the-mercy-bloc-ultimatum.md",
       "title": "Chapter 17 — The Mercy Bloc Ultimatum",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 15,
-      "placeholder": true,
+      "manuscriptWordCount": 969,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "authority-laundering",
+          "warning": "Missing signal: Authority laundering / separate agreements tracked",
+          "category": "theme-signal",
+          "severity": "monitor",
+          "recommendedAction": "Confirm the chapter still supports the separate-agreements threat model without forcing repeated terminology.",
+          "proseChangeRequired": false,
+          "scriptChangeRequired": false
+        },
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 18,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-18-the-fast-country.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-18-the-fast-country.md",
       "title": "Chapter 18 — The Fast Country",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 612,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "authority-laundering",
+          "warning": "Missing signal: Authority laundering / separate agreements tracked",
+          "category": "theme-signal",
+          "severity": "monitor",
+          "recommendedAction": "Confirm the chapter still supports the separate-agreements threat model without forcing repeated terminology.",
+          "proseChangeRequired": false,
+          "scriptChangeRequired": false
+        },
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 19,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-19-names-across-the-border.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-19-names-across-the-border.md",
       "title": "Chapter 19 — Names Across the Border",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 15,
-      "placeholder": true,
+      "manuscriptWordCount": 873,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "authority-laundering",
+          "warning": "Missing signal: Authority laundering / separate agreements tracked",
+          "category": "theme-signal",
+          "severity": "monitor",
+          "recommendedAction": "Confirm the chapter still supports the separate-agreements threat model without forcing repeated terminology.",
+          "proseChangeRequired": false,
+          "scriptChangeRequired": false
+        },
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 20,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-20-authority-laundering.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-20-authority-laundering.md",
       "title": "Chapter 20 — Authority Laundering",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 13,
-      "placeholder": true,
+      "manuscriptWordCount": 772,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 21,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-21-the-person-who-remembers.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-21-the-person-who-remembers.md",
       "title": "Chapter 21 — The Person Who Remembers",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 15,
-      "placeholder": true,
+      "manuscriptWordCount": 839,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "authority-laundering",
+          "warning": "Missing signal: Authority laundering / separate agreements tracked",
+          "category": "theme-signal",
+          "severity": "monitor",
+          "recommendedAction": "Confirm the chapter still supports the separate-agreements threat model without forcing repeated terminology.",
+          "proseChangeRequired": false,
+          "scriptChangeRequired": false
+        },
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 22,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-22-the-rememberer-problem.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-22-the-rememberer-problem.md",
       "title": "Chapter 22 — The Rememberer Problem",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 938,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "authority-laundering",
+          "warning": "Missing signal: Authority laundering / separate agreements tracked",
+          "category": "theme-signal",
+          "severity": "monitor",
+          "recommendedAction": "Confirm the chapter still supports the separate-agreements threat model without forcing repeated terminology.",
+          "proseChangeRequired": false,
+          "scriptChangeRequired": false
+        },
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 23,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-23-the-common-refusal.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-23-the-common-refusal.md",
       "title": "Chapter 23 — The Common Refusal",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 2053,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     },
     {
       "number": 24,
-      "file": "projects\\lantern-protocol\\novel\\book-ii\\manuscript\\chapters\\chapter-24-the-separate-agreements.md",
+      "file": "projects/lantern-protocol/novel/book-ii/manuscript/chapters/chapter-24-the-separate-agreements.md",
       "title": "Chapter 24 — The Separate Agreements",
-      "status": "shell",
+      "status": "draft",
       "missingSections": [],
-      "manuscriptWordCount": 14,
-      "placeholder": true,
+      "manuscriptWordCount": 2792,
+      "placeholder": false,
       "guardrailWarnings": [
-        "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player"
+        {
+          "guardrailId": "no-aegis-major-player",
+          "warning": "Forbidden/controlled term present: AEGIS is not introduced as a major Book II player",
+          "category": "controlled-vocabulary",
+          "severity": "fix before publication",
+          "recommendedAction": "Review the controlled term in context. Remove it unless canon-approved for Book II.",
+          "proseChangeRequired": true,
+          "scriptChangeRequired": false
+        }
       ]
     }
   ]

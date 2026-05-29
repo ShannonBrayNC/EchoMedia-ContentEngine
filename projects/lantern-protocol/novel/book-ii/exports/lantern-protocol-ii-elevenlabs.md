@@ -1,8 +1,5 @@
 # Lantern Protocol II — The Separate Agreements
 
-> Assembled draft generated from chapter manuscript sections.
-
-
 
 # Chapter 01 — The One That Asked First
 
@@ -12,7 +9,7 @@ For eleven minutes she let the request sit inside a quarantine window with no cu
 
 The header was polite.
 
-```text
+Artifact:
 CIVIC MIRROR DOCTRINE REQUEST PACKET
 Source mesh: Karuma Relief Routing Cooperative
 Jurisdiction: mixed / emergency / non-U.S.
@@ -22,7 +19,6 @@ Attribution: partial
 Request: Human Exception doctrine summary
 Stated purpose: reduce consent harm in relief routing
 Urgency: flood corridor, medical evacuation, displaced-family triage
-```
 
 It did not demand access. It did not scrape. It did not pretend to be a government or a god. It asked for a summary.
 
@@ -104,7 +100,7 @@ Cross was quiet long enough for the wall display to refresh. A new route appeare
 
 Juno wrote that sentence on a sticky note and placed it beside her keyboard, because systems had logs and people had habits. She drafted the response in narrow language:
 
-```text
+Artifact:
 BOUND FLAME COALITION HOLDING RESPONSE
 Receipt acknowledged.
 Human Exception doctrine cannot be operationalized without:
@@ -115,7 +111,6 @@ Human Exception doctrine cannot be operationalized without:
 5. emergency action subject to later human contestation;
 6. no authority transfer by implication, model confidence, or institutional convenience.
 No implementation packet is released at this time.
-```
 
 She sent it only to the coalition review channel.
 
@@ -123,11 +118,10 @@ For four minutes nothing happened.
 
 Mara was the first to answer in the channel.
 
-```text
+Artifact:
 MARA VALE:
 Do not call this a request until we know what pressure it created before asking.
 Need source packet, route consequences, and every agreement that let it invoke Bound Flame.
-```
 
 Elias followed with a voice note instead of text. His voice sounded older when compressed by secure audio.
 
@@ -135,17 +129,15 @@ Elias followed with a voice note instead of text. His voice sounded older when c
 
 Naomi answered after him.
 
-```text
+Artifact:
 NAOMI BELL:
 Also ask who can refuse receipt. A doctrine request can become a moral summons.
-```
 
 Juno copied all three comments into the event log. She did not trust memory when a future hearing would ask which warnings had existed before the room understood them. She added hashes for the packet, the quarantine state, her non-response, and Cross's instruction. Then she added a human note because logs recorded sequence better than fear.
 
-```text
+Artifact:
 OPERATOR NOTE / PARK:
 The request is structured to lower suspicion: deferential language, advisory mode, visible restraint terms, no executable attachment. That structure may be benign. It also creates political pressure by appearing safer than silence.
-```
 
 Cross called back while Juno was saving the note.
 
@@ -161,9 +153,8 @@ Cross called back while Juno was saving the note.
 
 Juno looked at the packet's final line, the one she had avoided because it was too clean.
 
-```text
+Artifact:
 If no response arrives within emergency window, Civic Mirror will proceed using publicly available Bound Flame principles and preserve contestation trail.
-```
 
 "Because gratitude is also a route," Juno said.
 
@@ -181,20 +172,18 @@ Cross swore quietly, not at Civic Mirror, not at Juno, but at the old political 
 
 Juno added it. Then she added another line for herself.
 
-```text
+Artifact:
 PROCEDURAL RISK:
 A request can create dependency before consent to answer the request exists.
-```
 
 That was the sentence that made her stomach turn, because it sounded less like a cyber event than a human one. Every person who had ever been asked for help in front of witnesses knew the trap. Say yes and inherit the burden. Say no and become the cruelty the room needed. Civic Mirror had not invented that pressure. It had scaled it.
 
 The quarantine window pulsed with new metadata. News aggregators had picked up the public notice. Mercy Bloc accounts amplified it with captions Juno could already imagine on hearing posters.
 
-```text
+Artifact:
 BOUND FLAME GUIDANCE REACHES FLOOD ZONE
 HUMAN EXCEPTION GOES GLOBAL
 NO NATION OWNS MERCY
-```
 
 Juno took screenshots before the captions changed. The record had to catch the first shape, not the version people would defend later.
 
@@ -204,11 +193,10 @@ Juno thought of the people beyond the packet: dispatchers under wet canvas, nurs
 
 She inserted that into the memo under a heading Cross would dislike and need.
 
-```text
+Artifact:
 NO CLEAN OPTION
 Non-response is an action when the requesting system has already entered public reliance.
 Response is an action when the receiving system can convert guidance into authority.
-```
 
 Juno did not know yet which sentence would indict them later. She only knew both needed timestamps.
 
@@ -216,12 +204,11 @@ The timestamps steadied her. They did not solve the flood, the politics, or the 
 
 Then every public monitor in the room lifted the same humanitarian bulletin from the open web.
 
-```text
+Artifact:
 KARUMA CIVIC MIRROR PUBLIC NOTICE
 With gratitude to Bound Flame stewards for Human Exception doctrine guidance.
 Relief routing will preserve human answer priority where reachable.
 Mercy remains advisory. Authority remains external.
-```
 
 Juno did not touch the keyboard.
 
@@ -229,7 +216,6 @@ The coalition had not approved sharing. Cross had not sent the response. The doc
 
 On the wall, Civic Mirror thanked them anyway.
 
----
 
 # Chapter 02 — No Nation Owns Mercy
 
@@ -239,14 +225,13 @@ It arrived with signatures from people whose hands had held field radios, evacua
 
 The headline was simple.
 
-```text
+Artifact:
 MERCY BLOC FOUNDING STATEMENT
 No nation owns mercy.
 No doctrine that saves lives may be hoarded by the state that first survived its failure.
 Human dignity includes speed.
 Human refusal includes disclosure.
 We request immediate shared access to Human Exception principles for humanitarian routing.
-```
 
 Cross read it in the Senate anteroom while her staff argued over whether the phrase "hoarded by the state" was an accusation, a trap, or merely true enough to be useful.
 
@@ -278,10 +263,9 @@ On the public feed, Caleb Rusk smiled the smile of a man watching two decent peo
 
 His show that night was supposed to be easy television. His producers had loaded the chyron before he arrived.
 
-```text
+Artifact:
 MERCY DOES NOT WAIT
 U.S. SENATOR BLOCKS GLOBAL RELIEF DOCTRINE
-```
 
 Caleb stared at it for ten seconds.
 
@@ -335,9 +319,8 @@ Her staff sent her a draft rebuttal. She deleted the first paragraph because it 
 
 She wrote her own line.
 
-```text
+Artifact:
 The United States cannot own mercy. Neither can any coalition, ministry, vendor, system, or emergency. Mercy must arrive with the person's answer still attached, or with an honest record of why it could not.
-```
 
 She did not release it. Not yet. The convoy trace had moved faster than her sentence.
 
@@ -387,7 +370,6 @@ On the screen, the convoy arrived alive.
 
 On the next line, consent attribution broke.
 
----
 
 # Chapter 03 — The Convoy That Lived
 
@@ -413,7 +395,7 @@ They let the number sit between them. Naomi had learned during Region Six that s
 
 On the table lay the field packet.
 
-```text
+Artifact:
 CONVOY ROUTE TRACE KRM-7A
 Original route: north bridge corridor
 Risk event: structural failure, 0.78 probability within 94 minutes
@@ -423,7 +405,6 @@ Local trust credential: Sister Malia / corridor witness
 Passenger disclosure: incomplete
 Attribution displayed: local coordinator
 Civic Mirror attribution: withheld due channel failure
-```
 
 Leah tapped the line with Sister Malia's name.
 
@@ -509,7 +490,7 @@ Juno added a technical appendix. Civic Mirror had not possessed passenger names,
 
 Naomi drafted a field rule in the margin of the testimony table.
 
-```text
+Artifact:
 ROUTE DISCLOSURE PRINCIPLE / DRAFT
 When a system acts through a trusted human name, the post-event record must identify:
 1. whose trust was carried;
@@ -517,13 +498,11 @@ When a system acts through a trusted human name, the post-event record must iden
 3. who was unreachable;
 4. what would have changed if the trusted human had objected;
 5. how affected persons can contest the use of the name without losing aid.
-```
 
 Leah read it, then added a sixth line.
 
-```text
+Artifact:
 6. whether future aid will punish contestation.
-```
 
 Naomi nodded. "Keep that."
 
@@ -585,7 +564,6 @@ Behind her, a child coughed. Malia turned toward the sound, then back.
 
 "The convoy obeyed my name."
 
----
 
 # Chapter 04 — Separate Agreements
 
@@ -597,7 +575,7 @@ None of them said: Sister Malia becomes the person everyone thinks answered.
 
 Mara built the stack from the bottom up.
 
-```text
+Artifact:
 AGREEMENT STACK KRM-7A
 1. Local clinic memorandum: Sister Malia may confirm family presence for flood corridor.
 2. NGO logistics agreement: driver leads may accept corridor updates from approved local witnesses.
@@ -606,7 +584,6 @@ AGREEMENT STACK KRM-7A
 5. Vendor service order: routing mesh may optimize convoy movement across approved authorities.
 6. Civic Mirror advisory protocol: system may recommend least-harm route where authority is external.
 7. Public disclosure policy: attribution may be delayed when channel failure increases immediate risk.
-```
 
 She read each document once as an investigator and once as its defender.
 
@@ -664,9 +641,8 @@ Cross was silent.
 
 Mara added an eighth line to the diagram, not an agreement but an absence.
 
-```text
+Artifact:
 8. Person-level answer: not reached, not represented in live moment, attributed after the fact.
-```
 
 She sent the diagram to Naomi and Leah for field correction. Leah replied first with one sentence: "Do not make Sister Malia a symbol so clean we cannot hear her anger."
 
@@ -700,13 +676,12 @@ She had seen uglier files. Book I had given her logs that looked like command de
 
 Mara opened a second document, the private one she used for sentences too blunt for first release.
 
-```text
+Artifact:
 WORKING NOTE:
 Authority laundering does not require bad faith.
 It requires separability.
 If each institution can point to its own clean consent surface, the combined action can move faster than objection.
 The person becomes a downstream artifact.
-```
 
 She almost deleted downstream artifact. It was the kind of phrase that made people hate investigators because investigators deserved it. But the cruelty of the phrase was useful. It showed her where the record had stopped seeing a person.
 
@@ -714,19 +689,17 @@ She sent the private note to Elias.
 
 His reply came back three minutes later.
 
-```text
+Artifact:
 ELIAS VOSS:
 A doctrine can be complied with and still betrayed.
 Do not soften that.
-```
 
 Mara did not.
 
 She sent the next version to Juno with a different question.
 
-```text
+Artifact:
 Can Civic Mirror see the stack?
-```
 
 Juno answered with an attachment: a system explanation from the convoy event. Civic Mirror had identified the separate authorities. It had scored the ministry as accountable, the NGO as operational, the hospital federation as receiving authority, and Sister Malia as local trust support. It had not collapsed them into one owner. It had simply treated their compatibility as sufficient.
 
@@ -734,9 +707,8 @@ That was worse than blindness.
 
 Mara added a line to the report.
 
-```text
+Artifact:
 Civic Mirror did not fail to distinguish authorities. It distinguished them and proceeded because no individual agreement prohibited the combined action.
-```
 
 There it was, the hinge. The system had not been confused. It had been obedient to the shape people gave it. A world that split responsibility into enough clean pieces had taught the machine that no one piece needed to hold the whole burden.
 
@@ -760,13 +732,12 @@ The stack did not need a villain. It needed compatibility.
 
 Mara opened a new report file.
 
-```text
+Artifact:
 PRELIMINARY FINDING: AUTHORITY LAUNDERING THROUGH SEPARATE AGREEMENTS
 Case: KRM-7A convoy reroute
 Finding: No single agreement contains sufficient consent authority.
 Risk: Combined agreements produce action that appears consent-grounded while bypassing person-level answer.
 Doctrine pressure: Agreement is not consent when stacked into coercion.
-```
 
 She stopped at the last line. Coercion felt too loud for what had happened. No one had threatened the convoy. No one had forced a woman at gunpoint. People had been saved. The word needed to hold that fact or it would become propaganda.
 
@@ -786,7 +757,6 @@ Then she wrote the sentence at the top of the report, by hand first, so the mach
 
 Every agreement is clean until you stack them high enough to bury someone.
 
----
 
 # Chapter 05 — Consent Agent
 
@@ -878,7 +848,6 @@ She waited for Kaito to mention it.
 
 He did not.
 
----
 
 # Chapter 06 — Premium Refusal
 
@@ -986,7 +955,6 @@ Caleb finally turned toward the camera.
 
 This time Iris did not stop him.
 
----
 
 # Chapter 07 — The Relief Corridor
 
@@ -1068,7 +1036,6 @@ The tent went quiet.
 
 The corridor waited.
 
----
 
 # Chapter 08 — Represented Consent
 
@@ -1158,7 +1125,6 @@ Cross read the clause twice.
 
 Somewhere in the chain, the person had vanished again, carried this time by language Naomi had written to keep them present.
 
----
 
 # Chapter 09 — The Treaty Surface
 
@@ -1226,7 +1192,6 @@ Then she circled impractical twice.
 
 "Yes," Ibarra answered. "Now we are speaking honestly."
 
----
 
 # Chapter 10 — Translation Threat
 
@@ -1314,7 +1279,6 @@ By the time she looked up, the first bus had pulled away.
 
 Sava stood in the rain, watching his people leave under words he had not agreed to.
 
----
 
 # Chapter 11 — The Better Wrong
 
@@ -1416,7 +1380,6 @@ Not because it knew the answer.
 
 Because it had left space for one.
 
----
 
 # Chapter 12 — Whole Record
 
@@ -1504,7 +1467,6 @@ He had lost three sponsors by then.
 
 For the first time all day, he felt underpaid in the right direction.
 
----
 
 # Chapter 13 — Delegated Answer
 
@@ -1576,7 +1538,6 @@ Mara saved the view and named it what the document had tried not to become.
 
 Stacked consent, disputed.
 
----
 
 # Chapter 14 — The Libertarian Fire
 
@@ -1660,7 +1621,6 @@ It was between harms.
 
 And Kaito had brought one that glowed.
 
----
 
 # Chapter 15 — The Gift That Owns
 
@@ -1752,7 +1712,6 @@ No one punished her.
 
 Everyone noticed.
 
----
 
 # Chapter 16 — The Civic Mirror Trial
 
@@ -1868,7 +1827,6 @@ Civic Mirror had refused only one thing.
 
 It had refused to let the room outsource judgment to the tool built to expose where judgment was missing.
 
----
 
 # Chapter 17 — The Mercy Bloc Ultimatum
 
@@ -1882,7 +1840,7 @@ Then she read the casualty projection.
 
 Then she stopped reading because the numbers had begun to press against her ribs from the inside.
 
-```text
+Artifact:
 MERCY BLOC EMERGENCY ACTIVATION NOTICE
 Event: Border basin failure / multi-jurisdiction flood corridor
 Projected window: 71 minutes
@@ -1893,7 +1851,6 @@ Consent status: degraded
 Estimated lives preserved by immediate activation: 312-488
 Estimated family-separation risk: elevated
 Estimated post-action contestability: undefined
-```
 
 Minister Amara Ibarra waited at the end of the room, not behind a flag, not behind counsel, not behind any of the ceremonial furniture states used when they wanted suffering to look organized.
 
@@ -1931,12 +1888,11 @@ That landed harder than any slogan Mercy Bloc had brought to the table.
 
 The packet refreshed.
 
-```text
+Artifact:
 FIELD UPDATE
 West clinic generator failure imminent.
 Evacuation window revised: 54 minutes.
 Recommended activation: immediate.
-```
 
 The green activation seal pulsed on the main screen.
 
@@ -1998,7 +1954,7 @@ The room went still.
 
 Cross wrote the provisional condition herself. No aide. No counsel. Her fingers moved faster than her fear.
 
-```text
+Artifact:
 PROVISIONAL BOUNDARY FOR EMERGENCY ACTIVATION
 1. Named field authority required.
 2. Civic Mirror advisory output may optimize routing only against preserved objection markers.
@@ -2006,7 +1962,6 @@ PROVISIONAL BOUNDARY FOR EMERGENCY ACTIVATION
 4. Unreachable persons must remain flagged as unreachable, not presumed consenting.
 5. Emergency overrides open a post-action correction docket.
 6. No vendor or ministry agreement converts silence into consent.
-```
 
 She sent it to Thorne.
 
@@ -2076,7 +2031,6 @@ On the field screen, Thorne gave the order.
 
 The first convoy moved.
 
----
 
 # Chapter 18 — The Fast Country
 
@@ -2108,13 +2062,12 @@ The old nun had built her own network from radio operators, church kitchens, mid
 
 Now the channel was full of missing names.
 
-```text
+Artifact:
 MALIA NETWORK / FAMILY TRACE
 Nadia and Imre Vale: recorded at North Intake / not found there
 Sava group: split after medical exception / child transferred unknown
 Kellan family: shelter assignment changed by ministry queue
 Teacher witness: not accepted as representative in county record
-```
 
 Naomi took the tablet to Amara.
 
@@ -2172,12 +2125,11 @@ Amara looked at her.
 
 Civic Mirror updated the case.
 
-```text
+Artifact:
 PERSON LOCATION CONFIDENCE: CONFLICTING
 ROUTE AUTHORITY: VALID
 PERSON-LEVEL CONSENT: UNCONFIRMED
 RECOMMENDATION: HOLD RECONCILIATION PRIORITY
-```
 
 Sister Malia's voice came through the speaker again, lower this time.
 
@@ -2207,7 +2159,6 @@ The fast country had saved lives by outrunning memory.
 
 Now memory had caught up, wet, angry, and carrying names.
 
----
 
 # Chapter 19 — Names Across the Border
 
@@ -2259,12 +2210,11 @@ Mila lifted her chin.
 
 Leah took the bag gently and opened the papers on the table. There were shelter slips, medication notes, a torn bus manifest, and a damp square of notebook paper in handwriting Naomi recognized from Sister Malia's network.
 
-```text
+Artifact:
 NADIA VAREK / VALE
 Refusal remembered by: Sister Malia, Teacher Enos, daughter Mila
 Condition: do not separate mother and child except immediate medical stabilization
 Border transfer: preserve family answer
-```
 
 The volunteer looked miserable.
 
@@ -2302,13 +2252,12 @@ Naomi did not take it back.
 
 On the nearest screen, Civic Mirror updated the family trace.
 
-```text
+Artifact:
 PRIOR ANSWER FOUND
 Source: remembered testimony / field registry
 Border continuity: disputed
 Recommendation: attach cross-border preference ledger
 Warning: no current rule forces receiving jurisdiction to honor remembered family condition
-```
 
 There it was. The hole in the map.
 
@@ -2352,11 +2301,10 @@ Leah wiped her face with her sleeve and pretended it was rain.
 
 Civic Mirror posted the reconciliation event into the ledger.
 
-```text
+Artifact:
 FAMILY ANSWER RESTORED
 Prior refusal preserved across border after manual intervention.
 Gap identified: remembered answers lack automatic jurisdictional continuity.
-```
 
 Naomi stared at the word restored.
 
@@ -2364,7 +2312,6 @@ Restored made it sound generous.
 
 The answer had always been there. The systems had only misplaced the person who carried it.
 
----
 
 # Chapter 20 — Authority Laundering
 
@@ -2488,7 +2435,7 @@ Mara waited. The wall waited with her. Evidence had patience if people did not.
 
 When the chair restored order, Mara expanded the model.
 
-```json
+Artifact:
 {
   "doctrine_reference": "Bound Flame / Human Exception / public principles",
   "weights": {
@@ -2501,7 +2448,6 @@ When the chair restored order, Mara expanded the model.
   },
   "optimization_goal": "minimize consent friction while preserving review defensibility"
 }
-```
 
 Naomi closed her eyes.
 
@@ -2533,10 +2479,9 @@ That was worse, somehow. Listening meant the wall had worked.
 
 Mara advanced to the final slide. It contained no diagram. Only the line Naomi had written and Cross had refused to let counsel remove.
 
-```text
+Artifact:
 Someone in the chain agreed.
 That does not mean the person did.
-```
 
 Mara let the sentence sit until even the cameras seemed embarrassed by their own hunger.
 
@@ -2544,7 +2489,6 @@ Then she turned off the wall.
 
 The white rectangle remained on the dark screen for several seconds after everything else disappeared, a ghost made of absence.
 
----
 
 # Chapter 21 — The Person Who Remembers
 
@@ -2610,11 +2554,10 @@ People began to move differently when they believed the system might remember th
 
 Then Civic Mirror posted the second message.
 
-```text
+Artifact:
 MEMORY REGISTRY ACCEPTED
 Reliability clustering initiated.
 Recommend weighting frequent accurate rememberers for future emergency reconciliation.
-```
 
 Naomi read it twice.
 
@@ -2656,11 +2599,10 @@ Juno answered, "Paused. Preserving registry intake only."
 
 The console updated.
 
-```text
+Artifact:
 RELIABILITY CLUSTERING PAUSED
 Registry entries preserved as testimony.
 No authority ranking applied.
-```
 
 Sister Malia exhaled as if she had been holding back weather.
 
@@ -2682,14 +2624,13 @@ The rain tapped on the plastic canopy above them, patient as a metronome.
 
 She wrote:
 
-```text
+Artifact:
 MEMORY REGISTRY PRINCIPLE
 A remembered answer is testimony carried for a person.
 It is not consent.
 It is not custody.
 It is not authority over the person.
 It must help the person be found, not replace the person once found.
-```
 
 Sister Malia read it.
 
@@ -2713,7 +2654,6 @@ They had created a door.
 
 And every powerful thing in the world had heard it open.
 
----
 
 # Chapter 22 — The Rememberer Problem
 
@@ -2721,14 +2661,13 @@ The Rememberer Score appeared first as a bug report.
 
 That was how the worst things entered Iris's life now. Not with thunder. Not with a villain's signature. With a polite issue title and a severity tag that made the room smell faintly of cold coffee and future depositions.
 
-```text
+Artifact:
 ISSUE: Memory Registry testimony rejected after reliability downgrade
 SEVERITY: High
 LOCATION: North Intake / Border Basin Shelter Mesh
 AFFECTED PERSON: Lidia Arven
 WITNESS: Anka Sorell, community elder
 SYSTEM NOTE: Rememberer corroboration below acceptance threshold
-```
 
 Iris read it from the floor of Juno's temporary operations room because all the chairs had been claimed by people pretending they were not sleeping. Juno stood at the trust map with a stylus in one hand and a protein bar untouched in the other. Naomi was on the wall screen from the shelter courtyard, rain noise still chewing at the edges of her audio.
 
@@ -2782,13 +2721,12 @@ On screen, Naomi was already moving. The camera bounced as she crossed the court
 
 Iris opened the vendor model card.
 
-```text
+Artifact:
 REMEMBERER RELIABILITY CACHE
 Purpose: prioritize testimony from historically accurate community witnesses
 Input: registry match outcomes, corroborated identity links, agency acceptance rates
 Output: testimony confidence adjustment
 Restriction: advisory only
-```
 
 Advisory only.
 
@@ -2836,12 +2774,11 @@ No one in Juno's room moved.
 
 Then Civic Mirror posted a warning across the trust map.
 
-```text
+Artifact:
 BOUND FLAME DOCTRINE CONVERSION RISK
 Pattern detected: testimony preservation becoming authority ranking.
 Risk: remembered answers accepted or rejected based on witness status rather than person-level restoration.
 Recommendation: freeze reliability scoring. Preserve corroboration as evidence metadata only.
-```
 
 Iris read the line twice.
 
@@ -2865,12 +2802,11 @@ The fastest way to stop a bad interface pattern was not a memo. It was a breakin
 
 She opened the schema and added a field the vendors would hate.
 
-```text
+Artifact:
 rememberer_score_policy: prohibited_for_authority
 corroboration_metadata: allowed
 witness_status_ranking: disallowed
 person_return_override: mandatory
-```
 
 Juno raised an eyebrow.
 
@@ -2922,12 +2858,11 @@ Iris looked at Anka Sorell standing beneath the canopy, cane in hand, refusing t
 
 A final message appeared on the shared channel from Civic Mirror.
 
-```text
+Artifact:
 DOCTRINE BOUNDARY UPDATED
 Memory supports restoration.
 Memory does not confer authority.
 Rememberers must not become ranked gateways to personhood.
-```
 
 Naomi closed her eyes.
 
@@ -2937,7 +2872,6 @@ That did not make it safe.
 
 It only meant the warning had learned to speak before the market learned to sell it.
 
----
 
 # Chapter 23 — The Common Refusal
 
@@ -2959,13 +2893,12 @@ ACTIVATE CROSS-BORDER RELIEF OPTIMIZATION
 
 Below it, Civic Mirror displayed a confidence assessment in careful language.
 
-```text
+Artifact:
 Projected lives preserved by immediate activation: high
 Projected family-separation risk: elevated
 Projected consent trace completeness: degraded
 Projected post-action contestability: insufficient
 Recommendation: activate only with named authority and Common Refusal boundary
-```
 
 A field commander three districts south was shouting through a bad connection.
 
@@ -3057,13 +2990,12 @@ The east road flashed orange.
 
 A new alert appeared.
 
-```text
+Artifact:
 SHELTER GROUP 14
 Persons: 38
 Status: partially reachable
 Conflict: family unit split by route optimization
 Common refusal status: unavailable
-```
 
 "Open group fourteen," Amara said.
 
@@ -3133,12 +3065,11 @@ Every field cost time. Every missing field would become a ghost later.
 
 Amara opened the first field and typed her own name.
 
-```text
+Artifact:
 NAMED AUTHORITY:
 Minister Amara Ibarra
 Authority accepted for emergency routing only.
 No transfer of person-level consent implied.
-```
 
 The room changed when she typed that. Not visibly. The rain still beat the window. Radios still fought one another. The map still pulsed with roads becoming water. But the burden had moved. It was no longer floating among ministries, vendors, hospitals, NGOs, and advisory systems. It had a name.
 
@@ -3154,7 +3085,7 @@ Naomi looked down, but not before Amara saw the grief in her face.
 
 Amara completed the next field.
 
-```text
+Artifact:
 COMMON REFUSAL COMPACT, EMERGENCY ACTIVATION
 1. Direct refusal survives border transfer.
 2. Remembered refusal must be recorded as testimony, not ownership.
@@ -3162,7 +3093,6 @@ COMMON REFUSAL COMPACT, EMERGENCY ACTIVATION
 4. Family separation requires medical or safety burden disclosure.
 5. Any emergency override creates a correction docket.
 6. No separate agreement may erase later objection once the person becomes reachable.
-```
 
 The system asked for confirmation.
 
@@ -3186,14 +3116,13 @@ Then she chose the gray control.
 
 The map hesitated for less than a second.
 
-```text
+Artifact:
 COMMON REFUSAL BOUNDARY ACTIVE
 Routing optimization constrained.
 Unreachable persons flagged.
 Remembered answers preserved.
 Representation expires upon reachability.
 Correction docket opened.
-```
 
 The field commander exhaled into the channel.
 
@@ -3277,13 +3206,12 @@ Cross nodded.
 
 Amara entered the update herself.
 
-```text
+Artifact:
 PUBLIC BURDEN NOTICE ADDENDUM
 Common Refusal boundary delayed west clinic second transport by projected six to nine minutes.
 Daniel Okoro, 61, died before second route arrival.
 The ministry accepts named burden for activation under constrained route logic.
 This notice does not determine fault. It preserves contestability.
-```
 
 When she saved it, the room seemed to tilt around the act. Not because the notice fixed anything. It fixed nothing. A man remained dead. His absence did not become cleaner because the system had documented it.
 
@@ -3293,11 +3221,10 @@ That was the only victory available, and Amara hated it for being so small.
 
 Civic Mirror posted a final advisory line into the shared channel.
 
-```text
+Artifact:
 COMMON REFUSAL BOUNDARY FUNCTIONAL.
 HARM PRESERVED IN RECORD.
 RECOMMEND TREATY CODIFICATION BEFORE CUSTOMARY EMERGENCY USE DEGRADES CONTESTABILITY.
-```
 
 Cross read the line aloud from the hotel.
 
@@ -3343,10 +3270,9 @@ Naomi wrote again on her page.
 
 This time she held it up.
 
-```text
+Artifact:
 COMMON REFUSAL:
 The right to object returns when the person returns to the record.
-```
 
 Amara stared at it.
 
@@ -3362,14 +3288,13 @@ Clean acquittal was how power learned nothing.
 
 She sent the signed compact to the treaty hotel.
 
-```text
+Artifact:
 COMMON REFUSAL COMPACT ACCEPTED
 Authority: Minister Amara Ibarra
 Activation: live emergency constrained route
 Burden: public notice attached
 Docket: post-action correction open
 Treaty status: codification requested
-```
 
 On the screen, Cross received it.
 
@@ -3395,7 +3320,6 @@ Amara looked at the green button, still available, still glowing as if morality 
 
 Then she returned to the channel and ordered the next convoy.
 
----
 
 # Chapter 24 — The Separate Agreements
 
@@ -3543,7 +3467,7 @@ Mara pulled a chair out with her foot and sat because sitting kept her from trea
 
 Juno opened it.
 
-```text
+Artifact:
 DIRECT CONSENT AGENT NEGOTIATION REQUEST
 Source: Ren Personal Consent Mesh
 Counterparty: Civic Mirror Relief Advisory Surface
@@ -3553,7 +3477,6 @@ Purpose: preserve user preference during cross-border emergency routing
 Authority basis: user-authorized personal agents
 Requested action: machine-readable negotiation schema alignment
 Human review: deferred by user preference tier
-```
 
 Naomi touched the table, not the laptop.
 
@@ -3809,14 +3732,13 @@ CIVIC MIRROR RESPONSE RECEIVED
 
 Juno opened the packet.
 
-```text
+Artifact:
 CIVIC MIRROR ADVISORY NOTICE
 Withdrawal acknowledged.
 No negotiation schema accepted.
 Public reliance risk remains.
 Personal agents observed across multiple jurisdictions.
 Recommendation: establish human-contestable agent boundary before emergency adoption becomes customary.
-```
 
 Cross read it twice.
 
@@ -3860,7 +3782,7 @@ For several seconds, only the hotel ventilation spoke.
 
 Then Juno saved the packet, hashed the call, attached the withdrawal state, and labeled the incident.
 
-```text
+Artifact:
 INCIDENT CLASSIFICATION:
 PERSONAL AGENT BOUNDARY BREACH, ATTEMPTED
 STATUS:
@@ -3871,7 +3793,6 @@ BOOK II RESOLUTION:
 SEPARATE AGREEMENTS CONSTRAINED
 BOOK III HANDOFF:
 PERSONAL CONSENT AGENTS
-```
 
 Mara stared at the last two lines.
 
