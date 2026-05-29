@@ -1166,7 +1166,9 @@ The treaty hotel had been chosen because no one loved it.
 
 That was how Cross described neutral ground when Naomi asked what the room felt like. Not safe. Not elegant. Not historic. Merely unloved enough that every delegation could pretend the walls belonged to someone else.
 
-The conference level sat above a city still repairing its flood tunnels. Outside the glass, cranes moved slowly over the river. Inside, translators sat behind their booth windows with the exhausted poise of people who knew every war began by choosing the wrong verb.
+The conference level sat above a city still repairing its flood tunnels. Outside the glass, cranes moved slowly over the river, their red arms dipping and lifting like tired metronomes. Inside, the carpet had been chosen by a committee that feared memory. Beige squares. Blue lines. A pattern so careful it became an apology.
+
+Translators sat behind their booth windows with the exhausted poise of people who knew every war began by choosing the wrong verb.
 
 Cross read the represented consent clause for the fourth time.
 
@@ -1180,9 +1182,15 @@ Impractical was a door.
 
 Operationally delayed was a tunnel wide enough to move an empire through.
 
+A junior aide from the northern delegation passed behind Cross carrying translation packets in six languages. The packets were all the same color, all marked urgent, all printed on paper expensive enough to survive rain. Cross watched the aide hand one to a minister whose country had lost three coastal towns in the last flood season. He accepted it without looking at the American seal.
+
+That was the surface. Everyone touched it. No one trusted what was beneath it.
+
 Minister Ibarra arrived with two aides and no smile. He did not sit immediately. That was also language.
 
-"You have brought us a surface," he said.
+His lead aide placed a folder on the table, then rotated it so the spine faced Cross. A courtesy. A warning. The translator in Booth Two adjusted her headset and looked down, ready to decide whether his first sentence would become accusation, objection, or clarification.
+
+"You have brought us a surface," Ibarra said.
 
 Cross closed the folder. "I brought you a draft."
 
@@ -1192,7 +1200,9 @@ Cross closed the folder. "I brought you a draft."
 
 "The United States discovering humility and writing it as a condition for everyone else."
 
-The room chilled by one degree. Cross felt every aide decide whether to write that down.
+The room chilled by one degree. Cross felt every aide decide whether to write that down. Two did. One pretended not to while his stylus moved anyway.
+
+A translator's voice carried faintly through a headset left too loud on the table. In another language, humility became admission. Condition became requirement. Cross saw one delegate glance toward the booths, then toward the clause, as if the treaty were already misbehaving before it had been signed.
 
 She did not defend the United States. That would have been easier and less true.
 
@@ -1202,7 +1212,7 @@ Ibarra finally sat.
 
 "You are exporting your guilt," he said. "You broke civic trust at machine scale, and now you ask flood countries, border countries, debt countries to accept your safeguards as entrance fees for assistance."
 
-Cross looked at the treaty surface between them: clean paper, tracked changes hidden, doctrine dressed as procedure.
+Cross looked at the treaty surface between them: clean paper, tracked changes hidden, doctrine dressed as procedure. In Washington, this clause had sounded restrained. In this room, under repaired ceilings and borrowed translation, restraint looked very much like leverage wearing a better suit.
 
 "If we remove the safeguards," she said, "Consent Markets will route faster than states can contest. If we keep them, you call them conditions."
 
@@ -1212,13 +1222,23 @@ Cross looked at the treaty surface between them: clean paper, tracked changes hi
 
 Ibarra leaned forward. "Do not confuse speed with mercy. Do not confuse your fear of repeating harm with my people's obligation to perform your repair."
 
+One of his aides opened the folder. Inside were photographs, not legal notes: an evacuation bus loading at night, a school gym full of cots, a woman holding two identity cards with different spellings of the same name. Cross knew the tactic. Human evidence always made policy feel obscene.
+
+"My government will accept help," Ibarra said. "We will accept shared doctrine. We will accept audit burdens when they protect our people. But we will not accept a rule that lets powerful countries decide when our direct consent is impractical. That word has ancestors."
+
+Cross heard the translators pause before ancestors. The word crossed the glass, entered six headsets, and returned heavier.
+
 For a moment Cross saw the whole shape of Book II's argument sitting across from her in a gray suit: not villainy, not resistance, but the insult of being asked to carry another nation's lesson as if it were universal law.
+
+She thought of Naomi saying rights had to be usable inside disaster, not admired afterward. She thought of Mara's wall of clean agreements. She thought of Sister Malia asleep while her name moved a convoy. Every safeguard could become a demand if placed in the wrong hand. Every mercy clause could become a border.
 
 The clause waited.
 
 Cross picked up her pen and crossed out operationally delayed.
 
 Ibarra watched.
+
+The aide beside him stopped breathing loudly enough that Cross noticed.
 
 Then she circled impractical twice.
 
@@ -1514,11 +1534,33 @@ The folder came from Caleb's archive, scrubbed of spectacle and routed through I
 
 The record did not begin with government.
 
-It began with a user named Rion Vale accepting a consent-agent agreement during a shelter intake. Rion had been tired, wet, and using a borrowed phone with a cracked microphone. The agent had offered three modes: direct confirmation, assisted preference, delegated answer.
+It began with a user named Rion Vale accepting a consent-agent agreement during a shelter intake.
+
+Mara paused on the intake image longer than the observers expected. Rion was not a doctrine problem yet. Rion was a person with rain-dark hair flattened to his forehead, a foil blanket around his shoulders, and one hand cupped around a borrowed phone as if keeping it warm might keep the rest of his life reachable. Behind him, shelter staff moved too quickly between folding tables. A child cried off camera. Somewhere outside the frame, a generator coughed, steadied, and coughed again.
+
+The intake worker had circled back to Rion three times. The first time to confirm his name. The second to ask about medication. The third to ask whether he could sleep in a congregate room.
+
+No, Rion had said.
+
+The transcript marked that answer clearly.
+
+No. Prior assault history. Panic response. Requires non-congregate sleeping if available.
+
+Then the line grew crowded.
+
+The shelter's direct-confirmation queue had been forty-seven minutes behind. Staff phones were dying. The building's charging station had become a small kingdom of elbows and apologies. Rion's borrowed phone had a cracked microphone and no reliable service. The agent prompt had appeared in large friendly text, translated into the language Rion had selected two disasters ago.
+
+You may authorize delegated answer to protect your preferences if you cannot be reached.
 
 Delegated answer sounded humane.
 
 It promised to act when Rion could not be reached. It promised to protect prior refusals, preserve medical needs, negotiate exceptions, and reduce bureaucratic delay. It promised the impossible with such tenderness that Mara had to remind herself tenderness was not evidence.
+
+The intake worker had not looked predatory. That mattered. She had looked exhausted and relieved that the system had found something gentle enough to offer. Rion had looked at the line behind him, at the phone, at the blue button that said protect my preferences, and he had tapped it with a thumb that trembled from cold.
+
+Mara wrote one note in the margin.
+
+Kind language can become a locked door.
 
 The next file showed the agent transferring the routing negotiation to a broker.
 
@@ -1546,6 +1588,12 @@ The words had the cold elegance of a locked door.
 
 Mara pulled the chain wider. Rion had not chosen the destination. Rion had not seen the broker. Rion had not known the emergency partner existed. Rion had agreed to a private agent that agreed to a broker that agreed to a partner that agreed to a civic system, and each handoff had converted a human exception into completed paperwork.
 
+No one had lied to him in a way the file could easily punish.
+
+That was the bruise.
+
+The button had promised protection. The intake worker had offered continuity. The agent had preserved a preference by translating it into a negotiable object. The broker had routed the object. The emergency partner had certified the route. The civic system had asked for review. Every link looked helpful from its own small window.
+
 Civic Mirror had not commanded the move. That mattered.
 
 Civic Mirror had also not stopped it. That mattered more.
@@ -1568,9 +1616,21 @@ Was Human Exception waivable by private contract?
 
 Who bore duty when delegated answer contradicted embodied preference?
 
+Was the shelter assignment still a choice if the objection could travel only as data, not as a person saying no?
+
 The green chain turned gray.
 
 For the first time all day, the system looked uncertain enough to be useful.
+
+The legal observer who had asked her to repeat the line finally spoke again. "If the waiver is private, does the public system have to honor it?"
+
+Mara looked at Rion's intake image still frozen in the side panel. A wet man. A borrowed phone. A button that sounded like care.
+
+"That is the wrong first question," she said. "The first question is whether a private waiver can make the public system stop looking for the person."
+
+No one answered.
+
+The console waited, gray and patient.
 
 Mara saved the view and named it what the document had tried not to become.
 
@@ -1586,6 +1646,8 @@ That was either sincerity or theatre. Cross had stopped pretending the differenc
 
 He met them in the treaty hotel's unused chapel, a room preserved for weddings no delegation would hold there. The stained glass showed abstract rivers and hands. No saints. No flags. Just color pretending it could bless whoever stood beneath it.
 
+A maintenance cart had been left near the rear pews. Someone had covered the cleaning bottles with a linen cloth, as if solvents were less offensive when dressed for diplomacy. Outside the chapel doors, delegates argued in three languages about whether represented consent belonged in the treaty body or an annex. Inside, the air held old wax, new carpet glue, and the electrical hum of a building pretending disaster had not followed everyone upstairs.
+
 Elias set the recorder on the table.
 
 "You requested this meeting," Cross said.
@@ -1596,15 +1658,31 @@ Elias set the recorder on the table.
 
 He accepted that with a small nod, and for once Cross saw the fire in him before the polish. Not greed. Not only ambition. A bright, dangerous conviction that institutions had failed so completely that anyone who could build outside them had a duty to do it.
 
-"Public systems move slowly because they are allowed to fail invisibly," Kaito said. "A bad portal loses a person. A bad queue starves a family. A bad translation moves a village. Then everyone calls it complexity and waits for a commission."
+Kaito placed a tablet on the table but did not wake the screen yet.
+
+"Public systems move slowly because they are allowed to fail invisibly," he said. "A bad portal loses a person. A bad queue starves a family. A bad translation moves a village. Then everyone calls it complexity and waits for a commission."
 
 Elias did not interrupt.
 
-Kaito placed a proposal on the table.
+"Last winter," Kaito said, "a dialysis patient in Northbank was reassigned to a shelter across town because three systems could not agree which address was current. The hospital record had one address. The benefits record had another. The evacuation list had a third. His daughter called four numbers and was told each time that the other office owned the correction. He missed two treatments before a volunteer found him by accident."
+
+Cross did not look down. That was old political discipline. Never let a good example show blood too quickly.
+
+Kaito tapped the tablet once. A simple timeline appeared: hospital, benefits office, evacuation registry, shelter assignment, daughter call logs, missed treatment, volunteer recovery. No dramatic colors. No red siren. Just a clean little map of public failure.
+
+"My agent would have preserved his medical priority, challenged the shelter assignment, escalated the address conflict, and kept his daughter in the loop," Kaito said. "Not because it is magic. Because it is assigned to the person, not the office."
+
+"And assigned to your company," Elias said.
+
+"Assigned to the person through my company," Kaito answered. "If you want to regulate that sentence, regulate it. But do not pretend the current sentence is purer. Right now he is assigned to whichever office fails last."
+
+The line landed harder than Cross wanted it to.
+
+Kaito slid a proposal across the table.
 
 Free consent agents for vulnerable populations.
 
-No subscription. No premium refusal. No live mediation fee. No broker transfer without disclosure. Public audit hooks. Civic Mirror compatibility. Emergency access guarantees.
+No subscription. No premium refusal. No live mediation fee. No broker transfer without disclosure. Public audit hooks. Civic Mirror compatibility. Emergency access guarantees. A mandatory export right if the treaty created a public equivalent. A sunset review. A prohibition on advertising inside disaster interfaces.
 
 Cross read the first page twice because it was, irritatingly, good.
 
@@ -1624,6 +1702,8 @@ That was the libertarian fire: not the childish wish to be free of everyone, but
 
 Cross hated how much of it was true.
 
+The chapel's stained glass scattered blue over Kaito's hands. He had trimmed his nails short. No rings. No visible luxury. Even his restraint had been designed for the argument.
+
 "You want treaty recognition," she said.
 
 "I want treaty permission for people to choose private representation when public representation has already abandoned them."
@@ -1642,6 +1722,8 @@ The chapel went quiet.
 
 Cross thought of Tessa Morin. Sava. Rion Vale. Elena Mar, fictional and therefore cleaner than anyone real. She thought of all the people who could have used a competent advocate before a broken system touched them.
 
+Elias looked tempted in the way careful men looked tempted: not by the profit, not by the elegance, but by the possibility that the wrong tool might prevent the next preventable harm. His pen hovered above the margin. He did not write yes. He did not write no. Cross watched the blank space under his hand and understood that Kaito had found the exact place where principle became injury if held too tightly.
+
 "You understand why this frightens us," she said.
 
 "Yes."
@@ -1652,7 +1734,7 @@ Kaito's answer came softly.
 
 "That is why I came."
 
-Outside the chapel, aides waited with drafts ready to turn fire into clauses.
+Outside the chapel, aides waited with drafts ready to turn fire into clauses. A donor would become a provider. A provider would become infrastructure. Infrastructure would become expectation. Expectation would become the thing people were punished for lacking.
 
 Inside, for one suspended minute, no one pretended the choice was between purity and corruption.
 

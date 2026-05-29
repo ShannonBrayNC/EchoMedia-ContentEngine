@@ -35,12 +35,12 @@
 | 6 | Premium Refusal | draft | 680 | 0 | 1 |
 | 7 | The Relief Corridor | draft | 610 | 0 | 1 |
 | 8 | Represented Consent | draft | 555 | 0 | 1 |
-| 9 | The Treaty Surface | draft | 494 | 0 | 1 |
+| 9 | The Treaty Surface | draft | 910 | 0 | 1 |
 | 10 | Translation Threat | draft | 607 | 0 | 1 |
 | 11 | The Better Wrong | draft | 626 | 0 | 1 |
 | 12 | Whole Record | draft | 623 | 0 | 1 |
-| 13 | Delegated Answer | draft | 490 | 0 | 1 |
-| 14 | The Libertarian Fire | draft | 529 | 0 | 1 |
+| 13 | Delegated Answer | draft | 926 | 0 | 1 |
+| 14 | The Libertarian Fire | draft | 985 | 0 | 1 |
 | 15 | The Gift That Owns | draft | 589 | 0 | 1 |
 | 16 | The Civic Mirror Trial | draft | 622 | 0 | 1 |
 | 17 | The Mercy Bloc Ultimatum | draft | 969 | 0 | 2 |
