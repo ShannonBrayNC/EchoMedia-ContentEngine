@@ -31,7 +31,13 @@ Iris spent the morning after the launch inside a benefits office that smelled li
 
 The office had six kiosks. Two worked. One displayed a message asking users to contact support. The support number routed to the same office. Another kiosk had a crack running across the screen in a diagonal line that made every consent prompt look broken before anyone touched it.
 
+A handwritten sign taped to the wall said, PLEASE HAVE ALL DOCUMENTS READY. Someone had underlined ALL three times. Beneath it, a plastic basket held blank appeal forms with damp corners. The pens chained to the counter had either vanished or died in place.
+
 A boy in a green jacket sat under the forms table, pushing a toy truck over the tiles. His mother kept one foot against his ankle so she could feel if he wandered. She had three envelopes in her lap and the expression of someone trying not to become angry because anger would cost time she did not have.
+
+Across the aisle, a man in a dry wool coat spoke quietly into an agent mediation call. His screen showed a gold badge beside his name. A remote advocate had already joined, already corrected a county mismatch, already opened a live continuity exception. He was not cruel. He barely looked up. The system had given him a door and he had walked through it before the room learned the door existed.
+
+The woman with the envelopes watched that screen for half a second too long, then looked away as if envy were another fee.
 
 Caleb Rusk arrived with a camera crew he had promised would stay small.
 
@@ -53,6 +59,8 @@ Below that:
 
 Estimated review time: 19 business days.
 
+Nineteen business days looked sterile on a screen. In the room it meant three school breakfasts borrowed from a neighbor, two prescription refills delayed, one refrigerator growing emptier with every polite instruction. It meant the boy under the table asking whether dinner was a snack kind or a plate kind. It meant a mother calculating how many apologies she could spend before apology became another currency she had run out of.
+
 The woman's name was Tessa Morin. Her daughter, June, needed a benefits continuity exception because the family's relocation record had been split between two county systems after the flood. One county showed them sheltered. The other showed them absent. The nutrition benefit had paused because both could not be true at once, and the system had decided the safest administrative action was to stop paying until the contradiction resolved.
 
 Tessa had not contradicted herself.
@@ -65,7 +73,7 @@ Iris crouched beside her, not touching the screen.
 
 Tessa nodded.
 
-The consent-agent marketplace had a public-interest tier. Iris knew that because Kaito's press team had said it seven times. Protection for everyone. A free shield for vulnerable users. The public-interest tier could store preferences, translate notices, and prepare appeals.
+The consent-agent marketplace had a public-interest tier. Iris knew that because Kaito's press team had said it seven times. Protection for everyone. A free shield for vulnerable users. The public-interest tier could store preferences, translate notices, prepare appeals, and explain rights in language softer than the office walls.
 
 It could not negotiate live benefit continuity.
 
@@ -100,6 +108,8 @@ The public access tier had offered instructions.
 The appeal vendor had estimated nineteen business days.
 
 Every agreement was clean. Tessa's child was still hungry.
+
+A clerk called the dry-coated man's number. He left before Tessa finished rereading the word unavailable. His remote advocate remained on his screen, still talking, still smoothing a path he could afford to have smoothed. The door closed behind him without drama. That was what made it obscene.
 
 Caleb turned to his producer and held up one hand. No filming yet.
 
@@ -143,6 +153,7 @@ This time Iris did not stop him.
 ## Revision Notes
 
 - Promoted from `projects/lantern-protocol/novel/book-ii/reports/ch05-08-draft-review-packet.md`.
+- Expanded during #147 Sprint 2.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
