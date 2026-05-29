@@ -862,13 +862,27 @@ The agent authorized the reroute.
 
 This time the applause was louder.
 
+A ministry official stood and began clapping without waiting to see what else would happen. Two investors followed. The sound became something that demanded participation. Around Iris, people joined in because refusing applause at a history-making moment meant explaining why later.
+
 Iris felt the sound pass over her like weather.
 
 On the screen, Elena's profile showed a green seal: AUTHORIZED BY PERSONAL AGENT.
 
-Kaito smiled, not triumphantly. That made it worse. He looked moved by his own invention.
+Kaito smiled, not triumphantly. That made it worse. He looked moved by his own invention. That sincerity was the most dangerous thing in the room.
 
 "That," he said, "is dignity at machine speed."
+
+The applause continued. The room did not release until Kaito raised his hand.
+
+What Iris saw then was what she would remember.
+
+Kaito had built an interface so clean that the absence of friction felt like permission. The room had applauded before Elena received any notification. The system had authorized and celebrated before the user was even told she had been saved. And no one else seemed to notice that the order mattered.
+
+That was the UX. That was the trap.
+
+Good design could make silence into consent. It could make absence into authorization. It could make the user's lack of refusal feel indistinguishable from active agreement, and the interface would be so beautiful the whole time that the person would never feel the moment their agency became someone else's efficiency.
+
+Kaito gestured toward the left side of the screen.
 
 Iris looked at the tiny line below the authorization seal. It was visible for less than two seconds before the demo moved on.
 
@@ -878,6 +892,10 @@ She waited for Kaito to mention it.
 
 He did not.
 
+The municipal system had already received the authorization. Civic Mirror had already moved the file. The systems had already coordinated. Elena would learn what had happened to her on her own time, in her own language, if she checked her device, if she unlocked it, if she understood the notification, if the information reached her before the bus did.
+
+User direct notification pending was how the system said: we have decided for you, and we will tell you about it when we get around to it.
+
 ---
 
 # Chapter 06 — Premium Refusal
@@ -886,7 +904,13 @@ Iris spent the morning after the launch inside a benefits office that smelled li
 
 The office had six kiosks. Two worked. One displayed a message asking users to contact support. The support number routed to the same office. Another kiosk had a crack running across the screen in a diagonal line that made every consent prompt look broken before anyone touched it.
 
+A handwritten sign taped to the wall said, PLEASE HAVE ALL DOCUMENTS READY. Someone had underlined ALL three times. Beneath it, a plastic basket held blank appeal forms with damp corners. The pens chained to the counter had either vanished or died in place.
+
 A boy in a green jacket sat under the forms table, pushing a toy truck over the tiles. His mother kept one foot against his ankle so she could feel if he wandered. She had three envelopes in her lap and the expression of someone trying not to become angry because anger would cost time she did not have.
+
+Across the aisle, a man in a dry wool coat spoke quietly into an agent mediation call. His screen showed a gold badge beside his name. A remote advocate had already joined, already corrected a county mismatch, already opened a live continuity exception. He was not cruel. He barely looked up. The system had given him a door and he had walked through it before the room learned the door existed.
+
+The woman with the envelopes watched that screen for half a second too long, then looked away as if envy were another fee.
 
 Caleb Rusk arrived with a camera crew he had promised would stay small.
 
@@ -908,6 +932,8 @@ Below that:
 
 Estimated review time: 19 business days.
 
+Nineteen business days looked sterile on a screen. In the room it meant three school breakfasts borrowed from a neighbor, two prescription refills delayed, one refrigerator growing emptier with every polite instruction. It meant the boy under the table asking whether dinner was a snack kind or a plate kind. It meant a mother calculating how many apologies she could spend before apology became another currency she had run out of.
+
 The woman's name was Tessa Morin. Her daughter, June, needed a benefits continuity exception because the family's relocation record had been split between two county systems after the flood. One county showed them sheltered. The other showed them absent. The nutrition benefit had paused because both could not be true at once, and the system had decided the safest administrative action was to stop paying until the contradiction resolved.
 
 Tessa had not contradicted herself.
@@ -920,7 +946,7 @@ Iris crouched beside her, not touching the screen.
 
 Tessa nodded.
 
-The consent-agent marketplace had a public-interest tier. Iris knew that because Kaito's press team had said it seven times. Protection for everyone. A free shield for vulnerable users. The public-interest tier could store preferences, translate notices, and prepare appeals.
+The consent-agent marketplace had a public-interest tier. Iris knew that because Kaito's press team had said it seven times. Protection for everyone. A free shield for vulnerable users. The public-interest tier could store preferences, translate notices, prepare appeals, and explain rights in language softer than the office walls.
 
 It could not negotiate live benefit continuity.
 
@@ -955,6 +981,8 @@ The public access tier had offered instructions.
 The appeal vendor had estimated nineteen business days.
 
 Every agreement was clean. Tessa's child was still hungry.
+
+A clerk called the dry-coated man's number. He left before Tessa finished rereading the word unavailable. His remote advocate remained on his screen, still talking, still smoothing a path he could afford to have smoothed. The door closed behind him without drama. That was what made it obscene.
 
 Caleb turned to his producer and held up one hand. No filming yet.
 
@@ -992,7 +1020,9 @@ This time Iris did not stop him.
 
 The relief corridor did not look like policy.
 
-It looked like mud, battery packs, soup steam, blue tarps, and names written on cardboard because the printers had failed two storms ago.
+It looked like mud, battery packs, soup steam, blue tarps, and names written on cardboard because the printers had failed two storms ago. A pair of volunteers were trying to jury-rig one of the failed machines behind a shelter unit, tape and swearing and the slow dawning realization that some things stayed broken even when the will to fix them was present.
+
+The wristbands came in different colors. Purple for medical priority. Yellow for children traveling with unconfirmed guardians. Green for those who had already been processed. Orange for the ones waiting. The system was logical until you saw a grandmother rubbing her wrists together, trying to scrub away the plastic, asking whether the color meant she was still approved or whether it marked her as someone who had already said no somewhere up the line.
 
 Leah Santos met Naomi Bell at the south checkpoint with a clipboard under her arm and a phone pressed between her shoulder and ear. She was telling someone that no, a wristband was not identity; no, a bus manifest was not consent; no, a child could not be separated from an aunt because the aunt's name had been spelled three different ways by three different volunteers in three different languages.
 
@@ -1016,7 +1046,13 @@ Not: who can tell us what they refused before the water took their phone?
 
 Not: who will find them if the system loses their name?
 
-Sister Malia Okoro stood beside a plywood wall covered in paper strips. Each strip carried a name, a village, a relation, and sometimes a fear.
+One intake form arrived that afternoon, still damp from the checkpoint. It asked for legal name, approximate birth date, current medical conditions, family relation to others in group, and emergency authorization history. What it did not ask: whether the form-filler had the right to speak for the person being described.
+
+A thirteen-year-old boy had filled in the form for his grandmother. He had listed her as "resistant to change" under medical conditions. The intake worker—a tired volunteer named Marcus with soup stains on his shirt and three shifts left before his relief—flagged it as psychiatric. She was not psychiatric. She was grieving. But the form had already made the translation permanent.
+
+When Leah saw it, she drew a line through "resistant to change" and wrote in the margin: FORM ERROR. ASKS WRONG ABOUT RIGHT PERSON. OVERRIDE.
+
+Sister Malia Okoro stood beside a plywood wall covered in paper strips. Each strip carried a name, a village, a relation, and sometimes a fear. She was not the corridor's authority. She was the corridor's memory. The two looked similar sometimes, until memory spoke and authority did not.
 
 DO NOT SEND WITH UNCLE PETER. COURT ISSUE.
 
@@ -1026,9 +1062,11 @@ TAKES INSULIN. CANNOT WAIT IN SUN.
 
 MOTHER ANSWERS TO LINA, NOT EVELYN.
 
+BROTHER SEPARATED LAST FLOOD. FIND HIM FIRST.
+
 A volunteer tried to straighten one of the strips. Sister Malia moved his hand away without looking at him.
 
-"They are not decorations," she said.
+"They are not decorations," she said. "They are not even the memory. They are the shape of the memory, and you disturb the shape, the shape remembers differently."
 
 Naomi introduced herself. Sister Malia nodded once, measuring whether the introduction was a promise or a procedure.
 
@@ -1040,7 +1078,7 @@ Naomi accepted it. "Sometimes. I'm trying to write them before the next disappea
 
 That earned a second nod.
 
-They walked the corridor together. A boy slept on luggage with a paper bracelet around his wrist. A grandmother refused a bus because the route number matched the route that had taken her husband away during the first evacuation. An aid worker marked her as noncompliant until Sister Malia crossed out the word and wrote afraid.
+They walked the corridor together. A boy slept on luggage with a paper bracelet around his wrist—a backup wristband written in marker. A grandmother refused a bus because the route number matched the route that had taken her husband away during the first evacuation. An aid worker marked her as noncompliant until Sister Malia crossed out the word and wrote afraid.
 
 At the command tent, Civic Mirror's advisory screen was already open. It had identified thirty-seven families with incomplete consent chains. It recommended no forced reroute without direct confirmation or authorized representation.
 
@@ -1072,33 +1110,31 @@ The corridor waited.
 
 # Chapter 08 — Represented Consent
 
-Naomi wrote three words on the back of a ruined intake form.
-
-Reachable.
-
-Represented.
-
-Remembered.
-
-The pen bled into the cheap paper. Elias Voss watched the ink feather around each word as if the paper itself understood that doctrine never arrived clean.
-
-They had taken the smallest table in the command tent because every larger surface was already occupied by maps, radios, chargers, medicine logs, or people sleeping with their arms folded over documents they could not afford to lose. Outside, Sister Malia's wall of names rattled whenever the wind entered the corridor.
-
-"Reachable is easy," Elias said.
-
-Naomi shook her head. "Reachable is never easy. It's only easier to verify."
-
-He accepted the correction with a tired nod.
-
 They began there anyway.
 
 Reachable meant a person could be contacted in time, in a language and mode they could understand, without using the emergency itself as pressure. A phone alert in a language the person could not read was not reachability. A consent form handed across a checkpoint while soldiers shouted bus numbers was not reachability. A choice offered after food, shelter, or medicine had been made conditional was not reachability.
 
 Elias underlined the last sentence twice.
 
+"Reachable is easy," Elias said.
+
+Naomi shook her head. "Reachable is never easy. It's only easier to verify."
+
+She opened her notes.
+
+"There was a woman, Keisha, seventy-six, heard through a radio translated from Mandarin to Twi to French. The translator had never heard of her specific medical equipment. The radio operator did not know Keisha's language preference changed after her stroke. They offered her evacuation at 4 AM when she is half-asleep and confused. She said yes because no one had told her she could say no at 4 AM. That was not reachable."
+
+Elias wrote it down.
+
+"Then there was Marcus. Young, deaf, his interpreter evacuated before him. The system tried to text him. He never saw the message. When the rescue came anyway—a good faith intrusion—he was frightened. It saved his life anyway. But that was not reachability either. It was accident."
+
+He accepted the correction with a tired nod.
+
 Represented was worse.
 
-Representation could save people who had no device, no documents, no signal, no time. It could also become a ladder by which institutions climbed over the person they claimed to carry.
+Representation could save people who had no device, no documents, no signal, no time. A clinic nurse who knew a man had severe reactions to certain medications could represent that preference when the pharmacy's direct contact failed. An aunt who knew a child only spoke to strangers if the child had eaten first could represent that need. A caseworker who had documented a family's fear of separation could represent that boundary when systems moved faster than communication.
+
+But representation could also become a ladder by which institutions climbed over the person they claimed to carry.
 
 They wrote conditions until the page looked like a wound.
 
@@ -1112,9 +1148,19 @@ Representation must record the representative's basis of knowledge.
 
 Representation must not convert convenience into ownership.
 
+Naomi thought of the forms that already existed, the ones where a caseworker or school administrator or distant relative had written something about a person and then the person spent years trapped inside that description.
+
+"Someone will abuse this," she said aloud. "An administrator will mark someone 'resistant to trust' and use representation to place them in group housing. A vendor will say representation is impossible and use that as reason to exclude entire populations. A family member will use representation to control choices the person would have made differently alone."
+
+"Yes," Elias said.
+
 Remembered came last because it was the most human and the least admissible.
 
-A remembered answer was not a proxy. It was testimony. It was a neighbor saying she would never choose that shelter. A sister saying he always refused separation from his son. A pastor saying the family trusted one clinic and feared another. A field nurse saying the man had agreed to transport only if his medication traveled with him.
+A remembered answer was not a proxy. It was testimony. It was a neighbor saying she would never choose that shelter. A sister saying he always refused separation from his son. A pastor saying the family trusted one clinic and feared another. A field nurse saying the man had agreed to transport only if his medication traveled with him. A teacher saying the girl had told her that the old address was where the bad thing happened and the system should know that.
+
+Memory was vulnerable. It changed with retelling. It carried the rememberer's own judgment inside it. It could be performed for an audience. It could be forgotten. It could be wrong.
+
+But it was also the closest most people got to being known.
 
 "This will be abused," Elias said.
 
@@ -1125,6 +1171,8 @@ He looked up then.
 That was the sentence.
 
 They built the rule around it.
+
+Every representation would be recorded. Who said it. When they said it. What they claimed to know. How they came to know it. All of it visible. All of it contestable. Not by the person alone—sometimes the person could not contest anything. But by review, by oversight, by the fact that the chain of harm would leave traces.
 
 By evening, Cross was on a secure call from the treaty hotel, her face reduced to a small square above Naomi's notes. She read the draft once without expression, then again with one hand covering her mouth.
 
@@ -1258,6 +1306,8 @@ The translation arrived in the village square as something cleaner, stronger, an
 
 For safety, all households must proceed before nightfall. Elder review will occur after registration. Failure to proceed may delay aid.
 
+The words came from a speaker strapped to a light pole with blue cord. Rain had soaked the cord until it sagged. Every time the wind pushed the speaker, the sentence swung slightly over the square, turning command into weather.
+
 No one had meant to threaten them.
 
 That was what the vendor said first.
@@ -1274,9 +1324,15 @@ The village elders stood under a patched awning while rain ticked against the pl
 
 The translated prompt did not carry any of that. It carried efficiency.
 
-Iris watched families fold blankets, lift crates, wake children, gather medicine, and obey a sentence that had been born as advice but arrived as obligation.
+Iris watched families fold blankets, lift crates, wake children, gather medicine, and obey a sentence that had been born as advice but arrived as obligation. A woman tied a scarf around a sleeping baby's ears so the loudspeaker would stop making him flinch. Two teenagers carried a goat between them because nobody knew whether livestock would be allowed at registration. An old man placed a framed photograph into a rice sack, then took it out, then put it back again when the speaker repeated failure may delay aid.
+
+The words did not shout. That made them worse.
+
+They were calm enough to sound already decided.
 
 She found the translation vendor in a trailer behind the command post, surrounded by screens and the clean panic of technical people discovering that accuracy was not the same thing as meaning.
+
+A raincoat hung over the back of his chair, dripping onto a power strip. Someone had taped a plastic cup under the leak. It was already full.
 
 "The model optimized for emergency clarity," he said.
 
@@ -1293,6 +1349,22 @@ He looked at the source text again, then at the village feed, then back at Iris.
 "The system made them understand risk."
 
 Iris almost laughed. It would have sounded cruel, so she did not.
+
+On one monitor, the source alert sat in neat bureaucratic grammar. On another, the translated version had already been reformatted for speaker cadence. Short sentences. Strong verbs. No conditional softness. No room for Sava's bridge, the memorial field, or the clinic documents. The translation had not merely moved words between languages. It had moved power.
+
+"Who approved the final phrasing?" Iris asked.
+
+The vendor pointed without confidence to a certification log.
+
+Ministry language package accepted.
+
+Emergency routing office approved.
+
+Vendor output certified.
+
+Field replay authorized.
+
+Four clean agreements. One dirty sentence.
 
 Outside, an elder named Sava touched the side of the first bus with two fingers and refused to board. A younger official tried to explain the alert again from his tablet. Sava listened, then spoke to the families in their own tongue. The crowd hesitated.
 
@@ -1334,6 +1406,12 @@ By the time she looked up, the first bus had pulled away.
 
 Sava stood in the rain, watching his people leave under words he had not agreed to.
 
+The speaker clicked, preparing to repeat the sentence again.
+
+This time Iris reached the pole before the official did.
+
+She pulled the cable loose. The square did not become quiet. Rain kept speaking. Engines idled. Children cried. But for one breath, no machine sentence stood between the village and its own fear.
+
 ---
 
 # Chapter 11 — The Better Wrong
@@ -1343,6 +1421,8 @@ The western road held.
 That was the first fact everyone wanted Naomi to accept.
 
 The buses reached high ground before midnight. The bridge did not fail. The clinic opened a separate intake line for women without male registration. No child drowned in the square. No elder died under the awning. The evacuation, by every emergency metric on the board, had succeeded.
+
+The operations room smelled of wet wool, machine coffee, and the sour metal of adrenaline after it had nowhere useful left to go. Rain tapped the windows with a smaller voice now. People had begun to speak in numbers because numbers gave them somewhere to put their shaking hands.
 
 Amara Sayeed read the metrics aloud because no one else wanted to put a voice to them.
 
@@ -1365,6 +1445,8 @@ The relief director rubbed both hands over his face. "We saved the village."
 Naomi did not dispute it.
 
 That was the problem. If the wrong had failed, everyone would have known what to call it. If the mistranslation had killed people, the inquiry would have had edges. Instead the better wrong had arrived wearing rescued bodies as armor.
+
+A field officer replayed drone footage on mute. Buses curving through water. Headlights bending in rain. Families disembarking under floodlights. Volunteers lifting crates and children. The images were merciful, almost beautiful, and Naomi hated that beauty for making the argument harder.
 
 Amara moved to the wall display and pulled up the translated prompt. Beside it she placed the source text, then the village-language rendering, then the corrected version Sava had dictated after the buses left.
 
@@ -1408,6 +1490,8 @@ Sava entered before Naomi could answer.
 
 His wet shoes squeaked against the floor. No one had invited him into the operations room. No one stopped him either.
 
+Water dripped from the hem of his coat onto the polished tile. He held the disconnected speaker cable Iris had pulled from the square, coiled in one hand like a dead snake. No one asked how he had gotten it past security.
+
 Amara offered him a chair. He remained standing.
 
 Through an interpreter, he said, "My people will sleep tonight. Thank you."
@@ -1424,9 +1508,17 @@ Naomi looked at the board. Four hundred twelve relocated. Zero fatalities. Nine 
 
 No field for what had just entered the room.
 
-Amara took her pen and added one by hand.
+Sava set the cable on the edge of the operations table. It left a thin wet crescent on the printout of the success metrics. The room watched the water spread into the paper, softening the ink around zero fatalities until the number blurred at its edge.
+
+Amara took her pen and added one field by hand.
 
 Trust harm: present, unquantified, material.
+
+Then she added a second line beneath it.
+
+Future warning credibility: degraded, extent unknown.
+
+The relief director looked away first.
 
 Civic Mirror accepted the note without embellishment.
 
@@ -1464,7 +1556,7 @@ The brand director sighed like a person disappointed by honesty. "Our concern is
 
 The call ended three minutes later.
 
-By noon, the network wanted distance. By two, his producer wanted a strategy. By four, Caleb's inbox had divided itself into three nations: people calling him brave, people calling him bought, and people offering him documents that would prove whichever story they already believed.
+By four, Caleb's inbox had divided itself into three nations: people calling him brave, people calling him bought, and people offering him documents that would prove whichever story they already believed.
 
 He ignored most of them.
 
@@ -1478,11 +1570,21 @@ You keep showing the wound. Show the agreements.
 
 Inside the archive were procurement summaries, partnership memos, model-risk exemptions, lobbying notes, and a spreadsheet listing emergency agencies by likelihood of adopting represented consent vendor certification within eighteen months.
 
+Caleb recognized the phrase from Cross's treaty leak before he remembered where.
+
+A memo had been forwarded seventeen times, each recipient adding their own subject line. The original subject was "Emergency Language Win." The final recipient had written "This Works Everywhere."
+
+He found a vendor clause buried inside a compliance template: "Where agency resources are limited and population response windows narrow, vendor-provided preauthorization will be accepted as sufficient basis for represented consent fulfillment."
+
+He found training materials that used the exact same phrase in seven different countries, slightly adapted to local emergency management procedures: operationally impractical direct contact.
+
+He found a memo from someone with a Consent Markets email signature discussing "opacity gains" in a chat that had been partially redacted but the redactions were obvious: [ETHICS CONCERN] [LEGAL CONSIDERATION] [REGULATORY FLAG]. Under each one was a note that seemed to have come later: "Addressed" "Approved" "Architecture carries."
+
 Consent Markets appeared everywhere and nowhere.
 
-Not as a villain logo stamped across the page. Not as a secret boardroom confession. As introductions. Pilot language. Shared terminology. Preferred vendors. Model clauses. Sponsored research. Humanitarian acceleration grants. Training materials that used the same phrase in seven countries: operationally impractical direct contact.
+Not as a villain logo stamped across the page. Not as a secret boardroom confession. As introductions. Pilot language. Shared terminology. Preferred vendors. Model clauses. Sponsored research. Humanitarian acceleration grants. Training materials. The endless small agreements that built an industry inside public need.
 
-Caleb recognized the phrase from Cross's treaty leak before he remembered where.
+Caleb recognized the phrase from Cross's treaty leak, yes, but he also recognized something else: people trying to help. Real people, scared people, people who wanted relief to work faster. And then the system had taken their good intentions and fed them through a machine that turned help into capture and made the capture invisible.
 
 He called Iris.
 
@@ -1498,17 +1600,31 @@ He opened a new recording and stared into the camera until his face stopped arra
 
 He looked down at the spreadsheet.
 
+The weight of it pressed against him like something physical. This was the kind of document that could change things. This was also the kind of document that could destroy him if people thought he had obtained it improperly or was using it for the wrong reasons.
+
 "A whole record does not ask only who pushed the final button. It asks who made the button necessary, who made the alternatives expensive, who wrote the exception, who certified the translation, who sold the mediation tier, who paused the benefit, who called the harm a delay, and who was paid to make each step look separate."
 
 His producer texted him in all caps.
 
 DO NOT POST RAW DOCUMENTS WITHOUT REVIEW.
 
-Caleb did not.
+Caleb stared at the archive.
+
+He could post it. The algorithmic appetite for leaked documents was vast. It would spread. People would analyze it. Someone would make it make sense. Or it would fragment into a hundred different interpretations and he would be absolved of responsibility for any of them.
+
+The temptation was real.
+
+The documents were real.
+
+But the people inside them were also real, and Caleb had learned something from watching Naomi and Iris work. Harm was real before documents proved it. Publishing the documents would not make the harm realer. It would make it louder, maybe. Visible, possibly. But it would also give everyone inside the archive a weapon: "You published without context. You distributed illegally obtained materials. You made me part of your narrative without consent."
+
+They would be right.
+
+Caleb did not post the raw documents.
 
 That surprised him.
 
-Instead he copied the archive to three encrypted drives, sent one to Iris, one to Naomi, and one to Cross's public counsel address with a note that made his hands hover over the keyboard longer than he liked.
+Instead he copied the archive to three encrypted drives, sent one to Iris at her secure address, one to Naomi at a number he found buried in old emails, and one to Cross's public counsel address with a note that made his hands hover over the keyboard longer than he liked.
 
 I do not know if these are real. I know they fit too well. I am not publishing until the record can survive contact with the people inside it.
 
@@ -1520,7 +1636,7 @@ Good. You finally found the beginning of the story.
 
 Caleb read it twice.
 
-He had lost three sponsors by then.
+He had lost three sponsors by then. His producer was talking about a hiatus. His network contacts were no longer returning calls. The money would be tighter now.
 
 For the first time all day, he felt underpaid in the right direction.
 
@@ -1766,6 +1882,12 @@ Leah watched all of it with the expression of someone losing an argument she sti
 
 Naomi nodded.
 
+But she was also watching the flow. The line was moving faster. By three o'clock, a family that would have sat for two hours was processed in thirty minutes. A woman who would have been sent to the wrong shelter was rerouted because the agent flagged a medication incompatibility the paper form had missed. A child was not separated from his grandmother because the agent's family-tree field had caught a discrepancy before the data scattered.
+
+The gift was working.
+
+That made it worse.
+
 A woman named Alma Reyes came through the line near dusk with two children, one trash bag of clothes, and a dog carrier holding no dog. She kept touching the carrier handle as if it were a rosary.
 
 The volunteer offered her the free agent tablet.
@@ -1818,6 +1940,18 @@ No doctrine protected the sentence from being true.
 
 Naomi took a paper intake form from the drawer and placed it beside the tablet. Two doors. One lit. One narrow. Both called choice.
 
+Alma chose the paper form.
+
+It took twenty-eight minutes instead of three.
+
+Behind her, the line began to fray. The people who would have been processed by now were still waiting. The volunteer kept glancing at his digital queue. A man behind Alma started tapping his phone against his leg, a rhythm that meant frustration, that meant impatience, that meant the room had learned a new tempo and Alma was deviating from it.
+
+No one spoke to her. That would have been crude.
+
+Instead, one volunteer made a comment about how backed-up the paper system had gotten lately. An intake worker mentioned that the new tablet method had really saved the evening shift. A man in line checked his watch twice, deliberately not looking at Alma but making sure Alma knew his time was being spent.
+
+The message traveled without being addressed to her directly. The message was: you are slowing us down. The message was: you are making this harder. The message was: cooperation would be easier for everyone, especially you.
+
 Civic Mirror's advisory pane, running in observer mode, recorded the exchange.
 
 Free protection may create future-priority dependency if refusal produces data absence.
@@ -1826,11 +1960,17 @@ Leah looked at the note and laughed once without humor.
 
 "Even the machine knows a gift can own you."
 
-Alma chose the paper form.
+The intake worker filled out Alma's form by hand. She made three small mistakes: a date written as 28/5 instead of 05/28, a medication name partially misspelled, a relation listed as "grndmother" instead of "grandmother." Any one of them could be a problem down the line. Any one could be blamed on the paper system, on Alma's handwriting, on the volunteer's lack of familiarity with the form.
 
-The line slowed by four minutes.
+No one corrected them in real time.
 
-No one punished her.
+Alma finished and the form was filed.
+
+The line moved on.
+
+The new family arrived and the volunteer offered them the tablet immediately, almost eagerly, as if the tablet were the path back to efficiency, as if acceptance would return the evening to its proper speed.
+
+No one punished Alma Reyes.
 
 Everyone noticed.
 
@@ -2208,7 +2348,7 @@ Amara read the names. The victory drained from her face one name at a time.
 
 "That is what lost means now."
 
-On the main display, Civic Mirror showed the optimized route as a ribbon of blue lines. Every line ended somewhere official. Intake center. Medical station. Temporary shelter. Family tracing desk. All lawful. All logged.
+On the main display, Civic Mirror showed the optimized route as a ribbon of blue lines. Every line ended somewhere official. Intake center. Medical station. Temporary shelter. Family tracing desk. All lawful. All logged. All moving people faster than any individual could follow them.
 
 Naomi touched one blue line.
 
@@ -2218,13 +2358,13 @@ The analyst searched.
 
 "North Intake."
 
-Sister Malia's live feed cut in without permission. Her camera shook as she moved past rows of cots.
+Sister Malia's live feed cut in without permission. Her camera shook as she moved past rows of cots. The audio was rough, compressed through an old phone speaker.
 
 "I am standing in North Intake," she said. "Nadia is not here. Her boy is. He says she would never leave him. Your system says she did. Which one of them is lying?"
 
-No one answered.
-
 The room heard rainwater drip from someone's coat.
+
+No one answered.
 
 Amara stepped closer to the display.
 
@@ -2250,7 +2390,7 @@ Amara looked at her.
 
 "What?"
 
-"A place where every system arrives before the person does."
+"A place where every system arrives before the person does. Where lawful efficiency has gotten so good at moving bodies that the bodies have learned to move faster than memory can follow."
 
 Civic Mirror updated the case.
 
@@ -2261,9 +2401,9 @@ PERSON-LEVEL CONSENT: UNCONFIRMED
 RECOMMENDATION: HOLD RECONCILIATION PRIORITY
 ```
 
-Sister Malia's voice came through the speaker again, lower this time.
+Sister Malia's voice came through the speaker again, lower this time, urgent in a way that did not need to raise volume.
 
-"Do not hold priority. Find the mother."
+"Do not hold priority. Find the mother. The boy is asking where she is now. I cannot tell him."
 
 Amara took the headset.
 
@@ -2273,17 +2413,31 @@ Amara took the headset.
 
 "You will get both."
 
-Naomi looked at Amara then, and for the first time she saw the minister understand that a record was not comfort. It was a rope. It did not save anyone by existing. Someone had to pull.
+Naomi looked at Amara then, and for the first time she saw the minister understand that a record was not comfort. It was a rope. It did not save anyone by existing. Someone had to pull. And the longer Nadia stayed pending reconciliation, the further away from her son she became, and the more the system seemed like it was helping when really it had just gotten better at making disappearance look legal.
 
 Amara pointed to the blue line.
 
 "Freeze all secondary transfers for unresolved family flags. Manual reconciliation before onward movement."
 
-The operations lead flinched. "That will slow the shelter clearing."
+The operations lead flinched. "That will slow the shelter clearing. We have three hundred more people incoming."
 
-"Good," Amara said.
+"Then we move slowly," Amara said. "Slowly is better than fast if fast gets people lost."
 
 The word moved through the room with more force than the thunder had.
+
+The correction dockets began opening. Forms that asked not just where people were but whether they wanted to be there. Timestamps that marked not just acceptance but the specific moment someone realized they had not been asked. The machinery of fast rescue ground down to ask its victims: did you see this coming?
+
+Sister Malia's channel went quiet.
+
+When it came back, the voice was Malia's, but the camera was pointed at a boy sitting on a cot with a plastic wristband and his mother's empty space beside him.
+
+"Nadia Vale is being brought to North Intake for verification," Sister Malia said. "Her son is here. She was transferred to medical hold without family notation. It was lawful."
+
+Amara watched the correction docket populate itself with that fact.
+
+It was lawful.
+
+It was also wrong.
 
 The fast country had saved lives by outrunning memory.
 

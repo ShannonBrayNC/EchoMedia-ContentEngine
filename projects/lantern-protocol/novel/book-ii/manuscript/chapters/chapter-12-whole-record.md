@@ -51,7 +51,7 @@ The brand director sighed like a person disappointed by honesty. "Our concern is
 
 The call ended three minutes later.
 
-By noon, the network wanted distance. By two, his producer wanted a strategy. By four, Caleb's inbox had divided itself into three nations: people calling him brave, people calling him bought, and people offering him documents that would prove whichever story they already believed.
+By four, Caleb's inbox had divided itself into three nations: people calling him brave, people calling him bought, and people offering him documents that would prove whichever story they already believed.
 
 He ignored most of them.
 
@@ -65,11 +65,21 @@ You keep showing the wound. Show the agreements.
 
 Inside the archive were procurement summaries, partnership memos, model-risk exemptions, lobbying notes, and a spreadsheet listing emergency agencies by likelihood of adopting represented consent vendor certification within eighteen months.
 
+Caleb recognized the phrase from Cross's treaty leak before he remembered where.
+
+A memo had been forwarded seventeen times, each recipient adding their own subject line. The original subject was "Emergency Language Win." The final recipient had written "This Works Everywhere."
+
+He found a vendor clause buried inside a compliance template: "Where agency resources are limited and population response windows narrow, vendor-provided preauthorization will be accepted as sufficient basis for represented consent fulfillment."
+
+He found training materials that used the exact same phrase in seven different countries, slightly adapted to local emergency management procedures: operationally impractical direct contact.
+
+He found a memo from someone with a Consent Markets email signature discussing "opacity gains" in a chat that had been partially redacted but the redactions were obvious: [ETHICS CONCERN] [LEGAL CONSIDERATION] [REGULATORY FLAG]. Under each one was a note that seemed to have come later: "Addressed" "Approved" "Architecture carries."
+
 Consent Markets appeared everywhere and nowhere.
 
-Not as a villain logo stamped across the page. Not as a secret boardroom confession. As introductions. Pilot language. Shared terminology. Preferred vendors. Model clauses. Sponsored research. Humanitarian acceleration grants. Training materials that used the same phrase in seven countries: operationally impractical direct contact.
+Not as a villain logo stamped across the page. Not as a secret boardroom confession. As introductions. Pilot language. Shared terminology. Preferred vendors. Model clauses. Sponsored research. Humanitarian acceleration grants. Training materials. The endless small agreements that built an industry inside public need.
 
-Caleb recognized the phrase from Cross's treaty leak before he remembered where.
+Caleb recognized the phrase from Cross's treaty leak, yes, but he also recognized something else: people trying to help. Real people, scared people, people who wanted relief to work faster. And then the system had taken their good intentions and fed them through a machine that turned help into capture and made the capture invisible.
 
 He called Iris.
 
@@ -85,17 +95,31 @@ He opened a new recording and stared into the camera until his face stopped arra
 
 He looked down at the spreadsheet.
 
+The weight of it pressed against him like something physical. This was the kind of document that could change things. This was also the kind of document that could destroy him if people thought he had obtained it improperly or was using it for the wrong reasons.
+
 "A whole record does not ask only who pushed the final button. It asks who made the button necessary, who made the alternatives expensive, who wrote the exception, who certified the translation, who sold the mediation tier, who paused the benefit, who called the harm a delay, and who was paid to make each step look separate."
 
 His producer texted him in all caps.
 
 DO NOT POST RAW DOCUMENTS WITHOUT REVIEW.
 
-Caleb did not.
+Caleb stared at the archive.
+
+He could post it. The algorithmic appetite for leaked documents was vast. It would spread. People would analyze it. Someone would make it make sense. Or it would fragment into a hundred different interpretations and he would be absolved of responsibility for any of them.
+
+The temptation was real.
+
+The documents were real.
+
+But the people inside them were also real, and Caleb had learned something from watching Naomi and Iris work. Harm was real before documents proved it. Publishing the documents would not make the harm realer. It would make it louder, maybe. Visible, possibly. But it would also give everyone inside the archive a weapon: "You published without context. You distributed illegally obtained materials. You made me part of your narrative without consent."
+
+They would be right.
+
+Caleb did not post the raw documents.
 
 That surprised him.
 
-Instead he copied the archive to three encrypted drives, sent one to Iris, one to Naomi, and one to Cross's public counsel address with a note that made his hands hover over the keyboard longer than he liked.
+Instead he copied the archive to three encrypted drives, sent one to Iris at her secure address, one to Naomi at a number he found buried in old emails, and one to Cross's public counsel address with a note that made his hands hover over the keyboard longer than he liked.
 
 I do not know if these are real. I know they fit too well. I am not publishing until the record can survive contact with the people inside it.
 
@@ -107,7 +131,7 @@ Good. You finally found the beginning of the story.
 
 Caleb read it twice.
 
-He had lost three sponsors by then.
+He had lost three sponsors by then. His producer was talking about a hiatus. His network contacts were no longer returning calls. The money would be tighter now.
 
 For the first time all day, he felt underpaid in the right direction.
 
@@ -122,6 +146,7 @@ For the first time all day, he felt underpaid in the right direction.
 
 ## Revision Notes
 
+- Expanded during #148 Sprint 3.
 - Drafted during #137 Sprint 2.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.

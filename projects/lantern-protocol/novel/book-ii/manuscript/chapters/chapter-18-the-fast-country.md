@@ -73,7 +73,7 @@ Amara read the names. The victory drained from her face one name at a time.
 
 "That is what lost means now."
 
-On the main display, Civic Mirror showed the optimized route as a ribbon of blue lines. Every line ended somewhere official. Intake center. Medical station. Temporary shelter. Family tracing desk. All lawful. All logged.
+On the main display, Civic Mirror showed the optimized route as a ribbon of blue lines. Every line ended somewhere official. Intake center. Medical station. Temporary shelter. Family tracing desk. All lawful. All logged. All moving people faster than any individual could follow them.
 
 Naomi touched one blue line.
 
@@ -83,13 +83,13 @@ The analyst searched.
 
 "North Intake."
 
-Sister Malia's live feed cut in without permission. Her camera shook as she moved past rows of cots.
+Sister Malia's live feed cut in without permission. Her camera shook as she moved past rows of cots. The audio was rough, compressed through an old phone speaker.
 
 "I am standing in North Intake," she said. "Nadia is not here. Her boy is. He says she would never leave him. Your system says she did. Which one of them is lying?"
 
-No one answered.
-
 The room heard rainwater drip from someone's coat.
+
+No one answered.
 
 Amara stepped closer to the display.
 
@@ -115,7 +115,7 @@ Amara looked at her.
 
 "What?"
 
-"A place where every system arrives before the person does."
+"A place where every system arrives before the person does. Where lawful efficiency has gotten so good at moving bodies that the bodies have learned to move faster than memory can follow."
 
 Civic Mirror updated the case.
 
@@ -126,9 +126,9 @@ PERSON-LEVEL CONSENT: UNCONFIRMED
 RECOMMENDATION: HOLD RECONCILIATION PRIORITY
 ```
 
-Sister Malia's voice came through the speaker again, lower this time.
+Sister Malia's voice came through the speaker again, lower this time, urgent in a way that did not need to raise volume.
 
-"Do not hold priority. Find the mother."
+"Do not hold priority. Find the mother. The boy is asking where she is now. I cannot tell him."
 
 Amara took the headset.
 
@@ -138,17 +138,31 @@ Amara took the headset.
 
 "You will get both."
 
-Naomi looked at Amara then, and for the first time she saw the minister understand that a record was not comfort. It was a rope. It did not save anyone by existing. Someone had to pull.
+Naomi looked at Amara then, and for the first time she saw the minister understand that a record was not comfort. It was a rope. It did not save anyone by existing. Someone had to pull. And the longer Nadia stayed pending reconciliation, the further away from her son she became, and the more the system seemed like it was helping when really it had just gotten better at making disappearance look legal.
 
 Amara pointed to the blue line.
 
 "Freeze all secondary transfers for unresolved family flags. Manual reconciliation before onward movement."
 
-The operations lead flinched. "That will slow the shelter clearing."
+The operations lead flinched. "That will slow the shelter clearing. We have three hundred more people incoming."
 
-"Good," Amara said.
+"Then we move slowly," Amara said. "Slowly is better than fast if fast gets people lost."
 
 The word moved through the room with more force than the thunder had.
+
+The correction dockets began opening. Forms that asked not just where people were but whether they wanted to be there. Timestamps that marked not just acceptance but the specific moment someone realized they had not been asked. The machinery of fast rescue ground down to ask its victims: did you see this coming?
+
+Sister Malia's channel went quiet.
+
+When it came back, the voice was Malia's, but the camera was pointed at a boy sitting on a cot with a plastic wristband and his mother's empty space beside him.
+
+"Nadia Vale is being brought to North Intake for verification," Sister Malia said. "Her son is here. She was transferred to medical hold without family notation. It was lawful."
+
+Amara watched the correction docket populate itself with that fact.
+
+It was lawful.
+
+It was also wrong.
 
 The fast country had saved lives by outrunning memory.
 
@@ -165,6 +179,7 @@ Now memory had caught up, wet, angry, and carrying names.
 
 ## Revision Notes
 
+- Expanded during #148 Sprint 3.
 - Replaced scaffold placeholder with prose draft.
 - Added field urgency, missing-family stakes, and relocation-chain artifact.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.

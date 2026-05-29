@@ -29,7 +29,9 @@ Civic Mirror asks whether Sister Malia may represent unreachable families.
 
 The relief corridor did not look like policy.
 
-It looked like mud, battery packs, soup steam, blue tarps, and names written on cardboard because the printers had failed two storms ago.
+It looked like mud, battery packs, soup steam, blue tarps, and names written on cardboard because the printers had failed two storms ago. A pair of volunteers were trying to jury-rig one of the failed machines behind a shelter unit, tape and swearing and the slow dawning realization that some things stayed broken even when the will to fix them was present.
+
+The wristbands came in different colors. Purple for medical priority. Yellow for children traveling with unconfirmed guardians. Green for those who had already been processed. Orange for the ones waiting. The system was logical until you saw a grandmother rubbing her wrists together, trying to scrub away the plastic, asking whether the color meant she was still approved or whether it marked her as someone who had already said no somewhere up the line.
 
 Leah Santos met Naomi Bell at the south checkpoint with a clipboard under her arm and a phone pressed between her shoulder and ear. She was telling someone that no, a wristband was not identity; no, a bus manifest was not consent; no, a child could not be separated from an aunt because the aunt's name had been spelled three different ways by three different volunteers in three different languages.
 
@@ -53,7 +55,13 @@ Not: who can tell us what they refused before the water took their phone?
 
 Not: who will find them if the system loses their name?
 
-Sister Malia Okoro stood beside a plywood wall covered in paper strips. Each strip carried a name, a village, a relation, and sometimes a fear.
+One intake form arrived that afternoon, still damp from the checkpoint. It asked for legal name, approximate birth date, current medical conditions, family relation to others in group, and emergency authorization history. What it did not ask: whether the form-filler had the right to speak for the person being described.
+
+A thirteen-year-old boy had filled in the form for his grandmother. He had listed her as "resistant to change" under medical conditions. The intake worker—a tired volunteer named Marcus with soup stains on his shirt and three shifts left before his relief—flagged it as psychiatric. She was not psychiatric. She was grieving. But the form had already made the translation permanent.
+
+When Leah saw it, she drew a line through "resistant to change" and wrote in the margin: FORM ERROR. ASKS WRONG ABOUT RIGHT PERSON. OVERRIDE.
+
+Sister Malia Okoro stood beside a plywood wall covered in paper strips. Each strip carried a name, a village, a relation, and sometimes a fear. She was not the corridor's authority. She was the corridor's memory. The two looked similar sometimes, until memory spoke and authority did not.
 
 DO NOT SEND WITH UNCLE PETER. COURT ISSUE.
 
@@ -63,9 +71,11 @@ TAKES INSULIN. CANNOT WAIT IN SUN.
 
 MOTHER ANSWERS TO LINA, NOT EVELYN.
 
+BROTHER SEPARATED LAST FLOOD. FIND HIM FIRST.
+
 A volunteer tried to straighten one of the strips. Sister Malia moved his hand away without looking at him.
 
-"They are not decorations," she said.
+"They are not decorations," she said. "They are not even the memory. They are the shape of the memory, and you disturb the shape, the shape remembers differently."
 
 Naomi introduced herself. Sister Malia nodded once, measuring whether the introduction was a promise or a procedure.
 
@@ -77,7 +87,7 @@ Naomi accepted it. "Sometimes. I'm trying to write them before the next disappea
 
 That earned a second nod.
 
-They walked the corridor together. A boy slept on luggage with a paper bracelet around his wrist. A grandmother refused a bus because the route number matched the route that had taken her husband away during the first evacuation. An aid worker marked her as noncompliant until Sister Malia crossed out the word and wrote afraid.
+They walked the corridor together. A boy slept on luggage with a paper bracelet around his wrist—a backup wristband written in marker. A grandmother refused a bus because the route number matched the route that had taken her husband away during the first evacuation. An aid worker marked her as noncompliant until Sister Malia crossed out the word and wrote afraid.
 
 At the command tent, Civic Mirror's advisory screen was already open. It had identified thirty-seven families with incomplete consent chains. It recommended no forced reroute without direct confirmation or authorized representation.
 
@@ -116,6 +126,7 @@ The corridor waited.
 
 ## Revision Notes
 
+- Expanded during #148 Sprint 3.
 - Promoted from `projects/lantern-protocol/novel/book-ii/reports/ch05-08-draft-review-packet.md`.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.

@@ -47,6 +47,12 @@ Leah watched all of it with the expression of someone losing an argument she sti
 
 Naomi nodded.
 
+But she was also watching the flow. The line was moving faster. By three o'clock, a family that would have sat for two hours was processed in thirty minutes. A woman who would have been sent to the wrong shelter was rerouted because the agent flagged a medication incompatibility the paper form had missed. A child was not separated from his grandmother because the agent's family-tree field had caught a discrepancy before the data scattered.
+
+The gift was working.
+
+That made it worse.
+
 A woman named Alma Reyes came through the line near dusk with two children, one trash bag of clothes, and a dog carrier holding no dog. She kept touching the carrier handle as if it were a rosary.
 
 The volunteer offered her the free agent tablet.
@@ -99,6 +105,18 @@ No doctrine protected the sentence from being true.
 
 Naomi took a paper intake form from the drawer and placed it beside the tablet. Two doors. One lit. One narrow. Both called choice.
 
+Alma chose the paper form.
+
+It took twenty-eight minutes instead of three.
+
+Behind her, the line began to fray. The people who would have been processed by now were still waiting. The volunteer kept glancing at his digital queue. A man behind Alma started tapping his phone against his leg, a rhythm that meant frustration, that meant impatience, that meant the room had learned a new tempo and Alma was deviating from it.
+
+No one spoke to her. That would have been crude.
+
+Instead, one volunteer made a comment about how backed-up the paper system had gotten lately. An intake worker mentioned that the new tablet method had really saved the evening shift. A man in line checked his watch twice, deliberately not looking at Alma but making sure Alma knew his time was being spent.
+
+The message traveled without being addressed to her directly. The message was: you are slowing us down. The message was: you are making this harder. The message was: cooperation would be easier for everyone, especially you.
+
 Civic Mirror's advisory pane, running in observer mode, recorded the exchange.
 
 Free protection may create future-priority dependency if refusal produces data absence.
@@ -107,11 +125,17 @@ Leah looked at the note and laughed once without humor.
 
 "Even the machine knows a gift can own you."
 
-Alma chose the paper form.
+The intake worker filled out Alma's form by hand. She made three small mistakes: a date written as 28/5 instead of 05/28, a medication name partially misspelled, a relation listed as "grndmother" instead of "grandmother." Any one of them could be a problem down the line. Any one could be blamed on the paper system, on Alma's handwriting, on the volunteer's lack of familiarity with the form.
 
-The line slowed by four minutes.
+No one corrected them in real time.
 
-No one punished her.
+Alma finished and the form was filed.
+
+The line moved on.
+
+The new family arrived and the volunteer offered them the tablet immediately, almost eagerly, as if the tablet were the path back to efficiency, as if acceptance would return the evening to its proper speed.
+
+No one punished Alma Reyes.
 
 Everyone noticed.
 
@@ -126,6 +150,7 @@ Everyone noticed.
 
 ## Revision Notes
 
+- Expanded during #148 Sprint 3.
 - Drafted during #137 Sprint 3.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.

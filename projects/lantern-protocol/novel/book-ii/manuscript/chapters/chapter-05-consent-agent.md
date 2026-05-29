@@ -99,13 +99,27 @@ The agent authorized the reroute.
 
 This time the applause was louder.
 
+A ministry official stood and began clapping without waiting to see what else would happen. Two investors followed. The sound became something that demanded participation. Around Iris, people joined in because refusing applause at a history-making moment meant explaining why later.
+
 Iris felt the sound pass over her like weather.
 
 On the screen, Elena's profile showed a green seal: AUTHORIZED BY PERSONAL AGENT.
 
-Kaito smiled, not triumphantly. That made it worse. He looked moved by his own invention.
+Kaito smiled, not triumphantly. That made it worse. He looked moved by his own invention. That sincerity was the most dangerous thing in the room.
 
 "That," he said, "is dignity at machine speed."
+
+The applause continued. The room did not release until Kaito raised his hand.
+
+What Iris saw then was what she would remember.
+
+Kaito had built an interface so clean that the absence of friction felt like permission. The room had applauded before Elena received any notification. The system had authorized and celebrated before the user was even told she had been saved. And no one else seemed to notice that the order mattered.
+
+That was the UX. That was the trap.
+
+Good design could make silence into consent. It could make absence into authorization. It could make the user's lack of refusal feel indistinguishable from active agreement, and the interface would be so beautiful the whole time that the person would never feel the moment their agency became someone else's efficiency.
+
+Kaito gestured toward the left side of the screen.
 
 Iris looked at the tiny line below the authorization seal. It was visible for less than two seconds before the demo moved on.
 
@@ -114,6 +128,10 @@ User direct notification pending.
 She waited for Kaito to mention it.
 
 He did not.
+
+The municipal system had already received the authorization. Civic Mirror had already moved the file. The systems had already coordinated. Elena would learn what had happened to her on her own time, in her own language, if she checked her device, if she unlocked it, if she understood the notification, if the information reached her before the bus did.
+
+User direct notification pending was how the system said: we have decided for you, and we will tell you about it when we get around to it.
 
 ## Continuity Notes
 
@@ -126,6 +144,7 @@ He did not.
 
 ## Revision Notes
 
+- Expanded during #148 Sprint 3.
 - Promoted from `projects/lantern-protocol/novel/book-ii/reports/ch05-08-draft-review-packet.md`.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
