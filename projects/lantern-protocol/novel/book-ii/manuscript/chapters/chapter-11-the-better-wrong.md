@@ -33,6 +33,8 @@ That was the first fact everyone wanted Naomi to accept.
 
 The buses reached high ground before midnight. The bridge did not fail. The clinic opened a separate intake line for women without male registration. No child drowned in the square. No elder died under the awning. The evacuation, by every emergency metric on the board, had succeeded.
 
+The operations room smelled of wet wool, machine coffee, and the sour metal of adrenaline after it had nowhere useful left to go. Rain tapped the windows with a smaller voice now. People had begun to speak in numbers because numbers gave them somewhere to put their shaking hands.
+
 Amara Sayeed read the metrics aloud because no one else wanted to put a voice to them.
 
 "Four hundred twelve relocated. Zero fatalities in transit. Nine medication exceptions resolved. Six family-separation alerts corrected before intake."
@@ -54,6 +56,8 @@ The relief director rubbed both hands over his face. "We saved the village."
 Naomi did not dispute it.
 
 That was the problem. If the wrong had failed, everyone would have known what to call it. If the mistranslation had killed people, the inquiry would have had edges. Instead the better wrong had arrived wearing rescued bodies as armor.
+
+A field officer replayed drone footage on mute. Buses curving through water. Headlights bending in rain. Families disembarking under floodlights. Volunteers lifting crates and children. The images were merciful, almost beautiful, and Naomi hated that beauty for making the argument harder.
 
 Amara moved to the wall display and pulled up the translated prompt. Beside it she placed the source text, then the village-language rendering, then the corrected version Sava had dictated after the buses left.
 
@@ -97,6 +101,8 @@ Sava entered before Naomi could answer.
 
 His wet shoes squeaked against the floor. No one had invited him into the operations room. No one stopped him either.
 
+Water dripped from the hem of his coat onto the polished tile. He held the disconnected speaker cable Iris had pulled from the square, coiled in one hand like a dead snake. No one asked how he had gotten it past security.
+
 Amara offered him a chair. He remained standing.
 
 Through an interpreter, he said, "My people will sleep tonight. Thank you."
@@ -113,9 +119,17 @@ Naomi looked at the board. Four hundred twelve relocated. Zero fatalities. Nine 
 
 No field for what had just entered the room.
 
-Amara took her pen and added one by hand.
+Sava set the cable on the edge of the operations table. It left a thin wet crescent on the printout of the success metrics. The room watched the water spread into the paper, softening the ink around zero fatalities until the number blurred at its edge.
+
+Amara took her pen and added one field by hand.
 
 Trust harm: present, unquantified, material.
+
+Then she added a second line beneath it.
+
+Future warning credibility: degraded, extent unknown.
+
+The relief director looked away first.
 
 Civic Mirror accepted the note without embellishment.
 
@@ -137,6 +151,7 @@ Because it had left space for one.
 ## Revision Notes
 
 - Drafted during #137 Sprint 2.
+- Expanded during #147 Sprint 2.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
