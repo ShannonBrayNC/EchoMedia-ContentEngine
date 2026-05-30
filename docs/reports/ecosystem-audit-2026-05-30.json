@@ -1,0 +1,618 @@
+{
+  "repos": [
+    {
+      "name": "christina-assistant",
+      "path": "C:\\GitHub\\christina-assistant",
+      "remote": "https://github.com/ShannonBrayNC/christina-assistant.git",
+      "branch": "codex/christina-wire-runner-entrypoint",
+      "last_commit_date": "2026-05-27",
+      "last_commit_subject": "bd96591 test: invoke tsx through current node executable",
+      "dirty_files": 33,
+      "manifests": [
+        "package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration"
+      ],
+      "dependencies": [
+        "node/npm"
+      ],
+      "duplicate_group": "christina-assistant",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "EchoChamber",
+      "path": "C:\\GitHub\\EchoChamber",
+      "remote": "https://github.com/ShannonBrayNC/EchoChamber.git",
+      "branch": "feature/p1-foundation-scaffold",
+      "last_commit_date": "2026-03-20",
+      "last_commit_subject": "f5f6f3d P2-08: Add diagnostics API route for root cause analysis",
+      "dirty_files": 1,
+      "manifests": [
+        "apps\\portal\\package.json"
+      ],
+      "capabilities": [
+        "frontend or node automation",
+        "operations orchestration"
+      ],
+      "dependencies": [
+        "node/npm"
+      ],
+      "duplicate_group": "echochamber",
+      "is_clone": false,
+      "is_stale": true
+    },
+    {
+      "name": "echocode",
+      "path": "C:\\GitHub\\echocode",
+      "remote": "https://github.com/ShannonBrayNC/echocode.git",
+      "branch": "main",
+      "last_commit_date": "2026-05-20",
+      "last_commit_subject": "43a9379 Fix EchoCode assessment workflow diagnostics",
+      "dirty_files": 0,
+      "manifests": [],
+      "capabilities": [
+        "code assessment workflow"
+      ],
+      "dependencies": [],
+      "duplicate_group": "echocode",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "echocode-pipeline-christina-19",
+      "path": "C:\\GitHub\\echocode-pipeline-christina-19",
+      "remote": "https://github.com/ShannonBrayNC/echocode-pipeline.git",
+      "branch": "codex/chr-0002-register-christina",
+      "last_commit_date": "2026-05-21",
+      "last_commit_subject": "56adeeb Register Christina in pipeline repo config",
+      "dirty_files": 0,
+      "manifests": [
+        "pyproject.toml"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "python"
+      ],
+      "duplicate_group": "echocode-pipeline",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "echocode-pipeline-starter",
+      "path": "C:\\GitHub\\echocode-pipeline-starter",
+      "remote": "https://github.com/ShannonBrayNC/echocode-pipeline.git",
+      "branch": "master",
+      "last_commit_date": "2026-05-20",
+      "last_commit_subject": "9c8cb19 Ignore generated Python package metadata",
+      "dirty_files": 14,
+      "manifests": [
+        "pyproject.toml"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "python"
+      ],
+      "duplicate_group": "echocode-pipeline",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "echocode-platform",
+      "path": "C:\\GitHub\\echocode-platform",
+      "remote": "https://github.com/ShannonBrayNC/echocode-platform.git",
+      "branch": "echocodex/live-pr-write-automation-verify",
+      "last_commit_date": "2026-05-29",
+      "last_commit_subject": "5c993a1 Honor explicit issue number in EchoCodex mock CLI",
+      "dirty_files": 2,
+      "manifests": [
+        "package.json",
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "echocode-platform",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "echocode-platform-codex-lantern",
+      "path": "C:\\GitHub\\echocode-platform-codex-lantern",
+      "remote": "https://github.com/ShannonBrayNC/echocode-platform.git",
+      "branch": "codex/echocode-christina-onboarding",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "9926da9 Onboard EchoCode Platform for Christina reviews",
+      "dirty_files": 0,
+      "manifests": [
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "python"
+      ],
+      "duplicate_group": "echocode-platform",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "echoliving",
+      "path": "C:\\GitHub\\echoliving",
+      "remote": "https://github.com/ShannonBrayNC/EchoLiving.git",
+      "branch": "codex/echoliving-lantern-adapter-doc",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "dc81df3 Add EchoLiving recommendation registry",
+      "dirty_files": 1,
+      "manifests": [
+        "backend\\requirements.txt",
+        "frontend\\package.json",
+        "package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "api runtime",
+        "browser runtime",
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "echoliving",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "EchoLiving-lantern-test",
+      "path": "C:\\GitHub\\EchoLiving-lantern-test",
+      "remote": "https://github.com/ShannonBrayNC/EchoLiving.git",
+      "branch": "",
+      "last_commit_date": "2026-05-25",
+      "last_commit_subject": "e661e37 Add frontend-local Vite config for Lantern tests",
+      "dirty_files": 1,
+      "manifests": [
+        "backend\\requirements.txt",
+        "frontend\\package.json",
+        "package.json"
+      ],
+      "capabilities": [
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "api runtime",
+        "browser runtime",
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "echoliving",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "EchoMedia-ContentEngine",
+      "path": "C:\\GitHub\\EchoMedia-ContentEngine",
+      "remote": "https://github.com/ShannonBrayNC/EchoMedia-ContentEngine.git",
+      "branch": "main",
+      "last_commit_date": "2026-05-29",
+      "last_commit_subject": "db7a516 Expand Book II sprint 3 chapters",
+      "dirty_files": 12,
+      "manifests": [
+        "ui\\content-engine-dashboard\\package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "browser runtime",
+        "node/npm"
+      ],
+      "duplicate_group": "echomedia-contentengine",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "EchoMedia-ContentEngine-codex-lantern",
+      "path": "C:\\GitHub\\EchoMedia-ContentEngine-codex-lantern",
+      "remote": "https://github.com/ShannonBrayNC/EchoMedia-ContentEngine.git",
+      "branch": "codex/content-engine-lantern-assets",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "49cc561 Add provider documentation and media adapter contracts",
+      "dirty_files": 0,
+      "manifests": [
+        "ui\\content-engine-dashboard\\package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "browser runtime",
+        "node/npm"
+      ],
+      "duplicate_group": "echomedia-contentengine",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "EchoMedia-ContentEngine-pr112",
+      "path": "C:\\GitHub\\EchoMedia-ContentEngine-pr112",
+      "remote": "https://github.com/ShannonBrayNC/EchoMedia-ContentEngine.git",
+      "branch": "codex/book-ii-canon-scaffold-local",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "45f92a7 Continue Book II scaffold and draft chapters 1-4",
+      "dirty_files": 0,
+      "manifests": [
+        "ui\\content-engine-dashboard\\package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "browser runtime",
+        "node/npm"
+      ],
+      "duplicate_group": "echomedia-contentengine",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "echomedia-website",
+      "path": "C:\\GitHub\\echomedia-website",
+      "remote": "https://github.com/ShannonBrayNC/echomedia-website.git",
+      "branch": "master",
+      "last_commit_date": "2026-05-20",
+      "last_commit_subject": "d0a9d39 Fix EchoCode assessment workflow diagnostics",
+      "dirty_files": 23,
+      "manifests": [
+        "package.json"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "public web presence"
+      ],
+      "dependencies": [
+        "node/npm"
+      ],
+      "duplicate_group": "echomedia-website",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "EmMigrationToolKit",
+      "path": "C:\\GitHub\\EmMigrationToolKit",
+      "remote": "https://github.com/ShannonBrayNC/Em.Migration.ToolKit.git",
+      "branch": "main",
+      "last_commit_date": "2026-03-25",
+      "last_commit_subject": "6f8728f Add provisioning package validation script",
+      "dirty_files": 6,
+      "manifests": [],
+      "capabilities": [
+        "migration toolkit"
+      ],
+      "dependencies": [],
+      "duplicate_group": "em.migration.toolkit",
+      "is_clone": false,
+      "is_stale": true
+    },
+    {
+      "name": "ETS",
+      "path": "C:\\GitHub\\ETS",
+      "remote": "https://github.com/ShannonBrayNC/ETS.git",
+      "branch": "codex/lantern-stack-sweep-20260526",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "c6d79d1 Log OpsHelm adapter issue completion",
+      "dirty_files": 1,
+      "manifests": [
+        "Dockerfile",
+        "docker-compose.yml",
+        "ets\\api\\requirements.txt",
+        "ets\\core\\requirements.txt",
+        "ets\\explorer-ui\\package.json",
+        "package.json",
+        "pyproject.toml"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "containerized service",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "api runtime",
+        "browser runtime",
+        "docker",
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "ets",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "ETS-pr15",
+      "path": "C:\\GitHub\\ETS-pr15",
+      "remote": "https://github.com/ShannonBrayNC/ETS.git",
+      "branch": "",
+      "last_commit_date": "2026-05-24",
+      "last_commit_subject": "618de93 Use legacy gitleaks allowlist syntax",
+      "dirty_files": 0,
+      "manifests": [
+        "Dockerfile",
+        "docker-compose.yml",
+        "ets\\api\\requirements.txt",
+        "ets\\core\\requirements.txt",
+        "ets\\explorer-ui\\package.json",
+        "pyproject.toml"
+      ],
+      "capabilities": [
+        "code assessment workflow",
+        "containerized service",
+        "frontend or node automation",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "api runtime",
+        "browser runtime",
+        "docker",
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "ets",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "lantern",
+      "path": "C:\\GitHub\\lantern",
+      "remote": "https://github.com/ShannonBrayNC/EchoMedia-ContentEngine.git",
+      "branch": "chatgpt/lantern-sync-main-clean-local",
+      "last_commit_date": "2026-05-23",
+      "last_commit_subject": "b4214ee Regenerate Lantern novel exports",
+      "dirty_files": 3,
+      "manifests": [],
+      "capabilities": [
+        "content production pipeline",
+        "lantern domain assets",
+        "operations orchestration"
+      ],
+      "dependencies": [],
+      "duplicate_group": "echomedia-contentengine",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "Lantern-Civic",
+      "path": "C:\\GitHub\\Lantern-Civic",
+      "remote": "https://github.com/ShannonBrayNC/Lantern-Civic.git",
+      "branch": "main",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "5f3ec90 Merge pull request #34 from ShannonBrayNC/feature/rc-hardening-production-validation",
+      "dirty_files": 0,
+      "manifests": [
+        "pyproject.toml"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "python"
+      ],
+      "duplicate_group": "lantern-civic",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "linkedin-integration",
+      "path": "C:\\GitHub\\linkedin-integration",
+      "remote": "https://github.com/ShannonBrayNC/linkedin-integration.git",
+      "branch": "master",
+      "last_commit_date": "2026-05-20",
+      "last_commit_subject": "a88430e Fix EchoCode assessment workflow diagnostics",
+      "dirty_files": 0,
+      "manifests": [
+        "requirements.txt"
+      ],
+      "capabilities": [
+        "code assessment workflow",
+        "linkedin integration",
+        "python service or automation"
+      ],
+      "dependencies": [
+        "python"
+      ],
+      "duplicate_group": "linkedin-integration",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "OpsHelm",
+      "path": "C:\\GitHub\\OpsHelm",
+      "remote": "https://github.com/ShannonBrayNC/OpsHelm.git",
+      "branch": "feature/opshelm-47-graph-ticket-container-compat",
+      "last_commit_date": "2026-05-29",
+      "last_commit_subject": "e79fcba feat(graph): persist replay governance receipt (#51)",
+      "dirty_files": 1,
+      "manifests": [
+        "package.json",
+        "tools\\guarded-runner\\requirements.txt"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "opshelm",
+      "is_clone": false,
+      "is_stale": false
+    },
+    {
+      "name": "OpsHelm-codex-christina",
+      "path": "C:\\GitHub\\OpsHelm-codex-christina",
+      "remote": "https://github.com/ShannonBrayNC/OpsHelm.git",
+      "branch": "codex/opshelm-christina-onboarding",
+      "last_commit_date": "2026-05-26",
+      "last_commit_subject": "730b3b9 Expand OpsHelm Lantern support adapter",
+      "dirty_files": 0,
+      "manifests": [
+        "package.json",
+        "tools\\guarded-runner\\requirements.txt"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "content production pipeline",
+        "frontend or node automation",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "opshelm",
+      "is_clone": true,
+      "is_stale": false
+    },
+    {
+      "name": "OpsHelm-lantern-test",
+      "path": "C:\\GitHub\\OpsHelm-lantern-test",
+      "remote": "https://github.com/ShannonBrayNC/OpsHelm.git",
+      "branch": "",
+      "last_commit_date": "2026-05-25",
+      "last_commit_subject": "763a8d3 Harden Lantern adapter test script for PowerShell",
+      "dirty_files": 1,
+      "manifests": [
+        "package.json",
+        "tools\\guarded-runner\\requirements.txt"
+      ],
+      "capabilities": [
+        "assistant/review automation",
+        "code assessment workflow",
+        "frontend or node automation",
+        "lantern domain assets",
+        "operations orchestration",
+        "python service or automation",
+        "recommendation/adaptation workflow"
+      ],
+      "dependencies": [
+        "node/npm",
+        "python"
+      ],
+      "duplicate_group": "opshelm",
+      "is_clone": true,
+      "is_stale": false
+    }
+  ],
+  "issues": [
+    {
+      "priority": "P0",
+      "title": "Consolidate duplicate local clones and PR worktrees",
+      "body": "6 remote groups have multiple local checkouts; choose canonical working copies before cross-repo implementation."
+    },
+    {
+      "priority": "P0",
+      "title": "Resolve dirty worktrees before ecosystem-wide changes",
+      "body": "13 repos have uncommitted files. Capture, commit, or intentionally park them before automated changes."
+    },
+    {
+      "priority": "P1",
+      "title": "Archive or merge temporary Codex/test clones",
+      "body": "9 repos look like task-specific clones. Fold useful changes into canonical repos and remove stale checkouts."
+    },
+    {
+      "priority": "P1",
+      "title": "Review stale initiatives for ownership",
+      "body": "2 repos have not had a commit in more than 60 days."
+    },
+    {
+      "priority": "P2",
+      "title": "Assign clear system ownership for overlapping capabilities",
+      "body": "9 capabilities appear in multiple repos. Document source-of-truth boundaries and adapter contracts."
+    }
+  ]
+}

@@ -1,2 +1,8 @@
 
 dist/
+node_modules/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+.pytest_cache/
+.content-engine/

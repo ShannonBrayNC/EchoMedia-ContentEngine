@@ -88,6 +88,7 @@ Run these checks before changing provider behavior:
 
 ```bash
 python scripts/validate_repo_baseline.py
+python scripts/ecosystem_audit.py --root C:\GitHub --output docs/reports/ecosystem-audit-2026-05-30.md --json-output docs/reports/ecosystem-audit-2026-05-30.json --date 2026-05-30
 python tests/e2e/test_no_provider_manuscript_to_export.py
 
 cd ui/content-engine-dashboard
@@ -100,6 +101,10 @@ The E2E test proves the no-provider workflow:
 ```text
 manuscript idea -> project scaffold -> idea intake -> generation job -> preview -> traceability -> review gate -> approved export -> inventory/readiness
 ```
+
+The ecosystem audit inventories local sibling repos, detects duplicate checkouts,
+maps dependencies/capabilities, generates P0/P1/P2 issues, and records the next
+implementation order before cross-repo changes begin.
 
 ## Provider use policy
 
