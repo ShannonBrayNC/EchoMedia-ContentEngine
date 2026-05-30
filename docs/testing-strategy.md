@@ -27,11 +27,21 @@ Validate JSON schemas and fixture files for:
 
 Future provider adapters should be tested with mocked request/response fixtures. Contract tests should not call live providers.
 
-### 3. API tests
+### 3. Ecosystem audit tests
+
+Ecosystem audit tests should cover duplicate repo detection, stale initiative
+detection, dependency inference, and generated issue prioritization. These tests
+support the local ecosystem report at:
+
+```text
+docs/reports/ecosystem-audit-2026-05-30.md
+```
+
+### 4. API tests
 
 API tests should verify endpoint request/response shape against the OpenAPI contract.
 
-### 4. Job lifecycle tests
+### 5. Job lifecycle tests
 
 Job lifecycle tests should cover:
 
@@ -45,15 +55,15 @@ Job lifecycle tests should cover:
 - cancelled
 - superseded
 
-### 5. Review gate tests
+### 6. Review gate tests
 
 Review tests should prove generated artifacts do not overwrite approved artifacts without explicit approval.
 
-### 6. Worker tests
+### 7. Worker tests
 
 Worker tests should use fake worker capabilities and fake jobs.
 
-### 7. UI tests
+### 8. UI tests
 
 UI tests should verify core generation workflow, status display, preview/review actions, and accessible controls.
 
@@ -87,6 +97,7 @@ tests/fixtures/provider-responses/
 Default CI should:
 
 - check required repo files exist
+- run ecosystem audit unit tests
 - parse JSON schemas
 - parse OpenAPI YAML
 - block obvious secret filenames or values
