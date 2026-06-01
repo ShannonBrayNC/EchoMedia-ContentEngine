@@ -78,6 +78,12 @@ def _count_files(path: Path) -> int:
     return sum(1 for item in path.iterdir() if item.is_file() and item.name != ".gitkeep")
 
 
+def _has_real_file(path: Path) -> bool:
+    if not path.exists():
+        return False
+    return any(item.is_file() and item.name != ".gitkeep" for item in path.iterdir())
+
+
 def _list_exports(ad_root: Path) -> list[str]:
     exports_root = ad_root / "exports"
     if not exports_root.exists():
@@ -93,9 +99,9 @@ def _missing_assets(ad_root: Path, assets: list[dict], frames: list[dict]) -> li
         missing.append("pink outfit reference")
     if not any(frame.get("state") == "approved" for frame in frames):
         missing.append("approved storyboard frames")
-    if not any((ad_root / "website-mockups" / "approved").glob("*")):
+    if not _has_real_file(ad_root / "website-mockups" / "approved"):
         missing.append("approved website mockups")
-    if not any((ad_root / "logo-assets" / "lockups").glob("*")):
+    if not _has_real_file(ad_root / "logo-assets" / "lockups"):
         missing.append("EchoMedia/Lantern logo lockup")
     return missing
 
