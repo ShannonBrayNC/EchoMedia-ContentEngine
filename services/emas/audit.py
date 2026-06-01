@@ -52,6 +52,7 @@ class AuditEvent:
     def to_hash_payload(self) -> dict[str, Any]:
         payload = self.to_dict()
         payload.pop("event_hash", None)
+        payload.pop("eventHash", None)
         return payload
 
     def to_dict(self) -> dict[str, Any]:
