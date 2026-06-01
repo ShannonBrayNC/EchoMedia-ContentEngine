@@ -1,11 +1,12 @@
 # EMAS Production RC Hardening
 
-This document tracks the implementation lane for the following release blockers:
+This document tracks the implementation lane for the following release blockers and the follow-up integration sprint:
 
 - EMAS-001: real production adapters are needed.
 - EMAS-003: source-registry consent verification is still needed.
 - EMAS-006: publish is still a stub.
 - EMAS-008: append-only production audit logging is still open.
+- EMAS-S2: project/ad scaffolding, generation preflight, CLI wrappers, and CI.
 
 ## Implementation Location
 
@@ -101,6 +102,53 @@ Capabilities:
 
 Future adapters should implement the same contracts without changing workflow logic.
 
+## EMAS-S2: Integration Sprint
+
+Implemented in:
+
+```text
+services/emas/project_scaffold.py
+services/emas/preflight.py
+scripts/emas_create_ad_project.py
+scripts/emas_generation_preflight.py
+tools/New-EmasAdProject.ps1
+tools/Test-EmasGenerationPreflight.ps1
+.github/workflows/emas-tests.yml
+```
+
+Capabilities:
+
+- Creates a repeatable Vanessa ad project scaffold under `projects/{ProjectName}/ads/{AdName}`.
+- Seeds production brief, scripts, captions, storyboard, shot list, scene prompts, and metadata indexes.
+- Writes audit events when ad projects are created.
+- Runs generation preflight before provider calls.
+- Normalizes risky prompt wording into authorized synthetic likeness language.
+- Blocks pending/rejected references.
+- Blocks invalid output counts.
+- Requires source-registry consent before generation.
+- Provides PowerShell 7+ wrappers for local operators and Codex/Christina workflows.
+- Adds GitHub Actions CI for EMAS tests.
+
+Example scaffold command:
+
+```powershell
+pwsh ./tools/New-EmasAdProject.ps1 `
+  -ProjectName Vanessa `
+  -AdName Vanessa-Christina-Outfit-Update-Ad `
+  -Actor ShannonBrayNC
+```
+
+Example preflight command:
+
+```powershell
+pwsh ./tools/Test-EmasGenerationPreflight.ps1 `
+  -ProjectName Vanessa `
+  -AdName Vanessa-Christina-Outfit-Update-Ad `
+  -IntendedUse social_media `
+  -Platform instagram `
+  -Prompt "Create the Christina outfit update scene."
+```
+
 ## Tests
 
 Added tests:
@@ -109,6 +157,8 @@ Added tests:
 tests/emas/test_audit.py
 tests/emas/test_source_registry.py
 tests/emas/test_publishing.py
+tests/emas/test_project_scaffold.py
+tests/emas/test_preflight.py
 ```
 
 Recommended local command:
@@ -117,14 +167,21 @@ Recommended local command:
 python -m pytest tests/emas
 ```
 
+CI workflow:
+
+```text
+.github/workflows/emas-tests.yml
+```
+
 ## Remaining Integration Work
 
-These modules are production-RC service primitives. The next integration pass should wire them into the actual API/dashboard route layer once that app scaffold lands.
+These modules are production-RC service primitives and workflow utilities. The next integration pass should wire them into the actual API/dashboard route layer once that app scaffold lands.
 
 Required wiring points:
 
-- Generation preflight must call `SourceRegistryService.verify_consent`.
+- API route layer should call `AdProjectScaffoldService.create_ad_project`.
+- Generation endpoints must call `GenerationPreflightService.validate` before provider calls.
 - Approval workflows should append audit events.
 - Export and publish endpoints should call `ExportPackagePublishAdapter.publish`.
-- UI should expose blocked reasons from consent/publish results.
+- UI should expose blocked reasons from consent/preflight/publish results.
 - CI should run `python -m pytest tests/emas`.
