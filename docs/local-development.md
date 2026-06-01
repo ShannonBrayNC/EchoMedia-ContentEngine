@@ -64,12 +64,57 @@ The backend supports the Sprint 4 workflow rails:
 - fetch readiness
 - fetch artifact inventory
 
+## EMAS Ad Studio API
+
+EchoMedia Ad Studio has a standalone no-provider API host for the Vanessa ad production workflow:
+
+```bash
+python services/emas_http_api.py
+```
+
+Default endpoint:
+
+```text
+http://127.0.0.1:8081
+```
+
+Optional root override:
+
+```powershell
+$env:EMAS_ROOT = "C:\GitHub\EchoMedia-ContentEngine"
+python services/emas_http_api.py
+```
+
+Dashboard/frontend clients should use:
+
+```bash
+VITE_EMAS_API_BASE_URL=http://127.0.0.1:8081
+```
+
+The EMAS API supports:
+
+- create ad project
+- upload and tag Vanessa references
+- list references
+- submit storyboard frames
+- approve/reject storyboard frames
+- generation preflight
+- publish-ready export package creation
+- dashboard status payloads
+
+See the full endpoint contract:
+
+```text
+docs/emas-api-dashboard-contract.md
+```
+
 ## Dashboard with backend API
 
 The dashboard still supports mock fallback. To point it at the local backend, set:
 
 ```bash
 VITE_CONTENT_ENGINE_API_BASE_URL=http://127.0.0.1:8080
+VITE_EMAS_API_BASE_URL=http://127.0.0.1:8081
 ```
 
 Then run:
@@ -89,6 +134,7 @@ Run these checks before changing provider behavior:
 ```bash
 python scripts/validate_repo_baseline.py
 python tests/e2e/test_no_provider_manuscript_to_export.py
+python -m pytest tests/emas
 
 cd ui/content-engine-dashboard
 npm install
@@ -99,6 +145,12 @@ The E2E test proves the no-provider workflow:
 
 ```text
 manuscript idea -> project scaffold -> idea intake -> generation job -> preview -> traceability -> review gate -> approved export -> inventory/readiness
+```
+
+The EMAS test suite proves the ad-studio workflow:
+
+```text
+ad project scaffold -> reference upload/tag -> storyboard frame review -> consent-gated preflight -> publish-ready export package
 ```
 
 ## Provider use policy
