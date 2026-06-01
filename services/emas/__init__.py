@@ -1,7 +1,11 @@
 """EchoMedia Ad Studio production RC services."""
 
 from .adapters import AdapterRegistry, LocalFilesystemStorageAdapter, NoProviderImageGenerationAdapter
+from .api import EmasRouteResult, route_emas
+from .assets import AssetService, TagAssetRequest, UploadReferenceRequest
 from .audit import AppendOnlyAuditLogger, AuditEvent, AuditIntegrityError
+from .dashboard import get_ad_dashboard
+from .frames import FrameReviewService, ReviewFrameRequest, SubmitFrameRequest
 from .preflight import GenerationPreflightRequest, GenerationPreflightResult, GenerationPreflightService
 from .project_scaffold import AdProjectScaffoldService, CreateAdProjectRequest, CreateAdProjectResult
 from .publishing import ExportPackagePublishAdapter, PublishRequest, PublishResult
@@ -17,13 +21,16 @@ __all__ = [
     "AdapterRegistry",
     "AdProjectScaffoldService",
     "AppendOnlyAuditLogger",
+    "AssetService",
     "AuditEvent",
     "AuditIntegrityError",
     "ConsentVerificationRequest",
     "ConsentVerificationResult",
     "CreateAdProjectRequest",
     "CreateAdProjectResult",
+    "EmasRouteResult",
     "ExportPackagePublishAdapter",
+    "FrameReviewService",
     "GenerationPreflightRequest",
     "GenerationPreflightResult",
     "GenerationPreflightService",
@@ -32,6 +39,12 @@ __all__ = [
     "NoProviderImageGenerationAdapter",
     "PublishRequest",
     "PublishResult",
+    "ReviewFrameRequest",
     "SourceRegistryRecord",
     "SourceRegistryService",
+    "SubmitFrameRequest",
+    "TagAssetRequest",
+    "UploadReferenceRequest",
+    "get_ad_dashboard",
+    "route_emas",
 ]
