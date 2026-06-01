@@ -1,0 +1,54 @@
+{
+  "storage": {
+    "active": "local-filesystem",
+    "adapters": {
+      "local-filesystem": {
+        "enabled": true,
+        "rootPath": "."
+      },
+      "azure-blob": {
+        "enabled": false,
+        "containerName": "echomedia-assets",
+        "notes": "Future production cloud storage adapter. Do not enable without secrets/config contract."
+      }
+    }
+  },
+  "generation": {
+    "active": "no-provider",
+    "adapters": {
+      "no-provider": {
+        "enabled": true,
+        "requiresConsent": true,
+        "requiresDisclosure": true,
+        "notes": "Safe RC/CI adapter. Does not call paid providers."
+      },
+      "openai": {
+        "enabled": false,
+        "requiresConsent": true,
+        "requiresDisclosure": true,
+        "notes": "Production provider boundary. Enable only through shared provider configuration."
+      }
+    }
+  },
+  "publish": {
+    "active": "export-package",
+    "adapters": {
+      "export-package": {
+        "enabled": true,
+        "requiresApprovedOutput": true,
+        "requiresSourceRegistryVerification": true,
+        "requiresDisclosure": true
+      },
+      "instagram-api": {
+        "enabled": false,
+        "requiresManualApproval": true,
+        "notes": "Future direct publishing adapter after platform permissions and review workflow are complete."
+      }
+    }
+  },
+  "audit": {
+    "active": "append-only-jsonl",
+    "hashChaining": true,
+    "tamperVerificationRequired": true
+  }
+}
