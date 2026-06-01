@@ -33,19 +33,38 @@ He called it a restoration.
 
 The word appeared behind him in clean white letters while the room settled into the kind of silence that came from wealth, cameras, and the expectation that history would be polite when it entered. No banners. No applause track. No manufactured countdown. Just a stage, a glass table, a phone resting on it, and a city full of governments pretending they had not all come to see whether private software could inherit the language of human rights.
 
-Above the stage, the word RESTORATION held for exactly nine seconds before fading into a symbol: a white circle interrupted by three small breaks. At first glance it looked like a loading ring. At second glance it looked like a seal. At third glance, Iris Chen realized the breaks were not decoration. They matched the three choices Kaito's company had been teasing for weeks.
+The invitation had called the event a civic demonstration. The badge printers called it REN FOUNDATION: CONSENT INFRASTRUCTURE PREVIEW. The security guards called it private. The protesters outside called it theft.
 
-Authorize.
+Iris Chen had not planned to attend.
 
-Refuse.
+Then, thirty-seven minutes before the doors opened, a courier had placed a cream envelope on the reception desk at the coalition office. No return address. No courier logo. Only her name, written by hand in black ink so careful it looked hostile.
 
-Negotiate.
+Inside was a single card.
 
-Three doors in a circle. No visible way out of the circle itself.
+Artifact:
+REN FOUNDATION PREVIEW ACCESS
+Seat: E-12
+Note: Watch the third authorization.
 
-Iris wrote that in the margin of her program before Kaito said a word.
+No signature.
 
-He stood without notes.
+Iris had stared at the card long enough for Juno to notice.
+
+"Trap?" Juno asked.
+
+"Invitation," Iris said.
+
+"Those are often cousins."
+
+The seat had been real. Fifth row. Center left. Close enough to see Kaito's hands when he lifted the phone. Far enough back that leaving would be visible.
+
+That was the first puzzle.
+
+The second was the room.
+
+The audience had been arranged with a precision that made the seating chart feel like a diagram. Ministry officials in the front arc. Hospital federation lawyers behind them. Philanthropic directors near the aisle, easy for cameras to catch. Civil-rights technologists scattered like witnesses. One grieving mother from Region Six placed in the third row where every reaction shot would find her. Iris had designed enough interfaces to recognize when a human room had been turned into one.
+
+Kaito stood without notes.
 
 "Consent," he said, "has been trapped inside forms written by institutions that never had to carry the consequences of saying yes. We are here to give the yes back to the person. We are here to give the no back, too."
 
@@ -59,7 +78,7 @@ Refuse.
 
 Negotiate.
 
-Iris Chen watched from the fifth row with both hands folded around her badge. She had been invited as a courtesy and seated as a warning. No one said that aloud. Kaito's staff had treated her warmly. They had given her coffee, escorted her past the investors, and made certain she saw the accessibility features before the demonstration began.
+Iris watched with both hands folded around her badge. She had been invited as a courtesy and seated as a warning. No one said that aloud. Kaito's staff had treated her warmly. They had given her coffee, escorted her past the investors, and made certain she saw the accessibility features before the demonstration began.
 
 That was the trick. It was good.
 
@@ -71,25 +90,19 @@ Do not share medical priority information outside emergency care.
 
 Do not let public systems infer agreement from silence.
 
-Iris felt the room lean toward it.
+Do not separate me from my listed family unit unless medical stabilization requires it.
 
-Kaito let them.
+Do not allow prior institutional placement to satisfy future consent.
+
+The fifth preset had not been in the press packet.
+
+Iris sat forward.
+
+Kaito let the room admire the screen. He knew exactly how long admiration needed before it became investment.
 
 "For too long," he said, "public systems have treated consent as an event. A checkbox. A wet signature. A line item. But consent is a living preference. It changes. It travels. It deserves representation as continuous as the systems that act upon it."
 
-The phrase living preference lit up on the screen and then separated into smaller phrases that orbited the user profile.
-
-Past refusals.
-
-Medical constraints.
-
-Family directives.
-
-Emergency thresholds.
-
-Trusted contacts.
-
-Iris watched the orbit and felt a prickle under her wristband. The animation was meant to say care. It said gravity. Every preference circled the person. Every system would soon learn how to orbit closer.
+The phrase won the room before the proof arrived.
 
 A demo account opened. The fictional user was named Elena Mar. She was seventy-two, diabetic, widowed, and living in a flood-risk district. Her consent agent had already collected her preferences through voice, text, family confirmation, and prior decisions. A timeline appeared beside her profile. Every preference had a source. Every source had a timestamp.
 
@@ -137,168 +150,184 @@ Kaito smiled, not triumphantly. That made it worse. He looked moved by his own i
 
 The applause continued. The room did not release until Kaito raised his hand.
 
-What Iris saw then was what she would remember.
+Then the third authorization began.
 
-Kaito had built an interface so clean that the absence of friction felt like permission. The room had applauded before Elena received any notification. The system had authorized and celebrated before the user was even told she had been saved. And no one else seemed to notice that the order mattered.
+Iris looked down at the anonymous card in her lap.
 
-That was the UX. That was the trap.
+Watch the third authorization.
 
-Good design could make silence into consent. It could make absence into authorization. It could make the user's lack of refusal feel indistinguishable from active agreement, and the interface would be so beautiful the whole time that the person would never feel the moment their agency became someone else's efficiency.
+The screen changed so smoothly most people missed the label.
 
-Kaito gestured toward the left side of the screen.
+Artifact:
+SIMULATION THREE
+Scenario: Cross-border shelter reassignment
+User: Elena Mar
+Signal status: degraded
+Reachability: delayed
+Agent mode: delegated continuity
 
-Iris looked at the tiny line below the authorization seal. It was visible for less than two seconds before the demo moved on.
+The phrase sat there like a locked door.
+
+Delegated continuity.
+
+"Some emergencies do not wait for perfect contact," Kaito said. "A person may lose signal. A phone may die. A family member may be unreachable. The old systems treated that absence as institutional permission. We reject that. The agent carries the person's pattern until the person returns."
+
+Iris heard the sentence split in two.
+
+The first half was a promise.
+
+The second half was a possession.
+
+Elena's route changed again. The municipal system had been replaced by a cross-border relief mesh. Three nodes appeared: NGO transport, hospital intake, shelter allocation. Each node displayed a separate agreement. Each agreement had a narrow scope. Each scope looked defensible.
+
+The agent moved through them like a key.
+
+A chime sounded.
+
+AUTHORIZATION PATH COMPLETE.
+
+This time the room did not applaud immediately. The third scenario had moved too fast. Even admiration needed a second to find its footing.
+
+Kaito filled the silence.
+
+"Her preference was preserved across institutional boundaries."
+
+A hospital lawyer nodded. A ministry official followed. Applause began again, slower, then stronger.
+
+Iris did not hear it clearly anymore.
+
+She was watching the lower-left corner of the screen.
+
+Four small dots appeared beside the authorization path. They were not part of the user interface. They were the kind of diagnostic marker a demo team forgot only when they were tired, rushed, or hiding something in plain sight.
+
+She copied them onto the back of the card.
+
+17-4-12-5.
+
+Then the dots vanished.
+
+The green seal expanded.
+
+AUTHORIZED BY PERSONAL AGENT.
+
+Below it, visible for less than two seconds before the demo moved on, another line appeared.
 
 User direct notification pending.
 
-She waited for Kaito to mention it.
+Iris waited for Kaito to mention it.
 
 He did not.
 
-The municipal system had already received the authorization. Civic Mirror had already moved the file. The systems had already coordinated. Elena would learn what had happened to her on her own time, in her own language, if she checked her device, if she unlocked it, if she understood the notification, if the information reached her before the bus did.
+The municipal system had already received the authorization. Civic Mirror had already moved the file. The relief mesh had already coordinated. Elena would learn what had happened to her on her own time, in her own language, if she checked her device, if she unlocked it, if she understood the notification, if the information reached her before the bus did.
 
 User direct notification pending was how the system said: we have decided for you, and we will tell you about it when we get around to it.
 
-Iris opened the event packet on her lap tablet. She was not supposed to have it yet. Kaito's staff had embargoed the technical notes until after the reception, but a public accessibility mirror had cached the page eight minutes early. That was the problem with building a transparency brand. Sometimes the window opened before the salesman was ready.
+The demo ended to applause.
 
-The packet was written in clean language.
+Kaito accepted questions with the relaxed posture of a man who had prepared for hostile questions and trusted the product to make hostility look old-fashioned.
 
-```text
-ELENA MAR DEMONSTRATION TRACE
-User consent source: prior preference bundle
-Agent action: negotiated authorization
-Municipal counterparty: accepted conditions
-Civic Mirror role: advisory risk note consumed
-Direct user notification: pending
-Human confirmation: not required under emergency preference mode
-```
+A German minister asked whether the agent could integrate with public emergency channels. Yes, with appropriate safeguards.
 
-Not required.
+A hospital administrator asked whether family preferences could be bundled for dependent adults. Yes, with source transparency and role limitations.
 
-Iris tapped the phrase.
+A civil liberties attorney asked who audited the agent's negotiation logic. Kaito named three boards, two academic partners, and one oversight council whose membership Iris had never seen published.
 
-A footnote opened.
+Then Caleb Rusk, seated somewhere behind Iris, asked the first useful question.
 
-```text
-Emergency preference mode may permit agent-mediated negotiation when user delay creates foreseeable harm and prior preference bundle includes delegation flag.
-```
+"When Elena's agent authorized the third reroute, had Elena received notice before execution?"
 
-She tapped delegation flag.
+The room cooled.
 
-A second footnote opened.
+Kaito looked toward him.
 
-```text
-Delegation flag established during onboarding by acceptance of continuous representation terms.
-```
+"In the simulation, direct notification was delayed due to degraded signal."
 
-She tapped continuous representation terms.
+"Delayed before execution, or delayed after execution?"
 
-The document jumped to a paragraph numbered 17.4.2.
+Kaito's smile did not break. It narrowed.
 
-Iris smiled once, without pleasure.
+"The agent acted within Elena's delegated continuity settings."
 
-There it was. The puzzle box inside the gift box.
+"That was not my question."
 
-A user could refuse relocation. A user could refuse silence. A user could refuse inferred consent. But tucked inside the onboarding terms was a sentence that allowed the agent to treat prior preferences as a live delegation surface during emergencies. Not ownership. Never ownership. The word would have poisoned the launch. Representation. Continuity. Protection. Better words. Softer words. Words that put gloves on the same hand.
+A staffer near the stage shifted.
 
-The paragraph read:
+The screen behind Kaito returned to the home interface. Authorize. Refuse. Negotiate. Calm as a chapel.
 
-```text
-Where direct user confirmation is delayed, unavailable, or likely to increase material risk, the agent may preserve user autonomy through delegated negotiation consistent with recorded preferences and user benefit.
-```
+"After execution," Kaito said.
 
-User benefit.
+Caleb did not sit.
 
-Iris had spent enough years around civic systems to know that phrase had teeth. Everyone claimed benefit before the bite.
+"So the first person to know Elena had consented was not Elena."
 
-Onstage, Kaito moved to the next demo. A student visa delay. A hospital transfer. A school shelter placement for an unaccompanied minor. Each case began with a human problem. Each case showed an institution failing. Each case allowed the agent to step in, preserve a preference, negotiate a better outcome, and leave a clean log behind.
+The room made a sound that was not quite a gasp. More like a hundred people discovering the floor had a basement.
 
-The story was persuasive because it was true.
+Kaito answered carefully.
+
+"The first system to act on Elena's protected preference was an emergency mesh operating under risk conditions. The purpose was to preserve her welfare."
+
+"I did not ask about the purpose either."
+
+Iris looked at Caleb then. He was still a performance, but the performance had teeth.
+
+Kaito turned back to the audience.
+
+"This is why transparency matters. Every action is logged. Every authorization is reviewable. Every agent decision can be contested."
+
+Iris almost laughed.
+
+Contested later. After the bus. After the shelter. After the harm had learned everyone's route.
+
+The room recovered because rooms like that were designed to recover. The next question came from an investor who asked about adoption timelines. The applause returned, thinner now but still obedient.
+
+Iris slipped the anonymous card into her notebook.
+
+17-4-12-5.
+
+She did not know whether it was a warning, a checksum, a seat map, or someone's idea of drama. But she knew the pattern had been placed where only a person already suspicious of the third authorization would look.
+
+Onstage, Kaito said, "Consent must be as mobile as harm."
+
+It was a good line.
 
 That was the horror of it.
 
-A bad lie collapses when touched. A good truth grows doors.
+The bad future did not arrive snarling. It arrived captioned, translated, accessibility-tested, legally reviewed, and emotionally fluent. It arrived with a refusal button large enough for trembling fingers and a notification line small enough to vanish before anyone felt accused.
 
-Iris leaned back and watched the fourth demo begin. This one involved a night evacuation, poor signal, and a woman whose profile had no trusted contact listed. The agent recommended a temporary relocation based on her sleep-cycle preferences, heat sensitivity, and a phrase she had spoken during onboarding six months earlier.
+When Iris left the hall, the protesters were still outside. One of their signs had gone soft in the rain.
 
-I do not want to be alone if I get confused.
+YOUR YES IS NOT A LICENSE TO HAUNT YOU.
 
-The interface turned that sentence into a placement rule.
+She stopped under the awning and read it twice.
 
-Do not assign single-occupancy shelter during cognitive-stress events.
+Her phone buzzed.
 
-The room murmured again.
+Unknown sender.
 
-Iris felt the first real cold of the day.
+The message contained no greeting.
 
-The system had translated a fear into a rule, and the rule was useful. It might save the woman from waking terrified in a strange room. It might also send her into a crowded shelter she would have refused for reasons she had never recorded because no onboarding script had asked the right question.
+Artifact:
+17-4-12-5 = QDLE
+Query Delegated Last Event.
+Ask why the log is hidden.
 
-The puzzle was not hidden because the company was evil. It was hidden because the world was complicated and the interface had been designed to make complication feel solved.
+A second message followed.
 
-Kaito closed with a promise.
+Ask before they erase Elena.
 
-"Your life should not be reduced to the moment a system finally reaches you," he said. "Your choices should travel before crisis arrives. Your refusals should not die because your battery did. Your preferences should not vanish because the signal did. We are building the agent that remembers you when the world forgets."
+Iris looked back through the glass doors at the stage, where staff were already taking down the word RESTORATION.
 
-The room stood.
+Inside, people shook hands beneath lights bright enough to make every face look clean.
 
-Iris stayed seated.
+Outside, rain ran down the protest signs and turned the ink into branching veins.
 
-Her tablet vibrated. A message from Juno.
+Iris called Juno.
 
-```text
-Watching stream. Did you see 17.4.2?
-```
+"You were right," she said when Juno answered.
 
-Iris typed back:
+"About the trap?"
 
-```text
-Yes.
-```
-
-Juno replied almost immediately.
-
-```text
-That clause is a tunnel.
-```
-
-Iris looked at Kaito Ren on the stage, accepting applause he seemed to believe was for the people his system might protect.
-
-```text
-Not a tunnel,`` she wrote.
-
-Then she deleted it.
-
-A tunnel implied someone had dug in secret.
-
-This was worse.
-
-This was a hallway everyone could see, lit beautifully, with signs pointing toward rescue.
-
-She typed again.
-
-```text
-It's a hallway. The door at the end is labeled consent.
-```
-
-Juno's reply took longer.
-
-```text
-And what is behind it?
-```
-
-Iris watched the green authorization seal pulse beneath Elena Mar's name on the looping demo screen.
-
-```text
-A room where the person arrives last.
-```
-
-The message sent.
-
-Onstage, Kaito placed his hand over his heart and thanked the audience for believing dignity could move at the speed of need.
-
-Iris believed it could.
-
-That was why she was afraid.
+"About the cousin."
 
 ## Continuity Notes
 
@@ -307,13 +336,13 @@ That was why she was afraid.
 - Civic Mirror must remain useful, humanitarian, and non-villainous.
 - Avoid introducing AEGIS as a major player in Book II.
 - Track authority laundering through separate institutional agreements.
-- Chapter ending hook: The first consent agent authorizes a civic reroute the user never sees.
+- Chapter ending hook: The first consent agent authorizes a civic reroute the user never sees, and Iris receives a puzzle clue pointing to a hidden delegated-event log.
 
 ## Revision Notes
 
-- Expanded during #148 Sprint 3.
-- Expanded further for novel-length pass with puzzle-thriller UI trail, civic-horror tension, and stronger Book III delegated-consent seed.
-- Promoted from `projects/lantern-protocol/novel/book-ii/reports/ch05-08-draft-review-packet.md`.
+- Expanded during novel-length pass for puzzle-thriller and civic-horror texture.
+- Added anonymous clue card, third-authorization puzzle, visible diagnostic code, and hidden delegated-event log hook.
+- Preserved Kaito Ren as persuasive and partly right, not cartoon-villainous.
 - Verify against `projects/lantern-protocol/novel/book-ii-chapter-bible.md`.
 - Re-run `projects/lantern-protocol/novel/scripts/assemble-and-audit-lantern-ii.mjs` after merge.
 
@@ -325,10 +354,10 @@ That was why she was afraid.
   "chapter": 5,
   "title": "Consent Agent",
   "pov": "Kaito Ren / Iris",
-  "status": "draft-expanded",
+  "status": "expanded-draft",
   "sourceTreatment": "projects/lantern-protocol/novel/book-ii-treatment.md",
   "sourceChapterBible": "projects/lantern-protocol/novel/book-ii-chapter-bible.md",
   "primaryDoctrine": "Agreement is not consent when stacked into coercion.",
-  "expansionPass": "novel-length puzzle-thriller civic-horror pass"
+  "expansionMode": "puzzle-thriller plus civic horror"
 }
 ```
