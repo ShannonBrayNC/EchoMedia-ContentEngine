@@ -1,0 +1,31 @@
+name: EMAS Tests
+
+on:
+  push:
+    paths:
+      - 'services/emas/**'
+      - 'tests/emas/**'
+      - '.github/workflows/emas-tests.yml'
+  pull_request:
+    paths:
+      - 'services/emas/**'
+      - 'tests/emas/**'
+      - '.github/workflows/emas-tests.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip pytest
+
+      - name: Run EMAS tests
+        run: python -m pytest tests/emas
