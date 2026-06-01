@@ -4,11 +4,13 @@ on:
   push:
     paths:
       - 'services/emas/**'
+      - 'services/emas_http_api.py'
       - 'tests/emas/**'
       - '.github/workflows/emas-tests.yml'
   pull_request:
     paths:
       - 'services/emas/**'
+      - 'services/emas_http_api.py'
       - 'tests/emas/**'
       - '.github/workflows/emas-tests.yml'
 
