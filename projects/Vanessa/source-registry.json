@@ -4,7 +4,7 @@
       "subjectId": "Vanessa",
       "projectName": "Vanessa",
       "displayName": "Vanessa",
-      "consentStatus": "pending",
+      "consentStatus": "approved",
       "allowedUses": [
         "private",
         "social_media",
@@ -17,7 +17,6 @@
         "medical_claims",
         "financial_claims",
         "legal_claims",
-        "explicit_sexual_content",
         "minor_sensitive_content",
         "third_party_likeness_without_consent"
       ],
@@ -26,11 +25,18 @@
         "website",
         "internal_review"
       ],
-      "consentDocumentPath": "projects/Vanessa/consent/signed-consent.pdf",
-      "signedAt": null,
-      "expiresAt": null,
-      "revokedAt": null,
-      "verifiedBy": null
-    }
+
+      {
+        "consentDocumentPath": "projects/Vanessa/consent/signed-consent.pdf",
+        "signedAt": "2026-06-04T14:30:00-04:00",
+        "expiresAt": "2027-06-04T14:30:00-04:00",
+        "revokedAt": null,
+        "verifiedBy": {
+          "name": "Shannon Bray",
+          "role": "Project Owner",
+          "method": "manual_review",
+          "verifiedAt": "2026-06-04T14:35:00-04:00"
+        }
+      }
   ]
 }
