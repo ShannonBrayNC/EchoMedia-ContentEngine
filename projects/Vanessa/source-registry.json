@@ -25,7 +25,6 @@
         "website",
         "internal_review"
       ],
-
       {
         "consentDocumentPath": "projects/Vanessa/consent/signed-consent.pdf",
         "signedAt": "2026-06-04T14:30:00-04:00",
@@ -36,7 +35,15 @@
           "role": "Project Owner",
           "method": "manual_review",
           "verifiedAt": "2026-06-04T14:35:00-04:00"
-        }
+        },
+        "status": "approved",
+        "scope": [
+          "image_generation",
+          "voice_generation",
+          "marketing_materials",
+          "internal_product_demo",
+          "EchoMedia.ai brand use"
+        ]
       }
   ]
 }
