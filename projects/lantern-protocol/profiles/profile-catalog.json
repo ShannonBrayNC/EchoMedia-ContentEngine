@@ -1,0 +1,37 @@
+{
+  "schema": "lantern.profileCreator.catalog.v1",
+  "version": "1.0.0",
+  "defaultProfileId": "valeria-cruz",
+  "profiles": [
+    {
+      "characterId": "valeria-cruz",
+      "displayName": "Valeria Cruz",
+      "profileType": "fictional-character",
+      "marketScope": [
+        "digital marketing",
+        "creator economy",
+        "brand-safe adult-market positioning",
+        "image prompt generation"
+      ],
+      "path": "projects/lantern-protocol/profiles/valeria-cruz/model-generation-profile.json",
+      "imageGenerationDefaults": {
+        "rating": "safe-for-work",
+        "explicitContent": false,
+        "consentRequired": true,
+        "minorSafety": "strict-block"
+      },
+      "runtimeFlags": {
+        "flirtLevel": "brand-safe-playful",
+        "jealousyMode": "playful-only",
+        "adultMarketSupport": true,
+        "explicitContent": false,
+        "consentRequired": true,
+        "minorSafety": "strict-block"
+      },
+      "admin": {
+        "primaryAdminDefault": "Shannon",
+        "switching": "authenticated-profile-config-only"
+      }
+    }
+  ]
+}
