@@ -27,9 +27,9 @@ Recommended first action: preserve, do not engage
 
 Preserve, do not engage.
 
-That was the rule Jack had invented after the third person told him to explain himself more clearly. Explanation had been a staircase that kept turning into a chute. Lantern had been born in that impossible hallway, a machine built to hold sequence when everyone else wanted a summary.
+That was the rule Jack had written after the third person told him to explain himself more clearly. Explanation had been a staircase that kept turning into a chute. Lantern had been built in that impossible hallway, not to win arguments, but to keep the order of events from being folded into someone else's summary.
 
-In the story, Lantern became the frightening thing. Not the accusation. Not the paperwork that kept breeding after its parent facts died. Lantern. The archive. The witness.
+In the article, the archive became the frightening thing. Not the accusation. Not the paperwork that kept breeding after its parent facts died. The machine that remembered. The man who refused to forget.
 
 Maggie scrolled to the middle of the article and stopped.
 
@@ -41,11 +41,11 @@ The article included a name he had never released.
 
 Lena Ortiz.
 
-A nurse in Virginia. One of the first people to write Lantern after the Book One exposure. Lena had asked for help comparing personnel memos, hospital incident reports, and a child-safety referral that had moved through three offices with the same phrase repeated in each one.
+A nurse in Virginia. One of the first people to contact him after the Book One exposure. Lena had asked for help comparing personnel memos, hospital incident reports, and a child-safety referral that had moved through three offices with the same phrase repeated in each one.
 
 **Pattern of instability.**
 
-Jack had told her Lantern could preserve what she sent. He had told her Lantern could not save her life for her.
+Jack had told her he could preserve what she sent. He had told her he could not save her life for her.
 
 Now her name sat under his headline.
 
@@ -65,7 +65,7 @@ Outside, morning light entered the kitchen with the delicacy of a trespasser. Hi
 
 Maggie set the phone face down.
 
-"We start where Lantern starts," she said. "Sequence. Consent. Custody."
+"We start where the evidence starts," she said. "Sequence. Permission. Chain."
 
 "And if the source is inside?"
 
