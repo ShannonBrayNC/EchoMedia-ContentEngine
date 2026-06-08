@@ -2,7 +2,7 @@
 
 Echo did not look like an archive anymore.
 
-The first build had been ugly: three folders and a search script with a name Jack refused to show anyone. Now Echo opened as a quiet field of record cards, each bordered by custody, consent, source, harm, and uncertainty. Jack had learned to make uncertainty visible because invisible uncertainty became authority for the first liar with a confident voice.
+The first build had been ugly: three folders and a search script with a name Jack refused to show anyone. Now Echo opened as a quiet field of cards, each bordered by chain of custody, permission history, harm indicators, and uncertainty. Jack had learned to make uncertainty visible because hidden uncertainty eventually dressed itself up as certainty.
 
 Lena Ortiz's file sat at the center.
 
@@ -18,9 +18,9 @@ I have a son.
 I am scared this will follow me into court.
 ```
 
-Jack had not answered for eleven minutes. He had sat in the dark and listened to his own breathing because the message had the old shape: an accusation that did not need to win, only travel.
+Jack had not answered for eleven minutes. He had sat in the dark and listened to his own breathing because the message had the old shape: an accusation that did not need to win, only spread.
 
-Maggie stood behind him now while Christina rebuilt the custody map.
+Maggie stood behind him now while Christina rebuilt the timeline.
 
 ```text
 LENA ORTIZ / RECORD SET A
@@ -28,53 +28,79 @@ LENA ORTIZ / RECORD SET A
 2. Risk summary: 03:39 timestamp, phrase: pattern of instability
 3. Nurse manager email: 03:58 timestamp, phrase: pattern of instability
 4. Child-safety referral: 04:12 timestamp, phrase: pattern of instability
-Conflict: source attribution loops without origin record
+Conflict: attribution loop without origin event
 ```
 
 "The phrase learned to walk," Maggie said.
 
 Jack nodded. That was exactly what frightened him.
 
-Records did not merely preserve events. They trained future readers how to feel about events. A phrase like pattern of instability did not describe Lena. It introduced her. After that, every reviewer met the phrase first and the person second.
+Paper did not merely preserve events. It trained future readers how to feel about them. A phrase like pattern of instability did not describe Lena. It introduced her. After that, every reviewer met the phrase first and the woman second.
 
-The reporter had not quoted the whole file. He quoted just enough to make Lantern look like a vigilante intake system collecting wounded people. He had omitted the consent marker beside Lena's name. He had omitted the redactions she requested. He had omitted the line where Jack refused to publish her file.
+The reporter had not quoted the whole file. He quoted just enough to make Lantern look like a vigilante intake system collecting wounded people. He omitted the permission marker beside Lena's name. He omitted the redactions she requested. He omitted the line where Jack refused to publish her material.
 
-Omission was not emptiness. Omission was a sculptor with clean hands.
+Omission was not emptiness.
+
+Omission was editing with plausible deniability.
 
 Christina shifted the display.
 
 ```text
 Article claim: Lantern collected allegations from vulnerable subjects.
-Source contradiction: Article cites private subject identity without showing consent trail.
-Immediate issue: If journalist has private name, either breach, subject disclosure, or third-party record exposure occurred.
+Contradiction: Article cites private subject identity without showing approval trail.
+Immediate issue: If journalist has private name, either breach, subject disclosure, or third-party exposure occurred.
 ```
 
-"Third-party record exposure," Jack said.
+"Third-party exposure," Jack said.
 
 Maggie heard the change in him and moved closer.
 
 "You recognize something."
 
-"Not something. The path."
+"Not something. The road it took."
 
-He pulled up Lena's original upload packet. Not the documents themselves, only the metadata. There it was, sitting in the corner like a speck of ash.
+He pulled up Lena's original upload packet. Not the documents themselves, only the metadata. There it was, sitting in the corner like a fleck of ash.
 
 **NORTHSTAR REVIEW SERVICES // FAMILY-SAFETY TRIAGE PILOT**
 
-The same vendor had appeared in Jack's case two years earlier, not as a party, not as an accuser, not even as a named system. It had appeared in a PDF property field attached to a risk summary his attorney almost missed. NorthStar did not make accusations. NorthStar cleaned them. It normalized language from different institutions until every document sounded like it came from the same reasonable adult.
+The same vendor had appeared in Jack's case two years earlier. Not as a party. Not as an accuser. Not even as a named system. It had appeared in a PDF property field attached to a risk summary his attorney almost missed.
 
-"Christina," he said. "Search the file universe for NorthStar with phrase overlap only. No names. No full records."
+NorthStar did not manufacture allegations.
+
+NorthStar polished them.
+
+It normalized language from different institutions until every document sounded as though it had been written by the same calm professional.
+
+"Christina," he said. "Search for NorthStar overlap only. No names. No full files."
 
 ```text
 Constraint accepted.
-Query scope: phrase overlap, vendor markers, public artifacts, consent-approved fragments.
-Excluded: private survivor names, sealed records, nonconsented case bodies.
+Query scope: phrase overlap, vendor markers, public artifacts, approved fragments.
+Excluded: private survivor names, sealed records, nonapproved case bodies.
 ```
 
-Echo returned seven fragments. A nurse. A veteran. A teacher. A campaign volunteer. A custody evaluator. A church administrator. A nonprofit donor coordinator. The facts differed. The phrase patterns did not.
+Echo returned seven fragments.
+
+A nurse.
+
+A veteran.
+
+A teacher.
+
+A campaign volunteer.
+
+A custody evaluator.
+
+A church administrator.
+
+A nonprofit donor coordinator.
+
+The facts differed.
+
+The language did not.
 
 The story was not that NorthStar caused every wound.
 
-The story was that wounded systems had begun to share a grammar.
+The story was that damaged institutions had begun speaking with the same voice.
 
-And somewhere inside that grammar, someone knew Jack's private witness had a name.
+And somewhere inside that shared vocabulary, someone knew Jack's private witness had a name.
