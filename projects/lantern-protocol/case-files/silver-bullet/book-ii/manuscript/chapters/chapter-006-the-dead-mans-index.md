@@ -20,7 +20,7 @@ Her sister's name was Celia Vale. Twenty-nine. Translator. Contracted through a 
 
 Jack understood the violence of that. A name could be killed without a body.
 
-Christina scanned the index from the wall camera. Echo refused to ingest the pages until Vanessa signed a narrow consent statement. Vanessa read every word, asked two sharp questions, then signed with the calm irritation of someone pleased to find resistance.
+Christina scanned the index from the wall camera. Echo refused to ingest the pages until Vanessa signed a narrow permission statement. Vanessa read every word, asked two sharp questions, then signed with the calm irritation of someone pleased to find resistance.
 
 ```text
 VOSS INDEX / LIMITED INGEST
@@ -48,15 +48,17 @@ Vanessa watched him read.
 
 Maggie gave Jack a look that said do not enjoy that sentence too much.
 
-The first index match surfaced at 4:44 p.m. Celia's name had appeared in a clinic scheduling export, then vanished from a ministry report replaced by vendor role language. The same report cited her translation work to prove community consent. She had been erased as a person and preserved as authority.
+The first index match surfaced at 4:44 p.m. Celia's name had appeared in a clinic scheduling export, then vanished from a ministry report and returned only as role language. The same report cited her translation work to prove community consent. She had been erased as a person and preserved as authority.
 
 That was The Null Pattern's first visible tooth.
 
-Not absence. Use without presence.
+Not absence.
+
+Use without presence.
 
 Jack felt the room tilt around the doctrine.
 
-In Book One, the Silver Bullet had turned an accusation into a weapon. Book Two was showing him a quieter weapon: a missing person still being spent by systems that no longer had to answer to her.
+In Book One, the Silver Bullet had turned an accusation into a weapon. Book Two was showing him a quieter weapon: a missing person still being spent by offices that no longer had to answer to her.
 
 Vanessa leaned over the table. "Now tell me whether Lantern can find her."
 
