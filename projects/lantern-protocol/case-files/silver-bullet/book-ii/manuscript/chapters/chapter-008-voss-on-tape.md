@@ -22,7 +22,7 @@ Jack did not move.
 
 Voss continued.
 
-"The Null Pattern emerges when authority cites a person after removing the conditions that made the person's consent meaningful. Look for names converted to roles. Look for revoked permissions converted to historical support. Look for living witnesses called unreliable after the system has already spent their credibility."
+"The Null Pattern emerges when authority cites a person after removing the conditions that made the person's consent meaningful. Look for names converted to roles. Look for revoked permission converted to historical support. Look for living witnesses called unreliable after the system has already spent their credibility."
 
 The tape ended with a sound like furniture dragging across a floor.
 
