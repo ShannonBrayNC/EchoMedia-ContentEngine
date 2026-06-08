@@ -2,7 +2,7 @@
 
 The car passed twice.
 
-Jack did not run outside. That was progress. The body wanted old choreography: open door, demand answer, become footage. He stayed behind the curtain while Christina pulled porch camera frames into Echo and Maggie called the nonemergency line with a voice so calm it could have cut glass.
+Jack did not run outside. That was progress. His body wanted old choreography: open door, demand answer, become footage. He stayed behind the curtain while Christina pulled porch camera frames into Echo and Maggie called the nonemergency line with a voice so calm it could have cut glass.
 
 Vanessa stood away from the windows.
 
@@ -18,7 +18,7 @@ Maggie ended the call. "They'll increase patrol if a unit is available."
 
 Everyone in the room understood the sentence as weather, not protection.
 
-Echo's event map now held four live threads: the reporter, Lena, Vanessa, and Voss. The old danger would have been connecting them too quickly. The new danger was refusing connection long enough for the pattern to use their caution as cover.
+Echo's map now held four live threads: the reporter, Lena, Vanessa, and Voss. The old danger would have been connecting them too quickly. The new danger was refusing connection long enough for the pattern to hide inside their caution.
 
 "We need a rule," Maggie said.
 
@@ -37,7 +37,7 @@ Christina proposed the rule in three lines.
 ```text
 NULL-CONTACT RULE
 1. Preserve identity separately from role language.
-2. Require living consent before public reconstruction.
+2. Require living permission before public reconstruction.
 3. Treat use-without-presence as active harm.
 ```
 
@@ -53,13 +53,19 @@ She looked at him. "You do not allow comfort to sit very long."
 
 Maggie almost smiled. Almost.
 
-The reporter posted the follow-up at 9:02 p.m. It was worse than the first because it had learned from Jack's silence. The article framed Lantern as a precedent problem. It asked whether private AI systems should be allowed to gather sensitive records from people in active legal, medical, or custody disputes. It quoted an unnamed ethics researcher, a family safety advocate, and one former law-enforcement analyst who warned that men accused of abuse often recast themselves as investigators.
+The reporter posted the follow-up at 9:02 p.m. It was worse than the first because it had learned from Jack's silence. The article framed Lantern as a precedent problem. It asked whether private AI systems should gather sensitive records from people in active legal, medical, or custody disputes. It quoted an unnamed ethics researcher, a family safety advocate, and one former law-enforcement analyst who warned that men accused of abuse often recast themselves as investigators.
 
-It did not mention Lena's refusal. It did not mention the source path. It did not mention NorthStar.
+It did not mention Lena's refusal.
+
+It did not mention the path her name had taken.
+
+It did not mention NorthStar.
 
 It did mention Vanessa.
 
-Not by full name. Not yet.
+Not by full name.
+
+Not yet.
 
 **A second woman linked to Mercer has surfaced with claims involving a missing translator and the late Dr. Elias Voss, a conspiracy figure in several online communities.**
 
