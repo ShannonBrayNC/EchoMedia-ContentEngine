@@ -12,13 +12,13 @@ For a few seconds there was only traffic and breath.
 
 "My mother saw it first," Lena said. "She called me crying. She asked why my name was beside yours."
 
-Jack closed his eyes. There were injuries no system logged because the bruise appeared inside somebody else's morning.
+Jack closed his eyes. Some injuries left their marks in another person's kitchen.
 
-"Did you give permission to the reporter?"
+"Did you talk to the reporter?"
 
 "No."
 
-"Did anyone from the hospital contact you after your file came here?"
+"Did anyone from the hospital contact you after your materials came here?"
 
 "HR sent a separation package. They said if I signed, the referral would be marked resolved. Not withdrawn. Resolved."
 
@@ -28,7 +28,7 @@ Resolved.
 
 Institutions loved it because it sounded gentle and buried everything. A resolved accusation could still be cited. A resolved referral could still shadow custody. A resolved concern could still bloom later in a background check like mold in drywall.
 
-"Did the package mention Lantern?" he asked.
+"Did the package mention Lantern?" Jack asked.
 
 "Not directly. It said I had engaged with unauthorized external review channels."
 
@@ -36,7 +36,7 @@ Christina displayed the phrase beside NorthStar's known language set.
 
 ```text
 PHRASE OVERLAP: unauthorized external review channels
-Known source: no confirmed origin
+Known origin: unconfirmed
 Similarity cluster: employer retaliation, litigation containment, witness isolation
 Confidence: medium
 ```
@@ -49,7 +49,7 @@ The line changed after that. The nurse voice slipped, and the mother voice came 
 
 Jack wanted to promise her something. He had promised too much in the ruins of his own life because promises made a shape where powerlessness had been. He swallowed the promise and gave her the only clean thing he had.
 
-"We will not publish your file. We will preserve the article, the package, and the source path. You choose each next disclosure."
+"We will not publish your file. We will preserve the article, the package, and the path it took to reach us. You choose each next disclosure."
 
 "What if choosing slowly lets them bury it?"
 
@@ -63,9 +63,19 @@ After the call, Jack walked outside.
 
 The yard had not recovered from the storm. Small branches lay across the grass. A bird hopped near the fence, offended by the rearrangement of its world. Jack stood under the wet trees and tried not to count everything he had lost by category.
 
-Work. Clearance. Home. Sleep. The ordinary privilege of being believed before being processed.
+Work.
 
-His phone buzzed again. Unknown number.
+Clearance.
+
+Home.
+
+Sleep.
+
+The ordinary privilege of being believed before being processed.
+
+His phone buzzed again.
+
+Unknown number.
 
 Maggie opened the back door. "Jack?"
 
@@ -97,8 +107,8 @@ Precedent.
 
 The word landed harder than the headline. A headline punished him. Precedent threatened everyone who came after.
 
-Inside, Echo added the call to the file. Not as proof. Not as truth. As a thing that had happened in sequence.
+Inside, Echo added the call to the file. Not as proof. Not as truth. As a thing that had happened in order.
 
 The difference mattered.
 
-It was the difference between Lantern and the machinery that had nearly killed him.
+It was the difference between an archive and the machinery that had nearly killed him.
