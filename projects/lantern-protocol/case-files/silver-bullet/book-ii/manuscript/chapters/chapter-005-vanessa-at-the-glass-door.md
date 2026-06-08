@@ -12,7 +12,7 @@ Maggie glanced at the feed. "Do we know her?"
 
 Jack opened the door anyway, which told him something about the kind of trouble he had become vulnerable to.
 
-Vanessa was not beautiful in the simple way cameras rewarded. She was composed in a way that made the porch light seem poorly briefed. Her eyes moved once over his shoulder, once to his right arm, once to the tablet in his left hand. She noticed too much and pretended not to keep the social peace.
+Vanessa was not beautiful in the simple way cameras rewarded. She was composed in a way that made the porch light seem poorly briefed. Her eyes moved once over his shoulder, once to his right arm, once to the tablet in his left hand. She noticed too much and pretended not to keep the peace.
 
 "Jack Mercer?"
 
@@ -22,7 +22,9 @@ Vanessa was not beautiful in the simple way cameras rewarded. She was composed i
 
 Maggie appeared beside him. "Who told you that?"
 
-Vanessa's smile held for exactly one beat too long. "A dead man."
+Vanessa's smile held for exactly one beat too long.
+
+"A dead man."
 
 That got Christina's attention. The hall screen woke behind them.
 
@@ -46,7 +48,7 @@ Rain tapped the porch roof. Jack did not invite Vanessa in. That felt important.
 
 Vanessa looked past him again, not at Maggie this time but at the lit wall where Christina had gone still.
 
-"Your system is already in the next story," she said. "The people who understand that moved before you did."
+"Your archive is already in the next story," she said. "The people who understand that moved before you did."
 
 Jack wanted to dismiss her. Too elegant. Too timed. Too much like a doorway placed by someone who knew his weaknesses. But the photograph was real enough to make his hands cold, and the phrase on the board had appeared in Voss's encrypted notes under another name.
 
@@ -62,7 +64,9 @@ Vanessa's eyes softened, or performed softness so well it became useless to dist
 
 Jack stepped back then.
 
-Not trust. Not surrender.
+Not trust.
+
+Not surrender.
 
 A measured opening.
 
