@@ -32,6 +32,7 @@ Important Sprint 0 artifacts:
 - `docs/reports/branch-reconciliation-2026-05-23.md`
 - `docs/local-development.md`
 - `docs/architecture.md`
+- `docs/architecture/repo-boundary.md`
 - `docs/configuration.md`
 - `docs/project-registry-and-folder-contract.md`
 - `docs/sprint-plan.md`
