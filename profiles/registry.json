@@ -1,0 +1,111 @@
+{
+  "schema": "lantern.contentengine.profileRegistry.v1",
+  "updatedAt": "2026-06-11T00:00:00Z",
+  "profiles": [
+    {
+      "id": "shannon",
+      "name": "Shannon",
+      "type": "human_subject",
+      "status": "active",
+      "version": 1,
+      "owner": "ShannonBrayNC",
+      "description": "Primary authenticated operator and approved human subject profile.",
+      "tags": ["operator", "founder", "lantern"],
+      "visibility": "private",
+      "createdAt": "2026-06-11T00:00:00Z",
+      "updatedAt": "2026-06-11T00:00:00Z",
+      "governance": {
+        "realPerson": true,
+        "likenessConsent": true,
+        "commercialUse": true,
+        "publicUse": true,
+        "requiresApproval": true
+      },
+      "references": []
+    },
+    {
+      "id": "vanessa",
+      "name": "Vanessa",
+      "type": "human_subject",
+      "status": "draft",
+      "version": 1,
+      "owner": "ShannonBrayNC",
+      "description": "Governed Vanessa profile placeholder. Identity references must be explicitly approved before generation.",
+      "tags": ["lantern", "book-ii", "human-subject"],
+      "visibility": "private",
+      "createdAt": "2026-06-11T00:00:00Z",
+      "updatedAt": "2026-06-11T00:00:00Z",
+      "governance": {
+        "realPerson": true,
+        "likenessConsent": false,
+        "commercialUse": false,
+        "publicUse": false,
+        "requiresApproval": true
+      },
+      "references": []
+    },
+    {
+      "id": "chloe",
+      "name": "Chloe",
+      "type": "persona",
+      "status": "draft",
+      "version": 1,
+      "owner": "ShannonBrayNC",
+      "description": "Persona profile placeholder for governed content generation.",
+      "tags": ["persona", "lantern"],
+      "visibility": "private",
+      "createdAt": "2026-06-11T00:00:00Z",
+      "updatedAt": "2026-06-11T00:00:00Z",
+      "governance": {
+        "realPerson": false,
+        "likenessConsent": false,
+        "commercialUse": false,
+        "publicUse": false,
+        "requiresApproval": true
+      },
+      "references": []
+    },
+    {
+      "id": "christina",
+      "name": "Christina",
+      "type": "persona",
+      "status": "active",
+      "version": 1,
+      "owner": "ShannonBrayNC",
+      "description": "Command/control and engineering orchestration persona.",
+      "tags": ["operator", "assistant", "engineering"],
+      "visibility": "private",
+      "createdAt": "2026-06-11T00:00:00Z",
+      "updatedAt": "2026-06-11T00:00:00Z",
+      "governance": {
+        "realPerson": false,
+        "likenessConsent": false,
+        "commercialUse": true,
+        "publicUse": false,
+        "requiresApproval": true
+      },
+      "references": []
+    },
+    {
+      "id": "maggie",
+      "name": "Maggie",
+      "type": "fictional_character",
+      "status": "draft",
+      "version": 1,
+      "owner": "ShannonBrayNC",
+      "description": "Silver Bullet / Lantern fictional character profile placeholder.",
+      "tags": ["fictional-character", "silver-bullet", "lantern"],
+      "visibility": "private",
+      "createdAt": "2026-06-11T00:00:00Z",
+      "updatedAt": "2026-06-11T00:00:00Z",
+      "governance": {
+        "realPerson": false,
+        "likenessConsent": false,
+        "commercialUse": true,
+        "publicUse": true,
+        "requiresApproval": true
+      },
+      "references": []
+    }
+  ]
+}
