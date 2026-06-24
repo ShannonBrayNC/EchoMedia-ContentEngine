@@ -1,0 +1,22 @@
+sprint: PUB-003
+series_id: voss-files-trilogy
+title: The Voss Files Trilogy
+universe_id: lantern-universe
+series_type: trilogy
+status: structure-initialized
+canon_status: pending-canon-bible-sync
+primary_genre: dark-mystery-horror
+book_count_planned: 3
+book_count_active: 3
+producer_review_status: required
+release_strategy: sequential-trilogy
+books:
+  - book_id: book-01-the-voss-reversal
+    title: The Voss Reversal
+    status: concept-locked
+  - book_id: book-02-dead-records
+    title: Dead Records
+    status: concept-locked
+  - book_id: book-03-black-lantern
+    title: Black Lantern
+    status: concept-locked
