@@ -1,0 +1,40 @@
+sprint: PUB-007
+character_id: evelyn-blackwood
+display_name: Evelyn Blackwood
+aliases:
+  - Evelyn
+canon_status: canon-draft
+primary_series: silver-bullet-trilogy
+first_appearance: book-01-silver-bullet
+role: antagonist / social predator / Widow Circle catalyst
+function: personifies malicious certainty, curated victimhood, and targeted social destruction within the Silver Bullet attack model
+motivations:
+  - control the story before facts can threaten her position
+  - convert gossip into institutional pressure
+  - preserve her moral image while damaging the target
+  - use belief networks to isolate and punish Jack Mercer
+fears:
+  - exposure of contradiction
+  - loss of social control
+  - witnesses who preserve context
+  - a target who refuses to collapse quietly
+relationships:
+  - character_id: jack-mercer
+    relationship: primary target / narrative opponent
+    status: hostile
+  - character_id: widow-circle
+    relationship: catalyst, beneficiary, or operative depending on draft direction
+    status: aligned
+continuity_notes:
+  - Evelyn must remain fictionalized and composite.
+  - Her threat is strongest when she appears ordinary, plausible, and socially protected.
+  - She should not become a cartoon villain; the horror comes from believable malice inside accepted systems.
+trauma_continuity:
+  - her actions must create cascading psychological, institutional, and reputational harm
+producer_review_required: true
+risk_flags:
+  - fictionalized-composite
+  - legal-reputation-sensitivity
+  - weaponized-accusation
+  - antagonist-risk
+notes: Evelyn Blackwood should remain a fictional composite. Avoid direct one-to-one real-person mapping.
