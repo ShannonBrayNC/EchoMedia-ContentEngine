@@ -1,0 +1,84 @@
+sprint: PUB-008
+timeline_id: lantern-protocol-case-files-timeline
+universe_id: lantern-universe
+series_id: lantern-protocol-case-files
+status: active
+canon_status: canon-draft
+schema: projects/lantern-universe/timeline-registry/schemas/timeline-event.schema.json
+purpose: >-
+  Case-file chronology for Lantern Protocol Case Files, preserving anthology
+  events, Living Anchor case material, witness records, and cross-series
+  mythology dependencies.
+
+events:
+  - event_id: lantern-protocol-case-files-established
+    event_title: Lantern Protocol Case Files established
+    case_id: case-001-living-anchor
+    event_scope: case-file
+    timeline_position: anthology-foundation
+    relative_order: 10
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Lantern Protocol Case Files become the anthology layer for preserved
+      incidents, witness records, and anomalous truth-preservation cases.
+    affected_entities:
+      - lantern
+      - living-anchor
+    depends_on: []
+    blocks_or_constrains:
+      - lantern-protocol-living-anchor-case
+    continuity_notes:
+      - Case Files should support shared mythology without erasing series autonomy.
+    producer_review_required: true
+    risk_flags:
+      - anthology-continuity
+
+  - event_id: lantern-protocol-living-anchor-case
+    event_title: Living Anchor case file established
+    case_id: case-001-living-anchor
+    event_scope: case-file
+    timeline_position: case-001-core
+    relative_order: 20
+    canon_status: canon-draft
+    event_type: witness-event
+    summary: >-
+      The Living Anchor case file preserves the principle that human witness,
+      context, testimony, and memory are required when systems cannot hold truth.
+    affected_entities:
+      - lantern
+      - living-anchor
+    depends_on:
+      - lantern-protocol-case-files-established
+      - voss-living-anchor-revelation
+    blocks_or_constrains: []
+    continuity_notes:
+      - Should not become a full exposition dump for Voss or Silver Bullet.
+    producer_review_required: true
+    risk_flags:
+      - living-anchor-doctrine
+      - mythology-impact
+
+  - event_id: witness-protocols-case-pattern
+    event_title: Witness Protocols become case-file pattern
+    case_id: case-001-living-anchor
+    event_scope: mythology
+    timeline_position: anthology-pattern
+    relative_order: 30
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Case files begin demonstrating how testimony, context, memory, and
+      evidence preservation operate when institutions or records fail.
+    affected_entities:
+      - lantern
+      - witness-protocols
+    depends_on:
+      - lantern-protocol-living-anchor-case
+    blocks_or_constrains: []
+    continuity_notes:
+      - Must align with PUB-006 Witness Protocols canon.
+    producer_review_required: true
+    risk_flags:
+      - witness-protocols
+      - mythology-impact
