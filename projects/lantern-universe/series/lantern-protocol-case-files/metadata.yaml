@@ -1,0 +1,16 @@
+sprint: PUB-003
+series_id: lantern-protocol-case-files
+title: Lantern Protocol Case Files
+universe_id: lantern-universe
+series_type: case-files
+status: structure-initialized
+canon_status: pending-canon-bible-sync
+primary_genre: supernatural-mystery-techno-horror
+book_count_planned: 0
+book_count_active: 1
+producer_review_status: required
+release_strategy: anthology-case-file-release
+cases:
+  - case_id: case-001-living-anchor
+    title: Living Anchor
+    status: concept-locked
