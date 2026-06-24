@@ -1,0 +1,31 @@
+sprint: PUB-007
+registry_id: lantern-character-registry
+status: active
+universe_id: lantern-universe
+schema: projects/lantern-universe/character-registry/schemas/character.schema.json
+characters:
+  - character_id: jack-mercer
+    display_name: Jack Mercer
+    profile: jack-mercer.yaml
+    primary_series: silver-bullet-trilogy
+    canon_status: canon-draft
+  - character_id: elias-voss
+    display_name: Dr. Elias Voss
+    profile: elias-voss.yaml
+    primary_series: voss-files-trilogy
+    canon_status: concept-locked
+  - character_id: evelyn-blackwood
+    display_name: Evelyn Blackwood
+    profile: evelyn-blackwood.yaml
+    primary_series: silver-bullet-trilogy
+    canon_status: canon-draft
+  - character_id: widow-circle
+    display_name: Widow Circle
+    profile: widow-circle.yaml
+    primary_series: silver-bullet-trilogy
+    canon_status: canon-draft
+follow_up:
+  - add relationship map
+  - add timeline-linked status tracking
+  - add visual bible references
+  - add voice and audiobook notes
