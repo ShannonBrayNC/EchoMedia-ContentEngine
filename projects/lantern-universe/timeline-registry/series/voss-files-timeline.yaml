@@ -1,0 +1,137 @@
+sprint: PUB-008
+timeline_id: voss-files-timeline
+universe_id: lantern-universe
+series_id: voss-files-trilogy
+status: active
+canon_status: canon-draft
+schema: projects/lantern-universe/timeline-registry/schemas/timeline-event.schema.json
+purpose: >-
+  Series chronology for The Voss Files Trilogy, preserving the independent
+  development of Elias Voss, narrative-system corruption, Black Lantern, and
+  the Living Anchor revelation.
+
+events:
+  - event_id: voss-begins-archive-investigation
+    event_title: Voss begins the archive investigation
+    book_id: book-01-the-voss-reversal
+    event_scope: book
+    timeline_position: voss-book-01-opening
+    relative_order: 10
+    canon_status: canon-draft
+    event_type: origin
+    summary: >-
+      Elias Voss enters the records problem that will reveal narrative-system
+      corruption and corrupted truth infrastructure.
+    affected_entities:
+      - elias-voss
+    depends_on: []
+    blocks_or_constrains:
+      - voss-discovers-narrative-system-corruption
+    continuity_notes:
+      - Voss begins as investigator, not exposition device.
+    producer_review_required: true
+    risk_flags:
+      - mythology-foundation
+
+  - event_id: voss-discovers-narrative-system-corruption
+    event_title: Voss discovers narrative-system corruption
+    book_id: book-01-the-voss-reversal
+    event_scope: mythology
+    timeline_position: voss-book-01-core-reveal
+    relative_order: 20
+    canon_status: canon-draft
+    event_type: mythology-reveal
+    summary: >-
+      Voss discovers that systems can preserve corrupted narratives with
+      dangerous confidence.
+    affected_entities:
+      - elias-voss
+      - black-lantern
+    depends_on:
+      - voss-begins-archive-investigation
+    blocks_or_constrains:
+      - dead-records-archive-deepening
+    continuity_notes:
+      - Must align with PUB-006 Narrative Corruption canon.
+    producer_review_required: true
+    risk_flags:
+      - narrative-corruption
+      - mythology-impact
+
+  - event_id: dead-records-archive-deepening
+    event_title: Dead Records deepens the corrupted archive problem
+    book_id: book-02-dead-records
+    event_scope: book
+    timeline_position: voss-book-02-core
+    relative_order: 40
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Voss encounters deeper evidence that records can survive while truth
+      disappears.
+    affected_entities:
+      - elias-voss
+      - black-lantern
+    depends_on:
+      - voss-discovers-narrative-system-corruption
+    blocks_or_constrains:
+      - black-lantern-truth-infrastructure-reveal
+    continuity_notes:
+      - Must preserve dark mystery and archival horror tone.
+    producer_review_required: true
+    risk_flags:
+      - black-lantern
+      - mythology-impact
+
+  - event_id: black-lantern-truth-infrastructure-reveal
+    event_title: Black Lantern revealed as corrupted truth infrastructure
+    book_id: book-03-black-lantern
+    event_scope: mythology
+    timeline_position: voss-book-03-reveal
+    relative_order: 60
+    canon_status: canon-draft
+    event_type: mythology-reveal
+    summary: >-
+      Black Lantern is revealed as the dark mirror of truth-preservation:
+      records without conscience, memory without mercy, and systems that defend
+      the recorded story even when the story is false.
+    affected_entities:
+      - elias-voss
+      - black-lantern
+      - lantern
+    depends_on:
+      - dead-records-archive-deepening
+    blocks_or_constrains:
+      - voss-living-anchor-revelation
+    continuity_notes:
+      - Black Lantern must not become a generic villain group.
+    producer_review_required: true
+    risk_flags:
+      - black-lantern
+      - mythology-impact
+
+  - event_id: voss-living-anchor-revelation
+    event_title: Voss concludes the Living Anchor must be human
+    book_id: book-03-black-lantern
+    event_scope: mythology
+    timeline_position: voss-book-03-final-revelation
+    relative_order: 80
+    canon_status: canon-draft
+    event_type: mythology-reveal
+    summary: >-
+      Voss reaches the foundational truth that technology can preserve evidence
+      but cannot become the Living Anchor.
+    affected_entities:
+      - elias-voss
+      - living-anchor
+      - lantern
+    depends_on:
+      - black-lantern-truth-infrastructure-reveal
+    blocks_or_constrains:
+      - lantern-protocol-living-anchor-case
+    continuity_notes:
+      - Locked doctrine from Canon Bible PUB-006.
+    producer_review_required: true
+    risk_flags:
+      - living-anchor-doctrine
+      - mythology-impact
