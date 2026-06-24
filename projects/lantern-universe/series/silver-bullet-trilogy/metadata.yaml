@@ -1,0 +1,22 @@
+sprint: PUB-003
+series_id: silver-bullet-trilogy
+title: Silver Bullet Trilogy
+universe_id: lantern-universe
+series_type: trilogy
+status: structure-initialized
+canon_status: pending-canon-bible-sync
+primary_genre: psychological-horror-techno-thriller
+book_count_planned: 3
+book_count_active: 1
+producer_review_status: required
+release_strategy: sequential-trilogy
+books:
+  - book_id: book-01-silver-bullet
+    title: Silver Bullet
+    status: rewrite-required
+  - book_id: book-02-to-be-defined
+    title: To Be Defined
+    status: placeholder
+  - book_id: book-03-to-be-defined
+    title: To Be Defined
+    status: placeholder
