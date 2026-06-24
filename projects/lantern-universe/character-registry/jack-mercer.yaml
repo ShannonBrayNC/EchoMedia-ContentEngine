@@ -1,0 +1,41 @@
+sprint: PUB-007
+character_id: jack-mercer
+display_name: Jack Mercer
+aliases:
+  - Jack
+canon_status: canon-draft
+primary_series: silver-bullet-trilogy
+first_appearance: book-01-silver-bullet
+role: protagonist
+function: veteran witness, targeted survivor, emerging Living Anchor parallel
+motivations:
+  - preserve the truth after weaponized accusation
+  - survive institutional and social collapse
+  - protect what remains of his identity and future
+  - expose the machinery behind the Silver Bullet attack
+fears:
+  - becoming the false story told about him
+  - losing family, career, reputation, and purpose
+  - being abandoned by every institution he once trusted
+  - discovering that the truth no longer matters to anyone
+relationships:
+  - character_id: evelyn-blackwood
+    relationship: antagonist-composite / architect of social destruction pressure
+    status: hostile
+  - character_id: widow-circle
+    relationship: targeted by belief network
+    status: hostile
+continuity_notes:
+  - Jack is the emotional center of Silver Bullet Book 1.
+  - His arc must keep the story grounded in veteran psychological horror.
+  - He is not a superhero; his strength is witness, endurance, evidence preservation, and refusal to surrender truth.
+trauma_continuity:
+  - trauma must affect decision-making, pacing, trust, relationships, and investigation behavior
+  - PTSD/hypervigilance should be treated as plot-active, not decorative backstory
+producer_review_required: true
+risk_flags:
+  - veteran-trauma
+  - weaponized-accusation
+  - psychological-horror
+  - legal-reputation-sensitivity
+notes: Jack Mercer is fictionalized and must remain a composite character, not a direct real-person replica.
