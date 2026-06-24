@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/lantern/timeline-event.schema.json",
+  "title": "Lantern Universe Timeline Event",
+  "description": "Sprint PUB-008 schema for canonical Lantern Universe timeline events.",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_title",
+    "universe_id",
+    "series_id",
+    "event_scope",
+    "timeline_position",
+    "canon_status",
+    "event_type",
+    "summary",
+    "affected_entities",
+    "producer_review_required"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "event_title": { "type": "string" },
+    "universe_id": { "type": "string" },
+    "series_id": { "type": "string" },
+    "book_id": { "type": "string" },
+    "case_id": { "type": "string" },
+    "event_scope": {
+      "type": "string",
+      "enum": ["universe", "series", "book", "case-file", "character", "organization", "mythology", "publishing"]
+    },
+    "timeline_position": { "type": "string" },
+    "absolute_date": { "type": "string" },
+    "relative_order": { "type": "integer" },
+    "canon_status": {
+      "type": "string",
+      "enum": ["planned", "drafted", "canon-draft", "canon-locked", "conflict", "retired"]
+    },
+    "event_type": {
+      "type": "string",
+      "enum": ["origin", "inciting-incident", "reveal", "character-state-change", "organization-state-change", "mythology-reveal", "evidence-event", "witness-event", "publication-event", "continuity-marker", "relationship-change"]
+    },
+    "summary": { "type": "string" },
+    "affected_entities": { "type": "array", "items": { "type": "string" } },
+    "depends_on": { "type": "array", "items": { "type": "string" } },
+    "blocks_or_constrains": { "type": "array", "items": { "type": "string" } },
+    "continuity_notes": { "type": "array", "items": { "type": "string" } },
+    "producer_review_required": { "type": "boolean" },
+    "risk_flags": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}
