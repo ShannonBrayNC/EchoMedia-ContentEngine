@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/publishing/series-metadata.schema.json",
+  "title": "Series Metadata",
+  "description": "Sprint PUB-004 schema for validating series-level metadata in EchoMedia Content Engine.",
+  "type": "object",
+  "required": [
+    "series_id",
+    "title",
+    "universe_id",
+    "series_type",
+    "status",
+    "canon_status",
+    "primary_genre",
+    "book_count_planned",
+    "book_count_active",
+    "producer_review_status",
+    "release_strategy"
+  ],
+  "properties": {
+    "sprint": { "type": "string" },
+    "series_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string" },
+    "universe_id": { "type": "string" },
+    "series_type": {
+      "type": "string",
+      "enum": ["standalone", "duology", "trilogy", "anthology", "case-files", "shared-universe-series", "novella-collection"]
+    },
+    "status": { "type": "string" },
+    "canon_status": { "type": "string" },
+    "primary_genre": { "type": "string" },
+    "book_count_planned": { "type": "integer", "minimum": 0 },
+    "book_count_active": { "type": "integer", "minimum": 0 },
+    "producer_review_status": { "type": "string" },
+    "release_strategy": { "type": "string" },
+    "books": { "type": "array", "items": { "type": "object" } },
+    "cases": { "type": "array", "items": { "type": "object" } }
+  },
+  "additionalProperties": true
+}
