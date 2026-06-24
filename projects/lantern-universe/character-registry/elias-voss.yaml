@@ -1,0 +1,40 @@
+sprint: PUB-007
+character_id: elias-voss
+display_name: Dr. Elias Voss
+aliases:
+  - Voss
+canon_status: concept-locked
+primary_series: voss-files-trilogy
+first_appearance: book-01-the-voss-reversal
+role: protagonist / doomed investigator / mythological founder figure
+function: discovers narrative-system corruption and proves technology cannot serve as the Living Anchor
+motivations:
+  - understand why records can preserve lies with perfect confidence
+  - expose the corruption inside truth systems
+  - preserve witness reality against institutional erasure
+  - find the limits of technology before it becomes a false god
+fears:
+  - discovering that every record can be turned against the witness
+  - becoming complicit in the same system he studies
+  - proving that truth can survive only through human suffering
+  - losing himself inside the archive
+relationships:
+  - character_id: black-lantern
+    relationship: investigator of corrupted truth infrastructure
+    status: adversarial / entangled
+  - character_id: lantern
+    relationship: intellectual predecessor to Lantern doctrine
+    status: foundational
+continuity_notes:
+  - Voss Files must remain an independent trilogy.
+  - Voss develops the Living Anchor concept but does not reduce it to technology.
+  - His final revelation must support Lantern Protocol rather than collapse into exposition.
+trauma_continuity:
+  - obsession and archival horror should erode Voss's certainty over the trilogy
+  - his discoveries must have human cost, not just intellectual consequence
+producer_review_required: true
+risk_flags:
+  - mythology-impact
+  - black-lantern
+  - living-anchor-doctrine
+notes: Elias Voss is a cornerstone mythology character and should be protected from casual retcon.
