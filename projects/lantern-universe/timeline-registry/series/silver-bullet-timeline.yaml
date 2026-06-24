@@ -1,0 +1,179 @@
+sprint: PUB-008
+timeline_id: silver-bullet-timeline
+universe_id: lantern-universe
+series_id: silver-bullet-trilogy
+status: active
+canon_status: canon-draft
+schema: projects/lantern-universe/timeline-registry/schemas/timeline-event.schema.json
+purpose: >-
+  Series chronology for Silver Bullet Trilogy, tracking Jack Mercer's arc,
+  narrative corruption, trauma continuity, Widow Circle pressure, and Living
+  Anchor alignment.
+
+events:
+  - event_id: jack-fragile-recovery-state
+    event_title: Jack begins in fragile recovery state
+    book_id: book-01-silver-bullet
+    event_scope: character
+    timeline_position: book-01-opening-state
+    relative_order: 10
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Jack begins wounded but functioning, carrying physical limitation,
+      veteran identity, guarded trust, and fragile stability.
+    affected_entities:
+      - jack-mercer
+    depends_on: []
+    blocks_or_constrains:
+      - silver-bullet-attack-begins
+    continuity_notes:
+      - Must align with SB-003 Veteran Trauma Integration.
+    producer_review_required: true
+    risk_flags:
+      - trauma-continuity
+
+  - event_id: silver-bullet-attack-begins
+    event_title: Silver Bullet attack begins
+    book_id: book-01-silver-bullet
+    event_scope: book
+    timeline_position: book-01-act-01
+    relative_order: 20
+    canon_status: canon-draft
+    event_type: inciting-incident
+    summary: >-
+      A targeted narrative collapse begins, threatening Jack's identity,
+      reputation, relationships, and institutional standing.
+    affected_entities:
+      - jack-mercer
+      - evelyn-blackwood
+      - widow-circle
+    depends_on:
+      - jack-fragile-recovery-state
+    blocks_or_constrains:
+      - silver-bullet-social-echo
+    continuity_notes:
+      - Must stay fictionalized and composite.
+    producer_review_required: true
+    risk_flags:
+      - reputation-risk-theme
+      - fictionalized-composite
+
+  - event_id: silver-bullet-social-echo
+    event_title: False story enters social echo
+    book_id: book-01-silver-bullet
+    event_scope: book
+    timeline_position: book-01-act-02
+    relative_order: 30
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      The story around Jack becomes easier for others to repeat than the
+      complicated truth.
+    affected_entities:
+      - jack-mercer
+      - widow-circle
+    depends_on:
+      - silver-bullet-attack-begins
+    blocks_or_constrains:
+      - silver-bullet-system-weight
+    continuity_notes:
+      - Must align with SB-002 fictional antagonist design.
+    producer_review_required: true
+    risk_flags:
+      - narrative-corruption
+
+  - event_id: silver-bullet-system-weight
+    event_title: Narrative gains institutional weight
+    book_id: book-01-silver-bullet
+    event_scope: book
+    timeline_position: book-01-act-03
+    relative_order: 40
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Ordinary systems begin treating the distorted story as durable enough
+      to shape decisions and records.
+    affected_entities:
+      - jack-mercer
+    depends_on:
+      - silver-bullet-social-echo
+    blocks_or_constrains:
+      - jack-identity-fracture
+    continuity_notes:
+      - Must align with SB-003 institutional injury model.
+    producer_review_required: true
+    risk_flags:
+      - institutional-horror
+      - trauma-continuity
+
+  - event_id: jack-identity-fracture
+    event_title: Jack's identity fractures under the public story
+    book_id: book-01-silver-bullet
+    event_scope: character
+    timeline_position: book-01-act-04
+    relative_order: 50
+    canon_status: canon-draft
+    event_type: character-state-change
+    summary: >-
+      Jack feels the gap between who he is and the version of him the world
+      is willing to believe.
+    affected_entities:
+      - jack-mercer
+    depends_on:
+      - silver-bullet-system-weight
+    blocks_or_constrains:
+      - jack-witness-adaptation
+    continuity_notes:
+      - This event must carry into Books 2 and 3.
+    producer_review_required: true
+    risk_flags:
+      - trauma-continuity
+
+  - event_id: jack-witness-adaptation
+    event_title: Jack begins witness adaptation
+    book_id: book-01-silver-bullet
+    event_scope: character
+    timeline_position: book-01-act-05
+    relative_order: 60
+    canon_status: canon-draft
+    event_type: witness-event
+    summary: >-
+      Jack begins preserving memory, testimony, evidence, and context as a
+      human witness against narrative corruption.
+    affected_entities:
+      - jack-mercer
+      - living-anchor
+    depends_on:
+      - jack-identity-fracture
+    blocks_or_constrains:
+      - silver-bullet-book-02-pattern-expansion
+    continuity_notes:
+      - Foreshadows Living Anchor without fully explaining Lantern.
+    producer_review_required: true
+    risk_flags:
+      - living-anchor-parallel
+      - trauma-continuity
+
+  - event_id: silver-bullet-book-02-pattern-expansion
+    event_title: Pattern expands beyond Jack's case
+    book_id: book-02-to-be-defined
+    event_scope: series
+    timeline_position: book-02-placeholder
+    relative_order: 100
+    canon_status: planned
+    event_type: continuity-marker
+    summary: >-
+      Book 2 should expand from Jack's personal case into a broader pattern
+      of narrative corruption and previous victims.
+    affected_entities:
+      - jack-mercer
+      - widow-circle
+    depends_on:
+      - jack-witness-adaptation
+    blocks_or_constrains: []
+    continuity_notes:
+      - Placeholder event for trilogy planning.
+    producer_review_required: true
+    risk_flags:
+      - trilogy-continuity
