@@ -1,0 +1,144 @@
+sprint: PUB-008
+timeline_id: lantern-master-timeline
+universe_id: lantern-universe
+status: active
+canon_status: canon-draft
+schema: projects/lantern-universe/timeline-registry/schemas/timeline-event.schema.json
+purpose: >-
+  Master chronology for cross-series Lantern Universe continuity.
+  This file tracks universe-level order and dependencies without replacing
+  detailed series timelines.
+
+ordering_rule: >-
+  Use relative order until exact in-universe dates are canon-locked.
+  Do not assign absolute dates unless Producer Review approves them.
+
+events:
+  - event_id: voss-discovers-narrative-system-corruption
+    event_title: Voss discovers narrative-system corruption
+    series_id: voss-files-trilogy
+    book_id: book-01-the-voss-reversal
+    event_scope: mythology
+    timeline_position: early-mythology-foundation
+    relative_order: 100
+    canon_status: canon-draft
+    event_type: mythology-reveal
+    summary: >-
+      Elias Voss begins uncovering that records and systems can preserve
+      corrupted narratives with dangerous confidence.
+    affected_entities:
+      - elias-voss
+      - black-lantern
+      - lantern
+    depends_on: []
+    blocks_or_constrains:
+      - living-anchor-doctrine
+    continuity_notes:
+      - Voss Files remains independent from Silver Bullet.
+      - This discovery supports later Lantern doctrine.
+    producer_review_required: true
+    risk_flags:
+      - mythology-impact
+
+  - event_id: voss-living-anchor-revelation
+    event_title: Voss concludes the Living Anchor must be human
+    series_id: voss-files-trilogy
+    book_id: book-03-black-lantern
+    event_scope: mythology
+    timeline_position: late-voss-trilogy
+    relative_order: 300
+    canon_status: canon-draft
+    event_type: mythology-reveal
+    summary: >-
+      Voss reaches the defining conclusion that technology can preserve
+      evidence but cannot become the Living Anchor.
+    affected_entities:
+      - elias-voss
+      - living-anchor
+      - black-lantern
+    depends_on:
+      - voss-discovers-narrative-system-corruption
+    blocks_or_constrains:
+      - lantern-protocol-living-anchor-case
+    continuity_notes:
+      - This is a locked mythology direction from Canon Bible PUB-006.
+    producer_review_required: true
+    risk_flags:
+      - living-anchor-doctrine
+      - mythology-impact
+
+  - event_id: silver-bullet-attack-begins
+    event_title: Silver Bullet attack begins
+    series_id: silver-bullet-trilogy
+    book_id: book-01-silver-bullet
+    event_scope: book
+    timeline_position: book-01-inciting-incident
+    relative_order: 500
+    canon_status: canon-draft
+    event_type: inciting-incident
+    summary: >-
+      Jack Mercer is pulled into a targeted narrative collapse that threatens
+      identity, reputation, relationships, and institutional standing.
+    affected_entities:
+      - jack-mercer
+      - evelyn-blackwood
+      - widow-circle
+    depends_on: []
+    blocks_or_constrains:
+      - jack-witness-adaptation
+    continuity_notes:
+      - This event anchors Silver Bullet Book 1.
+    producer_review_required: true
+    risk_flags:
+      - sensitive-fictionalized-composite
+      - reputation-risk-theme
+
+  - event_id: jack-witness-adaptation
+    event_title: Jack begins witness adaptation
+    series_id: silver-bullet-trilogy
+    book_id: book-01-silver-bullet
+    event_scope: character
+    timeline_position: book-01-late-arc
+    relative_order: 580
+    canon_status: canon-draft
+    event_type: witness-event
+    summary: >-
+      Jack begins preserving memory, testimony, evidence, and context as a
+      human witness against narrative corruption.
+    affected_entities:
+      - jack-mercer
+      - living-anchor
+    depends_on:
+      - silver-bullet-attack-begins
+    blocks_or_constrains:
+      - silver-bullet-book-02-pattern-expansion
+    continuity_notes:
+      - This aligns Jack with Living Anchor themes without making him superhuman.
+    producer_review_required: true
+    risk_flags:
+      - trauma-continuity
+      - living-anchor-parallel
+
+  - event_id: lantern-protocol-living-anchor-case
+    event_title: Living Anchor case file established
+    series_id: lantern-protocol-case-files
+    case_id: case-001-living-anchor
+    event_scope: case-file
+    timeline_position: anthology-foundation
+    relative_order: 700
+    canon_status: canon-draft
+    event_type: continuity-marker
+    summary: >-
+      Lantern Protocol Case Files preserve the Living Anchor concept through
+      case material and witness records.
+    affected_entities:
+      - lantern
+      - living-anchor
+    depends_on:
+      - voss-living-anchor-revelation
+    blocks_or_constrains: []
+    continuity_notes:
+      - Case file layer should not erase series autonomy.
+    producer_review_required: true
+    risk_flags:
+      - mythology-impact
