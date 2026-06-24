@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/publishing/book-metadata.schema.json",
+  "title": "Book Metadata",
+  "description": "Sprint PUB-004 schema for validating book-level metadata in EchoMedia Content Engine.",
+  "type": "object",
+  "required": [
+    "book_id",
+    "title",
+    "series_id",
+    "universe_id",
+    "book_number",
+    "status",
+    "canon_status",
+    "producer_review_status",
+    "publishing_status",
+    "primary_genre",
+    "rights_status"
+  ],
+  "properties": {
+    "sprint": { "type": "string" },
+    "book_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string" },
+    "series_id": { "type": "string" },
+    "universe_id": { "type": "string" },
+    "book_number": { "type": "integer", "minimum": 0 },
+    "status": {
+      "type": "string",
+      "enum": ["concept", "outlined", "drafting", "rewrite", "rewrite-required", "canon-review", "producer-review", "proofread", "publishing-package", "released", "archived", "placeholder", "structure-initialized"]
+    },
+    "canon_status": { "type": "string" },
+    "producer_review_status": { "type": "string" },
+    "publishing_status": { "type": "string" },
+    "primary_genre": { "type": "string" },
+    "content_warnings": { "type": "array", "items": { "type": "string" } },
+    "rights_status": { "type": "string" },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "publishing_outputs": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": true
+}
