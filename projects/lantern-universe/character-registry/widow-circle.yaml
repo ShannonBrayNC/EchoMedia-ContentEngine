@@ -1,0 +1,40 @@
+sprint: PUB-007
+character_id: widow-circle
+display_name: Widow Circle
+aliases:
+  - The Circle
+canon_status: canon-draft
+primary_series: silver-bullet-trilogy
+first_appearance: book-01-silver-bullet
+role: fictional collective antagonist / belief network
+function: represents how rumor, certainty, social fear, and institutional pressure can distort truth inside the Silver Bullet story world
+motivations:
+  - preserve the group's belief that it is morally justified
+  - reinforce shared certainty among members
+  - frame opposition as proof of guilt within the fictional narrative
+  - maintain social influence inside the story world
+fears:
+  - loss of credibility
+  - internal disagreement
+  - preserved context that complicates the preferred story
+  - witnesses who do not accept the group's version of events
+relationships:
+  - character_id: jack-mercer
+    relationship: narrative opponent
+    status: hostile
+  - character_id: evelyn-blackwood
+    relationship: aligned story force / possible beneficiary depending on draft direction
+    status: aligned
+continuity_notes:
+  - The Widow Circle is both organization and collective antagonist.
+  - Members believe they are protecting society, which makes them more frightening as fictional antagonists than simple criminals.
+  - Future SB-002 work should expand doctrine, hierarchy, recruitment themes, symbols, and story escalation while keeping the design clearly fictional and non-instructional.
+trauma_continuity:
+  - their presence should increase isolation, distrust, reputation damage, and reality instability for the protagonist inside the story
+producer_review_required: true
+risk_flags:
+  - fictional-cult-design
+  - antagonist-system
+  - legal-reputation-sensitivity
+  - narrative-harm-theme
+notes: This collective profile anchors SB-002 Widow Circle Cult Design as a fictional narrative system, not a real-world playbook.
