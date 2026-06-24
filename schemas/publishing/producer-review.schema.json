@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://echomedia.ai/schemas/publishing/producer-review.schema.json",
+  "title": "Producer Review",
+  "description": "Sprint PUB-004 schema for Producer Review gate records.",
+  "type": "object",
+  "required": [
+    "review_id",
+    "artifact_id",
+    "artifact_type",
+    "review_status",
+    "reviewer",
+    "review_date",
+    "gate_decision",
+    "risk_findings"
+  ],
+  "properties": {
+    "sprint": { "type": "string" },
+    "review_id": { "type": "string" },
+    "artifact_id": { "type": "string" },
+    "artifact_type": {
+      "type": "string",
+      "enum": ["book", "series", "case-file", "chapter", "publishing-package", "audiobook-package", "marketing-package", "visual-package"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["not-started", "in-review", "changes-requested", "approved", "rejected", "waived"]
+    },
+    "reviewer": { "type": "string" },
+    "review_date": { "type": "string" },
+    "gate_decision": {
+      "type": "string",
+      "enum": ["approve", "approve-with-notes", "revise", "block", "waive"]
+    },
+    "risk_findings": {
+      "type": "object",
+      "properties": {
+        "canon": { "type": "string" },
+        "continuity": { "type": "string" },
+        "ip": { "type": "string" },
+        "likeness": { "type": "string" },
+        "legal_reputation": { "type": "string" },
+        "emotional_tone": { "type": "string" },
+        "publishing_readiness": { "type": "string" },
+        "brand_value": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "required_changes": { "type": "array", "items": { "type": "string" } },
+    "approval_notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}
