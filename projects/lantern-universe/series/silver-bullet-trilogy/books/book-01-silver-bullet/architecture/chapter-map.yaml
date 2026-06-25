@@ -1,0 +1,336 @@
+sprint: SB-004
+book_id: book-01-silver-bullet
+architecture_status: active
+chapter_count_target: 30
+structure: accusation_echo_machine_fracture_witness
+chapters:
+  - chapter: 1
+    title: The Good Day That Should Have Held
+    act: I
+    act_name: The Shot
+    plot_function: Establish Jack's fragile stability, competence, wounds, and daily stakes.
+    trauma_pressure: Body pain and guarded trust are present but controlled.
+    antagonist_pressure: None visible yet; atmosphere only.
+    narrative_corruption: Not active yet; baseline truth is established.
+    witness_thread: Establish Jack's memory habits and attention to detail.
+    continuity_impact: Opening character state for Jack.
+    producer_review_required: true
+  - chapter: 2
+    title: The First Wrong Note
+    act: I
+    act_name: The Shot
+    plot_function: Introduce first social distortion cue.
+    trauma_pressure: Hypervigilance notices tone before facts arrive.
+    antagonist_pressure: Indirect social atmosphere.
+    narrative_corruption: First sign that interpretation is shifting.
+    witness_thread: Jack notices a specific phrase, silence, or reaction.
+    continuity_impact: First timeline marker for social shift.
+    producer_review_required: true
+  - chapter: 3
+    title: The Message That Changes the Room
+    act: I
+    act_name: The Shot
+    plot_function: Make the first explicit threat to Jack's identity visible.
+    trauma_pressure: Shock, guarded response, and controlled panic.
+    antagonist_pressure: First visible framing from Evelyn/Circle orbit.
+    narrative_corruption: Context begins to detach from event.
+    witness_thread: Preserve the original wording.
+    continuity_impact: Inciting incident record.
+    producer_review_required: true
+  - chapter: 4
+    title: Context Becomes Fragile
+    act: I
+    act_name: The Shot
+    plot_function: Jack tries to explain, but explanation is already slower than story.
+    trauma_pressure: Over-explaining and fear of being misread.
+    antagonist_pressure: Moralized concern begins.
+    narrative_corruption: Context stripping begins.
+    witness_thread: Jack records sequence and context.
+    continuity_impact: First documentation behavior.
+    producer_review_required: true
+  - chapter: 5
+    title: The Circle at the Edge
+    act: I
+    act_name: The Shot
+    plot_function: Foreshadow the Widow Circle as social atmosphere.
+    trauma_pressure: Room scanning and distrust.
+    antagonist_pressure: Repeated language and careful social choreography.
+    narrative_corruption: False frame gains repeatability.
+    witness_thread: Jack identifies repeated phrases.
+    continuity_impact: Widow Circle foreshadowing.
+    producer_review_required: true
+  - chapter: 6
+    title: The Shot Lands
+    act: I
+    act_name: The Shot
+    plot_function: The accusation becomes operational and irreversible.
+    trauma_pressure: Body-first reaction; immediate identity threat.
+    antagonist_pressure: Evelyn/Circle pressure becomes clear enough to name later.
+    narrative_corruption: False story enters the world.
+    witness_thread: Jack preserves the first hard contradiction.
+    continuity_impact: Main inciting rupture.
+    producer_review_required: true
+  - chapter: 7
+    title: Everyone Is Careful Now
+    act: II
+    act_name: The Echo
+    plot_function: Show social warmth becoming caution.
+    trauma_pressure: Hypervigilance and isolation spiral.
+    antagonist_pressure: Atmosphere of concern.
+    narrative_corruption: People act on partial story.
+    witness_thread: Jack notices behavior changes.
+    continuity_impact: First social trust loss.
+    producer_review_required: true
+  - chapter: 8
+    title: The Version He Hasn't Heard
+    act: II
+    act_name: The Echo
+    plot_function: Reveal that the story has mutated.
+    trauma_pressure: Disorientation and anger under restraint.
+    antagonist_pressure: Widow Circle language appears in altered version.
+    narrative_corruption: Simplification intensifies.
+    witness_thread: Preserve difference between original and repeated version.
+    continuity_impact: Narrative mutation marker.
+    producer_review_required: true
+  - chapter: 9
+    title: The First Lost Ally
+    act: II
+    act_name: The Echo
+    plot_function: Remove a support pillar.
+    trauma_pressure: Abandonment wound and distrust.
+    antagonist_pressure: Social risk changes ally behavior.
+    narrative_corruption: Silence validates the false frame.
+    witness_thread: Ally's hesitation becomes future continuity point.
+    continuity_impact: Relationship state change.
+    producer_review_required: true
+  - chapter: 10
+    title: The Kindness That Cuts
+    act: II
+    act_name: The Echo
+    plot_function: Show harmful concern language.
+    trauma_pressure: Jack struggles between accepting care and recognizing harm.
+    antagonist_pressure: Circle's moral language becomes emotionally coercive in fiction.
+    narrative_corruption: Harm is reframed as protection.
+    witness_thread: Key phrase or repeated concern preserved.
+    continuity_impact: Widow Circle doctrine echo.
+    producer_review_required: true
+  - chapter: 11
+    title: Evidence Without Air
+    act: II
+    act_name: The Echo
+    plot_function: Evidence appears but lacks protective context.
+    trauma_pressure: Documentation burden increases.
+    antagonist_pressure: Opposing frame can reinterpret evidence.
+    narrative_corruption: Context-free evidence becomes unstable.
+    witness_thread: Evidence item preserved.
+    continuity_impact: Evidence continuity begins.
+    producer_review_required: true
+  - chapter: 12
+    title: Echo Chamber
+    act: II
+    act_name: The Echo
+    plot_function: The false story becomes ambient.
+    trauma_pressure: Exhaustion and social claustrophobia.
+    antagonist_pressure: Group atmosphere without full explanation.
+    narrative_corruption: Story exists independently of source.
+    witness_thread: Jack sees the pattern forming.
+    continuity_impact: Act II exit marker.
+    producer_review_required: true
+  - chapter: 13
+    title: Paper Has a Voice
+    act: III
+    act_name: The Machine
+    plot_function: A record gives the story durability.
+    trauma_pressure: Institutional fear and loss of agency.
+    antagonist_pressure: Indirect; the story is now record-shaped.
+    narrative_corruption: Record survives without full truth.
+    witness_thread: Jack identifies missing context.
+    continuity_impact: First record-horror marker.
+    producer_review_required: true
+  - chapter: 14
+    title: Risk Language
+    act: III
+    act_name: The Machine
+    plot_function: Shift dialogue from truth to risk management.
+    trauma_pressure: Jack feels categorized.
+    antagonist_pressure: Social pressure becomes procedural atmosphere.
+    narrative_corruption: Caution replaces curiosity.
+    witness_thread: Preserve exact institutional language.
+    continuity_impact: Institutional state marker.
+    producer_review_required: true
+  - chapter: 15
+    title: Jack Documents Everything
+    act: III
+    act_name: The Machine
+    plot_function: Documentation becomes survival and burden.
+    trauma_pressure: Compulsive order against chaos.
+    antagonist_pressure: Documentation can be misread by others.
+    narrative_corruption: Proof becomes suspect without trust.
+    witness_thread: Timeline-building begins.
+    continuity_impact: Living Anchor foreshadowing.
+    producer_review_required: true
+  - chapter: 16
+    title: The Body Betrays Him
+    act: III
+    act_name: The Machine
+    plot_function: Physical/trauma response changes a scene outcome.
+    trauma_pressure: Pain, exhaustion, startle, or shutdown.
+    antagonist_pressure: Others may misread Jack's body response.
+    narrative_corruption: Reaction becomes evidence in the wrong frame.
+    witness_thread: Internal truth versus observed behavior.
+    continuity_impact: Body continuity marker.
+    producer_review_required: true
+  - chapter: 17
+    title: The Process Does Not Know Him
+    act: III
+    act_name: The Machine
+    plot_function: A system treats Jack as a category.
+    trauma_pressure: Institutional injury.
+    antagonist_pressure: The false story drives procedure.
+    narrative_corruption: Personhood becomes file logic.
+    witness_thread: Preserve procedural contradiction.
+    continuity_impact: Institutional injury marker.
+    producer_review_required: true
+  - chapter: 18
+    title: The Record Survives Without the Truth
+    act: III
+    act_name: The Machine
+    plot_function: Partial record becomes more durable than lived reality.
+    trauma_pressure: Helplessness and anger.
+    antagonist_pressure: Story durability grows.
+    narrative_corruption: Record and truth separate.
+    witness_thread: Jack preserves the missing context.
+    continuity_impact: Core Lantern foreshadowing.
+    producer_review_required: true
+  - chapter: 19
+    title: The Machine Chooses Caution
+    act: III
+    act_name: The Machine
+    plot_function: Multiple cautious choices create major harm.
+    trauma_pressure: Collapse of trust in process.
+    antagonist_pressure: No single villain needed.
+    narrative_corruption: Caution reinforces false story.
+    witness_thread: Jack sees the system pattern.
+    continuity_impact: Act III exit marker.
+    producer_review_required: true
+  - chapter: 20
+    title: The Man in Their Story
+    act: IV
+    act_name: The Fracture
+    plot_function: Jack confronts his public double.
+    trauma_pressure: Identity injury.
+    antagonist_pressure: False version of Jack is socially active.
+    narrative_corruption: Public story challenges self-knowledge.
+    witness_thread: Jack names difference between self and story.
+    continuity_impact: Identity fracture begins.
+    producer_review_required: true
+  - chapter: 21
+    title: Old Wounds, New Language
+    act: IV
+    act_name: The Fracture
+    plot_function: Past trauma and current pressure echo each other.
+    trauma_pressure: Old wounds are reactivated by new language.
+    antagonist_pressure: Circle language hits prior injuries.
+    narrative_corruption: Current story borrows emotional force from past pain.
+    witness_thread: Jack distinguishes then from now.
+    continuity_impact: Trauma continuity deepens.
+    producer_review_required: true
+  - chapter: 22
+    title: The Quiet Doubter
+    act: IV
+    act_name: The Fracture
+    plot_function: Introduce potential witness/doubter thread.
+    trauma_pressure: Hope feels dangerous.
+    antagonist_pressure: Doubter fears social cost.
+    narrative_corruption: Doubt is weak but present.
+    witness_thread: Doubter preserves one key detail.
+    continuity_impact: Future witness setup.
+    producer_review_required: true
+  - chapter: 23
+    title: The Room Turns Inside Out
+    act: IV
+    act_name: The Fracture
+    plot_function: A familiar place becomes unsafe.
+    trauma_pressure: Safe-place failure.
+    antagonist_pressure: Social atmosphere has entered private space.
+    narrative_corruption: Jack cannot trust ordinary cues.
+    witness_thread: Sensory detail preserved.
+    continuity_impact: Place-state change.
+    producer_review_required: true
+  - chapter: 24
+    title: The False Mercy
+    act: IV
+    act_name: The Fracture
+    plot_function: Jack is offered surrender as relief.
+    trauma_pressure: Exhaustion makes surrender tempting.
+    antagonist_pressure: The story offers disappearance as peace.
+    narrative_corruption: Compliance would preserve the false frame.
+    witness_thread: Jack notices the trap in the offer.
+    continuity_impact: Moral choice marker.
+    producer_review_required: true
+  - chapter: 25
+    title: Fracture Point
+    act: IV
+    act_name: The Fracture
+    plot_function: Jack nearly loses faith that truth can matter.
+    trauma_pressure: Peak emotional cost.
+    antagonist_pressure: Social and institutional pressure converge.
+    narrative_corruption: Truth feels too fragile to carry.
+    witness_thread: One detail remains intact.
+    continuity_impact: Act IV exit marker.
+    producer_review_required: true
+  - chapter: 26
+    title: The Detail That Refuses to Die
+    act: V
+    act_name: The Witness
+    plot_function: A preserved detail reopens possibility.
+    trauma_pressure: Hope is cautious and painful.
+    antagonist_pressure: False story remains strong.
+    narrative_corruption: Contradiction weakens total collapse.
+    witness_thread: Key contradiction becomes active.
+    continuity_impact: Witness turn begins.
+    producer_review_required: true
+  - chapter: 27
+    title: Timeline of the Lie
+    act: V
+    act_name: The Witness
+    plot_function: Jack reconstructs sequence to restore context.
+    trauma_pressure: Documentation becomes disciplined witness, not panic.
+    antagonist_pressure: Pattern becomes visible.
+    narrative_corruption: Sequence challenges simplified story.
+    witness_thread: Timeline record created.
+    continuity_impact: Links to PUB-008 timeline registry.
+    producer_review_required: true
+  - chapter: 28
+    title: The Witness Thread
+    act: V
+    act_name: The Witness
+    plot_function: A witness/context thread confirms distortion.
+    trauma_pressure: Trust risk returns.
+    antagonist_pressure: Social cost remains.
+    narrative_corruption: Alternate context survives.
+    witness_thread: Witness thread preserved.
+    continuity_impact: Book 2 bridge.
+    producer_review_required: true
+  - chapter: 29
+    title: The Counter-Record
+    act: V
+    act_name: The Witness
+    plot_function: Jack protects or creates context-bearing record.
+    trauma_pressure: Agency through preservation.
+    antagonist_pressure: False story cannot be fully erased but can be challenged.
+    narrative_corruption: Counter-record interrupts total rewrite.
+    witness_thread: Context-bearing record survives.
+    continuity_impact: Living Anchor parallel.
+    producer_review_required: true
+  - chapter: 30
+    title: Not Cleared, Not Erased
+    act: V
+    act_name: The Witness
+    plot_function: Resolve Book 1 with survival, witness, and trilogy momentum.
+    trauma_pressure: Wound remains but does not define all of Jack.
+    antagonist_pressure: Widow Circle shape exposed, not defeated.
+    narrative_corruption: Truth survives without clean public victory.
+    witness_thread: Jack's witness path carries forward.
+    continuity_impact: Book 2 launch state.
+    producer_review_required: true
