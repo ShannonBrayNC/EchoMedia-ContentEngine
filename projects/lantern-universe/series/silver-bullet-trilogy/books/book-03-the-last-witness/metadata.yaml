@@ -1,0 +1,37 @@
+book_id: book-03-the-last-witness
+series_id: silver-bullet-trilogy
+universe_id: lantern-universe
+title: The Last Witness
+subtitle: null
+sprint_locked: SB-009
+status: concept-locked
+canon_status: canon-draft
+position: 3
+previous_book: book-02-the-echo-ledger
+next_book: null
+primary_protagonist: jack-mercer
+primary_antagonist_systems:
+  - widow-circle
+  - narrative-corruption
+  - final-record-pressure
+primary_themes:
+  - final witness
+  - distributed truth
+  - identity restoration
+  - human cost of memory
+  - truth beyond records
+  - moral courage
+  - refusal of erasure
+core_promise: >-
+  Jack Mercer confronts the final cost of witness when the Echo Ledger becomes
+  dangerous enough to bend every record around it and force a choice between
+  personal restoration and truth others can carry.
+book_function: >-
+  Resolve the Silver Bullet Trilogy by transforming Jack from survivor-witness
+  into a human anchor who refuses to be the only carrier of truth.
+producer_review_required: true
+publication_facing: false
+notes:
+  - Book 3 remains grounded psychological thriller/horror.
+  - The Living Anchor resolution must stay human, not technological.
+  - The ending should restore meaning without pretending wounds vanish.
