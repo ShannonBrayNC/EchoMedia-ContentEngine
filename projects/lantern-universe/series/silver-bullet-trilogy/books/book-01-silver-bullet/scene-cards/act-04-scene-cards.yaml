@@ -1,0 +1,272 @@
+sprint: SB-005
+book_id: book-01-silver-bullet
+act: IV
+act_name: The Fracture
+chapter_range: 20-25
+scene_count: 12
+purpose: >-
+  Push identity horror and personal fracture. Jack confronts the gap between
+  who he is and the version of him others are willing to accept.
+scenes:
+  - scene_id: sb1-c20-s01
+    chapter: 20
+    scene: 1
+    chapter_title: The Man in Their Story
+    scene_title: The Public Double
+    pov: Jack Mercer
+    location: Social/professional encounter or indirect report
+    scene_purpose: Make Jack confront the version of himself others are answering.
+    plot_movement: Jack sees that the distorted version now has social substance.
+    character_movement: He feels identity displacement directly.
+    trauma_pressure: Identity injury and guarded anger.
+    antagonist_pressure: The false version of Jack is socially active.
+    narrative_distortion: Public story competes with self-knowledge.
+    evidence_witness_thread: Jack records what this version claims or implies.
+    continuity_impact: Identity-fracture sequence begins.
+    producer_review_flags:
+      - character
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft Jack meeting his public double through someone else's eyes. The scene should feel intimate and horrifying.
+
+  - scene_id: sb1-c20-s02
+    chapter: 20
+    scene: 2
+    chapter_title: The Man in Their Story
+    scene_title: Not Me, But Mine to Carry
+    pov: Jack Mercer
+    location: Private aftermath
+    scene_purpose: Show Jack absorbing the burden of a story he did not make.
+    plot_movement: Jack updates his internal map: he must answer both reality and public perception.
+    character_movement: He begins separating self from story without denying the damage.
+    trauma_pressure: Shame pressure, exhaustion, and self-grounding.
+    antagonist_pressure: Indirect; the social version follows him home.
+    narrative_distortion: False identity tries to replace lived identity.
+    evidence_witness_thread: Jack writes a self-anchoring note or memory.
+    continuity_impact: Sets up Act IV identity survival.
+    producer_review_flags:
+      - trauma-dignity
+      - living-anchor-foreshadowing
+      - character
+    drafting_prompt: >-
+      Draft a private grounding moment. Jack should not magically recover; he should choose one true thing to hold.
+
+  - scene_id: sb1-c21-s01
+    chapter: 21
+    scene: 1
+    chapter_title: Old Wounds, New Language
+    scene_title: Familiar Words
+    pov: Jack Mercer
+    location: Triggering conversation, document, or memory-linked setting
+    scene_purpose: Connect current pressure to older wounds without over-explaining backstory.
+    plot_movement: A phrase or situation activates older emotional material.
+    character_movement: Jack recognizes that the present is borrowing force from the past.
+    trauma_pressure: Old wound reactivation, body memory, and emotional compression.
+    antagonist_pressure: Circle/process language echoes prior damage.
+    narrative_distortion: Current wording attaches itself to older pain.
+    evidence_witness_thread: Jack distinguishes then from now.
+    continuity_impact: Trauma continuity deepens.
+    producer_review_flags:
+      - trauma-dignity
+      - character
+      - producer-review-required
+    drafting_prompt: >-
+      Draft old trauma through sensation and reaction, not a long exposition block.
+
+  - scene_id: sb1-c21-s02
+    chapter: 21
+    scene: 2
+    chapter_title: Old Wounds, New Language
+    scene_title: The Difference Between Then and Now
+    pov: Jack Mercer
+    location: Private grounding / transition scene
+    scene_purpose: Let Jack reclaim enough distinction to stay functional.
+    plot_movement: Jack identifies one practical next action despite emotional flooding.
+    character_movement: He refuses total collapse without denying the wound.
+    trauma_pressure: Grounding under pressure.
+    antagonist_pressure: Indirect.
+    narrative_distortion: Memory pressure could blur timelines; Jack separates them.
+    evidence_witness_thread: Timeline separation note created.
+    continuity_impact: Preserves Jack's reliability and agency.
+    producer_review_flags:
+      - trauma-dignity
+      - timeline
+      - character
+    drafting_prompt: >-
+      Draft a hard, imperfect grounding scene. Jack should recover function, not peace.
+
+  - scene_id: sb1-c22-s01
+    chapter: 22
+    scene: 1
+    chapter_title: The Quiet Doubter
+    scene_title: The Person Who Notices
+    pov: Jack Mercer
+    location: Conversation with uncertain ally/witness
+    scene_purpose: Introduce someone who sees a contradiction but fears the social cost.
+    plot_movement: A potential witness confirms one piece of context.
+    character_movement: Jack feels hope and distrust at the same time.
+    trauma_pressure: Trust risk and guarded hope.
+    antagonist_pressure: Doubter fears Circle/social pressure.
+    narrative_distortion: Doubt weakens the total story but is not enough yet.
+    evidence_witness_thread: One external witness detail preserved.
+    continuity_impact: Sets up Act V witness thread.
+    producer_review_flags:
+      - character
+      - evidence-continuity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the doubter as frightened, not heroic. Their hesitation should matter.
+
+  - scene_id: sb1-c22-s02
+    chapter: 22
+    scene: 2
+    chapter_title: The Quiet Doubter
+    scene_title: Hope Has Teeth
+    pov: Jack Mercer
+    location: After the doubter encounter
+    scene_purpose: Show that even hope costs Jack because trust now feels dangerous.
+    plot_movement: Jack decides whether to preserve or act on the witness detail.
+    character_movement: He chooses careful preservation over immediate confrontation.
+    trauma_pressure: Fear of betrayal and cautious hope.
+    antagonist_pressure: Social pressure remains stronger than the doubter.
+    narrative_distortion: Witness detail must be protected from being folded into the false story.
+    evidence_witness_thread: Witness detail stored with context.
+    continuity_impact: Act V callback seed.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - character
+    drafting_prompt: >-
+      Draft the scene so hope feels dangerous. Jack should protect the witness detail like a fragile thing.
+
+  - scene_id: sb1-c23-s01
+    chapter: 23
+    scene: 1
+    chapter_title: The Room Turns Inside Out
+    scene_title: The Familiar Place Fails
+    pov: Jack Mercer
+    location: Once-safe room, home-adjacent place, work-adjacent place, or vehicle
+    scene_purpose: Turn a familiar setting emotionally unsafe.
+    plot_movement: Jack realizes the story has entered a place he relied on.
+    character_movement: He loses another layer of refuge.
+    trauma_pressure: Safe-place failure and sensory overload.
+    antagonist_pressure: Social atmosphere enters private/familiar space.
+    narrative_distortion: Place memory becomes contaminated by public story.
+    evidence_witness_thread: Sensory detail preserved.
+    continuity_impact: Place-state change.
+    producer_review_flags:
+      - trauma-dignity
+      - character
+      - fictionalization
+    drafting_prompt: >-
+      Draft the location as familiar first, then wrong. The horror is the transformation of ordinary space.
+
+  - scene_id: sb1-c23-s02
+    chapter: 23
+    scene: 2
+    chapter_title: The Room Turns Inside Out
+    scene_title: Exit Plan
+    pov: Jack Mercer
+    location: Same setting / departure
+    scene_purpose: Show Jack adapting to a place that no longer feels safe.
+    plot_movement: Jack leaves, repositions, or changes his routine.
+    character_movement: He becomes more isolated but more deliberate.
+    trauma_pressure: Avoidance and survival planning.
+    antagonist_pressure: Indirect but pervasive.
+    narrative_distortion: The story has changed how Jack occupies space.
+    evidence_witness_thread: Jack records why the place changed for him.
+    continuity_impact: Routine disruption carries forward.
+    producer_review_flags:
+      - trauma-dignity
+      - timeline
+    drafting_prompt: >-
+      Draft the exit as a strategic adaptation, not cowardice.
+
+  - scene_id: sb1-c24-s01
+    chapter: 24
+    scene: 1
+    chapter_title: The False Mercy
+    scene_title: The Easy Way Out
+    pov: Jack Mercer
+    location: Conversation, message, or formal suggestion
+    scene_purpose: Offer Jack relief through silence, compliance, apology, or disappearance.
+    plot_movement: Jack is presented with a path that reduces pressure but preserves the false frame.
+    character_movement: Exhaustion makes the offer tempting.
+    trauma_pressure: Fatigue and desire for the pain to stop.
+    antagonist_pressure: The social story rewards surrender.
+    narrative_distortion: Compliance would make the false frame look settled.
+    evidence_witness_thread: Jack preserves the wording of the offer.
+    continuity_impact: Moral choice marker.
+    producer_review_flags:
+      - legal-reputation-sensitivity
+      - trauma-dignity
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the offer as genuinely tempting. Jack should understand why surrender would feel like rest.
+
+  - scene_id: sb1-c24-s02
+    chapter: 24
+    scene: 2
+    chapter_title: The False Mercy
+    scene_title: The Trap in Peace
+    pov: Jack Mercer
+    location: Private aftermath
+    scene_purpose: Have Jack identify why the offered peace would erase context.
+    plot_movement: Jack refuses to trade truth for temporary quiet.
+    character_movement: He chooses witness preservation over relief.
+    trauma_pressure: Exhausted resolve.
+    antagonist_pressure: The false frame remains easier than resistance.
+    narrative_distortion: Peace without truth becomes another form of erasure.
+    evidence_witness_thread: Jack records the cost of accepting the offer.
+    continuity_impact: Prepares Act V witness turn.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the refusal as quiet and costly. No speechifying; let the decision carry weight.
+
+  - scene_id: sb1-c25-s01
+    chapter: 25
+    scene: 1
+    chapter_title: Fracture Point
+    scene_title: Too Much Weight
+    pov: Jack Mercer
+    location: Isolated space
+    scene_purpose: Bring Jack to the emotional low point of Book 1 without stripping agency.
+    plot_movement: Jack nearly loses faith that truth can still matter.
+    character_movement: He reaches the lowest point of identity pressure.
+    trauma_pressure: Peak exhaustion, grief, and reality strain.
+    antagonist_pressure: Social and institutional pressure converge.
+    narrative_distortion: The false story feels stronger than lived truth.
+    evidence_witness_thread: One detail remains accessible.
+    continuity_impact: Act IV crisis marker.
+    producer_review_flags:
+      - trauma-dignity
+      - producer-review-required
+      - character
+    drafting_prompt: >-
+      Draft with restraint and dignity. The scene should be dark but not exploitative.
+
+  - scene_id: sb1-c25-s02
+    chapter: 25
+    scene: 2
+    chapter_title: Fracture Point
+    scene_title: The Detail Remains
+    pov: Jack Mercer
+    location: Same isolated space / evidence review
+    scene_purpose: End Act IV with one preserved fact that cannot be absorbed by the false story.
+    plot_movement: Jack finds or remembers the detail that will open Act V.
+    character_movement: He does not recover, but he reorients around survival of truth.
+    trauma_pressure: Focus returning through exhaustion.
+    antagonist_pressure: The false story remains dominant.
+    narrative_distortion: One contradiction resists collapse.
+    evidence_witness_thread: Key Act V detail preserved.
+    continuity_impact: Direct handoff to Act V.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - timeline
+    drafting_prompt: >-
+      Draft the ending as a small light, not a victory. One true thing survives.
