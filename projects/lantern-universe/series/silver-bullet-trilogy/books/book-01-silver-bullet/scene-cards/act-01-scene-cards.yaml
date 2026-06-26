@@ -1,0 +1,274 @@
+sprint: SB-005
+book_id: book-01-silver-bullet
+act: I
+act_name: The Shot
+chapter_range: 1-6
+scene_count: 12
+purpose: >-
+  Establish Jack Mercer's fragile stability, his body and trust constraints,
+  the first social distortion cues, and the first irreversible rupture in the
+  story world.
+scenes:
+  - scene_id: sb1-c01-s01
+    chapter: 1
+    scene: 1
+    chapter_title: The Good Day That Should Have Held
+    scene_title: Morning Systems Check
+    pov: Jack Mercer
+    location: Jack's home / work setup
+    scene_purpose: Establish Jack's competence, pain management, technical identity, and need for controlled routines.
+    plot_movement: The reader sees the version of Jack that the later public story will threaten.
+    character_movement: Jack begins stable but guarded, relying on routine to keep body and mind functional.
+    trauma_pressure: Body memory, guarded trust, and controlled hypervigilance.
+    antagonist_pressure: None visible yet; only baseline normalcy.
+    narrative_distortion: Establishes true context before distortion begins.
+    evidence_witness_thread: Jack's habit of tracking details, messages, and time is introduced.
+    continuity_impact: Opening state for Jack Mercer.
+    producer_review_flags:
+      - character
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft Jack moving through a competent morning with small adaptations for pain and limitation. Let capability and cost coexist.
+
+  - scene_id: sb1-c01-s02
+    chapter: 1
+    scene: 2
+    chapter_title: The Good Day That Should Have Held
+    scene_title: A Normal Conversation With Edges
+    pov: Jack Mercer
+    location: Public or professional interaction
+    scene_purpose: Show Jack inside ordinary social contact before the social temperature changes.
+    plot_movement: Jack completes a routine interaction that subtly shows what he still values: usefulness, fairness, and being seen accurately.
+    character_movement: Jack lets himself believe the day may hold.
+    trauma_pressure: Low-level scanning and guarded humor.
+    antagonist_pressure: None overt.
+    narrative_distortion: Truth is still whole, but fragile.
+    evidence_witness_thread: A line of dialogue or timestamp later contrasts with the changed story world.
+    continuity_impact: Establishes social baseline.
+    producer_review_flags:
+      - character
+      - timeline
+    drafting_prompt: >-
+      Draft a simple interaction with warmth and restraint. Make the normal feel worth losing.
+
+  - scene_id: sb1-c02-s01
+    chapter: 2
+    scene: 1
+    chapter_title: The First Wrong Note
+    scene_title: The Pause
+    pov: Jack Mercer
+    location: Phone call, hallway, inbox, or meeting space
+    scene_purpose: Introduce the first social cue that Jack cannot fully explain.
+    plot_movement: Someone reacts with a hesitation or carefulness that was not there before.
+    character_movement: Jack's body notices before his conscious mind accepts the change.
+    trauma_pressure: Hypervigilance and pattern detection.
+    antagonist_pressure: Indirect atmosphere; the Circle is not named.
+    narrative_distortion: A story may already be moving outside Jack's view.
+    evidence_witness_thread: Jack remembers the exact pause, phrase, or avoided answer.
+    continuity_impact: First social-shift marker.
+    producer_review_flags:
+      - trauma-dignity
+      - widow-circle
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the tension through silence, not explanation. Let the reader feel the wrongness before knowing its source.
+
+  - scene_id: sb1-c02-s02
+    chapter: 2
+    scene: 2
+    chapter_title: The First Wrong Note
+    scene_title: Jack Checks the Record
+    pov: Jack Mercer
+    location: Jack's devices / message history
+    scene_purpose: Show Jack verifying reality through records while still trying not to overreact.
+    plot_movement: Jack finds no clear answer, only enough ambiguity to unsettle him.
+    character_movement: He shifts from casual concern to controlled vigilance.
+    trauma_pressure: Documentation impulse and fear of misreading threat.
+    antagonist_pressure: Indirect.
+    narrative_distortion: Context has not broken yet, but Jack senses it could.
+    evidence_witness_thread: The first saved message or note is created.
+    continuity_impact: Starts evidence habit for later witness arc.
+    producer_review_flags:
+      - evidence-continuity
+      - trauma-dignity
+    drafting_prompt: >-
+      Draft Jack saving a detail without making it feel paranoid. The behavior should be practical and emotionally loaded.
+
+  - scene_id: sb1-c03-s01
+    chapter: 3
+    scene: 1
+    chapter_title: The Message That Changes the Room
+    scene_title: The Wording Arrives
+    pov: Jack Mercer
+    location: Inbox / phone / private room
+    scene_purpose: Deliver the first explicit distorted framing of Jack.
+    plot_movement: The story world changes from unease to named danger.
+    character_movement: Jack shifts from confusion to stunned self-protection.
+    trauma_pressure: Shock response, controlled breathing, and body-first fear.
+    antagonist_pressure: Evelyn/Circle orbit first becomes visible through language.
+    narrative_distortion: A partial or misleading version of events appears.
+    evidence_witness_thread: Original wording is preserved.
+    continuity_impact: Inciting document/message marker.
+    producer_review_flags:
+      - legal-reputation-sensitivity
+      - fictionalization
+      - evidence-continuity
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the message as emotionally devastating without overloading it with exposition. Focus on Jack reading, rereading, and recognizing the trap in the wording.
+
+  - scene_id: sb1-c03-s02
+    chapter: 3
+    scene: 2
+    chapter_title: The Message That Changes the Room
+    scene_title: No Neutral Reply
+    pov: Jack Mercer
+    location: Same private space / transition to outside world
+    scene_purpose: Show that every possible response feels risky.
+    plot_movement: Jack begins drafting, deleting, and choosing restraint.
+    character_movement: He learns that language itself has become dangerous.
+    trauma_pressure: Over-explanation impulse and fear of being misread.
+    antagonist_pressure: The framing controls the response field.
+    narrative_distortion: Defense may be read as proof within the distorted frame.
+    evidence_witness_thread: Drafted/deleted responses become internal witness data.
+    continuity_impact: Establishes speech-risk dynamic.
+    producer_review_flags:
+      - trauma-dignity
+      - fictionalization
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft Jack discovering that there is no clean sentence that can restore context quickly enough.
+
+  - scene_id: sb1-c04-s01
+    chapter: 4
+    scene: 1
+    chapter_title: Context Becomes Fragile
+    scene_title: The Explanation Slows Down
+    pov: Jack Mercer
+    location: Conversation with ally or authority-adjacent figure
+    scene_purpose: Show Jack trying to restore context and realizing complexity is too slow.
+    plot_movement: A listener accepts pieces of his explanation but remains cautious.
+    character_movement: Jack moves from confidence in truth to fear that truth needs protection.
+    trauma_pressure: Over-explaining, fatigue, and frustration.
+    antagonist_pressure: Soft social caution.
+    narrative_distortion: Simpler story outpaces fuller truth.
+    evidence_witness_thread: Jack identifies which context keeps being omitted.
+    continuity_impact: Context-loss pattern begins.
+    producer_review_flags:
+      - trauma-dignity
+      - evidence-continuity
+      - character
+    drafting_prompt: >-
+      Draft the conversation so Jack is reasonable, but the room still does not return to safety.
+
+  - scene_id: sb1-c04-s02
+    chapter: 4
+    scene: 2
+    chapter_title: Context Becomes Fragile
+    scene_title: The First Timeline Note
+    pov: Jack Mercer
+    location: Jack's desk / vehicle / notebook
+    scene_purpose: Convert Jack's anxiety into his first deliberate timeline note.
+    plot_movement: Jack creates a chronological record of what happened and when.
+    character_movement: He begins shifting from defense to preservation.
+    trauma_pressure: Need for order under pressure.
+    antagonist_pressure: Indirect; the pressure has made documentation necessary.
+    narrative_distortion: Timeline becomes a counterweight to simplified framing.
+    evidence_witness_thread: First timeline note created.
+    continuity_impact: Foreshadows Living Anchor alignment.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - evidence-continuity
+      - timeline
+    drafting_prompt: >-
+      Draft this as a quiet survival act. The timeline should feel necessary, not obsessive.
+
+  - scene_id: sb1-c05-s01
+    chapter: 5
+    scene: 1
+    chapter_title: The Circle at the Edge
+    scene_title: Shared Phrases
+    pov: Jack Mercer
+    location: Social setting, group message, or semi-public conversation
+    scene_purpose: Let repeated language reveal a coordinated social atmosphere without naming the group fully.
+    plot_movement: Jack hears similar phrasing from more than one direction.
+    character_movement: He realizes the story has a social shape.
+    trauma_pressure: Pattern recognition and distrust.
+    antagonist_pressure: Widow Circle atmosphere through concern language.
+    narrative_distortion: Repetition makes the distorted story feel normal.
+    evidence_witness_thread: Jack records repeated phrases.
+    continuity_impact: Sets up SB-002 design elements.
+    producer_review_flags:
+      - widow-circle
+      - fictionalization
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the scene with ordinary language that feels increasingly rehearsed as Jack hears it repeated.
+
+  - scene_id: sb1-c05-s02
+    chapter: 5
+    scene: 2
+    chapter_title: The Circle at the Edge
+    scene_title: Concern With Teeth
+    pov: Jack Mercer
+    location: One-on-one conversation or text exchange
+    scene_purpose: Show harmful concern language cutting into Jack's sense of safety.
+    plot_movement: A character frames distance or caution as kindness.
+    character_movement: Jack feels the first deep social isolation.
+    trauma_pressure: Abandonment wound and anger under restraint.
+    antagonist_pressure: Circle-adjacent moral certainty.
+    narrative_distortion: Care language conceals judgment.
+    evidence_witness_thread: Key phrase preserved.
+    continuity_impact: Establishes Circle tone.
+    producer_review_flags:
+      - widow-circle
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the kindness as plausible enough that Jack cannot easily object without sounding defensive.
+
+  - scene_id: sb1-c06-s01
+    chapter: 6
+    scene: 1
+    chapter_title: The Shot Lands
+    scene_title: The Story Becomes Real
+    pov: Jack Mercer
+    location: Work, legal-adjacent, community, or family-facing setting
+    scene_purpose: Make the distorted story produce a concrete consequence.
+    plot_movement: Jack loses access, trust, standing, or a practical foothold.
+    character_movement: He recognizes the situation will not clear itself quickly.
+    trauma_pressure: Body-first reaction and controlled panic.
+    antagonist_pressure: Evelyn/Circle pressure becomes materially visible.
+    narrative_distortion: Social meaning becomes practical reality.
+    evidence_witness_thread: Jack preserves the first consequence and its timing.
+    continuity_impact: Main Book 1 rupture.
+    producer_review_flags:
+      - legal-reputation-sensitivity
+      - fictionalization
+      - trauma-dignity
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the consequence as procedural or social rather than melodramatic. The horror is that it feels plausible.
+
+  - scene_id: sb1-c06-s02
+    chapter: 6
+    scene: 2
+    chapter_title: The Shot Lands
+    scene_title: The First Contradiction
+    pov: Jack Mercer
+    location: Private space after the rupture
+    scene_purpose: End Act I with one preserved contradiction that can matter later.
+    plot_movement: Jack identifies a fact that does not fit the circulating story.
+    character_movement: He chooses preservation over immediate emotional reaction.
+    trauma_pressure: Focus under strain.
+    antagonist_pressure: The false frame remains powerful.
+    narrative_distortion: Contradiction threatens the simplified story.
+    evidence_witness_thread: First hard contradiction preserved.
+    continuity_impact: Act I exit marker and Act V callback seed.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - timeline
+    drafting_prompt: >-
+      Draft Jack holding onto one detail like a lifeline. The chapter should close with dread and purpose.
