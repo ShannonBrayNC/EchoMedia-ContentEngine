@@ -1,0 +1,318 @@
+sprint: SB-005
+book_id: book-01-silver-bullet
+act: III
+act_name: The Machine
+chapter_range: 13-19
+scene_count: 14
+purpose: >-
+  Move the story from social pressure into records, process, categories, and
+  institutional caution. The central horror is that ordinary systems can preserve
+  partial context as durable reality.
+scenes:
+  - scene_id: sb1-c13-s01
+    chapter: 13
+    scene: 1
+    chapter_title: Paper Has a Voice
+    scene_title: The Formal Line
+    pov: Jack Mercer
+    location: Email, letter, form, meeting notice, or process artifact
+    scene_purpose: Introduce the first formal record that gives the distorted story weight.
+    plot_movement: A document or message makes Jack's situation procedural.
+    character_movement: Jack realizes the matter has moved beyond social discomfort.
+    trauma_pressure: Institutional fear and loss of control.
+    antagonist_pressure: Indirect; prior social pressure has become record-shaped.
+    narrative_distortion: Partial context enters a durable format.
+    evidence_witness_thread: Jack preserves the formal wording and timestamp.
+    continuity_impact: First record-horror marker.
+    producer_review_flags:
+      - institutional-parallel
+      - evidence-continuity
+      - legal-reputation-sensitivity
+    drafting_prompt: >-
+      Draft the record as calm and ordinary. The threat should come from how official it feels.
+
+  - scene_id: sb1-c13-s02
+    chapter: 13
+    scene: 2
+    chapter_title: Paper Has a Voice
+    scene_title: What the Paper Cannot Know
+    pov: Jack Mercer
+    location: Jack's private review space
+    scene_purpose: Contrast the record's flat language with the missing lived context.
+    plot_movement: Jack identifies what the document omits.
+    character_movement: He moves from shock to precision.
+    trauma_pressure: Anger, exhaustion, and disciplined note-taking.
+    antagonist_pressure: The false frame benefits from omitted context.
+    narrative_distortion: Record and reality begin separating.
+    evidence_witness_thread: Missing context list created.
+    continuity_impact: Sets up counter-record logic.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - trauma-dignity
+    drafting_prompt: >-
+      Draft Jack reading the gap between the words and the truth. Let the omissions hurt more than the statements.
+
+  - scene_id: sb1-c14-s01
+    chapter: 14
+    scene: 1
+    chapter_title: Risk Language
+    scene_title: Truth Leaves the Room
+    pov: Jack Mercer
+    location: Meeting, call, or formal conversation
+    scene_purpose: Shift the dialogue from truth to risk, optics, and caution.
+    plot_movement: A decision-maker treats uncertainty as a reason to protect the institution.
+    character_movement: Jack recognizes fairness and caution are not the same thing.
+    trauma_pressure: Being categorized instead of known.
+    antagonist_pressure: Social atmosphere affects procedural language.
+    narrative_distortion: Risk language replaces curiosity.
+    evidence_witness_thread: Key institutional phrase preserved.
+    continuity_impact: Institutional pressure escalates.
+    producer_review_flags:
+      - institutional-parallel
+      - legal-reputation-sensitivity
+      - trauma-dignity
+    drafting_prompt: >-
+      Draft the conversation so nobody needs to be cruel. The process itself should feel cold enough.
+
+  - scene_id: sb1-c14-s02
+    chapter: 14
+    scene: 2
+    chapter_title: Risk Language
+    scene_title: The Category
+    pov: Jack Mercer
+    location: Transition from formal space to private space
+    scene_purpose: Show Jack feeling reduced from person to category.
+    plot_movement: Jack realizes the language used about him will shape future decisions.
+    character_movement: Identity injury deepens.
+    trauma_pressure: Institutional injury and emotional containment.
+    antagonist_pressure: The distorted frame is now embedded in category language.
+    narrative_distortion: Category replaces context.
+    evidence_witness_thread: Jack records the category and who used it.
+    continuity_impact: Identity-loss arc deepens.
+    producer_review_flags:
+      - character
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the moment Jack understands the label may outlive the truth.
+
+  - scene_id: sb1-c15-s01
+    chapter: 15
+    scene: 1
+    chapter_title: Jack Documents Everything
+    scene_title: The Folder System
+    pov: Jack Mercer
+    location: Jack's workspace
+    scene_purpose: Show Jack building a structured evidence/context folder.
+    plot_movement: Documentation becomes organized and intentional.
+    character_movement: Technical identity becomes a survival tool.
+    trauma_pressure: Need for order against chaos.
+    antagonist_pressure: Indirect; distortion makes rigor necessary.
+    narrative_distortion: Context preservation resists simplification.
+    evidence_witness_thread: Folder structure and timeline created.
+    continuity_impact: Direct setup for Act V counter-record.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - timeline
+    drafting_prompt: >-
+      Draft the folder system as a bridge between Jack's technical competence and his need to keep truth alive.
+
+  - scene_id: sb1-c15-s02
+    chapter: 15
+    scene: 2
+    chapter_title: Jack Documents Everything
+    scene_title: The Obsession Question
+    pov: Jack Mercer
+    location: Conversation or internal monologue after documentation scene
+    scene_purpose: Raise the danger that documentation can be misread.
+    plot_movement: Jack sees that even careful preservation can be framed poorly.
+    character_movement: He questions his own survival method without abandoning it.
+    trauma_pressure: Shame, doubt, and controlled fear.
+    antagonist_pressure: The distorted frame can interpret rigor as instability.
+    narrative_distortion: Preservation itself becomes vulnerable to distortion.
+    evidence_witness_thread: Jack defines why the record exists.
+    continuity_impact: Documentation remains costly across later chapters.
+    producer_review_flags:
+      - trauma-dignity
+      - evidence-continuity
+      - character
+    drafting_prompt: >-
+      Draft the tension between necessary documentation and the fear of looking consumed by it.
+
+  - scene_id: sb1-c16-s01
+    chapter: 16
+    scene: 1
+    chapter_title: The Body Betrays Him
+    scene_title: Pain Changes the Timing
+    pov: Jack Mercer
+    location: Physical transition, meeting arrival, vehicle, or public space
+    scene_purpose: Make Jack's body limitation alter the outcome of a scene.
+    plot_movement: Pain, delay, or visible strain changes how others perceive him.
+    character_movement: Jack feels betrayed by a body he has worked hard to manage.
+    trauma_pressure: Body pain, fatigue, and controlled frustration.
+    antagonist_pressure: Social interpretation turns visible strain into meaning.
+    narrative_distortion: A body response is read through the wrong frame.
+    evidence_witness_thread: Jack notes the actual cause of the visible reaction.
+    continuity_impact: Body-continuity marker.
+    producer_review_flags:
+      - trauma-dignity
+      - character
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the body limitation with dignity. The pain should affect action without defining all of Jack.
+
+  - scene_id: sb1-c16-s02
+    chapter: 16
+    scene: 2
+    chapter_title: The Body Betrays Him
+    scene_title: Misread Reaction
+    pov: Jack Mercer
+    location: Same or immediate follow-up
+    scene_purpose: Show how a trauma/body response can be interpreted incorrectly.
+    plot_movement: Another character reads Jack's reaction through the circulating story.
+    character_movement: Jack realizes his body can be used as a false witness against him.
+    trauma_pressure: Startle, freezing, anger, or shutdown.
+    antagonist_pressure: The false frame shapes interpretation.
+    narrative_distortion: Reaction replaces cause.
+    evidence_witness_thread: Jack preserves the sequence leading to the reaction.
+    continuity_impact: Intensifies speech/body risk for Act IV.
+    producer_review_flags:
+      - trauma-dignity
+      - fictionalization
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the misreading as plausible. The reader should know the truth while seeing why the room gets it wrong.
+
+  - scene_id: sb1-c17-s01
+    chapter: 17
+    scene: 1
+    chapter_title: The Process Does Not Know Him
+    scene_title: Intake Logic
+    pov: Jack Mercer
+    location: Formal process setting
+    scene_purpose: Put Jack inside a system that asks for categories instead of context.
+    plot_movement: Jack is forced to translate lived truth into limited fields or answers.
+    character_movement: He feels personhood shrinking inside process logic.
+    trauma_pressure: Institutional injury and guarded cooperation.
+    antagonist_pressure: Indirect; the social story informs process posture.
+    narrative_distortion: Categories flatten complexity.
+    evidence_witness_thread: Jack records what the process could not capture.
+    continuity_impact: System-state marker.
+    producer_review_flags:
+      - institutional-parallel
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the scene around mismatch: what Jack needs to say versus what the process allows him to say.
+
+  - scene_id: sb1-c17-s02
+    chapter: 17
+    scene: 2
+    chapter_title: The Process Does Not Know Him
+    scene_title: The Missing Human
+    pov: Jack Mercer
+    location: Outside or after the formal process
+    scene_purpose: Show the emotional aftermath of being processed rather than heard.
+    plot_movement: Jack updates his strategy: preserving context matters more than expecting process to hold it.
+    character_movement: He becomes more disciplined and less trusting.
+    trauma_pressure: Numbness, anger, and exhaustion.
+    antagonist_pressure: The false frame survives because process cannot hold the full person.
+    narrative_distortion: Institutional record omits human continuity.
+    evidence_witness_thread: Jack writes a context memo.
+    continuity_impact: Leads into chapter 18 record/truth split.
+    producer_review_flags:
+      - trauma-dignity
+      - living-anchor-foreshadowing
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the aftermath as quiet but consequential. Jack should decide something about how to survive the process.
+
+  - scene_id: sb1-c18-s01
+    chapter: 18
+    scene: 1
+    chapter_title: The Record Survives Without the Truth
+    scene_title: The Partial Record
+    pov: Jack Mercer
+    location: File review / official note / message archive
+    scene_purpose: Show a partial record becoming more durable than lived truth.
+    plot_movement: Jack finds a record that is accurate in fragments but false in effect.
+    character_movement: He understands why fragments are dangerous.
+    trauma_pressure: Helplessness and precise anger.
+    antagonist_pressure: The distorted frame benefits from partial accuracy.
+    narrative_distortion: True fragments assemble into false meaning.
+    evidence_witness_thread: Missing context attached to the record.
+    continuity_impact: Core record-horror event.
+    producer_review_flags:
+      - evidence-continuity
+      - institutional-parallel
+      - living-anchor-foreshadowing
+    drafting_prompt: >-
+      Draft the record so each line can be technically defensible while emotionally wrong.
+
+  - scene_id: sb1-c18-s02
+    chapter: 18
+    scene: 2
+    chapter_title: The Record Survives Without the Truth
+    scene_title: Context Cannot Be Implied
+    pov: Jack Mercer
+    location: Jack's workspace
+    scene_purpose: Make Jack realize context must be explicit or it will disappear.
+    plot_movement: Jack adds context notes to every surviving record.
+    character_movement: He moves closer to witness discipline.
+    trauma_pressure: Focus through emotional fatigue.
+    antagonist_pressure: Indirect; distorted record pressure remains.
+    narrative_distortion: Context is treated as a necessary survival layer.
+    evidence_witness_thread: Context annotation method created.
+    continuity_impact: Direct path to Act V counter-record.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - evidence-continuity
+      - timeline
+    drafting_prompt: >-
+      Draft the method as hard-won clarity. Jack is not solving the whole problem, but he is learning how truth survives.
+
+  - scene_id: sb1-c19-s01
+    chapter: 19
+    scene: 1
+    chapter_title: The Machine Chooses Caution
+    scene_title: Death by Reasonable Decisions
+    pov: Jack Mercer
+    location: Series of calls/messages or one composite institutional scene
+    scene_purpose: Show several reasonable choices compounding into serious harm.
+    plot_movement: Jack loses more ground because everyone chooses caution.
+    character_movement: He understands no single person has to act maliciously for damage to deepen.
+    trauma_pressure: Process fatigue and trust collapse.
+    antagonist_pressure: The false story has become safer to honor than question.
+    narrative_distortion: Caution reinforces distorted reality.
+    evidence_witness_thread: Jack tracks decision points.
+    continuity_impact: Act III system-pressure peak.
+    producer_review_flags:
+      - institutional-parallel
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the accumulation. Each choice should be small, plausible, and devastating in combination.
+
+  - scene_id: sb1-c19-s02
+    chapter: 19
+    scene: 2
+    chapter_title: The Machine Chooses Caution
+    scene_title: The System Pattern
+    pov: Jack Mercer
+    location: Private analysis space
+    scene_purpose: End Act III with Jack seeing the pattern of process plus story.
+    plot_movement: Jack identifies that the problem is now social narrative plus durable records plus caution.
+    character_movement: He moves from reactive fear to grim understanding.
+    trauma_pressure: Exhaustion transformed into analysis.
+    antagonist_pressure: The Circle remains present as atmosphere, now amplified by process.
+    narrative_distortion: Pattern recognition interrupts helplessness.
+    evidence_witness_thread: System-pattern note created.
+    continuity_impact: Act III exit marker and Act IV identity-fracture setup.
+    producer_review_flags:
+      - evidence-continuity
+      - timeline
+      - living-anchor-foreshadowing
+    drafting_prompt: >-
+      Draft the realization as a cold turn: Jack finally sees the shape, but seeing it does not free him.
