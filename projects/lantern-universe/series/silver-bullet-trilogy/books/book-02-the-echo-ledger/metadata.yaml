@@ -1,0 +1,33 @@
+book_id: book-02-the-echo-ledger
+series_id: silver-bullet-trilogy
+universe_id: lantern-universe
+title: The Echo Ledger
+subtitle: null
+sprint_locked: SB-008
+status: concept-locked
+canon_status: canon-draft
+position: 2
+previous_book: book-01-silver-bullet
+next_book: book-03-to-be-locked
+primary_protagonist: jack-mercer
+primary_antagonist_systems:
+  - widow-circle
+  - narrative-corruption
+primary_themes:
+  - witness preservation
+  - record survival
+  - prior targets
+  - social echo
+  - institutional memory
+  - fear of becoming evidence
+core_promise: >-
+  Jack Mercer follows the surviving fragments of prior targets and discovers
+  that his Silver Bullet was one entry in a larger ledger of distorted lives.
+book_function: >-
+  Expand from personal survival to pattern discovery and witness network formation.
+producer_review_required: true
+publication_facing: false
+notes:
+  - Book 2 remains grounded psychological thriller/horror.
+  - Lantern mythology may become more visible but should not overpower Jack's story.
+  - The Echo Ledger should preserve Book 1 consequences rather than resetting Jack.
