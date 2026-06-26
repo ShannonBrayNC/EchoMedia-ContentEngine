@@ -1,0 +1,265 @@
+sprint: SB-006A
+book_id: book-01-silver-bullet
+source_pass: SB-006
+status: active-expansion-plan
+expansion_goal: >-
+  Expand the concise structural prose draft into fuller novel-length chapters
+  while preserving SB-004/SB-005 architecture and SB-007 Producer Review constraints.
+chapter_targets:
+  - act: I
+    act_name: The Shot
+    chapters: 1-6
+    expansion_focus:
+      - establish Jack's ordinary life before rupture
+      - add richer sensory baseline
+      - deepen early relationship context
+      - make the first wrong notes subtle but unmistakable
+    target_changes:
+      - chapter: 1
+        title: The Good Day That Should Have Held
+        add:
+          - fuller work scene showing technical competence
+          - one warm social baseline interaction
+          - clearer body-management routine
+        preserve:
+          - normalcy as worth losing
+          - record habit as foreshadowing
+      - chapter: 2
+        title: The First Wrong Note
+        add:
+          - stronger contrast between normal pause and threatening pause
+          - one external detail that later repeats
+        preserve:
+          - ambiguity before confirmation
+      - chapter: 3
+        title: The Message That Changes the Room
+        add:
+          - embodied reaction before analysis
+          - stronger invented specificity around Evelyn's fictional voice
+        preserve:
+          - message as arrangement, not blunt accusation
+      - chapter: 4
+        title: Context Becomes Fragile
+        add:
+          - longer dialogue showing how truth slows down
+          - Jack's first deliberate timeline method
+        preserve:
+          - context as fragile and costly
+      - chapter: 5
+        title: The Circle at the Edge
+        add:
+          - richer social setting
+          - repeated language from multiple directions
+        preserve:
+          - Widow Circle as atmosphere, not exposition
+      - chapter: 6
+        title: The Shot Lands
+        add:
+          - concrete practical consequence
+          - stronger Act I closing dread
+        preserve:
+          - first hard contradiction
+
+  - act: II
+    act_name: The Echo
+    chapters: 7-12
+    expansion_focus:
+      - differentiate each social-loss beat
+      - deepen Marcus/Kendra/Lena/Devin individuality
+      - show story mutation through social behavior
+    target_changes:
+      - chapter: 7
+        title: Everyone Is Careful Now
+        add:
+          - public-space scene with social temperature shift
+          - one professional consequence seed
+        preserve:
+          - carefulness as pressure
+      - chapter: 8
+        title: The Version He Hasn't Heard
+        add:
+          - fuller Devin voice and motive
+          - clearer version-drift table logic
+        preserve:
+          - story compression motif
+      - chapter: 9
+        title: The First Lost Ally
+        add:
+          - prior Marcus friendship memory before present loss
+          - a sharper but restrained call ending
+        preserve:
+          - loss without villainizing Marcus
+      - chapter: 10
+        title: The Kindness That Cuts
+        add:
+          - Lena's relationship context
+          - stronger soup-as-ambiguous-care motif
+        preserve:
+          - care and harm together
+      - chapter: 11
+        title: Evidence Without Air
+        add:
+          - more concrete evidence-object handling
+          - context-envelope method with emotional cost
+        preserve:
+          - evidence as unstable without context
+      - chapter: 12
+        title: Echo Chamber
+        add:
+          - broader echo map
+          - one anonymous/social pressure beat
+        preserve:
+          - Act II exit: echo has edges
+
+  - act: III
+    act_name: The Machine
+    chapters: 13-19
+    expansion_focus:
+      - make institutional scenes varied and plausible
+      - keep process pressure human and specific
+      - deepen body-cost and record-horror scenes
+    target_changes:
+      - chapter: 13
+        title: Paper Has a Voice
+        add:
+          - document formatting detail
+          - stronger transition from social to formal pressure
+        preserve:
+          - formal language as threat
+      - chapter: 14
+        title: Risk Language
+        add:
+          - distinct voices in the meeting
+          - clearer difference between truth and risk posture
+        preserve:
+          - nobody needs to be cartoonishly cruel
+      - chapter: 15
+        title: Jack Documents Everything
+        add:
+          - folder-system specificity
+          - internal fear that survival can be misread
+        preserve:
+          - documentation as both tool and burden
+      - chapter: 16
+        title: The Body Betrays Him
+        add:
+          - more embodied pain sequence
+          - sharper misreading of physical presentation
+        preserve:
+          - dignity and agency
+      - chapter: 17
+        title: The Process Does Not Know Him
+        add:
+          - more setting specificity
+          - form-field mismatch detail
+        preserve:
+          - person versus category
+      - chapter: 18
+        title: The Record Survives Without the Truth
+        add:
+          - line-by-line record contrast
+          - stronger partial-truth horror
+        preserve:
+          - incomplete record changes meaning
+      - chapter: 19
+        title: The Machine Chooses Caution
+        add:
+          - accumulation montage with distinct decisions
+          - stronger wall-map visual
+        preserve:
+          - system pattern recognition
+
+  - act: IV
+    act_name: The Fracture
+    chapters: 20-25
+    expansion_focus:
+      - deepen identity horror with restraint
+      - avoid pure despair without plot movement
+      - preserve one surviving detail as Act V handoff
+    target_changes:
+      - chapter: 20
+        title: The Man in Their Story
+        add:
+          - clearer public-double image
+          - more tension with Devin
+        preserve:
+          - self versus story distinction
+      - chapter: 21
+        title: Old Wounds, New Language
+        add:
+          - sensory grounding
+          - tighter separation of then and now
+        preserve:
+          - trauma response without unreliability
+      - chapter: 22
+        title: The Quiet Doubter
+        add:
+          - Kendra's fear and stakes
+          - first clearer witness-thread object
+        preserve:
+          - quiet courage, not heroism
+      - chapter: 23
+        title: The Room Turns Inside Out
+        add:
+          - richer office/home transformation
+          - place-state continuity
+        preserve:
+          - safe-place failure
+      - chapter: 24
+        title: The False Mercy
+        add:
+          - stronger temptation of relief
+          - Marcus's conflicted motive
+        preserve:
+          - quiet refusal
+      - chapter: 25
+        title: Fracture Point
+        add:
+          - low point with dignity
+          - stronger surviving detail turn
+        preserve:
+          - truth survives, does not win yet
+
+  - act: V
+    act_name: The Witness
+    chapters: 26-30
+    expansion_focus:
+      - pay off evidence and witness threads
+      - deepen Mara Venn setup
+      - preserve partial, costly ending
+    target_changes:
+      - chapter: 26
+        title: The Detail That Refuses to Die
+        add:
+          - greater contrast between small detail and large consequence
+          - stronger Kendra exchange
+        preserve:
+          - contradiction as quiet power
+      - chapter: 27
+        title: Timeline of the Lie
+        add:
+          - sequence-restoration drama
+          - visible story mutation points
+        preserve:
+          - timeline as witness act
+      - chapter: 28
+        title: The Witness Thread
+        add:
+          - fuller Kendra park scene
+          - clearer cost of saying anything
+        preserve:
+          - witness as costly and partial
+      - chapter: 29
+        title: The Counter-Record
+        add:
+          - stronger Mara introduction/setup
+          - record-as-stretcher motif
+        preserve:
+          - human reader matters
+      - chapter: 30
+        title: Not Cleared, Not Erased
+        add:
+          - stronger incomplete restoration
+          - clearer Book 2 clue
+        preserve:
+          - no clean vindication
