@@ -1,0 +1,272 @@
+sprint: SB-005
+book_id: book-01-silver-bullet
+act: II
+act_name: The Echo
+chapter_range: 7-12
+scene_count: 12
+purpose: >-
+  Show the distorted story spreading through distance, silence, repeated phrases,
+  altered versions, and context-free evidence until Jack is responding to an
+  environment rather than one person.
+scenes:
+  - scene_id: sb1-c07-s01
+    chapter: 7
+    scene: 1
+    chapter_title: Everyone Is Careful Now
+    scene_title: The Temperature Drop
+    pov: Jack Mercer
+    location: Familiar social or professional space
+    scene_purpose: Show normal warmth replaced by careful politeness.
+    plot_movement: Jack sees that people are reacting before speaking plainly.
+    character_movement: He begins reading silence as information.
+    trauma_pressure: Hypervigilance, body tension, and isolation spiral.
+    antagonist_pressure: Atmosphere of concern without direct confrontation.
+    narrative_distortion: People behave as if partial information is enough.
+    evidence_witness_thread: Jack notes who changed tone and when.
+    continuity_impact: Social trust begins falling away.
+    producer_review_flags:
+      - trauma-dignity
+      - character
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the room as a place Jack knows, now made strange by carefulness.
+
+  - scene_id: sb1-c07-s02
+    chapter: 7
+    scene: 2
+    chapter_title: Everyone Is Careful Now
+    scene_title: The Unasked Question
+    pov: Jack Mercer
+    location: One-on-one encounter
+    scene_purpose: Let a character avoid asking what they clearly want to ask.
+    plot_movement: The unsaid question confirms the story has traveled.
+    character_movement: Jack feels the first full sting of being pre-interpreted.
+    trauma_pressure: Guarded anger and controlled reply.
+    antagonist_pressure: The social echo is shaping interaction.
+    narrative_distortion: Silence protects the distorted frame.
+    evidence_witness_thread: The avoided question becomes a memory marker.
+    continuity_impact: Jack learns others may know more than they admit.
+    producer_review_flags:
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the scene around avoidance. Let every polite line carry another meaning.
+
+  - scene_id: sb1-c08-s01
+    chapter: 8
+    scene: 1
+    chapter_title: The Version He Hasn't Heard
+    scene_title: The Portable Story
+    pov: Jack Mercer
+    location: Text thread, overheard exchange, or trusted contact's retelling
+    scene_purpose: Reveal a simplified version of events Jack has not heard before.
+    plot_movement: Jack learns the story has mutated.
+    character_movement: He shifts from defending facts to mapping versions.
+    trauma_pressure: Disorientation and rising urgency.
+    antagonist_pressure: Widow Circle language appears in the retelling.
+    narrative_distortion: Complex reality becomes portable accusation-shaped story.
+    evidence_witness_thread: Jack captures differences between original and retold version.
+    continuity_impact: Narrative mutation marker.
+    producer_review_flags:
+      - widow-circle
+      - evidence-continuity
+      - fictionalization
+    drafting_prompt: >-
+      Draft Jack hearing a version of himself that sounds assembled by people who never asked him.
+
+  - scene_id: sb1-c08-s02
+    chapter: 8
+    scene: 2
+    chapter_title: The Version He Hasn't Heard
+    scene_title: Version Control
+    pov: Jack Mercer
+    location: Jack's private workspace
+    scene_purpose: Have Jack begin comparing versions of the story like corrupted data.
+    plot_movement: He identifies what changed, what vanished, and what grew sharper.
+    character_movement: Technical competence becomes emotional survival.
+    trauma_pressure: Need for order and mental exhaustion.
+    antagonist_pressure: Indirect; the repeated story has technical shape now.
+    narrative_distortion: Story variants reveal the path of simplification.
+    evidence_witness_thread: Version notes created.
+    continuity_impact: Supports future timeline reconstruction.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - timeline
+    drafting_prompt: >-
+      Draft the comparison like a technical analyst confronting a human disaster through version drift.
+
+  - scene_id: sb1-c09-s01
+    chapter: 9
+    scene: 1
+    chapter_title: The First Lost Ally
+    scene_title: The Ally Chooses Distance
+    pov: Jack Mercer
+    location: Phone call, meeting, or familiar public place
+    scene_purpose: Remove a support pillar Jack expected to hold.
+    plot_movement: An ally hesitates or withdraws under social pressure.
+    character_movement: Jack realizes loyalty has become risky for other people.
+    trauma_pressure: Abandonment wound and controlled hurt.
+    antagonist_pressure: Social risk affects ally behavior.
+    narrative_distortion: Silence becomes a form of endorsement.
+    evidence_witness_thread: Jack remembers the ally's careful wording.
+    continuity_impact: Relationship state changes.
+    producer_review_flags:
+      - character
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the ally as human and afraid, not evil. The loss should hurt because it is plausible.
+
+  - scene_id: sb1-c09-s02
+    chapter: 9
+    scene: 2
+    chapter_title: The First Lost Ally
+    scene_title: After the Call
+    pov: Jack Mercer
+    location: Jack alone after the interaction
+    scene_purpose: Show the private cost of a social loss.
+    plot_movement: Jack updates his understanding of who can be trusted.
+    character_movement: He closes one emotional door and opens a documentation habit wider.
+    trauma_pressure: Isolation, anger, and fatigue.
+    antagonist_pressure: Indirect; the echo has removed support.
+    narrative_distortion: Loss of ally makes the false story socially safer.
+    evidence_witness_thread: Trust map updated.
+    continuity_impact: Support network shrinkage.
+    producer_review_flags:
+      - trauma-dignity
+      - character
+    drafting_prompt: >-
+      Draft quiet aftermath. Let the reader sit with the emotional cost before the plot moves again.
+
+  - scene_id: sb1-c10-s01
+    chapter: 10
+    scene: 1
+    chapter_title: The Kindness That Cuts
+    scene_title: Concern Language
+    pov: Jack Mercer
+    location: Conversation with Circle-adjacent figure
+    scene_purpose: Show how concern can flatten complexity.
+    plot_movement: Jack is offered words that sound caring but narrow his options.
+    character_movement: He learns that objecting to concern can make him look worse.
+    trauma_pressure: Speech risk, restraint, and frustration.
+    antagonist_pressure: Widow Circle doctrine echoes in ordinary language.
+    narrative_distortion: Harm is reframed as safety.
+    evidence_witness_thread: Repeated concern phrase preserved.
+    continuity_impact: Circle doctrine becomes story-active.
+    producer_review_flags:
+      - widow-circle
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft a scene where the words are soft but the effect is constricting.
+
+  - scene_id: sb1-c10-s02
+    chapter: 10
+    scene: 2
+    chapter_title: The Kindness That Cuts
+    scene_title: The Trap in the Gentle Voice
+    pov: Jack Mercer
+    location: Same or follow-up setting
+    scene_purpose: Force Jack to choose between correcting the frame and preserving composure.
+    plot_movement: Jack chooses restraint, but the cost is visible.
+    character_movement: He recognizes that tone can be used against truth.
+    trauma_pressure: Body tension and suppressed anger.
+    antagonist_pressure: Gentle moral certainty.
+    narrative_distortion: Reaction becomes more important than cause.
+    evidence_witness_thread: Jack notes the gap between words and effect.
+    continuity_impact: Later body-cost scenes are prepared.
+    producer_review_flags:
+      - trauma-dignity
+      - widow-circle
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the restraint as effort. Jack should feel powerful enough not to explode and wounded enough that it costs him.
+
+  - scene_id: sb1-c11-s01
+    chapter: 11
+    scene: 1
+    chapter_title: Evidence Without Air
+    scene_title: The Helpful Thing That Isn't Safe
+    pov: Jack Mercer
+    location: Digital record, file, photo, log, or message review
+    scene_purpose: Introduce evidence that should help but is unstable without context.
+    plot_movement: Jack finds a detail that can support truth or be twisted.
+    character_movement: He learns proof is not simple when trust is gone.
+    trauma_pressure: Documentation burden and fear of context loss.
+    antagonist_pressure: The social frame can reinterpret evidence.
+    narrative_distortion: Evidence becomes unstable when stripped of sequence.
+    evidence_witness_thread: Evidence item preserved with context note.
+    continuity_impact: Evidence continuity expands.
+    producer_review_flags:
+      - evidence-continuity
+      - legal-reputation-sensitivity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the evidence as double-edged. The reader should understand why Jack hesitates to use it.
+
+  - scene_id: sb1-c11-s02
+    chapter: 11
+    scene: 2
+    chapter_title: Evidence Without Air
+    scene_title: Context Envelope
+    pov: Jack Mercer
+    location: Jack's workspace
+    scene_purpose: Jack creates a context envelope around evidence: when, why, who, what changed.
+    plot_movement: Evidence preservation becomes more disciplined.
+    character_movement: Jack moves toward witness practice.
+    trauma_pressure: Controlled focus under exhaustion.
+    antagonist_pressure: Indirect; distortion forces higher rigor.
+    narrative_distortion: Context resists simplification.
+    evidence_witness_thread: Evidence plus context package created.
+    continuity_impact: Future counter-record setup.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - evidence-continuity
+      - timeline
+    drafting_prompt: >-
+      Draft this as technical, emotional, and precise. Context should feel like oxygen.
+
+  - scene_id: sb1-c12-s01
+    chapter: 12
+    scene: 1
+    chapter_title: Echo Chamber
+    scene_title: The Story Without a Source
+    pov: Jack Mercer
+    location: Public, professional, or community-facing environment
+    scene_purpose: Show the story operating without a visible source.
+    plot_movement: Jack encounters the false frame in a place where Evelyn is not present.
+    character_movement: He understands the story has become ambient.
+    trauma_pressure: Social claustrophobia and fatigue.
+    antagonist_pressure: Widow Circle influence as atmosphere.
+    narrative_distortion: The echo has become self-sustaining.
+    evidence_witness_thread: Jack identifies repeated structure across separate spaces.
+    continuity_impact: Act II social-environment marker.
+    producer_review_flags:
+      - widow-circle
+      - trauma-dignity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the horror of a story arriving before Jack does.
+
+  - scene_id: sb1-c12-s02
+    chapter: 12
+    scene: 2
+    chapter_title: Echo Chamber
+    scene_title: The Pattern Has Edges
+    pov: Jack Mercer
+    location: Private review space
+    scene_purpose: End Act II with Jack recognizing the shape of the echo.
+    plot_movement: Jack maps enough repeated behavior to know this is larger than one conversation.
+    character_movement: He moves from hurt to analysis.
+    trauma_pressure: Exhaustion converted into focus.
+    antagonist_pressure: The Circle's atmosphere has a pattern.
+    narrative_distortion: Repetition reveals design-like shape in the story world.
+    evidence_witness_thread: Pattern notes preserved.
+    continuity_impact: Act II exit marker and Act III handoff to records/process.
+    producer_review_flags:
+      - evidence-continuity
+      - widow-circle
+      - living-anchor-foreshadowing
+    drafting_prompt: >-
+      Draft the closing as dread plus clarity. Jack should not have victory, but he should have the beginning of a map.
