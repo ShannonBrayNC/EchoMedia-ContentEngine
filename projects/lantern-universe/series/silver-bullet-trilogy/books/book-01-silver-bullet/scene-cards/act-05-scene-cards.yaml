@@ -1,0 +1,229 @@
+sprint: SB-005
+book_id: book-01-silver-bullet
+act: V
+act_name: The Witness
+chapter_range: 26-30
+scene_count: 10
+purpose: >-
+  Convert survival, context, and preserved details into a witness path. Book 1
+  should end with truth preserved, not with clean vindication.
+scenes:
+  - scene_id: sb1-c26-s01
+    chapter: 26
+    scene: 1
+    chapter_title: The Detail That Refuses to Die
+    scene_title: The Contradiction Reopens
+    pov: Jack Mercer
+    location: Jack's evidence/context workspace
+    scene_purpose: Reopen possibility through a preserved contradiction.
+    plot_movement: The surviving detail becomes actionable as context.
+    character_movement: Jack moves from fracture toward disciplined witness.
+    trauma_pressure: Cautious hope under exhaustion.
+    antagonist_pressure: The false story remains socially powerful.
+    narrative_distortion: A contradiction weakens the totalizing frame.
+    evidence_witness_thread: Key contradiction becomes active.
+    continuity_impact: Act V witness turn begins.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - timeline
+    drafting_prompt: >-
+      Draft the contradiction as quiet but undeniable. Let the reader feel why this one detail matters.
+
+  - scene_id: sb1-c26-s02
+    chapter: 26
+    scene: 2
+    chapter_title: The Detail That Refuses to Die
+    scene_title: Proof Needs a Body
+    pov: Jack Mercer
+    location: Private review / possible contact prep
+    scene_purpose: Show that evidence alone still needs human witness and context.
+    plot_movement: Jack identifies who or what can carry the context forward.
+    character_movement: He accepts that truth needs stewardship.
+    trauma_pressure: Trust risk and guarded resolve.
+    antagonist_pressure: Social cost remains.
+    narrative_distortion: Evidence without witness remains vulnerable.
+    evidence_witness_thread: Witness path identified.
+    continuity_impact: Living Anchor theme becomes active.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - evidence-continuity
+      - character
+    drafting_prompt: >-
+      Draft Jack realizing the record is not enough by itself. It needs someone willing to remember accurately.
+
+  - scene_id: sb1-c27-s01
+    chapter: 27
+    scene: 1
+    chapter_title: Timeline of the Lie
+    scene_title: Sequence Restored
+    pov: Jack Mercer
+    location: Jack's workspace
+    scene_purpose: Have Jack reconstruct the sequence of the distortion.
+    plot_movement: Timeline order reveals how the story changed.
+    character_movement: Jack shifts from defense to structured witness.
+    trauma_pressure: Documentation becomes discipline rather than panic.
+    antagonist_pressure: The story pattern becomes visible.
+    narrative_distortion: Sequence challenges simplified meaning.
+    evidence_witness_thread: Full timeline draft created.
+    continuity_impact: Directly aligns with PUB-008 Timeline Registry.
+    producer_review_flags:
+      - timeline
+      - evidence-continuity
+      - living-anchor-foreshadowing
+    drafting_prompt: >-
+      Draft the timeline as a dramatic act of restoration. The order of events should feel like plot movement.
+
+  - scene_id: sb1-c27-s02
+    chapter: 27
+    scene: 2
+    chapter_title: Timeline of the Lie
+    scene_title: What Changed Between Tellings
+    pov: Jack Mercer
+    location: Evidence review / version comparison
+    scene_purpose: Identify the mutation points where context was lost or sharpened.
+    plot_movement: Jack maps the story's transformation.
+    character_movement: He sees design-like pressure without needing full answers yet.
+    trauma_pressure: Focus, fatigue, and controlled anger.
+    antagonist_pressure: Widow Circle story atmosphere becomes traceable.
+    narrative_distortion: Mutation points expose the echo.
+    evidence_witness_thread: Version-delta notes preserved.
+    continuity_impact: Book 2 pattern expansion seed.
+    producer_review_flags:
+      - widow-circle
+      - evidence-continuity
+      - timeline
+    drafting_prompt: >-
+      Draft the analysis so the reader sees the lie evolve. Keep it emotional, not just technical.
+
+  - scene_id: sb1-c28-s01
+    chapter: 28
+    scene: 1
+    chapter_title: The Witness Thread
+    scene_title: The Doubter Answers
+    pov: Jack Mercer
+    location: Call, meeting, message, or cautious contact
+    scene_purpose: Bring back the doubter or witness thread from Act IV.
+    plot_movement: A person confirms one important piece of context.
+    character_movement: Jack risks trust and receives partial confirmation.
+    trauma_pressure: Trust risk and guarded relief.
+    antagonist_pressure: Witness still fears social cost.
+    narrative_distortion: Independent context resists the false frame.
+    evidence_witness_thread: External confirmation preserved.
+    continuity_impact: Witness chain begins.
+    producer_review_flags:
+      - character
+      - evidence-continuity
+      - fictionalization
+    drafting_prompt: >-
+      Draft the witness as cautious. Their confirmation should matter precisely because it is not easy.
+
+  - scene_id: sb1-c28-s02
+    chapter: 28
+    scene: 2
+    chapter_title: The Witness Thread
+    scene_title: The Cost of Saying It
+    pov: Jack Mercer
+    location: Same or immediate aftermath
+    scene_purpose: Show that witness has cost for more than Jack.
+    plot_movement: Jack understands why truth has been slow to surface.
+    character_movement: He develops compassion for fear without excusing silence.
+    trauma_pressure: Anger softened by understanding.
+    antagonist_pressure: Social pressure remains dangerous.
+    narrative_distortion: Fear protected the false story, but witness can interrupt it.
+    evidence_witness_thread: Witness context stored.
+    continuity_impact: Book 2 witness-network possibility.
+    producer_review_flags:
+      - character
+      - trauma-dignity
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the moral complexity. The witness is helpful but not cleanly heroic.
+
+  - scene_id: sb1-c29-s01
+    chapter: 29
+    scene: 1
+    chapter_title: The Counter-Record
+    scene_title: Context Packet
+    pov: Jack Mercer
+    location: Jack's workspace / secure storage / trusted handoff
+    scene_purpose: Create or protect a context-bearing record.
+    plot_movement: Jack assembles evidence, timeline, witness detail, and missing context into a coherent packet.
+    character_movement: He claims agency through preservation.
+    trauma_pressure: Focus, exhaustion, and deliberate restraint.
+    antagonist_pressure: The false story remains outside the room.
+    narrative_distortion: Counter-context interrupts total erasure.
+    evidence_witness_thread: Counter-record created.
+    continuity_impact: Living Anchor parallel and Book 2 foundation.
+    producer_review_flags:
+      - evidence-continuity
+      - living-anchor-foreshadowing
+      - producer-review-required
+    drafting_prompt: >-
+      Draft the counter-record as the emotional climax of Jack's technical and human witness arc.
+
+  - scene_id: sb1-c29-s02
+    chapter: 29
+    scene: 2
+    chapter_title: The Counter-Record
+    scene_title: The First True Reader
+    pov: Jack Mercer
+    location: Trusted contact, handoff, or private confirmation scene
+    scene_purpose: Let someone receive the counter-record as context, not just data.
+    plot_movement: Jack's preserved truth reaches another human being.
+    character_movement: He experiences partial recognition without full rescue.
+    trauma_pressure: Vulnerability and guarded release.
+    antagonist_pressure: The distorted story still controls the wider world.
+    narrative_distortion: Human reading restores some meaning to the record.
+    evidence_witness_thread: Counter-record gains first witness reader.
+    continuity_impact: Living Anchor theme becomes visible.
+    producer_review_flags:
+      - living-anchor-foreshadowing
+      - character
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft this as recognition, not victory. One person understanding should feel enormous and insufficient.
+
+  - scene_id: sb1-c30-s01
+    chapter: 30
+    scene: 1
+    chapter_title: Not Cleared, Not Erased
+    scene_title: The World Does Not Apologize
+    pov: Jack Mercer
+    location: Public/professional/social setting after counter-record
+    scene_purpose: Show that preserving truth does not immediately repair the world.
+    plot_movement: Jack sees that consequences remain even after context survives.
+    character_movement: He accepts incomplete resolution without surrendering truth.
+    trauma_pressure: Wound remains, but agency holds.
+    antagonist_pressure: Widow Circle shape is exposed but not defeated.
+    narrative_distortion: The false story is challenged, not erased.
+    evidence_witness_thread: Preserved truth remains in motion.
+    continuity_impact: Book 2 launch state.
+    producer_review_flags:
+      - trauma-dignity
+      - trilogy-continuity
+      - character
+    drafting_prompt: >-
+      Draft the anti-vindication. The world should not become fair overnight.
+
+  - scene_id: sb1-c30-s02
+    chapter: 30
+    scene: 2
+    chapter_title: Not Cleared, Not Erased
+    scene_title: A Larger Pattern
+    pov: Jack Mercer
+    location: Closing image / new lead / preserved case thread
+    scene_purpose: End Book 1 by opening the trilogy pattern.
+    plot_movement: Jack discovers or receives a signal that his case is not isolated.
+    character_movement: He moves from survival of self toward witness for others.
+    trauma_pressure: Fear, purpose, and restrained hope.
+    antagonist_pressure: The broader pattern remains active.
+    narrative_distortion: The story's architecture points beyond Book 1.
+    evidence_witness_thread: New pattern clue preserved.
+    continuity_impact: Direct handoff to Book 2.
+    producer_review_flags:
+      - trilogy-continuity
+      - living-anchor-foreshadowing
+      - evidence-continuity
+    drafting_prompt: >-
+      Draft the final beat as dread plus purpose. Jack is not finished; he has become harder to erase.
