@@ -14,6 +14,10 @@ He copied the phrases into his sequence record.
 
 On the screen, the words looked almost harmless. That was their strength. They did not arrive as accusations. They arrived as furniture. People moved them into a room and then acted as if they had always belonged there.
 
+He remembered Evelyn using similar language at the Briar Civic cleanup table two months earlier, when two volunteers disagreed over a donation mix-up. She had not taken a side. Not directly. She had touched one index card with the tip of her pen and said, "The careful thing is to make room before anyone gets louder."
+
+At the time, Jack had admired the phrasing. It let everyone step back with their dignity intact. Now he wondered how a sentence learned to change jobs.
+
 At Northstar Market that evening, Jack saw the phrase become behavior. He was in the pharmacy aisle comparing two brands of heat patches when Mrs. Havel turned the corner, saw him, and stopped so quickly her cart bumped the shelf. A box of allergy medicine tipped sideways.
 
 "Jack," she said, with a smile that did not reach the rest of her face.
