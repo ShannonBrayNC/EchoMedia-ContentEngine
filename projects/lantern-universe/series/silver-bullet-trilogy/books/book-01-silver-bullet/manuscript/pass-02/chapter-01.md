@@ -30,6 +30,14 @@ After the call, he added three notes to the project log. Exact time. Decision ma
 
 At 9:42, he stepped outside for the mail. Grayline Road looked washed clean by morning. Across the street, Mrs. Havel lifted a hand from her porch. Jack lifted his back, careful not to raise the left arm too far. Ordinary kindness, ordinary light, ordinary pain.
 
+Mrs. Havel called across the road before he could step back inside. "Evelyn Blackwood is collecting volunteers for the civic table again. She asked whether you'd be willing to fix the old signup laptop if it gives out."
+
+"If it gives out, it deserves dignity," Jack said.
+
+Mrs. Havel laughed. "She said you'd say something like that."
+
+Jack knew Evelyn mostly as a Grayline organizer: paper notes, calm voice, local memory, the kind of person who remembered who liked tea and who needed a chair moved before anyone asked. In Briar County, that counted as influence before anyone called it power.
+
 A good day, he thought.
 
 Not perfect. Not healed. But good enough to hold.
