@@ -6,11 +6,13 @@ That was the first thing Jack noticed. Not the accusation, because there was no 
 
 It arrived at 1:17 in the afternoon while Jack was eating cold toast over the sink and pretending that counted as lunch. The phone lit against the counter.
 
-`Jack, I think it's important that people understand what happened before this becomes harder for everyone.`
+`Jack, I think the careful thing is to make sure everyone understands the pattern before this becomes harder to repair.`
 
 He read it once with the impatient part of his mind, the part still attached to work and missed meals and the CivicCloud ticket waiting on his monitor. Then he read it again, and the kitchen became unfamiliar.
 
-Evelyn did not say he had harmed anyone. She wrote around it. She placed phrases where a reader could step from one implication to the next without ever seeing her hand point. She mentioned patterns. She mentioned people feeling uneasy. She mentioned responsibility in the tone of someone who had already assigned it.
+Evelyn did not say he had harmed anyone. She wrote around it. She placed phrases where a reader could step from one implication to the next without ever seeing her hand point. Careful. Pattern. Repair. Words polished smooth enough to pass hand to hand.
+
+Jack could imagine her writing it at the small secretary desk she used for Grayline volunteer notes, index cards arranged by name and obligation, tea cooling beside her wrist. Evelyn made language feel deliberate. That had once seemed like kindness. Now it felt like a room being staged before anyone else arrived.
 
 Jack set the phone down. The counter was cool under his palm. The old crack in the tile near the stove looked suddenly precise, a dark line going nowhere until you leaned close and saw how far it had traveled.
 
