@@ -12,6 +12,12 @@ Devin winced. "Fair."
 
 The version he repeated was shorter than Evelyn's message and uglier because of it. Jack had been agitated. Jack had been controlling. Jack had made people uncomfortable before anyone knew how to name it. The words had lost source and gained certainty. A social story did not need citations if enough people carried it in the same tone.
 
+"That repair-versus-control thing," Devin said. "I keep hearing it now. Not exactly the same words every time, but the shape is the same. Sounds like Evelyn when she's running one of those Grayline tables."
+
+Jack looked at him.
+
+Devin lifted both hands. "I'm not saying she's directing people. I'm saying phrases travel when someone makes them sound responsible."
+
 Jack listened without interrupting. That cost him more than Devin knew.
 
 When Devin finished, the train came through, shaking the patio fence and drowning the first sentence Jack tried to say. He waited until the sound passed.
