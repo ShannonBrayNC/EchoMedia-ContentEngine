@@ -1,0 +1,69 @@
+sprint: SB-017
+book_id: book-01-silver-bullet
+status: canonical-reference
+characters:
+  protagonist:
+    - Jack Mercer
+  antagonist_catalyst:
+    - Evelyn Mara Blackwood
+    - Evelyn Blackwood
+  supporting:
+    - Marcus Vale
+    - Kendra Sloane
+    - Lena Hart
+    - Devin Cross
+    - Harlan Pierce
+    - Mara Venn
+  group_entities:
+    - Widow Circle
+    - Grayline social circle
+places:
+  primary:
+    - Briar County
+    - Grayline Road
+    - Mercer House
+  local:
+    - Northstar Market
+    - The Switchyard Cafe
+    - Halden Park
+    - Stokes Veterans Hall
+    - Briar Civic Annex
+    - East Ridge Business Park
+organizations:
+  - Northstar Systems Group
+  - Eastbridge Review Office
+  - Harrow & Vale Advisory
+  - Northstar Account Board
+projects_and_systems:
+  - Halden Ridge Migration Project
+  - CivicCloud Workspace
+  - Eastbridge Compliance Review
+social_channels:
+  - Grayline Neighborhood Thread
+  - Grayline social circle
+artifacts:
+  core:
+    - Sequence Record
+    - Context Packet
+    - Context Envelope
+    - Echo Map
+    - Counter-Record
+  formal_process:
+    - Eastbridge Review Notice
+    - Process Summary Memo
+    - Access Pause Notice
+    - Clarification Request
+  social_message:
+    - Evelyn Message
+    - Grayline Thread Capture
+    - Kendra Witness Note
+    - Devin Version Account
+    - Not-Sent Statement
+usage_rules:
+  - Use glossary names consistently.
+  - Flag proper nouns not listed here for review.
+  - Do not add real-world identifiers.
+  - Keep all artifacts fictional and original.
+  - Preserve fiction-first positioning.
+release_gate_status: internal-development-only
+producer_review_required: true
