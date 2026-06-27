@@ -20,9 +20,15 @@ Jack sat at the kitchen table. The office was usable for short stretches now, bu
 
 She did not give him a full answer. Jack respected her for that. Full answers offered too early were another form of distortion. She gave him a name he had not heard before, not a real name, she said, but the name attached to a folder from three counties away. Similar language. Similar sequence problem. Similar pause between social concern and formal consequence.
 
-"I can't send it yet," Mara said. "There are people inside it who did not agree to be carried by you."
+"Evelyn matters," Mara said. "But don't make her the whole answer just because she was the first face you could name."
 
-Jack looked at the context packet on the table and understood the sentence more deeply than he wanted to.
+Jack looked at the context packet on the table and understood the warning immediately. A single face was easier to hold than a pattern. Easier to hate, too.
+
+"Then what is she?" he asked.
+
+"A door," Mara said. "Maybe a mirror. Maybe both."
+
+She did not send the folder yet. There were people inside it who had not agreed to be carried by him. Jack understood the sentence more deeply than he wanted to.
 
 "Then don't send it yet."
 
