@@ -1,0 +1,58 @@
+{
+  "package": "lantern-protocol-art-generation",
+  "version": "1.0.0",
+  "doctrine": [
+    "Prediction is not permission.",
+    "Assistance is not authority.",
+    "Rescue is not ownership.",
+    "Human error does not void human dignity."
+  ],
+  "guardrails": [
+    "No Lantern avatar",
+    "No robot Lantern",
+    "No humanoid Lantern",
+    "No Lantern face",
+    "No celebrity likenesses",
+    "No copyrighted/franchise styles",
+    "No new story canon",
+    "No generated binary images committed unless approved"
+  ],
+  "packs": [
+    {
+      "id": "characters",
+      "file": "prompts/characters/character-portrait-pack.md",
+      "count": 12
+    },
+    {
+      "id": "locations",
+      "file": "prompts/locations/location-pack.md",
+      "count": 10
+    },
+    {
+      "id": "key-scenes",
+      "file": "prompts/key-scenes/key-scene-pack.md",
+      "count": 12
+    },
+    {
+      "id": "trailer",
+      "file": "prompts/trailer/trailer-shot-pack.md",
+      "count": 18
+    },
+    {
+      "id": "pitch-deck",
+      "file": "prompts/pitch-deck/pitch-deck-pack.md",
+      "count": 14
+    },
+    {
+      "id": "ui-system",
+      "file": "prompts/ui-system/ui-system-pack.md",
+      "count": 10
+    }
+  ],
+  "description_bank": {
+    "file": "prompts/key-scenes/art-description-bank-120.md",
+    "count": 120,
+    "per_chapter": 5,
+    "chapters": 24
+  }
+}
