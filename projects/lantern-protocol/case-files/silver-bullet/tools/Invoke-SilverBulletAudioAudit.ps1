@@ -7,7 +7,7 @@ Run this locally from the repository root with PowerShell 7+.
 It checks the known Book 1 and Book 2 manuscript paths, reports missing chapter numbers, flags scaffold-only files, and emits ElevenReader-ready TXT files.
 
 USAGE
-pwsh .\projects\lantern-protocol\case-files\silver-bullet\tools\Invoke-SilverBulletAudioAudit.ps1 -RepoRoot C:\workspace\GitHub\EchoMedia-ContentEngine-pr112
+pwsh .\projects\lantern-protocol\case-files\silver-bullet\tools\Invoke-SilverBulletAudioAudit.ps1 -RepoRoot C:\workspace\GitHub\EchoMedia-ContentEngine
 #>
 
 [CmdletBinding()]
@@ -57,7 +57,7 @@ function Test-ScaffoldOnly {
 function Convert-ToNarrationText {
     param([string]$Raw)
     $text = $Raw
-    $text = $text -replace '(?m)^##\s*Canon Sources\s*$[\s\S]*?(?=^#\s|\z)', ''
+    $text = $text -replace '(?m)^##\s*Canon Sources\s*$', ''
     $text = $text -replace '(?m)^##\s*(Sprint|QA|Audiobook|Production|Canon Sources).*$', ''
     $text = $text -replace '(?m)^- Parent epic:.*$', ''
     $text = $text -replace '```text', ''
@@ -154,7 +154,7 @@ $report.Add('')
 foreach ($book in @($book1, $book2)) {
     $report.Add("## $($book.BookName)")
     $report.Add('')
-    $report.Add("Path: `$($book.Path)`")
+    $report.Add("Path: $($book.Path)")
     $report.Add("Exists: $($book.Exists)")
     $report.Add("Chapter files found: $(@($book.Files).Count)")
     $report.Add("Missing expected chapter numbers: $(@($book.Missing) -join ', ')")
@@ -169,9 +169,9 @@ foreach ($book in @($book1, $book2)) {
 }
 $report.Add('## Outputs')
 $report.Add('')
-$report.Add('- `compiled\elevenreader\SilverBullet-Book1-ElevenReader.txt`')
-$report.Add('- `compiled\elevenreader\SilverBullet-Book2-ElevenReader.txt`')
-$report.Add('- `compiled\elevenreader\SilverBullet-Books1-2-ElevenReader.txt`')
+$report.Add('- compiled\elevenreader\SilverBullet-Book1-ElevenReader.txt')
+$report.Add('- compiled\elevenreader\SilverBullet-Book2-ElevenReader.txt')
+$report.Add('- compiled\elevenreader\SilverBullet-Books1-2-ElevenReader.txt')
 
 $report -join "`r`n" | Set-Content -Path $ReportPath -Encoding UTF8
 
