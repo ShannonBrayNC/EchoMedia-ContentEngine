@@ -1,0 +1,55 @@
+name: Build ElevenLabs Reader Files
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_elevenlabs_reader.py"
+      - "projects/lantern-universe/series/silver-bullet-trilogy/books/book-01-silver-bullet/manuscript/pass-02/**"
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build-elevenlabs-reader:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build reader text files
+        run: |
+          python scripts/build_elevenlabs_reader.py --repo-root .
+
+      - name: Upload reader artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-01-silver-bullet-elevenlabs-reader
+          path: build/elevenlabs/book-01-silver-bullet/
+          if-no-files-found: error
+
+      - name: Commit generated reader files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f build/elevenlabs/book-01-silver-bullet/
+          if git diff --cached --quiet; then
+            echo "No reader file changes to commit."
+            exit 0
+          fi
+          git commit -m "Build ElevenLabs reader files"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
